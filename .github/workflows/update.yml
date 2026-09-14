@@ -1,0 +1,35 @@
+name: Nachtfragment Auto Update
+
+on:
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Nachtfragment Auto Discovery V4
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: python3 updater.py
+
+      - name: Änderungen speichern
+        run: |
+          git config user.name "Nachtfragment Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/nachtfragment.json data/candidates.json data/changes.json data/geocache.json
+          git diff --cached --quiet || git commit -m "Auto-update Nachtfragment events"
+          git push
