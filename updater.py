@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Nachtfragment automatic discovery updater v4.1.
+"""Nachtfragment automatic discovery updater v3.
 
 Stdlib only. It discovers scene-relevant events/festivals from a curated source
 registry, supports HTML/RSS/Atom/ICS, extracts dates and locations, classifies
@@ -7,7 +7,7 @@ scene relevance, creates Google Maps links, optionally geocodes with Nominatim,
 and keeps uncertain discoveries in candidates.json instead of publishing them.
 """
 import json, re, hashlib, html, os, time, urllib.parse
-from datetime import datetime, timezone, date
+from datetime import datetime, timezone
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 from html.parser import HTMLParser
@@ -72,31 +72,6 @@ def date_text(text):
   if m: return m.group(0)
  return None
 
-def parsed_date(text):
-    if not text: return None
-    t=text.strip()
-    for fmt in ('%d.%m.%Y','%d/%m/%Y','%d-%m-%Y','%Y.%m.%d','%Y-%m-%d','%Y/%m/%d'):
-        try: return datetime.strptime(t,fmt).date()
-        except ValueError: pass
-    m=re.match(r'^(\d{1,2})\.?\s*(Jan|Feb|Mär|Mar|Apr|Mai|May|Jun|Jul|Aug|Sep|Okt|Oct|Nov|Dez|Dec)[a-zäöü]*\.?\s*(20\d{2})$',t,re.I)
-    if m:
-        months={'jan':1,'feb':2,'mär':3,'mar':3,'apr':4,'mai':5,'may':5,'jun':6,'jul':7,'aug':8,'sep':9,'okt':10,'oct':10,'nov':11,'dez':12,'dec':12}
-        try: return date(int(m.group(3)),months[m.group(2).lower()[:3]],int(m.group(1)))
-        except Exception: pass
-    return None
-
-def is_future_or_current(date_string):
-    d=parsed_date(date_string)
-    return bool(d and d >= NOW.date())
-
-EVENT_TITLE_HINTS=re.compile(r'\b(festival|festivalen|fest|party|nacht|night|event|events|concert|konzert|live|tour|show|gothic|darkwave|ebm|industrial|post[- ]?punk|deathrock|dark electro|futurepop)\b',re.I)
-EDITORIAL_HINTS=re.compile(r'\b(introduction|definition|meaning|test|review|guide|vergleich|compared|geschichte|history|style|fashion|magazine|news|blog|almanach|dictionary|wikipedia)\b',re.I)
-
-def looks_like_real_event(name, text, url=''):
-    blob=' '.join([name or '', text or '', url or ''])
-    if EDITORIAL_HINTS.search(blob): return False
-    return bool(EVENT_TITLE_HINTS.search(name or '') or re.search(r'\b(tickets?|admission|doors?|venue|line[- ]?up|lineup|dj|djs)\b',blob,re.I))
-
 def scene_tags(text):
  t=text.lower(); tags=[]
  for k,words in SCENE.items():
@@ -150,9 +125,8 @@ def parse_html(source,body):
   blob=title+' '+url
   if not scene_tags(blob) and 'festival' not in blob.lower(): continue
   d=date_text(blob)
-  if not d or not is_future_or_current(d): continue
+  if not d: continue
   if len(title)<4 or title.lower() in {'mehr','details','tickets','website','info'}: continue
-  if not looks_like_real_event(title, blob, url): continue
   out.append({'name':html.unescape(title).strip(),'url':url,'date_text':d,'raw':blob})
  return out
 
@@ -170,9 +144,7 @@ def parse_feed(source,body):
   blob=' '.join(vals.values())
   d=date_text(blob) or vals.get('dtstart')
   if not d: continue
-  if not is_future_or_current(d): continue
   if not scene_tags(blob) and 'festival' not in blob.lower(): continue
-  if not looks_like_real_event(title, blob, url): continue
   out.append({'name':html.unescape(title),'url':urllib.parse.urljoin(source['url'],url),'date_text':d,'raw':blob,'city':extract_city(blob,source)})
  return out
 
@@ -182,7 +154,7 @@ def parse_ics(source,body):
   if not ev: return
   title=ev.get('SUMMARY') or ev.get('NAME'); blob=' '.join(ev.values())
   d=ev.get('DTSTART') or date_text(blob)
-  if title and d and is_future_or_current(d) and (scene_tags(blob) or 'festival' in blob.lower()) and looks_like_real_event(title, blob, ev.get('URL','')):
+  if title and d and (scene_tags(blob) or 'festival' in blob.lower()):
    out.append({'name':title,'url':ev.get('URL',source['url']),'date_text':d,'raw':blob,'city':extract_city(blob,source)})
  for line in lines:
   if line=='BEGIN:VEVENT': inside=True; ev={}; continue
@@ -243,8 +215,7 @@ def parse_search_result(result, query):
     if not d:
         # Search result date fields occasionally carry the event date.
         d=date_text(str(result.get('date') or ''))
-    if not d or not is_future_or_current(d): return None
-    if not looks_like_real_event(title, blob, link): return None
+    if not d: return None
     return {
         'name':title,
         'url':link,
@@ -292,9 +263,7 @@ def main():
  new_pub=0; new_cand=0
  for source in load_json(SOURCES,[]):
   try:
-   if not isinstance(source,dict) or not source.get('url'):
-    continue
-   status,ctype,items=discover(source); print(source.get('name',source.get('url')),status,ctype,'found',len(items))
+   status,ctype,items=discover(source); print(source['name'],status,ctype,'found',len(items))
    for c in items:
     city=c.get('city') or ''
     country=COUNTRIES.get(source.get('country'),source.get('country',''))
@@ -320,9 +289,7 @@ def main():
      rec['google_maps_coords_url']='https://www.google.com/maps/search/?api=1&query='+urllib.parse.quote_plus(f"{geo['lat']},{geo['lng']}")
      rec['google_maps_status']='geocoded'
     # Official, strongly evidenced items can be published; all others stay candidates.
-    publish = (source.get('kind')=='official' and score>=7 and bool(city) and
-               bool(c.get('date_text')) and is_future_or_current(c.get('date_text')) and
-               looks_like_real_event(c.get('name',''), c.get('raw',''), c.get('url','')))
+    publish = source.get('kind')=='official' and score>=7
     if key in known:
      for x in data:
       if (x.get('name','').strip().lower(),x.get('city','').strip().lower(),x.get('country_name',x.get('country','')).strip().lower())==key:
@@ -339,7 +306,7 @@ def main():
      candidates.append(rec); cand_known.add(key); new_cand+=1
      changes.insert(0,{'timestamp':NOW.isoformat(),'type':'candidate','name':c['name'],'city':city,'source':source['url'],'score':score})
   except Exception as e:
-   print('ERROR',source.get('name',source.get('url','unknown')),repr(e)); changes.insert(0,{'timestamp':NOW.isoformat(),'type':'source_error','source':source.get('url'),'error':str(e)})
+   print('ERROR',source['name'],repr(e)); changes.insert(0,{'timestamp':NOW.isoformat(),'type':'source_error','source':source.get('url'),'error':str(e)})
  # Broad web-search discovery. Search results are never published solely from the snippet.
  search_items=discover_web_search()
  if search_items:
@@ -354,9 +321,6 @@ def main():
     except Exception as e:
      st=0; ct=''; page_text=''; print('PAGE FETCH ERROR',c['url'],repr(e))
     combined=c['raw']+' '+page_text
-    page_date=date_text(page_text)
-    if page_date and is_future_or_current(page_date):
-        c['date_text']=page_date
     tags=scene_tags(combined)
     city=c.get('city') or extract_city(page_text,{}) or ''
     # infer a country from common search-result / page language hints where possible
@@ -396,11 +360,8 @@ def main():
     else: rec['geocoded']=False
     key=(rec['name'].lower(),(rec.get('city') or '').lower(),(rec.get('country_name') or '').lower())
     if key in known or key in cand_known: continue
-    # Web-search results are leads. Publish only when the ORIGINAL page contains
-    # strong event evidence, a future/current date, a city, and scene evidence.
-    event_evidence=bool(re.search(r'\b(tickets?|admission|doors?|venue|line[- ]?up|lineup|event|veranstaltung|concert|konzert|party|festival|tour|live)\b', page_text, re.I))
-    future_ok=is_future_or_current(c.get('date_text'))
-    publish=(st==200 and score>=10 and bool(tags) and bool(c['date_text']) and future_ok and bool(city) and event_evidence and looks_like_real_event(c['name'], page_text, c['url']))
+    # Broad search can publish only when the original page is reachable and evidence is strong.
+    publish=(st==200 and score>=10 and bool(tags) and bool(c['date_text']))
     if publish:
      rec['discovery_status']='published'; rec['verified']=True; rec['verified_date']=TODAY; rec['aktivitaet']='active'; rec['aktivitaet_label']='🟢 aktuell aktiv'
      data.append(rec); known.add(key); new_pub+=1
