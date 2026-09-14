@@ -1,1 +1,426 @@
-[]
+[
+  {
+    "id": "search-fde634f7dd261e",
+    "record_type": "event",
+    "name": "Gothic Remake im Test – Ein toller Nostalgietrip, wenn ihr ...",
+    "city": null,
+    "country_name": "Europa",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🖤 Gothic Core"
+    ],
+    "szenerelevanz": [
+      "gothic_core"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core"
+    ],
+    "url": "https://www.gamepro.de/artikel/gothic-remake-test,3454092,fazit.html",
+    "source_url": "https://www.gamepro.de/artikel/gothic-remake-test,3454092,fazit.html",
+    "date_text": "11.06.2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 3,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite nicht erreichbar",
+      "Datum erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.gamepro.de/artikel/gothic-remake-test,3454092,fazit.html"
+    ],
+    "discovered_at": "2026-09-14T16:42:35.941218+00:00",
+    "search_query": "Gothic events festival 2027 Germany Darkwave EBM Industrial",
+    "search_snippet": "Das Remake von Gothic versucht das Spiel einer neuen Generation schmackhaft zu machen, macht am Ende aber wohl doch nur Hardcore-Fans ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gothic+Remake+im+Test+%E2%80%93+Ein+toller+Nostalgietrip%2C+wenn+ihr+...%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Gothic+Remake+im+Test+%E2%80%93+Ein+toller+Nostalgietrip%2C+wenn+ihr+...%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-11938c02212c43",
+    "record_type": "event",
+    "name": "Gothic Almanach",
+    "city": null,
+    "country_name": "Europa",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🖤 Gothic Core"
+    ],
+    "szenerelevanz": [
+      "gothic_core"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core"
+    ],
+    "url": "https://almanach.worldofgothic.de/",
+    "source_url": "https://almanach.worldofgothic.de/",
+    "date_text": "01.09.2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 5,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://almanach.worldofgothic.de/"
+    ],
+    "discovered_at": "2026-09-14T16:42:35.941218+00:00",
+    "search_query": "Gothic events festival 2027 Germany Darkwave EBM Industrial",
+    "search_snippet": "Jackal war ein Gardist im Alten Lager. Er war für die Aufrechterhaltung der Ordnung zwischen Marktplatz und Südtor des Außenrings der Burg ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gothic+Almanach%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Gothic+Almanach%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-787dee1862c12b",
+    "record_type": "event",
+    "name": "Wave-Gotik-Treffen 2026 - 22/05/2026 (4 days) - Leipzig",
+    "city": "Leipzig",
+    "country_name": "Europa",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave"
+    ],
+    "url": "https://en.concerts-metal.com/concert_-_Wave-Gotik-Treffen_2026-218710.html",
+    "source_url": "https://en.concerts-metal.com/concert_-_Wave-Gotik-Treffen_2026-218710.html",
+    "date_text": "22/05/2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://en.concerts-metal.com/concert_-_Wave-Gotik-Treffen_2026-218710.html"
+    ],
+    "discovered_at": "2026-09-14T16:42:35.941218+00:00",
+    "search_query": "Gothic Darkwave EBM events Europe 2026 festival",
+    "search_snippet": "Friday 22 May > Monday 25 May. Darkwave Astari Nite - Gothic Rock Auger - Gothic Rock Batmobile. Schedule around the world, and archives with the history of ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Wave-Gotik-Treffen+2026+-+22%2F05%2F2026+%284+days%29+-+Leipzig%2C+Leipzig%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Wave-Gotik-Treffen+2026+-+22%2F05%2F2026+%284+days%29+-+Leipzig%2C+Leipzig%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-a42f1d4aec0219",
+    "record_type": "event",
+    "name": "Irréversible Sunday 05.04.2026 Supamolly, Berlin Bands ...",
+    "city": "Berlin",
+    "country_name": "Europa",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🌑 Darkwave / Wave",
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "szenerelevanz": [
+      "darkwave_wave",
+      "postpunk_deathrock"
+    ],
+    "szenerelevanz_labels": [
+      "🌑 Darkwave / Wave",
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "url": "https://www.facebook.com/groups/1146078312090669/posts/26679117841693365/",
+    "source_url": "https://www.facebook.com/groups/1146078312090669/posts/26679117841693365/",
+    "date_text": "05.04.2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.facebook.com/groups/1146078312090669/posts/26679117841693365/"
+    ],
+    "discovered_at": "2026-09-14T16:42:35.941218+00:00",
+    "search_query": "darkwave post-punk deathrock events 2026 Europe",
+    "search_snippet": "Supamolly, Berlin Bands Telaraña PostPunk/Darkwave. Deathrock/Horror Punk. Doors 21:30 Show 22:30 … through darkwave and post-punk, to synth- ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Irr%C3%A9versible+Sunday+05.04.2026+Supamolly%2C+Berlin+Bands+...%2C+Berlin%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Irr%C3%A9versible+Sunday+05.04.2026+Supamolly%2C+Berlin+Bands+...%2C+Berlin%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-55de1b872725ff",
+    "record_type": "event",
+    "name": "Empire of Darkness SAMSTAG 13.06.2026 | Matrix Bochum ...",
+    "city": null,
+    "country_name": "Europa",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://www.facebook.com/eodempireofdarkness/videos/eod-empire-of-darknesssamstag-13062026-matrix-bochumeintritt-10-ohne-mindestverz/1019653953925705/",
+    "source_url": "https://www.facebook.com/eodempireofdarkness/videos/eod-empire-of-darknesssamstag-13062026-matrix-bochumeintritt-10-ohne-mindestverz/1019653953925705/",
+    "date_text": "13.06.2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.facebook.com/eodempireofdarkness/videos/eod-empire-of-darknesssamstag-13062026-matrix-bochumeintritt-10-ohne-mindestverz/1019653953925705/"
+    ],
+    "discovered_at": "2026-09-14T16:42:35.941218+00:00",
+    "search_query": "dark electro futurepop industrial events 2026 Europe",
+    "search_snippet": "Dark Electronic | Industrial |. Playing the array of dark electronic rave music from industrial EBM to hard Schranz Techno.",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Empire+of+Darkness+SAMSTAG+13.06.2026+%7C+Matrix+Bochum+...%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Empire+of+Darkness+SAMSTAG+13.06.2026+%7C+Matrix+Bochum+...%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-78531ee3988688",
+    "record_type": "event",
+    "name": "Amphi Festival 2026 - 25/07/2026 (2 days) - Köln",
+    "city": "Köln",
+    "country_name": "Europa",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [],
+    "szenerelevanz": [],
+    "szenerelevanz_labels": [],
+    "url": "https://en.concerts-metal.com/concert_-_Amphi_Festival_2026-222337.html",
+    "source_url": "https://en.concerts-metal.com/concert_-_Amphi_Festival_2026-222337.html",
+    "date_text": "25/07/2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt"
+    ],
+    "auto_sources": [
+      "https://en.concerts-metal.com/concert_-_Amphi_Festival_2026-222337.html"
+    ],
+    "discovered_at": "2026-09-14T16:42:35.941218+00:00",
+    "search_query": "dark electro futurepop industrial events 2026 Europe",
+    "search_snippet": "Amphi Festival 2026. Saturday 25 July > Sunday 26 July 2026. Festival links : Website - Facebook · Tanzbrunnen Rheinparkweg 1, 50679 Köln",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Amphi+Festival+2026+-+25%2F07%2F2026+%282+days%29+-+K%C3%B6ln%2C+K%C3%B6ln%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Amphi+Festival+2026+-+25%2F07%2F2026+%282+days%29+-+K%C3%B6ln%2C+K%C3%B6ln%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-1b75f99ec3ca18",
+    "record_type": "event",
+    "name": "GOTHIC Definition & Meaning",
+    "city": null,
+    "country_name": "Europa",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🖤 Gothic Core"
+    ],
+    "szenerelevanz": [
+      "gothic_core"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core"
+    ],
+    "url": "https://www.merriam-webster.com/dictionary/Gothic",
+    "source_url": "https://www.merriam-webster.com/dictionary/Gothic",
+    "date_text": "2 Jul 2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 3,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite nicht erreichbar",
+      "Datum erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.merriam-webster.com/dictionary/Gothic"
+    ],
+    "discovered_at": "2026-09-14T16:42:35.941218+00:00",
+    "search_query": "gothic darkwave events New Zealand 2026 festival",
+    "search_snippet": "The meaning of GOTHIC is of, relating to, or resembling the Goths, their civilization, or their language. How to use Gothic in a sentence.",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GOTHIC+Definition+%26+Meaning%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=GOTHIC+Definition+%26+Meaning%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-9802785cf1b6e5",
+    "record_type": "event",
+    "name": "The Gothic style – an introduction",
+    "city": "Paris",
+    "country_name": "Europa",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://www.vam.ac.uk/articles/the-gothic-style-an-introduction?srsltid=AfmBOoo1qo_TeHx09nghJOUyzKiJtiu_jueuppBH_Ba3P0cbznG0CMZ8",
+    "source_url": "https://www.vam.ac.uk/articles/the-gothic-style-an-introduction?srsltid=AfmBOoo1qo_TeHx09nghJOUyzKiJtiu_jueuppBH_Ba3P0cbznG0CMZ8",
+    "date_text": "17 Apr 2024",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.vam.ac.uk/articles/the-gothic-style-an-introduction?srsltid=AfmBOoo1qo_TeHx09nghJOUyzKiJtiu_jueuppBH_Ba3P0cbznG0CMZ8"
+    ],
+    "discovered_at": "2026-09-14T16:42:35.941218+00:00",
+    "search_query": "gothic darkwave events New Zealand 2026 festival",
+    "search_snippet": "The Gothic style first appeared in the early 12th century in northern France and rapidly spread beyond its origins in architecture to sculpture, ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Gothic+style+%E2%80%93+an+introduction%2C+Paris%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=The+Gothic+style+%E2%80%93+an+introduction%2C+Paris%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-cedd050144a092",
+    "record_type": "event",
+    "name": "THEN COMES SILENCE (Suecia/Postpunk) TOUR ...",
+    "city": null,
+    "country_name": "Europa",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "szenerelevanz": [
+      "postpunk_deathrock"
+    ],
+    "szenerelevanz_labels": [
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "url": "https://www.instagram.com/p/DNj45I4NU59/?hl=en",
+    "source_url": "https://www.instagram.com/p/DNj45I4NU59/?hl=en",
+    "date_text": "03 octubre 2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.instagram.com/p/DNj45I4NU59/?hl=en"
+    ],
+    "discovered_at": "2026-09-14T16:42:35.941218+00:00",
+    "search_query": "gothic darkwave events Latin America 2026 festival",
+    "search_snippet": "Teatro Roma, Santiago, Chile (San Diego 236, altura metro U. Chile) ⏰ Hora: 20:00 ++ Fecha: 03 octubre 2026 ULTIMOS TICKETS ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=THEN+COMES+SILENCE+%28Suecia%2FPostpunk%29+TOUR+...%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=THEN+COMES+SILENCE+%28Suecia%2FPostpunk%29+TOUR+...%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  }
+]
