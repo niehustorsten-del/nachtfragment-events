@@ -8401,53 +8401,6 @@
     "google_maps_status": "search_link"
   },
   {
-    "id": "event-elysium-melbourne",
-    "record_type": "event",
-    "name": "Elysium Nightclub",
-    "city": "Northcote, Melbourne",
-    "country": "Australia",
-    "country_name": "Australien",
-    "type": [
-      "event"
-    ],
-    "categories": [
-      "Gothic",
-      "Industrial",
-      "Darkwave",
-      "Dark Alternative",
-      "Post-Punk"
-    ],
-    "lat": -37.7699,
-    "lng": 145.0028,
-    "url": "https://www.elysiumclub.com.au/",
-    "description": "Monatliche Dark-Scene-Nacht in Melbourne; seit 2019.",
-    "verified": true,
-    "verified_date": "2026-09-13",
-    "audit_status": "green",
-    "audit_label": "🟢 aktuell bestätigt",
-    "szenerelevanz": [
-      "gothic_core",
-      "darkwave_wave",
-      "ebm_industrial"
-    ],
-    "szenerelevanz_labels": [
-      "🖤 Gothic Core",
-      "🌑 Darkwave / Wave",
-      "⚡ EBM / Industrial"
-    ],
-    "aktivitaet": "event_based",
-    "aktivitaet_label": "🟡 unregelmäßig / Event-basiert",
-    "veranstaltung": {
-      "regelmässig": true,
-      "frequenz": "monatlich",
-      "venue": "24 Moons Bar and Nightclub"
-    },
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=24+Moons+Bar+and+Nightclub%2C+Northcote%2C+Melbourne%2C+Australia",
-    "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=-37.7699,145.0028",
-    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=-37.7699,145.0028",
-    "google_maps_status": "search_link"
-  },
-  {
     "id": "event-elysium-adelaide",
     "record_type": "event",
     "name": "Elysium Goth Night Adelaide",
@@ -9245,5 +9198,68 @@
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=51.3397%2C12.3731",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=51.3397%2C12.3731",
     "google_maps_status": "search_link"
+  },
+  {
+    "id": "search-caa06ce8bd4524",
+    "record_type": "event",
+    "name": "SoCalGoth.com - Concerts & Events",
+    "city": "LOS ANGELES",
+    "country_name": "Europa",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://socalgoth.com/concerts.html",
+    "source_url": "https://socalgoth.com/concerts.html",
+    "date_text": "16. Nov. 2026",
+    "verified": true,
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 13,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://socalgoth.com/concerts.html"
+    ],
+    "discovered_at": "2026-09-14T17:17:22.750144+00:00",
+    "search_query": "gothic darkwave events USA 2026 festival",
+    "search_snippet": "Nov. 2026. DARKER WAVES FESTIVAL - Huntington Beach, CA / Morrissey, undisclosed address Orange County. Mon. 16. Nov. 2026. Gary Numan, The Fonda Theatre. Tue.",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SoCalGoth.com+-+Concerts+%26+Events%2C+LOS+ANGELES%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=SoCalGoth.com+-+Concerts+%26+Events%2C+LOS+ANGELES%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false,
+    "verified_date": "2026-09-14"
   }
 ]

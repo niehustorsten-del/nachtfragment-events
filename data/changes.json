@@ -1,1 +1,66 @@
-[]
+[
+  {
+    "timestamp": "2026-09-14T17:17:22.750144+00:00",
+    "type": "candidate_web_search",
+    "name": "THEN COMES SILENCE (Suecia/Postpunk) TOUR ...",
+    "city": "",
+    "source": "https://www.instagram.com/p/DNj45I4NU59/?hl=en",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-09-14T17:17:22.750144+00:00",
+    "type": "published_web_search",
+    "name": "SoCalGoth.com - Concerts & Events",
+    "city": "LOS ANGELES",
+    "source": "https://socalgoth.com/concerts.html",
+    "score": 13
+  },
+  {
+    "timestamp": "2026-09-14T17:17:22.750144+00:00",
+    "type": "candidate_web_search",
+    "name": "Amphi Festival 2027 Cologne: Termine, Tickets, Line up",
+    "city": "Cologne",
+    "source": "https://events.europa.tips/amphi-festival",
+    "score": 13
+  },
+  {
+    "timestamp": "2026-09-14T17:17:22.750144+00:00",
+    "type": "candidate_web_search",
+    "name": "Our next Announcement for Dark Malta Festival 2027 ...",
+    "city": "Malta",
+    "source": "https://www.facebook.com/darkmaltafestival/posts/our-next-announcement-for-dark-malta-festival-2027-comes-from-germany-ebm-band-t/1589919632578823/",
+    "score": 11
+  },
+  {
+    "timestamp": "2026-09-14T17:17:22.750144+00:00",
+    "type": "candidate_web_search",
+    "name": "EBM Festivals 2026/2027 | Termine & Tickets",
+    "city": "Leipzig",
+    "source": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "score": 13
+  },
+  {
+    "timestamp": "2026-09-14T17:17:22.750144+00:00",
+    "type": "source_error",
+    "source": "https://www.plage-noire.de/",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "timestamp": "2026-09-14T17:17:22.750144+00:00",
+    "type": "source_error",
+    "source": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
+    "timestamp": "2026-09-14T17:17:22.750144+00:00",
+    "type": "source_error",
+    "source": "https://www.festivalhopper.de/festivals/genre/gothic",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
+    "timestamp": "2026-09-14T17:17:22.750144+00:00",
+    "type": "source_error",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "error": "'NoneType' object is not subscriptable"
+  }
+]

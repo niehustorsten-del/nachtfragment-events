@@ -1,1 +1,215 @@
-[]
+[
+  {
+    "id": "search-e4d1e72c0bfb48",
+    "record_type": "event",
+    "name": "EBM Festivals 2026/2027 | Termine & Tickets",
+    "city": "Leipzig",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "source_url": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "date_text": "20.03.2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 13,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.festivalhopper.de/festivals/genre/ebm"
+    ],
+    "discovered_at": "2026-09-14T17:17:22.750144+00:00",
+    "search_query": "Gothic events festival 2026 Germany Darkwave EBM Industrial",
+    "search_snippet": "Wave Gotik Treffen. 14.-17.05.2027 in Leipzig. Musikrichtung: Gothic Rock, Electro, Metal, Dark Wave, Industrial, Folk, EBM, Dark Ambient, Postrock, ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=EBM+Festivals+2026%2F2027+%7C+Termine+%26+Tickets%2C+Leipzig%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=EBM+Festivals+2026%2F2027+%7C+Termine+%26+Tickets%2C+Leipzig%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-2acfa1afa55eef",
+    "record_type": "event",
+    "name": "Our next Announcement for Dark Malta Festival 2027 ...",
+    "city": "Malta",
+    "country_name": "Malta",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial"
+    ],
+    "szenerelevanz": [
+      "darkwave_wave",
+      "ebm_industrial"
+    ],
+    "szenerelevanz_labels": [
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial"
+    ],
+    "url": "https://www.facebook.com/darkmaltafestival/posts/our-next-announcement-for-dark-malta-festival-2027-comes-from-germany-ebm-band-t/1589919632578823/",
+    "source_url": "https://www.facebook.com/darkmaltafestival/posts/our-next-announcement-for-dark-malta-festival-2027-comes-from-germany-ebm-band-t/1589919632578823/",
+    "date_text": "17 April 2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 11,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.facebook.com/darkmaltafestival/posts/our-next-announcement-for-dark-malta-festival-2027-comes-from-germany-ebm-band-t/1589919632578823/"
+    ],
+    "discovered_at": "2026-09-14T17:17:22.750144+00:00",
+    "search_query": "Gothic Darkwave EBM events Europe 2027 festival",
+    "search_snippet": "EBM Band Tyske Ludder will rock the Dark Malta Festival stage on Saturday 17 April 2027 ... More Announcements Soon. No photo description ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Our+next+Announcement+for+Dark+Malta+Festival+2027+...%2C+Malta%2C+Malta",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Our+next+Announcement+for+Dark+Malta+Festival+2027+...%2C+Malta%2C+Malta",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-f480fde5f932dd",
+    "record_type": "event",
+    "name": "Amphi Festival 2027 Cologne: Termine, Tickets, Line up",
+    "city": "Cologne",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop"
+    ],
+    "url": "https://events.europa.tips/amphi-festival",
+    "source_url": "https://events.europa.tips/amphi-festival",
+    "date_text": "24.07.2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 13,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://events.europa.tips/amphi-festival"
+    ],
+    "discovered_at": "2026-09-14T17:17:22.750144+00:00",
+    "search_query": "Gothic Darkwave EBM events Europe 2027 festival",
+    "search_snippet": "Am 24. und 25. Juli 2027 stehen an beiden Tagen durchgehend Live Acts auf dem Programm, von etablierten Namen der Szene bis zu neuen Bands aus dem Bereich ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Amphi+Festival+2027+Cologne%3A+Termine%2C+Tickets%2C+Line+up%2C+Cologne%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Amphi+Festival+2027+Cologne%3A+Termine%2C+Tickets%2C+Line+up%2C+Cologne%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-cedd050144a092",
+    "record_type": "event",
+    "name": "THEN COMES SILENCE (Suecia/Postpunk) TOUR ...",
+    "city": null,
+    "country_name": "Europa",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "szenerelevanz": [
+      "postpunk_deathrock"
+    ],
+    "szenerelevanz_labels": [
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "url": "https://www.instagram.com/p/DNj45I4NU59/?hl=en",
+    "source_url": "https://www.instagram.com/p/DNj45I4NU59/?hl=en",
+    "date_text": "03 octubre 2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.instagram.com/p/DNj45I4NU59/?hl=en"
+    ],
+    "discovered_at": "2026-09-14T17:17:22.750144+00:00",
+    "search_query": "gothic darkwave events Latin America 2026 festival",
+    "search_snippet": "Teatro Roma, Santiago, Chile (San Diego 236, altura metro U. Chile) ⏰ Hora: 20:00 ++ Fecha: 03 octubre 2026 ULTIMOS TICKETS ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=THEN+COMES+SILENCE+%28Suecia%2FPostpunk%29+TOUR+...%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=THEN+COMES+SILENCE+%28Suecia%2FPostpunk%29+TOUR+...%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  }
+]
