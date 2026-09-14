@@ -1,0 +1,16 @@
+{
+  "queries": [
+    {"q":"Gothic events festival 2026 Germany Darkwave EBM Industrial","gl":"de","hl":"de"},
+    {"q":"Gothic events festival 2027 Germany Darkwave EBM Industrial","gl":"de","hl":"de"},
+    {"q":"Gothic Darkwave EBM events Europe 2026 festival","gl":"de","hl":"en"},
+    {"q":"Gothic Darkwave EBM events Europe 2027 festival","gl":"de","hl":"en"},
+    {"q":"darkwave post-punk deathrock events 2026 Europe","gl":"de","hl":"en"},
+    {"q":"dark electro futurepop industrial events 2026 Europe","gl":"de","hl":"en"},
+    {"q":"gothic darkwave events USA 2026 festival","gl":"us","hl":"en"},
+    {"q":"gothic darkwave events Canada 2026 festival","gl":"ca","hl":"en"},
+    {"q":"gothic darkwave events Australia 2026 festival","gl":"au","hl":"en"},
+    {"q":"gothic darkwave events New Zealand 2026 festival","gl":"nz","hl":"en"},
+    {"q":"gothic darkwave events Latin America 2026 festival","gl":"mx","hl":"en"},
+    {"q":"gothic darkwave events Asia 2026 festival","gl":"jp","hl":"en"}
+  ]
+}

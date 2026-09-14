@@ -1,0 +1,15 @@
+[
+  {"name":"Dark and Alternative World","url":"https://darkandalternativeworld.de/veranstaltungen/","kind":"html_calendar","priority":"high","country":"DE","keywords":["gothic","darkwave","wave","ebm","industrial","dark electro","futurepop","post-punk","deathrock","synthpop"]},
+  {"name":"Nocturna Events","url":"https://nocturna.events/events","kind":"html_calendar","priority":"high","country":"EU","keywords":["goth","gothic","darkwave","coldwave","ebm","industrial","dark electro","post-punk","synthpop"]},
+  {"name":"Depechemode.de Festivals","url":"https://www.depechemode.de/veranstaltungen/festivals/","kind":"html_calendar","priority":"medium","country":"DE","keywords":["dark wave","ebm","electropop","synthpop","industrial","gothic"]},
+  {"name":"Festivalhopper Gothic","url":"https://www.festivalhopper.de/festivals/genre/gothic","kind":"html_calendar","priority":"medium","country":"EU","keywords":["gothic","darkwave","ebm","industrial","post punk","dark rock"]},
+  {"name":"Festivalhopper EBM","url":"https://www.festivalhopper.de/festivals/genre/ebm","kind":"html_calendar","priority":"medium","country":"EU","keywords":["ebm","industrial","electro","darkwave","synthpop"]},
+  {"name":"Wave-Gotik-Treffen","url":"https://www.wave-gotik-treffen.de/","kind":"official","priority":"high","country":"DE","keywords":["festival","gothic","darkwave","ebm","industrial","post punk"]},
+  {"name":"M'era Luna","url":"https://meraluna.de/","kind":"official","priority":"high","country":"DE","keywords":["festival","gothic","darkwave","ebm","industrial","synthpop"]},
+  {"name":"Amphi Festival","url":"https://www.amphi-festival.de/","kind":"official","priority":"high","country":"DE","keywords":["festival","gothic","darkwave","ebm","industrial","electro"]},
+  {"name":"E-tropolis Festival","url":"https://www.etropolis-festival.de/","kind":"official","priority":"high","country":"DE","keywords":["festival","ebm","industrial","electro","synthpop"]},
+  {"name":"NCN Festival","url":"https://www.ncn-festival.de/","kind":"official","priority":"high","country":"DE","keywords":["festival","darkwave","gothic","post punk","industrial","electro"]},
+  {"name":"Plage Noire","url":"https://www.plage-noire.de/","kind":"official","priority":"high","country":"DE","keywords":["festival","gothic","wave","industrial","electropop"]},
+  {"name":"Castle Party","url":"https://castleparty.com/","kind":"official","priority":"high","country":"PL","keywords":["festival","gothic","darkwave","ebm","industrial","post punk"]},
+  {"name":"Dark Malta Festival","url":"https://darkmalta.com/","kind":"official","priority":"high","country":"MT","keywords":["festival","gothic","darkwave","ebm","industrial","post punk"]}
+]
