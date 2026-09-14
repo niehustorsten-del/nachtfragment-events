@@ -1,5 +1,85 @@
 [
   {
+    "timestamp": "2026-09-14T23:53:01.117300+00:00",
+    "type": "candidate_web_search",
+    "name": "THEN COMES SILENCE (Suecia/Postpunk) TOUR ...",
+    "city": "",
+    "source": "https://www.instagram.com/p/DNj45I4NU59/?hl=en",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-09-14T23:53:01.117300+00:00",
+    "type": "candidate_web_search",
+    "name": "Dimension Festival",
+    "city": "Auckland",
+    "source": "https://www.dimension.nz/",
+    "score": 9
+  },
+  {
+    "timestamp": "2026-09-14T23:53:01.117300+00:00",
+    "type": "candidate_web_search",
+    "name": "Amphi Festival 2027 Cologne: Termine, Tickets, Line up",
+    "city": "Cologne",
+    "source": "https://events.europa.tips/amphi-festival",
+    "score": 13
+  },
+  {
+    "timestamp": "2026-09-14T23:53:01.117300+00:00",
+    "type": "candidate_web_search",
+    "name": "Our next announcement comes from Italy. Darkwave band ...",
+    "city": "Malta",
+    "source": "https://www.facebook.com/darkmaltafestival/posts/our-next-announcement-comes-from-italy-darkwave-band-date-at-midnight-will-rock-/1586012706302849/",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-09-14T23:53:01.117300+00:00",
+    "type": "candidate_web_search",
+    "name": "Darkways - events / concerts / festivals",
+    "city": "",
+    "source": "https://en.concerts-metal.com/g-72573__Darkways.html",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-09-14T23:53:01.117300+00:00",
+    "type": "candidate_web_search",
+    "name": "DARK EAST FESTIVAL 2027 „The Forest AWAKENS\" 27.& ...",
+    "city": "",
+    "source": "https://www.facebook.com/groups/612463968877058/posts/27168035019559925/",
+    "score": 11
+  },
+  {
+    "timestamp": "2026-09-14T23:53:01.117300+00:00",
+    "type": "candidate_web_search",
+    "name": "EBM Festivals 2026/2027 | Termine & Tickets",
+    "city": "Leipzig",
+    "source": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "score": 13
+  },
+  {
+    "timestamp": "2026-09-14T23:53:01.117300+00:00",
+    "type": "source_error",
+    "source": "https://www.plage-noire.de/",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "timestamp": "2026-09-14T23:53:01.117300+00:00",
+    "type": "source_error",
+    "source": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
+    "timestamp": "2026-09-14T23:53:01.117300+00:00",
+    "type": "source_error",
+    "source": "https://www.festivalhopper.de/festivals/genre/gothic",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
+    "timestamp": "2026-09-14T23:53:01.117300+00:00",
+    "type": "source_error",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
     "timestamp": "2026-09-14T23:43:35.318568+00:00",
     "type": "source_error",
     "source": "https://darkmalta.com/",
