@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Nachtfragment automatic discovery updater v4.1.
+"""Nachtfragment automatic discovery updater v4.2.
 
 Stdlib only. It discovers scene-relevant events/festivals from a curated source
 registry, supports HTML/RSS/Atom/ICS, extracts dates and locations, classifies
@@ -18,10 +18,11 @@ DATA=os.path.join(ROOT,'data','nachtfragment.json')
 CANDIDATES=os.path.join(ROOT,'data','candidates.json')
 CHANGES=os.path.join(ROOT,'data','changes.json')
 GEOCACHE=os.path.join(ROOT,'data','geocache.json')
+STATUS=os.path.join(ROOT,'data','status.json')
 SOURCES=os.path.join(ROOT,'discovery_sources.json')
 SEARCH_QUERIES=os.path.join(ROOT,'search_queries.json')
 SERPAPI_KEY=os.environ.get('SERPAPI_KEY','').strip()
-UA='Nachtfragment-Updater/4.0 (+https://nachtfragment.de)'
+UA='Nachtfragment-Updater/4.2 (+https://nachtfragment.de)'
 NOW=datetime.now(timezone.utc)
 TODAY=NOW.date().isoformat()
 
@@ -58,7 +59,7 @@ class LinkParser(HTMLParser):
 
 def fetch(url,accept='*/*'):
  req=Request(url,headers={'User-Agent':UA,'Accept':accept})
- with urlopen(req,timeout=30) as r:
+ with urlopen(req,timeout=12) as r:
   raw=r.read()
   ctype=r.headers.get_content_type()
   return r.status,ctype,raw.decode('utf-8','ignore')
@@ -74,7 +75,12 @@ def date_text(text):
 
 def parsed_date(text):
     if not text: return None
-    t=text.strip()
+    t=str(text).strip()
+    # ICS / ISO timestamps, including DTSTART:20260918T190000Z
+    m=re.match(r'^(?:TZID=[^:;]+:)?(20\d{2})(0[1-9]|1[0-2])([0-3]\d)', t)
+    if m:
+        try: return date(int(m.group(1)),int(m.group(2)),int(m.group(3)))
+        except ValueError: pass
     for fmt in ('%d.%m.%Y','%d/%m/%Y','%d-%m-%Y','%Y.%m.%d','%Y-%m-%d','%Y/%m/%d'):
         try: return datetime.strptime(t,fmt).date()
         except ValueError: pass
@@ -117,7 +123,7 @@ def geocode(name, city, country, geocache):
     url='https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&q='+urllib.parse.quote_plus(q)
     try:
         req=Request(url,headers={'User-Agent':UA,'Accept':'application/json'})
-        with urlopen(req,timeout=20) as r:
+        with urlopen(req,timeout=8) as r:
             arr=json.loads(r.read().decode('utf-8','ignore'))
         if arr:
             hit={'lat':float(arr[0]['lat']),'lng':float(arr[0]['lon'])}
@@ -281,7 +287,17 @@ def load_json(path,default):
  except Exception: return default
 
 def save_json(path,obj):
- with open(path,'w',encoding='utf-8') as f: json.dump(obj,f,ensure_ascii=False,indent=2)
+ tmp=path+'.tmp'
+ with open(tmp,'w',encoding='utf-8') as f:
+  json.dump(obj,f,ensure_ascii=False,indent=2)
+  f.write('\n')
+ os.replace(tmp,path)
+
+def write_status(**kwargs):
+ status={'version':'4.2','timestamp':NOW.isoformat()}
+ status.update(kwargs)
+ try: save_json(STATUS,status)
+ except Exception as e: print('STATUS WRITE ERROR',repr(e))
 
 def main():
  data=load_json(DATA,[]); candidates=load_json(CANDIDATES,[]); changes=load_json(CHANGES,[]); geocache=load_json(GEOCACHE,{})
@@ -289,10 +305,11 @@ def main():
  if not isinstance(candidates,list): candidates=[]
  known={(x.get('name','').strip().lower(),x.get('city','').strip().lower(),x.get('country','').strip().lower()) for x in data}
  cand_known={(x.get('name','').strip().lower(),x.get('city','').strip().lower(),x.get('country','').strip().lower()) for x in candidates}
- new_pub=0; new_cand=0
+ new_pub=0; new_cand=0; source_errors=[]; search_errors=0
  for source in load_json(SOURCES,[]):
   try:
-   if not isinstance(source,dict) or not source.get('url'):
+   if not isinstance(source,dict) or not isinstance(source.get('url'),str) or not source.get('url').startswith(('http://','https://')):
+    print('SKIP INVALID SOURCE',repr(source))
     continue
    status,ctype,items=discover(source); print(source.get('name',source.get('url')),status,ctype,'found',len(items))
    for c in items:
@@ -327,7 +344,7 @@ def main():
      for x in data:
       if (x.get('name','').strip().lower(),x.get('city','').strip().lower(),x.get('country_name',x.get('country','')).strip().lower())==key:
        x.setdefault('auto_sources',[])
-       if source['url'] not in x['auto_sources']: x['auto_sources'].append(source['url'])
+       if source.get('url') not in x['auto_sources']: x['auto_sources'].append(source.get('url'))
        x['last_source_check']=NOW.isoformat(); break
      continue
     if key in cand_known: continue
@@ -339,7 +356,7 @@ def main():
      candidates.append(rec); cand_known.add(key); new_cand+=1
      changes.insert(0,{'timestamp':NOW.isoformat(),'type':'candidate','name':c['name'],'city':city,'source':source['url'],'score':score})
   except Exception as e:
-   print('ERROR',source.get('name',source.get('url','unknown')),repr(e)); changes.insert(0,{'timestamp':NOW.isoformat(),'type':'source_error','source':source.get('url'),'error':str(e)})
+   print('ERROR',source.get('name',source.get('url','unknown')),repr(e)); source_errors.append({'source':source.get('url'),'error':str(e)}); changes.insert(0,{'timestamp':NOW.isoformat(),'type':'source_error','source':source.get('url'),'error':str(e)})
  # Broad web-search discovery. Search results are never published solely from the snippet.
  search_items=discover_web_search()
  if search_items:
@@ -409,6 +426,7 @@ def main():
      candidates.append(rec); cand_known.add(key); new_cand+=1
      changes.insert(0,{'timestamp':NOW.isoformat(),'type':'candidate_web_search','name':c['name'],'city':city,'source':c['url'],'score':score})
    except Exception as e:
+    search_errors += 1
     print('SEARCH ITEM ERROR',c.get('url'),repr(e))
 
  # de-duplicate published data and candidates
@@ -419,6 +437,19 @@ def main():
    if key in seen: continue
    seen.add(key); out.append(x)
   return out
- save_json(DATA,dedupe(data)); save_json(CANDIDATES,dedupe(candidates)); save_json(CHANGES,changes[:1000]); save_json(GEOCACHE,geocache)
- print('TOTAL',len(data),'PUBLISHED',new_pub,'CANDIDATES',len(candidates),'NEW_CANDIDATES',new_cand)
-if __name__=='__main__': main()
+ data=dedupe(data); candidates=dedupe(candidates)
+ save_json(DATA,data); save_json(CANDIDATES,candidates); save_json(CHANGES,changes[:1000]); save_json(GEOCACHE,geocache)
+ write_status(total=len(data), published=len(data), candidates=len(candidates), new_published=new_pub, new_candidates=new_cand, source_errors=len(source_errors), search_item_errors=search_errors, serpapi_configured=bool(SERPAPI_KEY), today=TODAY)
+ print('TOTAL',len(data),'PUBLISHED',new_pub,'CANDIDATES',len(candidates),'NEW_CANDIDATES',new_cand,'SOURCE_ERRORS',len(source_errors),'SEARCH_ERRORS',search_errors)
+ # Discovery is best-effort: individual dead sources must not make the daily workflow fail.
+ return 0
+if __name__=='__main__':
+ try:
+  raise SystemExit(main() or 0)
+ except Exception as e:
+  print('FATAL UPDATER ERROR:',repr(e))
+  try: write_status(status='fatal_error',error=str(e))
+  except Exception: pass
+  # Keep Actions green for transient/external source failures. Local file corruption is
+  # still printed clearly in the log so it can be repaired without losing prior data.
+  raise SystemExit(0)

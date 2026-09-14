@@ -49,3 +49,8 @@ Der API-Key gehört ausschließlich in GitHub Secrets und niemals in `search_que
 ## Zeitplan
 
 GitHub Actions startet den Workflow täglich um 04:17 UTC. Der Workflow kann außerdem über **Actions → Nachtfragment Auto Update → Run workflow** manuell gestartet werden.
+
+
+## V4.2 – strenge Websuche
+
+Die Websuche ist bewusst konservativ: alte Termine, redaktionelle Artikel, Wörterbuch-/Lexikonseiten, Reviews, Magazine und Fashion-Seiten werden nicht veröffentlicht. Ein Webtreffer wird nur veröffentlicht, wenn die Originalseite erreichbar ist und ein zukünftiges/aktuelles Datum, ein konkreter Ort, Szene-Bezug und eindeutige Veranstaltungsmerkmale erkannt werden. Unsichere Treffer bleiben in `data/candidates.json`.
