@@ -1,1 +1,104 @@
-[]
+[
+  {
+    "id": "search-e4d1e72c0bfb48",
+    "record_type": "event",
+    "name": "EBM Festivals 2026/2027 | Termine & Tickets",
+    "city": "Leipzig",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "source_url": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "date_text": "20.03.2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 13,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.festivalhopper.de/festivals/genre/ebm"
+    ],
+    "discovered_at": "2026-09-15T14:22:07.302032+00:00",
+    "search_query": "Gothic Darkwave EBM events Europe 2026 festival",
+    "search_snippet": "Wave Gotik Treffen. 14.-17.05.2027 in Leipzig. Musikrichtung: Gothic Rock, Electro, Metal, Dark Wave, Industrial, Folk, EBM, Dark Ambient, Postrock, ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=EBM+Festivals+2026%2F2027+%7C+Termine+%26+Tickets%2C+Leipzig%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=EBM+Festivals+2026%2F2027+%7C+Termine+%26+Tickets%2C+Leipzig%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-66177a7c89c796",
+    "record_type": "event",
+    "name": "Dimension Festival",
+    "city": "Auckland",
+    "country_name": "Malta",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [],
+    "szenerelevanz": [],
+    "szenerelevanz_labels": [],
+    "url": "https://www.dimension.nz/",
+    "source_url": "https://www.dimension.nz/",
+    "date_text": "08 FEB 2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt"
+    ],
+    "auto_sources": [
+      "https://www.dimension.nz/"
+    ],
+    "discovered_at": "2026-09-15T14:22:07.302032+00:00",
+    "search_query": "gothic darkwave events New Zealand 2026 festival",
+    "search_snippet": "05 - 08 FEB 2027. New Zealand's boutique psychedelic festival. Four days of music, art and community in the pristine wilderness of Northland.",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dimension+Festival%2C+Auckland%2C+Malta",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dimension+Festival%2C+Auckland%2C+Malta",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  }
+]
