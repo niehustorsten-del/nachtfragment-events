@@ -1,35 +1,59 @@
-name: Nachtfragment Auto Update
+name: Nachtfragment Auto Update V4.3
 
 on:
   schedule:
-    - cron: '17 4 * * *'
+    - cron: "17 4 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: nachtfragment-auto-update
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 10
+    env:
+      SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
     steps:
-      - name: Repository auschecken
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Python einrichten
-        uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          fetch-depth: 0
+          persist-credentials: true
 
-      - name: Nachtfragment Auto Discovery V4
-        env:
-          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+      - name: Validate Python and JSON structure
+        run: |
+          python3 --version
+          python3 -m py_compile updater.py
+          python3 - <<'PY'
+          import json, pathlib
+          for p in [
+              pathlib.Path("data/nachtfragment.json"),
+              pathlib.Path("data/candidates.json"),
+              pathlib.Path("data/changes.json"),
+              pathlib.Path("data/geocache.json"),
+              pathlib.Path("discovery_sources.json"),
+              pathlib.Path("search_queries.json")
+          ]:
+              with p.open(encoding="utf-8") as f: json.load(f)
+              print("OK", p)
+          PY
+
+      - name: Update Nachtfragment database
         run: python3 updater.py
 
-      - name: Änderungen speichern
+      - name: Commit updated data
         run: |
           git config user.name "Nachtfragment Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/nachtfragment.json data/candidates.json data/changes.json data/geocache.json
-          git diff --cached --quiet || git commit -m "Auto-update Nachtfragment events"
-          git push
+          git add data/nachtfragment.json data/candidates.json data/changes.json data/geocache.json data/status.json
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "Auto-discover and quality-check Nachtfragment events and festivals"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
