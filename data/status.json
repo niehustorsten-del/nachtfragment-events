@@ -1,7 +1,18 @@
 {
   "version": "4.3",
-  "quality_checked": 27,
+  "timestamp": "2026-09-15T14:26:54.005675+00:00",
+  "total": 236,
+  "published": 236,
+  "events": 28,
+  "candidates": 4,
+  "new_published": 1,
+  "new_candidates": 3,
+  "source_errors": 4,
+  "search_item_errors": 0,
+  "quality_checked": 28,
   "quality_green": 27,
-  "quality_yellow": 0,
-  "quality_red": 0
+  "quality_yellow": 1,
+  "quality_red": 0,
+  "serpapi_configured": true,
+  "today": "2026-09-15"
 }

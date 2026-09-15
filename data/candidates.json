@@ -100,5 +100,122 @@
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dimension+Festival%2C+Auckland%2C+Malta",
     "google_maps_status": "search_link",
     "geocoded": false
+  },
+  {
+    "id": "search-3bd4c1375762bc",
+    "record_type": "event",
+    "name": "DARK EAST FESTIVAL 2027 „The Forest AWAKENS\" 27.& ...",
+    "city": null,
+    "country_name": "Europa",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "postpunk_deathrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "url": "https://www.facebook.com/groups/612463968877058/posts/27168035019559925/",
+    "source_url": "https://www.facebook.com/groups/612463968877058/posts/27168035019559925/",
+    "date_text": "27. März 2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 11,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.facebook.com/groups/612463968877058/posts/27168035019559925/"
+    ],
+    "discovered_at": "2026-09-15T14:26:54.005675+00:00",
+    "search_query": "Gothic events festival 2027 Germany Darkwave EBM Industrial",
+    "search_snippet": "März 2027 East Club •Bischofswerda 27. März 2027 Dark Wave • Gothic • Post-Punk 28. März 2027 Electro • EBM • Industrial TICKETS Sichert ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=DARK+EAST+FESTIVAL+2027+%E2%80%9EThe+Forest+AWAKENS%22+27.%26+...%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=DARK+EAST+FESTIVAL+2027+%E2%80%9EThe+Forest+AWAKENS%22+27.%26+...%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-d827a32cb63273",
+    "record_type": "event",
+    "name": "EBM Festivals 2026/2027 | Termine & Tickets",
+    "city": "Hildesheim",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "source_url": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "date_text": "20.03.2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 13,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.festivalhopper.de/festivals/genre/ebm"
+    ],
+    "discovered_at": "2026-09-15T14:26:54.005675+00:00",
+    "search_query": "Gothic events festival 2027 Germany Darkwave EBM Industrial",
+    "search_snippet": "Mera Luna Festival. 07.-08.08.2027 in Hildesheim. Musikrichtung: Gothic Rock, EBM, Darkwave, Industrial, Metal, Electropop, Dark Rock, Mittelalter Rock, Folk ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=EBM+Festivals+2026%2F2027+%7C+Termine+%26+Tickets%2C+Hildesheim%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=EBM+Festivals+2026%2F2027+%7C+Termine+%26+Tickets%2C+Hildesheim%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
   }
 ]
