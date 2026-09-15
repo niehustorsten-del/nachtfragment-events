@@ -7865,7 +7865,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Markthalle+Hamburg%2C+Hamburg%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=53.5517,9.9806",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=53.5517,9.9806",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "event-dark-transmission-berlin",
@@ -7914,7 +7918,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SilverWings+Club%2C+Berlin%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=52.474,13.386",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=52.474,13.386",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "event-dark-monday-berlin",
@@ -7962,7 +7970,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dunckerclub+Berlin%2C+Berlin%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=52.548,13.414",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=52.548,13.414",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "event-daemonenball-berlin",
@@ -8008,7 +8020,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Der+Wei%C3%9Fe+Hase%2C+Berlin%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=52.504,13.455",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=52.504,13.455",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "event-clash-of-subcultures-dresden",
@@ -8057,7 +8073,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GAG18%2C+Dresden%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=51.042,13.733",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=51.042,13.733",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "event-abby-party-messkirch",
@@ -8105,7 +8125,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Abby+Me%C3%9Fkirch%2C+Me%C3%9Fkirch%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=47.994,9.113",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=47.994,9.113",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "event-reptile-house-ulm",
@@ -8152,7 +8176,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=CAT+Ulm%2C+Ulm%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=48.416,9.994",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=48.416,9.994",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "event-nachttanz-essen",
@@ -8203,7 +8231,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Zeche+Carl%2C+Essen%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=51.493,7.009",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=51.493,7.009",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "event-wave-goth-thursday-munich",
@@ -8249,7 +8281,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tumult+M%C3%BCnchen%2C+M%C3%BCnchen%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=48.15,11.574",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=48.15,11.574",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "event-duesterdisco-oberhausen",
@@ -8300,7 +8336,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Zentrum+Altenberg%2C+Oberhausen%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=51.47517,6.84724",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=51.47517,6.84724",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "event-schwarzer-freitag-erfurt",
@@ -8346,7 +8386,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Club+From+Hell+Erfurt%2C+Erfurt%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=50.985,10.97",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=50.985,10.97",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "event-our-darkness-stuttgart",
@@ -8398,7 +8442,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=LKA+Longhorn%2C+Stuttgart%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=48.76728,9.25177",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=48.76728,9.25177",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "event-elysium-adelaide",
@@ -8444,7 +8492,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=High+Spirits+Bar%2C+Adelaide%2C+Australia",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=-34.9285,138.6007",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=-34.9285,138.6007",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "festival-wave-gotik-treffen",
@@ -8501,7 +8553,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Wave-Gotik-Treffen%2C+Leipzig%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=51.3127%2C12.4147",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=51.3127%2C12.4147",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "festival-m-era-luna-festival",
@@ -8558,7 +8614,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=M%27era+Luna+Festival%2C+Hildesheim%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=52.1814%2C9.9467",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=52.1814%2C9.9467",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "festival-amphi-festival",
@@ -8615,7 +8675,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Amphi+Festival%2C+K%C3%B6ln%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=50.9603%2C6.9725",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=50.9603%2C6.9725",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "festival-e-tropolis-festival",
@@ -8663,7 +8727,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=E-tropolis+Festival%2C+Oberhausen%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=51.4787%2C6.8513",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=51.4787%2C6.8513",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "festival-ncn-festival---nocturnal-culture-night",
@@ -8720,7 +8788,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=NCN+Festival+%2F+Nocturnal+Culture+Night%2C+Deutzen%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=51.1077%2C12.5719",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=51.1077%2C12.5719",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "festival-plage-noire-festival",
@@ -8774,7 +8846,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Plage+Noire+Festival%2C+Weissenh%C3%A4user+Strand%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=54.028%2C10.7577",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=54.028%2C10.7577",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "festival-dark-storm-festival",
@@ -8825,7 +8901,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dark+Storm+Festival%2C+Chemnitz%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=50.8333%2C12.9167",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=50.8333%2C12.9167",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "festival-castrum-nigra",
@@ -8879,7 +8959,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Castrum+Nigra%2C+Brodenbach%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=50.2458%2C7.4455",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=50.2458%2C7.4455",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "festival-owls--n--bats-winterfest",
@@ -8933,7 +9017,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Owls+%E2%80%99n%E2%80%99+Bats+Winterfest%2C+Detmold%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=51.9327%2C8.8792",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=51.9327%2C8.8792",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "festival-hexentanz-festival",
@@ -8978,7 +9066,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Hexentanz+Festival%2C+Thallichtenberg%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=49.5555%2C7.355",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=49.5555%2C7.355",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "festival-castle-party-festival",
@@ -9035,7 +9127,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Castle+Party+Festival%2C+Bolk%C3%B3w%2C+Polen",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=50.9221%2C16.1022",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=50.9221%2C16.1022",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "festival-dark-malta-festival",
@@ -9089,7 +9185,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dark+Malta+Festival%2C+Mosta%2C+Malta",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=35.909%2C14.425",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=35.909%2C14.425",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "festival-stella-nomine-festival",
@@ -9143,7 +9243,11 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Stella+Nomine+Festival%2C+Torgau%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=51.561%2C12.996",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=51.561%2C12.996",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   },
   {
     "id": "festival-dark-east-festival",
@@ -9197,6 +9301,10 @@
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dark+East+Festival%2C+Leipzig%2C+Deutschland",
     "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=51.3397%2C12.3731",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=51.3397%2C12.3731",
-    "google_maps_status": "search_link"
+    "google_maps_status": "search_link",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-09-15T14:14:10.257562+00:00"
   }
 ]

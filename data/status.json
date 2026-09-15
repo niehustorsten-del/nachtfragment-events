@@ -1,6 +1,7 @@
 {
-  "version": "4.2",
-  "status": "not_run_yet",
-  "timestamp": null,
-  "note": "Will be replaced by GitHub Actions after first successful run."
+  "version": "4.3",
+  "quality_checked": 27,
+  "quality_green": 27,
+  "quality_yellow": 0,
+  "quality_red": 0
 }
