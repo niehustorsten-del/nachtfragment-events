@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Nachtfragment automatic discovery updater v4.2.
+"""Nachtfragment automatic discovery updater v4.3.
 
 Stdlib only. It discovers scene-relevant events/festivals from a curated source
 registry, supports HTML/RSS/Atom/ICS, extracts dates and locations, classifies
@@ -22,7 +22,7 @@ STATUS=os.path.join(ROOT,'data','status.json')
 SOURCES=os.path.join(ROOT,'discovery_sources.json')
 SEARCH_QUERIES=os.path.join(ROOT,'search_queries.json')
 SERPAPI_KEY=os.environ.get('SERPAPI_KEY','').strip()
-UA='Nachtfragment-Updater/4.2 (+https://nachtfragment.de)'
+UA='Nachtfragment-Updater/4.3 (+https://nachtfragment.de)'
 NOW=datetime.now(timezone.utc)
 TODAY=NOW.date().isoformat()
 
@@ -294,10 +294,57 @@ def save_json(path,obj):
  os.replace(tmp,path)
 
 def write_status(**kwargs):
- status={'version':'4.2','timestamp':NOW.isoformat()}
+ status={'version':'4.3','timestamp':NOW.isoformat()}
  status.update(kwargs)
  try: save_json(STATUS,status)
  except Exception as e: print('STATUS WRITE ERROR',repr(e))
+
+
+RECURRING_HINTS=re.compile(r'\b(monthly|monatlich|weekly|wöchentlich|jeden\s+\w+|every\s+\w+|regelmäßig|regelmaessig|jährlich|jaehrlich|annual|yearly|recurring|wiederkehrend)\b',re.I)
+EVENT_EVIDENCE=re.compile(r'\b(tickets?|admission|doors?|venue|line[- ]?up|lineup|event|veranstaltung|concert|konzert|party|festival|tour|live|dj|djs)\b',re.I)
+
+def audit_event_record(rec):
+    """Fast deterministic quality classification from stored evidence.
+    No network request here: the daily discovery pass already checks sources.
+    green = verified current/recurring event with a scene source;
+    yellow = plausible but missing a strong date/source signal;
+    red = stale/non-event data.
+    """
+    if rec.get('record_type') != 'event':
+        return None
+    name=str(rec.get('name') or '')
+    blob=' '.join([name,str(rec.get('description') or ''),str(rec.get('date_text') or ''),str(rec.get('url') or ''),str(rec.get('source_url') or '')])
+    tags=rec.get('szenerelevanz') or scene_tags(blob)
+    v=rec.get('veranstaltung') or {}
+    recurring=bool(v.get('regelmässig')) or bool(RECURRING_HINTS.search(blob))
+    future=is_future_or_current(rec.get('date_text')) or bool(v.get('naechster_termin'))
+    official=bool(rec.get('verified')) and bool(rec.get('url'))
+    eventish=bool(EVENT_EVIDENCE.search(blob)) or 'festival' in (name+' '+str(v)).lower() or recurring
+    if official and tags and eventish and (future or recurring):
+        return ('green','🟢 geprüft / relevante Veranstaltung','Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.')
+    if tags and eventish and (future or recurring):
+        return ('yellow','🟡 Prüfung empfohlen','Plausibler Szene-Termin, aber die gespeicherten Prüfsignale sind nicht vollständig.')
+    if not future and not recurring:
+        return ('red','🔴 Termin nicht aktuell','Kein aktueller bzw. wiederkehrender Terminindikator vorhanden.')
+    return ('yellow','🟡 Prüfung empfohlen','Quelle bzw. Veranstaltungsnachweis ist für die automatische Einstufung nicht eindeutig genug.')
+
+def audit_existing_events(data):
+    checked=green=yellow=red=0
+    for rec in data:
+        if rec.get('record_type')!='event':
+            continue
+        result=audit_event_record(rec)
+        if not result: continue
+        status,label,note=result
+        rec['quality_status']=status
+        rec['quality_label']=label
+        rec['quality_note']=note
+        rec['quality_checked_at']=NOW.isoformat()
+        checked+=1
+        if status=='green': green+=1
+        elif status=='yellow': yellow+=1
+        else: red+=1
+    return checked,green,yellow,red
 
 def main():
  data=load_json(DATA,[]); candidates=load_json(CANDIDATES,[]); changes=load_json(CHANGES,[]); geocache=load_json(GEOCACHE,{})
@@ -438,9 +485,10 @@ def main():
    seen.add(key); out.append(x)
   return out
  data=dedupe(data); candidates=dedupe(candidates)
+ checked,quality_green,quality_yellow,quality_red=audit_existing_events(data)
  save_json(DATA,data); save_json(CANDIDATES,candidates); save_json(CHANGES,changes[:1000]); save_json(GEOCACHE,geocache)
- write_status(total=len(data), published=len(data), candidates=len(candidates), new_published=new_pub, new_candidates=new_cand, source_errors=len(source_errors), search_item_errors=search_errors, serpapi_configured=bool(SERPAPI_KEY), today=TODAY)
- print('TOTAL',len(data),'PUBLISHED',new_pub,'CANDIDATES',len(candidates),'NEW_CANDIDATES',new_cand,'SOURCE_ERRORS',len(source_errors),'SEARCH_ERRORS',search_errors)
+ write_status(total=len(data), published=len(data), events=sum(1 for x in data if x.get('record_type')=='event'), candidates=len(candidates), new_published=new_pub, new_candidates=new_cand, source_errors=len(source_errors), search_item_errors=search_errors, quality_checked=checked, quality_green=quality_green, quality_yellow=quality_yellow, quality_red=quality_red, serpapi_configured=bool(SERPAPI_KEY), today=TODAY)
+ print('TOTAL',len(data),'EVENTS',sum(1 for x in data if x.get('record_type')=='event'),'PUBLISHED',new_pub,'CANDIDATES',len(candidates),'NEW_CANDIDATES',new_cand,'SOURCE_ERRORS',len(source_errors),'SEARCH_ERRORS',search_errors,'QUALITY',quality_green,quality_yellow,quality_red)
  # Discovery is best-effort: individual dead sources must not make the daily workflow fail.
  return 0
 if __name__=='__main__':
