@@ -9337,6 +9337,45 @@
     "quality_status": "yellow",
     "quality_label": "🟡 Prüfung empfohlen",
     "quality_note": "Quelle bzw. Veranstaltungsnachweis ist für die automatische Einstufung nicht eindeutig genug.",
-    "quality_checked_at": "2026-09-15T14:26:54.005675+00:00"
+    "quality_checked_at": "2026-09-15T14:26:54.005675+00:00"  },
+  {
+    "id": "cafe-libella",
+    "name": "Café LiBella",
+    "city": "Altenmarkt an der Alz",
+    "country": "Germany",
+    "country_name": "Deutschland",
+    "address": "Trostberger Str. 6, 83352 Altenmarkt an der Alz",
+    "lat": 48.0018,
+    "lng": 12.5347,
+    "type": ["club", "bar"],
+    "categories": [
+      "Darkwave",
+      "EBM",
+      "Industrial",
+      "Dark Electro",
+      "Alternative"
+    ],
+    "description": "Café LiBella mit regelmäßigem Dark-Szene-Programm. Club Bizarre: Dark Wave, Industrial, Dark Classics, Cold Wave und Future Pop. Schwarzlicht: Dark Wave, Dark Pop, EBM und Industrial.",
+    "url": "https://www.cafe-libella.de/",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "green",
+    "audit_label": "🟢 aktuell bestätigt",
+    "audit_note": "Offizielle Website mit aktuellem Dark-Szene-Programm.",
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club",
+    "scene_relevance": [
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "alternative_darkrock"
+    ]
+  }
+]
+    
   }
 ]
