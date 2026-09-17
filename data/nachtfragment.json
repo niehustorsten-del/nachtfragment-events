@@ -25,21 +25,12 @@
     "audit_label": "🟡 zu prüfen",
     "id": "venue-high-spirits-bar",
     "audit_note": "Keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "venue-high-spirits-bar",
-    "_nf_name": "High Spirits Bar",
-    "_nf_country": "Australien",
-    "_nf_city": "Adelaide",
-    "_nf_state": "",
-    "_nf_type": "bar",
-    "_nf_categories": [
-      "Gothic",
-      "Industrial",
-      "Darkwave",
-      "Alternative"
-    ],
-    "_nf_lat": -34.9285,
-    "_nf_lng": 138.6007,
-    "_nf_status": "yellow"
+    "place_type": "bar",
+    "is_physical": true,
+    "map_category": "bar",
+    "map_marker_type": "bar",
+    "map_visible": true,
+    "icon_category": "bar"
   },
   {
     "id": "beserk",
@@ -66,21 +57,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktiver australischer Alternative-/Gothic-Shop; aktueller Standort und aktuelle Geschäftszeiten auffindbar.",
-    "_nf_id": "beserk",
-    "_nf_name": "Beserk",
-    "_nf_country": "Australien",
-    "_nf_city": "Brisbane",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Punk",
-      "Dark Fashion"
-    ],
-    "_nf_lat": -27.4698,
-    "_nf_lng": 153.0251,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "blackmilk-clothing",
@@ -105,20 +87,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktive australische Marke; aktueller Standort und aktuelle Website vorhanden.",
-    "_nf_id": "blackmilk-clothing",
-    "_nf_name": "BlackMilk Clothing",
-    "_nf_country": "Australien",
-    "_nf_city": "Brisbane",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Alternative",
-      "Dark Fashion",
-      "Gothic"
-    ],
-    "_nf_lat": -27.4698,
-    "_nf_lng": 153.0251,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-pfr-lounge",
@@ -144,20 +118,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-pfr-lounge",
-    "_nf_name": "PFR Lounge",
-    "_nf_country": "Australien",
-    "_nf_city": "Brisbane",
-    "_nf_state": "",
-    "_nf_type": "bar",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Darkwave"
-    ],
-    "_nf_lat": -27.4698,
-    "_nf_lng": 153.0251,
-    "_nf_status": "green"
+    "place_type": "bar",
+    "is_physical": true,
+    "map_category": "bar",
+    "map_marker_type": "bar",
+    "map_visible": true,
+    "icon_category": "bar"
   },
   {
     "id": "venue-bergy-bandroom",
@@ -183,20 +149,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-bergy-bandroom",
-    "_nf_name": "Bergy Bandroom",
-    "_nf_country": "Australien",
-    "_nf_city": "Brunswick, Melbourne",
-    "_nf_state": "",
-    "_nf_type": "bar",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Darkwave"
-    ],
-    "_nf_lat": -37.7667,
-    "_nf_lng": 144.9614,
-    "_nf_status": "green"
+    "place_type": "bar",
+    "is_physical": true,
+    "map_category": "bar",
+    "map_marker_type": "bar",
+    "map_visible": true,
+    "icon_category": "bar"
   },
   {
     "name": "The Chippo Hotel",
@@ -226,22 +184,12 @@
     "audit_label": "🟡 zu prüfen",
     "id": "venue-the-chippo-hotel",
     "audit_note": "Keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "venue-the-chippo-hotel",
-    "_nf_name": "The Chippo Hotel",
-    "_nf_country": "Australien",
-    "_nf_city": "Chippendale, Sydney",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "Industrial",
-      "Post-Punk",
-      "Alternative"
-    ],
-    "_nf_lat": -33.886,
-    "_nf_lng": 151.199,
-    "_nf_status": "yellow"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "name": "Oxford Art Factory",
@@ -270,22 +218,12 @@
     "audit_label": "🟡 zu prüfen",
     "id": "venue-oxford-art-factory",
     "audit_note": "Keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "venue-oxford-art-factory",
-    "_nf_name": "Oxford Art Factory",
-    "_nf_country": "Australien",
-    "_nf_city": "Darlinghurst, Sydney",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Industrial",
-      "Darkwave",
-      "Alternative",
-      "Live Music"
-    ],
-    "_nf_lat": -33.877,
-    "_nf_lng": 151.2107,
-    "_nf_status": "yellow"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "dangerfield",
@@ -312,21 +250,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktive australische Alternative-Fashion-Kette; offizielle Website und aktuelle Store-Locations vorhanden.",
-    "_nf_id": "dangerfield",
-    "_nf_name": "Dangerfield",
-    "_nf_country": "Australien",
-    "_nf_city": "Melbourne",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Vintage",
-      "Punk"
-    ],
-    "_nf_lat": -37.8136,
-    "_nf_lng": 144.9631,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "name": "24 Moons",
@@ -354,21 +283,12 @@
     "audit_label": "🟡 zu prüfen",
     "id": "venue-24-moons",
     "audit_note": "Keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "venue-24-moons",
-    "_nf_name": "24 Moons",
-    "_nf_country": "Australien",
-    "_nf_city": "Northcote, Melbourne",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Industrial",
-      "Darkwave",
-      "Alternative"
-    ],
-    "_nf_lat": -37.7699,
-    "_nf_lng": 145.0028,
-    "_nf_status": "yellow"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "name": "Elysium Nightclub",
@@ -397,22 +317,12 @@
     "audit_label": "🟡 zu prüfen",
     "id": "venue-elysium-nightclub",
     "audit_note": "Keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "venue-elysium-nightclub",
-    "_nf_name": "Elysium Nightclub",
-    "_nf_country": "Australien",
-    "_nf_city": "Northcote, Melbourne",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Industrial",
-      "Darkwave",
-      "Dark Alternative",
-      "Post-Punk"
-    ],
-    "_nf_lat": -37.7699,
-    "_nf_lng": 145.0028,
-    "_nf_status": "yellow"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "name": "Club Pandora",
@@ -442,24 +352,12 @@
     "audit_label": "🟡 zu prüfen",
     "id": "venue-club-pandora",
     "audit_note": "Keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "venue-club-pandora",
-    "_nf_name": "Club Pandora",
-    "_nf_country": "Australien",
-    "_nf_city": "South Melbourne, Melbourne",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Post-Punk",
-      "Dark Electronic",
-      "Industrial",
-      "Alternative",
-      "Synth",
-      "Goth Rock"
-    ],
-    "_nf_lat": -37.835,
-    "_nf_lng": 144.962,
-    "_nf_status": "yellow"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "tragic-beautiful",
@@ -485,21 +383,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktiver australischer Gothic-/Alternative-Onlineshop; aktuelle Produkte und Kontaktangaben vorhanden.",
-    "_nf_id": "tragic-beautiful",
-    "_nf_name": "Tragic Beautiful",
-    "_nf_country": "Australien",
-    "_nf_city": "Sydney",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion",
-      "Punk"
-    ],
-    "_nf_lat": -33.8688,
-    "_nf_lng": 151.2093,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "house-of-bones",
@@ -527,22 +416,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "house-of-bones",
-    "_nf_name": "House of Bones",
-    "_nf_country": "Belgien",
-    "_nf_city": "Antwerp",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Punk",
-      "Metal",
-      "Rock",
-      "Emo"
-    ],
-    "_nf_lat": 51.2194,
-    "_nf_lng": 4.4025,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "gothic-shop",
@@ -566,19 +445,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "gothic-shop",
-    "_nf_name": "Gothic Shop",
-    "_nf_country": "Belgien",
-    "_nf_city": "Brussels",
-    "_nf_state": "",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative"
-    ],
-    "_nf_lat": 50.8503,
-    "_nf_lng": 4.3517,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "venue-de-leon-music-pub",
@@ -604,20 +476,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-de-leon-music-pub",
-    "_nf_name": "De Leon Music Pub",
-    "_nf_country": "Brasilien",
-    "_nf_city": "Goiania",
-    "_nf_state": "",
-    "_nf_type": "bar",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Darkwave"
-    ],
-    "_nf_lat": -16.6869,
-    "_nf_lng": -49.2648,
-    "_nf_status": "green"
+    "place_type": "bar",
+    "is_physical": true,
+    "map_category": "bar",
+    "map_marker_type": "bar",
+    "map_visible": true,
+    "icon_category": "bar"
   },
   {
     "id": "noir",
@@ -642,20 +506,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "noir",
-    "_nf_name": "Noir",
-    "_nf_country": "Bulgarien",
-    "_nf_city": "Sofia",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 42.6977,
-    "_nf_lng": 23.3219,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "noir-shop",
@@ -679,19 +535,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "noir-shop",
-    "_nf_name": "Noir Shop",
-    "_nf_country": "Bulgarien",
-    "_nf_city": "Sofia",
-    "_nf_state": "",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative"
-    ],
-    "_nf_lat": 42.6977,
-    "_nf_lng": 23.3219,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "venue-bal-le-duc",
@@ -718,20 +567,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-bal-le-duc",
-    "_nf_name": "Bal Le Duc",
-    "_nf_country": "Chile",
-    "_nf_city": "Santiago",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "Post-Punk"
-    ],
-    "_nf_lat": -33.4489,
-    "_nf_lng": -70.6693,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "darkstore",
@@ -762,20 +603,12 @@
     "address": null,
     "evidence_url": "https://www.darkstore.de/FAQ",
     "evidence_type": "current_web_evidence",
-    "_nf_id": "darkstore",
-    "_nf_name": "Darkstore",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Berlin",
-    "_nf_state": "Berlin",
-    "_nf_type": "shop",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 52.5112,
-    "_nf_lng": 13.4576,
-    "_nf_status": "green"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "de-dunckerclub",
@@ -805,22 +638,12 @@
     "state": "Berlin",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-dunckerclub",
-    "_nf_name": "Dunckerclub",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Berlin",
-    "_nf_state": "Berlin",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "Post-Punk",
-      "EBM",
-      "Industrial"
-    ],
-    "_nf_lat": 52.548,
-    "_nf_lng": 13.414,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "house-of-steam",
@@ -853,21 +676,12 @@
     "address": "Grünstraße 18, 12555 Berlin",
     "evidence_url": "https://houseofsteam.store/pages/contact",
     "evidence_type": "current_web_evidence",
-    "_nf_id": "house-of-steam",
-    "_nf_name": "House of Steam",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Berlin",
-    "_nf_state": "Berlin",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Neo-Victorian",
-      "Alternative"
-    ],
-    "_nf_lat": 52.52,
-    "_nf_lng": 13.405,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "mystica",
@@ -898,20 +712,12 @@
     "address": "Tauentzienstraße 9–12, 10789 Berlin",
     "evidence_url": "https://europa-center-berlin.de/europa-center-shops/mystica-gothic-store/",
     "evidence_type": "current_web_evidence",
-    "_nf_id": "mystica",
-    "_nf_name": "Mystica",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Berlin",
-    "_nf_state": "Berlin",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 52.5073,
-    "_nf_lng": 13.455,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "plaste-plus-elaste",
@@ -941,20 +747,12 @@
     "state": "Berlin",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "plaste-plus-elaste",
-    "_nf_name": "Plaste + Elaste",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Berlin",
-    "_nf_state": "Berlin",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 52.4885,
-    "_nf_lng": 13.4022,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "de-silverwings-club",
@@ -983,21 +781,12 @@
     "state": "Berlin",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-silverwings-club",
-    "_nf_name": "SilverWings Club",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Berlin",
-    "_nf_state": "Berlin",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "EBM",
-      "Industrial",
-      "Darkwave"
-    ],
-    "_nf_lat": 52.474,
-    "_nf_lng": 13.386,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "de-slaughterhouse-moabit",
@@ -1025,20 +814,12 @@
     "state": "Berlin",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-slaughterhouse-moabit",
-    "_nf_name": "Slaughterhouse Moabit",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Berlin",
-    "_nf_state": "Berlin",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Industrial"
-    ],
-    "_nf_lat": 52.53,
-    "_nf_lng": 13.368,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "undergroundfactory",
@@ -1069,20 +850,12 @@
     "address": "Herforder Straße 8–10, 33602 Bielefeld",
     "evidence_url": "https://www.spontis.de/gruftithek/gothic-shops/",
     "evidence_type": "current_web_evidence",
-    "_nf_id": "undergroundfactory",
-    "_nf_name": "Undergroundfactory",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Bielefeld",
-    "_nf_state": "Nordrhein-Westfalen",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 52.025,
-    "_nf_lng": 8.531,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "de-matrix-bochum",
@@ -1111,21 +884,12 @@
     "state": "Nordrhein-Westfalen",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-matrix-bochum",
-    "_nf_name": "Matrix Bochum",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Bochum",
-    "_nf_state": "Nordrhein-Westfalen",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "EBM",
-      "Industrial"
-    ],
-    "_nf_lat": 51.489,
-    "_nf_lng": 7.246,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "the-clash---gothic-shop",
@@ -1159,23 +923,12 @@
     "address": "Limbacher Straße 32, 09113 Chemnitz",
     "evidence_url": "https://www.gotik-shop.de/info/gothicshop.html",
     "evidence_type": "current_web_evidence",
-    "_nf_id": "the-clash---gothic-shop",
-    "_nf_name": "The Clash / Gothic-Shop",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Chemnitz",
-    "_nf_state": "Sachsen",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Punk",
-      "Rockabilly",
-      "Steampunk",
-      "Medieval"
-    ],
-    "_nf_lat": 50.8278,
-    "_nf_lng": 12.9214,
-    "_nf_status": "green"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "punkravestore",
@@ -1205,20 +958,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "punkravestore",
-    "_nf_name": "Punkravestore",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Dettenheim",
-    "_nf_state": "",
-    "_nf_type": "shop",
-    "_nf_categories": [
-      "Punk",
-      "Gothic",
-      "Alternative"
-    ],
-    "_nf_lat": 49.1667,
-    "_nf_lng": 8.415,
-    "_nf_status": "green"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "emp",
@@ -1250,20 +995,12 @@
     "address": "Potgasse 4, 44137 Dortmund",
     "evidence_url": "https://www.emp.de/store-dortmund/de_dortmund.html",
     "evidence_type": "current_web_evidence",
-    "_nf_id": "emp",
-    "_nf_name": "EMP",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Dortmund",
-    "_nf_state": "Nordrhein-Westfalen",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 51.5136,
-    "_nf_lng": 7.4653,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "abaddon-mystic-store",
@@ -1296,21 +1033,12 @@
     "address": null,
     "evidence_url": "https://www.abaddon-mysticstore.de/kontakt",
     "evidence_type": "current_web_evidence",
-    "_nf_id": "abaddon-mystic-store",
-    "_nf_name": "Abaddon Mystic Store",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Dresden",
-    "_nf_state": "Sachsen",
-    "_nf_type": "shop",
-    "_nf_categories": [
-      "Gothic",
-      "Metal",
-      "Alternative",
-      "Occult"
-    ],
-    "_nf_lat": 51.0504,
-    "_nf_lng": 13.7373,
-    "_nf_status": "green"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "de-bärenzwinger",
@@ -1339,21 +1067,12 @@
     "state": "Sachsen",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-bärenzwinger",
-    "_nf_name": "Bärenzwinger",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Dresden",
-    "_nf_state": "Sachsen",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "80s",
-      "Indie"
-    ],
-    "_nf_lat": 51.049,
-    "_nf_lng": 13.738,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "de-gag18",
@@ -1382,21 +1101,12 @@
     "state": "Sachsen",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-gag18",
-    "_nf_name": "GAG18",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Dresden",
-    "_nf_state": "Sachsen",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "80s",
-      "EBM",
-      "Gothic",
-      "Indie"
-    ],
-    "_nf_lat": 51.033,
-    "_nf_lng": 13.733,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "de-strasse-e",
@@ -1424,20 +1134,12 @@
     "state": "Sachsen",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-strasse-e",
-    "_nf_name": "Strasse E",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Dresden",
-    "_nf_state": "Sachsen",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "Alternative"
-    ],
-    "_nf_lat": 51.088,
-    "_nf_lng": 13.739,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "de-club-from-hell",
@@ -1467,22 +1169,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-club-from-hell",
-    "_nf_name": "Club From Hell",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Erfurt",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "EBM",
-      "Industrial",
-      "Dark Electro"
-    ],
-    "_nf_lat": 50.985,
-    "_nf_lng": 10.97,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "dark-ages",
@@ -1514,21 +1206,12 @@
     "state": "Nordrhein-Westfalen",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "dark-ages",
-    "_nf_name": "Dark Ages",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Essen",
-    "_nf_state": "Nordrhein-Westfalen",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Occult",
-      "Alternative"
-    ],
-    "_nf_lat": 51.4556,
-    "_nf_lng": 7.0116,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "de-zeche-carl",
@@ -1559,23 +1242,12 @@
     "state": "Nordrhein-Westfalen",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-zeche-carl",
-    "_nf_name": "Zeche Carl",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Essen",
-    "_nf_state": "Nordrhein-Westfalen",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "EBM",
-      "Industrial",
-      "Futurepop",
-      "Wave",
-      "Post-Punk"
-    ],
-    "_nf_lat": 51.493,
-    "_nf_lng": 7.009,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "my-black-style",
@@ -1606,20 +1278,12 @@
     "address": "Hildastraße 22, 76275 Ettlingen",
     "evidence_url": "https://www.myblackstyle.de/",
     "evidence_type": "current_web_evidence",
-    "_nf_id": "my-black-style",
-    "_nf_name": "My Black Style",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Ettlingen",
-    "_nf_state": "Baden-Württemberg",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 48.943,
-    "_nf_lng": 8.404,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "sündige-mode",
@@ -1650,20 +1314,12 @@
     "address": "Töngesgasse 7, 60311 Frankfurt am Main",
     "evidence_url": "https://www.suendige-mode.de/",
     "evidence_type": "current_web_evidence",
-    "_nf_id": "sündige-mode",
-    "_nf_name": "Sündige Mode",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Frankfurt am Main",
-    "_nf_state": "Hessen",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 50.111,
-    "_nf_lng": 8.686,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "leo-store",
@@ -1693,20 +1349,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "leo-store",
-    "_nf_name": "Leo Store",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Freiburg im Breisgau",
-    "_nf_state": "",
-    "_nf_type": "shop",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 47.995,
-    "_nf_lng": 7.852,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "andersartig",
@@ -1736,20 +1384,12 @@
     "state": null,
     "address": null,
     "location_status": "online_only_no_physical_city_claim",
-    "_nf_id": "andersartig",
-    "_nf_name": "Andersartig",
-    "_nf_country": "Deutschland",
-    "_nf_city": "",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": null,
-    "_nf_lng": null,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": false,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": false,
+    "icon_category": "venue"
   },
   {
     "id": "bizarre",
@@ -1780,20 +1420,12 @@
     "state": null,
     "address": null,
     "location_status": "online_only_no_physical_city_claim",
-    "_nf_id": "bizarre",
-    "_nf_name": "Bizarre",
-    "_nf_country": "Deutschland",
-    "_nf_city": "",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Fetish",
-      "Alternative"
-    ],
-    "_nf_lat": null,
-    "_nf_lng": null,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": false,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": false,
+    "icon_category": "venue"
   },
   {
     "id": "dark-elegance",
@@ -1824,21 +1456,12 @@
     "state": null,
     "address": null,
     "location_status": "online_only_no_physical_city_claim",
-    "_nf_id": "dark-elegance",
-    "_nf_name": "DARK ELEGANCE",
-    "_nf_country": "Deutschland",
-    "_nf_city": "",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion",
-      "Occult"
-    ],
-    "_nf_lat": null,
-    "_nf_lng": null,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": false,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": false,
+    "icon_category": "venue"
   },
   {
     "id": "full-moon-store",
@@ -1867,19 +1490,12 @@
     "state": null,
     "address": null,
     "location_status": "online_only_no_physical_city_claim",
-    "_nf_id": "full-moon-store",
-    "_nf_name": "Full Moon Store",
-    "_nf_country": "Deutschland",
-    "_nf_city": "",
-    "_nf_state": "",
-    "_nf_type": "shop",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative"
-    ],
-    "_nf_lat": null,
-    "_nf_lng": null,
-    "_nf_status": "yellow"
+    "place_type": "online_shop",
+    "is_physical": false,
+    "map_category": "online_shop",
+    "map_marker_type": "online_shop",
+    "map_visible": false,
+    "icon_category": "online_shop"
   },
   {
     "id": "gothic-zone",
@@ -1908,19 +1524,12 @@
     "state": null,
     "address": null,
     "location_status": "online_only_no_physical_city_claim",
-    "_nf_id": "gothic-zone",
-    "_nf_name": "Gothic Zone",
-    "_nf_country": "Deutschland",
-    "_nf_city": "",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion"
-    ],
-    "_nf_lat": null,
-    "_nf_lng": null,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": false,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": false,
+    "icon_category": "venue"
   },
   {
     "id": "the-rock-shop",
@@ -1950,20 +1559,12 @@
     "state": null,
     "address": null,
     "location_status": "online_only_no_physical_city_claim",
-    "_nf_id": "the-rock-shop",
-    "_nf_name": "The Rock Shop",
-    "_nf_country": "Deutschland",
-    "_nf_city": "",
-    "_nf_state": "",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Rock",
-      "Metal",
-      "Gothic"
-    ],
-    "_nf_lat": null,
-    "_nf_lng": null,
-    "_nf_status": "yellow"
+    "place_type": "online_shop",
+    "is_physical": false,
+    "map_category": "online_shop",
+    "map_marker_type": "online_shop",
+    "map_visible": false,
+    "icon_category": "online_shop"
   },
   {
     "id": "de-rasthaus-b9",
@@ -1993,22 +1594,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-rasthaus-b9",
-    "_nf_name": "Rasthaus B9",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Gummersbach",
-    "_nf_state": "",
-    "_nf_type": "bar",
-    "_nf_categories": [
-      "EBM",
-      "Gothic",
-      "Darkwave",
-      "Industrial",
-      "Dark Rock"
-    ],
-    "_nf_lat": 51.026,
-    "_nf_lng": 7.565,
-    "_nf_status": "green"
+    "place_type": "bar",
+    "is_physical": true,
+    "map_category": "bar",
+    "map_marker_type": "bar",
+    "map_visible": true,
+    "icon_category": "bar"
   },
   {
     "id": "dark-desires-and-ihr-rosengarten",
@@ -2038,20 +1629,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "dark-desires-and-ihr-rosengarten",
-    "_nf_name": "Dark Desires & Ihr Rosengarten",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Görlitz",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 51.153,
-    "_nf_lng": 14.988,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "de-catonium",
@@ -2081,22 +1664,12 @@
     "state": "Hamburg",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-catonium",
-    "_nf_name": "Catonium",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Hamburg",
-    "_nf_state": "Hamburg",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "EBM",
-      "Dark Electro",
-      "Industrial",
-      "Synthpop",
-      "Gothic"
-    ],
-    "_nf_lat": 53.549,
-    "_nf_lng": 9.954,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "colours-shop",
@@ -2131,23 +1704,12 @@
     "address": null,
     "evidence_url": "https://colours-shop.de/",
     "evidence_type": "current_web_evidence",
-    "_nf_id": "colours-shop",
-    "_nf_name": "Colours Shop",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Hamburg",
-    "_nf_state": "Hamburg",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Gothic",
-      "Punk",
-      "Metal",
-      "Fetish",
-      "Emo",
-      "Steampunk"
-    ],
-    "_nf_lat": 53.5753,
-    "_nf_lng": 10.0153,
-    "_nf_status": "green"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "de-markthalle-hamburg",
@@ -2177,22 +1739,12 @@
     "state": "Hamburg",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-markthalle-hamburg",
-    "_nf_name": "Markthalle Hamburg",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Hamburg",
-    "_nf_state": "Hamburg",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Wave",
-      "EBM",
-      "Industrial",
-      "Post-Punk"
-    ],
-    "_nf_lat": 53.553,
-    "_nf_lng": 10.011,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "de-ms-stubnitz",
@@ -2222,22 +1774,12 @@
     "state": "Hamburg",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-ms-stubnitz",
-    "_nf_name": "MS Stubnitz",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Hamburg",
-    "_nf_state": "Hamburg",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "EBM",
-      "Industrial",
-      "Gothic",
-      "Wave",
-      "Post-Punk"
-    ],
-    "_nf_lat": 53.544,
-    "_nf_lng": 10.008,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "nyctophilia",
@@ -2269,20 +1811,12 @@
     "address": "Landwehr 5, 22087 Hamburg",
     "evidence_url": "https://nyctophilia-shop.de/shop/",
     "evidence_type": "current_web_evidence",
-    "_nf_id": "nyctophilia",
-    "_nf_name": "Nyctophilia",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Hamburg",
-    "_nf_state": "Hamburg",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 53.5511,
-    "_nf_lng": 9.9937,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "culturebel",
@@ -2312,20 +1846,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "culturebel",
-    "_nf_name": "Culturebel",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Hanau",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 50.126,
-    "_nf_lng": 8.929,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "liebhabereien",
@@ -2355,20 +1881,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "liebhabereien",
-    "_nf_name": "Liebhabereien",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Hannover",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 52.377,
-    "_nf_lng": 9.739,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "de-subkultur-hannover",
@@ -2398,22 +1916,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-subkultur-hannover",
-    "_nf_name": "SubKultur Hannover",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Hannover",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "EBM",
-      "Industrial",
-      "Wave"
-    ],
-    "_nf_lat": 52.385,
-    "_nf_lng": 9.731,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "de-culture-station",
@@ -2442,21 +1950,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-culture-station",
-    "_nf_name": "Culture Station",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Iserlohn",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Dark 80s",
-      "Wave",
-      "Synthpop",
-      "Gothic"
-    ],
-    "_nf_lat": 51.376,
-    "_nf_lng": 7.703,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "de-m-pire-jena",
@@ -2485,21 +1984,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-m-pire-jena",
-    "_nf_name": "M-Pire Jena",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Jena",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Synthpop",
-      "Darkwave",
-      "EBM",
-      "Gothic"
-    ],
-    "_nf_lat": 50.928,
-    "_nf_lng": 11.589,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "de-nachtwerk-musikclub",
@@ -2528,21 +2018,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-nachtwerk-musikclub",
-    "_nf_name": "Nachtwerk Musikclub",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Karlsruhe",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "EBM",
-      "Industrial",
-      "Alternative"
-    ],
-    "_nf_lat": 49.008,
-    "_nf_lng": 8.356,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "de-goldgrube-kassel",
@@ -2571,21 +2052,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-goldgrube-kassel",
-    "_nf_name": "Goldgrube Kassel",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Kassel",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Rock",
-      "Metal"
-    ],
-    "_nf_lat": 51.331,
-    "_nf_lng": 9.487,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "de-druckluftkammer",
@@ -2614,21 +2086,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-druckluftkammer",
-    "_nf_name": "Druckluftkammer",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Koblenz",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "EBM",
-      "Industrial"
-    ],
-    "_nf_lat": 50.361,
-    "_nf_lng": 7.594,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "easure",
@@ -2658,20 +2121,12 @@
     "state": "Nordrhein-Westfalen",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "easure",
-    "_nf_name": "EASURE",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Krefeld",
-    "_nf_state": "Nordrhein-Westfalen",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Industrial"
-    ],
-    "_nf_lat": 51.3388,
-    "_nf_lng": 6.5853,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "de-tsunami-club",
@@ -2700,21 +2155,12 @@
     "state": "Nordrhein-Westfalen",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-tsunami-club",
-    "_nf_name": "Tsunami Club",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Köln",
-    "_nf_state": "Nordrhein-Westfalen",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Post-Punk",
-      "Darkwave",
-      "Alternative"
-    ],
-    "_nf_lat": 50.923,
-    "_nf_lng": 6.961,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "de-darkflower",
@@ -2743,21 +2189,12 @@
     "state": "Sachsen",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-darkflower",
-    "_nf_name": "Darkflower",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Leipzig",
-    "_nf_state": "Sachsen",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "EBM",
-      "Industrial"
-    ],
-    "_nf_lat": 51.34,
-    "_nf_lng": 12.374,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "de-felsenkeller",
@@ -2785,20 +2222,12 @@
     "state": "Sachsen",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-felsenkeller",
-    "_nf_name": "Felsenkeller",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Leipzig",
-    "_nf_state": "Sachsen",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Wave",
-      "Alternative"
-    ],
-    "_nf_lat": 51.323,
-    "_nf_lng": 12.327,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "de-kätz",
@@ -2827,21 +2256,12 @@
     "state": "Sachsen",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-kätz",
-    "_nf_name": "Kätz",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Leipzig",
-    "_nf_state": "Sachsen",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Darkwave",
-      "Synthpop",
-      "Gothic",
-      "Alternative"
-    ],
-    "_nf_lat": 51.331,
-    "_nf_lng": 12.375,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "de-diskothek-shadow",
@@ -2870,21 +2290,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-diskothek-shadow",
-    "_nf_name": "Diskothek Shadow",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Leverkusen",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "EBM",
-      "Industrial"
-    ],
-    "_nf_lat": 51.033,
-    "_nf_lng": 6.985,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "de-club-karree",
@@ -2914,22 +2325,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-club-karree",
-    "_nf_name": "Club Karree",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Mannheim",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Electro",
-      "EBM",
-      "Darkwave",
-      "Industrial"
-    ],
-    "_nf_lat": 49.489,
-    "_nf_lng": 8.467,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "de-abby-messkirch",
@@ -2958,21 +2359,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-abby-messkirch",
-    "_nf_name": "Abby Messkirch",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Meßkirch",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "EBM",
-      "Industrial"
-    ],
-    "_nf_lat": 47.994,
-    "_nf_lng": 9.113,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "de-phönix-club",
@@ -3001,21 +2393,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-phönix-club",
-    "_nf_name": "Phönix Club",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Mülheim an der Ruhr",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "EBM",
-      "Industrial"
-    ],
-    "_nf_lat": 51.427,
-    "_nf_lng": 6.883,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "de-sputnikhalle",
@@ -3045,22 +2428,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-sputnikhalle",
-    "_nf_name": "Sputnikhalle",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Münster",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Wave",
-      "Industrial",
-      "EBM",
-      "80s"
-    ],
-    "_nf_lat": 51.951,
-    "_nf_lng": 7.626,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "de-kulttempel",
@@ -3089,21 +2462,12 @@
     "state": null,
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "de-kulttempel",
-    "_nf_name": "Kulttempel",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Oberhausen",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "EBM",
-      "Industrial",
-      "Darkwave"
-    ],
-    "_nf_lat": 51.496,
-    "_nf_lng": 6.852,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "blackout",
@@ -3133,20 +2497,12 @@
     "state": "Baden-Württemberg",
     "location_status": "physical_location",
     "evidence_type": "dataset_review",
-    "_nf_id": "blackout",
-    "_nf_name": "Blackout",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Stuttgart",
-    "_nf_state": "Baden-Württemberg",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 48.771,
-    "_nf_lng": 9.184,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "wonderland-13",
@@ -3180,22 +2536,12 @@
     "address": "Herdbruckerstraße 9, 89073 Ulm",
     "evidence_url": "https://www.wonderland13-store.de/w13-shop-ulm/",
     "evidence_type": "current_web_evidence",
-    "_nf_id": "wonderland-13",
-    "_nf_name": "Wonderland 13",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Ulm",
-    "_nf_state": "Baden-Württemberg",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Occult",
-      "Punk",
-      "Steampunk"
-    ],
-    "_nf_lat": 48.4011,
-    "_nf_lng": 9.9876,
-    "_nf_status": "green"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "emp-outlet-store-a31",
@@ -3226,20 +2572,12 @@
     "address": "Einsteinstraße 6, 49835 Wietmarschen-Lohne",
     "evidence_url": "https://www.emp.de/store-lingen/de_outlet_A31.html/",
     "evidence_type": "current_web_evidence",
-    "_nf_id": "emp-outlet-store-a31",
-    "_nf_name": "EMP Outlet Store A31",
-    "_nf_country": "Deutschland",
-    "_nf_city": "Wietmarschen-Lohne",
-    "_nf_state": "Niedersachsen",
-    "_nf_type": "shop",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 52.579,
-    "_nf_lng": 7.17,
-    "_nf_status": "green"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "black-velvet",
@@ -3263,19 +2601,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "black-velvet",
-    "_nf_name": "Black Velvet",
-    "_nf_country": "Dänemark",
-    "_nf_city": "Copenhagen",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 55.6761,
-    "_nf_lng": 12.5683,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "nightmare",
@@ -3300,20 +2631,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "nightmare",
-    "_nf_name": "Nightmare",
-    "_nf_country": "Dänemark",
-    "_nf_city": "Copenhagen",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Metal"
-    ],
-    "_nf_lat": 55.6761,
-    "_nf_lng": 12.5683,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "black-sun",
@@ -3338,20 +2661,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "black-sun",
-    "_nf_name": "Black Sun",
-    "_nf_country": "Estland",
-    "_nf_city": "Tallinn",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 59.437,
-    "_nf_lng": 24.7536,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "underground-store",
@@ -3376,20 +2691,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "underground-store",
-    "_nf_name": "Underground Store",
-    "_nf_country": "Finnland",
-    "_nf_city": "Finland",
-    "_nf_state": "",
-    "_nf_type": "shop",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Punk"
-    ],
-    "_nf_lat": 60.1699,
-    "_nf_lng": 24.9384,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "gothic-dream",
@@ -3414,20 +2721,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "gothic-dream",
-    "_nf_name": "Gothic Dream",
-    "_nf_country": "Finnland",
-    "_nf_city": "Helsinki",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 60.1699,
-    "_nf_lng": 24.9384,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "gothic-style",
@@ -3451,19 +2750,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "gothic-style",
-    "_nf_name": "Gothic Style",
-    "_nf_country": "Finnland",
-    "_nf_city": "Helsinki",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 60.1699,
-    "_nf_lng": 24.9384,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "dark-romance",
@@ -3488,20 +2780,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "dark-romance",
-    "_nf_name": "Dark Romance",
-    "_nf_country": "Frankreich",
-    "_nf_city": "Bordeaux",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 44.8378,
-    "_nf_lng": -0.5792,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "rock-a-gogo-shop",
@@ -3526,20 +2810,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "rock-a-gogo-shop",
-    "_nf_name": "Rock A Gogo Shop",
-    "_nf_country": "Frankreich",
-    "_nf_city": "France",
-    "_nf_state": "",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Gothic",
-      "Rock",
-      "Metal"
-    ],
-    "_nf_lat": 46.6034,
-    "_nf_lng": 1.8883,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "toonzshop",
@@ -3566,22 +2842,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "toonzshop",
-    "_nf_name": "Toonzshop",
-    "_nf_country": "Frankreich",
-    "_nf_city": "France",
-    "_nf_state": "",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Alternative",
-      "Gothic",
-      "Witchcore",
-      "Fantasy",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 46.6034,
-    "_nf_lng": 1.8883,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "black-roses",
@@ -3607,20 +2873,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "black-roses",
-    "_nf_name": "Black Roses",
-    "_nf_country": "Frankreich",
-    "_nf_city": "Lyon",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 45.764,
-    "_nf_lng": 4.8357,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "darkland-paris",
@@ -3649,23 +2907,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "darkland-paris",
-    "_nf_name": "Darkland Paris",
-    "_nf_country": "Frankreich",
-    "_nf_city": "Paris",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Punk",
-      "Fetish",
-      "Metal",
-      "Steampunk",
-      "Cyber"
-    ],
-    "_nf_lat": 48.8566,
-    "_nf_lng": 2.3522,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "grungeboutik",
@@ -3690,20 +2937,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "grungeboutik",
-    "_nf_name": "Grungeboutik",
-    "_nf_country": "Frankreich",
-    "_nf_city": "Strasbourg",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 48.584,
-    "_nf_lng": 7.745,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "darkness-shop",
@@ -3728,20 +2967,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "darkness-shop",
-    "_nf_name": "Darkness Shop",
-    "_nf_country": "Griechenland",
-    "_nf_city": "Athens",
-    "_nf_state": "",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Gothic",
-      "Metal",
-      "Alternative"
-    ],
-    "_nf_lat": 37.9838,
-    "_nf_lng": 23.7275,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "black-moon",
@@ -3766,20 +2997,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "black-moon",
-    "_nf_name": "Black Moon",
-    "_nf_country": "Irland",
-    "_nf_city": "Cork",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 51.8985,
-    "_nf_lng": -8.4756,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "nightshade",
@@ -3805,20 +3028,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "nightshade",
-    "_nf_name": "Nightshade",
-    "_nf_country": "Irland",
-    "_nf_city": "Dublin",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Punk"
-    ],
-    "_nf_lat": 53.3498,
-    "_nf_lng": -6.2603,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "rebel-rebel-alternative-apparel",
@@ -3846,22 +3061,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "rebel-rebel-alternative-apparel",
-    "_nf_name": "Rebel Rebel Alternative Apparel",
-    "_nf_country": "Irland",
-    "_nf_city": "Dublin",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Punk",
-      "Rockabilly",
-      "Psychobilly",
-      "Metal"
-    ],
-    "_nf_lat": 53.3456,
-    "_nf_lng": -6.2668,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "black-raven",
@@ -3886,20 +3091,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "black-raven",
-    "_nf_name": "Black Raven",
-    "_nf_country": "Island",
-    "_nf_city": "Reykjavik",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 64.1466,
-    "_nf_lng": -21.9426,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-cripta-club",
@@ -3924,20 +3121,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-cripta-club",
-    "_nf_name": "Cripta Club",
-    "_nf_country": "Italien",
-    "_nf_city": "Milan",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "Alternative"
-    ],
-    "_nf_lat": 45.4642,
-    "_nf_lng": 9.19,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "dark-fashion",
@@ -3961,19 +3150,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "dark-fashion",
-    "_nf_name": "Dark Fashion",
-    "_nf_country": "Italien",
-    "_nf_city": "Milan",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 45.4642,
-    "_nf_lng": 9.19,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "shockwave",
@@ -3999,21 +3181,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "shockwave",
-    "_nf_name": "Shockwave",
-    "_nf_country": "Italien",
-    "_nf_city": "Milan",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Rock",
-      "Metal"
-    ],
-    "_nf_lat": 45.4642,
-    "_nf_lng": 9.19,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "emporium-gothic",
@@ -4038,20 +3211,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "emporium-gothic",
-    "_nf_name": "Emporium Gothic",
-    "_nf_country": "Italien",
-    "_nf_city": "Rome",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 41.9028,
-    "_nf_lng": 12.4964,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "gothic-and-lolita-bible-shop",
@@ -4076,20 +3241,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "gothic-and-lolita-bible-shop",
-    "_nf_name": "Gothic & Lolita Bible Shop",
-    "_nf_country": "Japan",
-    "_nf_city": "Tokyo",
-    "_nf_state": "",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Gothic Lolita",
-      "Gothic",
-      "J-Fashion"
-    ],
-    "_nf_lat": 35.6762,
-    "_nf_lng": 139.6503,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "midnight-coven",
@@ -4114,20 +3271,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "midnight-coven",
-    "_nf_name": "Midnight Coven",
-    "_nf_country": "Kanada",
-    "_nf_city": "Montreal",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Occult"
-    ],
-    "_nf_lat": 45.5017,
-    "_nf_lng": -73.5673,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "blackcraft-cult-canada",
@@ -4152,20 +3301,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "blackcraft-cult-canada",
-    "_nf_name": "Blackcraft Cult Canada",
-    "_nf_country": "Kanada",
-    "_nf_city": "Toronto",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 43.6532,
-    "_nf_lng": -79.3832,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "demonia-canada",
@@ -4190,20 +3331,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "demonia-canada",
-    "_nf_name": "Demonia Canada",
-    "_nf_country": "Kanada",
-    "_nf_city": "Toronto",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Footwear"
-    ],
-    "_nf_lat": 43.6532,
-    "_nf_lng": -79.3832,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "foxblood-canada",
@@ -4227,19 +3360,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "foxblood-canada",
-    "_nf_name": "Foxblood Canada",
-    "_nf_country": "Kanada",
-    "_nf_city": "Toronto",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 43.6532,
-    "_nf_lng": -79.3832,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "shrine",
@@ -4266,21 +3392,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "shrine",
-    "_nf_name": "Shrine",
-    "_nf_country": "Kanada",
-    "_nf_city": "Toronto",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Punk",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 43.6532,
-    "_nf_lng": -79.3832,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "trivium",
@@ -4305,20 +3422,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "trivium",
-    "_nf_name": "Trivium",
-    "_nf_country": "Kanada",
-    "_nf_city": "Toronto",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 43.6532,
-    "_nf_lng": -79.3832,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "noctex",
@@ -4343,20 +3452,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "noctex",
-    "_nf_name": "Noctex",
-    "_nf_country": "Kanada",
-    "_nf_city": "Vancouver",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 49.2827,
-    "_nf_lng": -123.1207,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "the-darkside",
@@ -4381,20 +3482,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "the-darkside",
-    "_nf_name": "The Darkside",
-    "_nf_country": "Kanada",
-    "_nf_city": "Vancouver",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 49.2827,
-    "_nf_lng": -123.1207,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "darkona",
@@ -4420,21 +3513,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "darkona",
-    "_nf_name": "Darkona",
-    "_nf_country": "Kroatien",
-    "_nf_city": "Velika Gorica",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative",
-      "Fetish"
-    ],
-    "_nf_lat": 45.7125,
-    "_nf_lng": 16.0756,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "darkside",
@@ -4459,20 +3543,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "darkside",
-    "_nf_name": "Darkside",
-    "_nf_country": "Kroatien",
-    "_nf_city": "Zagreb",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 45.815,
-    "_nf_lng": 15.9819,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "darkwear",
@@ -4496,19 +3572,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "darkwear",
-    "_nf_name": "Darkwear",
-    "_nf_country": "Kroatien",
-    "_nf_city": "Zagreb",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative"
-    ],
-    "_nf_lat": 45.815,
-    "_nf_lng": 15.9819,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "dark-market",
@@ -4533,20 +3602,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "dark-market",
-    "_nf_name": "Dark Market",
-    "_nf_country": "Lettland",
-    "_nf_city": "Riga",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Occult"
-    ],
-    "_nf_lat": 56.9496,
-    "_nf_lng": 24.1052,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "darkstyle",
@@ -4570,19 +3631,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "darkstyle",
-    "_nf_name": "Darkstyle",
-    "_nf_country": "Lettland",
-    "_nf_city": "Riga",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative"
-    ],
-    "_nf_lat": 56.9496,
-    "_nf_lng": 24.1052,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "fantasmagoria",
@@ -4609,21 +3663,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "fantasmagoria",
-    "_nf_name": "Fantasmagoria",
-    "_nf_country": "Litauen",
-    "_nf_city": "Vilnius",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Punk",
-      "Metal"
-    ],
-    "_nf_lat": 54.6872,
-    "_nf_lng": 25.2797,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "moon-store",
@@ -4647,19 +3692,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "moon-store",
-    "_nf_name": "Moon Store",
-    "_nf_country": "Litauen",
-    "_nf_city": "Vilnius",
-    "_nf_state": "",
-    "_nf_type": "shop",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative"
-    ],
-    "_nf_lat": 54.6872,
-    "_nf_lng": 25.2797,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "dark-boutique",
@@ -4684,20 +3722,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "dark-boutique",
-    "_nf_name": "Dark Boutique",
-    "_nf_country": "Luxemburg",
-    "_nf_city": "Luxembourg",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 49.6116,
-    "_nf_lng": 6.1319,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-anestesia-bar",
@@ -4723,20 +3753,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-anestesia-bar",
-    "_nf_name": "Anestesia Bar",
-    "_nf_country": "Mexiko",
-    "_nf_city": "Guadalajara",
-    "_nf_state": "",
-    "_nf_type": "bar",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Darkwave"
-    ],
-    "_nf_lat": 20.6597,
-    "_nf_lng": -103.3496,
-    "_nf_status": "green"
+    "place_type": "bar",
+    "is_physical": true,
+    "map_category": "bar",
+    "map_marker_type": "bar",
+    "map_visible": true,
+    "icon_category": "bar"
   },
   {
     "id": "venue-real-under",
@@ -4763,21 +3785,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-real-under",
-    "_nf_name": "Real Under",
-    "_nf_country": "Mexiko",
-    "_nf_city": "Mexico City",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Industrial",
-      "Darkwave",
-      "Alternative"
-    ],
-    "_nf_lat": 19.4326,
-    "_nf_lng": -99.1332,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "dangerfield-nz",
@@ -4804,21 +3817,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "dangerfield-nz",
-    "_nf_name": "Dangerfield NZ",
-    "_nf_country": "Neuseeland",
-    "_nf_city": "Auckland",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Vintage",
-      "Punk"
-    ],
-    "_nf_lat": -36.8509,
-    "_nf_lng": 174.7645,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-ding-dong-lounge",
@@ -4845,20 +3849,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-ding-dong-lounge",
-    "_nf_name": "Ding Dong Lounge",
-    "_nf_country": "Neuseeland",
-    "_nf_city": "Auckland",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Darkwave"
-    ],
-    "_nf_lat": -36.8509,
-    "_nf_lng": 174.7645,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "rebel-rebel",
@@ -4883,20 +3879,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "rebel-rebel",
-    "_nf_name": "Rebel Rebel",
-    "_nf_country": "Neuseeland",
-    "_nf_city": "Auckland",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Punk"
-    ],
-    "_nf_lat": -36.8509,
-    "_nf_lng": 174.7645,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "black-milk-nz",
@@ -4921,20 +3909,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "black-milk-nz",
-    "_nf_name": "Black Milk NZ",
-    "_nf_country": "Neuseeland",
-    "_nf_city": "New Zealand",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Alternative",
-      "Dark Fashion",
-      "Gothic"
-    ],
-    "_nf_lat": -40.9006,
-    "_nf_lng": 174.886,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "diabolo",
@@ -4960,21 +3940,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "diabolo",
-    "_nf_name": "Diabolo",
-    "_nf_country": "Niederlande",
-    "_nf_city": "Amsterdam",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Fetish",
-      "Punk",
-      "Alternative"
-    ],
-    "_nf_lat": 52.3738,
-    "_nf_lng": 4.901,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "attitude-europe",
@@ -5003,24 +3974,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "attitude-europe",
-    "_nf_name": "Attitude Europe",
-    "_nf_country": "Niederlande",
-    "_nf_city": "Edam",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Punk",
-      "Rock",
-      "Emo",
-      "Vintage",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 52.5121,
-    "_nf_lng": 5.0497,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "attitude-holland",
@@ -5047,22 +4006,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "attitude-holland",
-    "_nf_name": "Attitude Holland",
-    "_nf_country": "Niederlande",
-    "_nf_city": "Edam",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Punk",
-      "Rock",
-      "Emo",
-      "Vintage"
-    ],
-    "_nf_lat": 52.5121,
-    "_nf_lng": 5.0497,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "black-planet",
@@ -5088,20 +4037,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "black-planet",
-    "_nf_name": "Black Planet",
-    "_nf_country": "Niederlande",
-    "_nf_city": "Netherlands",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Victorian",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 52.1326,
-    "_nf_lng": 5.2913,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "chimera",
@@ -5127,20 +4068,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "chimera",
-    "_nf_name": "Chimera",
-    "_nf_country": "Niederlande",
-    "_nf_city": "Netherlands",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 52.0907,
-    "_nf_lng": 5.1214,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "divinedarkness",
@@ -5168,23 +4101,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "divinedarkness",
-    "_nf_name": "DivineDarkness",
-    "_nf_country": "Niederlande",
-    "_nf_city": "Netherlands",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Metal",
-      "Cyber",
-      "Pin-Up",
-      "Vintage"
-    ],
-    "_nf_lat": 52.1326,
-    "_nf_lng": 5.2913,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "succubus",
@@ -5210,20 +4132,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "succubus",
-    "_nf_name": "Succubus",
-    "_nf_country": "Niederlande",
-    "_nf_city": "Netherlands",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Vintage"
-    ],
-    "_nf_lat": 52.0907,
-    "_nf_lng": 5.1214,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-hulen",
@@ -5249,20 +4163,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-hulen",
-    "_nf_name": "Hulen",
-    "_nf_country": "Norwegen",
-    "_nf_city": "Bergen",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "Alternative"
-    ],
-    "_nf_lat": 60.3913,
-    "_nf_lng": 5.3221,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "dark-style",
@@ -5286,19 +4192,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "dark-style",
-    "_nf_name": "Dark Style",
-    "_nf_country": "Norwegen",
-    "_nf_city": "Oslo",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative"
-    ],
-    "_nf_lat": 59.9139,
-    "_nf_lng": 10.7522,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "underground",
@@ -5323,20 +4222,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "underground",
-    "_nf_name": "Underground",
-    "_nf_country": "Norwegen",
-    "_nf_city": "Oslo",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Metal"
-    ],
-    "_nf_lat": 59.9139,
-    "_nf_lng": 10.7522,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-doki-4",
@@ -5362,20 +4253,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-doki-4",
-    "_nf_name": "Doki 4",
-    "_nf_country": "Polen",
-    "_nf_city": "Gdansk",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "Alternative"
-    ],
-    "_nf_lat": 54.352,
-    "_nf_lng": 18.6466,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "gothic-dreams",
@@ -5400,20 +4283,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "gothic-dreams",
-    "_nf_name": "Gothic Dreams",
-    "_nf_country": "Polen",
-    "_nf_city": "Krakow",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 50.0647,
-    "_nf_lng": 19.945,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "restyle",
@@ -5438,20 +4313,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "restyle",
-    "_nf_name": "Restyle",
-    "_nf_country": "Polen",
-    "_nf_city": "Poland",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Occult",
-      "Jewellery"
-    ],
-    "_nf_lat": 52.069,
-    "_nf_lng": 19.4803,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "rock-metal-shop",
@@ -5476,20 +4343,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "rock-metal-shop",
-    "_nf_name": "Rock Metal Shop",
-    "_nf_country": "Polen",
-    "_nf_city": "Poland",
-    "_nf_state": "",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Metal",
-      "Gothic",
-      "Alternative"
-    ],
-    "_nf_lat": 52.2297,
-    "_nf_lng": 21.0122,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "skydance",
@@ -5515,21 +4374,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "skydance",
-    "_nf_name": "SKYDANCE",
-    "_nf_country": "Polen",
-    "_nf_city": "Siedlce",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion",
-      "Grunge"
-    ],
-    "_nf_lat": 52.1676,
-    "_nf_lng": 22.29,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "black-angel",
@@ -5555,20 +4405,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "black-angel",
-    "_nf_name": "Black Angel",
-    "_nf_country": "Polen",
-    "_nf_city": "Warsaw",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 52.2297,
-    "_nf_lng": 21.0122,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "black-magic",
@@ -5592,19 +4434,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "black-magic",
-    "_nf_name": "Black Magic",
-    "_nf_country": "Polen",
-    "_nf_city": "Warsaw",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 52.2297,
-    "_nf_lng": 21.0122,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-voodoo-club",
@@ -5631,21 +4466,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-voodoo-club",
-    "_nf_name": "VooDoo Club",
-    "_nf_country": "Polen",
-    "_nf_city": "Warsaw",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "Industrial",
-      "Synthpop"
-    ],
-    "_nf_lat": 52.2297,
-    "_nf_lng": 21.0122,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "nox-interna",
@@ -5670,20 +4496,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "nox-interna",
-    "_nf_name": "Nox Interna",
-    "_nf_country": "Portugal",
-    "_nf_city": "Porto",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 41.1579,
-    "_nf_lng": -8.6291,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-club-nether",
@@ -5709,20 +4527,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-club-nether",
-    "_nf_name": "Club Nether",
-    "_nf_country": "Rumänien",
-    "_nf_city": "Bucharest",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "Industrial"
-    ],
-    "_nf_lat": 44.4268,
-    "_nf_lng": 26.1025,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "darkness",
@@ -5747,20 +4557,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "darkness",
-    "_nf_name": "Darkness",
-    "_nf_country": "Rumänien",
-    "_nf_city": "Bucharest",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 44.4268,
-    "_nf_lng": 26.1025,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "noir-store",
@@ -5784,19 +4586,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "noir-store",
-    "_nf_name": "Noir Store",
-    "_nf_country": "Rumänien",
-    "_nf_city": "Bucharest",
-    "_nf_state": "",
-    "_nf_type": "shop",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 44.4268,
-    "_nf_lng": 26.1025,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "blue-fox",
@@ -5821,20 +4616,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "blue-fox",
-    "_nf_name": "Blue Fox",
-    "_nf_country": "Schweden",
-    "_nf_city": "Gothenburg",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Rock"
-    ],
-    "_nf_lat": 57.7089,
-    "_nf_lng": 11.9746,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "nocturne-shop",
@@ -5858,19 +4645,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "nocturne-shop",
-    "_nf_name": "Nocturne Shop",
-    "_nf_country": "Schweden",
-    "_nf_city": "Stockholm",
-    "_nf_state": "",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative"
-    ],
-    "_nf_lat": 59.3293,
-    "_nf_lng": 18.0686,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "shock",
@@ -5895,20 +4675,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "shock",
-    "_nf_name": "Shock",
-    "_nf_country": "Schweden",
-    "_nf_city": "Stockholm",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Punk"
-    ],
-    "_nf_lat": 59.3293,
-    "_nf_lng": 18.0686,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "dark-angel",
@@ -5933,20 +4705,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "dark-angel",
-    "_nf_name": "Dark Angel",
-    "_nf_country": "Schweiz",
-    "_nf_city": "Basel",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Fetish"
-    ],
-    "_nf_lat": 47.5596,
-    "_nf_lng": 7.5886,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "noir-fashion",
@@ -5971,20 +4735,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "noir-fashion",
-    "_nf_name": "Noir Fashion",
-    "_nf_country": "Schweiz",
-    "_nf_city": "Bern",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 46.948,
-    "_nf_lng": 7.4474,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "metro-boutique",
@@ -6009,19 +4765,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "metro-boutique",
-    "_nf_name": "Metro Boutique",
-    "_nf_country": "Schweiz",
-    "_nf_city": "Switzerland",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 46.948,
-    "_nf_lng": 7.4474,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "x-tra-x",
@@ -6046,20 +4795,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "x-tra-x",
-    "_nf_name": "X-tra-X",
-    "_nf_country": "Schweiz",
-    "_nf_city": "Zurich",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Industrial"
-    ],
-    "_nf_lat": 47.3769,
-    "_nf_lng": 8.5417,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "nocturnal",
@@ -6084,20 +4825,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "nocturnal",
-    "_nf_name": "Nocturnal",
-    "_nf_country": "Serbien",
-    "_nf_city": "Belgrade",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 44.7866,
-    "_nf_lng": 20.4489,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "dark-moon",
@@ -6121,19 +4854,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "dark-moon",
-    "_nf_name": "Dark Moon",
-    "_nf_country": "Slowenien",
-    "_nf_city": "Ljubljana",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative"
-    ],
-    "_nf_lat": 46.0569,
-    "_nf_lng": 14.5058,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "dark-rose",
@@ -6158,20 +4884,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "dark-rose",
-    "_nf_name": "Dark Rose",
-    "_nf_country": "Slowenien",
-    "_nf_city": "Ljubljana",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 46.0569,
-    "_nf_lng": 14.5058,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "black-widow",
@@ -6197,20 +4915,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "black-widow",
-    "_nf_name": "Black Widow",
-    "_nf_country": "Spanien",
-    "_nf_city": "Barcelona",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Punk"
-    ],
-    "_nf_lat": 41.3874,
-    "_nf_lng": 2.1686,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "darkshe",
@@ -6235,20 +4945,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "darkshe",
-    "_nf_name": "Darkshe",
-    "_nf_country": "Spanien",
-    "_nf_city": "Madrid",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 40.4168,
-    "_nf_lng": -3.7038,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "kuroneko",
@@ -6273,20 +4975,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "kuroneko",
-    "_nf_name": "KuroNeko",
-    "_nf_country": "Spanien",
-    "_nf_city": "Madrid",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Gothic Lolita",
-      "J-Fashion"
-    ],
-    "_nf_lat": 40.4168,
-    "_nf_lng": -3.7038,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "noir-gothic",
@@ -6310,19 +5004,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "noir-gothic",
-    "_nf_name": "Noir Gothic",
-    "_nf_country": "Spanien",
-    "_nf_city": "Madrid",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 40.4168,
-    "_nf_lng": -3.7038,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-shadowplay-gothic-club",
@@ -6348,21 +5035,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-shadowplay-gothic-club",
-    "_nf_name": "Shadowplay Gothic Club",
-    "_nf_country": "Spanien",
-    "_nf_city": "Madrid",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "Post-Punk",
-      "Synthpop"
-    ],
-    "_nf_lat": 40.4168,
-    "_nf_lng": -3.7038,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "gothikas",
@@ -6390,22 +5068,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "gothikas",
-    "_nf_name": "Gothikas",
-    "_nf_country": "Spanien",
-    "_nf_city": "Quart de Poblet",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Punk",
-      "Pin-Up",
-      "Rockabilly"
-    ],
-    "_nf_lat": 39.4818,
-    "_nf_lng": -0.4397,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-vamptasía-club",
@@ -6431,21 +5099,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-vamptasía-club",
-    "_nf_name": "Vamptasía Club",
-    "_nf_country": "Spanien",
-    "_nf_city": "Valencia",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "Synthpop",
-      "Alternative"
-    ],
-    "_nf_lat": 39.4699,
-    "_nf_lng": -0.3763,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "venue-the-ninth-door",
@@ -6471,20 +5130,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-the-ninth-door",
-    "_nf_name": "The Ninth Door",
-    "_nf_country": "Südafrika",
-    "_nf_city": "Durban",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Darkwave"
-    ],
-    "_nf_lat": -29.8587,
-    "_nf_lng": 31.0218,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "venue-sognage",
@@ -6510,20 +5161,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-sognage",
-    "_nf_name": "Sognage",
-    "_nf_country": "Südafrika",
-    "_nf_city": "Johannesburg",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Industrial",
-      "Alternative",
-      "Darkwave"
-    ],
-    "_nf_lat": -26.2041,
-    "_nf_lng": 28.0473,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "gothic-shop-praha",
@@ -6548,20 +5191,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "gothic-shop-praha",
-    "_nf_name": "Gothic Shop Praha",
-    "_nf_country": "Tschechien",
-    "_nf_city": "Prague",
-    "_nf_state": "",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 50.0755,
-    "_nf_lng": 14.4378,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "metal-shop",
@@ -6586,20 +5221,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "metal-shop",
-    "_nf_name": "Metal Shop",
-    "_nf_country": "Tschechien",
-    "_nf_city": "Prague",
-    "_nf_state": "",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Metal",
-      "Gothic",
-      "Alternative"
-    ],
-    "_nf_lat": 50.0755,
-    "_nf_lng": 14.4378,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "nosferatu-gothic-and-metal-shop",
@@ -6627,22 +5254,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "nosferatu-gothic-and-metal-shop",
-    "_nf_name": "Nosferatu Gothic & Metal Shop",
-    "_nf_country": "Tschechien",
-    "_nf_city": "Prague",
-    "_nf_state": "",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Gothic",
-      "Metal",
-      "Alternative",
-      "Shoes",
-      "Jewellery"
-    ],
-    "_nf_lat": 50.0755,
-    "_nf_lng": 14.4378,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "venue-dead-souls-gothic-lounge",
@@ -6668,20 +5285,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-dead-souls-gothic-lounge",
-    "_nf_name": "Dead Souls Gothic Lounge",
-    "_nf_country": "USA",
-    "_nf_city": "Indianapolis",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "Industrial"
-    ],
-    "_nf_lat": 39.7684,
-    "_nf_lng": -86.1581,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "hot-topic",
@@ -6708,21 +5317,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "hot-topic",
-    "_nf_name": "Hot Topic",
-    "_nf_country": "USA",
-    "_nf_city": "Industry",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Rock",
-      "Pop Culture"
-    ],
-    "_nf_lat": 34.0195,
-    "_nf_lng": -117.9587,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-the-winchester-music-tavern",
@@ -6750,21 +5350,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-the-winchester-music-tavern",
-    "_nf_name": "The Winchester Music Tavern",
-    "_nf_country": "USA",
-    "_nf_city": "Lakewood, Ohio",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Darkwave",
-      "Industrial",
-      "Alternative"
-    ],
-    "_nf_lat": 41.482,
-    "_nf_lng": -81.7982,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "venue-bar-sinister",
@@ -6791,21 +5382,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-bar-sinister",
-    "_nf_name": "Bar Sinister",
-    "_nf_country": "USA",
-    "_nf_city": "Los Angeles",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Industrial",
-      "Darkwave",
-      "Alternative"
-    ],
-    "_nf_lat": 34.0468,
-    "_nf_lng": -118.2476,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "blackcraft-cult",
@@ -6830,20 +5412,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "blackcraft-cult",
-    "_nf_name": "Blackcraft Cult",
-    "_nf_country": "USA",
-    "_nf_city": "Los Angeles",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 34.0522,
-    "_nf_lng": -118.2437,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "current-mood",
@@ -6868,20 +5442,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "current-mood",
-    "_nf_name": "Current Mood",
-    "_nf_country": "USA",
-    "_nf_city": "Los Angeles",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 34.0522,
-    "_nf_lng": -118.2437,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "dolls-kill",
@@ -6907,21 +5473,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "dolls-kill",
-    "_nf_name": "Dolls Kill",
-    "_nf_country": "USA",
-    "_nf_city": "Los Angeles",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Alternative",
-      "Gothic",
-      "Punk",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 34.0522,
-    "_nf_lng": -118.2437,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "foxblood",
@@ -6946,20 +5503,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "foxblood",
-    "_nf_name": "Foxblood",
-    "_nf_country": "USA",
-    "_nf_city": "Los Angeles",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 34.0522,
-    "_nf_lng": -118.2437,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "heavy-red",
@@ -6984,20 +5533,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "heavy-red",
-    "_nf_name": "Heavy Red",
-    "_nf_country": "USA",
-    "_nf_city": "Los Angeles",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Vintage"
-    ],
-    "_nf_lat": 34.0522,
-    "_nf_lng": -118.2437,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "kreepsville-666",
@@ -7022,20 +5563,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "kreepsville-666",
-    "_nf_name": "Kreepsville 666",
-    "_nf_country": "USA",
-    "_nf_city": "Los Angeles",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Horror",
-      "Alternative"
-    ],
-    "_nf_lat": 34.0522,
-    "_nf_lng": -118.2437,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "la-femme-en-noir",
@@ -7060,20 +5593,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "la-femme-en-noir",
-    "_nf_name": "La Femme en Noir",
-    "_nf_country": "USA",
-    "_nf_city": "Los Angeles",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Vintage"
-    ],
-    "_nf_lat": 34.0522,
-    "_nf_lng": -118.2437,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "micheline-pitt",
@@ -7098,20 +5623,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "micheline-pitt",
-    "_nf_name": "Micheline Pitt",
-    "_nf_country": "USA",
-    "_nf_city": "Los Angeles",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Vintage",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 34.0522,
-    "_nf_lng": -118.2437,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "midnight-hour",
@@ -7136,20 +5653,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "midnight-hour",
-    "_nf_name": "Midnight Hour",
-    "_nf_country": "USA",
-    "_nf_city": "Los Angeles",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 34.0522,
-    "_nf_lng": -118.2437,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "shrine-of-hollywood",
@@ -7175,20 +5684,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "shrine-of-hollywood",
-    "_nf_name": "Shrine of Hollywood",
-    "_nf_country": "USA",
-    "_nf_city": "Los Angeles",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Vintage",
-      "Alternative"
-    ],
-    "_nf_lat": 34.0522,
-    "_nf_lng": -118.2437,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "vixen-by-micheline-pitt",
@@ -7213,20 +5714,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "vixen-by-micheline-pitt",
-    "_nf_name": "Vixen by Micheline Pitt",
-    "_nf_country": "USA",
-    "_nf_city": "Los Angeles",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Vintage",
-      "Alternative"
-    ],
-    "_nf_lat": 34.0522,
-    "_nf_lng": -118.2437,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-las-rosas",
@@ -7253,20 +5746,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-las-rosas",
-    "_nf_name": "Las Rosas",
-    "_nf_country": "USA",
-    "_nf_city": "Miami",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Darkwave"
-    ],
-    "_nf_lat": 25.7743,
-    "_nf_lng": -80.197,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "mourning-market",
@@ -7291,20 +5776,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "mourning-market",
-    "_nf_name": "Mourning Market",
-    "_nf_country": "USA",
-    "_nf_city": "New York",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 40.7128,
-    "_nf_lng": -74.006,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "tripp-nyc",
@@ -7331,21 +5808,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "tripp-nyc",
-    "_nf_name": "Tripp NYC",
-    "_nf_country": "USA",
-    "_nf_city": "New York",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Punk",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 40.7128,
-    "_nf_lng": -74.006,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-cat-club",
@@ -7373,21 +5841,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-cat-club",
-    "_nf_name": "Cat Club",
-    "_nf_country": "USA",
-    "_nf_city": "San Francisco",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Darkwave",
-      "Industrial"
-    ],
-    "_nf_lat": 37.7712,
-    "_nf_lng": -122.4077,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "venue-dna-lounge",
@@ -7414,21 +5873,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-dna-lounge",
-    "_nf_name": "DNA Lounge",
-    "_nf_country": "USA",
-    "_nf_city": "San Francisco",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Industrial",
-      "Darkwave",
-      "EBM"
-    ],
-    "_nf_lat": 37.7756,
-    "_nf_lng": -122.4075,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "venue-nuclear-winter-at-the-eagle",
@@ -7455,20 +5905,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-nuclear-winter-at-the-eagle",
-    "_nf_name": "Nuclear Winter at The Eagle",
-    "_nf_country": "USA",
-    "_nf_city": "San Francisco",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Industrial",
-      "Darkwave",
-      "EBM"
-    ],
-    "_nf_lat": 37.7695,
-    "_nf_lng": -122.3958,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "venue-the-eagle",
@@ -7494,20 +5936,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-the-eagle",
-    "_nf_name": "The Eagle",
-    "_nf_country": "USA",
-    "_nf_city": "San Francisco",
-    "_nf_state": "",
-    "_nf_type": "bar",
-    "_nf_categories": [
-      "Industrial",
-      "Gothic",
-      "Alternative"
-    ],
-    "_nf_lat": 37.7695,
-    "_nf_lng": -122.3958,
-    "_nf_status": "green"
+    "place_type": "bar",
+    "is_physical": true,
+    "map_category": "bar",
+    "map_marker_type": "bar",
+    "map_visible": true,
+    "icon_category": "bar"
   },
   {
     "id": "demonia",
@@ -7532,20 +5966,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "demonia",
-    "_nf_name": "Demonia",
-    "_nf_country": "USA",
-    "_nf_city": "United States",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Footwear"
-    ],
-    "_nf_lat": 39.8283,
-    "_nf_lng": -98.5795,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "dracula-clothing",
@@ -7570,20 +5996,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "dracula-clothing",
-    "_nf_name": "Dracula Clothing",
-    "_nf_country": "USA",
-    "_nf_city": "United States",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 39.8283,
-    "_nf_lng": -98.5795,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "killstar-us",
@@ -7608,20 +6026,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "killstar-us",
-    "_nf_name": "Killstar US",
-    "_nf_country": "USA",
-    "_nf_city": "United States",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 39.8283,
-    "_nf_lng": -98.5795,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "new-rock-usa",
@@ -7647,21 +6057,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "new-rock-usa",
-    "_nf_name": "New Rock USA",
-    "_nf_country": "USA",
-    "_nf_city": "United States",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Footwear",
-      "Rock"
-    ],
-    "_nf_lat": 39.8283,
-    "_nf_lng": -98.5795,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "punk-rave-usa",
@@ -7686,20 +6087,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "punk-rave-usa",
-    "_nf_name": "Punk Rave USA",
-    "_nf_country": "USA",
-    "_nf_city": "United States",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Punk",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 39.8283,
-    "_nf_lng": -98.5795,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "rebelsmarket",
@@ -7725,21 +6118,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "rebelsmarket",
-    "_nf_name": "RebelsMarket",
-    "_nf_country": "USA",
-    "_nf_city": "United States",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Punk",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 39.8283,
-    "_nf_lng": -98.5795,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "restyle-us",
@@ -7764,20 +6148,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "restyle-us",
-    "_nf_name": "Restyle US",
-    "_nf_country": "USA",
-    "_nf_city": "United States",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Accessories"
-    ],
-    "_nf_lat": 39.8283,
-    "_nf_lng": -98.5795,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "the-gothic-shop",
@@ -7802,20 +6178,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "the-gothic-shop",
-    "_nf_name": "The Gothic Shop",
-    "_nf_country": "USA",
-    "_nf_city": "United States",
-    "_nf_state": "",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 39.8283,
-    "_nf_lng": -98.5795,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "darkroom",
@@ -7839,19 +6207,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "darkroom",
-    "_nf_name": "Darkroom",
-    "_nf_country": "Ungarn",
-    "_nf_city": "Budapest",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative"
-    ],
-    "_nf_lat": 47.4979,
-    "_nf_lng": 19.0402,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "underground-shop",
@@ -7878,21 +6239,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "underground-shop",
-    "_nf_name": "Underground Shop",
-    "_nf_country": "Ungarn",
-    "_nf_city": "Budapest",
-    "_nf_state": "",
-    "_nf_type": "online_shop",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Punk",
-      "Metal"
-    ],
-    "_nf_lat": 47.4979,
-    "_nf_lng": 19.0402,
-    "_nf_status": "yellow"
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop"
   },
   {
     "id": "attitude-clothing",
@@ -7917,20 +6269,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "attitude-clothing",
-    "_nf_name": "Attitude Clothing",
-    "_nf_country": "United Kingdom",
-    "_nf_city": "London",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 51.5074,
-    "_nf_lng": -0.1278,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "blue-banana",
@@ -7957,21 +6301,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "blue-banana",
-    "_nf_name": "Blue Banana",
-    "_nf_country": "United Kingdom",
-    "_nf_city": "London",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Punk",
-      "Emo"
-    ],
-    "_nf_lat": 51.5074,
-    "_nf_lng": -0.1278,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-the-merlin",
@@ -7997,20 +6332,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-the-merlin",
-    "_nf_name": "The Merlin",
-    "_nf_country": "Vereinigtes Königreich",
-    "_nf_city": "Birmingham",
-    "_nf_state": "",
-    "_nf_type": "bar",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Darkwave"
-    ],
-    "_nf_lat": 52.4862,
-    "_nf_lng": -1.8904,
-    "_nf_status": "green"
+    "place_type": "bar",
+    "is_physical": true,
+    "map_category": "bar",
+    "map_marker_type": "bar",
+    "map_visible": true,
+    "icon_category": "bar"
   },
   {
     "id": "gothic-temple",
@@ -8035,20 +6362,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "gothic-temple",
-    "_nf_name": "Gothic Temple",
-    "_nf_country": "Vereinigtes Königreich",
-    "_nf_city": "Leeds",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Dark Fashion",
-      "Alternative"
-    ],
-    "_nf_lat": 53.8008,
-    "_nf_lng": -1.5491,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "beyond-retro",
@@ -8074,20 +6393,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "beyond-retro",
-    "_nf_name": "Beyond Retro",
-    "_nf_country": "Vereinigtes Königreich",
-    "_nf_city": "London",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Vintage",
-      "Alternative",
-      "Punk"
-    ],
-    "_nf_lat": 51.5074,
-    "_nf_lng": -0.1278,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-electrowerkz",
@@ -8115,22 +6426,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-electrowerkz",
-    "_nf_name": "Electrowerkz",
-    "_nf_country": "Vereinigtes Königreich",
-    "_nf_city": "London",
-    "_nf_state": "",
-    "_nf_type": "club",
-    "_nf_categories": [
-      "Gothic",
-      "Industrial",
-      "EBM",
-      "Darkwave",
-      "Alternative"
-    ],
-    "_nf_lat": 51.5359,
-    "_nf_lng": -0.105,
-    "_nf_status": "green"
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club"
   },
   {
     "id": "the-black-market",
@@ -8156,20 +6457,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "the-black-market",
-    "_nf_name": "The Black Market",
-    "_nf_country": "Vereinigtes Königreich",
-    "_nf_city": "Manchester",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Punk"
-    ],
-    "_nf_lat": 53.4808,
-    "_nf_lng": -2.2426,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "venue-the-globe",
@@ -8195,20 +6488,12 @@
     "audit_status": "green",
     "audit_label": "🟢 aktuell bestätigt",
     "audit_note": "Aktueller 2026-Nachweis aus Szene-/Veranstaltungsquellen.",
-    "_nf_id": "venue-the-globe",
-    "_nf_name": "The Globe",
-    "_nf_country": "Vereinigtes Königreich",
-    "_nf_city": "Newcastle upon Tyne",
-    "_nf_state": "",
-    "_nf_type": "bar",
-    "_nf_categories": [
-      "Gothic",
-      "Post-Punk",
-      "Alternative"
-    ],
-    "_nf_lat": 54.9783,
-    "_nf_lng": -1.6178,
-    "_nf_status": "green"
+    "place_type": "bar",
+    "is_physical": true,
+    "map_category": "bar",
+    "map_marker_type": "bar",
+    "map_visible": true,
+    "icon_category": "bar"
   },
   {
     "id": "disturbia",
@@ -8233,20 +6518,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "disturbia",
-    "_nf_name": "Disturbia",
-    "_nf_country": "Vereinigtes Königreich",
-    "_nf_city": "United Kingdom",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Romantic"
-    ],
-    "_nf_lat": 54,
-    "_nf_lng": -2,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "kate's-clothing",
@@ -8271,20 +6548,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "kate's-clothing",
-    "_nf_name": "Kate's Clothing",
-    "_nf_country": "Vereinigtes Königreich",
-    "_nf_city": "United Kingdom",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 54,
-    "_nf_lng": -2,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "killstar",
@@ -8309,20 +6578,12 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "killstar",
-    "_nf_name": "KILLSTAR",
-    "_nf_country": "Vereinigtes Königreich",
-    "_nf_city": "United Kingdom",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
-    ],
-    "_nf_lat": 54,
-    "_nf_lng": -2,
-    "_nf_status": "yellow"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
   },
   {
     "id": "asmalia",
@@ -8347,20 +6608,733 @@
     "audit_status": "yellow",
     "audit_label": "🟡 zu prüfen",
     "audit_note": "Existenz bzw. Quelle vorhanden, aber keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "_nf_id": "asmalia",
-    "_nf_name": "Asmalia",
-    "_nf_country": "Österreich",
-    "_nf_city": "Vienna",
-    "_nf_state": "",
-    "_nf_type": "venue",
-    "_nf_categories": [
-      "Gothic",
-      "Alternative",
-      "Dark Fashion"
+    "place_type": "venue",
+    "is_physical": true,
+    "map_category": "venue",
+    "map_marker_type": "venue",
+    "map_visible": true,
+    "icon_category": "venue"
+  },
+  {
+    "id": "rattlesnake-vienna",
+    "kind": "place",
+    "name": "Rattlesnake",
+    "city": "Vienna",
+    "country": "Austria",
+    "country_name": "Österreich",
+    "address": "Kirchengasse 3, 1070 Wien",
+    "type": [
+      "shop"
     ],
-    "_nf_lat": 48.202,
-    "_nf_lng": 16.357,
-    "_nf_status": "yellow"
+    "categories": [
+      "Rock",
+      "Punk",
+      "Metal",
+      "Merch"
+    ],
+    "description": "Wiener Shop für Metal-, Rock- und Punk-Merch. Als Szene-Shop geführt; nicht ausschließlich Gothic.",
+    "url": "https://www.rattlesnake.co.at/",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "green",
+    "audit_label": "🟢 aktuell bestätigt",
+    "audit_note": "Schattenwelt führt Rattlesnake als lokalen Szene-Shop; aktueller Standort über Business-Daten bestätigt.",
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop",
+    "scene_relevance": [
+      "alternative_darkrock",
+      "gothic_core"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock",
+      "gothic_core"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock",
+      "🖤 Gothic Core"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
+  },
+  {
+    "id": "totem-records",
+    "kind": "place",
+    "name": "Totem Records",
+    "city": "Vienna",
+    "country": "Austria",
+    "country_name": "Österreich",
+    "address": "Zollergasse 18-20, 1070 Wien",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Metal",
+      "Goth",
+      "Industrial",
+      "Ambient",
+      "Neo-Folk"
+    ],
+    "description": "Unabhängiger Musikladen mit Sortiment aus Metal, Goth, Industrial, Ambient und verwandten Underground-Stilen.",
+    "url": "https://www.totem-records.com/",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "green",
+    "audit_label": "🟢 aktuell bestätigt",
+    "audit_note": "Schattenwelt nennt Totem Records als unabhängigen Musikladen in Wien; aktuelle Standortangabe zusätzlich in Musikladen-Verzeichnissen.",
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop",
+    "scene_relevance": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
+  },
+  {
+    "id": "musikversorgung-steiner",
+    "kind": "place",
+    "name": "Musikversorgung Steiner",
+    "city": "Vienna",
+    "country": "Austria",
+    "country_name": "Österreich",
+    "address": "Westbahnstraße 25/2/R1, 1070 Wien",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Synth",
+      "Wave",
+      "Post-Punk",
+      "Indie",
+      "Alternative",
+      "Punk",
+      "Metal"
+    ],
+    "description": "Underground-Plattenladen mit Schwerpunkt auf Punk, Hardcore, Metal, Garage, Synth, Wave, Post-Punk, Indie und Alternative; Vinyl, Tapes, Bücher und Merch.",
+    "url": "https://firmen.wko.at/",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "green",
+    "audit_label": "🟢 aktuell bestätigt",
+    "audit_note": "Aktueller Gewerbeeintrag nennt Standort und Sortiment ausdrücklich.",
+    "place_type": "shop",
+    "is_physical": true,
+    "map_category": "shop",
+    "map_marker_type": "shop",
+    "map_visible": true,
+    "icon_category": "shop",
+    "scene_relevance": [
+      "darkwave_wave",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz": [
+      "darkwave_wave",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🌑 Darkwave / Wave",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
+  },
+  {
+    "id": "viper-room-vienna",
+    "kind": "place",
+    "name": "Viper Room",
+    "city": "Vienna",
+    "country": "Austria",
+    "country_name": "Österreich",
+    "address": "Landstraßer Hauptstraße 38, 1030 Wien",
+    "type": [
+      "club",
+      "bar"
+    ],
+    "categories": [
+      "Gothic",
+      "Darkwave",
+      "EBM",
+      "Industrial",
+      "Dark Electro",
+      "Post-Punk"
+    ],
+    "description": "Wiener Club mit regelmäßigem Programm der Schwarzen Szene, darunter Near Dark, Vienna Decay Night und Dark-Electro/EBM-Veranstaltungen.",
+    "url": "https://www.viper-room.at/",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "green",
+    "audit_label": "🟢 aktuell bestätigt",
+    "audit_note": "Aktuelle Szene-Termine 2026 sind bei gothic.at und Schattenwelt dokumentiert.",
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club",
+    "scene_relevance": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
+  },
+  {
+    "id": "replugged-vienna",
+    "kind": "place",
+    "name": "Replugged",
+    "city": "Vienna",
+    "country": "Austria",
+    "country_name": "Österreich",
+    "address": "Lerchenfelder Straße 23, 1070 Wien",
+    "type": [
+      "club",
+      "concert_venue"
+    ],
+    "categories": [
+      "Gothic",
+      "Darkwave",
+      "EBM",
+      "Industrial",
+      "Synthpop"
+    ],
+    "description": "Wiener Veranstaltungsort mit wiederkehrenden Gothic-, Dark-Electro-, EBM- und Industrial-Veranstaltungen, darunter Electronic Fallout und das Schattenwelt Festival.",
+    "url": "https://www.replugged.at/",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "green",
+    "audit_label": "🟢 aktuell bestätigt",
+    "audit_note": "Aktuelle 2026-Termine für Dark Electro/EBM/Industrial und Schattenwelt Festival bestätigt.",
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club",
+    "scene_relevance": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
+  },
+  {
+    "id": "the-chamber-vienna",
+    "kind": "place",
+    "name": "The Chamber",
+    "city": "Vienna",
+    "country": "Austria",
+    "country_name": "Österreich",
+    "address": "Hernalser Gürtel 18, 1080 Wien",
+    "type": [
+      "club",
+      "concert_venue"
+    ],
+    "categories": [
+      "Industrial",
+      "Electro",
+      "Gothic",
+      "Deathrock",
+      "Post-Punk"
+    ],
+    "description": "Wiener Veranstaltungsort mit aktuellen Industrial/Electro- sowie Gothic/Deathrock/Post-Punk-Terminen.",
+    "url": "https://www.the-chamber.at/",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "green",
+    "audit_label": "🟢 aktuell bestätigt",
+    "audit_note": "Aktuelle 2026-Termine über gothic.at dokumentiert.",
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club",
+    "scene_relevance": [
+      "gothic_core",
+      "ebm_industrial",
+      "postpunk_deathrock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "ebm_industrial",
+      "postpunk_deathrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "⚡ EBM / Industrial",
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
+  },
+  {
+    "id": "das-lot-vienna",
+    "kind": "place",
+    "name": "Das Lot",
+    "city": "Vienna",
+    "country": "Austria",
+    "country_name": "Österreich",
+    "address": "Absberggasse 31, 1100 Wien",
+    "type": [
+      "club",
+      "concert_venue"
+    ],
+    "categories": [
+      "Darkwave",
+      "Post-Punk",
+      "Gothic",
+      "Alternative"
+    ],
+    "description": "Wiener Veranstaltungsort mit wiederkehrenden Konzerten und Clubnächten aus dem dunklen Underground, darunter Noir Club Night.",
+    "url": "https://daslot.at/",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "green",
+    "audit_label": "🟢 aktuell bestätigt",
+    "audit_note": "Aktuelle 2026-Termine über gothic.at dokumentiert.",
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club",
+    "scene_relevance": [
+      "darkwave_wave",
+      "postpunk_deathrock",
+      "gothic_core"
+    ],
+    "szenerelevanz": [
+      "darkwave_wave",
+      "postpunk_deathrock",
+      "gothic_core"
+    ],
+    "szenerelevanz_labels": [
+      "🌑 Darkwave / Wave",
+      "🕷️ Post-Punk / Deathrock",
+      "🖤 Gothic Core"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
+  },
+  {
+    "id": "ppc-graz",
+    "kind": "place",
+    "name": "p.p.c.",
+    "city": "Graz",
+    "country": "Austria",
+    "country_name": "Österreich",
+    "address": "Neubaugasse 6, 8020 Graz",
+    "type": [
+      "club",
+      "concert_venue"
+    ],
+    "categories": [
+      "Gothic",
+      "Darkwave",
+      "Post-Punk",
+      "Alternative"
+    ],
+    "description": "Graz venue mit dokumentierten Dark-Szene-Konzerten, darunter Ductape 2026 und Traitrs/Whispers In The Shadow 2027.",
+    "url": "https://www.ppc.co.at/",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "green",
+    "audit_label": "🟢 aktuell bestätigt",
+    "audit_note": "Schattenwelt und gothic.at führen aktuelle bzw. angekündigte Szene-Termine am p.p.c.",
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club",
+    "scene_relevance": [
+      "gothic_core",
+      "darkwave_wave",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
+  },
+  {
+    "id": "goththing-innsbruck",
+    "kind": "place",
+    "name": "GothThing / Bühne Innsbruck",
+    "city": "Innsbruck",
+    "country": "Austria",
+    "country_name": "Österreich",
+    "address": "Innsbruck, Tirol",
+    "type": [
+      "event_series"
+    ],
+    "categories": [
+      "Gothic",
+      "EBM",
+      "Dark Electro",
+      "Industrial"
+    ],
+    "description": "GothThing ist eine Innsbrucker Veranstaltungsreihe mit Gothic-, EBM-, Electro- und Industrial-Schwerpunkt; 2026 sind mehrere Termine dokumentiert.",
+    "url": "https://pmk.or.at/de/clubs/bhne-innsbruck/events/",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "green",
+    "audit_label": "🟢 aktuell bestätigt",
+    "audit_note": "Offizielle PMK-Veranstaltungsseite nennt GothThing 2026 und ordnet die Termine Gothic/EBM/Electro/Industrial zu.",
+    "place_type": "event_series",
+    "is_physical": true,
+    "map_category": "event",
+    "map_marker_type": "event",
+    "map_visible": true,
+    "icon_category": "event",
+    "scene_relevance": [
+      "gothic_core",
+      "ebm_industrial",
+      "dark_electro_futurepop"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "ebm_industrial",
+      "dark_electro_futurepop"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
+  },
+  {
+    "id": "schlachthaus-dornbirn",
+    "kind": "place",
+    "name": "Kulturcafé Schlachthaus",
+    "city": "Dornbirn",
+    "country": "Austria",
+    "country_name": "Österreich",
+    "address": "Schlachthausstraße 11, 6850 Dornbirn",
+    "type": [
+      "concert_venue",
+      "bar"
+    ],
+    "categories": [
+      "Alternative",
+      "Dark Rock",
+      "Underground"
+    ],
+    "description": "Kulturcafé und Bühne in Dornbirn. Gothic.at führt das Schlachthaus als Veranstaltungsort für eine Szene-Reihe; aktuelle 2026-Programme sind auf der Betreiberseite dokumentiert.",
+    "url": "https://www.ojad.at/",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "yellow",
+    "audit_label": "🟡 Szeneprogramm vorhanden, Schwerpunkt nicht ausschließlich Gothic",
+    "audit_note": "Aktiver Kulturort mit Underground- und Metal-Programm; Gothic-Spezifik sollte bei späterer Pflege einzeln über Veranstaltungen geprüft werden.",
+    "place_type": "club",
+    "is_physical": true,
+    "map_category": "club",
+    "map_marker_type": "club",
+    "map_visible": true,
+    "icon_category": "club",
+    "scene_relevance": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
+  },
+  {
+    "id": "schattenwelt-festival-2026",
+    "kind": "event",
+    "name": "Schattenwelt Festival 2026",
+    "city": "Vienna",
+    "country": "Austria",
+    "country_name": "Österreich",
+    "address": "Replugged & Szene Wien",
+    "type": [
+      "festival"
+    ],
+    "categories": [
+      "Gothic",
+      "Dark Electro",
+      "EBM",
+      "Industrial",
+      "Darkwave",
+      "Synthpop",
+      "Post-Punk"
+    ],
+    "description": "Österreichisches Gothic- und Dark-Electro-Festival am 6.–7. November 2026.",
+    "url": "https://schattenwelt.at/events/schattenwelt-festival-2026/",
+    "date_start": "2026-11-06",
+    "date_end": "2026-11-07",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "green",
+    "audit_label": "🟢 aktuell bestätigt",
+    "audit_note": "Offizielle Schattenwelt-Festival-Seite.",
+    "scene_relevance": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
+  },
+  {
+    "id": "near-dark-2026-10",
+    "kind": "event",
+    "name": "Near Dark",
+    "city": "Vienna",
+    "country": "Austria",
+    "country_name": "Österreich",
+    "type": [
+      "recurring_event"
+    ],
+    "categories": [
+      "Gothic",
+      "Darkwave",
+      "New Goth",
+      "Dark 80s"
+    ],
+    "description": "Wiederkehrende Dark-Party im Viper Room; 3.–4. Oktober 2026 laut aktuellem Schattenwelt/Gothic-Programm.",
+    "url": "https://schattenwelt.at/events/categories/gothic-party/",
+    "date_start": "2026-10-03",
+    "date_end": "2026-10-04",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "green",
+    "audit_label": "🟢 aktuell bestätigt",
+    "audit_note": "Aktueller Veranstaltungseintrag bei Schattenwelt.",
+    "scene_relevance": [
+      "gothic_core",
+      "darkwave_wave"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
+  },
+  {
+    "id": "electronic-fallout-2026-10",
+    "kind": "event",
+    "name": "Electronic Fallout – Grendel & System Noire Afterparty",
+    "city": "Vienna",
+    "country": "Austria",
+    "country_name": "Österreich",
+    "address": "Replugged, Lerchenfelder Straße 23, 1070 Wien",
+    "type": [
+      "party"
+    ],
+    "categories": [
+      "Dark Electro",
+      "EBM",
+      "Industrial"
+    ],
+    "description": "Dark-Electro/EBM/Industrial-Party am 3. Oktober 2026 im Anschluss an das Konzert von Grendel und System Noire.",
+    "url": "https://schattenwelt.at/events/categories/gothic-party/",
+    "date_start": "2026-10-03",
+    "date_end": "2026-10-03",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "green",
+    "audit_label": "🟢 aktuell bestätigt",
+    "audit_note": "Aktueller Schattenwelt-Eintrag.",
+    "scene_relevance": [
+      "ebm_industrial",
+      "dark_electro_futurepop"
+    ],
+    "szenerelevanz": [
+      "ebm_industrial",
+      "dark_electro_futurepop"
+    ],
+    "szenerelevanz_labels": [
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
+  },
+  {
+    "id": "schwarzer-reigen-2026",
+    "kind": "event",
+    "name": "Schwarzer Reigen – Götterdämmerung",
+    "city": "Vienna",
+    "country": "Austria",
+    "country_name": "Österreich",
+    "address": "Schloss Neugebäude, Wien",
+    "type": [
+      "party"
+    ],
+    "categories": [
+      "Gothic",
+      "Darkwave",
+      "EBM",
+      "Industrial",
+      "Synthpop",
+      "Post-Punk"
+    ],
+    "description": "Schwarzer Reigen am 17. Oktober 2026 mit Classic & New Goth Sounds, Goth- und Industrial-Rock, Dark 80s, Synth/New Wave und Post-Punk.",
+    "url": "https://schattenwelt.at/events/schwarzer-reigen-goetterdaemmerung-4/",
+    "date_start": "2026-10-17",
+    "date_end": "2026-10-18",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "green",
+    "audit_label": "🟢 aktuell bestätigt",
+    "audit_note": "Offizielle Veranstaltungsseite.",
+    "scene_relevance": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "postpunk_deathrock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "postpunk_deathrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
+  },
+  {
+    "id": "goththing-summer-2026",
+    "kind": "event",
+    "name": "GothThing – Summer Edition",
+    "city": "Innsbruck",
+    "country": "Austria",
+    "country_name": "Österreich",
+    "type": [
+      "party"
+    ],
+    "categories": [
+      "Gothic",
+      "EBM",
+      "Electro",
+      "Industrial"
+    ],
+    "description": "GothThing Summer Edition am 11. September 2026 in Innsbruck.",
+    "url": "https://pmk.or.at/de/clubs/bhne-innsbruck/events/",
+    "date_start": "2026-09-11",
+    "date_end": "2026-09-11",
+    "verified": true,
+    "verified_date": "2026-09-17",
+    "audit_status": "green",
+    "audit_label": "🟢 aktuell bestätigt",
+    "audit_note": "Offizielle PMK-Veranstaltungsseite.",
+    "scene_relevance": [
+      "gothic_core",
+      "ebm_industrial",
+      "dark_electro_futurepop"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "ebm_industrial",
+      "dark_electro_futurepop"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
   },
   {
     "id": "cafe-libella",
@@ -8400,6 +7374,20 @@
       "ebm_industrial",
       "dark_electro_futurepop",
       "alternative_darkrock"
-    ]
+    ],
+    "szenerelevanz": [
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv"
   }
 ]
