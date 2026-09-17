@@ -7784,41 +7784,6 @@
     "google_maps_status": "search_link"
   },
   {
-    "id": "black-rose",
-    "name": "Black Rose",
-    "city": "Vienna",
-    "country": "Austria",
-    "country_name": "Österreich",
-    "type": [
-      "online"
-    ],
-    "categories": [
-      "Gothic",
-      "Dark Fashion"
-    ],
-    "description": "Gothic-, Dark-Fashion- oder Alternative-Shop für die Nachtfragment-Shopdatenbank.",
-    "lat": 48.2082,
-    "lng": 16.3738,
-    "url": "https://www.blackrose.at/",
-    "verified": false,
-    "verified_date": null,
-    "audit_status": "yellow",
-    "audit_label": "🟡 zu prüfen",
-    "audit_note": "Noch keine ausreichende aktuelle Evidenz für eine definitive Aktivitätsbestätigung.",
-    "szenerelevanz": [
-      "gothic_core"
-    ],
-    "szenerelevanz_labels": [
-      "🖤 Gothic Core"
-    ],
-    "aktivitaet": "unchecked",
-    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Black+Rose%2C+Vienna%2C+%C3%96sterreich",
-    "google_maps_coords_url": "https://www.google.com/maps/search/?api=1&query=48.2082,16.3738",
-    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=48.2082,16.3738",
-    "google_maps_status": "search_link"
-  },
-  {
     "id": "event-return-of-the-living-dead-hamburg",
     "record_type": "event",
     "name": "Return of the Living Dead Party",
