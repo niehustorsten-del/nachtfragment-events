@@ -1,26 +1,16 @@
 {
-  "description": "Bevorzugte Suchquellen für die automatische Nachtfragment Scene Discovery. Die eigentliche Suche bleibt offen und darf weitere Domains finden.",
-  "preferred_domains": [
-    "bandcamp.com",
-    "residentadvisor.net",
-    "songkick.com",
-    "ra.co",
-    "facebook.com",
-    "instagram.com",
-    "eventbrite.com",
-    "bandsintown.com"
-  ],
-  "blocked_patterns": [
+  "version": 2,
+  "blocked_domains": [
     "wikipedia.org",
-    "imdb.com",
-    "pinterest.com"
-  ],
-  "rules": {
-    "never_publish_without_city": true,
-    "never_publish_without_scene_term": true,
-    "physical_places_require_geocoding": true,
-    "green_threshold": 78,
-    "yellow_goes_to": "data/scene_candidates.json",
-    "existing_id_wins": true
-  }
+    "tripadvisor.",
+    "yelp.",
+    "eventbrite.",
+    "bandsintown.",
+    "songkick.",
+    "discogs.",
+    "last.fm",
+    "foursquare.",
+    "mapquest.",
+    "pinterest."
+  ]
 }

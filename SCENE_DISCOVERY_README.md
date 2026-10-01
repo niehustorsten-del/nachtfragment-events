@@ -1,51 +1,24 @@
-# Nachtfragment Scene Discovery
+# Nachtfragment Scene Discovery V2
 
-Erweiterung der bestehenden Nachtfragment Auto Discovery.
+Korrigierte automatische Discovery für Clubs, Bars, Gothic-/Dark-Fashion-Shops und Veranstalter.
 
-## Automatisch gesucht werden
+## Wichtige Korrekturen
+- Keine Stadtmittelpunkt-Koordinaten mehr.
+- Neue Karten-Pins benötigen eine konkrete gefundene Adresse und erfolgreiches Geocoding.
+- Online-Shops bekommen keine künstliche Kartenposition.
+- Generische Clubs ohne konkreten Gothic/Dark/EBM-Bezug werden nicht automatisch veröffentlicht.
+- Normale Fashion-Shops werden stärker gefiltert.
+- Aggregatoren/redaktionelle Seiten werden nicht automatisch übernommen.
+- Bestehende Datensätze werden nicht überschrieben.
+- Deduplizierung über URL und Name/Stadt/Land.
+- Unsichere Treffer landen in `data/scene_candidates.json`.
+- SerpApi wird über drei tägliche Query-Batches mit je 12 Anfragen begrenzt.
+- Gemeinsame GitHub-Concurrency-Gruppe verhindert parallele Schreibvorgänge, sofern auch der Haupt-Workflow diese Gruppe verwendet.
 
-- Gothic-/Darkwave-/EBM-/Industrial-Clubs
-- Bars und Lounges mit erkennbarem Szeneprogramm
-- Gothic-/Dark-Fashion-/Alternative-Shops
-- Plattenläden mit relevantem Dark-/Gothic-Schwerpunkt
-- Szene-Veranstalter und Promoter
-
-## Veröffentlichungslogik
-
-### Grün
-Ein Treffer wird nur automatisch veröffentlicht, wenn:
-
-- eine erreichbare Originalseite vorhanden ist
-- ein eindeutiger Szene-Bezug gefunden wurde
-- ein Ort/eine Stadt erkannt wurde
-- der Treffer ausreichend hoch bewertet wird
-- der Ort geocodiert werden kann
-
-### Gelb
-
-Unsichere Treffer landen in:
-
-`data/scene_candidates.json`
-
-Sie werden nicht auf der Karte veröffentlicht.
-
-## Bestehende Daten
-
-Die vorhandene `data/nachtfragment.json` wird nur ergänzt.
-Bestehende IDs gewinnen; es werden keine vorhandenen Datensätze überschrieben.
-
-## Ablauf
-
-Der Workflow läuft täglich um 05:17 UTC.
-
-Manuell:
-
-GitHub → Actions → Nachtfragment Scene Discovery → Run workflow
-
-## Benötigtes Secret
-
-Bereits vorhandenes Repository Secret:
-
-`SERPAPI_KEY`
-
-Der Schlüssel wird nicht in Dateien gespeichert.
+## Haupt-Workflow
+In `.github/workflows/update.yml` ergänzen:
+```yaml
+concurrency:
+  group: nachtfragment-auto-update
+  cancel-in-progress: false
+```

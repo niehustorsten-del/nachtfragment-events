@@ -1,158 +1,156 @@
-[
-  {
-    "country": "Germany",
-    "query": "Gothic Darkwave EBM Industrial Club Bar venue new current"
-  },
-  {
-    "country": "Austria",
-    "query": "Gothic Darkwave EBM Industrial Club Bar venue new current"
-  },
-  {
-    "country": "Switzerland",
-    "query": "Gothic Darkwave EBM Industrial Club Bar venue new current"
-  },
-  {
-    "country": "France",
-    "query": "Gothique Darkwave EBM Industrial club bar lieu nouveau actuel"
-  },
-  {
-    "country": "Netherlands",
-    "query": "Gothic Darkwave EBM Industrial club bar venue current"
-  },
-  {
-    "country": "Belgium",
-    "query": "Gothic Darkwave EBM Industrial club bar venue current"
-  },
-  {
-    "country": "United Kingdom",
-    "query": "Gothic Darkwave EBM Industrial club night venue current"
-  },
-  {
-    "country": "Spain",
-    "query": "Gothic Darkwave EBM Industrial club bar venue actual"
-  },
-  {
-    "country": "Italy",
-    "query": "Gothic Darkwave EBM Industrial club bar venue attuale"
-  },
-  {
-    "country": "Denmark",
-    "query": "Gothic Darkwave EBM Industrial club venue current"
-  },
-  {
-    "country": "Sweden",
-    "query": "Gothic Darkwave EBM Industrial club venue current"
-  },
-  {
-    "country": "Norway",
-    "query": "Gothic Darkwave EBM Industrial club venue current"
-  },
-  {
-    "country": "Finland",
-    "query": "Gothic Darkwave EBM Industrial club venue current"
-  },
-  {
-    "country": "Poland",
-    "query": "Gothic Darkwave EBM Industrial club venue current"
-  },
-  {
-    "country": "Czech Republic",
-    "query": "Gothic Darkwave EBM Industrial club venue current"
-  },
-  {
-    "country": "Hungary",
-    "query": "Gothic Darkwave EBM Industrial club venue current"
-  },
-  {
-    "country": "Romania",
-    "query": "Gothic Darkwave EBM Industrial club venue current"
-  },
-  {
-    "country": "Portugal",
-    "query": "Gothic Darkwave EBM Industrial club venue current"
-  },
-  {
-    "country": "Serbia",
-    "query": "Gothic Darkwave EBM Industrial club venue current"
-  },
-  {
-    "country": "Slovenia",
-    "query": "Gothic Darkwave EBM Industrial club venue current"
-  },
-  {
-    "country": "Croatia",
-    "query": "Gothic Darkwave EBM Industrial club venue current"
-  },
-  {
-    "country": "Ireland",
-    "query": "Gothic Darkwave EBM Industrial club venue current"
-  },
-  {
-    "country": "United States",
-    "query": "Gothic Darkwave EBM Industrial club bar venue current"
-  },
-  {
-    "country": "Canada",
-    "query": "Gothic Darkwave EBM Industrial club bar venue current"
-  },
-  {
-    "country": "Australia",
-    "query": "Gothic Darkwave EBM Industrial club bar venue current"
-  },
-  {
-    "country": "New Zealand",
-    "query": "Gothic Darkwave EBM Industrial club bar venue current"
-  },
-  {
-    "country": "South Africa",
-    "query": "Gothic Darkwave EBM Industrial club venue current"
-  },
-  {
-    "country": "Germany",
-    "query": "Gothic Dark fashion shop alternative shop record store current"
-  },
-  {
-    "country": "Austria",
-    "query": "Gothic Dark fashion shop alternative shop record store current"
-  },
-  {
-    "country": "Switzerland",
-    "query": "Gothic Dark fashion shop alternative shop record store current"
-  },
-  {
-    "country": "France",
-    "query": "Gothique mode sombre boutique alternative magasin actuel"
-  },
-  {
-    "country": "United Kingdom",
-    "query": "Gothic dark fashion alternative shop current"
-  },
-  {
-    "country": "United States",
-    "query": "Gothic dark fashion alternative shop current"
-  },
-  {
-    "country": "Canada",
-    "query": "Gothic dark fashion alternative shop current"
-  },
-  {
-    "country": "Australia",
-    "query": "Gothic dark fashion alternative shop current"
-  },
-  {
-    "country": "Germany",
-    "query": "Gothic event promoter Darkwave EBM Industrial organizer current"
-  },
-  {
-    "country": "Austria",
-    "query": "Gothic event promoter Darkwave EBM Industrial organizer current"
-  },
-  {
-    "country": "United Kingdom",
-    "query": "Gothic event promoter Darkwave EBM Industrial organizer current"
-  },
-  {
-    "country": "United States",
-    "query": "Gothic event promoter Darkwave EBM Industrial organizer current"
-  }
-]
+{
+  "version": 2,
+  "rotation": "daily",
+  "batches": [
+    [
+      {
+        "country": "Germany",
+        "query": "Gothic club Darkwave EBM Industrial venue Germany official"
+      },
+      {
+        "country": "Austria",
+        "query": "Gothic club Darkwave EBM Industrial venue Austria official"
+      },
+      {
+        "country": "Switzerland",
+        "query": "Gothic club Darkwave EBM Industrial venue Switzerland official"
+      },
+      {
+        "country": "United Kingdom",
+        "query": "Goth club Darkwave EBM Industrial venue UK official"
+      },
+      {
+        "country": "France",
+        "query": "club gothique darkwave EBM industriel France lieu officiel"
+      },
+      {
+        "country": "Netherlands",
+        "query": "Gothic club darkwave EBM industrial Netherlands official"
+      },
+      {
+        "country": "Belgium",
+        "query": "Gothic club darkwave EBM industrial Belgium official"
+      },
+      {
+        "country": "United States",
+        "query": "Goth club darkwave EBM industrial venue USA official"
+      },
+      {
+        "country": "Canada",
+        "query": "Goth club darkwave EBM industrial venue Canada official"
+      },
+      {
+        "country": "Australia",
+        "query": "Goth club darkwave EBM industrial venue Australia official"
+      },
+      {
+        "country": "Spain",
+        "query": "club gothic darkwave EBM industrial Spain official"
+      },
+      {
+        "country": "Italy",
+        "query": "Gothic club darkwave EBM industrial Italy official"
+      }
+    ],
+    [
+      {
+        "country": "Germany",
+        "query": "Gothic shop dark fashion alternative clothing EBM industrial Germany official"
+      },
+      {
+        "country": "Austria",
+        "query": "Gothic shop dark fashion alternative clothing Austria official"
+      },
+      {
+        "country": "Switzerland",
+        "query": "Gothic shop dark fashion alternative clothing Switzerland official"
+      },
+      {
+        "country": "United Kingdom",
+        "query": "Gothic shop dark fashion alternative clothing UK official"
+      },
+      {
+        "country": "France",
+        "query": "boutique gothique dark fashion vêtements alternatifs France officiel"
+      },
+      {
+        "country": "Netherlands",
+        "query": "gothic shop dark fashion alternative clothing Netherlands official"
+      },
+      {
+        "country": "Belgium",
+        "query": "gothic shop dark fashion alternative clothing Belgium official"
+      },
+      {
+        "country": "United States",
+        "query": "gothic shop dark fashion alternative clothing USA official"
+      },
+      {
+        "country": "Canada",
+        "query": "gothic shop dark fashion alternative clothing Canada official"
+      },
+      {
+        "country": "Australia",
+        "query": "gothic shop dark fashion alternative clothing Australia official"
+      },
+      {
+        "country": "Japan",
+        "query": "gothic shop dark fashion alternative clothing Japan official"
+      },
+      {
+        "country": "Turkey",
+        "query": "gothic shop dark fashion alternative clothing Turkey official"
+      }
+    ],
+    [
+      {
+        "country": "Germany",
+        "query": "Gothic promoter Darkwave EBM industrial events organizer Germany"
+      },
+      {
+        "country": "Austria",
+        "query": "Gothic promoter Darkwave EBM industrial events organizer Austria"
+      },
+      {
+        "country": "Switzerland",
+        "query": "Gothic promoter Darkwave EBM industrial events organizer Switzerland"
+      },
+      {
+        "country": "United Kingdom",
+        "query": "Goth promoter Darkwave EBM industrial events organizer UK"
+      },
+      {
+        "country": "France",
+        "query": "organisateur soirées gothique darkwave EBM industriel France"
+      },
+      {
+        "country": "Netherlands",
+        "query": "Gothic promoter Darkwave EBM industrial events Netherlands"
+      },
+      {
+        "country": "Belgium",
+        "query": "Gothic promoter Darkwave EBM industrial events Belgium"
+      },
+      {
+        "country": "United States",
+        "query": "Goth promoter Darkwave EBM industrial events organizer USA"
+      },
+      {
+        "country": "Canada",
+        "query": "Goth promoter Darkwave EBM industrial events organizer Canada"
+      },
+      {
+        "country": "Australia",
+        "query": "Goth promoter Darkwave EBM industrial events organizer Australia"
+      },
+      {
+        "country": "Spain",
+        "query": "promotor eventos goth darkwave EBM industrial España"
+      },
+      {
+        "country": "Italy",
+        "query": "organizzatore eventi goth darkwave EBM industrial Italia"
+      }
+    ]
+  ]
+}
