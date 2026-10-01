@@ -1,0 +1,3 @@
+concurrency:
+  group: nachtfragment-auto-update
+  cancel-in-progress: false
