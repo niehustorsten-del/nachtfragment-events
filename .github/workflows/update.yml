@@ -57,6 +57,3 @@ jobs:
             git commit -m "Auto-discover and quality-check Nachtfragment events and festivals"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
-concurrency:
-  group: nachtfragment-auto-update
-  cancel-in-progress: false
