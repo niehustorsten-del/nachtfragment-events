@@ -72,23 +72,273 @@ input:focus,select:focus{border-color:var(--accent);box-shadow:0 0 0 2px #c78cff
 </div></div>
 <main class="wrap">
 <div class="stats"><div class="stat" id="count">Lade Daten …</div><div class="stat">🤖 Kandidaten: <strong id="candidateCount">–</strong></div><div class="stat">📅 Events: <strong id="eventCount">–</strong></div><div class="stat">🎪 Festivals: <strong id="festivalCount">–</strong></div><div class="stat">📍 Karten: <strong id="mapCount">–</strong></div><label class="toggle"><input type="checkbox" id="showCandidates"> Kandidaten einblenden</label></div>
-<div class="layout"><div id="map"></div><section><div class="sectionTitle">Einträge</div><div class="panel" id="list"></div></section></div><div class="footer">Nachtfragment · Dark Scene Directory · Datenstand 2026</div></main>
+<div class="layout"><div id="map"></div><section><div class="sectionTitle">Einträge</div><div class="panel" id="list"></div></section></div><div class="footer">Nachtfragment · Dark Scene Directory · Live aus der aktuellen Datenbank</div></main>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-const DATA='data/nachtfragment.json',CAND='data/candidates.json';let all=[],candidates=[],markers=[];
-const map=L.map('map').setView([51,10],5);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map);
-const icons={active:'🟢',event_based:'🟡',change_announced:'🟠',closed:'🔴',unchecked:'⚪'};const labels={active:'aktuell aktiv',event_based:'unregelmäßig / Event-basiert',change_announced:'angekündigte Veränderung',closed:'geschlossen',unchecked:'nicht ausreichend geprüft'};
-const A=v=>Array.isArray(v)?v:(v?[v]:[]);const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-function normalize(x,candidate=false){let a=x.aktivitaet||x.audit_status||(x.verified?'active':'unchecked');if(['green'].includes(a))a='active';if(['yellow'].includes(a))a='event_based';if(['orange'].includes(a))a='change_announced';if(['red'].includes(a))a='closed';if(!labels[a])a='unchecked';return {...x,aktivitaet:a,_candidate:candidate,categories:[...new Set(A(x.categories).concat(A(x.szenerelevanz_labels)))]}}
-function text(x){let v=[x.name,x.city,x.country,x.country_name,x.description,x.date_text,x.source_url,...A(x.categories),...A(x.szenerelevanz_labels)];if(x.veranstaltung)v.push(x.veranstaltung.frequenz,x.veranstaltung.venue,x.veranstaltung.beschreibung);return v.join(' ').toLowerCase()}
-function eventInfo(x){if(x.record_type!=='event'&&!x.veranstaltung)return '';let v=x.veranstaltung||{},fest=A(x.type).includes('festival')||v.festival;return `<div class="eventline">${fest?'🎪':'📅'} <b>${fest?'Festival':'Veranstaltung'}</b>${v.frequenz?' · '+esc(v.frequenz):''}${v.venue?' · '+esc(v.venue):''}${v.naechster_termin?' · nächster Termin: '+esc(v.naechster_termin):''}${x.date_text?' · '+esc(x.date_text):''}</div>`}
-function links(x){let a=[];if(x.url)a.push(`<a href="${esc(x.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🌐 Website</a>`);if(x.source_url&&!x.url)a.push(`<a href="${esc(x.source_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🔎 Quelle</a>`);if(x.google_maps_url)a.push(`<a href="${esc(x.google_maps_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">📍 Google Maps</a>`);if(x.google_maps_directions_url)a.push(`<a href="${esc(x.google_maps_directions_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🧭 Route</a>`);return a.join('')}
-function popup(x){return `<b>${esc(x.name)}</b><br>${esc(x.city||'')}${x.country_name?', '+esc(x.country_name):''}<br>${icons[x.aktivitaet]} ${labels[x.aktivitaet]}${x._candidate?'<br>⚠️ Kandidat – noch nicht veröffentlicht':''}${eventInfo(x)}<br><br>${links(x)}`}
-function render(){let term=q.value.trim().toLowerCase(),c=country.value,t=type.value,a=activity.value,sc=scene.value;let source=showCandidates.checked?all.concat(candidates):all;let f=source.filter(x=>(!term||text(x).includes(term))&&(!c||(x.country_name||x.country)===c)&&(!t||(t==='festival'?A(x.type).includes('festival'):A(x.type).includes(t)))&&(!a||x.aktivitaet===a)&&(!sc||A(x.szenerelevanz).includes(sc)));markers.forEach(m=>map.removeLayer(m));markers=[];list.innerHTML='';f.forEach(x=>{let card=document.createElement('article');card.className='card'+(x._candidate?' candidate':'');let isEvent=x.record_type==='event'||x.veranstaltung;card.innerHTML=`<div class="name">${esc(x.name||'Unbenannter Eintrag')}</div><div class="meta">${esc(x.city||'Ort unbekannt')} · ${esc(x.country_name||x.country||'Land unbekannt')} · ${esc(A(x.type).join(' / '))}</div><span class="badge">${icons[x.aktivitaet]} ${labels[x.aktivitaet]}</span>${x._candidate?'<span class="badge candidateBadge">⚠️ Kandidat</span>':''}${isEvent?'<span class="badge event">📅 Event</span>':''}${A(x.szenerelevanz_labels).slice(0,6).map(s=>`<span class="badge">${esc(s)}</span>`).join('')}${x.confidence_score!=null?`<span class="badge">✓ Score ${esc(x.confidence_score)}</span>`:''}${x.description?`<div class="desc">${esc(x.description)}</div>`:''}${eventInfo(x)}<div class="links">${links(x)}</div></article>`;list.appendChild(card);let lat=Number(x.lat),lng=Number(x.lng);if(Number.isFinite(lat)&&Number.isFinite(lng)){let m=L.marker([lat,lng]).addTo(map).bindPopup(popup(x));markers.push(m);card.onclick=()=>{map.setView([lat,lng],14);m.openPopup()}}});count.textContent=`${f.length} von ${all.length}${showCandidates.checked?' + '+candidates.length+' Kandidaten':''} Einträgen`;if(!f.length)list.innerHTML='<div class="empty">Keine passenden Einträge gefunden.</div>'}
-function fillCountries(){let cs=[...new Set(all.concat(candidates).map(x=>x.country_name||x.country).filter(Boolean))].sort((a,b)=>a.localeCompare(b));country.innerHTML='<option value="">🌍 Alle Länder</option>'+cs.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('')}
-Promise.all([fetch(DATA,{cache:'no-store'}).then(r=>{if(!r.ok)throw Error(r.status+' – JSON-Datei nicht gefunden');return r.json()}),fetch(CAND,{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[])])
-.then(([j,c])=>{let d=Array.isArray(j)?j:j.shops_and_venues;if(!Array.isArray(d))throw Error('Unbekanntes JSON-Format');all=d.map(x=>normalize(x));candidates=Array.isArray(c)?c.map(x=>normalize(x,true)):[];candidateCount.textContent=candidates.length;eventCount.textContent=all.filter(x=>x.record_type==='event'||x.veranstaltung).length;festivalCount.textContent=all.filter(x=>A(x.type).includes('festival')).length;mapCount.textContent=all.filter(x=>Number.isFinite(Number(x.lat))&&Number.isFinite(Number(x.lng))).length;fillCountries();render()})
-.catch(e=>{count.textContent='Fehler beim Laden';list.innerHTML=`<div class="empty"><b>Die Daten konnten nicht geladen werden.</b><br><br><code>${esc(e.message)}</code><br><br>Bitte index.html, data/nachtfragment.json und data/candidates.json im richtigen Verzeichnis ablegen.</div>`});
-[q,country,type,scene,activity,showCandidates].forEach(x=>x.addEventListener('input',render));
+const DATA='data/nachtfragment.json';
+const CANDIDATE_FILES=['data/scene_candidates.json','data/candidates.json'];
+let all=[],candidates=[],markers=[];
+
+const map=L.map('map').setView([51,10],5);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  maxZoom:19,
+  attribution:'© OpenStreetMap contributors'
+}).addTo(map);
+
+const icons={
+  active:'🟢',event_based:'🟡',change_announced:'🟠',closed:'🔴',unchecked:'⚪'
+};
+const labels={
+  active:'aktuell aktiv',
+  event_based:'unregelmäßig / Event-basiert',
+  change_announced:'angekündigte Veränderung',
+  closed:'geschlossen',
+  unchecked:'nicht ausreichend geprüft'
+};
+
+const A=v=>Array.isArray(v)?v:(v?[v]:[]);
+const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({
+  '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+}[m]));
+
+function normalizeActivity(x){
+  let a=x.aktivitaet||x.audit_status;
+  if(a==='green')a='active';
+  if(a==='yellow')a='event_based';
+  if(a==='orange')a='change_announced';
+  if(a==='red')a='closed';
+  if(!labels[a]) a=x.verified?'active':'unchecked';
+  return a;
+}
+
+/* Map old/new discovery categories into Nachtfragment's fixed taxonomy. */
+function sceneTaxonomy(x){
+  const raw=[
+    ...A(x.szenerelevanz),
+    ...A(x.szenerelevanz_labels),
+    ...A(x.categories),
+    ...A(x.genre),
+    ...A(x.genres)
+  ].join(' ').toLowerCase();
+
+  const out=[];
+  if(/goth|gothic/.test(raw))out.push('gothic_core');
+  if(/darkwave|dark wave|coldwave|cold wave|wave/.test(raw))out.push('darkwave_wave');
+  if(/ebm|industrial|electronic body music/.test(raw))out.push('ebm_industrial');
+  if(/dark electro|futurepop|aggrotech|cybergoth|cyber goth/.test(raw))out.push('dark_electro_futurepop');
+  if(/post.?punk|deathrock|death rock|dark punk/.test(raw))out.push('postpunk_deathrock');
+  if(/dark rock|alternative|dark alternative/.test(raw))out.push('alternative_darkrock');
+  return [...new Set(out)];
+}
+
+function normalize(x,candidate=false){
+  const activity=normalizeActivity(x);
+  const taxonomy=sceneTaxonomy(x);
+  const categories=[...new Set([
+    ...A(x.categories),
+    ...A(x.szenerelevanz_labels)
+  ])];
+
+  return {
+    ...x,
+    aktivitaet:activity,
+    _candidate:candidate,
+    categories,
+    szenerelevanz:[...new Set([...A(x.szenerelevanz),...taxonomy])],
+    szenerelevanz_labels:A(x.szenerelevanz_labels).length
+      ? [...new Set(A(x.szenerelevanz_labels))]
+      : taxonomy.map(k=>({
+          gothic_core:'🖤 Gothic Core',
+          darkwave_wave:'🌑 Darkwave / Wave',
+          ebm_industrial:'⚡ EBM / Industrial',
+          dark_electro_futurepop:'🧪 Dark Electro / Futurepop',
+          postpunk_deathrock:'🕷️ Post-Punk / Deathrock',
+          alternative_darkrock:'🎸 Alternative / Dark Rock'
+        }[k])).filter(Boolean)
+  };
+}
+
+function text(x){
+  const v=[
+    x.name,x.city,x.country,x.country_name,x.description,
+    x.date_text,x.source_url,x.discovery_query,
+    x.address,x.url,
+    ...A(x.categories),...A(x.szenerelevanz_labels)
+  ];
+  if(x.veranstaltung){
+    v.push(x.veranstaltung.frequenz,x.veranstaltung.venue,x.veranstaltung.beschreibung);
+  }
+  return v.join(' ').toLowerCase();
+}
+
+function eventInfo(x){
+  if(x.record_type!=='event'&&!x.veranstaltung)return '';
+  const v=x.veranstaltung||{};
+  const fest=A(x.type).includes('festival')||v.festival;
+  return `<div class="eventline">${fest?'🎪':'📅'} <b>${fest?'Festival':'Veranstaltung'}</b>${
+    v.frequenz?' · '+esc(v.frequenz):''}${
+    v.venue?' · '+esc(v.venue):''}${
+    v.naechster_termin?' · nächster Termin: '+esc(v.naechster_termin):''}${
+    x.date_text?' · '+esc(x.date_text):''}</div>`;
+}
+
+function links(x){
+  const a=[];
+  if(x.url)a.push(`<a href="${esc(x.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🌐 Website</a>`);
+  if(x.source_url&&!x.url)a.push(`<a href="${esc(x.source_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🔎 Quelle</a>`);
+  if(x.google_maps_url)a.push(`<a href="${esc(x.google_maps_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">📍 Google Maps</a>`);
+  if(x.google_maps_directions_url)a.push(`<a href="${esc(x.google_maps_directions_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🧭 Route</a>`);
+  return a.join('');
+}
+
+function popup(x){
+  return `<b>${esc(x.name)}</b><br>${
+    esc(x.city||'')}${x.country_name?', '+esc(x.country_name):''}<br>${
+    icons[x.aktivitaet]} ${labels[x.aktivitaet]}${
+    x._candidate?'<br>⚠️ Neu entdeckt – noch nicht endgültig geprüft':''}${
+    eventInfo(x)}<br><br>${links(x)}`;
+}
+
+function render(){
+  const term=q.value.trim().toLowerCase();
+  const c=country.value,t=type.value,a=activity.value,sc=scene.value;
+
+  const source=showCandidates.checked ? all.concat(candidates) : all;
+
+  const f=source.filter(x=>
+    (!term||text(x).includes(term)) &&
+    (!c||(x.country_name||x.country)===c) &&
+    (!t||(t==='festival'
+      ? A(x.type).includes('festival')
+      : A(x.type).includes(t))) &&
+    (!a||x.aktivitaet===a) &&
+    (!sc||A(x.szenerelevanz).includes(sc))
+  );
+
+  markers.forEach(m=>map.removeLayer(m));
+  markers=[];
+  list.innerHTML='';
+
+  f.forEach(x=>{
+    const card=document.createElement('article');
+    card.className='card'+(x._candidate?' candidate':'');
+
+    const isEvent=x.record_type==='event'||x.veranstaltung;
+    const mapable=Number.isFinite(Number(x.lat))&&Number.isFinite(Number(x.lng));
+
+    card.innerHTML=
+      `<div class="name">${esc(x.name||'Unbenannter Eintrag')}</div>
+       <div class="meta">${esc(x.city||'Ort unbekannt')} · ${
+         esc(x.country_name||x.country||'Land unbekannt')} · ${
+         esc(A(x.type).join(' / '))}</div>
+       <span class="badge">${icons[x.aktivitaet]} ${labels[x.aktivitaet]}</span>
+       ${x._candidate?'<span class="badge candidateBadge">⚠️ Neu entdeckt / Prüfung ausstehend</span>':''}
+       ${isEvent?'<span class="badge event">📅 Event</span>':''}
+       ${A(x.szenerelevanz_labels).slice(0,6).map(s=>`<span class="badge">${esc(s)}</span>`).join('')}
+       ${A(x.categories).slice(0,6).map(s=>`<span class="badge">${esc(s)}</span>`).join('')}
+       ${x.scene_score!=null?`<span class="badge">✓ Score ${esc(x.scene_score)}</span>`:''}
+       ${x.description?`<div class="desc">${esc(x.description)}</div>`:''}
+       ${eventInfo(x)}
+       <div class="links">${links(x)}</div>`;
+
+    list.appendChild(card);
+
+    if(mapable){
+      const m=L.marker([Number(x.lat),Number(x.lng)])
+        .addTo(map)
+        .bindPopup(popup(x));
+      markers.push(m);
+      card.onclick=()=>{
+        map.setView([Number(x.lat),Number(x.lng)],14);
+        m.openPopup();
+      };
+    }
+  });
+
+  count.textContent=
+    `${f.length} von ${all.length} Einträgen${
+      showCandidates.checked?' · '+candidates.length+' neue Kandidaten':''}`;
+
+  if(!f.length){
+    list.innerHTML='<div class="empty">Keine passenden Einträge gefunden.</div>';
+  }
+}
+
+function fillCountries(){
+  const cs=[...new Set(
+    all.concat(candidates)
+      .map(x=>x.country_name||x.country)
+      .filter(Boolean)
+  )].sort((a,b)=>a.localeCompare(b));
+
+  country.innerHTML='<option value="">🌍 Alle Länder</option>'+
+    cs.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
+}
+
+async function loadJSON(url){
+  const sep=url.includes('?')?'&':'?';
+  const r=await fetch(url+sep+'v='+Date.now(),{
+    cache:'no-store',
+    headers:{'Cache-Control':'no-cache'}
+  });
+  if(!r.ok)throw Error(r.status+' – '+url+' nicht gefunden');
+  const j=await r.json();
+  return Array.isArray(j)?j:(j.shops_and_venues||j.data||[]);
+}
+
+async function loadCandidates(){
+  const merged=[];
+  const seen=new Set();
+
+  for(const file of CANDIDATE_FILES){
+    try{
+      const data=await loadJSON(file);
+      for(const x of data){
+        const key=String(x.id||'')+'|'+String(x.url||'');
+        if(!seen.has(key)){
+          seen.add(key);
+          merged.push(x);
+        }
+      }
+    }catch(_){}
+  }
+  return merged;
+}
+
+async function boot(){
+  try{
+    const [mainData,candidateData]=await Promise.all([
+      loadJSON(DATA),
+      loadCandidates()
+    ]);
+
+    all=mainData.map(x=>normalize(x,false));
+    candidates=candidateData.map(x=>normalize(x,true));
+
+    candidateCount.textContent=candidates.length;
+    eventCount.textContent=all.filter(x=>x.record_type==='event'||x.veranstaltung).length;
+    festivalCount.textContent=all.filter(x=>A(x.type).includes('festival')).length;
+    mapCount.textContent=all.filter(x=>
+      Number.isFinite(Number(x.lat))&&Number.isFinite(Number(x.lng))
+    ).length;
+
+    fillCountries();
+    showCandidates.checked=true;
+    render();
+  }catch(e){
+    count.textContent='Fehler beim Laden';
+    list.innerHTML=
+      `<div class="empty"><b>Die Daten konnten nicht geladen werden.</b><br><br>
+      <code>${esc(e.message)}</code><br><br>
+      Erwartet werden <code>data/nachtfragment.json</code> und optional
+      <code>data/scene_candidates.json</code>.</div>`;
+  }
+}
+
+[q,country,type,scene,activity,showCandidates].forEach(x=>
+  x.addEventListener('input',render)
+);
+
+boot();
 </script>
 </body></html>
