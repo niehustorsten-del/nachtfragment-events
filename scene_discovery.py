@@ -4,6 +4,21 @@ from __future__ import annotations
 import hashlib, html, json, os, re, time
 from datetime import datetime, timezone
 from pathlib import Path
+
+OUTPUT_DIR = Path("data")
+CANDIDATE_FILE = OUTPUT_DIR / "scene_candidates.json"
+CHANGES_FILE = OUTPUT_DIR / "scene_changes.json"
+GEOCACHE_FILE = OUTPUT_DIR / "geocache.json"
+
+def ensure_output_files():
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    if not CANDIDATE_FILE.exists():
+        CANDIDATE_FILE.write_text("[]\n", encoding="utf-8")
+    if not CHANGES_FILE.exists():
+        CHANGES_FILE.write_text("[]\n", encoding="utf-8")
+    if not GEOCACHE_FILE.exists():
+        GEOCACHE_FILE.write_text("{}\n", encoding="utf-8")
+
 from urllib.parse import quote, urlparse, urlunparse
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
@@ -185,3 +200,7 @@ def main():
     save(DB,db);save(CAND,cand);save(CHANGES,changes[-2000:]);save(CACHE,cache)
     print(f"Scene Discovery V2: queries={len(queries)} published={pub} candidates={queued} skipped={skip} errors={errors}")
 if __name__=="__main__":main()
+
+
+if __name__ == "__main__":
+    ensure_output_files()
