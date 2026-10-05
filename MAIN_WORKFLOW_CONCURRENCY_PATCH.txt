@@ -1,3 +1,5 @@
+Für `.github/workflows/update.yml` muss weiterhin vorhanden sein:
+
 concurrency:
   group: nachtfragment-auto-update
   cancel-in-progress: false
