@@ -8,9 +8,9 @@ from urllib.request import Request, urlopen
 
 ROOT=Path(__file__).resolve().parent; DATA=ROOT/'data'
 DB=DATA/'nachtfragment.json'; CAND=DATA/'scene_candidates.json'; CHANGES=DATA/'scene_changes.json'; CACHE=DATA/'geocache.json'; QUERIES=ROOT/'scene_search_queries.json'
-KEY=os.getenv('SERPAPI_KEY','').strip(); UA='Nachtfragment-SceneDiscovery/4.0'; TIMEOUT=15
+KEY=os.getenv('SERPAPI_KEY','').strip(); UA='Nachtfragment-SceneDiscovery/4.1'; TIMEOUT=15
 PERMANENT={'club','bar','shop','store','venue','organizer','organization','organisation','location'}
-EVENT_WORDS=['festival','festivals','festivalhopper','event','events','eventim','veranstaltung','veranstaltungen','termine','tickets','ticket','tour','concert','concerts','konzert','konzerte','gig','gigs','party','parties','wgt','mera luna','lineup','line-up','calendar','programme','program','agenda','upcoming']
+EVENT_WORDS=['festival','festivals','festivalhopper','eventim','veranstaltung','veranstaltungen','termine','tickets','ticket','tour','concert','concerts','konzert','konzerte','gig','gigs','party','parties','wgt','mera luna','lineup','line-up','calendar','programme','program','agenda','upcoming']
 BLOCKED=['festivalhopper.de','eventbrite.','eventim.','ticketmaster.','bandsintown.','songkick.','wikipedia.org','tripadvisor.','yelp.','foursquare.','ra.co']
 SCENE={'Gothic Core':['gothic','goth','goth night','gothic night'],'Darkwave / Wave':['darkwave','dark wave','coldwave','cold wave','wave night'],'EBM / Industrial':['ebm','electronic body music','industrial','industrial night'],'Dark Electro / Futurepop':['dark electro','futurepop','aggrotech','cyber goth','cybergoth'],'Post-Punk / Deathrock':['post-punk','post punk','deathrock','dark punk'],'Alternative / Dark Rock':['dark rock','dark alternative']}
 VENUE=['goth night','gothic night','darkwave','dark wave','ebm','industrial night','dark electro','futurepop','deathrock','post-punk','cybergoth','goth club','goth bar','dark club']
@@ -29,10 +29,21 @@ def norm(u):
         p=urlparse(u)
         return urlunparse((p.scheme,p.netloc.lower().split(':')[0],p.path.rstrip('/') or '/','','','')) if p.scheme in ('http','https') and p.netloc else ''
     except:return ''
-def blocked(text,title='',url=''):
+def event_signal(text,title='',url=''):
     h=' '.join([text or '',title or '',url or '']).lower()
     if any(x in h for x in BLOCKED):return True
     return any(re.search(r'(?<!\w)'+re.escape(w)+r'(?!\w)',h) for w in EVENT_WORDS)
+
+def search_result_blocked(title,url):
+    # Search query operators such as -events/-festival are NEVER inspected here.
+    # Only the actual result title and URL may reject an event/festival result.
+    return event_signal('', title, url)
+
+def page_event_blocked(title,url,page):
+    # Do not reject a permanent club merely because its page contains an event calendar.
+    # Hard-reject event/festival wording in the page title/URL and known aggregators.
+    return search_result_blocked(title,url) or any(x in (url or '').lower() for x in BLOCKED)
+
 def fetch(u):
     try:
         with urlopen(Request(u,headers={'User-Agent':UA}),timeout=TIMEOUT) as r:return r.read().decode('utf-8','ignore')[:180000]
@@ -52,8 +63,16 @@ def kind(t):
     return ''
 def location(t,hint):
     h=ALIASES.get(hint.lower(),hint) if hint else ''
+    matches=[]
     for city,country in sorted(CITIES.items(),key=lambda x:-len(x[0])):
-        if re.search(r'(?<!\w)'+re.escape(city)+r'(?!\w)',t,re.I) and (not h or h.lower()==country.lower()):return city,country
+        if re.search(r'(?<!\w)'+re.escape(city)+r'(?!\w)',t,re.I):
+            matches.append((city,country))
+    if matches:
+        for city,country in matches:
+            if not h or h.lower()==country.lower():
+                return city,country
+        # A recognized city contradicting the query country is not silently relabeled.
+        return matches[0][0],matches[0][1]
     return '',h
 def address(t):
     for p in [r'(?:address|adresse|location|standort|find us|visit us)\s*[:\-]\s*([^.;|]{10,180})',r'\b\d{1,5}\s+[A-Za-zÄÖÜäöüß0-9.\' -]{3,70}(?:Street|St|Road|Rd|Avenue|Ave|Lane|Ln|Boulevard|Blvd|Way|Strasse|Straße|Gasse|Weg)\b[^.;|]{0,80}']:
@@ -67,7 +86,7 @@ def is_scene(x):
     if not isinstance(x,dict):return False
     ts=x.get('type',[]);ts=[ts] if isinstance(ts,str) else ts;ts={str(a).lower() for a in ts}
     if str(x.get('record_type','')).lower()=='event' or ts&{'event','festival'}:return False
-    return bool(ts&PERMANENT) and not blocked(' '.join([str(x.get('name','')),str(x.get('url','')),str(x.get('description','')),str(x.get('discovery_query',''))]),str(x.get('name','')),str(x.get('url','')))
+    return bool(ts&PERMANENT) and not event_signal('',str(x.get('name','')),str(x.get('url','')))
 def clean_candidates(xs):
     out=[];seen=set()
     for x in xs:
@@ -81,10 +100,16 @@ def geocode(addr,city,country,cache):
     q=', '.join(x for x in [addr,city,country] if x);k=q.lower()
     if k in cache:return cache[k]
     try:
-        u='https://nominatim.openstreetmap.org/search?format=json&limit=1&q='+quote(q)
+        u='https://nominatim.openstreetmap.org/search?format=json&limit=1&addressdetails=1&q='+quote(q)
         with urlopen(Request(u,headers={'User-Agent':UA}),timeout=TIMEOUT) as r:a=json.loads(r.read().decode())
-        if a:
-            v={'lat':float(a[0]['lat']),'lng':float(a[0]['lon'])};cache[k]=v;time.sleep(1);return v
+        if not a:return None
+        item=a[0]; ad=item.get('address',{}) or {}
+        found=(ad.get('country') or '').lower()
+        expected=(COUNTRY_NAMES.get(country,country) or '').lower()
+        aliases=[country.lower(), expected, ALIASES.get(country.lower(),country).lower()]
+        if expected and found and not any(x in found or found in x for x in aliases):
+            return None
+        v={'lat':float(item['lat']),'lng':float(item['lon'])};cache[k]=v;time.sleep(1);return v
     except:return None
 
 def main():
@@ -101,9 +126,9 @@ def main():
         except Exception as e:print(e);continue
         for r in data.get('organic_results',[])[:10]:
             title=str(r.get('title','')).strip();u=norm(str(r.get('link','')));snippet=str(r.get('snippet',''))
-            if not title or not u or blocked(snippet,title,u):continue
+            if not title or not u or search_result_blocked(title,u):continue
             page=textclean(fetch(u));t=f'{title} {snippet} {page}'
-            if blocked(t,title,u):continue
+            if page_event_blocked(title,u,page):continue
             cs=cats(t);knd=kind(t)
             if not cs or knd not in PERMANENT:continue
             city,country=location(t,hint);addr=address(t);physical=not(knd=='shop' and online_only(t))
