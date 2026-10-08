@@ -1,0 +1,1 @@
+Die index.html kann `data/scene_candidates.json` weiter laden. V4 filtert Event-/Festival-Kandidaten bereits serverseitig.

@@ -1,0 +1,156 @@
+{
+  "version": 4,
+  "purpose": "Permanent scene places only",
+  "batches": [
+    [
+      {
+        "country": "Germany",
+        "query": "Gothic club Darkwave EBM Industrial venue Germany official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Austria",
+        "query": "Gothic club Darkwave EBM Industrial venue Austria official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Switzerland",
+        "query": "Gothic club Darkwave EBM Industrial venue Switzerland official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "United Kingdom",
+        "query": "Goth club Darkwave EBM Industrial venue UK official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "France",
+        "query": "club gothique darkwave EBM industriel France lieu officiel permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Netherlands",
+        "query": "Gothic club darkwave EBM industrial Netherlands official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Belgium",
+        "query": "Gothic club darkwave EBM industrial Belgium official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "United States",
+        "query": "Goth club darkwave EBM industrial venue USA official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Canada",
+        "query": "Goth club darkwave EBM industrial venue Canada official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Australia",
+        "query": "Goth club darkwave EBM industrial venue Australia official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Spain",
+        "query": "club gothic darkwave EBM industrial Spain official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Italy",
+        "query": "Gothic club darkwave EBM industrial Italy official permanent venue shop official -festival -event -events -tickets -concert -party"
+      }
+    ],
+    [
+      {
+        "country": "Germany",
+        "query": "Gothic shop dark fashion alternative clothing EBM industrial Germany official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Austria",
+        "query": "Gothic shop dark fashion alternative clothing Austria official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Switzerland",
+        "query": "Gothic shop dark fashion alternative clothing Switzerland official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "United Kingdom",
+        "query": "Gothic shop dark fashion alternative clothing UK official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "France",
+        "query": "boutique gothique dark fashion vêtements alternatifs France officiel permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Netherlands",
+        "query": "gothic shop dark fashion alternative clothing Netherlands official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Belgium",
+        "query": "gothic shop dark fashion alternative clothing Belgium official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "United States",
+        "query": "gothic shop dark fashion alternative clothing USA official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Canada",
+        "query": "gothic shop dark fashion alternative clothing Canada official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Australia",
+        "query": "gothic shop dark fashion alternative clothing Australia official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Japan",
+        "query": "gothic shop dark fashion alternative clothing Japan official permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Turkey",
+        "query": "gothic shop dark fashion alternative clothing Turkey official permanent venue shop official -festival -event -events -tickets -concert -party"
+      }
+    ],
+    [
+      {
+        "country": "Germany",
+        "query": "Gothic promoter Darkwave EBM industrial events organizer Germany permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Austria",
+        "query": "Gothic promoter Darkwave EBM industrial events organizer Austria permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Switzerland",
+        "query": "Gothic promoter Darkwave EBM industrial events organizer Switzerland permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "United Kingdom",
+        "query": "Goth promoter Darkwave EBM industrial events organizer UK permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "France",
+        "query": "organisateur soirées gothique darkwave EBM industriel France permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Netherlands",
+        "query": "Gothic promoter Darkwave EBM industrial events Netherlands permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Belgium",
+        "query": "Gothic promoter Darkwave EBM industrial events Belgium permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "United States",
+        "query": "Goth promoter Darkwave EBM industrial events organizer USA permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Canada",
+        "query": "Goth promoter Darkwave EBM industrial events organizer Canada permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Australia",
+        "query": "Goth promoter Darkwave EBM industrial events organizer Australia permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Spain",
+        "query": "promotor eventos goth darkwave EBM industrial España permanent venue shop official -festival -event -events -tickets -concert -party"
+      },
+      {
+        "country": "Italy",
+        "query": "organizzatore eventi goth darkwave EBM industrial Italia permanent venue shop official -festival -event -events -tickets -concert -party"
+      }
+    ]
+  ]
+}

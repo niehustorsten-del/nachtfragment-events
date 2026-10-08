@@ -1,0 +1,19 @@
+{
+  "version": 4,
+  "allowed": [
+    "official clubs/bars/venues",
+    "official Gothic/Dark shops",
+    "official scene promoters/organisations"
+  ],
+  "blocked": [
+    "festivalhopper.de",
+    "eventbrite",
+    "eventim",
+    "ticketmaster",
+    "bandsintown",
+    "songkick",
+    "generic event calendars",
+    "editorial list pages"
+  ],
+  "rule": "Events and festivals are handled by the main event discovery."
+}
