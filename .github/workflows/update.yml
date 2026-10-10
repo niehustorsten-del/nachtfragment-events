@@ -11,7 +11,7 @@ permissions:
 # Shared with Scene Discovery to prevent concurrent writes to the same JSON files.
 concurrency:
   group: nachtfragment-auto-update
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   update:
