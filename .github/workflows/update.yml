@@ -1,4 +1,4 @@
-name: Nachtfragment Auto Update V4.3
+name: Nachtfragment Auto Update – Events & Festivals
 
 on:
   schedule:
@@ -8,52 +8,111 @@ on:
 permissions:
   contents: write
 
+# Shared with Scene Discovery to prevent concurrent writes to the same JSON files.
 concurrency:
   group: nachtfragment-auto-update
   cancel-in-progress: false
 
 jobs:
   update:
+    name: Events und Festivals aktualisieren
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     env:
       SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+      PYTHONUNBUFFERED: "1"
+
     steps:
-      - name: Checkout repository
+      - name: Repository auschecken
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Validate Python and JSON structure
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "false"
+
+      - name: Eingabedateien und JSON prüfen
+        shell: bash
         run: |
-          python3 --version
-          python3 -m py_compile updater.py
-          python3 - <<'PY'
-          import json, pathlib
-          for p in [
-              pathlib.Path("data/nachtfragment.json"),
-              pathlib.Path("data/candidates.json"),
-              pathlib.Path("data/changes.json"),
-              pathlib.Path("data/geocache.json"),
-              pathlib.Path("discovery_sources.json"),
-              pathlib.Path("search_queries.json")
-          ]:
-              with p.open(encoding="utf-8") as f: json.load(f)
-              print("OK", p)
+          set -euo pipefail
+          test -f updater.py
+          test -f discovery_sources.json
+          test -f search_queries.json
+          test -f data/nachtfragment.json
+          test -f data/candidates.json
+          test -f data/changes.json
+          test -f data/geocache.json
+
+          python -m py_compile updater.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          files = [
+              "data/nachtfragment.json",
+              "data/candidates.json",
+              "data/changes.json",
+              "data/geocache.json",
+              "discovery_sources.json",
+              "search_queries.json",
+          ]
+          for name in files:
+              path = Path(name)
+              with path.open("r", encoding="utf-8") as handle:
+                  json.load(handle)
+              print(f"OK: {name}")
           PY
 
-      - name: Update Nachtfragment database
-        run: python3 updater.py
+      - name: Events und Festivals aktualisieren
+        run: python updater.py
 
-      - name: Commit updated data
+      - name: Ausgabedateien validieren
+        shell: bash
         run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          required = [
+              "data/nachtfragment.json",
+              "data/candidates.json",
+              "data/changes.json",
+              "data/geocache.json",
+          ]
+          for name in required:
+              path = Path(name)
+              if not path.is_file():
+                  raise SystemExit(f"Fehlende Ausgabedatei: {name}")
+              with path.open("r", encoding="utf-8") as handle:
+                  data = json.load(handle)
+              if not isinstance(data, (list, dict)):
+                  raise SystemExit(f"Unerwartetes JSON-Format: {name}")
+              print(f"OK: {name}")
+          PY
+
+      - name: Geänderte Daten committen
+        shell: bash
+        run: |
+          set -euo pipefail
           git config user.name "Nachtfragment Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/nachtfragment.json data/candidates.json data/changes.json data/geocache.json data/status.json
+
+          git add \
+            data/nachtfragment.json \
+            data/candidates.json \
+            data/changes.json \
+            data/geocache.json \
+            data/status.json
+
           if git diff --cached --quiet; then
-            echo "No data changes to commit."
-          else
-            git commit -m "Auto-discover and quality-check Nachtfragment events and festivals"
-            git push origin "HEAD:${GITHUB_REF_NAME}"
+            echo "Keine Datenänderungen – nichts zu committen."
+            exit 0
           fi
+
+          git commit -m "Update Nachtfragment events and festivals"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
