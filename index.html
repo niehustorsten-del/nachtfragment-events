@@ -67,16 +67,18 @@ input:focus,select:focus{border-color:var(--accent);box-shadow:0 0 0 2px #c78cff
 </style>
 </head>
 <body>
-<div class="top"><div class="wrap"><div class="head"><div class="brand"><div><h1>☾ NACHTFRAGMENT</h1><p>Dark Scene Directory · Shops · Clubs · Bars · Events · Festivals</p></div></div></div>
-<div class="filters"><input id="q" placeholder="🔎 Name, Stadt, Land, Genre, Veranstaltung …"><select id="country"><option value="">🌍 Alle Länder</option></select><select id="type"><option value="">▣ Alle Arten</option><option value="festival">🎪 Festivals</option><option value="event">📅 Veranstaltungen</option><option value="shop">🛍️ Shops</option><option value="club">🖤 Clubs</option><option value="bar">🍸 Bars</option></select><select id="scene"><option value="">◉ Alle Szenerelevanzen</option><option value="gothic_core">🖤 Gothic Core</option><option value="darkwave_wave">🌑 Darkwave / Wave</option><option value="ebm_industrial">⚡ EBM / Industrial</option><option value="dark_electro_futurepop">🧪 Dark Electro / Futurepop</option><option value="postpunk_deathrock">🕷️ Post-Punk / Deathrock</option><option value="alternative_darkrock">🎸 Alternative / Dark Rock</option></select><select id="activity"><option value="">● Alle Aktivitätsstatus</option><option value="active">🟢 aktuell aktiv</option><option value="event_based">🟡 unregelmäßig / Event-basiert</option><option value="change_announced">🟠 angekündigte Veränderung</option><option value="closed">🔴 geschlossen</option><option value="unchecked">⚪ nicht ausreichend geprüft</option></select></div>
+<div class="top"><div class="wrap"><div class="head"><div class="brand"><div><h1>☾ NACHTFRAGMENT</h1><p>Dark Scene Directory · Gothic-/Dark-Shops · Clubs · Bars · Szene-Veranstalter</p></div></div></div>
+<div class="filters"><input id="q" placeholder="🔎 Name, Stadt, Land, Genre, Club, Shop …"><select id="country"><option value="">🌍 Alle Länder</option></select><select id="type"><option value="">▣ Alle Arten</option><option value="shop">🛍️ Shops</option><option value="club">🖤 Clubs</option><option value="bar">🍸 Bars</option></select><select id="scene"><option value="">◉ Alle Szenerelevanzen</option><option value="gothic_core">🖤 Gothic Core</option><option value="darkwave_wave">🌑 Darkwave / Wave</option><option value="ebm_industrial">⚡ EBM / Industrial</option><option value="dark_electro_futurepop">🧪 Dark Electro / Futurepop</option><option value="postpunk_deathrock">🕷️ Post-Punk / Deathrock</option><option value="alternative_darkrock">🎸 Alternative / Dark Rock</option></select><select id="activity"><option value="">● Alle Aktivitätsstatus</option><option value="active">🟢 aktuell aktiv</option><option value="event_based">🟡 unregelmäßig / Event-basiert</option><option value="change_announced">🟠 angekündigte Veränderung</option><option value="closed">🔴 geschlossen</option><option value="unchecked">⚪ nicht ausreichend geprüft</option></select></div>
 </div></div>
 <main class="wrap">
-<div class="stats"><div class="stat" id="count">Lade Daten …</div><div class="stat">🤖 Kandidaten: <strong id="candidateCount">–</strong></div><div class="stat">📅 Events: <strong id="eventCount">–</strong></div><div class="stat">🎪 Festivals: <strong id="festivalCount">–</strong></div><div class="stat">📍 Karten: <strong id="mapCount">–</strong></div><label class="toggle"><input type="checkbox" id="showCandidates"> Kandidaten einblenden</label></div>
+<div class="stats"><div class="stat" id="count">Lade Daten …</div><div class="stat">🤖 Kandidaten: <strong id="candidateCount">–</strong></div><div class="stat">📍 Karten: <strong id="mapCount">–</strong></div><label class="toggle"><input type="checkbox" id="showCandidates"> Kandidaten einblenden</label></div>
 <div class="layout"><div id="map"></div><section><div class="sectionTitle">Einträge</div><div class="panel" id="list"></div></section></div><div class="footer">Nachtfragment · Dark Scene Directory · Live aus der aktuellen Datenbank</div></main>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 const DATA='data/nachtfragment.json';
 const CANDIDATE_FILES=['data/scene_candidates.json','data/candidates.json'];
+const el=id=>document.getElementById(id);
+const q=el('q'),country=el('country'),type=el('type'),scene=el('scene'),activity=el('activity'),showCandidates=el('showCandidates'),count=el('count'),candidateCount=el('candidateCount'),mapCount=el('mapCount'),list=el('list');
 let all=[],candidates=[],markers=[];
 
 const map=L.map('map').setView([51,10],5);
@@ -132,18 +134,25 @@ function sceneTaxonomy(x){
 }
 
 function normalize(x,candidate=false){
+  // Support both the current schema and older _nf_* records.
+  x={...x,
+    id:x.id||x._nf_id,
+    name:x.name||x._nf_name||x.title,
+    city:x.city||x._nf_city,
+    country:x.country||x._nf_country,
+    country_name:x.country_name||x._nf_country_name||x._nf_country,
+    type:x.type||x._nf_type,
+    categories:x.categories||x._nf_categories,
+    lat:x.lat??x._nf_lat,
+    lng:x.lng??x._nf_lng,
+    url:x.url||x._nf_url,
+    description:x.description||x._nf_description,
+    aktivitaet:x.aktivitaet||x._nf_status
+  };
   const activity=normalizeActivity(x);
   const taxonomy=sceneTaxonomy(x);
-  const categories=[...new Set([
-    ...A(x.categories),
-    ...A(x.szenerelevanz_labels)
-  ])];
-
-  return {
-    ...x,
-    aktivitaet:activity,
-    _candidate:candidate,
-    categories,
+  const categories=[...new Set([...A(x.categories),...A(x.szenerelevanz_labels)])];
+  return {...x,aktivitaet:activity,_candidate:candidate,categories,
     szenerelevanz:[...new Set([...A(x.szenerelevanz),...taxonomy])],
     szenerelevanz_labels:A(x.szenerelevanz_labels).length
       ? [...new Set(A(x.szenerelevanz_labels))]
@@ -224,7 +233,8 @@ function render(){
     card.className='card'+(x._candidate?' candidate':'');
 
     const isEvent=x.record_type==='event'||x.veranstaltung;
-    const mapable=Number.isFinite(Number(x.lat))&&Number.isFinite(Number(x.lng));
+    const lat=Number(x.lat),lng=Number(x.lng);
+    const mapable=x.lat!==null&&x.lat!==''&&x.lng!==null&&x.lng!==''&&Number.isFinite(lat)&&Number.isFinite(lng)&&lat>=-90&&lat<=90&&lng>=-180&&lng<=180;
 
     card.innerHTML=
       `<div class="name">${esc(x.name||'Unbenannter Eintrag')}</div>
@@ -244,12 +254,12 @@ function render(){
     list.appendChild(card);
 
     if(mapable){
-      const m=L.marker([Number(x.lat),Number(x.lng)])
+      const m=L.marker([lat,lng])
         .addTo(map)
         .bindPopup(popup(x));
       markers.push(m);
       card.onclick=()=>{
-        map.setView([Number(x.lat),Number(x.lng)],14);
+        map.setView([lat,lng],14);
         m.openPopup();
       };
     }
@@ -286,6 +296,18 @@ async function loadJSON(url){
   return Array.isArray(j)?j:(j.shops_and_venues||j.data||[]);
 }
 
+function isPermanentSceneCandidate(x){
+  const types=A(x.type).map(v=>String(v).toLowerCase());
+  const recordType=String(x.record_type||'').toLowerCase();
+  const title=String(x.name||'').toLowerCase();
+  const url=String(x.url||x.source_url||'').toLowerCase();
+  if(recordType==='event'||recordType==='festival')return false;
+  if(types.some(v=>v==='event'||v==='festival'||v.includes('event')||v.includes('festival')))return false;
+  if(/festivalhopper|eventbrite|eventim|ticketmaster|songkick|bandsintown/.test(url))return false;
+  if(/\bfestival\b|\btickets?\b|\bconcerts?\b|\btour dates?\b/.test(title))return false;
+  return types.some(v=>['club','bar','shop','store','venue','organizer','organization','organisation','location'].includes(v));
+}
+
 async function loadCandidates(){
   const merged=[];
   const seen=new Set();
@@ -294,6 +316,7 @@ async function loadCandidates(){
     try{
       const data=await loadJSON(file);
       for(const x of data){
+        if(!isPermanentSceneCandidate(x))continue;
         const key=String(x.id||'')+'|'+String(x.url||'');
         if(!seen.has(key)){
           seen.add(key);
@@ -316,14 +339,10 @@ async function boot(){
     candidates=candidateData.map(x=>normalize(x,true));
 
     candidateCount.textContent=candidates.length;
-    eventCount.textContent=all.filter(x=>x.record_type==='event'||x.veranstaltung).length;
-    festivalCount.textContent=all.filter(x=>A(x.type).includes('festival')).length;
-    mapCount.textContent=all.filter(x=>
-      Number.isFinite(Number(x.lat))&&Number.isFinite(Number(x.lng))
-    ).length;
+    mapCount.textContent=all.filter(x=>x.lat!==null&&x.lat!==''&&x.lng!==null&&x.lng!==''&&Number.isFinite(Number(x.lat))&&Number.isFinite(Number(x.lng))&&Number(x.lat)>=-90&&Number(x.lat)<=90&&Number(x.lng)>=-180&&Number(x.lng)<=180).length;
 
     fillCountries();
-    showCandidates.checked=true;
+    showCandidates.checked=false;
     render();
   }catch(e){
     count.textContent='Fehler beim Laden';
@@ -331,7 +350,7 @@ async function boot(){
       `<div class="empty"><b>Die Daten konnten nicht geladen werden.</b><br><br>
       <code>${esc(e.message)}</code><br><br>
       Erwartet werden <code>data/nachtfragment.json</code> und optional
-      <code>data/scene_candidates.json</code>.</div>`;
+      <code>data/scene_candidates.json</code>. Kandidaten werden erst nach Aktivierung der Checkbox angezeigt.</div>`;
   }
 }
 
