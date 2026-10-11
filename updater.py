@@ -350,8 +350,8 @@ def main():
  data=load_json(DATA,[]); candidates=load_json(CANDIDATES,[]); changes=load_json(CHANGES,[]); geocache=load_json(GEOCACHE,{})
  if not isinstance(data,list): raise SystemExit('data/nachtfragment.json muss ein Array sein')
  if not isinstance(candidates,list): candidates=[]
- known={(x.get('name','').strip().lower(),x.get('city','').strip().lower(),x.get('country','').strip().lower()) for x in data}
- cand_known={(x.get('name','').strip().lower(),x.get('city','').strip().lower(),x.get('country','').strip().lower()) for x in candidates}
+ known={(str(x.get('name') or '').strip().lower(),str(x.get('city') or '').strip().lower(),str(x.get('country') or '').strip().lower()) for x in data}
+ cand_known={(str(x.get('name') or '').strip().lower(),str(x.get('city') or '').strip().lower(),str(x.get('country') or '').strip().lower()) for x in candidates}
  new_pub=0; new_cand=0; source_errors=[]; search_errors=0
  for source in load_json(SOURCES,[]):
   try:
@@ -389,7 +389,7 @@ def main():
                looks_like_real_event(c.get('name',''), c.get('raw',''), c.get('url','')))
     if key in known:
      for x in data:
-      if (x.get('name','').strip().lower(),x.get('city','').strip().lower(),x.get('country_name',x.get('country','')).strip().lower())==key:
+      if (str(x.get('name') or '').strip().lower(),str(x.get('city') or '').strip().lower(),str(x.get('country_name',x.get('country')) or '').strip().lower())==key:
        x.setdefault('auto_sources',[])
        if source.get('url') not in x['auto_sources']: x['auto_sources'].append(source.get('url'))
        x['last_source_check']=NOW.isoformat(); break
@@ -480,7 +480,7 @@ def main():
  def dedupe(rows):
   seen=set(); out=[]
   for x in rows:
-   key=(x.get('name','').strip().lower(),str(x.get('city') or '').strip().lower(),str(x.get('country_name',x.get('country','')) or '').strip().lower())
+   key=(str(x.get('name') or '').strip().lower(),str(x.get('city') or '').strip().lower(),str(x.get('country_name',x.get('country')) or '').strip().lower())
    if key in seen: continue
    seen.add(key); out.append(x)
   return out
