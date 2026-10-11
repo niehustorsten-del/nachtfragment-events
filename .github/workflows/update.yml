@@ -11,7 +11,7 @@ permissions:
 # Shared with Scene Discovery to prevent concurrent writes to the same JSON files.
 concurrency:
   group: nachtfragment-auto-update
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -27,13 +27,23 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: false
+          persist-credentials: true
 
       - name: Python einrichten
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: "false"
+
+      - name: Abhängigkeiten installieren (falls vorhanden)
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -f requirements.txt ]]; then
+            python -m pip install --upgrade pip
+            python -m pip install -r requirements.txt
+          else
+            echo "Keine requirements.txt gefunden; überspringe Paketinstallation."
+          fi
 
       - name: Eingabedateien und JSON prüfen
         shell: bash
@@ -106,8 +116,11 @@ jobs:
             data/nachtfragment.json \
             data/candidates.json \
             data/changes.json \
-            data/geocache.json \
-            data/status.json
+            data/geocache.json
+
+          if [[ -f data/status.json ]]; then
+            git add data/status.json
+          fi
 
           if git diff --cached --quiet; then
             echo "Keine Datenänderungen – nichts zu committen."
