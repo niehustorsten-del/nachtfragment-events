@@ -1,5 +1,39 @@
 [
   {
+    "timestamp": "2026-10-11T17:02:36.701166+00:00",
+    "type": "candidate_web_search",
+    "name": "Ick freu ma schon druff",
+    "city": "",
+    "source": "https://www.instagram.com/p/DWmdVefjbbI/",
+    "score": 7
+  },
+  {
+    "timestamp": "2026-10-11T17:02:36.701166+00:00",
+    "type": "candidate_web_search",
+    "name": "Ebm Festivals in Deutschland",
+    "city": "",
+    "source": "https://www.dein-festival.de/festivals/ebm-festivals",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-11T17:02:36.701166+00:00",
+    "type": "source_error",
+    "source": "https://www.plage-noire.de/",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "timestamp": "2026-10-11T17:02:36.701166+00:00",
+    "type": "source_error",
+    "source": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
+    "timestamp": "2026-10-11T17:02:36.701166+00:00",
+    "type": "source_error",
+    "source": "https://www.festivalhopper.de/festivals/genre/gothic",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
     "timestamp": "2026-09-15T14:26:54.005675+00:00",
     "type": "candidate_web_search",
     "name": "Dimension Festival",

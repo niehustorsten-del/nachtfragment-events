@@ -1,6 +1,18 @@
 {
   "version": "4.3",
-  "timestamp": "2026-10-11T16:41:39.122040+00:00",
-  "status": "fatal_error",
-  "error": "'NoneType' object has no attribute 'strip'"
+  "timestamp": "2026-10-11T17:02:36.701166+00:00",
+  "total": 223,
+  "published": 223,
+  "events": 0,
+  "candidates": 6,
+  "new_published": 0,
+  "new_candidates": 2,
+  "source_errors": 3,
+  "search_item_errors": 0,
+  "quality_checked": 0,
+  "quality_green": 0,
+  "quality_yellow": 0,
+  "quality_red": 0,
+  "serpapi_configured": true,
+  "today": "2026-10-11"
 }

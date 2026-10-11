@@ -217,5 +217,96 @@
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=EBM+Festivals+2026%2F2027+%7C+Termine+%26+Tickets%2C+Hildesheim%2C+Deutschland",
     "google_maps_status": "search_link",
     "geocoded": false
+  },
+  {
+    "id": "search-b720b68898194a",
+    "record_type": "event",
+    "name": "Ebm Festivals in Deutschland",
+    "city": null,
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial"
+    ],
+    "url": "https://www.dein-festival.de/festivals/ebm-festivals",
+    "source_url": "https://www.dein-festival.de/festivals/ebm-festivals",
+    "date_text": "21.11.2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.dein-festival.de/festivals/ebm-festivals"
+    ],
+    "discovered_at": "2026-10-11T17:02:36.701166+00:00",
+    "search_query": "Gothic events festival 2026 Germany Darkwave EBM Industrial",
+    "search_snippet": "Plage Noire 2026. 20.11. - 21.11.2026 in Weissenhäuser Strand. Gothic, EBM, Mittelalter, Dark Wave. Ein Festival für die schwarze Szene im Norden an der Ostsee.",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ebm+Festivals+in+Deutschland%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Ebm+Festivals+in+Deutschland%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-97a1bb97d98d8b",
+    "record_type": "event",
+    "name": "Ick freu ma schon druff",
+    "city": null,
+    "country_name": "Europa",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [],
+    "szenerelevanz": [],
+    "szenerelevanz_labels": [],
+    "url": "https://www.instagram.com/p/DWmdVefjbbI/",
+    "source_url": "https://www.instagram.com/p/DWmdVefjbbI/",
+    "date_text": "25.12.2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 7,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt"
+    ],
+    "auto_sources": [
+      "https://www.instagram.com/p/DWmdVefjbbI/"
+    ],
+    "discovered_at": "2026-10-11T17:02:36.701166+00:00",
+    "search_query": "Gothic Darkwave EBM events Europe 2026 festival",
+    "search_snippet": "See you at Darkstorm Festival 2026!. 25.12.2026. Tickets: https://city-ticket.de/events/dark-storm-festival #vnvnation #shepastaway #hocico # ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ick+freu+ma+schon+druff%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Ick+freu+ma+schon+druff%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
   }
 ]
