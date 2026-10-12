@@ -1,5 +1,45 @@
 [
   {
+    "timestamp": "2026-10-12T04:33:06.493608+00:00",
+    "type": "candidate_web_search",
+    "name": "Gothic Events In Sydney.",
+    "city": "Sydney",
+    "source": "https://www.facebook.com/groups/422963191057531/posts/26491967423730418/",
+    "score": 11
+  },
+  {
+    "timestamp": "2026-10-12T04:33:06.493608+00:00",
+    "type": "candidate_web_search",
+    "name": "Ick freu ma schon druff",
+    "city": "",
+    "source": "https://www.instagram.com/p/DWmdVefjbbI/",
+    "score": 7
+  },
+  {
+    "timestamp": "2026-10-12T04:33:06.493608+00:00",
+    "type": "source_error",
+    "source": "https://www.plage-noire.de/",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "timestamp": "2026-10-12T04:33:06.493608+00:00",
+    "type": "source_error",
+    "source": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
+    "timestamp": "2026-10-12T04:33:06.493608+00:00",
+    "type": "source_error",
+    "source": "https://www.festivalhopper.de/festivals/genre/gothic",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
+    "timestamp": "2026-10-12T04:33:06.493608+00:00",
+    "type": "source_error",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
     "timestamp": "2026-10-11T17:02:36.701166+00:00",
     "type": "candidate_web_search",
     "name": "Ick freu ma schon druff",

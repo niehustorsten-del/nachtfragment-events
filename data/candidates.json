@@ -308,5 +308,55 @@
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Ick+freu+ma+schon+druff%2C+Europa",
     "google_maps_status": "search_link",
     "geocoded": false
+  },
+  {
+    "id": "search-01f6c303fd3cdb",
+    "record_type": "event",
+    "name": "Gothic Events In Sydney.",
+    "city": "Sydney",
+    "country_name": "Europa",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave"
+    ],
+    "url": "https://www.facebook.com/groups/422963191057531/posts/26491967423730418/",
+    "source_url": "https://www.facebook.com/groups/422963191057531/posts/26491967423730418/",
+    "date_text": "25 October 2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 11,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.facebook.com/groups/422963191057531/posts/26491967423730418/"
+    ],
+    "discovered_at": "2026-10-12T04:33:06.493608+00:00",
+    "search_query": "gothic darkwave events Australia 2026 festival",
+    "search_snippet": "ChromeFest 2026! Join us at The Entrance, Central Coast NSW, 23–25 October 2026 for a huge retro festival filled with classic cars, live music, ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gothic+Events+In+Sydney.%2C+Sydney%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Gothic+Events+In+Sydney.%2C+Sydney%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
   }
 ]
