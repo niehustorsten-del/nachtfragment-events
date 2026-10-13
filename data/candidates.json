@@ -455,5 +455,54 @@
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Gothic+Events+Finland%2C+Europa",
     "google_maps_status": "search_link",
     "geocoded": false
+  },
+  {
+    "id": "search-d4af267ce3e08b",
+    "record_type": "event",
+    "name": "Schwarzer Kalender",
+    "city": "München",
+    "country_name": "Europa",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "⚡ EBM / Industrial"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "ebm_industrial"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "⚡ EBM / Industrial"
+    ],
+    "url": "https://www.facebook.com/groups/612463968877058/?locale=de_DE",
+    "source_url": "https://www.facebook.com/groups/612463968877058/?locale=de_DE",
+    "date_text": "16.10.2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.facebook.com/groups/612463968877058/?locale=de_DE"
+    ],
+    "discovered_at": "2026-10-13T16:22:43.746226+00:00",
+    "search_query": "Gothic events festival 2026 Germany Darkwave EBM Industrial",
+    "search_snippet": "⚔️ THE TAVERN TALES Mittelalterparty im Crash München DJ MicDi Crash München 16.10.2026 | 21 Uhr 🎟️ Eintritt: 8 € ... EBM I 80s Gothic I NDH ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Schwarzer+Kalender%2C+M%C3%BCnchen%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Schwarzer+Kalender%2C+M%C3%BCnchen%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
   }
 ]

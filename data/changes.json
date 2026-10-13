@@ -1,5 +1,51 @@
 [
   {
+    "timestamp": "2026-10-13T16:22:43.746226+00:00",
+    "type": "candidate_web_search",
+    "name": "Ebm Festivals in Deutschland",
+    "city": "",
+    "source": "https://www.dein-festival.de/festivals/ebm-festivals",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-13T16:22:43.746226+00:00",
+    "type": "candidate_web_search",
+    "name": "Schwarzer Kalender",
+    "city": "München",
+    "source": "https://www.facebook.com/groups/612463968877058/?locale=de_DE",
+    "score": 9
+  },
+  {
+    "timestamp": "2026-10-13T16:22:43.746226+00:00",
+    "type": "source_error",
+    "source": "https://darkmalta.com/",
+    "error": "The read operation timed out"
+  },
+  {
+    "timestamp": "2026-10-13T16:22:43.746226+00:00",
+    "type": "source_error",
+    "source": "https://www.plage-noire.de/",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "timestamp": "2026-10-13T16:22:43.746226+00:00",
+    "type": "source_error",
+    "source": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
+    "timestamp": "2026-10-13T16:22:43.746226+00:00",
+    "type": "source_error",
+    "source": "https://www.festivalhopper.de/festivals/genre/gothic",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
+    "timestamp": "2026-10-13T16:22:43.746226+00:00",
+    "type": "source_error",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
     "timestamp": "2026-10-13T04:33:24.477986+00:00",
     "type": "candidate_web_search",
     "name": "Gothic Events Finland",
