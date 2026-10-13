@@ -375,7 +375,7 @@ def main():
      'discovery_status':'candidate','auto_discovered':True,'confidence_score':score,
      'confidence_reasons':reasons,'auto_sources':[source['url']], 'discovered_at':NOW.isoformat(),
      'google_maps_url':maps_url(c['name'],city,country),
-     'google_maps_directions_url':maps_dir(lat=geo['lat'],lng=geo['lng'],name=c['name'],city=city,country=country),
+     'google_maps_directions_url':maps_dir(lat=geo['lat'] if geo else None,lng=geo['lng'] if geo else None,name=c['name'],city=city,country=country),
      'geocoded':bool(geo),
      'google_maps_status':'search_link'
     }
