@@ -643,7 +643,8 @@
     "map_category": "club",
     "map_marker_type": "club",
     "map_visible": true,
-    "icon_category": "club"
+    "icon_category": "club",
+    "url": "https://dunckerclub.de/duncker.html"
   },
   {
     "id": "house-of-steam",
@@ -786,7 +787,8 @@
     "map_category": "club",
     "map_marker_type": "club",
     "map_visible": true,
-    "icon_category": "club"
+    "icon_category": "club",
+    "url": "https://www.silverwings.de/"
   },
   {
     "id": "de-slaughterhouse-moabit",
@@ -819,7 +821,8 @@
     "map_category": "club",
     "map_marker_type": "club",
     "map_visible": true,
-    "icon_category": "club"
+    "icon_category": "club",
+    "url": "https://slaughterhouse-berlin.de/"
   },
   {
     "id": "undergroundfactory",
@@ -1072,7 +1075,8 @@
     "map_category": "club",
     "map_marker_type": "club",
     "map_visible": true,
-    "icon_category": "club"
+    "icon_category": "club",
+    "url": "https://baerenzwinger.de/"
   },
   {
     "id": "de-gag18",
@@ -1106,7 +1110,8 @@
     "map_category": "club",
     "map_marker_type": "club",
     "map_visible": true,
-    "icon_category": "club"
+    "icon_category": "club",
+    "url": "https://www.gag-18.com/"
   },
   {
     "id": "de-strasse-e",
@@ -1174,7 +1179,8 @@
     "map_category": "club",
     "map_marker_type": "club",
     "map_visible": true,
-    "icon_category": "club"
+    "icon_category": "club",
+    "url": "https://www.clubfromhell.de/"
   },
   {
     "id": "dark-ages",
@@ -1247,7 +1253,8 @@
     "map_category": "venue",
     "map_marker_type": "venue",
     "map_visible": true,
-    "icon_category": "venue"
+    "icon_category": "venue",
+    "url": "https://www.zechecarl.de/"
   },
   {
     "id": "my-black-style",
@@ -1599,7 +1606,8 @@
     "map_category": "bar",
     "map_marker_type": "bar",
     "map_visible": true,
-    "icon_category": "bar"
+    "icon_category": "bar",
+    "url": "https://www.rasthausb9.de/index.php"
   },
   {
     "id": "dark-desires-and-ihr-rosengarten",
@@ -1744,7 +1752,8 @@
     "map_category": "venue",
     "map_marker_type": "venue",
     "map_visible": true,
-    "icon_category": "venue"
+    "icon_category": "venue",
+    "url": "https://markthalle-hamburg.de/"
   },
   {
     "id": "de-ms-stubnitz",
@@ -1779,7 +1788,8 @@
     "map_category": "venue",
     "map_marker_type": "venue",
     "map_visible": true,
-    "icon_category": "venue"
+    "icon_category": "venue",
+    "url": "https://www.stubnitz.com/"
   },
   {
     "id": "nyctophilia",
@@ -1921,7 +1931,8 @@
     "map_category": "club",
     "map_marker_type": "club",
     "map_visible": true,
-    "icon_category": "club"
+    "icon_category": "club",
+    "url": "https://subkultur-hannover.de/"
   },
   {
     "id": "de-culture-station",
@@ -1989,7 +2000,8 @@
     "map_category": "club",
     "map_marker_type": "club",
     "map_visible": true,
-    "icon_category": "club"
+    "icon_category": "club",
+    "url": "https://mpire-jena.de/"
   },
   {
     "id": "de-nachtwerk-musikclub",
@@ -2023,7 +2035,8 @@
     "map_category": "club",
     "map_marker_type": "club",
     "map_visible": true,
-    "icon_category": "club"
+    "icon_category": "club",
+    "url": "https://www.nachtwerk-musikclub.de/"
   },
   {
     "id": "de-goldgrube-kassel",
@@ -2057,7 +2070,8 @@
     "map_category": "club",
     "map_marker_type": "club",
     "map_visible": true,
-    "icon_category": "club"
+    "icon_category": "club",
+    "url": "https://goldgrubekassel.de/"
   },
   {
     "id": "de-druckluftkammer",
@@ -2091,7 +2105,8 @@
     "map_category": "club",
     "map_marker_type": "club",
     "map_visible": true,
-    "icon_category": "club"
+    "icon_category": "club",
+    "url": "https://druckluftkammer.de/"
   },
   {
     "id": "easure",
@@ -2160,7 +2175,8 @@
     "map_category": "club",
     "map_marker_type": "club",
     "map_visible": true,
-    "icon_category": "club"
+    "icon_category": "club",
+    "url": "https://tsunami-club.de/"
   },
   {
     "id": "de-darkflower",
@@ -2194,7 +2210,8 @@
     "map_category": "club",
     "map_marker_type": "club",
     "map_visible": true,
-    "icon_category": "club"
+    "icon_category": "club",
+    "url": "https://darkflower.de/"
   },
   {
     "id": "de-felsenkeller",
@@ -2227,7 +2244,8 @@
     "map_category": "venue",
     "map_marker_type": "venue",
     "map_visible": true,
-    "icon_category": "venue"
+    "icon_category": "venue",
+    "url": "https://www.felsenkeller-leipzig.com/"
   },
   {
     "id": "de-kätz",
@@ -2295,7 +2313,8 @@
     "map_category": "club",
     "map_marker_type": "club",
     "map_visible": true,
-    "icon_category": "club"
+    "icon_category": "club",
+    "url": "https://shadow-lev.de/"
   },
   {
     "id": "de-club-karree",
@@ -2433,7 +2452,8 @@
     "map_category": "club",
     "map_marker_type": "club",
     "map_visible": true,
-    "icon_category": "club"
+    "icon_category": "club",
+    "url": "https://sputnikhalle.de/"
   },
   {
     "id": "de-kulttempel",
