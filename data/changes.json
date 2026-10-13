@@ -1,5 +1,61 @@
 [
   {
+    "timestamp": "2026-10-13T04:33:24.477986+00:00",
+    "type": "candidate_web_search",
+    "name": "Gothic Events Finland",
+    "city": "",
+    "source": "http://gothiceventsfinland.blogspot.com/index.html",
+    "score": 4
+  },
+  {
+    "timestamp": "2026-10-13T04:33:24.477986+00:00",
+    "type": "candidate_web_search",
+    "name": "Ick freu ma schon druff",
+    "city": "",
+    "source": "https://www.instagram.com/p/DWmdVefjbbI/",
+    "score": 7
+  },
+  {
+    "timestamp": "2026-10-13T04:33:24.477986+00:00",
+    "type": "candidate_web_search",
+    "name": "Obscene (Goth / Industrial / EBM… · Nov 12, 2026",
+    "city": "Los Angeles",
+    "source": "https://underowl.net/en/calendar/event/16767",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-13T04:33:24.477986+00:00",
+    "type": "candidate_web_search",
+    "name": "Ebm Festivals in Deutschland",
+    "city": "",
+    "source": "https://www.dein-festival.de/festivals/ebm-festivals",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-13T04:33:24.477986+00:00",
+    "type": "source_error",
+    "source": "https://www.plage-noire.de/",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "timestamp": "2026-10-13T04:33:24.477986+00:00",
+    "type": "source_error",
+    "source": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
+    "timestamp": "2026-10-13T04:33:24.477986+00:00",
+    "type": "source_error",
+    "source": "https://www.festivalhopper.de/festivals/genre/gothic",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
+    "timestamp": "2026-10-13T04:33:24.477986+00:00",
+    "type": "source_error",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "error": "'NoneType' object is not subscriptable"
+  },
+  {
     "timestamp": "2026-10-12T04:33:06.493608+00:00",
     "type": "candidate_web_search",
     "name": "Gothic Events In Sydney.",

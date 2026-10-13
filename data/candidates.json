@@ -358,5 +358,102 @@
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Gothic+Events+In+Sydney.%2C+Sydney%2C+Europa",
     "google_maps_status": "search_link",
     "geocoded": false
+  },
+  {
+    "id": "search-c2ceb80606c32b",
+    "record_type": "event",
+    "name": "Obscene (Goth / Industrial / EBM… · Nov 12, 2026",
+    "city": "Los Angeles",
+    "country_name": "Europa",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial"
+    ],
+    "url": "https://underowl.net/en/calendar/event/16767",
+    "source_url": "https://underowl.net/en/calendar/event/16767",
+    "date_text": "12.11.2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://underowl.net/en/calendar/event/16767"
+    ],
+    "discovered_at": "2026-10-13T04:33:24.477986+00:00",
+    "search_query": "Gothic events festival 2027 Germany Darkwave EBM Industrial",
+    "search_snippet": "Obscene (Goth / Industrial / EBM / Darkwave) takes place on November 12, 2026, starting at 21:00 at The Slipper Clutch, Los Angeles. Address: ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Obscene+%28Goth+%2F+Industrial+%2F+EBM%E2%80%A6+%C2%B7+Nov+12%2C+2026%2C+Los+Angeles%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Obscene+%28Goth+%2F+Industrial+%2F+EBM%E2%80%A6+%C2%B7+Nov+12%2C+2026%2C+Los+Angeles%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-b37601b796427c",
+    "record_type": "event",
+    "name": "Gothic Events Finland",
+    "city": null,
+    "country_name": "Europa",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🖤 Gothic Core"
+    ],
+    "szenerelevanz": [
+      "gothic_core"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core"
+    ],
+    "url": "http://gothiceventsfinland.blogspot.com/index.html",
+    "source_url": "http://gothiceventsfinland.blogspot.com/index.html",
+    "date_text": "21.11.2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 4,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite nicht erreichbar",
+      "Datum erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "http://gothiceventsfinland.blogspot.com/index.html"
+    ],
+    "discovered_at": "2026-10-13T04:33:24.477986+00:00",
+    "search_query": "gothic darkwave events Asia 2026 festival",
+    "search_snippet": "21.11.2026 Live: Modem Sokar Musta Kynnys, Jyväskylä Ovet: 21:00 Ikäraja: 18+ Ennakko: https://www.lippu.fi/event/modem-musta-kynnys-jyvas.",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gothic+Events+Finland%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Gothic+Events+Finland%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
   }
 ]
