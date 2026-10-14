@@ -1,13 +1,13 @@
 {
-  "title": "Nachtfragment – Stuff & Dark Lifestyle",
-  "version": "2.2",
-  "updated": "2026-09-23",
-  "scope": "Alternative Fashion, Gothic Shops, Schmuck & Accessoires, Tattoo & Body Art, Ambiente / Home & Living, Clubs & Nightlife, Szene-Verzeichnisse, Labels / Music und Artists / Merch. Magazine, Online-Medien, Festivals und Veranstaltungen sind ausgeschlossen.",
+  "title": "Nachtfragment Stuff – Worldwide Dark Culture Directory",
+  "version": "2.3",
+  "updated": "2026-10-14",
+  "scope": "Worldwide dark culture directory: Alternative Fashion, Gothic Shops, Schmuck & Accessoires, Tattoo & Body Art, Ambiente / Home & Living, Clubs & Nightlife, Szene-Verzeichnisse, Labels / Music, Artists / Merch.",
   "excluded": [
-    "Magazine & Online-Medien",
-    "Festivals & Veranstaltungen"
+    "📰 Magazine & Online-Medien",
+    "🎪 Festivals & Events"
   ],
-  "verification_note": "Erweiterung um aktuell auffindbare offizielle Seiten. Status \"verified\" bezieht sich auf die bei der Recherche gefundene offizielle Webpräsenz; eine dauerhafte Erreichbarkeitsgarantie ist damit nicht verbunden.",
+  "verification_note": "Erweitert am 14.10.2026 um zusätzliche offizielle Shops und Labels. Magazine und Online-Medien werden in der separaten Magazine-Sektion geführt. Status 'verified' bedeutet, dass eine offizielle Webpräsenz als Quelle identifiziert wurde; keine Garantie für dauerhafte Erreichbarkeit oder stationäre Öffnungszeiten.",
   "entries": [
     {
       "name": "Beserk",
@@ -2228,6 +2228,206 @@
         "Clubs"
       ],
       "url": "https://www.sfgoth.com/"
+    },
+    {
+      "name": "Attitude Holland / Attitude Europe",
+      "category": [
+        "Alternative Fashion",
+        "Gothic Shops",
+        "Schmuck & Accessoires",
+        "Ambiente / Home & Living"
+      ],
+      "country": "Niederlande",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Punk",
+        "Alternative Fashion",
+        "Jewellery",
+        "Homeware"
+      ],
+      "url": "https://www.attitude-europe.com/"
+    },
+    {
+      "name": "Disturbia",
+      "category": [
+        "Alternative Fashion",
+        "Gothic Shops",
+        "Schmuck & Accessoires",
+        "Ambiente / Home & Living"
+      ],
+      "country": "Vereinigtes Königreich",
+      "status": "verified",
+      "tags": [
+        "Dark Romantic",
+        "Gothic",
+        "Alternative Fashion",
+        "Jewellery",
+        "Homeware"
+      ],
+      "url": "https://www.disturbia.de/"
+    },
+    {
+      "name": "KILLSTAR",
+      "category": [
+        "Alternative Fashion",
+        "Gothic Shops",
+        "Schmuck & Accessoires",
+        "Ambiente / Home & Living"
+      ],
+      "country": "Vereinigtes Königreich",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Dark Fashion",
+        "Jewellery",
+        "Homeware"
+      ],
+      "url": "https://eu.killstar.com/"
+    },
+    {
+      "name": "Blue Banana",
+      "category": [
+        "Alternative Fashion",
+        "Gothic Shops",
+        "Schmuck & Accessoires",
+        "Tattoo & Body Art"
+      ],
+      "country": "Vereinigtes Königreich",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Alternative",
+        "Piercing",
+        "Body Art"
+      ],
+      "url": "https://www.bluebanana.com/"
+    },
+    {
+      "name": "EMP",
+      "category": [
+        "Alternative Fashion",
+        "Gothic Shops",
+        "Schmuck & Accessoires",
+        "Artists / Merch"
+      ],
+      "country": "Deutschland",
+      "status": "verified",
+      "tags": [
+        "Alternative",
+        "Gothic",
+        "Rock",
+        "Band Merch"
+      ],
+      "url": "https://www.emp.de/"
+    },
+    {
+      "name": "Dracula Clothing",
+      "category": [
+        "Alternative Fashion",
+        "Gothic Shops"
+      ],
+      "country": "Rumänien",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Victorian",
+        "Romantic",
+        "Alternative Fashion"
+      ],
+      "url": "https://draculaclothing.com/"
+    },
+    {
+      "name": "Kreepsville 666",
+      "category": [
+        "Alternative Fashion",
+        "Gothic Shops",
+        "Schmuck & Accessoires"
+      ],
+      "country": "USA",
+      "status": "verified",
+      "tags": [
+        "Horror",
+        "Gothic",
+        "Alternative Fashion",
+        "Accessories"
+      ],
+      "url": "https://www.kreepsville666.com/"
+    },
+    {
+      "name": "Alchemy England",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "Vereinigtes Königreich",
+      "status": "verified",
+      "tags": [
+        "Gothic Jewellery",
+        "Alternative",
+        "Occult",
+        "Fantasy"
+      ],
+      "url": "https://www.alchemyengland.com/"
+    },
+    {
+      "name": "DemoniaCult",
+      "category": [
+        "Alternative Fashion",
+        "Gothic Shops"
+      ],
+      "country": "USA",
+      "status": "verified",
+      "tags": [
+        "Gothic Footwear",
+        "Platform Boots",
+        "Alternative Fashion"
+      ],
+      "url": "https://demoniacult.com/"
+    },
+    {
+      "name": "Manic Depression Records",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "Frankreich",
+      "status": "verified",
+      "tags": [
+        "Post-Punk",
+        "Darkwave",
+        "Gothic Rock",
+        "Cold Wave"
+      ],
+      "url": "https://manicdepressionrecords.com/"
+    },
+    {
+      "name": "Avant! Records",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "Italien",
+      "status": "verified",
+      "tags": [
+        "Post-Punk",
+        "Darkwave",
+        "Minimal Synth",
+        "Industrial"
+      ],
+      "url": "https://avantrecords.com/"
+    },
+    {
+      "name": "Young & Cold Records",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "Deutschland",
+      "status": "verified",
+      "tags": [
+        "Darkwave",
+        "Post-Punk",
+        "Minimal Synth",
+        "Coldwave"
+      ],
+      "url": "https://youngandcold.de/"
     }
   ]
 }
