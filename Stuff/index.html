@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Nachtfragment Stuff – internationale Dark Culture, Gothic Fashion, Shops, Schmuck, Tattoos, Ambiente und Szene-Locations.">
+<title>Nachtfragment – Stuff & Dark Lifestyle</title>
+<style>
+:root{--bg:#08080c;--panel:#111118;--panel2:#15151e;--line:#2b2b38;--text:#f1eef5;--muted:#aaa5b4;--accent:#c78cff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(900px 440px at 50% -130px,#2b163d 0,#0c0910 50%,var(--bg) 80%);color:var(--text);font:15px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit}.top{position:sticky;top:0;z-index:20;background:#09090de8;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.head,.wrap{width:min(1280px,100%);margin:auto;padding-left:22px;padding-right:22px}.head{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font:500 1.1rem Georgia,serif;letter-spacing:.13em;text-transform:uppercase}.brand span{color:var(--muted);letter-spacing:.04em}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:var(--muted);text-decoration:none;font-size:.9rem}nav a:hover{color:white}
+.hero{width:min(1280px,100%);margin:auto;padding:62px 22px 34px}.kicker{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:#a28db6}
+h1{font:400 clamp(2.4rem,6vw,4.6rem)/1.04 Georgia,serif;margin:14px 0 18px}.hero p{max-width:780px;color:var(--muted);font-size:1.03rem}
+.controls{background:linear-gradient(145deg,#12121a,#0e0e14);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 22px}
+.row{display:grid;grid-template-columns:minmax(220px,2fr) minmax(160px,1fr);gap:10px}
+input,select{width:100%;min-height:44px;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:#0b0b11;color:var(--text);font:inherit}
+input:focus,select:focus{outline:1px solid var(--accent);border-color:var(--accent)}
+.filters{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.filters button{background:#0d0d13;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:8px 12px;cursor:pointer;font:inherit;font-size:.82rem}
+.filters button.active,.filters button:hover{border-color:#8b6ba3;color:#fff;background:#24182d}
+.summary{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:13px;color:var(--muted);font-size:.85rem}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding-bottom:55px}
+.card{min-width:0;background:linear-gradient(145deg,var(--panel2),#101016);border:1px solid var(--line);border-radius:13px;padding:19px;display:flex;flex-direction:column;min-height:225px;transition:border-color .18s,transform .18s}
+.card:hover{border-color:#5b4569;transform:translateY(-2px)}.card h2{font:400 1.35rem/1.2 Georgia,serif;margin:0 0 7px;overflow-wrap:anywhere}
+.location{color:var(--muted);font-size:.84rem}.categories{color:#d1cbd8;font-size:.85rem;margin-top:12px}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0 16px}.tag{font-size:.72rem;color:#b9b3c2;border:1px solid #30303b;border-radius:5px;padding:3px 7px}
+.bottom{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}.status{font-size:.76rem;color:#aaa}.visit{display:inline-block;text-decoration:none;border:1px solid #46404e;border-radius:7px;padding:8px 11px;font-size:.83rem}.visit:hover{background:#24182d;border-color:#8b6ba3}
+.empty{grid-column:1/-1;text-align:center;padding:42px 18px;color:var(--muted);border:1px dashed var(--line);border-radius:12px}
+footer{border-top:1px solid var(--line);padding:25px 20px;text-align:center;color:#777482;font-size:.8rem}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.head,.wrap{padding-left:16px;padding-right:16px}.hero{padding:50px 16px 28px}}
+@media(max-width:620px){.head{align-items:flex-start;flex-direction:column;padding-top:14px;padding-bottom:14px;gap:9px}nav{gap:14px}.hero{padding-top:42px}.row{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.card{min-height:0}.summary{flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="top"><div class="head">
+  <div class="brand">Nachtfragment <span>/ Stuff</span></div>
+  <nav aria-label="Hauptnavigation"><a href="../">Hauptverzeichnis</a><a href="../Magazine/">Magazine</a><a href="#directory">Verzeichnis</a></nav>
+</div></header>
+<section class="hero">
+  <div class="kicker">Nachtfragment · Beyond Music</div>
+  <h1>Stuff & Dark Lifestyle</h1>
+  <p>Die dunkle Ästhetik jenseits der Musik: alternative und Gothic Fashion, Shops, Schmuck, Tattoos, Ambiente, Wohnen, Clubs, Szene-Verzeichnisse, Labels und Artist-Merch. Magazine sowie Festivals und Veranstaltungen gehören in andere Bereiche.</p>
+</section>
+<main class="wrap" id="directory">
+  <section class="controls">
+    <div class="row"><input id="search" type="search" placeholder="Name, Stadt, Land, Kategorie oder Stil suchen …" aria-label="Verzeichnis durchsuchen">
+    <select id="country" aria-label="Nach Land filtern"><option value="">Alle Länder</option></select></div>
+    <div id="filters" class="filters" aria-label="Kategorien"></div>
+    <div class="summary"><span id="stats">Lade Verzeichnis …</span><span>Stand: <strong id="updated">–</strong></span></div>
+  </section>
+  <section id="grid" class="grid" aria-live="polite"></section>
+</main>
+<footer>Nachtfragment · Internationales Dark Culture Directory · ohne Magazine, Online-Medien, Festivals und Veranstaltungen</footer>
+<script>
+const FILE="nachtfragment-stuff.json";
+const LABELS={"Alternative Fashion":"Alternative Fashion","Gothic Shops":"Gothic Shops","Schmuck & Accessoires":"Schmuck & Accessoires","Tattoo & Body Art":"Tattoo & Body Art","Ambiente / Home & Living":"Ambiente / Home & Living","Clubs & Nightlife":"Clubs & Nightlife","Szene-Verzeichnisse":"Szene-Verzeichnisse","Labels / Music":"Labels / Music","Artists / Merch":"Artists / Merch"};
+let entries=[],cat="";
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[x]));
+const norm=s=>String(s??"").toLocaleLowerCase("de-DE");
+const safeUrl=s=>{try{const u=new URL(String(s||""));return ["http:","https:"].includes(u.protocol)?u.href:"#"}catch{return "#"}};
+async function load(){
+  try{
+    const u=new URL(FILE,location.href);u.searchParams.set("v",Date.now());
+    const r=await fetch(u,{cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);
+    const d=await r.json();entries=Array.isArray(d.entries)?d.entries:[];
+    $("updated").textContent=d.updated||"–";
+    build();render();
+  }catch(e){
+    $("stats").textContent="Verzeichnis konnte nicht geladen werden: "+e.message;
+    $("grid").innerHTML='<div class="empty">Bitte <strong>index.html</strong> und <strong>nachtfragment-stuff.json</strong> gemeinsam im Ordner Stuff ablegen.</div>';
+  }
+}
+function build(){
+  [...new Set(entries.map(e=>e.country).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"de")).forEach(c=>{
+    const o=document.createElement("option");o.value=c;o.textContent=c;$("country").appendChild(o);
+  });
+  const add=(label,value)=>{const b=document.createElement("button");b.textContent=label;if(value===cat)b.classList.add("active");b.onclick=()=>{cat=value;document.querySelectorAll("#filters button").forEach(x=>x.classList.remove("active"));b.classList.add("active");render()};$("filters").appendChild(b)};
+  add("Alle Kategorien","");
+  [...new Set(entries.flatMap(e=>Array.isArray(e.category)?e.category:[]))].sort((a,b)=>a.localeCompare(b,"de")).forEach(c=>add(LABELS[c]||c,c));
+}
+function render(){
+  const q=norm($("search").value.trim()),country=$("country").value;
+  const list=entries.filter(e=>{
+    const categories=Array.isArray(e.category)?e.category:[];
+    const tags=Array.isArray(e.tags)?e.tags:[];
+    const hay=[e.name,e.country,e.city,e.description,e.url,e.website,...categories,...tags].filter(Boolean).join(" ");
+    return (!q||norm(hay).includes(q))&&(!country||e.country===country)&&(!cat||categories.includes(cat));
+  });
+  $("stats").textContent=`${list.length} von ${entries.length} Einträgen`;
+  $("grid").innerHTML=list.length?list.map(card).join(""):'<div class="empty">Keine passenden Einträge gefunden. Ändere die Suche oder setze die Filter zurück.</div>';
+}
+function card(e){
+  const place=[e.city,e.country].filter(Boolean).join(", ");
+  const cats=(Array.isArray(e.category)?e.category:[]).map(c=>LABELS[c]||c).join(" · ");
+  const tags=(Array.isArray(e.tags)?e.tags:[]).map(t=>'<span class="tag">'+esc(t)+'</span>').join("");
+  const status=e.status==="verified"?"🟢 aktuell nachvollziehbar":e.status==="historical"?"⚫ historisch":"🟡 noch zu prüfen";
+  return `<article class="card"><h2>${esc(e.name)}</h2><div class="location">${esc(place||"International")}</div><div class="categories">${esc(cats)}</div><div class="tags">${tags}</div><div class="bottom"><span class="status">${status}</span><a class="visit" href="${esc(safeUrl(e.url||e.website))}" target="_blank" rel="noopener noreferrer">Website öffnen ↗</a></div></article>`;
+}
+$("search").addEventListener("input",render);$("country").addEventListener("change",render);load();
+</script>
+</body></html>
