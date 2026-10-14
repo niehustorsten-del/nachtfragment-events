@@ -1,5 +1,51 @@
 [
   {
+    "timestamp": "2026-10-14T04:44:12.134741+00:00",
+    "type": "candidate_web_search",
+    "name": "Ick freu ma schon druff",
+    "city": "",
+    "source": "https://www.instagram.com/p/DWmdVefjbbI/",
+    "score": 7
+  },
+  {
+    "timestamp": "2026-10-14T04:44:12.134741+00:00",
+    "type": "source_error",
+    "source": "https://www.plage-noire.de/",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "timestamp": "2026-10-14T04:44:12.134741+00:00",
+    "type": "candidate",
+    "name": "Mera Luna Festival 2027 07.-08.08.2027 Hildesheim",
+    "city": "",
+    "source": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-14T04:44:12.134741+00:00",
+    "type": "candidate",
+    "name": "Hexentanz Festival 2027 30.04.-02.05.2027 Thallichtenberg",
+    "city": "",
+    "source": "https://www.festivalhopper.de/festivals/genre/gothic",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-14T04:44:12.134741+00:00",
+    "type": "candidate",
+    "name": "No Name Festival 06.-07.11.2026 Hünfelden-Ohren",
+    "city": "",
+    "source": "https://www.festivalhopper.de/festivals/genre/gothic",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-14T04:44:12.134741+00:00",
+    "type": "candidate",
+    "name": "She Past Away @ Katzenclub Festival",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 8
+  },
+  {
     "timestamp": "2026-10-13T16:47:50.786791+00:00",
     "type": "candidate_web_search",
     "name": "Obscene (Goth / Industrial / EBM… · Nov 12, 2026",
