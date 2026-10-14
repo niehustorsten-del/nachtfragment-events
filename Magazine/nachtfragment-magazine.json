@@ -3,7 +3,7 @@
   "file": "nachtfragment-magazine.json",
   "title": "Gothic, Darkwave, EBM, Industrial & Post-Punk Magazine weltweit",
   "description": "Verzeichnis von Online-Magazinen, Webzines, Printmagazinen, Zines und historischen Publikationen aus der dunklen Musik- und Subkultur. Aktive und historische Medien werden getrennt gekennzeichnet.",
-  "updated": "2026-09-25",
+  "updated": "2026-10-14",
   "status_legend": {
     "aktiv": "Aktuell aktiv bzw. regelmäßig auffindbar",
     "projektbasiert": "Unregelmäßige oder projektbezogene Veröffentlichung",
@@ -785,6 +785,112 @@
         "DJs"
       ],
       "website": "https://rivetbuzz.com/"
+    },
+    {
+      "name": "The Electricity Club",
+      "country": "Vereinigtes Königreich",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Synthpop",
+        "New Wave",
+        "Electronic",
+        "EBM",
+        "Darkwave"
+      ],
+      "website": "https://www.electricityclub.co.uk/"
+    },
+    {
+      "name": "Electronic Sound",
+      "country": "Vereinigtes Königreich",
+      "language": "Englisch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Electronic",
+        "Synthpop",
+        "Industrial",
+        "New Wave",
+        "Experimental"
+      ],
+      "website": "https://electronicsound.co.uk/"
+    },
+    {
+      "name": "The Wire",
+      "country": "Vereinigtes Königreich",
+      "language": "Englisch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Experimental",
+        "Industrial",
+        "Electronic",
+        "Post-Punk",
+        "Avant-Garde"
+      ],
+      "website": "https://www.thewire.co.uk/"
+    },
+    {
+      "name": "The Quietus",
+      "country": "Vereinigtes Königreich",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Post-Punk",
+        "Industrial",
+        "Experimental",
+        "Electronic",
+        "Alternative"
+      ],
+      "website": "https://thequietus.com/"
+    },
+    {
+      "name": "Louder Than War",
+      "country": "Vereinigtes Königreich",
+      "language": "Englisch",
+      "format": [
+        "online",
+        "print"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Post-Punk",
+        "Alternative",
+        "Industrial",
+        "Gothic",
+        "Independent Music"
+      ],
+      "website": "https://louderthanwar.com/"
+    },
+    {
+      "name": "Gothic.at",
+      "country": "Österreich",
+      "language": "Deutsch",
+      "format": [
+        "online",
+        "community"
+      ],
+      "status": "archiv / unklar",
+      "focus": [
+        "Gothic",
+        "Wave",
+        "Alternative",
+        "Electro",
+        "Industrial"
+      ],
+      "website": "https://www.gothic.at/"
     }
   ],
   "recommended_filters": [
@@ -794,5 +900,5 @@
     "Status",
     "Genre"
   ],
-  "editorial_note": "Lebende Nachtfragment-Datenbank. Die Liste ist eine breit angelegte internationale Auswahl und wird fortlaufend um regionale Magazine, Webzines, Fanzines und unabhängige Dark-Culture-Publikationen erweitert."
+  "editorial_note": "Lebende Nachtfragment-Datenbank. Internationale Auswahl aus Online-Magazinen, Printmedien, Webzines und Zines. 'Archiv / unklar' kennzeichnet Angebote, deren aktuelle Veröffentlichungsaktivität nicht eindeutig belegt ist. Neue Einträge werden nach offizieller Website und thematischer Relevanz ergänzt."
 }
