@@ -1,0 +1,798 @@
+{
+  "project": "Nachtfragment",
+  "file": "nachtfragment-magazine.json",
+  "title": "Gothic, Darkwave, EBM, Industrial & Post-Punk Magazine weltweit",
+  "description": "Verzeichnis von Online-Magazinen, Webzines, Printmagazinen, Zines und historischen Publikationen aus der dunklen Musik- und Subkultur. Aktive und historische Medien werden getrennt gekennzeichnet.",
+  "updated": "2026-09-25",
+  "status_legend": {
+    "aktiv": "Aktuell aktiv bzw. regelmäßig auffindbar",
+    "projektbasiert": "Unregelmäßige oder projektbezogene Veröffentlichung",
+    "archiv / unklar": "Archiv bzw. Aktivität derzeit nicht eindeutig",
+    "historisch / eingestellt": "Historisch relevant, aber nicht mehr regulär aktiv"
+  },
+  "magazines": [
+    {
+      "name": "Sonic Seducer",
+      "country": "Deutschland",
+      "language": "Deutsch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "EBM",
+        "Industrial",
+        "Electro",
+        "Alternative"
+      ],
+      "website": "https://sonic-seducer.de/"
+    },
+    {
+      "name": "Orkus!",
+      "country": "Deutschland",
+      "language": "Deutsch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "Industrial",
+        "Electro",
+        "Alternative"
+      ],
+      "website": "https://www.orkus.de/"
+    },
+    {
+      "name": "Side-Line",
+      "country": "Belgien",
+      "language": "Englisch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Industrial",
+        "EBM",
+        "Darkwave",
+        "Electro",
+        "Synthpop",
+        "Gothic"
+      ],
+      "website": "https://www.side-line.com/"
+    },
+    {
+      "name": "Peek-a-Boo Magazine",
+      "country": "Belgien",
+      "language": "Englisch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "Post-Punk",
+        "Industrial",
+        "Electronic"
+      ],
+      "website": "https://www.peek-a-boo-magazine.be/en/"
+    },
+    {
+      "name": "Dark Entries",
+      "country": "Belgien",
+      "language": "Niederländisch / Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "New Wave",
+        "Post-Punk",
+        "EBM",
+        "Synthpop",
+        "Industrial"
+      ],
+      "website": "https://darkentries.be/"
+    },
+    {
+      "name": "Obsküre",
+      "country": "Frankreich",
+      "language": "Französisch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "Industrial",
+        "Electro",
+        "Dark Culture"
+      ],
+      "website": "https://www.obskure.com/"
+    },
+    {
+      "name": "VerdamMnis Magazine",
+      "country": "Frankreich",
+      "language": "Französisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "Industrial",
+        "Electro",
+        "Dark Metal"
+      ],
+      "website": "https://www.verdammnis.com/"
+    },
+    {
+      "name": "Reflections of Darkness",
+      "country": "International / Europa",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "Industrial",
+        "Metal",
+        "Folk",
+        "Dark Music"
+      ],
+      "website": "https://www.reflectionsofdarkness.com/"
+    },
+    {
+      "name": "Terrorverlag",
+      "country": "Deutschland",
+      "language": "Deutsch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Electro",
+        "Alternative",
+        "Rock",
+        "Metal",
+        "Indie"
+      ],
+      "website": "https://www.terrorverlag.com/"
+    },
+    {
+      "name": "SchwarzesBayern",
+      "country": "Deutschland",
+      "language": "Deutsch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "Metal",
+        "Alternative",
+        "Dark Culture"
+      ],
+      "website": "https://schwarzesbayern.info/"
+    },
+    {
+      "name": "ElektroSpank FMA",
+      "country": "Griechenland",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Industrial",
+        "Darkwave",
+        "EBM",
+        "Dark Electro"
+      ],
+      "website": "https://www.elektrospank.com/"
+    },
+    {
+      "name": "GothicWorld",
+      "country": "Italien / International",
+      "language": "Italienisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "Dark Electro",
+        "Alternative Culture"
+      ],
+      "website": "https://www.gothicworld.it/"
+    },
+    {
+      "name": "Gothica Magazine",
+      "country": "Ukraine / International",
+      "language": "Englisch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "Industrial",
+        "EBM",
+        "Dark Electro",
+        "Art"
+      ],
+      "website": "https://gothica.info/"
+    },
+    {
+      "name": "Post-Punk.com",
+      "country": "USA / International",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Post-Punk",
+        "Goth",
+        "Darkwave",
+        "Industrial",
+        "Synth",
+        "Shoegaze"
+      ],
+      "website": "https://post-punk.com/"
+    },
+    {
+      "name": "Gothic Beauty Magazine",
+      "country": "USA",
+      "language": "Englisch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Fashion",
+        "Beauty",
+        "Music",
+        "Dark Culture"
+      ],
+      "website": "https://gothicbeauty.com/"
+    },
+    {
+      "name": "Brutal Resonance",
+      "country": "Schweden",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Industrial",
+        "EBM",
+        "Synthpop",
+        "Darkwave",
+        "Electronic"
+      ],
+      "website": "https://www.brutalresonance.com/"
+    },
+    {
+      "name": "Santa Sangre Magazine",
+      "country": "Polen",
+      "language": "Englisch / Polnisch",
+      "format": [
+        "online",
+        "zine"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Post-Industrial",
+        "Industrial",
+        "Dark Ambient",
+        "Noise",
+        "Experimental"
+      ],
+      "website": "https://santasangremagazine.bandcamp.com/"
+    },
+    {
+      "name": "Pigiama Magazine",
+      "country": "Italien",
+      "language": "Italienisch / Englisch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "projektbasiert",
+      "focus": [
+        "Post-Punk",
+        "Goth",
+        "Darkwave",
+        "Shoegaze",
+        "Dream Pop"
+      ],
+      "website": "https://pigiamazine.com/"
+    },
+    {
+      "name": "Virus G",
+      "country": "Spanien / International",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "archiv / unklar",
+      "focus": [
+        "Gothic Rock",
+        "Post-Punk",
+        "Darkwave",
+        "Deathrock"
+      ],
+      "website": "https://billyphobia.com/"
+    },
+    {
+      "name": "Quagmire Magazine",
+      "country": "Australien",
+      "language": "Englisch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "projektbasiert",
+      "focus": [
+        "Dark Music",
+        "Dark Ambient",
+        "Dungeon Synth",
+        "Experimental"
+      ],
+      "website": "https://quagmiremagazine.bandcamp.com/"
+    },
+    {
+      "name": "Zillo",
+      "country": "Deutschland",
+      "language": "Deutsch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "historisch / eingestellt",
+      "focus": [
+        "Gothic",
+        "Alternative",
+        "Darkwave",
+        "Electro",
+        "Rock"
+      ],
+      "website": "https://www.zillo.de/"
+    },
+    {
+      "name": "D-Side",
+      "country": "Frankreich",
+      "language": "Französisch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "historisch / eingestellt",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "Industrial",
+        "Electro",
+        "Alternative"
+      ],
+      "website": "https://www.d-side.org/"
+    },
+    {
+      "name": "Propaganda Magazine",
+      "country": "USA",
+      "language": "Englisch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "archiv / unklar",
+      "focus": [
+        "Goth",
+        "Post-Punk",
+        "Industrial",
+        "Fashion",
+        "Subculture"
+      ],
+      "website": "https://www.propagandamagazine-gothic.com/",
+      "verification": "offizielle historische Website aktuell erreichbar"
+    },
+    {
+      "name": "Gothic Empire",
+      "country": "Deutschland",
+      "language": "Deutsch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "Industrial",
+        "Electro",
+        "Dark Culture",
+        "Literatur",
+        "Film",
+        "Fashion"
+      ],
+      "website": "https://www.gothic-empire.de/",
+      "verification": "aktuelle Veröffentlichungen 2026"
+    },
+    {
+      "name": "AMBOSS-Mag",
+      "country": "Deutschland",
+      "language": "Deutsch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Dark Metal",
+        "Electro",
+        "Wave",
+        "Mittelalter",
+        "Rockabilly",
+        "Horrorbilly"
+      ],
+      "website": "https://www.amboss-mag.de/",
+      "verification": "aktuelle Veröffentlichungen 2026"
+    },
+    {
+      "name": "Catastrophe Ballet",
+      "country": "Deutschland / International",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Post-Punk",
+        "Coldwave",
+        "Darkwave",
+        "Industrial",
+        "Gothic",
+        "Books",
+        "Film",
+        "Art",
+        "Fashion"
+      ],
+      "website": "https://catastrophe-ballet.com/",
+      "verification": "2026 gegründet und aktuell publizierend"
+    },
+    {
+      "name": "Procession Magazine",
+      "country": "USA",
+      "language": "Englisch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Goth",
+        "Darkwave",
+        "Industrial",
+        "Post-Punk",
+        "Deathrock",
+        "Synthpop",
+        "Dark Electronic"
+      ],
+      "website": "https://www.processionmagazine.com/",
+      "verification": "aktuelle Ausgabe 10 / 2026"
+    },
+    {
+      "name": "Nocturnazine",
+      "country": "USA",
+      "language": "Englisch",
+      "format": [
+        "online",
+        "zine"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Darkwave",
+        "Goth",
+        "Industrial",
+        "Post-Punk",
+        "Music",
+        "Art",
+        "Fashion",
+        "Poetry",
+        "Photography"
+      ],
+      "website": "https://nocturnazine.com/",
+      "verification": "digitale Zines und aktuelle Publikation 2026"
+    },
+    {
+      "name": "Darkfaery Subculture Magazine",
+      "country": "USA",
+      "language": "Englisch",
+      "format": [
+        "print",
+        "online",
+        "zine"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Industrial",
+        "Post-Punk",
+        "Darkwave",
+        "Deathrock",
+        "Punk",
+        "Horror",
+        "Art",
+        "Fashion",
+        "Culture"
+      ],
+      "website": "https://www.darkfaery-subculture.com/",
+      "verification": "Relaunch-Ausgabe für Oktober 2026 angekündigt"
+    },
+    {
+      "name": "Industrial Complexx",
+      "country": "Spanien",
+      "language": "Spanisch / Englisch",
+      "format": [
+        "online",
+        "zine"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Industrial",
+        "Experimental Electronics",
+        "Darkwave",
+        "Dark Ambient",
+        "Techno",
+        "Fanzine"
+      ],
+      "website": "https://industrialcomplexx.com/",
+      "verification": "aktuelle Beiträge und Fanzine 2026"
+    },
+    {
+      "name": "Skylight Webzine",
+      "country": "Griechenland / International",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Post-Punk",
+        "Alternative",
+        "Electronic",
+        "Rock",
+        "Darkwave",
+        "Gothic"
+      ],
+      "website": "https://skylight.gr/",
+      "verification": "aktuelle Veröffentlichungen 2026"
+    },
+    {
+      "name": "Other Voices",
+      "country": "Spanien",
+      "language": "Englisch",
+      "format": [
+        "online",
+        "radio"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Darkwave",
+        "Post-Punk",
+        "Synth",
+        "Dark Electro",
+        "Industrial",
+        "EBM"
+      ],
+      "website": "https://other-voices.com/"
+    },
+    {
+      "name": "DARKROOM Magazine",
+      "country": "Italien",
+      "language": "Italienisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Synthpop",
+        "Futurepop",
+        "EBM",
+        "Electro-Industrial",
+        "Darkwave",
+        "Gothic",
+        "Deathrock",
+        "Post-Punk",
+        "Industrial",
+        "Ambient"
+      ],
+      "website": "https://www.darkroom-magazine.it/"
+    },
+    {
+      "name": "ReGen Magazine",
+      "country": "USA",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Industrial",
+        "Electro",
+        "Goth",
+        "Dark Music",
+        "Alternative",
+        "Electronic"
+      ],
+      "website": "https://regenmagazine.bandcamp.com/"
+    },
+    {
+      "name": "Carpe Nocturne Magazine",
+      "country": "USA",
+      "language": "Englisch",
+      "format": [
+        "print",
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Goth",
+        "Alternative Culture",
+        "Fashion",
+        "Art",
+        "Music",
+        "Literature",
+        "Steampunk",
+        "Dark Lifestyle"
+      ],
+      "website": "https://carpenocturne.net/magazine/"
+    },
+    {
+      "name": "CVLT Nation",
+      "country": "Kanada / USA",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Dark Music",
+        "Industrial",
+        "Post-Punk",
+        "Punk",
+        "Extreme Music",
+        "Art",
+        "Fashion"
+      ],
+      "website": "https://cvltnation.com/"
+    },
+    {
+      "name": "Gothic.net",
+      "country": "USA",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic Culture",
+        "Horror",
+        "Literature",
+        "Film",
+        "Lifestyle",
+        "Music"
+      ],
+      "website": "https://www.gothic.net/"
+    },
+    {
+      "name": "Auxiliary Magazine",
+      "country": "USA / International",
+      "language": "Englisch",
+      "format": [
+        "print",
+        "digital",
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Goth",
+        "Post-Punk",
+        "Industrial",
+        "Darkwave",
+        "Synthpop",
+        "Fashion",
+        "Lifestyle"
+      ],
+      "website": "https://www.auxiliarymagazine.com/"
+    },
+    {
+      "name": "Gothic and Amazing",
+      "country": "International",
+      "language": "Englisch",
+      "format": [
+        "print",
+        "digital",
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Alternative Fashion",
+        "Goth",
+        "Dark Culture",
+        "Photography",
+        "Design",
+        "Music"
+      ],
+      "website": "https://gothicandamazing.com/"
+    },
+    {
+      "name": "Ritual Control",
+      "country": "USA",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Industrial",
+        "Goth",
+        "Darkwave",
+        "Post-Punk",
+        "Alternative Music"
+      ],
+      "website": "https://ritualcontrol.com/"
+    },
+    {
+      "name": "RIVETbUZZ",
+      "country": "International",
+      "language": "Englisch",
+      "format": [
+        "online",
+        "directory"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Industrial",
+        "Goth",
+        "Post-Punk",
+        "EBM",
+        "Music Magazines",
+        "Podcasts",
+        "DJs"
+      ],
+      "website": "https://rivetbuzz.com/"
+    }
+  ],
+  "recommended_filters": [
+    "Land",
+    "Sprache",
+    "Format",
+    "Status",
+    "Genre"
+  ],
+  "editorial_note": "Lebende Nachtfragment-Datenbank. Die Liste ist eine breit angelegte internationale Auswahl und wird fortlaufend um regionale Magazine, Webzines, Fanzines und unabhängige Dark-Culture-Publikationen erweitert."
+}

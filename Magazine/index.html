@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nachtfragment – Verzeichnis von Gothic, Darkwave, EBM, Industrial und Post-Punk Magazinen weltweit.">
+<title>Nachtfragment – Magazine & Webzines</title>
+<style>
+:root{
+  --bg:#08090b;
+  --panel:#111318;
+  --panel2:#17191f;
+  --border:#292d35;
+  --text:#e7e7ea;
+  --muted:#999da8;
+  --accent:#b9b9c4;
+  --shadow:0 12px 35px rgba(0,0,0,.38);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 15% 0%,rgba(130,130,150,.09),transparent 28rem),
+    radial-gradient(circle at 85% 20%,rgba(100,100,120,.06),transparent 25rem),
+    var(--bg);
+  color:var(--text);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.55;
+}
+a{color:inherit}
+header{
+  border-bottom:1px solid var(--border);
+  background:rgba(8,9,11,.92);
+  backdrop-filter:blur(12px);
+  position:sticky;
+  top:0;
+  z-index:20;
+}
+.header-inner{
+  max-width:1200px;
+  margin:auto;
+  padding:18px 22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+.logo{
+  font-family:Georgia,serif;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  font-size:1.25rem;
+}
+.logo span{color:#777b86}
+nav a{
+  text-decoration:none;
+  color:var(--muted);
+  margin-left:20px;
+  font-size:.9rem;
+}
+nav a:hover{color:var(--text)}
+.hero{
+  max-width:1200px;
+  margin:auto;
+  padding:70px 22px 42px;
+}
+.kicker{
+  color:#777b86;
+  text-transform:uppercase;
+  letter-spacing:.22em;
+  font-size:.76rem;
+}
+h1{
+  font-family:Georgia,serif;
+  font-weight:400;
+  font-size:clamp(2.3rem,6vw,4.8rem);
+  line-height:1;
+  margin:14px 0 20px;
+}
+.hero p{
+  max-width:760px;
+  color:var(--muted);
+  font-size:1.05rem;
+}
+.wrap{max-width:1200px;margin:auto;padding:0 22px 70px}
+.controls{
+  background:var(--panel);
+  border:1px solid var(--border);
+  padding:18px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+  margin-bottom:25px;
+}
+.control-grid{
+  display:grid;
+  grid-template-columns:2fr repeat(4,1fr);
+  gap:10px;
+}
+input,select{
+  width:100%;
+  background:#0b0c0f;
+  color:var(--text);
+  border:1px solid var(--border);
+  border-radius:7px;
+  padding:11px 12px;
+  font:inherit;
+  outline:none;
+}
+input:focus,select:focus{border-color:#666b77}
+.summary{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  color:var(--muted);
+  font-size:.88rem;
+  margin:18px 2px 0;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+.card{
+  background:linear-gradient(145deg,var(--panel2),#101216);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:21px;
+  box-shadow:0 8px 24px rgba(0,0,0,.2);
+  display:flex;
+  flex-direction:column;
+  min-height:275px;
+  transition:transform .18s,border-color .18s;
+}
+.card:hover{transform:translateY(-3px);border-color:#444852}
+.card-top{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:flex-start;
+}
+.card h2{
+  font-family:Georgia,serif;
+  font-weight:400;
+  font-size:1.35rem;
+  margin:0;
+}
+.status{
+  white-space:nowrap;
+  font-size:.72rem;
+  border:1px solid var(--border);
+  padding:4px 8px;
+  border-radius:20px;
+  color:#b7bac3;
+}
+.status.aktiv{border-color:#4e554e;color:#bfc7bf}
+.status.historisch{color:#8e929c}
+.status.projekt{color:#aaa5b5}
+.meta{
+  margin:12px 0;
+  color:var(--muted);
+  font-size:.85rem;
+}
+.focus{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin:7px 0 16px;
+}
+.tag{
+  font-size:.72rem;
+  padding:4px 7px;
+  background:#0b0c0f;
+  border:1px solid #272a31;
+  border-radius:5px;
+  color:#aaaeb8;
+}
+.card-bottom{margin-top:auto}
+.visit{
+  display:inline-block;
+  border:1px solid #454952;
+  padding:8px 12px;
+  border-radius:6px;
+  text-decoration:none;
+  font-size:.84rem;
+}
+.visit:hover{background:#20232a}
+.empty{
+  text-align:center;
+  padding:55px 20px;
+  color:var(--muted);
+  border:1px dashed var(--border);
+  border-radius:12px;
+}
+footer{
+  border-top:1px solid var(--border);
+  color:#777b86;
+  text-align:center;
+  padding:28px 20px;
+  font-size:.8rem;
+}
+.error{color:#c0a9a9}
+@media(max-width:950px){
+  .control-grid{grid-template-columns:1fr 1fr}
+  .control-grid input{grid-column:1/-1}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:650px){
+  .header-inner{padding:14px 16px}
+  nav{display:none}
+  .hero{padding:52px 16px 32px}
+  .wrap{padding:0 16px 55px}
+  .control-grid{grid-template-columns:1fr}
+  .control-grid input{grid-column:auto}
+  .grid{grid-template-columns:1fr}
+  .card{min-height:0}
+  .summary{align-items:flex-start;flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">Nachtfragment <span>/ Magazine</span></div>
+    <nav>
+      <a href="../">Hauptverzeichnis</a>
+      <a href="../Stuff/">Stuff</a>
+      <a href="#magazine">Magazine</a>
+      <a href="#info">Info</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="kicker">Nachtfragment · Dark Music & Culture</div>
+  <h1>Magazine & Webzines</h1>
+  <p>
+    Eine wachsende Sammlung von Magazinen, Webzines, Fanzines und historischen
+    Publikationen rund um Gothic, Darkwave, EBM, Industrial, Post-Punk und die
+    vielen dunklen Zwischenräume der Szene.
+  </p>
+</section>
+
+<main class="wrap" id="magazine">
+  <section class="controls">
+    <div class="control-grid">
+      <input id="search" type="search" placeholder="Magazin, Genre, Land oder Sprache suchen …">
+      <select id="country"><option value="">Alle Länder</option></select>
+      <select id="format"><option value="">Alle Formate</option></select>
+      <select id="status"><option value="">Alle Status</option></select>
+      <select id="genre"><option value="">Alle Genres</option></select>
+    </div>
+    <div class="summary">
+      <span id="count">Lade Magazine …</span>
+      <span>Stand: <strong id="updated">–</strong></span>
+    </div>
+  </section>
+
+  <section id="cards" class="grid" aria-live="polite"></section>
+</main>
+
+<section class="wrap" id="info">
+  <div class="controls">
+    <h2 style="font-family:Georgia,serif;font-weight:400">Über dieses Verzeichnis</h2>
+    <p style="color:var(--muted);max-width:800px">
+      Nachtfragment versteht dieses Verzeichnis als lebende Datenbank. Neben
+      aktuellen Online-Magazinen werden auch Printpublikationen, DIY-Zines und
+      historisch wichtige Medien berücksichtigt. Der Schwerpunkt liegt auf
+      unabhängiger dunkler Musik- und Subkultur.
+    </p>
+  </div>
+</section>
+
+<footer>
+  © Nachtfragment · Gothic · Darkwave · EBM · Industrial · Post-Punk
+</footer>
+
+<script>
+const DATA_FILE = "nachtfragment-magazine.json";
+let magazines = [];
+
+const $ = id => document.getElementById(id);
+
+function normal(v){
+  return String(v ?? "").toLocaleLowerCase("de-DE");
+}
+
+function statusClass(status){
+  const s = normal(status);
+  if(s.includes("aktiv")) return "aktiv";
+  if(s.includes("projekt")) return "projekt";
+  return "historisch";
+}
+
+function addOptions(id, values){
+  const el = $(id);
+  [...new Set(values.flat().filter(Boolean))]
+    .sort((a,b)=>String(a).localeCompare(String(b),"de"))
+    .forEach(v=>{
+      const option=document.createElement("option");
+      option.value=v;
+      option.textContent=v;
+      el.appendChild(option);
+    });
+}
+
+function buildFilters(){
+  addOptions("country", magazines.map(m=>m.country));
+  addOptions("format", magazines.map(m=>m.format || []));
+  addOptions("status", magazines.map(m=>m.status));
+  addOptions("genre", magazines.map(m=>m.focus || []));
+}
+
+function matches(m){
+  const q=normal($("search").value);
+  const country=$("country").value;
+  const format=$("format").value;
+  const status=$("status").value;
+  const genre=$("genre").value;
+
+  const hay=[
+    m.name,m.country,m.language,m.status,
+    ...(m.format||[]),...(m.focus||[])
+  ].map(normal).join(" ");
+
+  return (!q || hay.includes(q))
+    && (!country || m.country===country)
+    && (!format || (m.format||[]).includes(format))
+    && (!status || m.status===status)
+    && (!genre || (m.focus||[]).includes(genre));
+}
+
+function render(){
+  const list=magazines.filter(matches);
+  $("count").textContent =
+    `${list.length} von ${magazines.length} Magazinen angezeigt`;
+
+  const container=$("cards");
+  container.innerHTML="";
+
+  if(!list.length){
+    container.innerHTML='<div class="empty" style="grid-column:1/-1">Keine passenden Magazine gefunden.</div>';
+    return;
+  }
+
+  list.forEach(m=>{
+    const card=document.createElement("article");
+    card.className="card";
+
+    const tags=(m.focus||[])
+      .map(x=>`<span class="tag">${escapeHtml(x)}</span>`).join("");
+
+    card.innerHTML=`
+      <div class="card-top">
+        <h2>${escapeHtml(m.name)}</h2>
+        <span class="status ${statusClass(m.status)}">${escapeHtml(m.status)}</span>
+      </div>
+      <div class="meta">
+        ${escapeHtml(m.country || "International")}
+        ${m.language ? " · " + escapeHtml(m.language) : ""}
+        <br>${escapeHtml((m.format||[]).join(" · "))}
+      </div>
+      <div class="focus">${tags}</div>
+      <div class="card-bottom">
+        <a class="visit" href="${safeUrl(m.website)}" target="_blank" rel="noopener noreferrer">
+          Website öffnen ↗
+        </a>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function escapeHtml(value){
+  return String(value ?? "").replace(/[&<>"']/g,c=>({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+  }[c]));
+}
+
+function safeUrl(value){
+  const s=String(value||"").trim();
+  try{
+    const u=new URL(s);
+    return ["http:","https:"].includes(u.protocol) ? u.href : "#";
+  }catch{
+    return "#";
+  }
+}
+
+async function load(){
+  try{
+    const dataUrl=new URL(DATA_FILE,window.location.href);
+    dataUrl.searchParams.set("v",Date.now().toString());
+    const response=await fetch(dataUrl.toString(),{cache:"no-store"});
+    if(!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data=await response.json();
+    magazines=Array.isArray(data) ? data : (data.magazines || []);
+    $("updated").textContent=data.updated || "–";
+    buildFilters();
+    render();
+  }catch(error){
+    $("count").innerHTML='<span class="error">Die Magazindaten konnten nicht geladen werden.</span>';
+    $("cards").innerHTML=`
+      <div class="empty error" style="grid-column:1/-1">
+        Bitte prüfen, ob <strong>${DATA_FILE}</strong> im selben Verzeichnis wie diese index.html liegt.
+      </div>`;
+    console.error(error);
+  }
+}
+
+["search","country","format","status","genre"].forEach(id=>{
+  $(id).addEventListener("input",render);
+  $(id).addEventListener("change",render);
+});
+
+load();
+</script>
+</body>
+</html>
