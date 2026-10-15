@@ -1,0 +1,223 @@
+{
+  "queries": [
+    {
+      "type": "stuff",
+      "category": "Alternative Fashion",
+      "country": "Germany",
+      "language": "Deutsch",
+      "tags": [
+        "Gothic",
+        "Alternative Fashion",
+        "Punk"
+      ],
+      "query": "Gothic alternative fashion shop Germany independent official"
+    },
+    {
+      "type": "stuff",
+      "category": "Schmuck & Accessoires",
+      "country": "Germany",
+      "language": "Deutsch",
+      "tags": [
+        "Gothic",
+        "Schmuck",
+        "Handmade"
+      ],
+      "query": "handmade gothic jewelry designer Germany official shop"
+    },
+    {
+      "type": "stuff",
+      "category": "Tattoo & Body Art",
+      "country": "Germany",
+      "language": "Deutsch",
+      "tags": [
+        "Blackwork",
+        "Dark Art",
+        "Tattoo"
+      ],
+      "query": "dark art blackwork tattoo studio Germany official"
+    },
+    {
+      "type": "stuff",
+      "category": "Labels / Music",
+      "country": "Germany",
+      "language": "Deutsch",
+      "tags": [
+        "Darkwave",
+        "Post-Punk",
+        "EBM",
+        "Industrial"
+      ],
+      "query": "independent darkwave post-punk EBM record label Germany official"
+    },
+    {
+      "type": "stuff",
+      "category": "Schmuck & Accessoires",
+      "country": "Austria",
+      "language": "Deutsch",
+      "tags": [
+        "Gothic",
+        "Schmuck",
+        "Handmade"
+      ],
+      "query": "Gothic Schmuck Designer handmade Österreich official shop"
+    },
+    {
+      "type": "stuff",
+      "category": "Tattoo & Body Art",
+      "country": "Austria",
+      "language": "Deutsch",
+      "tags": [
+        "Blackwork",
+        "Dark Art",
+        "Tattoo"
+      ],
+      "query": "blackwork dark art tattoo studio Austria official"
+    },
+    {
+      "type": "stuff",
+      "category": "Gothic Shops",
+      "country": "Switzerland",
+      "language": "Deutsch",
+      "tags": [
+        "Gothic",
+        "Alternative",
+        "Mode"
+      ],
+      "query": "Gothic shop alternative fashion Switzerland official"
+    },
+    {
+      "type": "stuff",
+      "category": "Labels / Music",
+      "country": "Switzerland",
+      "language": "Deutsch",
+      "tags": [
+        "Post-Punk",
+        "Coldwave",
+        "Darkwave"
+      ],
+      "query": "independent post-punk coldwave darkwave record label Switzerland"
+    },
+    {
+      "type": "stuff",
+      "category": "Labels / Music",
+      "country": "Netherlands",
+      "language": "Niederländisch / Englisch",
+      "tags": [
+        "Darkwave",
+        "Post-Punk",
+        "Coldwave"
+      ],
+      "query": "independent darkwave post-punk coldwave record label Netherlands official"
+    },
+    {
+      "type": "stuff",
+      "category": "Schmuck & Accessoires",
+      "country": "Netherlands",
+      "language": "Niederländisch / Englisch",
+      "tags": [
+        "Gothic",
+        "Alternative",
+        "Handmade"
+      ],
+      "query": "gothic jewelry handmade alternative designer Netherlands official"
+    },
+    {
+      "type": "stuff",
+      "category": "Labels / Music",
+      "country": "Belgium",
+      "language": "Niederländisch / Französisch / Englisch",
+      "tags": [
+        "Darkwave",
+        "Post-Punk",
+        "Industrial"
+      ],
+      "query": "Belgium independent darkwave post-punk industrial record label official"
+    },
+    {
+      "type": "stuff",
+      "category": "Schmuck & Accessoires",
+      "country": "France",
+      "language": "Französisch",
+      "tags": [
+        "Gothic",
+        "Bijoux",
+        "Alternative"
+      ],
+      "query": "créateur bijoux gothiques boutique indépendante France officiel"
+    },
+    {
+      "type": "stuff",
+      "category": "Tattoo & Body Art",
+      "country": "Sweden",
+      "language": "Schwedisch / Englisch",
+      "tags": [
+        "Blackwork",
+        "Dark Art",
+        "Tattoo"
+      ],
+      "query": "dark art blackwork tattoo studio Sweden official"
+    },
+    {
+      "type": "stuff",
+      "category": "Labels / Music",
+      "country": "Denmark",
+      "language": "Dänisch / Englisch",
+      "tags": [
+        "Darkwave",
+        "Synth",
+        "Post-Punk"
+      ],
+      "query": "Denmark independent darkwave synth post-punk record label official"
+    },
+    {
+      "type": "magazine",
+      "country": "Germany",
+      "language": "Deutsch",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "EBM",
+        "Industrial",
+        "Post-Punk"
+      ],
+      "query": "deutsch Gothic Darkwave EBM Industrial Musik Webzine Magazin Interviews Rezensionen"
+    },
+    {
+      "type": "magazine",
+      "country": "United Kingdom",
+      "language": "Englisch",
+      "focus": [
+        "Post-Punk",
+        "Gothic",
+        "Industrial",
+        "Darkwave"
+      ],
+      "query": "UK independent post-punk gothic industrial music webzine magazine interviews reviews"
+    },
+    {
+      "type": "magazine",
+      "country": "Sweden",
+      "language": "Schwedisch / Englisch",
+      "focus": [
+        "Synthpop",
+        "EBM",
+        "Industrial",
+        "Darkwave"
+      ],
+      "query": "Swedish synthpop EBM industrial darkwave music webzine magazine"
+    },
+    {
+      "type": "magazine",
+      "country": "International",
+      "language": "Englisch",
+      "focus": [
+        "Darkwave",
+        "Gothic",
+        "Post-Punk",
+        "Coldwave"
+      ],
+      "query": "independent international darkwave gothic post-punk webzine reviews interviews"
+    }
+  ],
+  "note": "Search queries are intentionally curated; only reachable, relevant official sites are auto-published."
+}
