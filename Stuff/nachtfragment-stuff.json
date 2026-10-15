@@ -1,13 +1,13 @@
 {
   "title": "Nachtfragment Stuff – Worldwide Dark Culture Directory",
-  "version": "2026-10-15-round3-independent-creators",
+  "version": "2026-10-15-round4-dark-art-tattoo-labels",
   "updated": "2026-10-15",
   "scope": "Worldwide dark culture directory: Alternative Fashion, Gothic Shops, Schmuck & Accessoires, Tattoo & Body Art, Ambiente / Home & Living, Clubs & Nightlife, Szene-Verzeichnisse, Labels / Music, Artists / Merch.",
   "excluded": [
     "📰 Magazine & Online-Medien",
     "🎪 Festivals & Events"
   ],
-  "verification_note": "Erweiterung 15.10.2026: neue Einträge anhand der verlinkten Anbieter-Websites und aktueller Webrecherche geprüft; Dubletten nach Name und URL vermieden. Status verified bezieht sich auf die erreichbare/offizielle Website, nicht auf eine persönliche Vor-Ort-Prüfung. Erweiterung 15.10.2026: Vier zusätzliche DACH-Szeneanbieter wurden anhand offizieller Shopseiten bzw. Szene-Verzeichnissen ergänzt. Namensduplikate wurden bereinigt. Erweiterung Runde 3 (15.10.2026): sechs unabhängige Schmuck- und Handmade-Labels aus Deutschland anhand ihrer offiziellen Shopseiten ergänzt. Website-Erreichbarkeit und Sortiment geprüft; keine Vor-Ort-Prüfung behauptet.",
+  "verification_note": "Round 4: additions selected from official websites; duplicate names and URLs checked against the current dataset. Website activity and styling should be periodically rechecked.",
   "entries": [
     {
       "name": "Beserk",
@@ -2581,6 +2581,215 @@
         "Accessoires"
       ],
       "url": "https://www.bat-and-cat.de/"
+    },
+    {
+      "name": "TattooAtelierSchwarz",
+      "category": [
+        "Tattoo & Body Art"
+      ],
+      "country": "Germany",
+      "city": "Hamburg",
+      "status": "verified",
+      "tags": [
+        "Blackwork",
+        "Horror",
+        "Abstract",
+        "Tattoo"
+      ],
+      "url": "https://www.tattooatelierschwarz.com/"
+    },
+    {
+      "name": "Boldblack Tattoo",
+      "category": [
+        "Tattoo & Body Art"
+      ],
+      "country": "Germany",
+      "city": "Hamburg",
+      "status": "verified",
+      "tags": [
+        "Blackwork",
+        "Freehand",
+        "Dark Aesthetic"
+      ],
+      "url": "https://www.boldblacktattoo.com/"
+    },
+    {
+      "name": "BLACK.WERK Tattoo Studio",
+      "category": [
+        "Tattoo & Body Art"
+      ],
+      "country": "Austria",
+      "city": "Vienna",
+      "status": "verified",
+      "tags": [
+        "Blackwork",
+        "Dotwork",
+        "Ornamental",
+        "Geometric"
+      ],
+      "url": "https://blackwerk.tattoo/"
+    },
+    {
+      "name": "Romina’s Nadelwald Tattoo Studio",
+      "category": [
+        "Tattoo & Body Art"
+      ],
+      "country": "Austria",
+      "city": "Innsbruck",
+      "status": "verified",
+      "tags": [
+        "Blackwork",
+        "Surreal",
+        "Illustrative",
+        "Dotwork"
+      ],
+      "url": "https://www.rominasnadelwald.com/"
+    },
+    {
+      "name": "Wait ’n Bleed",
+      "category": [
+        "Tattoo & Body Art"
+      ],
+      "country": "Germany",
+      "city": "Olfen",
+      "status": "verified",
+      "tags": [
+        "Dark Art",
+        "Blackwork",
+        "Custom Tattoo"
+      ],
+      "url": "https://www.waitnbleed.de/"
+    },
+    {
+      "name": "KunstKrake – Michael Hutter",
+      "category": [
+        "Designer / Handmade"
+      ],
+      "country": "Germany",
+      "city": "Cologne",
+      "status": "verified",
+      "tags": [
+        "Dark Art",
+        "Surrealism",
+        "Painting",
+        "Illustration"
+      ],
+      "url": "https://kunstkrake.de/"
+    },
+    {
+      "name": "GraveArt",
+      "category": [
+        "Designer / Handmade"
+      ],
+      "country": "Germany",
+      "city": "Reutlingen",
+      "status": "verified",
+      "tags": [
+        "Dark Art",
+        "Gothic Art",
+        "Illustration",
+        "Ornamental"
+      ],
+      "url": "https://www.graveart.de/"
+    },
+    {
+      "name": "The Art of Dark",
+      "category": [
+        "Designer / Handmade"
+      ],
+      "country": "Germany",
+      "city": "Rheinhausen",
+      "status": "verified",
+      "tags": [
+        "Dark Art",
+        "Fine Art Photography",
+        "Gothic"
+      ],
+      "url": "https://www.theartofdark.de/"
+    },
+    {
+      "name": "Exit Does Not Exist Records",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "Belgium",
+      "city": "Brussels",
+      "status": "verified",
+      "tags": [
+        "Darkwave",
+        "Post-Punk",
+        "Coldwave",
+        "Industrial Gothic",
+        "Art Collective"
+      ],
+      "url": "https://exitdoesnotexistrecords.com/"
+    },
+    {
+      "name": "Aenaos Records",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "Germany",
+      "city": "Leipzig",
+      "status": "verified",
+      "tags": [
+        "Darkwave",
+        "Gothic Rock",
+        "Post-Punk",
+        "Shoegaze",
+        "Dark Ambient"
+      ],
+      "url": "https://aenaos-records.com/"
+    },
+    {
+      "name": "Onderstroom Records",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "Belgium",
+      "status": "verified",
+      "tags": [
+        "Coldwave",
+        "Minimal Synth",
+        "Synth-Pop",
+        "Punk",
+        "Reissues"
+      ],
+      "url": "https://www.onderstroomrecords.com/"
+    },
+    {
+      "name": "Meuse Music Records",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "Belgium",
+      "status": "verified",
+      "tags": [
+        "Post-Punk",
+        "Gothic Rock",
+        "Deathrock",
+        "Shoegaze",
+        "Darkwave",
+        "Coldwave"
+      ],
+      "url": "https://www.meusemusicrecords.eu/"
+    },
+    {
+      "name": "VOID++ Records",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "Germany",
+      "city": "Hannover",
+      "status": "verified",
+      "tags": [
+        "Shoegaze",
+        "Dream Pop",
+        "Post-Punk",
+        "Post-Rock",
+        "Electronica"
+      ],
+      "url": "https://www.voidplusplus-records.de/"
     }
   ]
 }
