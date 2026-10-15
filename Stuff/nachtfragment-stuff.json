@@ -1,13 +1,13 @@
 {
   "title": "Nachtfragment Stuff – Worldwide Dark Culture Directory",
-  "version": "2.3",
-  "updated": "2026-10-14",
+  "version": "1.1",
+  "updated": "2026-10-15",
   "scope": "Worldwide dark culture directory: Alternative Fashion, Gothic Shops, Schmuck & Accessoires, Tattoo & Body Art, Ambiente / Home & Living, Clubs & Nightlife, Szene-Verzeichnisse, Labels / Music, Artists / Merch.",
   "excluded": [
     "📰 Magazine & Online-Medien",
     "🎪 Festivals & Events"
   ],
-  "verification_note": "Erweitert am 14.10.2026 um zusätzliche offizielle Shops und Labels. Magazine und Online-Medien werden in der separaten Magazine-Sektion geführt. Status 'verified' bedeutet, dass eine offizielle Webpräsenz als Quelle identifiziert wurde; keine Garantie für dauerhafte Erreichbarkeit oder stationäre Öffnungszeiten.",
+  "verification_note": "Erweiterung 15.10.2026: neue Einträge anhand der verlinkten Anbieter-Websites und aktueller Webrecherche geprüft; Dubletten nach Name und URL vermieden. Status verified bezieht sich auf die erreichbare/offizielle Website, nicht auf eine persönliche Vor-Ort-Prüfung.",
   "entries": [
     {
       "name": "Beserk",
@@ -2428,6 +2428,79 @@
         "Coldwave"
       ],
       "url": "https://youngandcold.de/"
+    },
+    {
+      "name": "Asmalia Gothic Shop Vienna",
+      "category": [
+        "Gothic Shops",
+        "Alternative Fashion",
+        "Schmuck & Accessoires",
+        "Ambiente / Home & Living"
+      ],
+      "country": "Austria",
+      "city": "Vienna",
+      "status": "verified",
+      "tags": [
+        "gothic",
+        "dark fashion",
+        "corsets",
+        "alternative"
+      ],
+      "url": "https://www.asmalia.at/"
+    },
+    {
+      "name": "Darkstore Berlin",
+      "category": [
+        "Gothic Shops",
+        "Alternative Fashion",
+        "Schmuck & Accessoires"
+      ],
+      "country": "Germany",
+      "city": "Berlin",
+      "status": "verified",
+      "tags": [
+        "gothic",
+        "punk",
+        "alternative",
+        "steampunk"
+      ],
+      "url": "https://www.darkstore.de/"
+    },
+    {
+      "name": "Wonderland 13",
+      "category": [
+        "Gothic Shops",
+        "Alternative Fashion",
+        "Schmuck & Accessoires",
+        "Ambiente / Home & Living"
+      ],
+      "country": "Germany",
+      "status": "verified",
+      "tags": [
+        "gothic",
+        "dark fashion",
+        "metal",
+        "home decor"
+      ],
+      "url": "https://www.wonderland13-store.de/"
+    },
+    {
+      "name": "Dark Ages",
+      "category": [
+        "Gothic Shops",
+        "Alternative Fashion",
+        "Schmuck & Accessoires"
+      ],
+      "country": "Germany",
+      "city": "Essen",
+      "status": "verified",
+      "tags": [
+        "gothic",
+        "alternative fashion",
+        "jewellery",
+        "boots"
+      ],
+      "url": "https://www.darkages.de/"
     }
   ]
 }
