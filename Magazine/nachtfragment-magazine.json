@@ -948,6 +948,42 @@
       ],
       "website": "https://www.medienkonverter.de/",
       "verification": "aktuelle Veröffentlichungen am 15.10.2026"
+    },
+    {
+      "name": "I Die: You Die",
+      "country": "Kanada",
+      "language": "Englisch",
+      "format": [
+        "online",
+        "podcast"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Industrial",
+        "EBM",
+        "Goth",
+        "Darkwave",
+        "Dark Electro",
+        "Synthpop"
+      ],
+      "website": "https://www.idieyoudie.com/"
+    },
+    {
+      "name": "SYNTH.NU",
+      "country": "Schweden",
+      "language": "Schwedisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Synthpop",
+        "EBM",
+        "Industrial",
+        "Darkwave",
+        "Electronic Music"
+      ],
+      "website": "https://synth.nu/"
     }
   ],
   "recommended_filters": [
@@ -957,5 +993,5 @@
     "Status",
     "Genre"
   ],
-  "editorial_note": "Lebende Nachtfragment-Datenbank. Internationale Auswahl aus Online-Magazinen, Printmedien, Webzines und Zines. 'Archiv / unklar' kennzeichnet Angebote, deren aktuelle Veröffentlichungsaktivität nicht eindeutig belegt ist. Neue Einträge werden nach offizieller Website und thematischer Relevanz ergänzt.\n\nErweiterung 15.10.2026: Chain D.L.K. und Elettronica Concreta wurden anhand aktueller Inhalte auf den jeweiligen Websites ergänzt.\n\nErweiterung 15.10.2026: Medienkonverter wurde aufgrund aktueller Veröffentlichungen ergänzt. Namensduplikate wurden bereinigt."
+  "editorial_note": "Lebende Nachtfragment-Datenbank. Internationale Auswahl aus Online-Magazinen, Printmedien, Webzines und Zines. 'Archiv / unklar' kennzeichnet Angebote, deren aktuelle Veröffentlichungsaktivität nicht eindeutig belegt ist. Neue Einträge werden nach offizieller Website und thematischer Relevanz ergänzt.\n\nErweiterung 15.10.2026: Chain D.L.K. und Elettronica Concreta wurden anhand aktueller Inhalte auf den jeweiligen Websites ergänzt.\n\nErweiterung 15.10.2026: Medienkonverter wurde aufgrund aktueller Veröffentlichungen ergänzt. Namensduplikate wurden bereinigt. Runde 3 ergänzt drei aktuell aktive Musikmedien; Aktivität anhand jüngster veröffentlichter Beiträge auf den offiziellen Websites geprüft."
 }
