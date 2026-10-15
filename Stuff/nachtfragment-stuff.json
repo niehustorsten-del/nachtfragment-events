@@ -1,13 +1,13 @@
 {
   "title": "Nachtfragment Stuff – Worldwide Dark Culture Directory",
-  "version": "1.1",
+  "version": "2026-10-15-europe-expansion",
   "updated": "2026-10-15",
   "scope": "Worldwide dark culture directory: Alternative Fashion, Gothic Shops, Schmuck & Accessoires, Tattoo & Body Art, Ambiente / Home & Living, Clubs & Nightlife, Szene-Verzeichnisse, Labels / Music, Artists / Merch.",
   "excluded": [
     "📰 Magazine & Online-Medien",
     "🎪 Festivals & Events"
   ],
-  "verification_note": "Erweiterung 15.10.2026: neue Einträge anhand der verlinkten Anbieter-Websites und aktueller Webrecherche geprüft; Dubletten nach Name und URL vermieden. Status verified bezieht sich auf die erreichbare/offizielle Website, nicht auf eine persönliche Vor-Ort-Prüfung.",
+  "verification_note": "Erweiterung 15.10.2026: neue Einträge anhand der verlinkten Anbieter-Websites und aktueller Webrecherche geprüft; Dubletten nach Name und URL vermieden. Status verified bezieht sich auf die erreichbare/offizielle Website, nicht auf eine persönliche Vor-Ort-Prüfung. Erweiterung 15.10.2026: Vier zusätzliche DACH-Szeneanbieter wurden anhand offizieller Shopseiten bzw. Szene-Verzeichnissen ergänzt. Namensduplikate wurden bereinigt.",
   "entries": [
     {
       "name": "Beserk",
@@ -2249,43 +2249,6 @@
       "url": "https://www.attitude-europe.com/"
     },
     {
-      "name": "Disturbia",
-      "category": [
-        "Alternative Fashion",
-        "Gothic Shops",
-        "Schmuck & Accessoires",
-        "Ambiente / Home & Living"
-      ],
-      "country": "Vereinigtes Königreich",
-      "status": "verified",
-      "tags": [
-        "Dark Romantic",
-        "Gothic",
-        "Alternative Fashion",
-        "Jewellery",
-        "Homeware"
-      ],
-      "url": "https://www.disturbia.de/"
-    },
-    {
-      "name": "KILLSTAR",
-      "category": [
-        "Alternative Fashion",
-        "Gothic Shops",
-        "Schmuck & Accessoires",
-        "Ambiente / Home & Living"
-      ],
-      "country": "Vereinigtes Königreich",
-      "status": "verified",
-      "tags": [
-        "Gothic",
-        "Dark Fashion",
-        "Jewellery",
-        "Homeware"
-      ],
-      "url": "https://eu.killstar.com/"
-    },
-    {
       "name": "Blue Banana",
       "category": [
         "Alternative Fashion",
@@ -2336,23 +2299,6 @@
         "Alternative Fashion"
       ],
       "url": "https://draculaclothing.com/"
-    },
-    {
-      "name": "Kreepsville 666",
-      "category": [
-        "Alternative Fashion",
-        "Gothic Shops",
-        "Schmuck & Accessoires"
-      ],
-      "country": "USA",
-      "status": "verified",
-      "tags": [
-        "Horror",
-        "Gothic",
-        "Alternative Fashion",
-        "Accessories"
-      ],
-      "url": "https://www.kreepsville666.com/"
     },
     {
       "name": "Alchemy England",
@@ -2413,21 +2359,6 @@
         "Industrial"
       ],
       "url": "https://avantrecords.com/"
-    },
-    {
-      "name": "Young & Cold Records",
-      "category": [
-        "Labels / Music"
-      ],
-      "country": "Deutschland",
-      "status": "verified",
-      "tags": [
-        "Darkwave",
-        "Post-Punk",
-        "Minimal Synth",
-        "Coldwave"
-      ],
-      "url": "https://youngandcold.de/"
     },
     {
       "name": "Asmalia Gothic Shop Vienna",
@@ -2501,6 +2432,57 @@
         "boots"
       ],
       "url": "https://www.darkages.de/"
+    },
+    {
+      "name": "Boudoir Noir",
+      "category": [
+        "Alternative Fashion",
+        "Gothic Fashion",
+        "Schmuck & Accessoires"
+      ],
+      "country": "Deutschland",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Punk",
+        "Steampunk",
+        "Burlesque",
+        "Dark Fashion"
+      ],
+      "url": "https://www.boudoir-noir.de/"
+    },
+    {
+      "name": "Blaubluth",
+      "category": [
+        "Alternative Fashion",
+        "Designer / Handmade"
+      ],
+      "country": "Schweiz",
+      "status": "verified",
+      "tags": [
+        "Handmade",
+        "Gothic",
+        "Dark Romantic",
+        "Independent Designer"
+      ],
+      "url": "https://www.blaubluth.com/"
+    },
+    {
+      "name": "MODE WICHTIG",
+      "category": [
+        "Alternative Fashion",
+        "Gothic Shops"
+      ],
+      "country": "Deutschland",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Metal",
+        "Punk",
+        "Underground",
+        "Boots"
+      ],
+      "url": "https://www.modewichtig.com/"
     }
   ]
 }
