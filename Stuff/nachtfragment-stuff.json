@@ -1,13 +1,13 @@
 {
   "title": "Nachtfragment Stuff – Worldwide Dark Culture Directory",
-  "version": "2026-10-15-europe-expansion",
+  "version": "2026-10-15-round3-independent-creators",
   "updated": "2026-10-15",
   "scope": "Worldwide dark culture directory: Alternative Fashion, Gothic Shops, Schmuck & Accessoires, Tattoo & Body Art, Ambiente / Home & Living, Clubs & Nightlife, Szene-Verzeichnisse, Labels / Music, Artists / Merch.",
   "excluded": [
     "📰 Magazine & Online-Medien",
     "🎪 Festivals & Events"
   ],
-  "verification_note": "Erweiterung 15.10.2026: neue Einträge anhand der verlinkten Anbieter-Websites und aktueller Webrecherche geprüft; Dubletten nach Name und URL vermieden. Status verified bezieht sich auf die erreichbare/offizielle Website, nicht auf eine persönliche Vor-Ort-Prüfung. Erweiterung 15.10.2026: Vier zusätzliche DACH-Szeneanbieter wurden anhand offizieller Shopseiten bzw. Szene-Verzeichnissen ergänzt. Namensduplikate wurden bereinigt.",
+  "verification_note": "Erweiterung 15.10.2026: neue Einträge anhand der verlinkten Anbieter-Websites und aktueller Webrecherche geprüft; Dubletten nach Name und URL vermieden. Status verified bezieht sich auf die erreichbare/offizielle Website, nicht auf eine persönliche Vor-Ort-Prüfung. Erweiterung 15.10.2026: Vier zusätzliche DACH-Szeneanbieter wurden anhand offizieller Shopseiten bzw. Szene-Verzeichnissen ergänzt. Namensduplikate wurden bereinigt. Erweiterung Runde 3 (15.10.2026): sechs unabhängige Schmuck- und Handmade-Labels aus Deutschland anhand ihrer offiziellen Shopseiten ergänzt. Website-Erreichbarkeit und Sortiment geprüft; keine Vor-Ort-Prüfung behauptet.",
   "entries": [
     {
       "name": "Beserk",
@@ -2483,6 +2483,104 @@
         "Boots"
       ],
       "url": "https://www.modewichtig.com/"
+    },
+    {
+      "name": "Witchy Beads",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "Deutschland",
+      "status": "verified",
+      "tags": [
+        "Handmade",
+        "Gothic Schmuck",
+        "Witchy",
+        "Edelstahl",
+        "Edelsteine"
+      ],
+      "url": "https://www.witchybeads.de/"
+    },
+    {
+      "name": "Of Fox and Raven",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "Deutschland",
+      "status": "verified",
+      "tags": [
+        "Handmade",
+        "Gothic Schmuck",
+        "Dark Romantic",
+        "Edelsteine",
+        "Berlin/Brandenburg"
+      ],
+      "url": "https://www.offoxandraven.de/"
+    },
+    {
+      "name": "Atelier feinsinnig",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "Deutschland",
+      "status": "verified",
+      "tags": [
+        "Designschmuck",
+        "Post-Punk",
+        "Darkwave",
+        "Minimalismus",
+        "Handmade"
+      ],
+      "url": "https://www.atelier-feinsinnig.de/"
+    },
+    {
+      "name": "Bloody Brilliants",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "Deutschland",
+      "status": "verified",
+      "tags": [
+        "Handmade",
+        "Gothic Schmuck",
+        "Witchy",
+        "Steampunk",
+        "Fantasy"
+      ],
+      "url": "https://www.bloodybrilliants.de/"
+    },
+    {
+      "name": "Fux Jewellery",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "Deutschland",
+      "status": "verified",
+      "tags": [
+        "Independent Label",
+        "Gothic inspired",
+        "Body Jewellery",
+        "Handmade",
+        "Ruhrgebiet"
+      ],
+      "url": "https://fuxjewellery.com/de"
+    },
+    {
+      "name": "Bat and Cat Boutique",
+      "category": [
+        "Alternative Fashion",
+        "Schmuck & Accessoires"
+      ],
+      "country": "Deutschland",
+      "status": "verified",
+      "tags": [
+        "Handmade",
+        "Gothic",
+        "Witchy",
+        "Taschen",
+        "Kleidung",
+        "Accessoires"
+      ],
+      "url": "https://www.bat-and-cat.de/"
     }
   ]
 }
