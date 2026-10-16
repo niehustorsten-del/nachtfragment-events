@@ -7,7 +7,7 @@ from urllib.parse import urlparse, urlunparse
 import requests
 from bs4 import BeautifulSoup
 
-ROOT = os.path.abspath(os.path.dirname(__file__))
+ROOT = os.path.dirname(os.path.abspath(__file__))
 STUFF_PATH = os.path.join(ROOT, "Stuff", "nachtfragment-stuff.json")
 MAG_PATH = os.path.join(ROOT, "Magazine", "nachtfragment-magazine.json")
 QUERIES_PATH = os.path.join(ROOT, "stuff_magazine_queries.json")
