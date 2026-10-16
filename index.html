@@ -4,70 +4,54 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Nachtfragment – Dark Scene Directory</title>
 <style>
-:root{--bg:#07070a;--panel:#101016;--line:#2b2b36;--txt:#f3f0f6;--muted:#a8a4af;--accent:#c78cff;--shadow:0 18px 55px #0009}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;width:100%;min-height:100%;overflow-x:hidden}
-body{background:radial-gradient(900px 420px at 50% -100px,#2b163d 0,#0c0910 48%,#07070a 78%);color:var(--txt);font:14px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-button,input,select{font:inherit}
-input,select{width:100%;min-height:44px;border:1px solid var(--line);border-radius:10px;background:#0e0e14;color:var(--txt);padding:9px 11px;outline:0}
-input:focus,select:focus{border-color:var(--accent);box-shadow:0 0 0 2px #c78cff18}
-.top{position:sticky;top:0;z-index:1000;background:#09090de8;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-.wrap{width:min(1600px,100%);margin:0 auto;padding:0 18px}
-.head{padding:20px 0 14px}
-.brand{display:block}
-.brand h1{margin:0;font:800 clamp(28px,4vw,38px)/1 Georgia,serif;letter-spacing:.06em}
-.brand p{margin:7px 0 0;color:var(--muted)}
-.filters{display:grid;grid-template-columns:minmax(220px,2.1fr) repeat(4,minmax(140px,1fr));gap:8px;padding:0 0 16px}
-.stats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
-.stat{background:#101016;border:1px solid var(--line);border-radius:999px;padding:6px 10px;color:#c7c3cc;font-size:12px}
-.stat strong{color:#fff}
-.toggle{display:flex;align-items:center;gap:8px;padding:0 10px;min-height:34px;border:1px solid var(--line);border-radius:999px;background:#0e0e14;color:var(--muted);font-size:12px}
-.toggle input{width:auto;min-height:0}
-.layout{display:block;min-width:0}
-.panel{height:690px;overflow:auto;padding-right:3px}
-.card{background:linear-gradient(145deg,#121219,#0d0d12);border:1px solid var(--line);border-radius:13px;padding:14px;margin-bottom:9px;cursor:pointer;transition:.15s}
-.card:hover{border-color:#75518d;transform:translateY(-1px)}
-.card.candidate{border-style:dashed;border-color:#665d42}
-.name{font-size:17px;font-weight:800}
-.meta{color:var(--muted);font-size:12px;margin:2px 0 7px}
-.desc{color:#c8c4cd;font-size:13px;margin:8px 0}
-.badge{display:inline-block;border:1px solid #373742;border-radius:999px;padding:3px 7px;margin:2px 4px 0 0;font-size:11px}
-.event{border-color:#654d7d;background:#1a1222}
-.candidateBadge{border-color:#776b47;background:#211d12;color:#eadcae}
-.links{margin-top:9px}
-.links a{color:#d5b8ff;text-decoration:none;margin:2px 12px 2px 0;font-size:12px}
-.links a:hover{text-decoration:underline}
-.eventline{margin-top:8px;color:#d9cbe5;font-size:12px}
-.empty{text-align:center;color:var(--muted);padding:60px 15px}
-.footer{text-align:center;color:#77727f;font-size:12px;padding:18px 0 30px}
-.sectionTitle{font:700 14px Georgia,serif;color:#ddd;margin:0 0 9px}
-.small{font-size:11px;color:#85808c}
-@media(max-width:1100px){
- .filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}
- .panel{height:540px}
-}
-@media(max-width:700px){
- .wrap{padding:0 12px}.head{padding:16px 0 12px}
- .brand h1{font-size:29px}.brand p{font-size:12px;line-height:1.4}
- .filters{grid-template-columns:1fr;gap:7px}.filters input{grid-column:auto}
- .stats{gap:6px}.stat{font-size:11px}.toggle{width:100%;justify-content:center}
- .panel{height:470px}.card{padding:13px}.name{font-size:16px}
- .links a{display:inline-block;padding:3px 0}
-}
-@media(max-width:430px){
- .wrap{padding:0 9px}.brand h1{font-size:25px}.brand p{font-size:11px}
- .panel{height:420px}.stats{display:grid;grid-template-columns:1fr 1fr}
- .toggle{grid-column:1/-1}
-}
+:root{--bg:#08080c;--panel:#111118;--panel2:#15151e;--line:#2b2b38;--text:#f1eef5;--muted:#aaa5b4;--accent:#c78cff;--shadow:0 12px 35px rgba(0,0,0,.38)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(900px 440px at 50% -130px,#2b163d 0,#0c0910 50%,var(--bg) 80%);color:var(--text);font:15px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}
+.top{position:sticky;top:0;z-index:20;background:#09090de8;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.head,.wrap{width:min(1280px,100%);margin:auto;padding-left:22px;padding-right:22px}.head{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font:500 1.1rem Georgia,serif;letter-spacing:.13em;text-transform:uppercase}.brand span{color:var(--muted);letter-spacing:.04em}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:var(--muted);text-decoration:none;font-size:.9rem}nav a:hover{color:white}
+.hero{width:min(1280px,100%);margin:auto;padding:62px 22px 34px}.kicker{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:#a28db6}h1{font:400 clamp(2.4rem,6vw,4.6rem)/1.04 Georgia,serif;margin:14px 0 18px}.hero p{max-width:780px;color:var(--muted);font-size:1.03rem}
+main.wrap{padding-bottom:35px}.controls{background:linear-gradient(145deg,#12121a,#0e0e14);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 22px;box-shadow:var(--shadow)}
+.filters{display:grid;grid-template-columns:minmax(220px,2fr) repeat(4,minmax(0,1fr));gap:10px}
+input,select{width:100%;min-width:0;min-height:44px;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:#0b0b11;color:var(--text);font:inherit}input:focus,select:focus{outline:1px solid var(--accent);border-color:var(--accent)}
+.stats{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin:16px 2px 0;color:var(--muted);font-size:.85rem}.stat{display:inline-flex;align-items:center;gap:5px}.stat strong{color:var(--text)}.toggle{display:flex;align-items:center;gap:8px}.toggle input{width:auto;min-height:0;accent-color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding-bottom:40px}.card{min-width:0;background:linear-gradient(145deg,var(--panel2),#101016);border:1px solid var(--line);border-radius:13px;padding:19px;display:flex;flex-direction:column;min-height:225px;transition:border-color .18s,transform .18s;overflow-wrap:anywhere}.card:hover{border-color:#5b4569;transform:translateY(-2px)}.card.candidate{border-style:dashed;border-color:#665d42}
+.name{font:400 1.35rem/1.2 Georgia,serif;margin:0 0 7px;overflow-wrap:anywhere}.meta{color:var(--muted);font-size:.84rem;margin:2px 0 7px}.desc{color:#d1cbd8;font-size:.88rem;margin:10px 0}.badge{display:inline-block;border:1px solid #30303b;border-radius:5px;padding:4px 7px;margin:3px 5px 0 0;font-size:.72rem;color:#b9b3c2}.event{border-color:#654d7d;background:#1a1222}.candidateBadge{border-color:#776b47;background:#211d12;color:#eadcae}.eventline{margin:10px 0;color:#d9cbe5;font-size:.8rem}.links{margin-top:auto;padding-top:15px;display:flex;flex-wrap:wrap;gap:8px}.links a{display:inline-block;text-decoration:none;border:1px solid #46404e;border-radius:7px;padding:8px 11px;font-size:.83rem;color:#d5b8ff}.links a:hover{background:#24182d;border-color:#8b6ba3}
+.empty{grid-column:1/-1;text-align:center;padding:42px 18px;color:var(--muted);border:1px dashed var(--line);border-radius:12px}.sectionTitle{font:400 1.3rem Georgia,serif;margin:0 0 13px;color:var(--text)}.footer{border-top:1px solid var(--line);padding:25px 20px;text-align:center;color:#777482;font-size:.8rem}.footer a{text-decoration:none}.footer a:hover{color:var(--text)}
+@media(max-width:950px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.filters input{grid-column:1/-1}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.head,.wrap{padding-left:16px;padding-right:16px}.hero{padding:50px 16px 28px}}
+@media(max-width:650px){.head{align-items:flex-start;flex-direction:column;padding-top:14px;padding-bottom:14px;gap:9px}nav{gap:14px}.hero{padding:42px 16px 28px}.filters{grid-template-columns:1fr}.filters input{grid-column:auto}.grid{grid-template-columns:1fr}.card{min-height:0;padding:17px}.stats{align-items:flex-start;flex-direction:column}.links{gap:7px}.links a{padding:8px 10px}}
 </style>
 </head>
 <body>
-<div class="top"><div class="wrap"><div class="head"><div class="brand"><div><h1>☾ NACHTFRAGMENT</h1><p>Dark Scene Directory · Shops · Clubs · Bars · Events · Festivals</p></div></div></div>
-<div class="filters"><input id="q" placeholder="🔎 Name, Stadt, Land, Genre, Veranstaltung …"><select id="country"><option value="">🌍 Alle Länder</option></select><select id="type"><option value="">▣ Alle Arten</option><option value="festival">🎪 Festivals</option><option value="event">📅 Veranstaltungen</option><option value="shop">🛍️ Shops</option><option value="club">🖤 Clubs</option><option value="bar">🍸 Bars</option></select><select id="scene"><option value="">◉ Alle Szenerelevanzen</option><option value="gothic_core">🖤 Gothic Core</option><option value="darkwave_wave">🌑 Darkwave / Wave</option><option value="ebm_industrial">⚡ EBM / Industrial</option><option value="dark_electro_futurepop">🧪 Dark Electro / Futurepop</option><option value="postpunk_deathrock">🕷️ Post-Punk / Deathrock</option><option value="alternative_darkrock">🎸 Alternative / Dark Rock</option></select><select id="activity"><option value="">● Alle Aktivitätsstatus</option><option value="active">🟢 aktuell aktiv</option><option value="event_based">🟡 unregelmäßig / Event-basiert</option><option value="change_announced">🟠 angekündigte Veränderung</option><option value="closed">🔴 geschlossen</option><option value="unchecked">⚪ nicht ausreichend geprüft</option></select></div>
-</div></div>
-<main class="wrap">
-<div class="stats"><div class="stat" id="count">Lade Daten …</div><div class="stat">🤖 Kandidaten: <strong id="candidateCount">–</strong></div><div class="stat">📅 Events: <strong id="eventCount">–</strong></div><div class="stat">🎪 Festivals: <strong id="festivalCount">–</strong></div><label class="toggle"><input type="checkbox" id="showCandidates"> Kandidaten einblenden</label></div>
-<div class="layout"><section><div class="sectionTitle">Einträge</div><div class="panel" id="list"></div></section></div><div class="footer">Nachtfragment · Dark Scene Directory · Datenstand 2026</div></main>
+<header class="top"><div class="head">
+  <div class="brand">Nachtfragment <span>/ Dark Scene Directory</span></div>
+  <nav aria-label="Hauptnavigation"><a href="https://nachtfragment.de/">Hauptseite</a><a href="../Stuff/">Stuff</a><a href="../Magazine/">Magazine</a><a href="#directory">Verzeichnis</a></nav>
+</div></header>
+<section class="hero">
+  <div class="kicker">Nachtfragment · Dark Music & Culture</div>
+  <h1>Dark Scene Directory</h1>
+  <p>Ein internationales Verzeichnis für Gothic, Darkwave, EBM, Industrial, Post-Punk und die dunklen Zwischenräume der Szene. Clubs, Shops, Bars, Veranstaltungen und Festivals – übersichtlich an einem Ort.</p>
+</section>
+<main class="wrap" id="directory">
+  <section class="controls">
+    <div class="filters">
+      <input id="q" type="search" placeholder="Name, Stadt, Land, Genre oder Veranstaltung suchen …" aria-label="Verzeichnis durchsuchen">
+      <select id="country" aria-label="Nach Land filtern"><option value="">Alle Länder</option></select>
+      <select id="type" aria-label="Nach Art filtern"><option value="">Alle Arten</option><option value="festival">Festivals</option><option value="event">Veranstaltungen</option><option value="shop">Shops</option><option value="club">Clubs</option><option value="bar">Bars</option></select>
+      <select id="scene" aria-label="Nach Szenerelevanz filtern"><option value="">Alle Szenerelevanzen</option><option value="gothic_core">Gothic Core</option><option value="darkwave_wave">Darkwave / Wave</option><option value="ebm_industrial">EBM / Industrial</option><option value="dark_electro_futurepop">Dark Electro / Futurepop</option><option value="postpunk_deathrock">Post-Punk / Deathrock</option><option value="alternative_darkrock">Alternative / Dark Rock</option></select>
+      <select id="activity" aria-label="Nach Aktivitätsstatus filtern"><option value="">Alle Aktivitätsstatus</option><option value="active">Aktuell aktiv</option><option value="event_based">Unregelmäßig / Event-basiert</option><option value="change_announced">Angekündigte Veränderung</option><option value="closed">Geschlossen</option><option value="unchecked">Noch nicht ausreichend geprüft</option></select>
+    </div>
+    <div class="stats">
+      <span class="stat" id="count">Lade Daten …</span>
+      <span class="stat">Kandidaten: <strong id="candidateCount">–</strong></span>
+      <span class="stat">Events: <strong id="eventCount">–</strong></span>
+      <span class="stat">Festivals: <strong id="festivalCount">–</strong></span>
+      <label class="toggle"><input type="checkbox" id="showCandidates"> Kandidaten einblenden</label>
+    </div>
+  </section>
+  <h2 class="sectionTitle">Einträge</h2>
+  <section class="grid" id="list" aria-live="polite"></section>
+</main>
+<footer class="footer">Nachtfragment · Gothic · Darkwave · EBM · Industrial · Post-Punk<br><a href="https://nachtfragment.de/" target="_blank" rel="noopener noreferrer">Zur Hauptseite von Nachtfragment ↗</a></footer>
 <script>
 const DATA='data/nachtfragment.json',CAND='data/candidates.json';let all=[],candidates=[];
 const icons={active:'🟢',event_based:'🟡',change_announced:'🟠',closed:'🔴',unchecked:'⚪'};const labels={active:'aktuell aktiv',event_based:'unregelmäßig / Event-basiert',change_announced:'angekündigte Veränderung',closed:'geschlossen',unchecked:'nicht ausreichend geprüft'};
@@ -76,7 +60,7 @@ function normalize(x,candidate=false){let a=x.aktivitaet||x.audit_status||(x.ver
 function text(x){let v=[x.name,x.city,x.country,x.country_name,x.description,x.date_text,x.source_url,...A(x.categories),...A(x.szenerelevanz_labels)];if(x.veranstaltung)v.push(x.veranstaltung.frequenz,x.veranstaltung.venue,x.veranstaltung.beschreibung);return v.join(' ').toLowerCase()}
 function eventInfo(x){if(x.record_type!=='event'&&!x.veranstaltung)return '';let v=x.veranstaltung||{},fest=A(x.type).includes('festival')||v.festival;return `<div class="eventline">${fest?'🎪':'📅'} <b>${fest?'Festival':'Veranstaltung'}</b>${v.frequenz?' · '+esc(v.frequenz):''}${v.venue?' · '+esc(v.venue):''}${v.naechster_termin?' · nächster Termin: '+esc(v.naechster_termin):''}${x.date_text?' · '+esc(x.date_text):''}</div>`}
 function links(x){let a=[];if(x.url)a.push(`<a href="${esc(x.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🌐 Website</a>`);if(x.source_url&&!x.url)a.push(`<a href="${esc(x.source_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🔎 Quelle</a>`);if(x.google_maps_url)a.push(`<a href="${esc(x.google_maps_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">📍 Google Maps</a>`);if(x.google_maps_directions_url)a.push(`<a href="${esc(x.google_maps_directions_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🧭 Route</a>`);return a.join('')}
-function render(){let term=q.value.trim().toLowerCase(),c=country.value,t=type.value,a=activity.value,sc=scene.value;let source=showCandidates.checked?all.concat(candidates):all;let f=source.filter(x=>(!term||text(x).includes(term))&&(!c||(x.country_name||x.country)===c)&&(!t||(t==='festival'?A(x.type).includes('festival'):A(x.type).includes(t)))&&(!a||x.aktivitaet===a)&&(!sc||A(x.szenerelevanz).includes(sc)));list.innerHTML='';f.forEach(x=>{let card=document.createElement('article');card.className='card'+(x._candidate?' candidate':'');let isEvent=x.record_type==='event'||x.veranstaltung;card.innerHTML=`<div class="name">${esc(x.name||'Unbenannter Eintrag')}</div><div class="meta">${esc(x.city||'Ort unbekannt')} · ${esc(x.country_name||x.country||'Land unbekannt')} · ${esc(A(x.type).join(' / '))}</div><span class="badge">${icons[x.aktivitaet]} ${labels[x.aktivitaet]}</span>${x._candidate?'<span class="badge candidateBadge">⚠️ Kandidat</span>':''}${isEvent?'<span class="badge event">📅 Event</span>':''}${A(x.szenerelevanz_labels).slice(0,6).map(s=>`<span class="badge">${esc(s)}</span>`).join('')}${x.confidence_score!=null?`<span class="badge">✓ Score ${esc(x.confidence_score)}</span>`:''}${x.description?`<div class="desc">${esc(x.description)}</div>`:''}${eventInfo(x)}<div class="links">${links(x)}</div>`;list.appendChild(card);});count.textContent=`${f.length} von ${all.length}${showCandidates.checked?' + '+candidates.length+' Kandidaten':''} Einträgen`;if(!f.length)list.innerHTML='<div class="empty">Keine passenden Einträge gefunden.</div>'}
+function render(){let term=q.value.trim().toLowerCase(),c=country.value,t=type.value,a=activity.value,sc=scene.value;let source=showCandidates.checked?all.concat(candidates):all;let f=source.filter(x=>(!term||text(x).includes(term))&&(!c||(x.country_name||x.country)===c)&&(!t||(t==='festival'?A(x.type).includes('festival'):A(x.type).includes(t)))&&(!a||x.aktivitaet===a)&&(!sc||A(x.szenerelevanz).includes(sc)));list.innerHTML='';f.forEach(x=>{let card=document.createElement('article');card.className='card'+(x._candidate?' candidate':'');let isEvent=x.record_type==='event'||x.veranstaltung;card.innerHTML=`<div class="name">${esc(x.name||'Unbenannter Eintrag')}</div><div class="meta">${esc(x.city||'Ort unbekannt')} · ${esc(x.country_name||x.country||'Land unbekannt')} · ${esc(A(x.type).join(' / '))}</div><span class="badge">${icons[x.aktivitaet]} ${labels[x.aktivitaet]}</span>${x._candidate?'<span class="badge candidateBadge">⚠️ Kandidat</span>':''}${isEvent?'<span class="badge event">📅 Event</span>':''}${A(x.szenerelevanz_labels).slice(0,6).map(s=>`<span class="badge">${esc(s)}</span>`).join('')}${x.confidence_score!=null?`<span class="badge">✓ Score ${esc(x.confidence_score)}</span>`:''}${x.description?`<div class="desc">${esc(x.description)}</div>`:''}${eventInfo(x)}<div class="links">${links(x)}</div></article>`;list.appendChild(card);});count.textContent=`${f.length} von ${all.length}${showCandidates.checked?' + '+candidates.length+' Kandidaten':''} Einträgen`;if(!f.length)list.innerHTML='<div class="empty">Keine passenden Einträge gefunden.</div>'}
 function fillCountries(){let cs=[...new Set(all.concat(candidates).map(x=>x.country_name||x.country).filter(Boolean))].sort((a,b)=>a.localeCompare(b));country.innerHTML='<option value="">🌍 Alle Länder</option>'+cs.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('')}
 Promise.all([fetch(DATA,{cache:'no-store'}).then(r=>{if(!r.ok)throw Error(r.status+' – JSON-Datei nicht gefunden');return r.json()}),fetch(CAND,{cache:'no-store'}).then(r=>r.ok?r.json():[]).catch(()=>[])])
 .then(([j,c])=>{let d=Array.isArray(j)?j:j.shops_and_venues;if(!Array.isArray(d))throw Error('Unbekanntes JSON-Format');all=d.map(x=>normalize(x));candidates=Array.isArray(c)?c.map(x=>normalize(x,true)):[];candidateCount.textContent=candidates.length;eventCount.textContent=all.filter(x=>x.record_type==='event'||x.veranstaltung).length;festivalCount.textContent=all.filter(x=>A(x.type).includes('festival')).length;fillCountries();render()})
