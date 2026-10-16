@@ -877,5 +877,53 @@
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Montreux+Jazz+Festival%3A+Homepage%2C+Essen%2C+Schweiz",
     "google_maps_status": "search_link",
     "geocoded": false
+  },
+  {
+    "id": "search-52b80db0241f1f",
+    "record_type": "event",
+    "name": "📅 Friday, 20 November 2026 🦇 PROCESS PARTY x @ ...",
+    "city": null,
+    "country_name": "Europa",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🌑 Darkwave / Wave",
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "szenerelevanz": [
+      "darkwave_wave",
+      "postpunk_deathrock"
+    ],
+    "szenerelevanz_labels": [
+      "🌑 Darkwave / Wave",
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "url": "https://www.instagram.com/p/DdoPAGwDo_V/",
+    "source_url": "https://www.instagram.com/p/DdoPAGwDo_V/",
+    "date_text": "20 November 2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 7,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.instagram.com/p/DdoPAGwDo_V/"
+    ],
+    "discovered_at": "2026-10-16T21:34:10.064013+00:00",
+    "search_query": "darkwave post-punk deathrock events 2026 Europe",
+    "search_snippet": "HALL OF BATS, a new event series dedicated to darkwave, minimal synth, deathrock,post-punk and the darker corners of electronic music.",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=%F0%9F%93%85+Friday%2C+20+November+2026+%F0%9F%A6%87+PROCESS+PARTY+x+%40+...%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=%F0%9F%93%85+Friday%2C+20+November+2026+%F0%9F%A6%87+PROCESS+PARTY+x+%40+...%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
   }
 ]
