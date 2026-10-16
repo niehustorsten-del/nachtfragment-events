@@ -707,5 +707,55 @@
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Obscene+%28Goth+%2F+Industrial+%2F+EBM%E2%80%A6+%C2%B7+Nov+12%2C+2026%2C+Europa",
     "google_maps_status": "search_link",
     "geocoded": false
+  },
+  {
+    "id": "search-3a1be3c117f9c1",
+    "record_type": "event",
+    "name": "Darkways - events / concerts / festivals",
+    "city": "Köln",
+    "country_name": "Europa",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "⚡ EBM / Industrial",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "ebm_industrial",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "⚡ EBM / Industrial",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://en.concerts-metal.com/g-72573__Darkways.html",
+    "source_url": "https://en.concerts-metal.com/g-72573__Darkways.html",
+    "date_text": "24/07/2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 11,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://en.concerts-metal.com/g-72573__Darkways.html"
+    ],
+    "discovered_at": "2026-10-16T09:01:37.033756+00:00",
+    "search_query": "Gothic Darkwave EBM events Europe 2027 festival",
+    "search_snippet": "Amphi Festival 2027. Saturday 24/07/2027 Sunday 25/07/2027 Tanzbrunnen, 50679 Köln Bands : A Life Divided Industrial/Dark Rock; Blackbook Synth Pop ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Darkways+-+events+%2F+concerts+%2F+festivals%2C+K%C3%B6ln%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Darkways+-+events+%2F+concerts+%2F+festivals%2C+K%C3%B6ln%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
   }
 ]
