@@ -7409,5 +7409,63 @@
     ],
     "aktivitaet": "active",
     "aktivitaet_label": "🟢 aktuell aktiv"
+  },
+  {
+    "id": "search-18c8b7cbf7fbb1",
+    "record_type": "event",
+    "name": "Cold Hearted Festival 2026",
+    "city": "Dresden",
+    "country_name": "Europa",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://www.cold-hearted-festival.de/",
+    "source_url": "https://www.cold-hearted-festival.de/",
+    "date_text": "14.11.2026",
+    "verified": true,
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 12,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.cold-hearted-festival.de/"
+    ],
+    "discovered_at": "2026-10-16T15:19:18.328781+00:00",
+    "search_query": "darkwave post-punk deathrock events 2026 Europe",
+    "search_snippet": "International Cold Wave | Post Punk Convention. Live on Stage: PA|. 14.11.2026 Dresden ¹. Alter Schlachthof. 13.11.2026 Hamburg ². Markthalle. Infos.",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cold+Hearted+Festival+2026%2C+Dresden%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Cold+Hearted+Festival+2026%2C+Dresden%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false,
+    "verified_date": "2026-10-16",
+    "quality_status": "green",
+    "quality_label": "🟢 geprüft / relevante Veranstaltung",
+    "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
+    "quality_checked_at": "2026-10-16T15:19:18.328781+00:00"
   }
 ]

@@ -1,5 +1,59 @@
 [
   {
+    "timestamp": "2026-10-16T15:19:18.328781+00:00",
+    "type": "published_web_search",
+    "name": "Cold Hearted Festival 2026",
+    "city": "Dresden",
+    "source": "https://www.cold-hearted-festival.de/",
+    "score": 12
+  },
+  {
+    "timestamp": "2026-10-16T15:19:18.328781+00:00",
+    "type": "candidate_web_search",
+    "name": "EBM Festivals 2026/2027 | Termine & Tickets",
+    "city": "Leipzig",
+    "source": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "score": 13
+  },
+  {
+    "timestamp": "2026-10-16T15:19:18.328781+00:00",
+    "type": "source_error",
+    "source": "https://www.plage-noire.de/",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "timestamp": "2026-10-16T15:19:18.328781+00:00",
+    "type": "candidate",
+    "name": "Mera Luna Festival 2027 07.-08.08.2027 Hildesheim",
+    "city": "",
+    "source": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-16T15:19:18.328781+00:00",
+    "type": "candidate",
+    "name": "Hexentanz Festival 2027 30.04.-02.05.2027 Thallichtenberg",
+    "city": "",
+    "source": "https://www.festivalhopper.de/festivals/genre/gothic",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-16T15:19:18.328781+00:00",
+    "type": "candidate",
+    "name": "No Name Festival 06.-07.11.2026 Hünfelden-Ohren",
+    "city": "",
+    "source": "https://www.festivalhopper.de/festivals/genre/gothic",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-16T15:19:18.328781+00:00",
+    "type": "candidate",
+    "name": "She Past Away @ Katzenclub Festival",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 8
+  },
+  {
     "timestamp": "2026-10-16T09:01:37.033756+00:00",
     "type": "candidate_web_search",
     "name": "Darkways - events / concerts / festivals",
