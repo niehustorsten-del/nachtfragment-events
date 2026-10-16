@@ -757,5 +757,125 @@
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Darkways+-+events+%2F+concerts+%2F+festivals%2C+K%C3%B6ln%2C+Europa",
     "google_maps_status": "search_link",
     "geocoded": false
+  },
+  {
+    "id": "search-a3459e844cf614",
+    "record_type": "event",
+    "name": "Reeperbahn Festival | Startseite",
+    "city": "Berlin",
+    "country_name": "Europa",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [],
+    "szenerelevanz": [],
+    "szenerelevanz_labels": [],
+    "url": "https://www.reeperbahnfestival.com/",
+    "source_url": "https://www.reeperbahnfestival.com/",
+    "date_text": "31.12.2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt"
+    ],
+    "auto_sources": [
+      "https://www.reeperbahnfestival.com/"
+    ],
+    "discovered_at": "2026-10-16T20:51:56.871577+00:00",
+    "search_query": "Gothic Darkwave EBM events Europe 2027 festival",
+    "search_snippet": "REEPERBAHN FESTIVAL 15.-18. Sept. 2027 ⇒. Tagesticket ab 155 € … 1-Tagestickets gibt es bereits ab 65 €. Talks, Workshops, Networking",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Reeperbahn+Festival+%7C+Startseite%2C+Berlin%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Reeperbahn+Festival+%7C+Startseite%2C+Berlin%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-73e9808e0e11ce",
+    "record_type": "event",
+    "name": "Internationales Trickfilm-Festival Stuttgart (ITFS)",
+    "city": "Stuttgart",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [],
+    "szenerelevanz": [],
+    "szenerelevanz_labels": [],
+    "url": "https://itfs.de/",
+    "source_url": "https://itfs.de/",
+    "date_text": "2. Mai 2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt"
+    ],
+    "auto_sources": [
+      "https://itfs.de/"
+    ],
+    "discovered_at": "2026-10-16T20:51:56.871577+00:00",
+    "search_query": "Gothic Darkwave EBM events Europe 2027 festival",
+    "search_snippet": "Das Internationale Trickfilm-Festival Stuttgart (ITFS) Stuttgart 27. April – 2. Mai 2027. Call for Entries 2027. Konferenz Stuttgart Animated Week Eine Woche, ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Internationales+Trickfilm-Festival+Stuttgart+%28ITFS%29%2C+Stuttgart%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Internationales+Trickfilm-Festival+Stuttgart+%28ITFS%29%2C+Stuttgart%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-d3f27b1328fc14",
+    "record_type": "event",
+    "name": "Montreux Jazz Festival: Homepage",
+    "city": "Essen",
+    "country_name": "Schweiz",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [],
+    "szenerelevanz": [],
+    "szenerelevanz_labels": [],
+    "url": "https://www.montreuxjazzfestival.com/de/",
+    "source_url": "https://www.montreuxjazzfestival.com/de/",
+    "date_text": "17 Juli 2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt"
+    ],
+    "auto_sources": [
+      "https://www.montreuxjazzfestival.com/de/"
+    ],
+    "discovered_at": "2026-10-16T20:51:56.871577+00:00",
+    "search_query": "Gothic Darkwave EBM events Europe 2027 festival",
+    "search_snippet": "Die MJF Residency öffnet ihre Türen vom 14. bis 17. Oktober 2026! Junge Talente und grosse Persönlichkeiten der Jazz-, Soul- und R&B-Szene versammeln sich im ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Montreux+Jazz+Festival%3A+Homepage%2C+Essen%2C+Schweiz",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Montreux+Jazz+Festival%3A+Homepage%2C+Essen%2C+Schweiz",
+    "google_maps_status": "search_link",
+    "geocoded": false
   }
 ]
