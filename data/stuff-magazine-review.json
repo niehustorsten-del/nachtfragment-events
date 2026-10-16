@@ -1,0 +1,111 @@
+{
+  "updated": "2026-10-16",
+  "description": "Unsichere Treffer, die nicht automatisch veröffentlicht wurden.",
+  "candidates": [
+    {
+      "type": "stuff",
+      "name": "The Independent | Latest US politics news, comment and ...",
+      "url": "https://independent.co.uk",
+      "query": "Gothic alternative fashion shop Germany independent official",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "Independent Skateboard Trucks Since 1978 | Ride The Best",
+      "url": "https://independenttrucks.com",
+      "query": "Gothic alternative fashion shop Germany independent official",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "The Santa Barbara Independent",
+      "url": "https://independent.com",
+      "query": "Gothic alternative fashion shop Germany independent official",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "Independent Art Fair: Home",
+      "url": "https://independenthq.com",
+      "query": "Gothic alternative fashion shop Germany independent official",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "The Independent | Seafood Restaurant in Georgetown, SC",
+      "url": "https://theindependentsc.com",
+      "query": "Gothic alternative fashion shop Germany independent official",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "Microsoft Designer - Stunning designs in a flash",
+      "url": "https://designer.microsoft.com",
+      "query": "handmade gothic jewelry designer Germany official shop",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "Designer for Women, Men & Kids",
+      "url": "https://nordstrom.com/browse/designer",
+      "query": "handmade gothic jewelry designer Germany official shop",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "Altium Designer: the engine powering Altium Develop and ...",
+      "url": "https://altium.com/altium-designer",
+      "query": "handmade gothic jewelry designer Germany official shop",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "Microsoft Designer - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details",
+      "query": "handmade gothic jewelry designer Germany official shop",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "Dark River Tattoo",
+      "url": "https://darkrivertattoo.com",
+      "query": "blackwork dark art tattoo studio Austria official",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "Netherlands",
+      "url": "https://theguardian.com/world/netherlands",
+      "query": "independent darkwave post-punk coldwave record label Netherlands official",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "Home - PR UN New York",
+      "url": "https://netherlandsandyou.nl/web/pr-un-new-york",
+      "query": "independent darkwave post-punk coldwave record label Netherlands official",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "About Netherlands American Cemetery",
+      "url": "https://abmc.gov/cemeteries-memorials/about-netherlands-american-cemetery",
+      "query": "independent darkwave post-punk coldwave record label Netherlands official",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "2026 : US trade in goods with Netherlands",
+      "url": "https://census.gov/foreign-trade/balance/c4210.html",
+      "query": "independent darkwave post-punk coldwave record label Netherlands official",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "Bijoux alternatifs - gothique",
+      "url": "https://askandembla.net/fr-fr/collections/gothic-jewelry",
+      "query": "créateur bijoux gothiques boutique indépendante France officiel",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "file": "nachtfragment-magazine.json",
   "title": "Gothic, Darkwave, EBM, Industrial & Post-Punk Magazine weltweit",
   "description": "Verzeichnis von Online-Magazinen, Webzines, Printmagazinen, Zines und historischen Publikationen aus der dunklen Musik- und Subkultur. Aktive und historische Medien werden getrennt gekennzeichnet.",
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "status_legend": {
     "aktiv": "Aktuell aktiv bzw. regelmäßig auffindbar",
     "projektbasiert": "Unregelmäßige oder projektbezogene Veröffentlichung",
@@ -984,6 +984,197 @@
         "Electronic Music"
       ],
       "website": "https://synth.nu/"
+    },
+    {
+      "name": "Gothic Empire - dein Magazin für Musik, Konzerte, Festivals",
+      "country": "Germany",
+      "language": "Deutsch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "EBM",
+        "Industrial",
+        "Post-Punk"
+      ],
+      "website": "https://gothic-empire.de/startseite",
+      "verification": "Automatisch geprüft: Website erreichbar und thematisch passend; Aktivität anhand sichtbarer Datumsangaben bewertet."
+    },
+    {
+      "name": "ebm - Genre Archiv",
+      "country": "International",
+      "language": "Deutsch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "EBM",
+        "Industrial",
+        "Post-Punk"
+      ],
+      "website": "https://vampster.com/genre/ebm",
+      "verification": "Automatisch geprüft: Website erreichbar und thematisch passend; Aktivität anhand sichtbarer Datumsangaben bewertet."
+    },
+    {
+      "name": "VOLT Magazin - EBM, Industrial, Cold Wave, Post-Punk, Dark ...",
+      "country": "Germany",
+      "language": "Deutsch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "EBM",
+        "Industrial",
+        "Post-Punk"
+      ],
+      "website": "https://volt-magazin.de",
+      "verification": "Automatisch geprüft: Website erreichbar und thematisch passend; Aktivität anhand sichtbarer Datumsangaben bewertet."
+    },
+    {
+      "name": "dark wave",
+      "country": "Germany",
+      "language": "Deutsch",
+      "format": [
+        "online"
+      ],
+      "status": "archiv / unklar",
+      "focus": [
+        "Gothic",
+        "Darkwave",
+        "EBM",
+        "Industrial",
+        "Post-Punk"
+      ],
+      "website": "https://hellfire-magazin.de/tag/dark-wave",
+      "verification": "Automatisch geprüft: Website erreichbar und thematisch passend; Aktivität anhand sichtbarer Datumsangaben bewertet."
+    },
+    {
+      "name": "Punk & Post-Punk journal",
+      "country": "United Kingdom",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Post-Punk",
+        "Gothic",
+        "Industrial",
+        "Darkwave"
+      ],
+      "website": "https://punkscholarsnetwork.com/punk-and-post-punk-journal",
+      "verification": "Automatisch geprüft: Website erreichbar und thematisch passend; Aktivität anhand sichtbarer Datumsangaben bewertet."
+    },
+    {
+      "name": "Top 30 Post Punk RSS Feeds",
+      "country": "United Kingdom",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Post-Punk",
+        "Gothic",
+        "Industrial",
+        "Darkwave"
+      ],
+      "website": "https://rss.feedspot.com/post_punk_rss_feeds",
+      "verification": "Automatisch geprüft: Website erreichbar und thematisch passend; Aktivität anhand sichtbarer Datumsangaben bewertet."
+    },
+    {
+      "name": "Tag: Post Punk.com",
+      "country": "International",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "archiv / unklar",
+      "focus": [
+        "Darkwave",
+        "Gothic",
+        "Post-Punk",
+        "Coldwave"
+      ],
+      "website": "https://soundsandshadows.com/tag/post-punk-com",
+      "verification": "Automatisch geprüft: Website erreichbar und thematisch passend; Aktivität anhand sichtbarer Datumsangaben bewertet."
+    },
+    {
+      "name": "Post-punk and darkwave for a new age – A Projection ...",
+      "country": "International",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Darkwave",
+        "Gothic",
+        "Post-Punk",
+        "Coldwave"
+      ],
+      "website": "https://releasemagazine.net/post-punk-and-darkwave-for-a-new-age-a-projection-interviewed",
+      "verification": "Automatisch geprüft: Website erreichbar und thematisch passend; Aktivität anhand sichtbarer Datumsangaben bewertet."
+    },
+    {
+      "name": "Category: Post Punk - GTGC Reviews",
+      "country": "International",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Darkwave",
+        "Gothic",
+        "Post-Punk",
+        "Coldwave"
+      ],
+      "website": "https://gavthegothicchav.com/reviews/category/post-punk",
+      "verification": "Automatisch geprüft: Website erreichbar und thematisch passend; Aktivität anhand sichtbarer Datumsangaben bewertet."
+    },
+    {
+      "name": "darkwave",
+      "country": "International",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Darkwave",
+        "Gothic",
+        "Post-Punk",
+        "Coldwave"
+      ],
+      "website": "https://torchedmagazine.com/tag/darkwave",
+      "verification": "Automatisch geprüft: Website erreichbar und thematisch passend; Aktivität anhand sichtbarer Datumsangaben bewertet."
+    },
+    {
+      "name": "Reviews - Dark / Gothic / Wave / New ...",
+      "country": "International",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Darkwave",
+        "Gothic",
+        "Post-Punk",
+        "Coldwave"
+      ],
+      "website": "https://chaindlk.com/reviews/category/8",
+      "verification": "Automatisch geprüft: Website erreichbar und thematisch passend; Aktivität anhand sichtbarer Datumsangaben bewertet."
     }
   ],
   "recommended_filters": [
@@ -993,5 +1184,5 @@
     "Status",
     "Genre"
   ],
-  "editorial_note": "Lebende Nachtfragment-Datenbank. Internationale Auswahl aus Online-Magazinen, Printmedien, Webzines und Zines. 'Archiv / unklar' kennzeichnet Angebote, deren aktuelle Veröffentlichungsaktivität nicht eindeutig belegt ist. Neue Einträge werden nach offizieller Website und thematischer Relevanz ergänzt.\n\nErweiterung 15.10.2026: Chain D.L.K. und Elettronica Concreta wurden anhand aktueller Inhalte auf den jeweiligen Websites ergänzt.\n\nErweiterung 15.10.2026: Medienkonverter wurde aufgrund aktueller Veröffentlichungen ergänzt. Namensduplikate wurden bereinigt. Runde 3 ergänzt drei aktuell aktive Musikmedien; Aktivität anhand jüngster veröffentlichter Beiträge auf den offiziellen Websites geprüft."
+  "editorial_note": "Lebende Nachtfragment-Datenbank. Internationale Auswahl aus Online-Magazinen, Printmedien, Webzines und Zines. 'Archiv / unklar' kennzeichnet Angebote, deren aktuelle Veröffentlichungsaktivität nicht eindeutig belegt ist. Neue Einträge werden nach offizieller Website und thematischer Relevanz ergänzt.\n\nErweiterung 15.10.2026: Chain D.L.K. und Elettronica Concreta wurden anhand aktueller Inhalte auf den jeweiligen Websites ergänzt.\n\nErweiterung 15.10.2026: Medienkonverter wurde aufgrund aktueller Veröffentlichungen ergänzt. Namensduplikate wurden bereinigt. Runde 3 ergänzt drei aktuell aktive Musikmedien; Aktivität anhand jüngster veröffentlichter Beiträge auf den offiziellen Websites geprüft. Automatic discovery added 11 reachable, relevant online media on 2026-10-16; uncertain hits are logged separately."
 }

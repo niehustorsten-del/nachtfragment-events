@@ -1,13 +1,13 @@
 {
   "title": "Nachtfragment Stuff – Worldwide Dark Culture Directory",
-  "version": "2026-10-15-round4-dark-art-tattoo-labels",
-  "updated": "2026-10-15",
+  "version": "2026-10-15-round4-dark-art-tattoo-labels-auto-2026-10-16",
+  "updated": "2026-10-16",
   "scope": "Worldwide dark culture directory: Alternative Fashion, Gothic Shops, Schmuck & Accessoires, Tattoo & Body Art, Ambiente / Home & Living, Clubs & Nightlife, Szene-Verzeichnisse, Labels / Music, Artists / Merch.",
   "excluded": [
     "📰 Magazine & Online-Medien",
     "🎪 Festivals & Events"
   ],
-  "verification_note": "Round 4: additions selected from official websites; duplicate names and URLs checked against the current dataset. Website activity and styling should be periodically rechecked.",
+  "verification_note": "Round 4: additions selected from official websites; duplicate names and URLs checked against the current dataset. Website activity and styling should be periodically rechecked. Weekly automatic discovery added 28 reachable, category-matched entries on 2026-10-16; uncertain hits are logged separately.",
   "entries": [
     {
       "name": "Beserk",
@@ -2790,6 +2790,402 @@
         "Electronica"
       ],
       "url": "https://www.voidplusplus-records.de/"
+    },
+    {
+      "name": "The Independent | Live Music in San Francisco, California ...",
+      "category": [
+        "Alternative Fashion"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Alternative Fashion",
+        "Punk"
+      ],
+      "url": "https://theindependentsf.com"
+    },
+    {
+      "name": "ABOUT - COLD TRANSMISSION",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "Germany",
+      "status": "verified",
+      "tags": [
+        "Darkwave",
+        "Post-Punk",
+        "EBM",
+        "Industrial"
+      ],
+      "url": "https://coldtransmission.com/ABOUT"
+    },
+    {
+      "name": "SIDE-LINE - Industrial, electro, EBM, post-punk, darkwave news",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Darkwave",
+        "Post-Punk",
+        "EBM",
+        "Industrial"
+      ],
+      "url": "https://side-line.com"
+    },
+    {
+      "name": "History of Darkwave Music",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Darkwave",
+        "Post-Punk",
+        "EBM",
+        "Industrial"
+      ],
+      "url": "https://darkwaverecords.com/f/history-of-darkwave-music"
+    },
+    {
+      "name": "Global Gothic Independent and Innovative Record Label",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Darkwave",
+        "Post-Punk",
+        "EBM",
+        "Industrial"
+      ],
+      "url": "https://records.gothicworld.it/producers/1-gothic-world-records"
+    },
+    {
+      "name": "Aranwen's Jewelry: Aranwen's Vintage Gothic Jewelry Store",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Schmuck",
+        "Handmade"
+      ],
+      "url": "https://aranwensjewelry.com"
+    },
+    {
+      "name": "Shop latest Gothic, Edwardian & Victorian Jewelry at Michelle ...",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "Austria",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Schmuck",
+        "Handmade"
+      ],
+      "url": "https://michellevaladon.com"
+    },
+    {
+      "name": "Gothic jewelry 925 silver necklaces earrings pendants",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Schmuck",
+        "Handmade"
+      ],
+      "url": "https://drachensilber.de/en/collections/gothic-schmuck"
+    },
+    {
+      "name": "Mysticum Luna | Gothic Jewellery, Alternative Decor ...",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Schmuck",
+        "Handmade"
+      ],
+      "url": "https://mysticumluna.com/en-us"
+    },
+    {
+      "name": "Gothic Jewellery - Outstanding Designs",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "Austria",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Schmuck",
+        "Handmade"
+      ],
+      "url": "https://emp.ie/topics/gothic/jewellery"
+    },
+    {
+      "name": "GTHIC: Handmade Mens Jewelry",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Schmuck",
+        "Handmade"
+      ],
+      "url": "https://gthic.com"
+    },
+    {
+      "name": "The best Tattoo artists in Austria",
+      "category": [
+        "Tattoo & Body Art"
+      ],
+      "country": "Austria",
+      "status": "verified",
+      "tags": [
+        "Blackwork",
+        "Dark Art",
+        "Tattoo"
+      ],
+      "url": "https://inkppl.com/en/tattoo-artists/austria"
+    },
+    {
+      "name": "Tattoo Artists – black.werk Tattoo-Studio Vienna",
+      "category": [
+        "Tattoo & Body Art"
+      ],
+      "country": "Austria",
+      "status": "verified",
+      "tags": [
+        "Blackwork",
+        "Dark Art",
+        "Tattoo"
+      ],
+      "url": "https://blackwerk.tattoo/tattoo-artists"
+    },
+    {
+      "name": "FAQs",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Post-Punk",
+        "Coldwave",
+        "Darkwave"
+      ],
+      "url": "https://darkwaverecords.com/faqs"
+    },
+    {
+      "name": "Labels Archives",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Post-Punk",
+        "Coldwave",
+        "Darkwave"
+      ],
+      "url": "https://post-punk.com/category/labels"
+    },
+    {
+      "name": "Black Hair Records | An independent record labelBlack Hair ...",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Post-Punk",
+        "Coldwave",
+        "Darkwave"
+      ],
+      "url": "https://blackhairrecords.com"
+    },
+    {
+      "name": "WL//WH Weekly Post-Punk / Darkwave / Dark Synth Tips",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "Switzerland",
+      "status": "verified",
+      "tags": [
+        "Post-Punk",
+        "Coldwave",
+        "Darkwave"
+      ],
+      "url": "https://whitelight-whiteheat.com/wl-wh-weekly-post-punk-darkwave-dark-synth-tips-11-23"
+    },
+    {
+      "name": "Netherlands",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "Netherlands",
+      "status": "verified",
+      "tags": [
+        "Darkwave",
+        "Post-Punk",
+        "Coldwave"
+      ],
+      "url": "https://commonwealthfund.org/international-health-policy-center/countries/netherlands"
+    },
+    {
+      "name": "Women's Designer & Gothic Jewelry",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "Netherlands",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Alternative",
+        "Handmade"
+      ],
+      "url": "https://clocksandcolours.com/pages/womens"
+    },
+    {
+      "name": "Nature inspired one of a kind jewelry",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "Netherlands",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Alternative",
+        "Handmade"
+      ],
+      "url": "https://atelierwolfstone.com"
+    },
+    {
+      "name": "Post-Punk and Darkwave Collective Verboden Forms ...",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Darkwave",
+        "Post-Punk",
+        "Industrial"
+      ],
+      "url": "https://post-punk.com/post-punk-and-darkwave-collective-verboden-forms-record-label-with-releases-from-ani-ringfinger-wire-spine-renonce-and-more"
+    },
+    {
+      "name": "Sycothic Shop: Bijoux gothiques/alternatifs en acier ...",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "France",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Bijoux",
+        "Alternative"
+      ],
+      "url": "https://sycothic.fr"
+    },
+    {
+      "name": "Bijoux gothiques | Bagues tête de mort & pendentifs",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "France",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Bijoux",
+        "Alternative"
+      ],
+      "url": "https://gothicrock.com/fr"
+    },
+    {
+      "name": "Inchoo Bijoux",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Bijoux",
+        "Alternative"
+      ],
+      "url": "https://inchoobijoux.com/fr"
+    },
+    {
+      "name": "La Boutique Curieuse - Bijoux gothiques viking vintage et ...",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "France",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Bijoux",
+        "Alternative"
+      ],
+      "url": "https://laboutiquecurieuse.com"
+    },
+    {
+      "name": "Bijoux Gothiques - Yazzy's Fashion Accessories",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "France",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Bijoux",
+        "Alternative"
+      ],
+      "url": "https://yazzys.com/fr/etiquette-produit/gothiques"
+    },
+    {
+      "name": "WL//WH Weekly Post-Punk // Darkwave // Dark Synth Tips",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Darkwave",
+        "Synth",
+        "Post-Punk"
+      ],
+      "url": "https://whitelight-whiteheat.com/wl-wh-weekly-post-punk-darkwave-dark-synth-tips-39-24"
+    },
+    {
+      "name": "Mass Media Records Archives",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "Denmark",
+      "status": "verified",
+      "tags": [
+        "Darkwave",
+        "Synth",
+        "Post-Punk"
+      ],
+      "url": "https://post-punk.com/tag/mass-media-records"
     }
   ]
 }
