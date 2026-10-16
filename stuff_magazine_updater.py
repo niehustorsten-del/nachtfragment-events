@@ -169,6 +169,12 @@ def main():
     if not api_key:
         print("SERPAPI_KEY fehlt; keine Dateien geändert.")
         return 2
+        print("DEBUG: Skript:", os.path.abspath(__file__))
+print("DEBUG: Arbeitsverzeichnis:", os.getcwd())
+print("DEBUG: ROOT:", ROOT)
+print("DEBUG: Stuff-Pfad:", STUFF_PATH)
+print("DEBUG: Stuff-Datei vorhanden:", os.path.isfile(STUFF_PATH))
+print("DEBUG: Dateien im ROOT:", os.listdir(ROOT) if os.path.isdir(ROOT) else "ROOT existiert nicht")
     for p in (STUFF_PATH, MAG_PATH, QUERIES_PATH):
         if not os.path.isfile(p):
             print(f"Pflichtdatei fehlt: {os.path.relpath(p, ROOT)}; Abbruch ohne Änderungen.")
