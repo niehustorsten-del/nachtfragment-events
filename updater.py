@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Nachtfragment automatic discovery updater v4.3.
+"""Nachtfragment automatic discovery updater v5.0.
 
 Stdlib only. It discovers scene-relevant events/festivals from a curated source
 registry, supports HTML/RSS/Atom/ICS, extracts dates and locations, classifies
@@ -22,7 +22,7 @@ STATUS=os.path.join(ROOT,'data','status.json')
 SOURCES=os.path.join(ROOT,'discovery_sources.json')
 SEARCH_QUERIES=os.path.join(ROOT,'search_queries.json')
 SERPAPI_KEY=os.environ.get('SERPAPI_KEY','').strip()
-UA='Nachtfragment-Updater/4.3 (+https://nachtfragment.de)'
+UA='Nachtfragment-Updater/5.0 (+https://nachtfragment.de)'
 NOW=datetime.now(timezone.utc)
 TODAY=NOW.date().isoformat()
 
@@ -41,7 +41,7 @@ SCENE={
 }
 LABELS={'gothic_core':'🖤 Gothic Core','darkwave_wave':'🌑 Darkwave / Wave','ebm_industrial':'⚡ EBM / Industrial','dark_electro_futurepop':'🧪 Dark Electro / Futurepop','postpunk_deathrock':'🕷️ Post-Punk / Deathrock','alternative_darkrock':'🎸 Alternative / Dark Rock'}
 COUNTRIES={'DE':'Deutschland','PL':'Polen','MT':'Malta','AT':'Österreich','CH':'Schweiz','NL':'Niederlande','BE':'Belgien','FR':'Frankreich','GB':'Vereinigtes Königreich','US':'USA','AU':'Australien','EU':'Europa'}
-CITY_HINTS=re.compile(r'\b(Hamburg|Berlin|Leipzig|Köln|Cologne|Oberhausen|Chemnitz|Hildesheim|Dresden|München|Munich|Stuttgart|Essen|Erfurt|Jena|Bolków|Malta|Valletta|London|Paris|Amsterdam|Brussels|Warsaw|Warschau|Melbourne|Adelaide|Sydney|Auckland|New York|Los Angeles)\b',re.I)
+CITY_HINTS=re.compile(r'\b(Hamburg|Berlin|Leipzig|Köln|Cologne|Oberhausen|Chemnitz|Hildesheim|Dresden|München|Munich|Stuttgart|Essen|Erfurt|Jena|Bolków|Malta|Valletta|London|Manchester|Bristol|Glasgow|Edinburgh|Paris|Lyon|Amsterdam|Rotterdam|Brussels|Antwerp|Warsaw|Warschau|Prague|Praha|Vienna|Wien|Zurich|Zürich|Basel|Copenhagen|Stockholm|Oslo|Helsinki|Rome|Milan|Madrid|Barcelona|Lisbon|Athens|Istanbul|Melbourne|Adelaide|Sydney|Auckland|New York|Los Angeles|Chicago|Portland|Seattle|San Francisco|Toronto|Montreal)\b',re.I)
 
 class LinkParser(HTMLParser):
  def __init__(self,base):
@@ -281,6 +281,122 @@ def discover_web_search():
             seen.add(key); out.append(c)
     return out
 
+# --- Directory importer v5: Gothic shops, clubs, bars and magazines ---
+ENTITY_TYPES = {
+ 'shop': {'label':'Gothic-Laden','queries':['Gothic clothing shop store alternative fashion Europe','Gothic shop Deutschland Gothic Kleidung Laden','dark fashion alternative clothing shop UK','Gothic record shop dark music store Europe'], 'hint':re.compile(r'\b(gothic shop|goth shop|gothic store|goth clothing|alternative fashion|dark fashion|gothic clothing|gothic boutique|record shop|plattenladen|bekleidung|boutique)\b',re.I)},
+ 'club': {'label':'Gothic-Club','queries':['Gothic club darkwave club night Europe','Gothic Club Deutschland Darkwave Party Club','alternative club post-punk darkwave venue','EBM industrial club night Europe'], 'hint':re.compile(r'\b(gothic club|goth club|darkwave club|dark wave club|alternative club|dark music club|club night|nachtclub|nachtleben|club venue|ebm club|industrial club)\b',re.I)},
+ 'bar': {'label':'Gothic-Bar','queries':['Gothic bar dark bar alternative bar Europe','Gothic bar Deutschland alternative bar','darkwave bar goth pub alternative nightlife','alternative bar post-punk bar Europe'], 'hint':re.compile(r'\b(gothic bar|goth bar|dark bar|alternative bar|goth pub|dark pub|alternative pub|rock bar|metal bar|darkwave bar|scene bar|szene-bar|kneipe|cocktail bar)\b',re.I)},
+ 'magazine': {'label':'Dark-Music-Magazin','queries':['Gothic magazine dark music magazine webzine','darkwave post-punk music magazine webzine','Gothic Magazin Dark Music Deutschland','EBM industrial music magazine webzine'], 'hint':re.compile(r'\b(gothic magazine|dark music magazine|darkwave magazine|music magazine|music webzine|webzine|gothic magazin|post-punk magazine|ebm magazine|industrial music magazine)\b',re.I)}
+}
+ENTITY_BAD_TITLE=re.compile(r'\b(best of|top \d+|directory|list of|what is|definition|meaning|wikipedia|how to|guide to|history of|buy now|amazon|etsy search)\b',re.I)
+ENTITY_ADDRESS=re.compile(r'\b(address|contact|kontakt|opening hours|opening times|öffnungszeiten|impressum|visit us|find us|location|adresse|street|straße|strasse|postal code|postcode|standort|anfahrt)\b',re.I)
+
+def norm_url(url):
+ try:
+  p=urllib.parse.urlsplit(str(url or '').strip())
+  if p.scheme not in ('http','https') or not p.netloc: return ''
+  host=p.netloc.lower()
+  if host.startswith('www.'): host=host[4:]
+  return urllib.parse.urlunsplit((p.scheme.lower(),host,p.path.rstrip('/'),'',''))
+ except Exception: return ''
+
+def entity_city_country(text):
+ city=extract_city(str(text or ''),{})
+ country=''
+ aliases={'Germany':'Deutschland','Austria':'Österreich','Switzerland':'Schweiz','Netherlands':'Niederlande','Belgium':'Belgien','France':'Frankreich','United Kingdom':'Vereinigtes Königreich','United States':'USA','Poland':'Polen','Czech Republic':'Tschechien','Spain':'Spanien','Italy':'Italien','Portugal':'Portugal','Denmark':'Dänemark','Sweden':'Schweden','Norway':'Norwegen','Finland':'Finnland','Ireland':'Irland','Australia':'Australien','Canada':'Kanada'}
+ for name in list(COUNTRIES.values())+list(aliases):
+  if name!='Europa' and re.search(r'\b'+re.escape(name)+r'\b',str(text or ''),re.I):
+   country=aliases.get(name,name); break
+ return city,country
+
+def html_to_text(body):
+ body=re.sub(r'(?is)<(script|style|noscript|svg)\b.*?</\1\s*>',' ',str(body or ' '))
+ return html.unescape(re.sub(r'\s+',' ',re.sub(r'(?s)<[^>]+>',' ',body)))[:160000]
+
+def entity_kind(text):
+ for kind in ('magazine','shop','club','bar'):
+  if ENTITY_TYPES[kind]['hint'].search(str(text or '')): return kind
+ return None
+
+def entity_key(rec):
+ return (str(rec.get('record_type') or 'event').lower(),str(rec.get('name') or '').strip().lower(),str(rec.get('city') or '').strip().lower(),str(rec.get('country_name',rec.get('country')) or '').strip().lower(),norm_url(rec.get('url') or ''))
+
+def verify_directory_result(result,query,geocache):
+ title=html.unescape(str(result.get('title') or '')).strip(); url=norm_url(result.get('link'))
+ snippet=html.unescape(str(result.get('snippet') or '')).strip()
+ if not title or not url or ENTITY_BAD_TITLE.search(title): return None
+ try: status,ctype,body=fetch(url,'text/html,application/xhtml+xml,application/xml;q=0.8,*/*;q=0.5')
+ except Exception as e: print('DIRECTORY FETCH ERROR',url,repr(e)); return None
+ if status!=200: return None
+ page=html_to_text(body); blob=' '.join([title,snippet,page,url]); kind=entity_kind(page+' '+title+' '+snippet)
+ if not kind: return None
+ hits=len(ENTITY_TYPES[kind]['hint'].findall(page))
+ if hits<1: return None
+ city,country=entity_city_country(blob)
+ # Physical places need location evidence; online magazines do not.
+ if kind!='magazine' and not (city or country or ENTITY_ADDRESS.search(page)): return None
+ name=re.sub(r'\s*[|–—-]\s*(official website|official site|facebook|instagram|home page).*$','',title,flags=re.I).strip()
+ if len(name)<2: return None
+ tags=scene_tags(blob)
+ if not tags: return None
+ score=4+min(hits,3)+(2 if city else 0)+(1 if country else 0)
+ if kind=='magazine' and re.search(r'\b(articles?|interviews?|reviews?|magazine|webzine|news|features?)\b',page,re.I): score+=2
+ rec={'id':'directory-'+slug(name,city or country or url),'record_type':kind,'name':name,'city':city or None,'country_name':country or None,'type':[kind],'categories':[ENTITY_TYPES[kind]['label']],'szenerelevanz':tags,'szenerelevanz_labels':labels(tags),'url':url,'source_url':url,'description':snippet[:500] or None,'verified':True,'verified_date':TODAY,'aktivitaet':'active','aktivitaet_label':'🟢 aktuell aktiv','discovery_status':'published','auto_discovered':True,'auto_importer':'directory_v5','confidence_score':score,'confidence_reasons':['Originalseite erfolgreich abgerufen','Kategorie auf Originalseite bestätigt']+(['Ort erkannt'] if city else [])+(['Land erkannt'] if country else []),'auto_sources':[url],'discovered_at':NOW.isoformat(),'last_source_check':NOW.isoformat(),'online_only':kind=='magazine' and not city,'google_maps_url':maps_url(name,city or '',country or ''),'google_maps_directions_url':maps_dir(name=name,city=city or '',country=country or ''),'google_maps_status':'search_link','geocoded':False}
+ if city:
+  geo=geocode(name,city,country or '',geocache)
+  if geo:
+   rec.update({'lat':geo['lat'],'lng':geo['lng'],'geocoded':True,'google_maps_status':'geocoded','google_maps_coords_url':'https://www.google.com/maps/search/?api=1&query='+urllib.parse.quote_plus(f"{geo['lat']},{geo['lng']}")})
+ return rec
+
+def discover_directory_entities(geocache):
+ if not SERPAPI_KEY:
+  print('DIRECTORY IMPORT: Websuche übersprungen (SERPAPI_KEY fehlt)'); return [],0
+ rows=[]; errors=0; seen=set()
+ for kind,conf in ENTITY_TYPES.items():
+  for query in conf['queries']:
+   results=serpapi_search(query,'de','en'); print('DIRECTORY SEARCH',kind,query,'results',len(results))
+   for result in results:
+    url=norm_url(result.get('link'))
+    if not url or url in seen: continue
+    seen.add(url)
+    try:
+     rec=verify_directory_result(result,query,geocache)
+     if rec and rec['record_type']==kind: rows.append(rec)
+    except Exception as e:
+     errors+=1; print('DIRECTORY ITEM ERROR',url,repr(e))
+ return rows,errors
+
+def recheck_directory_candidates(data,candidates,changes):
+ """Recheck old directory candidates; promote only after live-page category evidence."""
+ existing={entity_key(x) for x in data}; promoted=0
+ for rec in list(candidates):
+  kind=str(rec.get('record_type') or '').lower()
+  if kind not in ENTITY_TYPES: continue
+  url=norm_url(rec.get('url'))
+  if not url: continue
+  try:
+   status,ctype,body=fetch(url,'text/html,application/xhtml+xml,*/*;q=0.5')
+   rec['last_source_check']=NOW.isoformat()
+   if status!=200: rec['last_check_error']='HTTP '+str(status); continue
+   page=html_to_text(body)
+   if not ENTITY_TYPES[kind]['hint'].search(page): rec['review_status']='still_candidate'; continue
+   city,country=entity_city_country(page)
+   if kind!='magazine' and not (city or country or ENTITY_ADDRESS.search(page)): continue
+   rec.update({'record_type':kind,'type':[kind],'categories':[ENTITY_TYPES[kind]['label']],'verified':True,'verified_date':TODAY,'discovery_status':'published','aktivitaet':'active','aktivitaet_label':'🟢 aktuell aktiv','auto_importer':'directory_v5'})
+   if city and not rec.get('city'): rec['city']=city
+   if country and not rec.get('country_name'): rec['country_name']=country
+   key=entity_key(rec)
+   if key not in existing:
+    data.append(rec); existing.add(key); promoted+=1
+    changes.insert(0,{'timestamp':NOW.isoformat(),'type':'directory_candidate_promoted','record_type':kind,'name':rec.get('name'),'city':rec.get('city'),'source':url})
+   candidates.remove(rec)
+  except Exception as e:
+   rec['last_check_error']=str(e); rec['last_source_check']=NOW.isoformat()
+ return promoted
+
+# -----------------------------------------------------------------------------
+
+
 def load_json(path,default):
  try:
   with open(path,encoding='utf-8') as f: return json.load(f)
@@ -294,7 +410,7 @@ def save_json(path,obj):
  os.replace(tmp,path)
 
 def write_status(**kwargs):
- status={'version':'4.3','timestamp':NOW.isoformat()}
+ status={'version':'5.0','timestamp':NOW.isoformat()}
  status.update(kwargs)
  try: save_json(STATUS,status)
  except Exception as e: print('STATUS WRITE ERROR',repr(e))
@@ -350,8 +466,8 @@ def main():
  data=load_json(DATA,[]); candidates=load_json(CANDIDATES,[]); changes=load_json(CHANGES,[]); geocache=load_json(GEOCACHE,{})
  if not isinstance(data,list): raise SystemExit('data/nachtfragment.json muss ein Array sein')
  if not isinstance(candidates,list): candidates=[]
- known={(str(x.get('name') or '').strip().lower(),str(x.get('city') or '').strip().lower(),str(x.get('country') or '').strip().lower()) for x in data}
- cand_known={(str(x.get('name') or '').strip().lower(),str(x.get('city') or '').strip().lower(),str(x.get('country') or '').strip().lower()) for x in candidates}
+ known={(str(x.get('name') or '').strip().lower(),str(x.get('city') or '').strip().lower(),str(x.get('country_name',x.get('country')) or '').strip().lower()) for x in data}
+ cand_known={(str(x.get('name') or '').strip().lower(),str(x.get('city') or '').strip().lower(),str(x.get('country_name',x.get('country')) or '').strip().lower()) for x in candidates}
  new_pub=0; new_cand=0; source_errors=[]; search_errors=0
  for source in load_json(SOURCES,[]):
   try:
@@ -403,7 +519,7 @@ def main():
      candidates.append(rec); cand_known.add(key); new_cand+=1
      changes.insert(0,{'timestamp':NOW.isoformat(),'type':'candidate','name':c['name'],'city':city,'source':source['url'],'score':score})
   except Exception as e:
-   print('ERROR',source.get('name',source.get('url','unknown')),repr(e)); source_errors.append({'source':source.get('url'),'error':str(e)}); changes.insert(0,{'timestamp':NOW.isoformat(),'type':'source_error','source':source.get('url'),'error':str(e)})
+   print('ERROR',str(source.get('name') or source.get('url') or 'unknown'),repr(e)); source_errors.append({'source':source.get('url'),'error':str(e)}); changes.insert(0,{'timestamp':NOW.isoformat(),'type':'source_error','source':source.get('url'),'error':str(e)})
  # Broad web-search discovery. Search results are never published solely from the snippet.
  search_items=discover_web_search()
  if search_items:
@@ -476,6 +592,18 @@ def main():
     search_errors += 1
     print('SEARCH ITEM ERROR',c.get('url'),repr(e))
 
+ # Directory importer: shops, clubs, bars and magazines; verify original pages.
+ directory_promoted = recheck_directory_candidates(data,candidates,changes)
+ directory_rows,directory_errors = discover_directory_entities(geocache)
+ known_directory={entity_key(x) for x in data}
+ imported_directory=0
+ for rec in directory_rows:
+  key=entity_key(rec)
+  if key in known_directory: continue
+  data.append(rec); known_directory.add(key); imported_directory+=1
+  changes.insert(0,{'timestamp':NOW.isoformat(),'type':'directory_imported','record_type':rec.get('record_type'),'name':rec.get('name'),'city':rec.get('city'),'source':rec.get('url'),'score':rec.get('confidence_score')})
+ print('DIRECTORY IMPORTED',imported_directory,'PROMOTED',directory_promoted,'ERRORS',directory_errors)
+
  # de-duplicate published data and candidates
  def dedupe(rows):
   seen=set(); out=[]
@@ -487,8 +615,8 @@ def main():
  data=dedupe(data); candidates=dedupe(candidates)
  checked,quality_green,quality_yellow,quality_red=audit_existing_events(data)
  save_json(DATA,data); save_json(CANDIDATES,candidates); save_json(CHANGES,changes[:1000]); save_json(GEOCACHE,geocache)
- write_status(total=len(data), published=len(data), events=sum(1 for x in data if x.get('record_type')=='event'), candidates=len(candidates), new_published=new_pub, new_candidates=new_cand, source_errors=len(source_errors), search_item_errors=search_errors, quality_checked=checked, quality_green=quality_green, quality_yellow=quality_yellow, quality_red=quality_red, serpapi_configured=bool(SERPAPI_KEY), today=TODAY)
- print('TOTAL',len(data),'EVENTS',sum(1 for x in data if x.get('record_type')=='event'),'PUBLISHED',new_pub,'CANDIDATES',len(candidates),'NEW_CANDIDATES',new_cand,'SOURCE_ERRORS',len(source_errors),'SEARCH_ERRORS',search_errors,'QUALITY',quality_green,quality_yellow,quality_red)
+ write_status(total=len(data), published=len(data), events=sum(1 for x in data if x.get('record_type')=='event'), shops=sum(1 for x in data if x.get('record_type')=='shop'), clubs=sum(1 for x in data if x.get('record_type')=='club'), bars=sum(1 for x in data if x.get('record_type')=='bar'), magazines=sum(1 for x in data if x.get('record_type')=='magazine'), directory_imported=imported_directory, directory_promoted=directory_promoted, directory_errors=directory_errors, candidates=len(candidates), new_published=new_pub, new_candidates=new_cand, source_errors=len(source_errors), search_item_errors=search_errors, quality_checked=checked, quality_green=quality_green, quality_yellow=quality_yellow, quality_red=quality_red, serpapi_configured=bool(SERPAPI_KEY), today=TODAY)
+ print('TOTAL',len(data),'EVENTS',sum(1 for x in data if x.get('record_type')=='event'),'SHOPS',sum(1 for x in data if x.get('record_type')=='shop'),'CLUBS',sum(1 for x in data if x.get('record_type')=='club'),'BARS',sum(1 for x in data if x.get('record_type')=='bar'),'MAGAZINES',sum(1 for x in data if x.get('record_type')=='magazine'),'PUBLISHED',new_pub,'CANDIDATES',len(candidates),'NEW_CANDIDATES',new_cand,'DIRECTORY_IMPORTED',imported_directory,'DIRECTORY_PROMOTED',directory_promoted,'DIRECTORY_ERRORS',directory_errors,'SOURCE_ERRORS',len(source_errors),'SEARCH_ERRORS',search_errors,'QUALITY',quality_green,quality_yellow,quality_red)
  # Discovery is best-effort: individual dead sources must not make the daily workflow fail.
  return 0
 if __name__=='__main__':
