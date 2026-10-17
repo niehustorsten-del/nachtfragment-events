@@ -1,5 +1,280 @@
 [
   {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "magazine",
+    "name": "Electronic body music",
+    "city": "New York",
+    "source": "https://en.wikipedia.org/wiki/Electronic_body_music",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "magazine",
+    "name": "Release Music Magazine",
+    "city": "Glasgow",
+    "source": "https://releasemagazine.net",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "magazine",
+    "name": "AlterNation - music magazine about Electro, Industrial, EBM ...",
+    "city": "Leipzig",
+    "source": "https://alternation.eu",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "magazine",
+    "name": "Gothic Magazine (@gothicmag)",
+    "city": null,
+    "source": "https://facebook.com/gothicmag",
+    "score": 7
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "magazine",
+    "name": "Gothic (Zeitschrift)",
+    "city": null,
+    "source": "https://de.wikipedia.org/wiki/Gothic_(Zeitschrift)",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "magazine",
+    "name": "Gothic Rock / Dark Wave Reviews",
+    "city": "Köln",
+    "source": "https://burnyourears.de/reviews/genres/gothic-rock-dark-wave.html",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "magazine",
+    "name": "Dark wave",
+    "city": "London",
+    "source": "https://en.wikipedia.org/wiki/Dark_wave",
+    "score": 12
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "magazine",
+    "name": "Darkwave Music Magazine & Post-Punk Online Radio",
+    "city": "Barcelona",
+    "source": "https://other-voices.com",
+    "score": 11
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "bar",
+    "name": "On the Rock(s): Berlin's Best Punk Rock Bars",
+    "city": "Berlin",
+    "source": "https://the-berliner.com/guides/berlins-best-punk-bars",
+    "score": 7
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "bar",
+    "name": "10 Gründe Gothic zu sein - Proud to be a Goth",
+    "city": "Leipzig",
+    "source": "https://der-schwarze-planet.de/10-grunde-gothic-zu-sein",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "club",
+    "name": "Dark Party | Das Gothic Party Verzeichnis",
+    "city": "Basel",
+    "source": "https://dark-party.de",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "club",
+    "name": "Dunkeltanz: Schwarze Clubs und Gothic Partys ...",
+    "city": "Leipzig",
+    "source": "https://spontis.de/dunkeltanz",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "club",
+    "name": "Dark Venue Guide – Savetier",
+    "city": "Berlin",
+    "source": "https://savetier.eu/venues",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "The best record shops in Europe – chosen by experts",
+    "city": "Warsaw",
+    "source": "https://theguardian.com/travel/2015/nov/11/best-record-shops-in-europe-chosen-by-experts",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Alternative clothing ethically handmade by Psylo Fashion ...",
+    "city": "London",
+    "source": "https://psylofashion.com",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "HARD'N'HEAVY - Gothic, Rock & Alternative Fashion Store",
+    "city": null,
+    "source": "https://hardnheavy.style",
+    "score": 7
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Blue Banana | Online Alternative Fashion Store",
+    "city": "London",
+    "source": "https://bluebanana.com",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Alternative Clothing | Alt & Goth Clothes from Leading Brands",
+    "city": null,
+    "source": "https://attitudeclothing.co.uk",
+    "score": 7
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Gothic Onlineshop - Gothic Punk Rockabilly Shop Gothicshop ...",
+    "city": "London",
+    "source": "https://the-clash.de",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Wonderland 13: Gothic Fashion & Gothic Kleidung",
+    "city": null,
+    "source": "https://wonderland13-store.de",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Queen of Darkness Queen of Darkness® Gothic Fashion ...",
+    "city": "Leipzig",
+    "source": "https://queen-of-darkness.com",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Dark Ages: Gothickleidung, Schuhe. Stiefel, Schmuck ...",
+    "city": "Essen",
+    "source": "https://darkages.de",
+    "score": 9
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Abaddon Mystic Store: Gothic Shop für Gothic Kleidung",
+    "city": "Dresden",
+    "source": "https://abaddon-mysticstore.de",
+    "score": 9
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Darkstore - Gothic Kleidung online bestellen oder im Laden in ...",
+    "city": "Berlin",
+    "source": "https://darkstore.de",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Disturbia: Alternative, Gothic & Dark Romantic Clothing ...",
+    "city": "Malta",
+    "source": "https://disturbia.de",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Goth & Alternative Clothing UK | Kate's Gothic Fashion Since ...",
+    "city": "Malta",
+    "source": "https://katesclothing.co.uk",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Goth and alternative fashion in the heart of NRW, Germany ! If ...",
+    "city": "Essen",
+    "source": "https://facebook.com/darkages.de/posts/goth-and-alternative-fashion-in-the-heart-of-nrw-germany-if-youre-looking-for-a-/1486900046803558",
+    "score": 9
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Order gothic fashion online or buy directly in our shop in Berlin",
+    "city": "Berlin",
+    "source": "https://darkstore.de/Home",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Gothic clothing, shoes, boots, jewellery & accessories",
+    "city": "Essen",
+    "source": "https://darkages.de/en",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "candidate_web_search",
+    "name": "Japan Goth & Post Punk Festival- 2026』 DJはWave Gotik ...",
+    "city": "Chicago",
+    "source": "https://x.com/nAo12xu/status/2102072341652181353",
+    "score": 12
+  },
+  {
+    "timestamp": "2026-10-17T15:42:49.503591+00:00",
+    "type": "source_error",
+    "source": "https://www.plage-noire.de/",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
     "timestamp": "2026-10-17T08:33:03.340894+00:00",
     "type": "candidate_web_search",
     "name": "EBM Festivals 2026/2027 | Termine & Tickets",

@@ -7466,6 +7466,1453 @@
     "quality_status": "green",
     "quality_label": "🟢 geprüft / relevante Veranstaltung",
     "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
-    "quality_checked_at": "2026-10-17T08:33:03.340894+00:00"
+    "quality_checked_at": "2026-10-17T15:42:49.503591+00:00"
+  },
+  {
+    "id": "directory-831e2591d0b26f",
+    "record_type": "shop",
+    "name": "Gothic clothing, shoes, boots, jewellery & accessories",
+    "city": "Essen",
+    "country_name": "Deutschland",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkages.de/en",
+    "source_url": "https://darkages.de/en",
+    "description": "For fans of modern Nu-Goth and Alternative Style we always have plenty of products by Killstar, Darkside, Heartless, Banned, Hell Bunny and many more in stock!",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://darkages.de/en"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gothic+clothing%2C+shoes%2C+boots%2C+jewellery+%26+accessories%2C+Essen%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Gothic+clothing%2C+shoes%2C+boots%2C+jewellery+%26+accessories%2C+Essen%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-2575054b627905",
+    "record_type": "shop",
+    "name": "Order gothic fashion online or buy directly in our shop in Berlin",
+    "city": "Berlin",
+    "country_name": "Deutschland",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core"
+    ],
+    "url": "https://darkstore.de/Home",
+    "source_url": "https://darkstore.de/Home",
+    "description": "Darkstore - Your gothic shop in Berlin with competence in gothic fashion, boots, jewellery and accessoires for more than 20 years now.",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://darkstore.de/Home"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Order+gothic+fashion+online+or+buy+directly+in+our+shop+in+Berlin%2C+Berlin%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Order+gothic+fashion+online+or+buy+directly+in+our+shop+in+Berlin%2C+Berlin%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-12ab6b8c633b5d",
+    "record_type": "shop",
+    "name": "Goth and alternative fashion in the heart of NRW, Germany ! If ...",
+    "city": "Essen",
+    "country_name": "Deutschland",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://facebook.com/darkages.de/posts/goth-and-alternative-fashion-in-the-heart-of-nrw-germany-if-youre-looking-for-a-/1486900046803558",
+    "source_url": "https://facebook.com/darkages.de/posts/goth-and-alternative-fashion-in-the-heart-of-nrw-germany-if-youre-looking-for-a-/1486900046803558",
+    "description": "Our picks for the top metal, goth, and alternative fashion brands in 2024! Read our list in the comments! What are your favorite alternative ...",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://facebook.com/darkages.de/posts/goth-and-alternative-fashion-in-the-heart-of-nrw-germany-if-youre-looking-for-a-/1486900046803558"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Goth+and+alternative+fashion+in+the+heart+of+NRW%2C+Germany+%21+If+...%2C+Essen%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Goth+and+alternative+fashion+in+the+heart+of+NRW%2C+Germany+%21+If+...%2C+Essen%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-67bd72e04e7c8c",
+    "record_type": "shop",
+    "name": "Goth & Alternative Clothing UK | Kate's Gothic Fashion Since ...",
+    "city": "Malta",
+    "country_name": "Malta",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://katesclothing.co.uk",
+    "source_url": "https://katesclothing.co.uk",
+    "description": "We offer a wide range of gothic clothing and gothic fashion including dresses, skirts, tops, coats, corsets, trousers, knitwear, and hoodies, plus footwear, ...",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://katesclothing.co.uk"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Goth+%26+Alternative+Clothing+UK+%7C+Kate%27s+Gothic+Fashion+Since+...%2C+Malta%2C+Malta",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Goth+%26+Alternative+Clothing+UK+%7C+Kate%27s+Gothic+Fashion+Since+...%2C+Malta%2C+Malta",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-3350bfb33b77ab",
+    "record_type": "shop",
+    "name": "Disturbia: Alternative, Gothic & Dark Romantic Clothing ...",
+    "city": "Malta",
+    "country_name": "Deutschland",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://disturbia.de",
+    "source_url": "https://disturbia.de",
+    "description": "Discover a curated collection of gothic and darkly romantic alternative clothing, accessories, and homewares. Shop unique styles, from elegant apparel",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://disturbia.de"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Disturbia%3A+Alternative%2C+Gothic+%26+Dark+Romantic+Clothing+...%2C+Malta%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Disturbia%3A+Alternative%2C+Gothic+%26+Dark+Romantic+Clothing+...%2C+Malta%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-ce755496ef9e2f",
+    "record_type": "shop",
+    "name": "Darkstore - Gothic Kleidung online bestellen oder im Laden in ...",
+    "city": "Berlin",
+    "country_name": "Deutschland",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkstore.de",
+    "source_url": "https://darkstore.de",
+    "description": "Darkstore - Dein Gothic Shop in Berlin! Seit über 20 Jahren Kompetenz in Gothic Kleidung, Schuhen, Schmuck und Accessoires, Gothic Kleidung online bestellen ...",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://darkstore.de"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Darkstore+-+Gothic+Kleidung+online+bestellen+oder+im+Laden+in+...%2C+Berlin%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Darkstore+-+Gothic+Kleidung+online+bestellen+oder+im+Laden+in+...%2C+Berlin%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-1041e257ca475d",
+    "record_type": "shop",
+    "name": "Abaddon Mystic Store: Gothic Shop für Gothic Kleidung",
+    "city": "Dresden",
+    "country_name": null,
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave"
+    ],
+    "url": "https://abaddon-mysticstore.de",
+    "source_url": "https://abaddon-mysticstore.de",
+    "description": "Wir bieten dir auch Gothic Shirts und Tops, Gothic Hosen und Leggings, deinen neuen Gothic Rock in allen Längen, sowie dein neues Gothic Kleid in allen Längen, ...",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt"
+    ],
+    "auto_sources": [
+      "https://abaddon-mysticstore.de"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Abaddon+Mystic+Store%3A+Gothic+Shop+f%C3%BCr+Gothic+Kleidung%2C+Dresden",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Abaddon+Mystic+Store%3A+Gothic+Shop+f%C3%BCr+Gothic+Kleidung%2C+Dresden",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-3a9059c7cff6be",
+    "record_type": "shop",
+    "name": "Dark Ages: Gothickleidung, Schuhe. Stiefel, Schmuck ...",
+    "city": "Essen",
+    "country_name": "Deutschland",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkages.de",
+    "source_url": "https://darkages.de",
+    "description": "Entdecke die riesige Auswahl an Szeneklamotten und Accessoires zu bekannt günstigen Preisen. Blitzversand mit DHL. Versandkosten frei ab 40 €.",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://darkages.de"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dark+Ages%3A+Gothickleidung%2C+Schuhe.+Stiefel%2C+Schmuck+...%2C+Essen%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dark+Ages%3A+Gothickleidung%2C+Schuhe.+Stiefel%2C+Schmuck+...%2C+Essen%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-2ce2c548231525",
+    "record_type": "shop",
+    "name": "Queen of Darkness Queen of Darkness® Gothic Fashion ...",
+    "city": "Leipzig",
+    "country_name": null,
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core"
+    ],
+    "url": "https://queen-of-darkness.com",
+    "source_url": "https://queen-of-darkness.com",
+    "description": "Der offizielle Queen of Darkness® GOTHIC-SHOP. Die exklusive Gothic-Marke der Szene! ☆ Schwarze Mode XS - XXXXL ☆ Gothic Kleidung & Fashion ☆ Punk- ...",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt"
+    ],
+    "auto_sources": [
+      "https://queen-of-darkness.com"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Queen+of+Darkness+Queen+of+Darkness%C2%AE+Gothic+Fashion+...%2C+Leipzig",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Queen+of+Darkness+Queen+of+Darkness%C2%AE+Gothic+Fashion+...%2C+Leipzig",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-5e13f3eb0683af",
+    "record_type": "shop",
+    "name": "Wonderland 13: Gothic Fashion & Gothic Kleidung",
+    "city": null,
+    "country_name": "Deutschland",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core"
+    ],
+    "url": "https://wonderland13-store.de",
+    "source_url": "https://wonderland13-store.de",
+    "description": "Bei uns findest Du Dark-Fashion und Gothic-Bekleidung für ganz Große und auch die Kleinen. Gothic Plus Sizes findest Du ebenso, wie niedliches ...",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://wonderland13-store.de"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Wonderland+13%3A+Gothic+Fashion+%26+Gothic+Kleidung%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Wonderland+13%3A+Gothic+Fashion+%26+Gothic+Kleidung%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-834b9b5904f6b3",
+    "record_type": "shop",
+    "name": "Gothic Onlineshop - Gothic Punk Rockabilly Shop Gothicshop ...",
+    "city": "London",
+    "country_name": "Deutschland",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://the-clash.de",
+    "source_url": "https://the-clash.de",
+    "description": "Bei uns findest Du eine große Auswahl an Kleidung, Schuhen und Accessoires für deine Subkultur. Egal ob Du nach Gothic, Steampunk, Retro, Army, New Wave, Punk ...",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://the-clash.de"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gothic+Onlineshop+-+Gothic+Punk+Rockabilly+Shop+Gothicshop+...%2C+London%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Gothic+Onlineshop+-+Gothic+Punk+Rockabilly+Shop+Gothicshop+...%2C+London%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-d5b20881420b12",
+    "record_type": "shop",
+    "name": "Alternative Clothing | Alt & Goth Clothes from Leading Brands",
+    "city": null,
+    "country_name": null,
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://attitudeclothing.co.uk",
+    "source_url": "https://attitudeclothing.co.uk",
+    "description": "Shop the best Alternative, Gothic, Emo & Punk clothing in the UK. Discover essential fashion, footwear, and accessories from top alternative brands.",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 7,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt"
+    ],
+    "auto_sources": [
+      "https://attitudeclothing.co.uk"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Alternative+Clothing+%7C+Alt+%26+Goth+Clothes+from+Leading+Brands",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Alternative+Clothing+%7C+Alt+%26+Goth+Clothes+from+Leading+Brands",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-4d95560e889fab",
+    "record_type": "shop",
+    "name": "Blue Banana | Online Alternative Fashion Store",
+    "city": "London",
+    "country_name": "Vereinigtes Königreich",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://bluebanana.com",
+    "source_url": "https://bluebanana.com",
+    "description": "Blue Banana website, a place for alternative and Gothic fashion where you can shop an entire outfit in one place, including alternative clothing, footwear,",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://bluebanana.com"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Blue+Banana+%7C+Online+Alternative+Fashion+Store%2C+London%2C+Vereinigtes+K%C3%B6nigreich",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Blue+Banana+%7C+Online+Alternative+Fashion+Store%2C+London%2C+Vereinigtes+K%C3%B6nigreich",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-c985cf5056b692",
+    "record_type": "shop",
+    "name": "HARD'N'HEAVY - Gothic, Rock & Alternative Fashion Store",
+    "city": null,
+    "country_name": null,
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://hardnheavy.style",
+    "source_url": "https://hardnheavy.style",
+    "description": "Tank Tops Camis T-shirts Blouses & Shirts Crop Tops Long Sleeve Tops Tunics Statement Tops · Shorts & Capris Skirts Pants · Dresses Jumpsuits & Bodysuits.",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 7,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt"
+    ],
+    "auto_sources": [
+      "https://hardnheavy.style"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=HARD%27N%27HEAVY+-+Gothic%2C+Rock+%26+Alternative+Fashion+Store",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=HARD%27N%27HEAVY+-+Gothic%2C+Rock+%26+Alternative+Fashion+Store",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-d592c26b20299e",
+    "record_type": "shop",
+    "name": "Alternative clothing ethically handmade by Psylo Fashion ...",
+    "city": "London",
+    "country_name": "Malta",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://psylofashion.com",
+    "source_url": "https://psylofashion.com",
+    "description": "Dark, edgy alternative streetwear born from punk and gothic subculture. Bold cuts, distressed fabrics and rebellious details made for the underground.",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://psylofashion.com"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Alternative+clothing+ethically+handmade+by+Psylo+Fashion+...%2C+London%2C+Malta",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Alternative+clothing+ethically+handmade+by+Psylo+Fashion+...%2C+London%2C+Malta",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-a028e714f603d4",
+    "record_type": "shop",
+    "name": "The best record shops in Europe – chosen by experts",
+    "city": "Warsaw",
+    "country_name": "Belgien",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "darkwave_wave",
+      "ebm_industrial"
+    ],
+    "szenerelevanz_labels": [
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial"
+    ],
+    "url": "https://theguardian.com/travel/2015/nov/11/best-record-shops-in-europe-chosen-by-experts",
+    "source_url": "https://theguardian.com/travel/2015/nov/11/best-record-shops-in-europe-chosen-by-experts",
+    "description": "The UK has been covered, so here musicians and record industry insiders choose their favourite European destinations for buying vinyl ...",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://theguardian.com/travel/2015/nov/11/best-record-shops-in-europe-chosen-by-experts"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+best+record+shops+in+Europe+%E2%80%93+chosen+by+experts%2C+Warsaw%2C+Belgien",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=The+best+record+shops+in+Europe+%E2%80%93+chosen+by+experts%2C+Warsaw%2C+Belgien",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-f180b3fce3e9fc",
+    "record_type": "club",
+    "name": "Dark Venue Guide – Savetier",
+    "city": "Berlin",
+    "country_name": "Deutschland",
+    "type": [
+      "club"
+    ],
+    "categories": [
+      "Gothic-Club"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://savetier.eu/venues",
+    "source_url": "https://savetier.eu/venues",
+    "description": "Wave night every Monday (Blue Monday). Gothic and dark 80s events every month, sometimes concerts. DarkSide Berlin is actually a fetish/BDSM club, but also ...",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://savetier.eu/venues"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dark+Venue+Guide+%E2%80%93+Savetier%2C+Berlin%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dark+Venue+Guide+%E2%80%93+Savetier%2C+Berlin%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-f8111144d190d2",
+    "record_type": "club",
+    "name": "Dunkeltanz: Schwarze Clubs und Gothic Partys ...",
+    "city": "Leipzig",
+    "country_name": "Deutschland",
+    "type": [
+      "club"
+    ],
+    "categories": [
+      "Gothic-Club"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://spontis.de/dunkeltanz",
+    "source_url": "https://spontis.de/dunkeltanz",
+    "description": "Dunkeltanz ist die deutschlandweite Auflistung aller relevanten und regelmäßigen Gothic-Partys und dauerhaft schwarzen Clubs, sortiert nach Postleitzahlen.",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://spontis.de/dunkeltanz"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dunkeltanz%3A+Schwarze+Clubs+und+Gothic+Partys+...%2C+Leipzig%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dunkeltanz%3A+Schwarze+Clubs+und+Gothic+Partys+...%2C+Leipzig%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-1b9a610d44dd4c",
+    "record_type": "club",
+    "name": "Dark Party | Das Gothic Party Verzeichnis",
+    "city": "Basel",
+    "country_name": "Deutschland",
+    "type": [
+      "club"
+    ],
+    "categories": [
+      "Gothic-Club"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://dark-party.de",
+    "source_url": "https://dark-party.de",
+    "description": "Dein Party Kalender für die schwarze Szene. Gothic, Industrial, Electro, EBM, Darkwave und Mittelalter Veranstaltungen.",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://dark-party.de"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dark+Party+%7C+Das+Gothic+Party+Verzeichnis%2C+Basel%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dark+Party+%7C+Das+Gothic+Party+Verzeichnis%2C+Basel%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-eda0b6a3b85ace",
+    "record_type": "bar",
+    "name": "10 Gründe Gothic zu sein - Proud to be a Goth",
+    "city": "Leipzig",
+    "country_name": "Deutschland",
+    "type": [
+      "bar"
+    ],
+    "categories": [
+      "Gothic-Bar"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial"
+    ],
+    "url": "https://der-schwarze-planet.de/10-grunde-gothic-zu-sein",
+    "source_url": "https://der-schwarze-planet.de/10-grunde-gothic-zu-sein",
+    "description": "10 Gründe Gothic zu sein · Schön hier, in der schwarzen Szene! Aber warum eigentlich? · 1. Anderssein können · 2. Die Farbe Schwarz: · 3. Geld spielt keine Rolle · 4 ...",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://der-schwarze-planet.de/10-grunde-gothic-zu-sein"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=10+Gr%C3%BCnde+Gothic+zu+sein+-+Proud+to+be+a+Goth%2C+Leipzig%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=10+Gr%C3%BCnde+Gothic+zu+sein+-+Proud+to+be+a+Goth%2C+Leipzig%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-f12802f646875c",
+    "record_type": "bar",
+    "name": "On the Rock(s): Berlin's Best Punk Rock Bars",
+    "city": "Berlin",
+    "country_name": null,
+    "type": [
+      "bar"
+    ],
+    "categories": [
+      "Gothic-Bar"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://the-berliner.com/guides/berlins-best-punk-bars",
+    "source_url": "https://the-berliner.com/guides/berlins-best-punk-bars",
+    "description": "These are the best punk bars in Berlin to experience the city's countercultural spirit and to have a cold one without breaking the bank.",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 7,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt"
+    ],
+    "auto_sources": [
+      "https://the-berliner.com/guides/berlins-best-punk-bars"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=On+the+Rock%28s%29%3A+Berlin%27s+Best+Punk+Rock+Bars%2C+Berlin",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=On+the+Rock%28s%29%3A+Berlin%27s+Best+Punk+Rock+Bars%2C+Berlin",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-4deda1fdf46f2a",
+    "record_type": "magazine",
+    "name": "Darkwave Music Magazine & Post-Punk Online Radio",
+    "city": "Barcelona",
+    "country_name": null,
+    "type": [
+      "magazine"
+    ],
+    "categories": [
+      "Dark-Music-Magazin"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://other-voices.com",
+    "source_url": "https://other-voices.com",
+    "description": "Other Voices is an independent darkwave music magazine covering the international post-punk and electronic underground. We publish album reviews, live reports, ...",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 11,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt"
+    ],
+    "auto_sources": [
+      "https://other-voices.com"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Darkwave+Music+Magazine+%26+Post-Punk+Online+Radio%2C+Barcelona",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Darkwave+Music+Magazine+%26+Post-Punk+Online+Radio%2C+Barcelona",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-48a5af4b1f03a3",
+    "record_type": "magazine",
+    "name": "Dark wave",
+    "city": "London",
+    "country_name": "Deutschland",
+    "type": [
+      "magazine"
+    ],
+    "categories": [
+      "Dark-Music-Magazin"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Dark_wave",
+    "source_url": "https://en.wikipedia.org/wiki/Dark_wave",
+    "description": "Dark wave (also known as darkwave) is a music genre that emerged from the new wave and post-punk movement of the late 1970s.",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 12,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://en.wikipedia.org/wiki/Dark_wave"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dark+wave%2C+London%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dark+wave%2C+London%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-87c7588d14fa4c",
+    "record_type": "magazine",
+    "name": "Gothic Rock / Dark Wave Reviews",
+    "city": "Köln",
+    "country_name": null,
+    "type": [
+      "magazine"
+    ],
+    "categories": [
+      "Dark-Music-Magazin"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://burnyourears.de/reviews/genres/gothic-rock-dark-wave.html",
+    "source_url": "https://burnyourears.de/reviews/genres/gothic-rock-dark-wave.html",
+    "description": "Wave Rock, Goth, Post-Punk Label: Dedstrange. Dark gloomy Alternative Rock Label: Independent Release. Gothic Rock/Doom Metal Label: Season Of Mist VÖ: 31.1. ...",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt"
+    ],
+    "auto_sources": [
+      "https://burnyourears.de/reviews/genres/gothic-rock-dark-wave.html"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gothic+Rock+%2F+Dark+Wave+Reviews%2C+K%C3%B6ln",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Gothic+Rock+%2F+Dark+Wave+Reviews%2C+K%C3%B6ln",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-273045fdfe9536",
+    "record_type": "magazine",
+    "name": "Gothic (Zeitschrift)",
+    "city": null,
+    "country_name": "Deutschland",
+    "type": [
+      "magazine"
+    ],
+    "categories": [
+      "Dark-Music-Magazin"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://de.wikipedia.org/wiki/Gothic_(Zeitschrift)",
+    "source_url": "https://de.wikipedia.org/wiki/Gothic_(Zeitschrift)",
+    "description": "Gothic – Magazine for Underground Culture war eine Musik- und Kulturzeitschrift der Alternative- und Schwarzen Szene. Ursprünglich als Dark-Wave- und ...",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://de.wikipedia.org/wiki/Gothic_(Zeitschrift)"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": true,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gothic+%28Zeitschrift%29%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Gothic+%28Zeitschrift%29%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-3567726e322b56",
+    "record_type": "magazine",
+    "name": "Gothic Magazine (@gothicmag)",
+    "city": null,
+    "country_name": null,
+    "type": [
+      "magazine"
+    ],
+    "categories": [
+      "Dark-Music-Magazin"
+    ],
+    "szenerelevanz": [
+      "gothic_core"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core"
+    ],
+    "url": "https://facebook.com/gothicmag",
+    "source_url": "https://facebook.com/gothicmag",
+    "description": "Offizielle Facebook-Seite des deutschen GOTHIC-Magazines. Dark Dream Collection steht für hochwertige europäische Verarbeitung, authentisches Handwerk und die ...",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 7,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt"
+    ],
+    "auto_sources": [
+      "https://facebook.com/gothicmag"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": true,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gothic+Magazine+%28%40gothicmag%29",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Gothic+Magazine+%28%40gothicmag%29",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-6e65e43118bff7",
+    "record_type": "magazine",
+    "name": "AlterNation - music magazine about Electro, Industrial, EBM ...",
+    "city": "Leipzig",
+    "country_name": "Polen",
+    "type": [
+      "magazine"
+    ],
+    "categories": [
+      "Dark-Music-Magazin"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://alternation.eu",
+    "source_url": "https://alternation.eu",
+    "description": "AlterNation - magazine about gothic subculture and music like Electro, Industrial, EBM, Gothic, Darkwave, Ambient, Ethereal, IDM, Noise, Synthpop and more.",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://alternation.eu"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=AlterNation+-+music+magazine+about+Electro%2C+Industrial%2C+EBM+...%2C+Leipzig%2C+Polen",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=AlterNation+-+music+magazine+about+Electro%2C+Industrial%2C+EBM+...%2C+Leipzig%2C+Polen",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-607609a8e7d3f7",
+    "record_type": "magazine",
+    "name": "Release Music Magazine",
+    "city": "Glasgow",
+    "country_name": "Schweden",
+    "type": [
+      "magazine"
+    ],
+    "categories": [
+      "Dark-Music-Magazin"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://releasemagazine.net",
+    "source_url": "https://releasemagazine.net",
+    "description": "electro industrial Sep Dependent Records. collaborating with EBM heavyweights like Dirk Ivens, Numb and Leæther Strip, the electro industrial scene today.",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://releasemagazine.net"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Release+Music+Magazine%2C+Glasgow%2C+Schweden",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Release+Music+Magazine%2C+Glasgow%2C+Schweden",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-b5a0a4833d1170",
+    "record_type": "magazine",
+    "name": "Electronic body music",
+    "city": "New York",
+    "country_name": "Deutschland",
+    "type": [
+      "magazine"
+    ],
+    "categories": [
+      "Dark-Music-Magazin"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Electronic_body_music",
+    "source_url": "https://en.wikipedia.org/wiki/Electronic_body_music",
+    "description": "Electronic body music (EBM) is a genre of electronic music that combines elements of industrial music and synth-punk with elements of dance music.",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://en.wikipedia.org/wiki/Electronic_body_music"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "last_source_check": "2026-10-17T15:42:49.503591+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Electronic+body+music%2C+New+York%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Electronic+body+music%2C+New+York%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
   }
 ]

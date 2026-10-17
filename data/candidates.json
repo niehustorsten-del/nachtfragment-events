@@ -925,5 +925,58 @@
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=%F0%9F%93%85+Friday%2C+20+November+2026+%F0%9F%A6%87+PROCESS+PARTY+x+%40+...%2C+Europa",
     "google_maps_status": "search_link",
     "geocoded": false
+  },
+  {
+    "id": "search-ceb8de14a75085",
+    "record_type": "event",
+    "name": "Japan Goth & Post Punk Festival- 2026』 DJはWave Gotik ...",
+    "city": "Chicago",
+    "country_name": "USA",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "postpunk_deathrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "🕷️ Post-Punk / Deathrock"
+    ],
+    "url": "https://x.com/nAo12xu/status/2102072341652181353",
+    "source_url": "https://x.com/nAo12xu/status/2102072341652181353",
+    "date_text": "2026/11/21",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 12,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://x.com/nAo12xu/status/2102072341652181353"
+    ],
+    "discovered_at": "2026-10-17T15:42:49.503591+00:00",
+    "search_query": "gothic darkwave events Asia 2026 festival",
+    "search_snippet": "2026/11/21(sat)東京・新宿LOFT Tokyo Decay presents 『BLOODFLOWERS -Japan Goth & Post Punk Festival- 2026』 DJはWave Gotik TreffenやGothic ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Japan+Goth+%26+Post+Punk+Festival-+2026%E3%80%8F+DJ%E3%81%AFWave+Gotik+...%2C+Chicago%2C+USA",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Japan+Goth+%26+Post+Punk+Festival-+2026%E3%80%8F+DJ%E3%81%AFWave+Gotik+...%2C+Chicago%2C+USA",
+    "google_maps_status": "search_link",
+    "geocoded": false
   }
 ]
