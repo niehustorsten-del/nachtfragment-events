@@ -7466,7 +7466,7 @@
     "quality_status": "green",
     "quality_label": "🟢 geprüft / relevante Veranstaltung",
     "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
-    "quality_checked_at": "2026-10-17T15:42:49.503591+00:00"
+    "quality_checked_at": "2026-10-17T15:48:54.388581+00:00"
   },
   {
     "id": "directory-831e2591d0b26f",
@@ -8912,6 +8912,52 @@
     "online_only": false,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Electronic+body+music%2C+New+York%2C+Deutschland",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Electronic+body+music%2C+New+York%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-b8c779faf87655",
+    "record_type": "shop",
+    "name": "Alternative Clothing UK | Punk Clothing | Grunge Clothing ...",
+    "city": null,
+    "country_name": null,
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://jawbreakerclothing.com",
+    "source_url": "https://jawbreakerclothing.com",
+    "description": "Discover the latest alternative trends from Women's dresses, jumpsuits, hoodies, tops, leggings to Men's alternative fashion.",
+    "verified": true,
+    "verified_date": "2026-10-17",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 5,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt"
+    ],
+    "auto_sources": [
+      "https://jawbreakerclothing.com"
+    ],
+    "discovered_at": "2026-10-17T15:48:54.388581+00:00",
+    "last_source_check": "2026-10-17T15:48:54.388581+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Alternative+Clothing+UK+%7C+Punk+Clothing+%7C+Grunge+Clothing+...",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Alternative+Clothing+UK+%7C+Punk+Clothing+%7C+Grunge+Clothing+...",
     "google_maps_status": "search_link",
     "geocoded": false
   }

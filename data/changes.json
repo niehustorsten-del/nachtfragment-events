@@ -1,5 +1,20 @@
 [
   {
+    "timestamp": "2026-10-17T15:48:54.388581+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Alternative Clothing UK | Punk Clothing | Grunge Clothing ...",
+    "city": null,
+    "source": "https://jawbreakerclothing.com",
+    "score": 5
+  },
+  {
+    "timestamp": "2026-10-17T15:48:54.388581+00:00",
+    "type": "source_error",
+    "source": "https://www.plage-noire.de/",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
     "timestamp": "2026-10-17T15:42:49.503591+00:00",
     "type": "directory_imported",
     "record_type": "magazine",
