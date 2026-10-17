@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live & Konzerte – Nachtfragment</title>
+<meta name="description" content="Kommende Konzerte, Gigs und Festivaltermine von Artists aus dem Nachtfragment-Universum.">
+<style>
+:root{color-scheme:dark;--bg:#0b0b0e;--panel:#15151b;--line:#30303a;--text:#eeeaf1;--muted:#aaa5b2;--accent:#b8a0c9}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1050px;margin:auto;padding:32px 18px 60px}a{color:var(--accent);overflow-wrap:anywhere}
+header{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:24px}h1{font-size:clamp(2rem,5vw,3.2rem);margin:.15em 0}p{color:var(--muted)}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}input,select{background:var(--panel);color:var(--text);border:1px solid var(--line);padding:12px;border-radius:8px;min-width:180px}
+.list{display:grid;gap:12px}.event{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;display:grid;grid-template-columns:125px 1fr;gap:16px}
+.date{font-weight:700;color:var(--accent)}.event h2{font-size:1.15rem;margin:0 0 5px}.meta{color:var(--muted);margin:0 0 8px}.tag{display:inline-block;border:1px solid var(--line);padding:3px 8px;border-radius:999px;font-size:.8rem;color:var(--muted)}
+.empty{padding:22px;background:var(--panel);border:1px dashed var(--line);border-radius:12px;color:var(--muted)}
+footer{border-top:1px solid var(--line);margin-top:28px;padding-top:18px;font-size:.9rem;color:var(--muted)}
+@media(max-width:600px){.event{grid-template-columns:1fr;gap:5px}.date{font-size:.95rem}input,select{width:100%}}
+</style>
+</head>
+<body><main>
+<header>
+<p>NACHTFRAGMENT · DARK MUSIC</p>
+<h1>Live & Konzerte</h1>
+<p>Konzerte, Gigs und Festivaltermine von Artists, die auf Nachtfragment vorgestellt werden.</p>
+</header>
+<div class="tools">
+<input id="search" type="search" placeholder="Artist, Stadt oder Venue suchen" aria-label="Suche">
+<select id="period" aria-label="Zeitraum"><option value="all">Alle kommenden Termine</option><option value="30">Nächste 30 Tage</option><option value="90">Nächste 90 Tage</option></select>
+</div>
+<div id="status" class="meta">Termine werden geladen …</div>
+<section id="events" class="list" aria-live="polite"></section>
+<footer>Automatisch gefundene Suchtreffer werden nicht ungeprüft als bestätigte Konzerte veröffentlicht. Angaben bitte beim Veranstalter prüfen. <a href="https://nachtfragment.de/">Zurück zu Nachtfragment</a></footer>
+</main>
+<script>
+const DATA_URL = "data/concerts.json";
+let allEvents = [];
+const $ = id => document.getElementById(id);
+function safe(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function render(){
+ const q=$("search").value.trim().toLocaleLowerCase("de");
+ const period=$("period").value;
+ const today=new Date(); today.setHours(0,0,0,0);
+ const filtered=allEvents.filter(e=>{
+   if(e.status!=="confirmed"||!e.date)return false;
+   const d=new Date(e.date+"T00:00:00");
+   if(Number.isNaN(d.getTime())||d<today)return false;
+   if(period!=="all"&&(d-today)>Number(period)*86400000)return false;
+   return [e.artist,e.city,e.venue,e.title,e.country].join(" ").toLocaleLowerCase("de").includes(q);
+ }).sort((a,b)=>a.date.localeCompare(b.date));
+ $("status").textContent=`${filtered.length} bestätigte kommende Termine`;
+ $("events").innerHTML=filtered.length?filtered.map(e=>{
+  const d=new Date(e.date+"T00:00:00").toLocaleDateString("de-DE",{day:"2-digit",month:"short",year:"numeric"});
+  const place=[e.venue,e.city,e.country].filter(Boolean).join(" · ");
+  return `<article class="event"><div class="date">${safe(d)}${e.time?`<br>${safe(e.time)}`:""}</div><div><h2>${safe(e.artist||e.title||"Konzert")}</h2><p class="meta">${safe(place||"Veranstaltungsort noch offen")}</p>${e.title&&e.title!==e.artist?`<p>${safe(e.title)}</p>`:""}${e.source_url?`<a href="${safe(e.source_url)}" target="_blank" rel="noopener noreferrer">Veranstaltungsdetails ↗</a>`:""} <span class="tag">bestätigt</span></div></article>`;
+ }).join(""):'<div class="empty">Aktuell liegen noch keine bestätigten kommenden Konzerttermine vor. Neue Suchtreffer werden zunächst geprüft, bevor sie hier erscheinen.</div>';
+}
+$("search").addEventListener("input",render);$("period").addEventListener("change",render);
+fetch(DATA_URL,{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("Daten nicht verfügbar");return r.json()}).then(d=>{allEvents=d.events||[];render()}).catch(()=>{$("status").textContent="Konzertdaten konnten nicht geladen werden."; $("events").innerHTML='<div class="empty">Bitte später erneut versuchen.</div>';});
+</script>
+</body></html>
