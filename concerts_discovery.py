@@ -58,7 +58,7 @@ def save_json(path, obj):
 
 def artist_names(obj):
     if isinstance(obj, list): rows = obj
-    elif isinstance(obj, dict): rows = obj.get('artists', [])
+    elif isinstance(obj, dict): rows = obj.get('artists') or obj.get('bands') or obj.get('acts') or obj.get('items') or []
     else: rows = []
     names = []
     for row in rows:
@@ -107,18 +107,51 @@ def artist_mentioned(artist, text):
 
 
 def extract_dates(text):
+    """Extract future dates from snippets, including Google dates without a year.
+
+    Yearless dates are assigned to the next occurrence (this year if still ahead,
+    otherwise next year). This is only candidate discovery; it never publishes.
+    """
     found = set()
-    text = html.unescape(str(text or ''))
+    text = html.unescape(str(text or '')).replace('–', '-').replace('—', '-')
+    # Full dates first: ISO, numeric D/M/Y, and English month names.
     for idx, pat in enumerate(DATE_PATTERNS):
         for m in pat.finditer(text):
             try:
-                if idx == 0: y, mo, d = map(int, m.groups())
-                elif idx == 1: d, mo, y = map(int, m.groups())
-                elif idx == 2: d, month, y = m.groups(); mo = MONTHS[month.lower()]; d = int(d); y = int(y)
-                else: month, d, y = m.groups(); mo = MONTHS[month.lower()]; d = int(d); y = int(y)
+                if idx == 0:
+                    y, mo, d = map(int, m.groups())
+                elif idx == 1:
+                    d, mo, y = map(int, m.groups())
+                elif idx == 2:
+                    d, month, y = m.groups(); mo = MONTHS[month.lower()]; d = int(d); y = int(y)
+                else:
+                    month, d, y = m.groups(); mo = MONTHS[month.lower()]; d = int(d); y = int(y)
                 parsed = date(y, mo, d)
-                # Reject old dates and implausibly distant dates; current day is allowed.
-                if TODAY <= parsed <= date(TODAY.year + 3, 12, 31): found.add(parsed.isoformat())
+                if TODAY <= parsed <= date(TODAY.year + 3, 12, 31):
+                    found.add(parsed.isoformat())
+            except (ValueError, KeyError):
+                continue
+    # Common Google snippets: "Oct 24", "24 Oct", "October 24th".
+    no_year_patterns = [
+        re.compile(r'\b(' + MONTH_PATTERN + r')\.?\s+(\d{1,2})(?:st|nd|rd|th)?\b', re.I),
+        re.compile(r'\b(\d{1,2})\s+(' + MONTH_PATTERN + r')\.?\b', re.I),
+    ]
+    for idx, pat in enumerate(no_year_patterns):
+        for m in pat.finditer(text):
+            try:
+                if idx == 0:
+                    month, d = m.groups(); mo = MONTHS[month.lower()]; d = int(d)
+                else:
+                    d, month = m.groups(); mo = MONTHS[month.lower()]; d = int(d)
+                year = TODAY.year
+                try:
+                    parsed = date(year, mo, d)
+                except ValueError:
+                    continue
+                if parsed < TODAY:
+                    parsed = date(year + 1, mo, d)
+                if parsed <= date(TODAY.year + 2, 12, 31):
+                    found.add(parsed.isoformat())
             except (ValueError, KeyError):
                 continue
     return sorted(found)
@@ -176,6 +209,9 @@ def main():
     artist_data = load_json(ARTISTS, {'artists': []})
     artists = artist_names(artist_data)
     if MAX_ARTISTS > 0: artists = artists[:MAX_ARTISTS]
+    print(f'Konfiguration: artists_datei={ARTISTS} vorhanden={ARTISTS.exists()} artists={len(artists)} key_vorhanden={bool(KEY)} today={TODAY}')
+    if not artists:
+        print('FEHLER: Keine Künstler in data/artists.json gefunden. Erwartet wird eine Liste unter artists, bands, acts oder items.', file=sys.stderr)
     old = load_json(CANDIDATES, {'candidates': []})
     old_rows = old.get('candidates', []) if isinstance(old, dict) else old if isinstance(old, list) else []
     status_data = load_json(STATUS, {'statuses': {}})
@@ -186,11 +222,15 @@ def main():
     if not KEY:
         print('SERPAPI_KEY fehlt: keine Suche ausgeführt; vorhandene Kandidaten bleiben erhalten.', file=sys.stderr)
     else:
+        totals = {'queries': 0, 'search_results': 0, 'accepted': 0, 'no_date': 0, 'low_relevance': 0, 'no_event_word': 0}
         for i, artist in enumerate(artists, 1):
             if len(artist) < 2 or NEGATIVE.search(artist): continue
             for query in queries_for(artist):
+                totals['queries'] += 1
                 try:
                     results = search_serpapi(query)
+                    totals['search_results'] += len(results)
+                    print(f'  Suche {totals["queries"]}: {len(results)} Treffer | {query}')
                 except Exception as exc:
                     print(f'Suche fehlgeschlagen für {artist!r}: {exc}', file=sys.stderr)
                     continue
@@ -201,11 +241,18 @@ def main():
                     snippet = html.unescape(str(result.get('snippet') or '')).strip()
                     url = canonical_url(result.get('link') or '')
                     combined = ' '.join((title, snippet, str(result.get('date_text') or '')))
-                    if score < 7 or not EVENT_WORDS.search(combined): continue
+                    if score < 5:
+                        totals['low_relevance'] += 1
+                        continue
+                    if not EVENT_WORDS.search(combined):
+                        totals['no_event_word'] += 1
+                        continue
                     dates = extract_dates(combined)
                     # Search-result snippets often list multiple dates; only keep the first plausible
                     # date per result, otherwise one tour page can create many false event records.
-                    if not dates: continue
+                    if not dates:
+                        totals['no_date'] += 1
+                        continue
                     event_date = dates[0]
                     cid = stable_id(artist, url, event_date)
                     prev = by_id.get(cid, {})
@@ -218,13 +265,15 @@ def main():
                         'first_seen': prev.get('first_seen') or seen_at, 'last_seen': seen_at,
                         'source_type': 'search_result', 'review_required': True,
                     }
+                    totals['accepted'] += 1
                 time.sleep(PAUSE)
             print(f'[{i}/{len(artists)}] {artist}')
+        print('Suchdiagnose:', json.dumps(totals, ensure_ascii=False))
     rows = sorted(by_id.values(), key=lambda r: (r.get('date') or '9999', str(r.get('artist','')).casefold(), -int(r.get('score') or 0)))
     stamp = now_iso()
     save_json(CANDIDATES, {'updated_at': stamp, 'count': len(rows), 'candidates': rows})
     save_json(STATUS, {'updated_at': stamp, 'statuses': statuses})
-    print(f'{len(rows)} Kandidaten gespeichert. Keine automatische Veröffentlichung in concerts.json.')
+    print(f'{len(rows)} Kandidaten insgesamt gespeichert ({len(rows) - len(old_rows)} neue/aktualisierte IDs). Keine automatische Veröffentlichung in concerts.json.')
 
 if __name__ == '__main__':
     try:
