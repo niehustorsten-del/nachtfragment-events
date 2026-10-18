@@ -7466,7 +7466,7 @@
     "quality_status": "green",
     "quality_label": "🟢 geprüft / relevante Veranstaltung",
     "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
-    "quality_checked_at": "2026-10-17T15:48:54.388581+00:00"
+    "quality_checked_at": "2026-10-18T08:50:39.525189+00:00"
   },
   {
     "id": "directory-831e2591d0b26f",
@@ -8958,6 +8958,504 @@
     "online_only": false,
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Alternative+Clothing+UK+%7C+Punk+Clothing+%7C+Grunge+Clothing+...",
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Alternative+Clothing+UK+%7C+Punk+Clothing+%7C+Grunge+Clothing+...",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-47ab52d4a6aecf",
+    "record_type": "shop",
+    "name": "Gothic Kleidung – Outfits, Styles & Brands",
+    "city": "Malta",
+    "country_name": "Deutschland",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://impericon.com/de/pages/gothic",
+    "source_url": "https://impericon.com/de/pages/gothic",
+    "description": "Bei uns findest du Gothic Bekleidung, die diese Haltung widerspiegelt: Von romantisch-viktorianischen Goth Kleidern über Nu Goth Outfits bis zu massiven Boots, ...",
+    "verified": true,
+    "verified_date": "2026-10-18",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://impericon.com/de/pages/gothic"
+    ],
+    "discovered_at": "2026-10-18T08:50:39.525189+00:00",
+    "last_source_check": "2026-10-18T08:50:39.525189+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gothic+Kleidung+%E2%80%93+Outfits%2C+Styles+%26+Brands%2C+Malta%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Gothic+Kleidung+%E2%80%93+Outfits%2C+Styles+%26+Brands%2C+Malta%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-fa7c914d8a596e",
+    "record_type": "shop",
+    "name": "Gothic-Shop | Fashion & Deko online bestellen",
+    "city": "Malta",
+    "country_name": "Deutschland",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://horror-shop.com/collections/gothic-shop",
+    "source_url": "https://horror-shop.com/collections/gothic-shop",
+    "description": "Ein umfassendes Angebot an Gothic Fashion sowie Gothic Deko erwartet dich hier bei uns im Horror-Shop! Coole Artikel zu günstigen Preisen online bestellen!",
+    "verified": true,
+    "verified_date": "2026-10-18",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://horror-shop.com/collections/gothic-shop"
+    ],
+    "discovered_at": "2026-10-18T08:50:39.525189+00:00",
+    "last_source_check": "2026-10-18T08:50:39.525189+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gothic-Shop+%7C+Fashion+%26+Deko+online+bestellen%2C+Malta%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Gothic-Shop+%7C+Fashion+%26+Deko+online+bestellen%2C+Malta%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-fdd1d2c7b3ad17",
+    "record_type": "shop",
+    "name": "Dark Fashion Clothing",
+    "city": null,
+    "country_name": null,
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkfashionclothing.com",
+    "source_url": "https://darkfashionclothing.com",
+    "description": "Featuring the best UK and international alternative clothing brands including amazing new collections from Banned Apparel, Spiral, Burleska, Jawbreaker Clothing ...",
+    "verified": true,
+    "verified_date": "2026-10-18",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 7,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt"
+    ],
+    "auto_sources": [
+      "https://darkfashionclothing.com"
+    ],
+    "discovered_at": "2026-10-18T08:50:39.525189+00:00",
+    "last_source_check": "2026-10-18T08:50:39.525189+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dark+Fashion+Clothing",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dark+Fashion+Clothing",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-abeb25a0e1f393",
+    "record_type": "shop",
+    "name": "Independent Record Shop | Vinyl, CDs, Bücher + Merch",
+    "city": "Berlin",
+    "country_name": "Deutschland",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "darkwave_wave"
+    ],
+    "szenerelevanz_labels": [
+      "🌑 Darkwave / Wave"
+    ],
+    "url": "https://roughtrade.com/de",
+    "source_url": "https://roughtrade.com/de",
+    "description": "Kaufe limitiertes Vinyl, Bücher und Merchandise bei Rough Trade, unabhängiger Händler großartiger Musik, seit 1976.",
+    "verified": true,
+    "verified_date": "2026-10-18",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://roughtrade.com/de"
+    ],
+    "discovered_at": "2026-10-18T08:50:39.525189+00:00",
+    "last_source_check": "2026-10-18T08:50:39.525189+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Independent+Record+Shop+%7C+Vinyl%2C+CDs%2C+B%C3%BCcher+%2B+Merch%2C+Berlin%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Independent+Record+Shop+%7C+Vinyl%2C+CDs%2C+B%C3%BCcher+%2B+Merch%2C+Berlin%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-9b3b2b61dd294f",
+    "record_type": "club",
+    "name": "CYB3R South Bay presents CYB3R Club Night — a full- ...",
+    "city": null,
+    "country_name": "Deutschland",
+    "type": [
+      "club"
+    ],
+    "categories": [
+      "Gothic-Club"
+    ],
+    "szenerelevanz": [
+      "darkwave_wave",
+      "ebm_industrial"
+    ],
+    "szenerelevanz_labels": [
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial"
+    ],
+    "url": "https://instagram.com/p/DW7XAiTEij1",
+    "source_url": "https://instagram.com/p/DW7XAiTEij1",
+    "description": "CYB3R Club Night — a full-force Industrial / EBM. Live: Das Ich (Germany) Thu, May 7, 2026 • Doors 8PM • All Ages X Bar (Cupertino, CA) EBM and ...",
+    "verified": true,
+    "verified_date": "2026-10-18",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://instagram.com/p/DW7XAiTEij1"
+    ],
+    "discovered_at": "2026-10-18T08:50:39.525189+00:00",
+    "last_source_check": "2026-10-18T08:50:39.525189+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=CYB3R+South+Bay+presents+CYB3R+Club+Night+%E2%80%94+a+full-+...%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=CYB3R+South+Bay+presents+CYB3R+Club+Night+%E2%80%94+a+full-+...%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-5a3d4acd8f48ea",
+    "record_type": "club",
+    "name": "EBM and UK Industrial Clubs",
+    "city": "London",
+    "country_name": "Deutschland",
+    "type": [
+      "club"
+    ],
+    "categories": [
+      "Gothic-Club"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://music.co.uk/uk-goth-industrial-darkwave/ebm-and-uk-industrial-clubs-18785.html",
+    "source_url": "https://music.co.uk/uk-goth-industrial-darkwave/ebm-and-uk-industrial-clubs-18785.html",
+    "description": "The Reptile night. Reptile is the UK's most consistent EBM-focused club night. It has operated at various London venues across various ...",
+    "verified": true,
+    "verified_date": "2026-10-18",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://music.co.uk/uk-goth-industrial-darkwave/ebm-and-uk-industrial-clubs-18785.html"
+    ],
+    "discovered_at": "2026-10-18T08:50:39.525189+00:00",
+    "last_source_check": "2026-10-18T08:50:39.525189+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=EBM+and+UK+Industrial+Clubs%2C+London%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=EBM+and+UK+Industrial+Clubs%2C+London%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-6079a73bf83a5a",
+    "record_type": "club",
+    "name": "Events — Ebm",
+    "city": "Amsterdam",
+    "country_name": null,
+    "type": [
+      "club"
+    ],
+    "categories": [
+      "Gothic-Club"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://arcane.city/events/tag/ebm",
+    "source_url": "https://arcane.city/events/tag/ebm",
+    "description": "A goth/industrial dark alternative dance night presented by The Kult at SideQuest. Club Night · Friday, July 10, 2026 at 9:00 PM - 2:00 AM.",
+    "verified": true,
+    "verified_date": "2026-10-18",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt"
+    ],
+    "auto_sources": [
+      "https://arcane.city/events/tag/ebm"
+    ],
+    "discovered_at": "2026-10-18T08:50:39.525189+00:00",
+    "last_source_check": "2026-10-18T08:50:39.525189+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Events+%E2%80%94+Ebm%2C+Amsterdam",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Events+%E2%80%94+Ebm%2C+Amsterdam",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-1d68e48cf02d20",
+    "record_type": "bar",
+    "name": "Tokyo, Japan Goth & metal bars! Alternative gothic ...",
+    "city": "New York",
+    "country_name": "Schweiz",
+    "type": [
+      "bar"
+    ],
+    "categories": [
+      "Gothic-Bar"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "ebm_industrial",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "⚡ EBM / Industrial",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://lacarmina.com/blog/2026/06/tokyo-japan-goth-metal-rock-bars-guide-nanzuka-taken-guinea-pig",
+    "source_url": "https://lacarmina.com/blog/2026/06/tokyo-japan-goth-metal-rock-bars-guide-nanzuka-taken-guinea-pig",
+    "description": "Tons of you enjoyed my guide to Tokyo Goth, metal and horror bars on IG — especially our fav, Guinea Pig — so let's dive in deeper!",
+    "verified": true,
+    "verified_date": "2026-10-18",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://lacarmina.com/blog/2026/06/tokyo-japan-goth-metal-rock-bars-guide-nanzuka-taken-guinea-pig"
+    ],
+    "discovered_at": "2026-10-18T08:50:39.525189+00:00",
+    "last_source_check": "2026-10-18T08:50:39.525189+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tokyo%2C+Japan+Goth+%26+metal+bars%21+Alternative+gothic+...%2C+New+York%2C+Schweiz",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Tokyo%2C+Japan+Goth+%26+metal+bars%21+Alternative+gothic+...%2C+New+York%2C+Schweiz",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-fdd7159baee9e1",
+    "record_type": "bar",
+    "name": "Obsidian Alternative Bar",
+    "city": null,
+    "country_name": null,
+    "type": [
+      "bar"
+    ],
+    "categories": [
+      "Gothic-Bar"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://obsidianbar.com",
+    "source_url": "https://obsidianbar.com",
+    "description": "A darker and edgier alternative offering to Perth's popular dive bar scene made for metal heads, goths, punks. Open Tues - Sat 6pm 1/356 Charles St, North Perth",
+    "verified": true,
+    "verified_date": "2026-10-18",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 5,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt"
+    ],
+    "auto_sources": [
+      "https://obsidianbar.com"
+    ],
+    "discovered_at": "2026-10-18T08:50:39.525189+00:00",
+    "last_source_check": "2026-10-18T08:50:39.525189+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Obsidian+Alternative+Bar",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Obsidian+Alternative+Bar",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "directory-3afe53b1104a21",
+    "record_type": "bar",
+    "name": "Last Cathedral - Special Bars with a Twist- top10berlin.de",
+    "city": "Berlin",
+    "country_name": "Deutschland",
+    "type": [
+      "bar"
+    ],
+    "categories": [
+      "Gothic-Bar"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial"
+    ],
+    "url": "https://top10berlin.de/en/cat/night-life-259/special-bars-twist-2165/last-cathedral-2464",
+    "source_url": "https://top10berlin.de/en/cat/night-life-259/special-bars-twist-2165/last-cathedral-2464",
+    "description": "The Last Cathedral is a horror rock bar in Schönhauser Allee. Even from the outside it'll remind you of a dark tomb. A staircase is leading you downstairs ...",
+    "verified": true,
+    "verified_date": "2026-10-18",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://top10berlin.de/en/cat/night-life-259/special-bars-twist-2165/last-cathedral-2464"
+    ],
+    "discovered_at": "2026-10-18T08:50:39.525189+00:00",
+    "last_source_check": "2026-10-18T08:50:39.525189+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Last+Cathedral+-+Special+Bars+with+a+Twist-+top10berlin.de%2C+Berlin%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Last+Cathedral+-+Special+Bars+with+a+Twist-+top10berlin.de%2C+Berlin%2C+Deutschland",
     "google_maps_status": "search_link",
     "geocoded": false
   }

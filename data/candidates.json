@@ -978,5 +978,140 @@
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Japan+Goth+%26+Post+Punk+Festival-+2026%E3%80%8F+DJ%E3%81%AFWave+Gotik+...%2C+Chicago%2C+USA",
     "google_maps_status": "search_link",
     "geocoded": false
+  },
+  {
+    "id": "auto-a6adff98653786",
+    "record_type": "event",
+    "name": "Ash Code @ Cold Hearted Festival",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/ash-code-2026-11-13-hamburg-cold-hearted-festival-markthalle/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-13",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt",
+      "Festival erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-10-18T08:50:39.525189+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ash+Code+%40+Cold+Hearted+Festival%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Ash+Code+%40+Cold+Hearted+Festival%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-f9b5ae2defe895",
+    "record_type": "event",
+    "name": "Kaelan Mikla @ Cold Hearted Festival",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/kaelan-mikla-2026-11-13-hamburg-cold-hearted-festival-markthalle/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-13",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt",
+      "Festival erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-10-18T08:50:39.525189+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kaelan+Mikla+%40+Cold+Hearted+Festival%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Kaelan+Mikla+%40+Cold+Hearted+Festival%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "search-2cbc993051505e",
+    "record_type": "event",
+    "name": "Events",
+    "city": "Prague",
+    "country_name": "Europa",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🖤 Gothic Core"
+    ],
+    "szenerelevanz": [
+      "gothic_core"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core"
+    ],
+    "url": "https://www.death-rock.de/en/veranstaltungen/?long_events=1&ajaxCalendar=1&mo=1&yr=2066",
+    "source_url": "https://www.death-rock.de/en/veranstaltungen/?long_events=1&ajaxCalendar=1&mo=1&yr=2066",
+    "date_text": "22.10.2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.death-rock.de/en/veranstaltungen/?long_events=1&ajaxCalendar=1&mo=1&yr=2066"
+    ],
+    "discovered_at": "2026-10-18T08:50:39.525189+00:00",
+    "search_query": "darkwave post-punk deathrock events 2026 Europe",
+    "search_snippet": "October 2026: Indie Ü30 & Gothic / Post Punk Special in Braunschweig Stereowerk, Braunscherig Tuesday, 27.10.2026. Post Punk Special in Braunschweig Saturday, ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Events%2C+Prague%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Events%2C+Prague%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
   }
 ]

@@ -1,5 +1,125 @@
 [
   {
+    "timestamp": "2026-10-18T08:50:39.525189+00:00",
+    "type": "directory_imported",
+    "record_type": "bar",
+    "name": "Last Cathedral - Special Bars with a Twist- top10berlin.de",
+    "city": "Berlin",
+    "source": "https://top10berlin.de/en/cat/night-life-259/special-bars-twist-2165/last-cathedral-2464",
+    "score": 9
+  },
+  {
+    "timestamp": "2026-10-18T08:50:39.525189+00:00",
+    "type": "directory_imported",
+    "record_type": "bar",
+    "name": "Obsidian Alternative Bar",
+    "city": null,
+    "source": "https://obsidianbar.com",
+    "score": 5
+  },
+  {
+    "timestamp": "2026-10-18T08:50:39.525189+00:00",
+    "type": "directory_imported",
+    "record_type": "bar",
+    "name": "Tokyo, Japan Goth & metal bars! Alternative gothic ...",
+    "city": "New York",
+    "source": "https://lacarmina.com/blog/2026/06/tokyo-japan-goth-metal-rock-bars-guide-nanzuka-taken-guinea-pig",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-18T08:50:39.525189+00:00",
+    "type": "directory_imported",
+    "record_type": "club",
+    "name": "Events — Ebm",
+    "city": "Amsterdam",
+    "source": "https://arcane.city/events/tag/ebm",
+    "score": 9
+  },
+  {
+    "timestamp": "2026-10-18T08:50:39.525189+00:00",
+    "type": "directory_imported",
+    "record_type": "club",
+    "name": "EBM and UK Industrial Clubs",
+    "city": "London",
+    "source": "https://music.co.uk/uk-goth-industrial-darkwave/ebm-and-uk-industrial-clubs-18785.html",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-18T08:50:39.525189+00:00",
+    "type": "directory_imported",
+    "record_type": "club",
+    "name": "CYB3R South Bay presents CYB3R Club Night — a full- ...",
+    "city": null,
+    "source": "https://instagram.com/p/DW7XAiTEij1",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-18T08:50:39.525189+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Independent Record Shop | Vinyl, CDs, Bücher + Merch",
+    "city": "Berlin",
+    "source": "https://roughtrade.com/de",
+    "score": 9
+  },
+  {
+    "timestamp": "2026-10-18T08:50:39.525189+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Dark Fashion Clothing",
+    "city": null,
+    "source": "https://darkfashionclothing.com",
+    "score": 7
+  },
+  {
+    "timestamp": "2026-10-18T08:50:39.525189+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Gothic-Shop | Fashion & Deko online bestellen",
+    "city": "Malta",
+    "source": "https://horror-shop.com/collections/gothic-shop",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-18T08:50:39.525189+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Gothic Kleidung – Outfits, Styles & Brands",
+    "city": "Malta",
+    "source": "https://impericon.com/de/pages/gothic",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-18T08:50:39.525189+00:00",
+    "type": "candidate_web_search",
+    "name": "Events",
+    "city": "Prague",
+    "source": "https://www.death-rock.de/en/veranstaltungen/?long_events=1&ajaxCalendar=1&mo=1&yr=2066",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-10-18T08:50:39.525189+00:00",
+    "type": "source_error",
+    "source": "https://www.plage-noire.de/",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "timestamp": "2026-10-18T08:50:39.525189+00:00",
+    "type": "candidate",
+    "name": "Kaelan Mikla @ Cold Hearted Festival",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-10-18T08:50:39.525189+00:00",
+    "type": "candidate",
+    "name": "Ash Code @ Cold Hearted Festival",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 8
+  },
+  {
     "timestamp": "2026-10-17T15:48:54.388581+00:00",
     "type": "directory_imported",
     "record_type": "shop",
