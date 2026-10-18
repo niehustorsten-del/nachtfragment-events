@@ -1,0 +1,20 @@
+{
+  "updated_at": null,
+  "count": 1,
+  "candidates": [
+    {
+      "id": "example-id",
+      "artist": "Beispielband",
+      "date": "2027-03-14",
+      "title": "Beispielband live – Konzertankündigung",
+      "url": "https://example.org/event",
+      "snippet": "Beispiel für einen zu prüfenden Suchtreffer.",
+      "venue": null,
+      "city": null,
+      "score": 7,
+      "status": "needs_review",
+      "first_seen": null,
+      "last_seen": null
+    }
+  ]
+}
