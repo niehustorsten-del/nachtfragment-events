@@ -3,7 +3,7 @@
   "file": "nachtfragment-magazine.json",
   "title": "Gothic, Darkwave, EBM, Industrial & Post-Punk Magazine weltweit",
   "description": "Verzeichnis von Online-Magazinen, Webzines, Printmagazinen, Zines und historischen Publikationen aus der dunklen Musik- und Subkultur. Aktive und historische Medien werden getrennt gekennzeichnet.",
-  "updated": "2026-10-16",
+  "updated": "2026-10-18",
   "status_legend": {
     "aktiv": "Aktuell aktiv bzw. regelmäßig auffindbar",
     "projektbasiert": "Unregelmäßige oder projektbezogene Veröffentlichung",
@@ -1175,6 +1175,23 @@
       ],
       "website": "https://chaindlk.com/reviews/category/8",
       "verification": "Automatisch geprüft: Website erreichbar und thematisch passend; Aktivität anhand sichtbarer Datumsangaben bewertet."
+    },
+    {
+      "name": "Discipline Mag | Industrial Post-Punk Experimental News ...",
+      "country": "International",
+      "language": "Englisch",
+      "format": [
+        "online"
+      ],
+      "status": "aktiv",
+      "focus": [
+        "Post-Punk",
+        "Gothic",
+        "Industrial",
+        "Darkwave"
+      ],
+      "website": "https://disciplinemag.com",
+      "verification": "Automatisch geprüft: Website erreichbar und thematisch passend; Aktivität anhand sichtbarer Datumsangaben bewertet."
     }
   ],
   "recommended_filters": [
@@ -1184,5 +1201,5 @@
     "Status",
     "Genre"
   ],
-  "editorial_note": "Lebende Nachtfragment-Datenbank. Internationale Auswahl aus Online-Magazinen, Printmedien, Webzines und Zines. 'Archiv / unklar' kennzeichnet Angebote, deren aktuelle Veröffentlichungsaktivität nicht eindeutig belegt ist. Neue Einträge werden nach offizieller Website und thematischer Relevanz ergänzt.\n\nErweiterung 15.10.2026: Chain D.L.K. und Elettronica Concreta wurden anhand aktueller Inhalte auf den jeweiligen Websites ergänzt.\n\nErweiterung 15.10.2026: Medienkonverter wurde aufgrund aktueller Veröffentlichungen ergänzt. Namensduplikate wurden bereinigt. Runde 3 ergänzt drei aktuell aktive Musikmedien; Aktivität anhand jüngster veröffentlichter Beiträge auf den offiziellen Websites geprüft. Automatic discovery added 11 reachable, relevant online media on 2026-10-16; uncertain hits are logged separately."
+  "editorial_note": "Lebende Nachtfragment-Datenbank. Internationale Auswahl aus Online-Magazinen, Printmedien, Webzines und Zines. 'Archiv / unklar' kennzeichnet Angebote, deren aktuelle Veröffentlichungsaktivität nicht eindeutig belegt ist. Neue Einträge werden nach offizieller Website und thematischer Relevanz ergänzt.\n\nErweiterung 15.10.2026: Chain D.L.K. und Elettronica Concreta wurden anhand aktueller Inhalte auf den jeweiligen Websites ergänzt.\n\nErweiterung 15.10.2026: Medienkonverter wurde aufgrund aktueller Veröffentlichungen ergänzt. Namensduplikate wurden bereinigt. Runde 3 ergänzt drei aktuell aktive Musikmedien; Aktivität anhand jüngster veröffentlichter Beiträge auf den offiziellen Websites geprüft. Automatic discovery added 11 reachable, relevant online media on 2026-10-16; uncertain hits are logged separately. Automatic discovery added 1 reachable, relevant online media on 2026-10-18; uncertain hits are logged separately."
 }

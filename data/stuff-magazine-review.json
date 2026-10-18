@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-18",
   "description": "Unsichere Treffer, die nicht automatisch veröffentlicht wurden.",
   "candidates": [
     {
@@ -106,6 +106,83 @@
       "url": "https://askandembla.net/fr-fr/collections/gothic-jewelry",
       "query": "créateur bijoux gothiques boutique indépendante France officiel",
       "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "John Hardy® Official Site - Artisan Handcrafted Jewelry Since ...",
+      "url": "https://johnhardy.com",
+      "query": "Gothic Schmuck Designer handmade Österreich official shop",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "Part-Time Mandarin Teacher: Family Leave Replacement ...",
+      "url": "https://careers.nais.org/jobs/22668106/part-time-mandarin-teacher-family-leave-replacement-spring-semester-2027",
+      "query": "Denmark independent darkwave synth post-punk record label official",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "magazine",
+      "name": "muSiK",
+      "url": "https://music.apple.com/us/artist/musik/1661699808",
+      "query": "deutsch Gothic Darkwave EBM Industrial Musik Webzine Magazin Interviews Rezensionen",
+      "reason": "Site reachable, but music/editorial relevance is not strong enough for automatic publication."
+    },
+    {
+      "type": "magazine",
+      "name": "An Die Musik – An Die Musik Live",
+      "url": "https://andiemusiklive.com",
+      "query": "deutsch Gothic Darkwave EBM Industrial Musik Webzine Magazin Interviews Rezensionen",
+      "reason": "Site reachable, but music/editorial relevance is not strong enough for automatic publication."
+    },
+    {
+      "type": "magazine",
+      "name": "Music: Starbucks Coffee Company",
+      "url": "https://starbucks.com/store-experience/music",
+      "query": "deutsch Gothic Darkwave EBM Industrial Musik Webzine Magazin Interviews Rezensionen",
+      "reason": "Site reachable, but music/editorial relevance is not strong enough for automatic publication."
+    },
+    {
+      "type": "magazine",
+      "name": "Home - Tafelmusik : Tafelmusik",
+      "url": "https://tafelmusik.org",
+      "query": "deutsch Gothic Darkwave EBM Industrial Musik Webzine Magazin Interviews Rezensionen",
+      "reason": "Site reachable, but music/editorial relevance is not strong enough for automatic publication."
+    },
+    {
+      "type": "magazine",
+      "name": "The Gothic Theatre",
+      "url": "https://gothictheatre.com",
+      "query": "independent international darkwave gothic post-punk webzine reviews interviews",
+      "reason": "Site reachable, but music/editorial relevance is not strong enough for automatic publication."
+    },
+    {
+      "type": "magazine",
+      "name": "Gothic 1 Remake - Official Game Site",
+      "url": "https://gothic.thqnordic.com",
+      "query": "independent international darkwave gothic post-punk webzine reviews interviews",
+      "reason": "Site reachable, but music/editorial relevance is not strong enough for automatic publication."
+    },
+    {
+      "type": "magazine",
+      "name": "GOTHIC Definition & Meaning",
+      "url": "https://merriam-webster.com/dictionary/Gothic",
+      "query": "independent international darkwave gothic post-punk webzine reviews interviews",
+      "reason": "Site reachable, but music/editorial relevance is not strong enough for automatic publication."
+    },
+    {
+      "type": "magazine",
+      "name": "Fiction Genre: Gothic",
+      "url": "https://manuscriptwishlist.com/fiction-genre/horror/gothic",
+      "query": "independent international darkwave gothic post-punk webzine reviews interviews",
+      "reason": "Site reachable, but music/editorial relevance is not strong enough for automatic publication."
+    },
+    {
+      "type": "magazine",
+      "name": "How to Outline a Gothic Novel",
+      "url": "https://janefriedman.com/how-to-outline-a-gothic-novel",
+      "query": "independent international darkwave gothic post-punk webzine reviews interviews",
+      "reason": "Site reachable, but music/editorial relevance is not strong enough for automatic publication."
     }
   ]
 }

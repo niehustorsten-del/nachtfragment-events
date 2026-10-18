@@ -1,13 +1,13 @@
 {
   "title": "Nachtfragment Stuff – Worldwide Dark Culture Directory",
-  "version": "2026-10-15-round4-dark-art-tattoo-labels-auto-2026-10-16",
-  "updated": "2026-10-16",
+  "version": "2026-10-15-round4-dark-art-tattoo-labels-auto-2026-10-16-auto-2026-10-18",
+  "updated": "2026-10-18",
   "scope": "Worldwide dark culture directory: Alternative Fashion, Gothic Shops, Schmuck & Accessoires, Tattoo & Body Art, Ambiente / Home & Living, Clubs & Nightlife, Szene-Verzeichnisse, Labels / Music, Artists / Merch.",
   "excluded": [
     "📰 Magazine & Online-Medien",
     "🎪 Festivals & Events"
   ],
-  "verification_note": "Round 4: additions selected from official websites; duplicate names and URLs checked against the current dataset. Website activity and styling should be periodically rechecked. Weekly automatic discovery added 28 reachable, category-matched entries on 2026-10-16; uncertain hits are logged separately.",
+  "verification_note": "Round 4: additions selected from official websites; duplicate names and URLs checked against the current dataset. Website activity and styling should be periodically rechecked. Weekly automatic discovery added 28 reachable, category-matched entries on 2026-10-16; uncertain hits are logged separately. Weekly automatic discovery added 20 reachable, category-matched entries on 2026-10-18; uncertain hits are logged separately.",
   "entries": [
     {
       "name": "Beserk",
@@ -3186,6 +3186,286 @@
         "Post-Punk"
       ],
       "url": "https://post-punk.com/tag/mass-media-records"
+    },
+    {
+      "name": "Disturbia: Alternative, Gothic & Dark Romantic Clothing ...",
+      "category": [
+        "Alternative Fashion"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Alternative Fashion",
+        "Punk"
+      ],
+      "url": "https://disturbia.us"
+    },
+    {
+      "name": "Fantasmagoria - Gothic Fashion Shop",
+      "category": [
+        "Alternative Fashion"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Alternative Fashion",
+        "Punk"
+      ],
+      "url": "https://fantasmagoria.shop"
+    },
+    {
+      "name": "Goth & Alternative Clothing UK | Kate's Gothic Fashion Since ...",
+      "category": [
+        "Alternative Fashion"
+      ],
+      "country": "Germany",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Alternative Fashion",
+        "Punk"
+      ],
+      "url": "https://katesclothing.co.uk"
+    },
+    {
+      "name": "Gothic clothing, shoes, boots, jewellery & accessories",
+      "category": [
+        "Alternative Fashion"
+      ],
+      "country": "Germany",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Alternative Fashion",
+        "Punk"
+      ],
+      "url": "https://darkages.de/en"
+    },
+    {
+      "name": "Women's Jewellery | Disturbia - Disturbia",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "Germany",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Schmuck",
+        "Handmade"
+      ],
+      "url": "https://disturbia.de/en/collections/womens-jewellery"
+    },
+    {
+      "name": "Alchemy of England",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Schmuck",
+        "Handmade"
+      ],
+      "url": "https://alchemyofengland.com"
+    },
+    {
+      "name": "Handmade Gothic Jewelry in Silver & Gold | Godly Natures ...",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "Germany",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Schmuck",
+        "Handmade"
+      ],
+      "url": "https://godlynaturesjewelry.com"
+    },
+    {
+      "name": "Bonearrow: Handmade alternative jewellery",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "Germany",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Schmuck",
+        "Handmade"
+      ],
+      "url": "https://bonearrow.com"
+    },
+    {
+      "name": "Apocalypse Tattoo Studio - Berlin Friedrichshain",
+      "category": [
+        "Tattoo & Body Art"
+      ],
+      "country": "Germany",
+      "status": "verified",
+      "tags": [
+        "Blackwork",
+        "Dark Art",
+        "Tattoo"
+      ],
+      "url": "https://apocalypsetattoo.com"
+    },
+    {
+      "name": "Heavy Blackwork Tattoos – OMEN Tattoo Berlin",
+      "category": [
+        "Tattoo & Body Art"
+      ],
+      "country": "Germany",
+      "status": "verified",
+      "tags": [
+        "Blackwork",
+        "Dark Art",
+        "Tattoo"
+      ],
+      "url": "https://omentattoo.de/en/tattoo-styles/heavy-blackwork"
+    },
+    {
+      "name": "Marco Gruschwitz, from creative chaos to Surreal Blackwork",
+      "category": [
+        "Tattoo & Body Art"
+      ],
+      "country": "Germany",
+      "status": "verified",
+      "tags": [
+        "Blackwork",
+        "Dark Art",
+        "Tattoo"
+      ],
+      "url": "https://tattoolife.com/marco-gruschwitz-from-creative-chaos-to-surreal-blackwork"
+    },
+    {
+      "name": "Dark Art Tattoo Düsseldorf | Tattoo Shop",
+      "category": [
+        "Tattoo & Body Art"
+      ],
+      "country": "Germany",
+      "status": "verified",
+      "tags": [
+        "Blackwork",
+        "Dark Art",
+        "Tattoo"
+      ],
+      "url": "https://tattooswizard.com/artists/darkarttattoodusseldorf"
+    },
+    {
+      "name": "Gothic Schmuck online bestellen | EMP Merch Shop",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "Austria",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Schmuck",
+        "Handmade"
+      ],
+      "url": "https://emp-online.ch/themen/gothic/schmuck"
+    },
+    {
+      "name": "Find Blackwork tattoos in Vienna, Austria - INKsearch",
+      "category": [
+        "Tattoo & Body Art"
+      ],
+      "country": "Austria",
+      "status": "verified",
+      "tags": [
+        "Blackwork",
+        "Dark Art",
+        "Tattoo"
+      ],
+      "url": "https://inksearch.co/search/blackwork/vienna-at"
+    },
+    {
+      "name": "Blackwork Archives",
+      "category": [
+        "Tattoo & Body Art"
+      ],
+      "country": "Austria",
+      "status": "verified",
+      "tags": [
+        "Blackwork",
+        "Dark Art",
+        "Tattoo"
+      ],
+      "url": "https://blackhandsocialclub.com/tattoos/blackwork"
+    },
+    {
+      "name": "Ro Rox Alternative Clothing Store",
+      "category": [
+        "Gothic Shops"
+      ],
+      "country": "Switzerland",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Alternative",
+        "Mode"
+      ],
+      "url": "https://ro-rox.com"
+    },
+    {
+      "name": "Alternative, Gothic & Dark Romantic Clothing ... - Disturbia",
+      "category": [
+        "Gothic Shops"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Alternative",
+        "Mode"
+      ],
+      "url": "https://disturbia.de/en"
+    },
+    {
+      "name": "Cold War Night Life's Guide to Darkwave",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Post-Punk",
+        "Coldwave",
+        "Darkwave"
+      ],
+      "url": "https://coldwarnightlife.com/cold-war-night-lifes-guide-to-darkwave"
+    },
+    {
+      "name": "Les bijoux made in France",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "France",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Bijoux",
+        "Alternative"
+      ],
+      "url": "https://marques-de-france.fr/bijoux-made-in-france"
+    },
+    {
+      "name": "Bijoux Gothiques - Gothyka",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Bijoux",
+        "Alternative"
+      ],
+      "url": "https://gothyka.com/bijoux-gothiques-sur-la-boutique-gothique-romantique-gothyka-_r_123_va_1.html"
     }
   ]
 }
