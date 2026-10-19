@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T17:17:00+00:00",
+  "updated_at": "2026-10-19T17:44:08+00:00",
   "count": 3,
   "candidates": [
     {
@@ -14,7 +14,7 @@
       "score": 14,
       "status": "needs_review",
       "first_seen": "2026-10-19T16:55:44+00:00",
-      "last_seen": "2026-10-19T17:16:54+00:00",
+      "last_seen": "2026-10-19T17:43:59+00:00",
       "source_type": "Google News RSS",
       "review_required": true,
       "candidate_type": "dated_event_search_result",
@@ -33,7 +33,7 @@
       "score": 14,
       "status": "needs_review",
       "first_seen": "2026-10-19T16:55:44+00:00",
-      "last_seen": "2026-10-19T17:16:54+00:00",
+      "last_seen": "2026-10-19T17:43:59+00:00",
       "source_type": "Google News RSS",
       "review_required": true,
       "candidate_type": "dated_event_search_result",
