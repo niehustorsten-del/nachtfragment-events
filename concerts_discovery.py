@@ -3,7 +3,7 @@
 Candidates require a structured Schema.org Event with a matching artist and future startDate.
 Never publishes automatically to concerts.json.
 """
-import hashlib, html, json, os, re, sys, time
+import hashlib, html, json, os, re, sys, time, urllib.parse, xml.etree.ElementTree as ET
 from datetime import date, datetime, timezone
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -21,6 +21,9 @@ MAX_ARTISTS = max(0, int(os.getenv('CONCERTS_MAX_ARTISTS', '65') or '65'))
 MAX_PAGES = max(1, int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '120') or '120'))
 PAUSE = max(0.0, float(os.getenv('CONCERTS_QUERY_PAUSE', '0.7') or '0.7'))
 MAX_BYTES = 1_500_000
+RSS_PER_ARTIST = max(1, int(os.getenv('CONCERTS_RSS_RESULTS', '8') or '8'))
+RSS_ENABLED = os.getenv('CONCERTS_RSS_ENABLED', '1').strip().lower() not in {'0','false','no'}
+EVENT_WORDS = re.compile(r'\b(live|concert|gig|show|tour|festival|konzert|auftritt|termine|tourdates|tour dates|tickets|supporting)\b', re.I)
 TRACKING = {'fbclid', 'gclid', 'mc_cid', 'mc_eid', 'ref', 'referrer'}
 SKIP_NAME = re.compile(r'newcomer|linkliste|weblinks|rezension|review|top\s*50|zwischen darkwave|playlist|porträt|portrait', re.I)
 
@@ -166,6 +169,81 @@ def discover_event_links(raw, base_url, artist_name):
             links.append({'url':url,'name':artist_name+' – entdeckte Terminseite','artists':[artist_name],'kind':'discovered_artist_link'})
     return links
 
+def fetch_text(url, accept='application/rss+xml, application/xml, text/xml, text/html;q=0.8, */*;q=0.5'):
+    req=Request(url, headers={'User-Agent':UA,'Accept':accept})
+    try:
+        with urlopen(req, timeout=18) as r:
+            return {'ok':True,'url':r.geturl(),'raw':r.read(MAX_BYTES).decode('utf-8','replace')}
+    except Exception as e:
+        return {'ok':False,'url':url,'reason':type(e).__name__+':'+str(e)[:100]}
+
+def parse_rss_date(text):
+    """Extract an explicit event date from result text; never use RSS publication date as gig date."""
+    text=html.unescape(re.sub(r'<[^>]+>',' ',str(text or '')))
+    candidates=[]
+    patterns=[
+        (r'\b(20\d{2})[-/](\d{1,2})[-/](\d{1,2})\b','ymd'),
+        (r'\b(\d{1,2})[./-](\d{1,2})[./-](20\d{2})\b','dmy'),
+    ]
+    for pattern,kind in patterns:
+        for m in re.finditer(pattern,text):
+            try:
+                parts=list(map(int,m.groups()))
+                y,mo,d=parts if kind=='ymd' else (parts[2],parts[1],parts[0])
+                dt=date(y,mo,d)
+                if TODAY <= dt <= date(TODAY.year+3,12,31): candidates.append((m.start(),dt.isoformat()))
+            except ValueError: pass
+    # Month-name dates, e.g. Oct 24, 2026 / 24 October 2026.
+    months={'jan':1,'january':1,'feb':2,'february':2,'mar':3,'march':3,'apr':4,'april':4,'may':5,'jun':6,'june':6,'jul':7,'july':7,'aug':8,'august':8,'sep':9,'sept':9,'september':9,'oct':10,'october':10,'nov':11,'november':11,'dec':12,'december':12}
+    for m in re.finditer(r'\b([A-Za-z]{3,9})\.?\s+(\d{1,2})(?:st|nd|rd|th)?[,]?\s+(20\d{2})\b',text):
+        mo=months.get(m.group(1).lower())
+        if mo:
+            try:
+                dt=date(int(m.group(3)),mo,int(m.group(2)))
+                if TODAY <= dt <= date(TODAY.year+3,12,31): candidates.append((m.start(),dt.isoformat()))
+            except ValueError: pass
+    for m in re.finditer(r'\b(\d{1,2})\s+([A-Za-z]{3,9})\.?[,]?\s+(20\d{2})\b',text):
+        mo=months.get(m.group(2).lower())
+        if mo:
+            try:
+                dt=date(int(m.group(3)),mo,int(m.group(1)))
+                if TODAY <= dt <= date(TODAY.year+3,12,31): candidates.append((m.start(),dt.isoformat()))
+            except ValueError: pass
+    return min(candidates)[1] if candidates else None
+
+def google_news_rss_url(query):
+    q=urllib.parse.quote(query)
+    return f'https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en'
+
+def rss_items(raw):
+    try: root=ET.fromstring(raw)
+    except ET.ParseError: return []
+    out=[]
+    for item in root.findall('.//item'):
+        title=(item.findtext('title') or '').strip()
+        link=(item.findtext('link') or '').strip()
+        desc=item.findtext('description') or ''
+        if title and link: out.append({'title':html.unescape(title),'url':canonical_url(link),'description':html.unescape(desc)})
+    return out
+
+def search_artist_rss(artist):
+    """Use public Google News RSS, no key. Two narrow queries per act."""
+    if not RSS_ENABLED: return []
+    name=artist['name']
+    queries=[f'"{name}" (tour OR concert OR gig OR live dates) after:{TODAY.isoformat()}',
+             f'"{name}" (Konzert OR Tour OR live OR festival) after:{TODAY.isoformat()}']
+    found=[]; seen=set()
+    for query in queries:
+        result=fetch_text(google_news_rss_url(query), 'application/rss+xml, application/xml, text/xml, */*;q=0.5')
+        if result['ok']:
+            for item in rss_items(result['raw']):
+                key=item['url'] or item['title']
+                if key not in seen:
+                    item['query']=query; found.append(item); seen.add(key)
+        time.sleep(min(PAUSE,0.4))
+    return found[:RSS_PER_ARTIST]
+
+
 def main():
     artists=load_artists()
     if MAX_ARTISTS: artists=artists[:MAX_ARTISTS]
@@ -178,7 +256,7 @@ def main():
     for p in pages:
         if p['url'] not in seen: unique.append(p); seen.add(p['url'])
     pages=unique[:MAX_PAGES]
-    print(f'Konfiguration: Künstler={len(artists)} öffentliche_Zusatzquellen={len(sources)} Seiten={len(pages)} RSS=False API_Key=False')
+    print(f'Konfiguration: Künstler={len(artists)} öffentliche_Zusatzquellen={len(sources)} Seiten={len(pages)} RSS={RSS_ENABLED} API_Key=False')
     old=load_json(CANDIDATES_FILE, {'candidates':[]})
     old_rows=old.get('candidates',[]) if isinstance(old,dict) else old if isinstance(old,list) else []
     status_obj=load_json(STATUS_FILE, {'statuses':{}})
@@ -187,7 +265,7 @@ def main():
     # Remove known false positives created by the old RSS search; preserve all other existing candidates.
     bad_ids={'c8ba5648f1de96fa','ae2fc94b7c61ac8d','413541aaf8af59fd'}
     by_id={r['id']:r for r in old_rows if isinstance(r,dict) and r.get('id') and r.get('id') not in bad_ids}
-    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0}
+    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_items_seen':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0}
     page_index=0
     while page_index < len(pages) and page_index < MAX_PAGES:
         p=pages[page_index]
@@ -230,6 +308,41 @@ def main():
             stats['accepted']+=1
         print(f"  OK {n}/{len(pages)} {p['url']} | Schema.org-Events: {len(found)}")
         if PAUSE: time.sleep(PAUSE)
+    # Search public news RSS for event announcements. A result is only kept when the
+    # artist is explicitly named, the headline/snippet signals a live event, and an
+    # explicit future event date is present. RSS publication date is never treated as gig date.
+    if RSS_ENABLED:
+        for ai, artist in enumerate(artists, 1):
+            items=search_artist_rss(artist)
+            stats['rss_queries'] += 2
+            stats['rss_items_seen'] += len(items)
+            for item in items:
+                combined=item['title']+' '+re.sub(r'(?s)<[^>]+>',' ',item['description'])
+                if not mentioned(artist['name'], combined):
+                    stats['rejected_no_artist_match'] += 1; continue
+                if not EVENT_WORDS.search(combined):
+                    stats['rss_rejected_no_event_word'] += 1; continue
+                dt=parse_rss_date(combined)
+                if not dt:
+                    stats['rss_rejected_no_date'] += 1; continue
+                url=item['url']
+                # Google News RSS links redirect; follow them when possible to store the original source.
+                if url and 'news.google.com' in urlsplit(url).netloc.lower():
+                    resolved=fetch_text(url)
+                    if resolved['ok']:
+                        url=canonical_url(resolved['url']) or url
+                title=item['title']
+                cid=make_id(artist['name'],url,dt,title); prev=by_id.get(cid,{}); stamp=now_iso()
+                by_id[cid]={**prev,'id':cid,'artist':artist['name'],'date':dt,'title':title,
+                    'url':url,'snippet':re.sub(r'\s+',' ',re.sub(r'(?s)<[^>]+>',' ',item['description'])).strip()[:500],
+                    'venue':prev.get('venue'),'city':prev.get('city'),'score':15,
+                    'status':statuses.get(cid,prev.get('status','needs_review')),
+                    'first_seen':prev.get('first_seen') or stamp,'last_seen':stamp,
+                    'source_type':'public_google_news_rss','review_required':True,
+                    'candidate_type':'rss_event_announcement','page_evidence_checked':False,
+                    'event_startdate_evidence':True,'search_query':item.get('query','')}
+                stats['accepted'] += 1
+            if ai % 10 == 0: print(f'  RSS-Suche: {ai}/{len(artists)} Künstler geprüft')
     stamp=now_iso(); rows=sorted(by_id.values(),key=lambda x:(x.get('date') or '9999',str(x.get('artist','')).casefold()))
     save_json(CANDIDATES_FILE,{'updated_at':stamp,'count':len(rows),'candidates':rows})
     save_json(STATUS_FILE,{'updated_at':stamp,'statuses':statuses})
