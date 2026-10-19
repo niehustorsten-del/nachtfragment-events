@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-19T16:55:50+00:00",
-  "count": 2,
+  "updated_at": "2026-10-19T17:02:39+00:00",
+  "count": 3,
   "candidates": [
     {
       "id": "c8ba5648f1de96fa",
@@ -14,10 +14,12 @@
       "score": 14,
       "status": "needs_review",
       "first_seen": "2026-10-19T16:55:44+00:00",
-      "last_seen": "2026-10-19T16:55:44+00:00",
+      "last_seen": "2026-10-19T17:02:34+00:00",
       "source_type": "Google News RSS",
       "review_required": true,
-      "candidate_type": "dated_event_search_result"
+      "candidate_type": "dated_event_search_result",
+      "page_evidence_checked": false,
+      "event_startdate_evidence": false
     },
     {
       "id": "ae2fc94b7c61ac8d",
@@ -31,8 +33,29 @@
       "score": 14,
       "status": "needs_review",
       "first_seen": "2026-10-19T16:55:44+00:00",
-      "last_seen": "2026-10-19T16:55:44+00:00",
+      "last_seen": "2026-10-19T17:02:34+00:00",
       "source_type": "Google News RSS",
+      "review_required": true,
+      "candidate_type": "dated_event_search_result",
+      "page_evidence_checked": false,
+      "event_startdate_evidence": false
+    },
+    {
+      "id": "413541aaf8af59fd",
+      "artist": "Customs",
+      "date": "2026-10-19",
+      "title": "U.S. Customs Forms | USPS",
+      "url": "https://www.usps.com/international/customs-forms.htm",
+      "snippet": "Need a U.S. Customs Form for an international delivery? Use Click-N-Ship or USPS customs forms tool guide to show you which customs forms you need for which country.",
+      "page_evidence_checked": false,
+      "event_startdate_evidence": false,
+      "venue": null,
+      "city": null,
+      "score": 13,
+      "status": "needs_review",
+      "first_seen": "2026-10-19T17:02:34+00:00",
+      "last_seen": "2026-10-19T17:02:34+00:00",
+      "source_type": "Bing RSS",
       "review_required": true,
       "candidate_type": "dated_event_search_result"
     }
