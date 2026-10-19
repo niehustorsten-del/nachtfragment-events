@@ -9,6 +9,8 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 from urllib.parse import urlencode, urlsplit, urlunsplit, parse_qsl, urlencode as enc_qs
 from urllib.request import Request, urlopen
+from urllib.error import HTTPError, URLError
+from html.parser import HTMLParser
 
 ROOT = Path(__file__).resolve().parent
 ARTISTS = ROOT / 'data/artists.json'
@@ -16,9 +18,11 @@ CANDIDATES = ROOT / 'data/concert_candidates.json'
 STATUS = ROOT / 'data/concerts_status.json'
 KEY = os.getenv('SERPAPI_KEY', '').strip()
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Nachtfragment-Concert-Discovery/3.0 (+https://nachtfragment.de)'
-MAX_ARTISTS = int(os.getenv('CONCERTS_MAX_ARTISTS', '0') or '0') # 0 = all
-PAUSE = float(os.getenv('CONCERTS_QUERY_PAUSE', '0.35') or '0.35')
+UA = 'Nachtfragment-Concert-Discovery/3.1 (+https://nachtfragment.de)'
+MAX_ARTISTS = int(os.getenv('CONCERTS_MAX_ARTISTS', '10') or '10') # free-tier safe default; 0 = all
+PAUSE = float(os.getenv('CONCERTS_QUERY_PAUSE', '1.5') or '1.5')
+STATE = ROOT / 'data/concert_discovery_state.json'
+SERPAPI_BLOCKED = False
 
 MONTHS = {name.lower(): i for i, names in enumerate([
     ('january','jan'),('february','feb'),('march','mar'),('april','apr'),('may',),
@@ -83,16 +87,57 @@ def canonical_url(url):
 
 
 def search_serpapi(query):
+    global SERPAPI_BLOCKED
+    if SERPAPI_BLOCKED:
+        raise RuntimeError('SerpApi für diesen Lauf pausiert (HTTP 429)')
     params = urlencode({'engine':'google', 'q':query, 'api_key':KEY, 'num':10, 'hl':'en'})
     req = Request('https://serpapi.com/search.json?' + params, headers={'User-Agent':UA})
-    with urlopen(req, timeout=30) as resp:
-        data = json.loads(resp.read().decode('utf-8'))
+    try:
+        with urlopen(req, timeout=20) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+    except HTTPError as exc:
+        if exc.code == 429:
+            SERPAPI_BLOCKED = True
+            raise RuntimeError('HTTP 429: SerpApi-Kontingent/Rate-Limit erreicht; SerpApi wird für diesen Lauf pausiert') from exc
+        raise
     if data.get('error'):
         raise RuntimeError(str(data['error']))
     return [{'title':r.get('title',''), 'link':r.get('link',''),
              'snippet':r.get('snippet',''), 'date_text':r.get('date','')}
             for r in data.get('organic_results', [])]
 
+
+
+class _DDGParser(HTMLParser):
+    """Small parser for DuckDuckGo HTML results; best-effort fallback, not guaranteed."""
+    def __init__(self):
+        super().__init__(); self.results=[]; self._link=None; self._title=[]; self._snippet=[]; self._in_title=False; self._in_snippet=False
+    def handle_starttag(self, tag, attrs):
+        a=dict(attrs)
+        cls=a.get('class','')
+        if tag=='a' and ('result__a' in cls):
+            self._link=a.get('href',''); self._title=[]; self._in_title=True
+        elif 'result__snippet' in cls:
+            self._snippet=[]; self._in_snippet=True
+    def handle_endtag(self, tag):
+        if tag=='a' and self._in_title:
+            title=''.join(self._title).strip(); self._in_title=False
+            if title and self._link: self.results.append({'title':title,'link':self._link,'snippet':'','date_text':''})
+        if self._in_snippet and tag in ('a','div','td'):
+            snippet=''.join(self._snippet).strip(); self._in_snippet=False
+            if snippet and self.results and not self.results[-1].get('snippet'): self.results[-1]['snippet']=snippet
+    def handle_data(self, data):
+        if self._in_title: self._title.append(data)
+        if self._in_snippet: self._snippet.append(data)
+
+def search_fallback(query):
+    """Try public DuckDuckGo HTML results without consuming SerpApi quota."""
+    url='https://html.duckduckgo.com/html/?'+urlencode({'q':query})
+    req=Request(url, headers={'User-Agent':'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/3.1)'})
+    with urlopen(req, timeout=20) as resp:
+        page=resp.read().decode('utf-8','replace')
+    parser=_DDGParser(); parser.feed(page)
+    return parser.results[:8]
 
 def normalized(s):
     s = html.unescape(str(s or '')).casefold()
@@ -208,8 +253,15 @@ def city_hint(text):
 def main():
     artist_data = load_json(ARTISTS, {'artists': []})
     artists = artist_names(artist_data)
-    if MAX_ARTISTS > 0: artists = artists[:MAX_ARTISTS]
-    print(f'Konfiguration: artists_datei={ARTISTS} vorhanden={ARTISTS.exists()} artists={len(artists)} key_vorhanden={bool(KEY)} today={TODAY}')
+    # Skip page-heading-like entries that slipped into the artist source.
+    artists = [a for a in artists if not re.search(r'newcomer|linkliste|porträt|portrait|rezension|review|top 50|zwischen darkwave', a, re.I)]
+    total_artists = len(artists)
+    state = load_json(STATE, {'offset': 0})
+    offset = int(state.get('offset', 0) or 0) % max(total_artists, 1)
+    if MAX_ARTISTS > 0 and total_artists > MAX_ARTISTS:
+        artists = (artists[offset:] + artists[:offset])[:MAX_ARTISTS]
+        save_json(STATE, {'offset': (offset + MAX_ARTISTS) % total_artists, 'updated_at': now_iso(), 'last_batch': artists})
+    print(f'Konfiguration: artists_datei={ARTISTS} vorhanden={ARTISTS.exists()} artists_batch={len(artists)} artists_total={total_artists} offset={offset} key_vorhanden={bool(KEY)} today={TODAY}')
     if not artists:
         print('FEHLER: Keine Künstler in data/artists.json gefunden. Erwartet wird eine Liste unter artists, bands, acts oder items.', file=sys.stderr)
     old = load_json(CANDIDATES, {'candidates': []})
@@ -219,56 +271,61 @@ def main():
     if not isinstance(statuses, dict): statuses = {}
     by_id = {row['id']: row for row in old_rows if isinstance(row, dict) and row.get('id')}
     # Existing IDs/statuses are preserved even if a search fails or a candidate is no longer returned.
+    totals = {'queries': 0, 'search_results': 0, 'accepted': 0, 'no_date': 0, 'low_relevance': 0, 'no_event_word': 0, 'serpapi_errors': 0, 'fallback_results': 0}
+    for i, artist in enumerate(artists, 1):
+        if len(artist) < 2 or NEGATIVE.search(artist):
+            continue
+        # One focused query per artist per run keeps free search usage low.
+        query = f'"{artist}" (concert OR live OR tour OR festival) upcoming'
+        totals['queries'] += 1
+        results = []
+        if KEY and not SERPAPI_BLOCKED:
+            try:
+                results = search_serpapi(query)
+                print(f'  SerpApi: {len(results)} Treffer | {artist}')
+            except Exception as exc:
+                totals['serpapi_errors'] += 1
+                print(f'SerpApi-Fehler für {artist!r}: {exc}', file=sys.stderr)
+        # When quota is exhausted (or no key exists), try a public search fallback.
+        if not results and (SERPAPI_BLOCKED or not KEY or totals['serpapi_errors'] > 0):
+            try:
+                results = search_fallback(query)
+                totals['fallback_results'] += len(results)
+                print(f'  Fallback-Suche: {len(results)} Treffer | {artist}')
+            except Exception as exc:
+                print(f'Fallback-Suche fehlgeschlagen für {artist!r}: {exc}', file=sys.stderr)
+        totals['search_results'] += len(results)
+        for result in results:
+            score = relevance(artist, result)
+            title = html.unescape(str(result.get('title') or '')).strip()
+            snippet = html.unescape(str(result.get('snippet') or '')).strip()
+            url = canonical_url(result.get('link') or '')
+            combined = ' '.join((title, snippet, str(result.get('date_text') or '')))
+            if score < 5:
+                totals['low_relevance'] += 1; continue
+            if not EVENT_WORDS.search(combined):
+                totals['no_event_word'] += 1; continue
+            dates = extract_dates(combined)
+            if not dates:
+                totals['no_date'] += 1; continue
+            event_date = dates[0]
+            cid = stable_id(artist, url, event_date)
+            prev = by_id.get(cid, {})
+            seen_at = now_iso()
+            by_id[cid] = {
+                **prev, 'id': cid, 'artist': artist, 'date': event_date,
+                'title': title, 'url': url, 'snippet': snippet,
+                'venue': prev.get('venue'), 'city': prev.get('city') or city_hint(combined),
+                'score': score, 'status': statuses.get(cid, prev.get('status', 'needs_review')),
+                'first_seen': prev.get('first_seen') or seen_at, 'last_seen': seen_at,
+                'source_type': 'search_result', 'review_required': True,
+            }
+            totals['accepted'] += 1
+        print(f'[{i}/{len(artists)}] {artist}')
+        time.sleep(PAUSE)
     if not KEY:
-        print('SERPAPI_KEY fehlt: keine Suche ausgeführt; vorhandene Kandidaten bleiben erhalten.', file=sys.stderr)
-    else:
-        totals = {'queries': 0, 'search_results': 0, 'accepted': 0, 'no_date': 0, 'low_relevance': 0, 'no_event_word': 0}
-        for i, artist in enumerate(artists, 1):
-            if len(artist) < 2 or NEGATIVE.search(artist): continue
-            for query in queries_for(artist):
-                totals['queries'] += 1
-                try:
-                    results = search_serpapi(query)
-                    totals['search_results'] += len(results)
-                    print(f'  Suche {totals["queries"]}: {len(results)} Treffer | {query}')
-                except Exception as exc:
-                    print(f'Suche fehlgeschlagen für {artist!r}: {exc}', file=sys.stderr)
-                    continue
-                for result in results:
-                    score = relevance(artist, result)
-                    # A high score alone is not enough: require event evidence and a future date.
-                    title = html.unescape(str(result.get('title') or '')).strip()
-                    snippet = html.unescape(str(result.get('snippet') or '')).strip()
-                    url = canonical_url(result.get('link') or '')
-                    combined = ' '.join((title, snippet, str(result.get('date_text') or '')))
-                    if score < 5:
-                        totals['low_relevance'] += 1
-                        continue
-                    if not EVENT_WORDS.search(combined):
-                        totals['no_event_word'] += 1
-                        continue
-                    dates = extract_dates(combined)
-                    # Search-result snippets often list multiple dates; only keep the first plausible
-                    # date per result, otherwise one tour page can create many false event records.
-                    if not dates:
-                        totals['no_date'] += 1
-                        continue
-                    event_date = dates[0]
-                    cid = stable_id(artist, url, event_date)
-                    prev = by_id.get(cid, {})
-                    seen_at = now_iso()
-                    by_id[cid] = {
-                        **prev, 'id': cid, 'artist': artist, 'date': event_date,
-                        'title': title, 'url': url, 'snippet': snippet,
-                        'venue': prev.get('venue'), 'city': prev.get('city') or city_hint(combined),
-                        'score': score, 'status': statuses.get(cid, prev.get('status', 'needs_review')),
-                        'first_seen': prev.get('first_seen') or seen_at, 'last_seen': seen_at,
-                        'source_type': 'search_result', 'review_required': True,
-                    }
-                    totals['accepted'] += 1
-                time.sleep(PAUSE)
-            print(f'[{i}/{len(artists)}] {artist}')
-        print('Suchdiagnose:', json.dumps(totals, ensure_ascii=False))
+        print('Hinweis: SERPAPI_KEY fehlt; es wurde nur die öffentliche Fallback-Suche versucht.', file=sys.stderr)
+    print('Suchdiagnose:', json.dumps(totals, ensure_ascii=False))
     rows = sorted(by_id.values(), key=lambda r: (r.get('date') or '9999', str(r.get('artist','')).casefold(), -int(r.get('score') or 0)))
     stamp = now_iso()
     save_json(CANDIDATES, {'updated_at': stamp, 'count': len(rows), 'candidates': rows})
