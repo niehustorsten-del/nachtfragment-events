@@ -1,5 +1,40 @@
 {
-  "updated_at": "2026-10-19T16:48:00+00:00",
-  "count": 0,
-  "candidates": []
+  "updated_at": "2026-10-19T16:55:50+00:00",
+  "count": 2,
+  "candidates": [
+    {
+      "id": "c8ba5648f1de96fa",
+      "artist": "Customs",
+      "date": "2026-10-19",
+      "title": "Festival imports help Birgunj customs beat monthly target - The Kathmandu Post",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQM05JN2hpVlNmcEllRnl4UE9QVE5oa1kxY0FGcG9YWjF6YnhqZXd6TjEzTVBwNERIcGo0RUFtZzVjVi1wTW1TNjR0MWlCMHcxcjI5REM2NmVQMmRPLWxJMjZ2VVl6NV9WbnRJZmRXd3ZZLWZWamUzdEM0TWZhSUp2eVJvNVhKM3EwcVk0MDE5LXk1Tk94enNGZU5JMkkzZUZkSUE?oc=5",
+      "snippet": "Festival imports help Birgunj customs beat monthly target    The Kathmandu Post",
+      "venue": null,
+      "city": null,
+      "score": 14,
+      "status": "needs_review",
+      "first_seen": "2026-10-19T16:55:44+00:00",
+      "last_seen": "2026-10-19T16:55:44+00:00",
+      "source_type": "Google News RSS",
+      "review_required": true,
+      "candidate_type": "dated_event_search_result"
+    },
+    {
+      "id": "ae2fc94b7c61ac8d",
+      "artist": "Customs",
+      "date": "2026-10-19",
+      "title": "Customs Officers Use Personal Funds and Paylater for Official Flight Tickets - Kompas.com",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcXlxVUxXOG1rWlVtcW9rdHdjd3BMX1JGaWJDUGFhRENvR2pvYUFsbndJaEJXVnc1b0dwY2ZJQ1UzeDk3S3VUdm9JZUZrRUluRnlxS2ZOYmRaUmJObk50SFVNSnUxS0VYQXdfWHZTdW8xaGhLM1dFdU1jRTF4QlpQbkRIaFA1YTNITlVXaUJzdHFPaTZWZGxKRHNOOXFPcTQzWDI4b1JtdnBNNGJlbVVfN1JsRTlPZnkxOHM4NGZDUTlrQQ?oc=5",
+      "snippet": "Customs Officers Use Personal Funds and Paylater for Official Flight Tickets    Kompas.com",
+      "venue": null,
+      "city": null,
+      "score": 14,
+      "status": "needs_review",
+      "first_seen": "2026-10-19T16:55:44+00:00",
+      "last_seen": "2026-10-19T16:55:44+00:00",
+      "source_type": "Google News RSS",
+      "review_required": true,
+      "candidate_type": "dated_event_search_result"
+    }
+  ]
 }
