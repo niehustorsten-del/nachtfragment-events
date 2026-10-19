@@ -1,5 +1,107 @@
 [
   {
+    "timestamp": "2026-10-19T09:53:20.304674+00:00",
+    "type": "source_error",
+    "source": "https://www.plage-noire.de/",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "timestamp": "2026-10-19T09:53:20.304674+00:00",
+    "type": "candidate",
+    "name": "Night of Creatures – Berlin",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-19T09:53:20.304674+00:00",
+    "type": "candidate",
+    "name": "Pre-Halloween-Party – Heidelberg",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-19T09:53:20.304674+00:00",
+    "type": "candidate",
+    "name": "Gothic Dance Party – Waltrop",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 7
+  },
+  {
+    "timestamp": "2026-10-19T09:53:20.304674+00:00",
+    "type": "candidate",
+    "name": "A Night Like This – Berlin",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-19T09:53:20.304674+00:00",
+    "type": "candidate",
+    "name": "SCHWARZ mit Blac Kolor live – Halle (Saale)",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-19T09:53:20.304674+00:00",
+    "type": "candidate",
+    "name": "Depeche Mode Party – Chemnitz",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-19T09:53:20.304674+00:00",
+    "type": "candidate",
+    "name": "Celebrating a Night of Birthday & Equilibrium – Aftershow – Leverkusen",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-19T09:53:20.304674+00:00",
+    "type": "candidate",
+    "name": "Crossfire Party – Waltrop",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-19T09:53:20.304674+00:00",
+    "type": "candidate",
+    "name": "Google Kalender",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-19T09:53:20.304674+00:00",
+    "type": "candidate",
+    "name": "Sacred Bones Party – München",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-19T09:53:20.304674+00:00",
+    "type": "candidate",
+    "name": "Depeche Mode Party – Bremen",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-10-19T09:53:20.304674+00:00",
+    "type": "candidate",
+    "name": "A Night Like This – Hamburg",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
     "timestamp": "2026-10-18T08:50:39.525189+00:00",
     "type": "directory_imported",
     "record_type": "bar",

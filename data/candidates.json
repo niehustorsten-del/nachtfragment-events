@@ -1113,5 +1113,512 @@
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Events%2C+Prague%2C+Europa",
     "google_maps_status": "search_link",
     "geocoded": false
+  },
+  {
+    "id": "auto-5cdc48bc7101e9",
+    "record_type": "event",
+    "name": "A Night Like This – Hamburg",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/a-night-like-this-hamburg-2026-10-23/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-10-23",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-10-19T09:53:20.304674+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=A+Night+Like+This+%E2%80%93+Hamburg%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=A+Night+Like+This+%E2%80%93+Hamburg%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-a5c5eceb6215be",
+    "record_type": "event",
+    "name": "Depeche Mode Party – Bremen",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/depeche-mode-party-bremen-2026-10-23/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-10-23",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-10-19T09:53:20.304674+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Depeche+Mode+Party+%E2%80%93+Bremen%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Depeche+Mode+Party+%E2%80%93+Bremen%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-c463cb1375fd46",
+    "record_type": "event",
+    "name": "Sacred Bones Party – München",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/sacred-bones-party-muenchen-2026-10-23/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-10-23",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-10-19T09:53:20.304674+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sacred+Bones+Party+%E2%80%93+M%C3%BCnchen%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Sacred+Bones+Party+%E2%80%93+M%C3%BCnchen%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-5d896089ef99fa",
+    "record_type": "event",
+    "name": "Google Kalender",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Sacred%20Bones%20Party%20–%20München&dates=20261023T200000Z/20261024T024400Z&details=DJ-Party%20mit%20Stefan%20Robota%20und%20Xray%20Frankit.Details:%20https://darkandalternativeworld.de/veranstaltungen/sacred-bones-party-muenchen-2026-10-23/Quelle:%20https://dark-party.de/event/sacred-bones-party-feierwerk-muenchen/&location=Feierwerk,%20München",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-10-23",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-10-19T09:53:20.304674+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Google+Kalender%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Google+Kalender%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-3d8d2186579e60",
+    "record_type": "event",
+    "name": "Crossfire Party – Waltrop",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/crossfire-party-waltrop-2026-10-24/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-10-24",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-10-19T09:53:20.304674+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Crossfire+Party+%E2%80%93+Waltrop%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Crossfire+Party+%E2%80%93+Waltrop%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-594af307e49a32",
+    "record_type": "event",
+    "name": "Celebrating a Night of Birthday & Equilibrium – Aftershow – Leverkusen",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/celebrating-a-night-of-birthday-equilibrium-aftershow-leverkusen-2026-10-24/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-10-24",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-10-19T09:53:20.304674+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Celebrating+a+Night+of+Birthday+%26+Equilibrium+%E2%80%93+Aftershow+%E2%80%93+Leverkusen%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Celebrating+a+Night+of+Birthday+%26+Equilibrium+%E2%80%93+Aftershow+%E2%80%93+Leverkusen%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-e853967f44a087",
+    "record_type": "event",
+    "name": "Depeche Mode Party – Chemnitz",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/depeche-mode-party-chemnitz-2026-10-24/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-10-24",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-10-19T09:53:20.304674+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Depeche+Mode+Party+%E2%80%93+Chemnitz%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Depeche+Mode+Party+%E2%80%93+Chemnitz%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-bb5761d84693a2",
+    "record_type": "event",
+    "name": "SCHWARZ mit Blac Kolor live – Halle (Saale)",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/schwarz-mit-blac-kolor-live-halle-saale-2026-10-24/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-10-24",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-10-19T09:53:20.304674+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SCHWARZ+mit+Blac+Kolor+live+%E2%80%93+Halle+%28Saale%29%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=SCHWARZ+mit+Blac+Kolor+live+%E2%80%93+Halle+%28Saale%29%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-176e18d6798983",
+    "record_type": "event",
+    "name": "A Night Like This – Berlin",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/a-night-like-this-berlin-2026-10-24/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-10-24",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-10-19T09:53:20.304674+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=A+Night+Like+This+%E2%80%93+Berlin%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=A+Night+Like+This+%E2%80%93+Berlin%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-10aa76445b5447",
+    "record_type": "event",
+    "name": "Gothic Dance Party – Waltrop",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/gothic-dance-party-waltrop-2026-10-30/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-10-30",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 7,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-10-19T09:53:20.304674+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gothic+Dance+Party+%E2%80%93+Waltrop%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Gothic+Dance+Party+%E2%80%93+Waltrop%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-e72d50cc648146",
+    "record_type": "event",
+    "name": "Pre-Halloween-Party – Heidelberg",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/pre-halloween-party-heidelberg-2026-10-30/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-10-30",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-10-19T09:53:20.304674+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Pre-Halloween-Party+%E2%80%93+Heidelberg%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Pre-Halloween-Party+%E2%80%93+Heidelberg%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-da2f0605ef4057",
+    "record_type": "event",
+    "name": "Night of Creatures – Berlin",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/night-of-creatures-berlin-2026-10-30/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-10-30",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-10-19T09:53:20.304674+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Night+of+Creatures+%E2%80%93+Berlin%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Night+of+Creatures+%E2%80%93+Berlin%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
   }
 ]
