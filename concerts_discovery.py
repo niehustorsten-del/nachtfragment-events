@@ -17,13 +17,13 @@ CANDIDATES = ROOT / 'data/concert_candidates.json'
 STATUS = ROOT / 'data/concerts_status.json'
 STATE = ROOT / 'data/concert_discovery_state.json'
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/4.0; +https://nachtfragment.de)'
+UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/4.1; +https://nachtfragment.de)'
 MAX_ARTISTS = int(os.getenv('CONCERTS_MAX_ARTISTS', '10') or '10')
 PAUSE = float(os.getenv('CONCERTS_QUERY_PAUSE', '1.0') or '1.0')
 MONTHS = {name.lower(): i for i, names in enumerate([
  ('january','jan'),('february','feb'),('march','mar'),('april','apr'),('may',),('june','jun'),('july','jul'),('august','aug'),('september','sep','sept'),('october','oct'),('november','nov'),('december','dec')],1) for name in names}
 MP='|'.join(sorted(MONTHS,key=len,reverse=True))
-DATE_PATTERNS=[re.compile(r'(?<!\d)(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})(?!\d)'),re.compile(r'(?<!\d)(\d{1,2})[./](\d{1,2})[./](20\d{2})(?!\d)'),re.compile(r'\b(\d{1,2})\s+('+MP+r')\.?[,]?\s+(20\d{2})\b',re.I),re.compile(r'\b('+MP+r')\s+(\d{1,2})(?:st|nd|rd|th)?[,]?\s+(20\d{2})\b',re.I)]
+DATE_PATTERNS=[re.compile(r'(?<!\d)(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})(?!\d)'),re.compile(r'(?<!\d)(\d{1,2})[./](\d{1,2})[./](20\d{2})(?!\d)'),re.compile(r'\b(?:mon|tue|wed|thu|fri|sat|sun)(?:day)?[,]?\s+(\d{1,2})\s+('+MP+r')\.?[,]?\s+(20\d{2})\b',re.I),re.compile(r'\b(\d{1,2})\s+('+MP+r')\.?[,]?\s+(20\d{2})\b',re.I),re.compile(r'\b('+MP+r')\s+(\d{1,2})(?:st|nd|rd|th)?[,]?\s+(20\d{2})\b',re.I)]
 EVENT_WORDS=re.compile(r'\b(tour|live|concert|gig|show|festival|tour dates|tickets?|performing|on stage|doors open|venue|support act|dates announced|world tour)\b',re.I)
 NEGATIVE=re.compile(r'\b(lyrics?|album review|review|meaning|chords?|tabs?|discography|merch(?:andise)?|shop|playlist|reaction|interview|biography|newcomer list|weblinks|wikipedia|fan fiction|music video|official video|album stream)\b',re.I)
 GENERIC={'web links','weblinks','home','news','contact','about','discography','lyrics','shop','store','playlist'}
@@ -87,12 +87,14 @@ def extract_dates(text):
    try:
     if idx==0:y,mo,d=map(int,m.groups())
     elif idx==1:d,mo,y=map(int,m.groups())
-    elif idx==2:d,month,y=m.groups();mo=MONTHS[month.lower()];d=int(d);y=int(y)
+    elif idx in (2,3):
+     if idx==2: d,month,y=m.groups()
+     else: d,month,y=m.groups()
+     mo=MONTHS[month.lower()];d=int(d);y=int(y)
     else:month,d,y=m.groups();mo=MONTHS[month.lower()];d=int(d);y=int(y)
     dt=date(y,mo,d)
     if TODAY<=dt<=date(TODAY.year+3,12,31):found.add(dt.isoformat())
    except (ValueError,KeyError):pass
- # Dates without year are deliberately not promoted: too easy to mistake a news publication date for a gig date.
  return sorted(found)
 def relevance(artist,r):
  title=str(r.get('title') or '').strip(); snippet=str(r.get('snippet') or '').strip(); url=canonical_url(r.get('link') or '')
@@ -119,26 +121,28 @@ def main():
  old=load_json(CANDIDATES,{'candidates':[]}); old_rows=old.get('candidates',[]) if isinstance(old,dict) else old if isinstance(old,list) else []
  sd=load_json(STATUS,{'statuses':{}}); statuses=sd.get('statuses',{}) if isinstance(sd,dict) else {}; statuses=statuses if isinstance(statuses,dict) else {}
  by_id={r['id']:r for r in old_rows if isinstance(r,dict) and r.get('id')}
- totals={'artists_processed':0,'queries':0,'bing_rss_results':0,'google_news_rss_results':0,'search_results':0,'accepted':0,'no_date':0,'low_relevance':0,'no_event_word':0,'source_errors':0,'serpapi_calls':0}
+ totals={'artists_processed':0,'queries':0,'bing_rss_results':0,'google_news_rss_results':0,'search_results':0,'accepted':0,'date_found_but_filtered':0,'no_date':0,'low_relevance':0,'no_event_word':0,'source_errors':0,'serpapi_calls':0}
  for i,artist in enumerate(artists,1):
   if len(artist)<2 or NEGATIVE.search(artist):continue
-  query=f'"{artist}" (concert OR live OR tour OR festival) {TODAY.year}'
+  query=f'"{artist}" ("tour dates" OR upcoming OR tickets OR concert OR festival) {TODAY.year}'
   totals['queries']+=1; results,counts,errors=search_free(query)
   totals['bing_rss_results']+=counts.get('Bing RSS',0); totals['google_news_rss_results']+=counts.get('Google News RSS',0); totals['search_results']+=len(results); totals['source_errors']+=len(errors); totals['artists_processed']+=1
   for err in errors:print(f'  QUELLFEHLER {artist}: {err}',file=sys.stderr)
   print(f'  Bing RSS: {counts.get("Bing RSS",0)} | Google News RSS: {counts.get("Google News RSS",0)} | zusammen: {len(results)} Treffer | {artist}')
   for r in results:
    score=relevance(artist,r); title=html.unescape(str(r.get('title') or '')).strip(); snippet=html.unescape(str(r.get('snippet') or '')).strip(); url=canonical_url(r.get('link') or '')
-   combined=' '.join((title,snippet))  # RSS publication dates are not gig dates
-   if score<5:totals['low_relevance']+=1;continue
-   if not EVENT_WORDS.search(combined):totals['no_event_word']+=1;continue
+   combined=' '.join((title,snippet,str(r.get('date_text') or '')))
    dates=extract_dates(combined)
+   eventish=bool(EVENT_WORDS.search(combined) or any(d in urlsplit(url).netloc.lower() for d in EVENT_DOMAINS))
    if not dates:totals['no_date']+=1;continue
+   if not eventish:totals['no_event_word']+=1;continue
+   if score<4:totals['low_relevance']+=1;continue
+   totals['date_found_but_filtered']+=1
    event_date=dates[0]; cid=stable_id(artist,url,event_date); prev=by_id.get(cid,{}); stamp=now_iso()
-   by_id[cid]={**prev,'id':cid,'artist':artist,'date':event_date,'title':title,'url':url,'snippet':snippet,'venue':prev.get('venue'),'city':prev.get('city') or city_hint(combined),'score':score,'status':statuses.get(cid,prev.get('status','needs_review')),'first_seen':prev.get('first_seen') or stamp,'last_seen':stamp,'source_type':r.get('source','rss_search_result'),'review_required':True}
+   by_id[cid]={**prev,'id':cid,'artist':artist,'date':event_date,'title':title,'url':url,'snippet':snippet,'venue':prev.get('venue'),'city':prev.get('city') or city_hint(combined),'score':score,'status':statuses.get(cid,prev.get('status','needs_review')),'first_seen':prev.get('first_seen') or stamp,'last_seen':stamp,'source_type':r.get('source','rss_search_result'),'review_required':True,'candidate_type':'dated_event_search_result'}
    totals['accepted']+=1
   print(f'[{i}/{len(artists)}] {artist}'); time.sleep(PAUSE)
- print('Hinweis: SerpApi wird in Version 4.0 nicht aufgerufen; die verbrauchte kostenlose Quote bleibt unberührt.')
+ print('Hinweis: SerpApi wird in Version 4.1 nicht aufgerufen; die verbrauchte kostenlose Quote bleibt unberührt.')
  print('Suchdiagnose:',json.dumps(totals,ensure_ascii=False))
  rows=sorted(by_id.values(),key=lambda r:(r.get('date') or '9999',str(r.get('artist','')).casefold(),-int(r.get('score') or 0)))
  stamp=now_iso(); save_json(CANDIDATES,{'updated_at':stamp,'count':len(rows),'candidates':rows}); save_json(STATUS,{'updated_at':stamp,'statuses':statuses})
