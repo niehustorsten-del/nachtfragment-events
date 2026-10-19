@@ -17,7 +17,7 @@ CANDIDATES = ROOT / 'data/concert_candidates.json'
 STATUS = ROOT / 'data/concerts_status.json'
 STATE = ROOT / 'data/concert_discovery_state.json'
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/4.2; +https://nachtfragment.de)'
+UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/4.3; +https://nachtfragment.de)'
 MAX_ARTISTS = int(os.getenv('CONCERTS_MAX_ARTISTS', '10') or '10')
 MAX_PAGE_CHECKS = int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '8') or '8')
 PAUSE = float(os.getenv('CONCERTS_QUERY_PAUSE', '1.0') or '1.0')
@@ -105,15 +105,23 @@ def relevance(artist,r):
  if not (tm or bm or um):return -100
  return (6 if tm else 0)+(3 if bm else 0)+(2 if um else 0)+(3 if EVENT_WORDS.search(title) else 0)+(2 if EVENT_WORDS.search(snippet) else 0)+(2 if any(d in host for d in EVENT_DOMAINS) else 0)
 def page_event_evidence(url):
- """Fetch a small number of likely direct event pages and extract event dates, not article dates."""
- if not url or 'news.google.com' in urlsplit(url).netloc.lower(): return {'dates': [], 'text': '', 'event_dates': []}
+ """Fetch a likely event page; follow RSS redirect links and report why a fetch failed."""
+ if not url:
+  return {'dates': [], 'text': '', 'event_dates': [], 'reason': 'missing_url', 'final_url': ''}
  try:
   req=Request(url,headers={'User-Agent':UA,'Accept':'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5'})
-  with urlopen(req,timeout=12) as resp:
-   if 'html' not in (resp.headers.get('Content-Type') or '').lower(): return {'dates': [], 'text': '', 'event_dates': []}
+  with urlopen(req,timeout=15) as resp:
+   final_url=resp.geturl()
+   content_type=(resp.headers.get('Content-Type') or '').lower()
+   if 'html' not in content_type and 'xhtml' not in content_type:
+    return {'dates': [], 'text': '', 'event_dates': [], 'reason': 'non_html:'+content_type[:80], 'final_url': final_url}
    raw=resp.read(1_000_000).decode('utf-8','replace')
- except Exception:
-  return {'dates': [], 'text': '', 'event_dates': []}
+ except HTTPError as e:
+  return {'dates': [], 'text': '', 'event_dates': [], 'reason': f'http_{e.code}', 'final_url': ''}
+ except URLError as e:
+  return {'dates': [], 'text': '', 'event_dates': [], 'reason': 'url_error:'+str(getattr(e,'reason',e))[:100], 'final_url': ''}
+ except Exception as e:
+  return {'dates': [], 'text': '', 'event_dates': [], 'reason': type(e).__name__+':'+str(e)[:100], 'final_url': ''}
  # Extract structured Event startDate values first; these are stronger than dates in article prose.
  event_dates=[]
  for m in re.finditer(r'(?is)"@type"\s*:\s*(?:"Event"|\[[^]]*"Event"[^]]*\]).{0,12000}?"startDate"\s*:\s*"([^" ]+)',raw):
@@ -126,7 +134,7 @@ def page_event_evidence(url):
  cleaned=re.sub(r'(?is)<(script|style|noscript|svg)[^>]*>.*?</\1>',' ',raw)
  text=html.unescape(re.sub(r'(?s)<[^>]+>',' ',cleaned))
  text=re.sub(r'\s+',' ',text)[:100000]
- return {'dates':extract_dates(text),'text':text,'event_dates':sorted(set(event_dates))}
+ return {'dates':extract_dates(text),'text':text,'event_dates':sorted(set(event_dates)),'reason':'ok','final_url':final_url}
 
 def stable_id(artist,url,event_date):return hashlib.sha1(f'{normalized(artist)}|{canonical_url(url)}|{event_date}'.encode()).hexdigest()[:16]
 def city_hint(text):
@@ -146,7 +154,7 @@ def main():
  old=load_json(CANDIDATES,{'candidates':[]}); old_rows=old.get('candidates',[]) if isinstance(old,dict) else old if isinstance(old,list) else []
  sd=load_json(STATUS,{'statuses':{}}); statuses=sd.get('statuses',{}) if isinstance(sd,dict) else {}; statuses=statuses if isinstance(statuses,dict) else {}
  by_id={r['id']:r for r in old_rows if isinstance(r,dict) and r.get('id')}
- totals={'artists_processed':0,'queries':0,'bing_rss_results':0,'google_news_rss_results':0,'search_results':0,'pages_checked':0,'page_fetch_errors_or_skips':0,'accepted':0,'date_found_but_filtered':0,'no_date':0,'low_relevance':0,'no_event_word':0,'source_errors':0,'serpapi_calls':0}
+ totals={'artists_processed':0,'queries':0,'bing_rss_results':0,'google_news_rss_results':0,'search_results':0,'pages_checked':0,'page_fetch_errors_or_skips':0,'page_http_errors':0,'page_non_html':0,'page_url_errors':0,'page_empty_or_unusable':0,'page_google_redirects':0,'accepted':0,'date_found_but_filtered':0,'no_date':0,'low_relevance':0,'no_event_word':0,'source_errors':0,'serpapi_calls':0}
  page_checks_left=max(0,MAX_PAGE_CHECKS)
  for i,artist in enumerate(artists,1):
   if len(artist)<2 or NEGATIVE.search(artist):continue
@@ -165,8 +173,17 @@ def main():
    page_text=''; page_event_dates=[]
    if not dates and eventish and page_checks_left>0 and url:
     page_checks_left-=1; totals['pages_checked']+=1
+    was_google='news.google.com' in urlsplit(url).netloc.lower()
     evidence=page_event_evidence(url); page_text=evidence['text']; page_event_dates=evidence['event_dates']
-    if not page_text: totals['page_fetch_errors_or_skips']+=1
+    if was_google and evidence.get('final_url'): totals['page_google_redirects']+=1
+    reason=evidence.get('reason','unknown')
+    if reason!='ok':
+     totals['page_fetch_errors_or_skips']+=1
+     if reason.startswith('http_'): totals['page_http_errors']+=1
+     elif reason.startswith('non_html'): totals['page_non_html']+=1
+     elif reason.startswith('url_error') or reason.startswith('TimeoutError'): totals['page_url_errors']+=1
+     else: totals['page_empty_or_unusable']+=1
+     if totals['page_fetch_errors_or_skips']<=8: print(f'  Seitenprüfung {urlsplit(url).netloc}: {reason}')
     dates=page_event_dates or evidence['dates']
     if page_text and not eventish: eventish=bool(EVENT_WORDS.search(page_text))
    if not dates:totals['no_date']+=1;continue
@@ -176,7 +193,7 @@ def main():
    by_id[cid]={**prev,'id':cid,'artist':artist,'date':event_date,'title':title,'url':url,'snippet':snippet,'page_evidence_checked':bool(page_text),'event_startdate_evidence':bool(page_event_dates),'venue':prev.get('venue'),'city':prev.get('city') or city_hint(combined),'score':score,'status':statuses.get(cid,prev.get('status','needs_review')),'first_seen':prev.get('first_seen') or stamp,'last_seen':stamp,'source_type':r.get('source','rss_search_result'),'review_required':True,'candidate_type':'dated_event_search_result'}
    totals['accepted']+=1
   print(f'[{i}/{len(artists)}] {artist}'); time.sleep(PAUSE)
- print('Hinweis: SerpApi wird in Version 4.2 nicht aufgerufen; die verbrauchte kostenlose Quote bleibt unberührt.')
+ print('Hinweis: SerpApi wird in Version 4.3 nicht aufgerufen; die verbrauchte kostenlose Quote bleibt unberührt.')
  print('Suchdiagnose:',json.dumps(totals,ensure_ascii=False))
  rows=sorted(by_id.values(),key=lambda r:(r.get('date') or '9999',str(r.get('artist','')).casefold(),-int(r.get('score') or 0)))
  stamp=now_iso(); save_json(CANDIDATES,{'updated_at':stamp,'count':len(rows),'candidates':rows}); save_json(STATUS,{'updated_at':stamp,'statuses':statuses})
