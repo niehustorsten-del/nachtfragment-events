@@ -24,6 +24,8 @@ MAX_BYTES = 1_500_000
 RSS_PER_ARTIST = max(1, int(os.getenv('CONCERTS_RSS_RESULTS', '8') or '8'))
 RSS_ENABLED = os.getenv('CONCERTS_RSS_ENABLED', '1').strip().lower() not in {'0','false','no'}
 EVENT_WORDS = re.compile(r'\b(live|concert|gig|show|tour|festival|konzert|auftritt|termine|tourdates|tour dates|tickets|supporting)\b', re.I)
+# News words that strongly indicate non-music meanings of ambiguous artist names.
+NON_MUSIC_CONTEXT = re.compile(r'\b(customs? seizes?|customs? officials?|customs? officers?|customs? authorities?|border (control|officials?|police)|cannabis|marijuana|drug seizure|seized .*?(drug|cannabis|marijuana)|ghana revenue authority|tax authority|import duties|smuggling|contraband)\b', re.I)
 TRACKING = {'fbclid', 'gclid', 'mc_cid', 'mc_eid', 'ref', 'referrer'}
 SKIP_NAME = re.compile(r'newcomer|linkliste|weblinks|rezension|review|top\s*50|zwischen darkwave|playlist|porträt|portrait', re.I)
 
@@ -262,10 +264,20 @@ def main():
     status_obj=load_json(STATUS_FILE, {'statuses':{}})
     statuses=status_obj.get('statuses',{}) if isinstance(status_obj,dict) else {}
     if not isinstance(statuses,dict): statuses={}
-    # Remove known false positives created by the old RSS search; preserve all other existing candidates.
-    bad_ids={'c8ba5648f1de96fa','ae2fc94b7c61ac8d','413541aaf8af59fd'}
-    by_id={r['id']:r for r in old_rows if isinstance(r,dict) and r.get('id') and r.get('id') not in bad_ids}
-    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_items_seen':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0}
+    # Remove known false positives and expired RSS candidates. Keep current/future candidates for editorial review.
+    bad_ids={'c8ba5648f1de96fa','ae2fc94b7c61ac8d','413541aaf8af59fd','5357e2e135ac7882'}
+    by_id={}
+    for r in old_rows:
+        if not isinstance(r,dict) or not r.get('id') or r.get('id') in bad_ids:
+            continue
+        if r.get('source_type') == 'public_google_news_rss':
+            old_text=str(r.get('artist',''))+' '+str(r.get('title',''))+' '+str(r.get('snippet',''))
+            if NON_MUSIC_CONTEXT.search(old_text):
+                continue
+            if not valid_date(r.get('date')):
+                continue
+        by_id[r['id']]=r
+    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_items_seen':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0}
     page_index=0
     while page_index < len(pages) and page_index < MAX_PAGES:
         p=pages[page_index]
@@ -320,6 +332,9 @@ def main():
                 combined=item['title']+' '+re.sub(r'(?s)<[^>]+>',' ',item['description'])
                 if not mentioned(artist['name'], combined):
                     stats['rejected_no_artist_match'] += 1; continue
+                # Reject obvious non-music news, especially the band name 'Customs' used as a noun.
+                if NON_MUSIC_CONTEXT.search(combined):
+                    stats['rss_rejected_non_music_context'] += 1; continue
                 if not EVENT_WORDS.search(combined):
                     stats['rss_rejected_no_event_word'] += 1; continue
                 dt=parse_rss_date(combined)
