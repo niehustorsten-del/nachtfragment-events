@@ -16,7 +16,7 @@ SOURCES_FILE = ROOT / 'data' / 'concert_sources.json'
 CANDIDATES_FILE = ROOT / 'data' / 'concert_candidates.json'
 STATUS_FILE = ROOT / 'data' / 'concerts_status.json'
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.1; +https://nachtfragment.de)'
+UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.2; +https://nachtfragment.de)'
 MAX_ARTISTS = max(0, int(os.getenv('CONCERTS_MAX_ARTISTS', '65') or '65'))
 MAX_PAGES = max(1, int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '120') or '120'))
 PAUSE = max(0.0, float(os.getenv('CONCERTS_QUERY_PAUSE', '0.7') or '0.7'))
@@ -90,18 +90,46 @@ def load_artists():
     return result
 
 def load_sources():
+    """Load actual public event pages only. Search references and URL templates are handled separately."""
     out=[]
     for row in rows_from(load_json(SOURCES_FILE, {}), ('sources','venues','clubs','organizers','festivals','pages','items')):
-        if isinstance(row, str): url, name, artists = row, row, []
+        if isinstance(row, str):
+            url, name, artists, enabled, kind = row, row, [], True, 'event_page'
         elif isinstance(row, dict):
+            if row.get('enabled', True) is False:
+                continue
+            kind = str(row.get('type') or 'event_page').casefold()
+            # Artist search templates are used to construct targeted RSS searches, not fetched as event pages.
+            if row.get('url_template') or kind in {'artist_search', 'search_reference'}:
+                continue
+            if kind not in {'event_search', 'event_calendar', 'event_page', 'venue_calendar', 'organizer_calendar', 'festival_calendar', 'scene_source'}:
+                continue
             url = row.get('url') or row.get('website') or row.get('calendar_url') or row.get('events_url') or ''
             name = str(row.get('name') or row.get('title') or url)
             a = row.get('artists') or row.get('artist') or []
             artists = [a] if isinstance(a, str) else a if isinstance(a, list) else []
-        else: continue
+        else:
+            continue
         url=canonical_url(url)
-        if url: out.append({'url':url,'name':name,'artists':[str(x) for x in artists if x]})
+        if url:
+            out.append({'url':url,'name':name,'artists':[str(x) for x in artists if x]})
     return out
+
+
+def load_artist_search_domains():
+    """Read configured artist-search URL templates (e.g. Songkick/Bandsintown)."""
+    domains=[]
+    for row in rows_from(load_json(SOURCES_FILE, {}), ('sources','items')):
+        if not isinstance(row, dict) or row.get('enabled', True) is False:
+            continue
+        template=str(row.get('url_template') or '').strip()
+        if not template or str(row.get('type') or '').casefold() != 'artist_search':
+            continue
+        sample=template.replace('{artist}', 'nachtfragment-test')
+        host=urlsplit(sample).netloc.lower()
+        if host and host not in domains:
+            domains.append(host.removeprefix('www.'))
+    return domains
 
 def fetch(url):
     req=Request(url, headers={'User-Agent':UA,'Accept':'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5'})
@@ -239,7 +267,7 @@ def rss_items(raw):
         if title and link: out.append({'title':html.unescape(title),'url':canonical_url(link),'description':html.unescape(desc)})
     return out
 
-def search_artist_rss(artist):
+def search_artist_rss(artist, search_domains=None):
     """Use public Google News RSS without an API key. Do not filter by publication date:
     an older article can announce a future concert, and after:TODAY was excluding useful results.
     """
@@ -251,8 +279,11 @@ def search_artist_rss(artist):
         f'"{name}" ("tour dates" OR "upcoming shows" OR "live dates" OR tickets)',
         f'"{name}" (concert OR gig OR festival OR tour) (2026 OR 2027)',
         f'"{name}" (Konzert OR Tour OR Festival OR Tickets OR Live)',
-        f'site:songkick.com "{name}" OR site:bandsintown.com "{name}"',
     ]
+    # Add one separate search for every configured artist-search service. The previous
+    # combined OR query often returned generic results and did not reliably search both sites.
+    for domain in (search_domains or ['songkick.com', 'bandsintown.com']):
+        queries.append(f'site:{domain} "{name}" (concert OR tour OR tickets OR events)')
     found=[]; seen=set(); feeds_ok=0; feed_errors=0
     for query in queries:
         result=fetch_text(google_news_rss_url(query), 'application/rss+xml, application/xml, text/xml, */*;q=0.5')
@@ -266,13 +297,14 @@ def search_artist_rss(artist):
         else:
             feed_errors += 1
         time.sleep(min(PAUSE,0.4))
-    return found[:RSS_PER_ARTIST], feeds_ok, feed_errors
+    return found[:RSS_PER_ARTIST], feeds_ok, feed_errors, len(queries)
 
 
 def main():
     artists=load_artists()
     if MAX_ARTISTS: artists=artists[:MAX_ARTISTS]
     sources=load_sources()
+    search_domains=load_artist_search_domains()
     pages=[]
     for a in artists:
         if a['page']: pages.append({'url':a['page'],'name':a['name'],'artists':[a['name']],'kind':'nachtfragment_artist_page'})
@@ -281,7 +313,7 @@ def main():
     for p in pages:
         if p['url'] not in seen: unique.append(p); seen.add(p['url'])
     pages=unique[:MAX_PAGES]
-    print(f'Konfiguration: Künstler={len(artists)} öffentliche_Zusatzquellen={len(sources)} Seiten={len(pages)} RSS={RSS_ENABLED} API_Key=False')
+    print(f'Konfiguration: Künstler={len(artists)} öffentliche_Zusatzquellen={len(sources)} Suchdomains={search_domains or ["songkick.com", "bandsintown.com"]} Seiten={len(pages)} RSS={RSS_ENABLED} API_Key=False')
     old=load_json(CANDIDATES_FILE, {'candidates':[]})
     old_rows=old.get('candidates',[]) if isinstance(old,dict) else old if isinstance(old,list) else []
     status_obj=load_json(STATUS_FILE, {'statuses':{}})
@@ -357,8 +389,8 @@ def main():
     # explicit future event date is present. RSS publication date is never treated as gig date.
     if RSS_ENABLED:
         for ai, artist in enumerate(artists, 1):
-            items, feeds_ok, feed_errors=search_artist_rss(artist)
-            stats['rss_queries'] += 4
+            items, feeds_ok, feed_errors, queries_run=search_artist_rss(artist, search_domains)
+            stats['rss_queries'] += queries_run
             stats['rss_feeds_ok'] += feeds_ok
             stats['rss_feed_errors'] += feed_errors
             stats['rss_items_seen'] += len(items)
