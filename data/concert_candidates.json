@@ -1,26 +1,5 @@
 {
-  "updated_at": "2026-10-20T00:01:43+00:00",
-  "count": 1,
-  "candidates": [
-    {
-      "id": "5357e2e135ac7882",
-      "artist": "Customs",
-      "date": "2026-10-19",
-      "title": "LIVE: News360; Customs Seizes Canabis Worth GHC11.2 Million || 19-10-2026 - Modern Ghana",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1vb2xPUEYtbzFBTlVOb3BUaDBEWG8zNUYyOU42MURqRGxjUzZoRGVXcVZtamVLVDR5V2E3dWJnUWxkVUZma3dSX1l2WmlQV1l4WU1YYXhjVkEwU2l5R0FF0gFcQVVfeXFMTVJhNWN6Y3g0dkZfcjJiTVdvYm5XVXc2eWk0TjlfZjc1SHZQQmZYcDJta1RJRmxVM1VnQVAycjNxbTYyTWVoSDZHdXVRNTZQYjlWV1JBcE9QekoxSi0?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "snippet": "LIVE: News360; Customs Seizes Canabis Worth GHC11.2 Million || 19-10-2026 Modern Ghana",
-      "venue": null,
-      "city": null,
-      "score": 15,
-      "status": "needs_review",
-      "first_seen": "2026-10-20T00:00:29+00:00",
-      "last_seen": "2026-10-20T00:00:29+00:00",
-      "source_type": "public_google_news_rss",
-      "review_required": true,
-      "candidate_type": "rss_event_announcement",
-      "page_evidence_checked": false,
-      "event_startdate_evidence": true,
-      "search_query": "\"Customs\" (Konzert OR Tour OR live OR festival) after:2026-10-19"
-    }
-  ]
+  "updated_at": "2026-10-20T00:13:34+00:00",
+  "count": 0,
+  "candidates": []
 }
