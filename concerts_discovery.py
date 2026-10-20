@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Nachtfragment concert discovery from public artist/source pages. No RSS/API keys.
-Candidates require a structured Schema.org Event with a matching artist and future startDate.
+"""Nachtfragment concert discovery from public artist/source pages and public Google News RSS.
+No API keys. Candidates require an explicit future event date and matching artist.
 Never publishes automatically to concerts.json.
 """
 import hashlib, html, json, os, re, sys, time, urllib.parse, xml.etree.ElementTree as ET
@@ -16,15 +16,16 @@ SOURCES_FILE = ROOT / 'data' / 'concert_sources.json'
 CANDIDATES_FILE = ROOT / 'data' / 'concert_candidates.json'
 STATUS_FILE = ROOT / 'data' / 'concerts_status.json'
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.0; +https://nachtfragment.de)'
+UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.1; +https://nachtfragment.de)'
 MAX_ARTISTS = max(0, int(os.getenv('CONCERTS_MAX_ARTISTS', '65') or '65'))
 MAX_PAGES = max(1, int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '120') or '120'))
 PAUSE = max(0.0, float(os.getenv('CONCERTS_QUERY_PAUSE', '0.7') or '0.7'))
 MAX_BYTES = 1_500_000
-RSS_PER_ARTIST = max(1, int(os.getenv('CONCERTS_RSS_RESULTS', '12') or '12'))
+RSS_PER_ARTIST = max(1, int(os.getenv('CONCERTS_RSS_RESULTS', '18') or '18'))
 RSS_ENABLED = os.getenv('CONCERTS_RSS_ENABLED', '1').strip().lower() not in {'0','false','no'}
 EVENT_WORDS = re.compile(r'\b(live|concert|gig|show|tour|festival|konzert|auftritt|termine|tourdates|tour dates|tickets|supporting|upcoming dates|live dates|on stage|doors open)\b', re.I)
-REVIEW_OR_RELEASE = re.compile(r'\b(review|live review|concert review|album review|track review|premiere|new single|new album|new ep|releases? (?:new |a |their )?(?:single|album|ep)|release date|music video|official video|remix)\b', re.I)
+REVIEW_OR_RELEASE = re.compile(r'\b(review|live review|concert review|album review|track review|premiere|new single|new album|new ep|releases? (?:new |a |their )?(?:single|album|ep)|release date|music video|official video|remix|interview|conversation with|album stream|track-by-track)\b', re.I)
+PAST_EVENT = re.compile(r'\b(20(?:19|20|21|22|23|24|25)|past dates|last night|last week|last month|yesterday|reviewed live)\b', re.I)
 # News words that strongly indicate non-music meanings of ambiguous artist names.
 NON_MUSIC_CONTEXT = re.compile(r'\b(customs? seizes?|customs? officials?|customs? officers?|customs? authorities?|border (control|officials?|police)|cannabis|marijuana|drug seizure|seized .*?(drug|cannabis|marijuana)|ghana revenue authority|tax authority|import duties|smuggling|contraband)\b', re.I)
 TRACKING = {'fbclid', 'gclid', 'mc_cid', 'mc_eid', 'ref', 'referrer'}
@@ -244,8 +245,14 @@ def search_artist_rss(artist):
     """
     if not RSS_ENABLED: return [], 0, 0
     name=artist['name']
-    queries=[f'"{name}" ("upcoming shows" OR "tour dates" OR "live dates" OR "on tour")',
-             f'"{name}" (Konzert OR Tour OR Festival OR Tickets)']
+    # Mix event-focused queries with known ticket/listing domains. Keep the artist name
+    # quoted so common names (e.g. Customs) are less likely to return unrelated news.
+    queries=[
+        f'"{name}" ("tour dates" OR "upcoming shows" OR "live dates" OR tickets)',
+        f'"{name}" (concert OR gig OR festival OR tour) (2026 OR 2027)',
+        f'"{name}" (Konzert OR Tour OR Festival OR Tickets OR Live)',
+        f'site:songkick.com "{name}" OR site:bandsintown.com "{name}"',
+    ]
     found=[]; seen=set(); feeds_ok=0; feed_errors=0
     for query in queries:
         result=fetch_text(google_news_rss_url(query), 'application/rss+xml, application/xml, text/xml, */*;q=0.5')
@@ -351,7 +358,7 @@ def main():
     if RSS_ENABLED:
         for ai, artist in enumerate(artists, 1):
             items, feeds_ok, feed_errors=search_artist_rss(artist)
-            stats['rss_queries'] += 2
+            stats['rss_queries'] += 4
             stats['rss_feeds_ok'] += feeds_ok
             stats['rss_feed_errors'] += feed_errors
             stats['rss_items_seen'] += len(items)
@@ -371,11 +378,18 @@ def main():
                     stats['rss_rejected_no_event_word'] += 1
                     remember_rejection('no_event_word', artist['name'], item, combined)
                     continue
-                # Reviews and release announcements are not upcoming concert listings,
+                # Reviews, interviews and release announcements are not upcoming concert listings,
                 # even if their headlines contain words such as “live” or “show”.
                 if REVIEW_OR_RELEASE.search(item['title']):
                     stats['rss_rejected_no_event_word'] += 1
                     remember_rejection('no_event_word', artist['name'], item, combined)
+                    continue
+                # Reject headlines explicitly tied to past years. The date parser below
+                # only accepts future dates, but an unrelated future number in a snippet
+                # must not rescue a clearly historical concert review.
+                if PAST_EVENT.search(item['title']):
+                    stats['rss_rejected_no_date'] += 1
+                    remember_rejection('no_date', artist['name'], item, combined)
                     continue
                 dt=parse_rss_date(combined)
                 if not dt:
