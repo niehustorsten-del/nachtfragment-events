@@ -283,7 +283,16 @@ def main():
             if not valid_date(r.get('date')):
                 continue
         by_id[r['id']]=r
-    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0}
+    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_artist_match':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0}
+    # Keep a few real examples of RSS rejections in the Actions log, so filters can be tuned from evidence.
+    rejection_samples = {'no_artist_match': [], 'no_event_word': [], 'no_date': [], 'non_music_context': []}
+    def remember_rejection(reason, artist_name, item, combined):
+        samples = rejection_samples[reason]
+        if len(samples) >= 3:
+            return
+        samples.append({'artist': artist_name, 'title': re.sub(r'\s+', ' ', item.get('title', '')).strip()[:180],
+                        'snippet': re.sub(r'\s+', ' ', re.sub(r'(?s)<[^>]+>', ' ', item.get('description', ''))).strip()[:220],
+                        'url': item.get('url', '')})
     page_index=0
     while page_index < len(pages) and page_index < MAX_PAGES:
         p=pages[page_index]
@@ -339,15 +348,24 @@ def main():
             for item in items:
                 combined=item['title']+' '+re.sub(r'(?s)<[^>]+>',' ',item['description'])
                 if not mentioned(artist['name'], combined):
-                    stats['rejected_no_artist_match'] += 1; continue
+                    stats['rejected_no_artist_match'] += 1
+                    stats['rss_rejected_no_artist_match'] += 1
+                    remember_rejection('no_artist_match', artist['name'], item, combined)
+                    continue
                 # Reject obvious non-music news, especially the band name 'Customs' used as a noun.
                 if NON_MUSIC_CONTEXT.search(combined):
-                    stats['rss_rejected_non_music_context'] += 1; continue
+                    stats['rss_rejected_non_music_context'] += 1
+                    remember_rejection('non_music_context', artist['name'], item, combined)
+                    continue
                 if not EVENT_WORDS.search(combined):
-                    stats['rss_rejected_no_event_word'] += 1; continue
+                    stats['rss_rejected_no_event_word'] += 1
+                    remember_rejection('no_event_word', artist['name'], item, combined)
+                    continue
                 dt=parse_rss_date(combined)
                 if not dt:
-                    stats['rss_rejected_no_date'] += 1; continue
+                    stats['rss_rejected_no_date'] += 1
+                    remember_rejection('no_date', artist['name'], item, combined)
+                    continue
                 url=item['url']
                 # Google News RSS links redirect; follow them when possible to store the original source.
                 if url and 'news.google.com' in urlsplit(url).netloc.lower():
@@ -370,6 +388,7 @@ def main():
     save_json(CANDIDATES_FILE,{'updated_at':stamp,'count':len(rows),'candidates':rows})
     save_json(STATUS_FILE,{'updated_at':stamp,'statuses':statuses})
     print('Diagnose:',json.dumps(stats,ensure_ascii=False))
+    print('RSS-Ablehnungsbeispiele:', json.dumps(rejection_samples, ensure_ascii=False))
     print(f'{len(rows)} Kandidaten gespeichert. Keine automatische Veröffentlichung in concerts.json.')
     if not pages: print('HINWEIS: Keine Webseiten konfiguriert. Öffentliche Club-/Veranstalterkalender in data/concert_sources.json ergänzen.')
 
