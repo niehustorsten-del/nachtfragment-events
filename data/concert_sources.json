@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-10-20",
+  "description": "Öffentliche Quellen zur Recherche kommender Konzerte. Treffer müssen geprüft werden; Quellenlinks sind keine bestätigten Konzerttermine.",
+  "sources": [
+    {"id": "songkick", "name": "Songkick", "type": "artist_search", "url_template": "https://www.songkick.com/search?query={artist}", "enabled": true, "priority": 1},
+    {"id": "bandsintown", "name": "Bandsintown", "type": "artist_search", "url_template": "https://www.bandsintown.com/search?query={artist}", "enabled": true, "priority": 1},
+    {"id": "setlist_fm", "name": "setlist.fm", "type": "artist_search", "url_template": "https://www.setlist.fm/search?query={artist}", "enabled": true, "priority": 2, "notes": "Nur zur Gegenprüfung; vergangene Auftritte sind keine zukünftigen Termine."},
+    {"id": "official_artist_sites", "name": "Offizielle Künstler-Websites", "type": "artist_official_site", "url_template": "{artist_website}", "enabled": true, "priority": 1},
+    {"id": "songkick_concerts", "name": "Songkick – Konzertkalender", "type": "event_search", "url": "https://www.songkick.com/concerts", "enabled": true, "priority": 2},
+    {"id": "bandsintown_events", "name": "Bandsintown – Veranstaltungssuche", "type": "event_search", "url": "https://www.bandsintown.com/", "enabled": true, "priority": 2},
+    {"id": "darkwave_search", "name": "Darkwave / Gothic – Suchreferenz", "type": "search_reference", "url": "https://www.google.com/search?q=darkwave+gothic+concerts+2026+2027", "enabled": true, "priority": 3},
+    {"id": "ebm_search", "name": "EBM / Industrial – Suchreferenz", "type": "search_reference", "url": "https://www.google.com/search?q=EBM+industrial+concerts+2026+2027", "enabled": true, "priority": 3},
+    {"id": "postpunk_search", "name": "Post-Punk – Suchreferenz", "type": "search_reference", "url": "https://www.google.com/search?q=post-punk+concerts+2026+2027", "enabled": true, "priority": 3}
+  ],
+  "publication_rules": {
+    "future_dates_only": true,
+    "require_artist_match": true,
+    "require_event_date": true,
+    "require_venue_or_city": true,
+    "require_source_url": true,
+    "auto_publish": false,
+    "note": "Unbestätigte Treffer bleiben Kandidaten und werden nicht automatisch veröffentlicht."
+  }
+}
