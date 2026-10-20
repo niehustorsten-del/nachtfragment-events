@@ -229,21 +229,27 @@ def rss_items(raw):
     return out
 
 def search_artist_rss(artist):
-    """Use public Google News RSS, no key. Two narrow queries per act."""
-    if not RSS_ENABLED: return []
+    """Use public Google News RSS without an API key. Do not filter by publication date:
+    an older article can announce a future concert, and after:TODAY was excluding useful results.
+    """
+    if not RSS_ENABLED: return [], 0, 0
     name=artist['name']
-    queries=[f'"{name}" (tour OR concert OR gig OR live dates) after:{TODAY.isoformat()}',
-             f'"{name}" (Konzert OR Tour OR live OR festival) after:{TODAY.isoformat()}']
-    found=[]; seen=set()
+    queries=[f'"{name}" (tour OR concert OR gig OR "live dates")',
+             f'"{name}" (Konzert OR Tour OR live OR festival)']
+    found=[]; seen=set(); feeds_ok=0; feed_errors=0
     for query in queries:
         result=fetch_text(google_news_rss_url(query), 'application/rss+xml, application/xml, text/xml, */*;q=0.5')
         if result['ok']:
-            for item in rss_items(result['raw']):
+            feeds_ok += 1
+            parsed = rss_items(result['raw'])
+            for item in parsed:
                 key=item['url'] or item['title']
                 if key not in seen:
                     item['query']=query; found.append(item); seen.add(key)
+        else:
+            feed_errors += 1
         time.sleep(min(PAUSE,0.4))
-    return found[:RSS_PER_ARTIST]
+    return found[:RSS_PER_ARTIST], feeds_ok, feed_errors
 
 
 def main():
@@ -277,7 +283,7 @@ def main():
             if not valid_date(r.get('date')):
                 continue
         by_id[r['id']]=r
-    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_items_seen':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0}
+    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0}
     page_index=0
     while page_index < len(pages) and page_index < MAX_PAGES:
         p=pages[page_index]
@@ -325,8 +331,10 @@ def main():
     # explicit future event date is present. RSS publication date is never treated as gig date.
     if RSS_ENABLED:
         for ai, artist in enumerate(artists, 1):
-            items=search_artist_rss(artist)
+            items, feeds_ok, feed_errors=search_artist_rss(artist)
             stats['rss_queries'] += 2
+            stats['rss_feeds_ok'] += feeds_ok
+            stats['rss_feed_errors'] += feed_errors
             stats['rss_items_seen'] += len(items)
             for item in items:
                 combined=item['title']+' '+re.sub(r'(?s)<[^>]+>',' ',item['description'])
