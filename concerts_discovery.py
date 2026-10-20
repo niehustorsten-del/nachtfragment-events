@@ -21,9 +21,10 @@ MAX_ARTISTS = max(0, int(os.getenv('CONCERTS_MAX_ARTISTS', '65') or '65'))
 MAX_PAGES = max(1, int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '120') or '120'))
 PAUSE = max(0.0, float(os.getenv('CONCERTS_QUERY_PAUSE', '0.7') or '0.7'))
 MAX_BYTES = 1_500_000
-RSS_PER_ARTIST = max(1, int(os.getenv('CONCERTS_RSS_RESULTS', '8') or '8'))
+RSS_PER_ARTIST = max(1, int(os.getenv('CONCERTS_RSS_RESULTS', '12') or '12'))
 RSS_ENABLED = os.getenv('CONCERTS_RSS_ENABLED', '1').strip().lower() not in {'0','false','no'}
-EVENT_WORDS = re.compile(r'\b(live|concert|gig|show|tour|festival|konzert|auftritt|termine|tourdates|tour dates|tickets|supporting)\b', re.I)
+EVENT_WORDS = re.compile(r'\b(live|concert|gig|show|tour|festival|konzert|auftritt|termine|tourdates|tour dates|tickets|supporting|upcoming dates|live dates|on stage|doors open)\b', re.I)
+REVIEW_OR_RELEASE = re.compile(r'\b(review|live review|concert review|album review|track review|premiere|new single|new album|new ep|releases? (?:new |a |their )?(?:single|album|ep)|release date|music video|official video|remix)\b', re.I)
 # News words that strongly indicate non-music meanings of ambiguous artist names.
 NON_MUSIC_CONTEXT = re.compile(r'\b(customs? seizes?|customs? officials?|customs? officers?|customs? authorities?|border (control|officials?|police)|cannabis|marijuana|drug seizure|seized .*?(drug|cannabis|marijuana)|ghana revenue authority|tax authority|import duties|smuggling|contraband)\b', re.I)
 TRACKING = {'fbclid', 'gclid', 'mc_cid', 'mc_eid', 'ref', 'referrer'}
@@ -189,12 +190,21 @@ def parse_rss_date(text):
     ]
     for pattern,kind in patterns:
         for m in re.finditer(pattern,text):
-            try:
-                parts=list(map(int,m.groups()))
-                y,mo,d=parts if kind=='ymd' else (parts[2],parts[1],parts[0])
-                dt=date(y,mo,d)
-                if TODAY <= dt <= date(TODAY.year+3,12,31): candidates.append((m.start(),dt.isoformat()))
-            except ValueError: pass
+            parts=list(map(int,m.groups()))
+            possibilities=[]
+            if kind=='ymd':
+                possibilities=[(parts[0],parts[1],parts[2])]
+            else:
+                # Accept both European DD/MM/YYYY and US MM/DD/YYYY when unambiguous.
+                a,b,y=parts
+                possibilities=[(y,b,a)]
+                if a <= 12 and b > 12:
+                    possibilities=[(y,a,b)]
+            for y,mo,d in possibilities:
+                try:
+                    dt=date(y,mo,d)
+                    if TODAY <= dt <= date(TODAY.year+3,12,31): candidates.append((m.start(),dt.isoformat()))
+                except ValueError: pass
     # Month-name dates, e.g. Oct 24, 2026 / 24 October 2026.
     months={'jan':1,'january':1,'feb':2,'february':2,'mar':3,'march':3,'apr':4,'april':4,'may':5,'jun':6,'june':6,'jul':7,'july':7,'aug':8,'august':8,'sep':9,'sept':9,'september':9,'oct':10,'october':10,'nov':11,'november':11,'dec':12,'december':12}
     for m in re.finditer(r'\b([A-Za-z]{3,9})\.?\s+(\d{1,2})(?:st|nd|rd|th)?[,]?\s+(20\d{2})\b',text):
@@ -234,8 +244,8 @@ def search_artist_rss(artist):
     """
     if not RSS_ENABLED: return [], 0, 0
     name=artist['name']
-    queries=[f'"{name}" (tour OR concert OR gig OR "live dates")',
-             f'"{name}" (Konzert OR Tour OR live OR festival)']
+    queries=[f'"{name}" ("upcoming shows" OR "tour dates" OR "live dates" OR "on tour")',
+             f'"{name}" (Konzert OR Tour OR Festival OR Tickets)']
     found=[]; seen=set(); feeds_ok=0; feed_errors=0
     for query in queries:
         result=fetch_text(google_news_rss_url(query), 'application/rss+xml, application/xml, text/xml, */*;q=0.5')
@@ -358,6 +368,12 @@ def main():
                     remember_rejection('non_music_context', artist['name'], item, combined)
                     continue
                 if not EVENT_WORDS.search(combined):
+                    stats['rss_rejected_no_event_word'] += 1
+                    remember_rejection('no_event_word', artist['name'], item, combined)
+                    continue
+                # Reviews and release announcements are not upcoming concert listings,
+                # even if their headlines contain words such as “live” or “show”.
+                if REVIEW_OR_RELEASE.search(item['title']):
                     stats['rss_rejected_no_event_word'] += 1
                     remember_rejection('no_event_word', artist['name'], item, combined)
                     continue
