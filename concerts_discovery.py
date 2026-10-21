@@ -16,7 +16,7 @@ SOURCES_FILE = ROOT / 'data' / 'concert_sources.json'
 CANDIDATES_FILE = ROOT / 'data' / 'concert_candidates.json'
 STATUS_FILE = ROOT / 'data' / 'concerts_status.json'
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.2; +https://nachtfragment.de)'
+UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.3; +https://nachtfragment.de)'
 MAX_ARTISTS = max(0, int(os.getenv('CONCERTS_MAX_ARTISTS', '65') or '65'))
 MAX_PAGES = max(1, int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '120') or '120'))
 PAUSE = max(0.0, float(os.getenv('CONCERTS_QUERY_PAUSE', '0.7') or '0.7'))
@@ -264,7 +264,17 @@ def rss_items(raw):
         title=(item.findtext('title') or '').strip()
         link=(item.findtext('link') or '').strip()
         desc=item.findtext('description') or ''
-        if title and link: out.append({'title':html.unescape(title),'url':canonical_url(link),'description':html.unescape(desc)})
+        source_el=item.find('source')
+        source_name=(source_el.text or '').strip() if source_el is not None else ''
+        source_url=canonical_url(source_el.get('url')) if source_el is not None else ''
+        if title and link:
+            out.append({
+                'title':html.unescape(title),
+                'url':canonical_url(link),
+                'description':html.unescape(desc),
+                'source_name':html.unescape(source_name),
+                'source_url':source_url
+            })
     return out
 
 def search_artist_rss(artist, search_domains=None):
@@ -429,11 +439,14 @@ def main():
                     remember_rejection('no_date', artist['name'], item, combined)
                     continue
                 url=item['url']
-                # Google News RSS links redirect; follow them when possible to store the original source.
+                # Resolve Google News links when possible. If they remain on Google,
+                # preserve the publisher source URL/name separately.
                 if url and 'news.google.com' in urlsplit(url).netloc.lower():
                     resolved=fetch_text(url)
                     if resolved['ok']:
-                        url=canonical_url(resolved['url']) or url
+                        final_url=canonical_url(resolved['url'])
+                        if final_url and 'news.google.com' not in urlsplit(final_url).netloc.lower():
+                            url=final_url
                 title=item['title']
                 cid=make_id(artist['name'],url,dt,title); prev=by_id.get(cid,{}); stamp=now_iso()
                 by_id[cid]={**prev,'id':cid,'artist':artist['name'],'date':dt,'title':title,
@@ -443,7 +456,9 @@ def main():
                     'first_seen':prev.get('first_seen') or stamp,'last_seen':stamp,
                     'source_type':'public_google_news_rss','review_required':True,
                     'candidate_type':'rss_event_announcement','page_evidence_checked':False,
-                    'event_startdate_evidence':True,'search_query':item.get('query','')}
+                    'event_startdate_evidence':True,'search_query':item.get('query',''),
+                    'source_name':item.get('source_name',''),
+                    'source_url':item.get('source_url','')}
                 stats['accepted'] += 1
             if ai % 10 == 0: print(f'  RSS-Suche: {ai}/{len(artists)} Künstler geprüft')
     stamp=now_iso(); rows=sorted(by_id.values(),key=lambda x:(x.get('date') or '9999',str(x.get('artist','')).casefold()))
