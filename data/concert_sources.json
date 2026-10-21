@@ -19,7 +19,7 @@
     "require_event_date": true,
     "require_venue_or_city": true,
     "require_source_url": true,
-    "auto_publish": false,
+    "auto_publish": true,
     "note": "Unbestätigte Treffer bleiben Kandidaten und werden nicht automatisch veröffentlicht."
   }
 }
