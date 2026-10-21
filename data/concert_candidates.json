@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T16:02:02+00:00",
+  "updated_at": "2026-10-21T16:09:32+00:00",
   "count": 10,
   "candidates": [
     {
@@ -34,7 +34,7 @@
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-10-21T15:43:11+00:00",
-      "last_seen": "2026-10-21T16:00:53+00:00",
+      "last_seen": "2026-10-21T16:08:29+00:00",
       "source_type": "public_google_news_rss",
       "review_required": true,
       "candidate_type": "rss_event_announcement",
@@ -76,7 +76,7 @@
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-10-21T15:43:57+00:00",
-      "last_seen": "2026-10-21T16:01:44+00:00",
+      "last_seen": "2026-10-21T16:09:15+00:00",
       "source_type": "public_google_news_rss",
       "review_required": true,
       "candidate_type": "rss_event_announcement",
@@ -118,7 +118,7 @@
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-10-21T15:43:11+00:00",
-      "last_seen": "2026-10-21T16:00:54+00:00",
+      "last_seen": "2026-10-21T16:08:29+00:00",
       "source_type": "public_google_news_rss",
       "review_required": true,
       "candidate_type": "rss_event_announcement",
@@ -182,7 +182,7 @@
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-10-21T15:41:35+00:00",
-      "last_seen": "2026-10-21T15:41:35+00:00",
+      "last_seen": "2026-10-21T16:06:54+00:00",
       "source_type": "public_google_news_rss",
       "review_required": true,
       "candidate_type": "rss_event_announcement",
