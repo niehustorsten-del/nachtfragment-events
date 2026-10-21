@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-21T15:44:14+00:00",
-  "count": 8,
+  "updated_at": "2026-10-21T16:02:02+00:00",
+  "count": 10,
   "candidates": [
     {
       "id": "7e50980ca634ee53",
@@ -34,7 +34,7 @@
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-10-21T15:43:11+00:00",
-      "last_seen": "2026-10-21T15:43:11+00:00",
+      "last_seen": "2026-10-21T16:00:53+00:00",
       "source_type": "public_google_news_rss",
       "review_required": true,
       "candidate_type": "rss_event_announcement",
@@ -76,7 +76,7 @@
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-10-21T15:43:57+00:00",
-      "last_seen": "2026-10-21T15:43:57+00:00",
+      "last_seen": "2026-10-21T16:01:44+00:00",
       "source_type": "public_google_news_rss",
       "review_required": true,
       "candidate_type": "rss_event_announcement",
@@ -118,7 +118,7 @@
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-10-21T15:43:11+00:00",
-      "last_seen": "2026-10-21T15:43:11+00:00",
+      "last_seen": "2026-10-21T16:00:54+00:00",
       "source_type": "public_google_news_rss",
       "review_required": true,
       "candidate_type": "rss_event_announcement",
@@ -149,6 +149,28 @@
       "search_query": "site:bandsintown.com \"Hinfort\" (concert OR tour OR tickets OR events)"
     },
     {
+      "id": "3d10142693253fb0",
+      "artist": "Thalie Némésis",
+      "date": "2027-01-29",
+      "title": "Thalie Némésis Fréjus Tickets, Monster'S Art Jan 29, 2027 - Bandsintown",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQd1lBOXFTODBGVGZYNXN3UGU0cnVUdXhtUVNVOHZ5Yi0wa0Yxai10bzdhVzZONWRWa1VDYWlvTWtVY3RST3c2dklGLUdhWEFfZkJIRTRrekF3d2NFaFZ1S0c2eV9QQzR0eWtfZjVUQWc5dG4tTE12OVJBa3l3OUlIcVVLT1Nwa3otbkwtY1VXanVJdVhtZF9jSTVIZFdicU1MOF9ZTHFDazNqZHBwdnZkazJoT2duRkJ0dnJWdFVqQW1LVUptSVFnWTBfTzJSbkp5M1Y0T1RuLThkOWVo?oc=5",
+      "snippet": "Thalie Némésis Fréjus Tickets, Monster'S Art Jan 29, 2027 Bandsintown",
+      "venue": null,
+      "city": null,
+      "score": 15,
+      "status": "needs_review",
+      "first_seen": "2026-10-21T16:01:20+00:00",
+      "last_seen": "2026-10-21T16:01:20+00:00",
+      "source_type": "public_google_news_rss",
+      "review_required": true,
+      "candidate_type": "rss_event_announcement",
+      "page_evidence_checked": false,
+      "event_startdate_evidence": true,
+      "search_query": "site:bandsintown.com \"Thalie Némésis\" (concert OR tour OR tickets OR events)",
+      "source_name": "Bandsintown",
+      "source_url": "https://www.bandsintown.com/"
+    },
+    {
       "id": "505b132edf97335c",
       "artist": "Hinfort",
       "date": "2027-05-14",
@@ -169,6 +191,28 @@
       "search_query": "site:bandsintown.com \"Hinfort\" (concert OR tour OR tickets OR events)",
       "source_name": "Bandsintown",
       "source_url": "https://bandsintown.com/"
+    },
+    {
+      "id": "e00555726a96b8c7",
+      "artist": "Hinfort",
+      "date": "2027-05-14",
+      "title": "hinfort Kassel Tickets, Goldgrube May 14, 2027 - Bandsintown",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNLTlzUGdJNFAydWlka0d3MHMzUmE1b2FmYTRGTFUtOVUtaV9XQnk2RTNVdDJCX3JTZ3lzT0gxVnM3cWVXRVdfUkpxTmZkWWtjMzE0UkV3VThOZ1dqTmdPZHI5OURFV3AzTGRpWl9NMW53THEtLUVzbElFdDRMeFg0cW10dWQ0amk1YUxIQ2ZMYW1Xekx5eUp4STBJWklEdTJid1BPaXFaUjdjN2tDM0hybEx6YkxXX1lzdkhXbzR3?oc=5",
+      "snippet": "hinfort Kassel Tickets, Goldgrube May 14, 2027 Bandsintown",
+      "venue": null,
+      "city": null,
+      "score": 15,
+      "status": "needs_review",
+      "first_seen": "2026-10-21T15:59:10+00:00",
+      "last_seen": "2026-10-21T15:59:10+00:00",
+      "source_type": "public_google_news_rss",
+      "review_required": true,
+      "candidate_type": "rss_event_announcement",
+      "page_evidence_checked": false,
+      "event_startdate_evidence": true,
+      "search_query": "site:bandsintown.com \"Hinfort\" (concert OR tour OR tickets OR events)",
+      "source_name": "Bandsintown",
+      "source_url": "https://www.bandsintown.com/"
     }
   ]
 }
