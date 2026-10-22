@@ -16,7 +16,7 @@ SOURCES_FILE = ROOT / 'data' / 'concert_sources.json'
 CANDIDATES_FILE = ROOT / 'data' / 'concert_candidates.json'
 STATUS_FILE = ROOT / 'data' / 'concerts_status.json'
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.3; +https://nachtfragment.de)'
+UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.4; +https://nachtfragment.de)'
 MAX_ARTISTS = max(0, int(os.getenv('CONCERTS_MAX_ARTISTS', '65') or '65'))
 MAX_PAGES = max(1, int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '120') or '120'))
 PAUSE = max(0.0, float(os.getenv('CONCERTS_QUERY_PAUSE', '0.7') or '0.7'))
@@ -252,6 +252,59 @@ def parse_rss_date(text):
             except ValueError: pass
     return min(candidates)[1] if candidates else None
 
+
+def extract_rss_venue_city(title, artist_name):
+    """Conservative extraction from headlines like 'Artist Berlin Tickets, Venue Oct 24, 2026 - Bandsintown'.
+    Extracted fields are clues only; candidates still require editorial review.
+    """
+    text = html.unescape(re.sub(r'\s+', ' ', str(title or ''))).strip()
+    if artist_name and text.casefold().startswith(artist_name.casefold()):
+        text = text[len(artist_name):].strip(" \t–-:|")
+    months = r'(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)'
+    m = re.search(r'^\s*(?P<city>[^,]{2,50}?)\s+Tickets?\s*,\s*(?P<venue>.+?)\s+' + months + r'\s+\d{1,2}\s*,?\s*20\d{2}\b', text, re.I)
+    if not m:
+        return None, None
+    city = re.sub(r'\s+', ' ', m.group('city')).strip(" -–|")
+    venue = re.sub(r'\s+', ' ', m.group('venue')).strip(" -–|")
+    if not city or not venue or len(city) > 50 or len(venue) > 100:
+        return None, None
+    return venue, city
+
+def deduplicate_candidates(rows):
+    """Merge duplicate RSS records while preserving editorial status and first_seen."""
+    merged = {}
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        artist = norm(row.get('artist'))
+        event_date = str(row.get('date') or '')
+        title = norm(row.get('title'))
+        venue = norm(row.get('venue'))
+        city = norm(row.get('city'))
+        # Exact headline duplicates from Google News often have different tracking/query URLs.
+        key = (artist, event_date, title, venue, city)
+        if key not in merged:
+            merged[key] = row
+            continue
+        old = merged[key]
+        # Prefer a direct publisher link over a Google News wrapper if one exists.
+        old_url = canonical_url(old.get('url', ''))
+        new_url = canonical_url(row.get('url', ''))
+        old_google = 'news.google.com' in urlsplit(old_url).netloc.lower()
+        new_google = 'news.google.com' in urlsplit(new_url).netloc.lower()
+        if old_google and new_url and not new_google:
+            old['url'] = new_url
+        for field in ('venue', 'city', 'source_name', 'source_url', 'snippet', 'search_query'):
+            if not old.get(field) and row.get(field):
+                old[field] = row[field]
+        if old.get('status') in (None, '', 'needs_review') and row.get('status') not in (None, ''):
+            old['status'] = row['status']
+        old['first_seen'] = min(str(old.get('first_seen') or '9999'), str(row.get('first_seen') or '9999'))
+        old['last_seen'] = max(str(old.get('last_seen') or ''), str(row.get('last_seen') or ''))
+        # Keep the stable ID from the first record; deduplication does not confirm the event.
+        merged[key] = old
+    return list(merged.values())
+
 def google_news_rss_url(query):
     q=urllib.parse.quote(query)
     return f'https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en'
@@ -448,10 +501,11 @@ def main():
                         if final_url and 'news.google.com' not in urlsplit(final_url).netloc.lower():
                             url=final_url
                 title=item['title']
+                guessed_venue, guessed_city = extract_rss_venue_city(title, artist['name'])
                 cid=make_id(artist['name'],url,dt,title); prev=by_id.get(cid,{}); stamp=now_iso()
                 by_id[cid]={**prev,'id':cid,'artist':artist['name'],'date':dt,'title':title,
                     'url':url,'snippet':re.sub(r'\s+',' ',re.sub(r'(?s)<[^>]+>',' ',item['description'])).strip()[:500],
-                    'venue':prev.get('venue'),'city':prev.get('city'),'score':15,
+                    'venue':prev.get('venue') or guessed_venue,'city':prev.get('city') or guessed_city,'score':15,
                     'status':statuses.get(cid,prev.get('status','needs_review')),
                     'first_seen':prev.get('first_seen') or stamp,'last_seen':stamp,
                     'source_type':'public_google_news_rss','review_required':True,
@@ -461,7 +515,9 @@ def main():
                     'source_url':item.get('source_url','')}
                 stats['accepted'] += 1
             if ai % 10 == 0: print(f'  RSS-Suche: {ai}/{len(artists)} Künstler geprüft')
-    stamp=now_iso(); rows=sorted(by_id.values(),key=lambda x:(x.get('date') or '9999',str(x.get('artist','')).casefold()))
+    stamp=now_iso()
+    rows=deduplicate_candidates(list(by_id.values()))
+    rows=sorted(rows,key=lambda x:(x.get('date') or '9999',str(x.get('artist','')).casefold()))
     save_json(CANDIDATES_FILE,{'updated_at':stamp,'count':len(rows),'candidates':rows})
     save_json(STATUS_FILE,{'updated_at':stamp,'statuses':statuses})
     print('Diagnose:',json.dumps(stats,ensure_ascii=False))
