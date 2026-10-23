@@ -14,9 +14,10 @@ ROOT = Path(__file__).resolve().parent
 ARTISTS_FILE = ROOT / 'data' / 'artists.json'
 SOURCES_FILE = ROOT / 'data' / 'concert_sources.json'
 CANDIDATES_FILE = ROOT / 'data' / 'concert_candidates.json'
+CONCERTS_FILE = ROOT / 'concerts.json'
 STATUS_FILE = ROOT / 'data' / 'concerts_status.json'
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.4; +https://nachtfragment.de)'
+UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.6; +https://nachtfragment.de)'
 MAX_ARTISTS = max(0, int(os.getenv('CONCERTS_MAX_ARTISTS', '65') or '65'))
 MAX_PAGES = max(1, int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '120') or '120'))
 PAUSE = max(0.0, float(os.getenv('CONCERTS_QUERY_PAUSE', '0.7') or '0.7'))
@@ -360,6 +361,77 @@ def search_artist_rss(artist, search_domains=None):
     return found[:RSS_PER_ARTIST], feeds_ok, feed_errors, len(queries)
 
 
+def publishable_candidate(row):
+    """Only publish future events with explicit event evidence and useful details."""
+    if not isinstance(row, dict):
+        return False
+    dt = valid_date(row.get('date'))
+    if not dt or dt != row.get('date'):
+        return False
+    artist = str(row.get('artist') or '').strip()
+    title = str(row.get('title') or '').strip()
+    url = canonical_url(row.get('url'))
+    if not artist or not title or not url:
+        return False
+    # Structured Event markup is strongest evidence. RSS candidates need a direct
+    # non-Google source link plus both venue and city; otherwise keep them as candidates.
+    if row.get('source_type') == 'public_schema_org_event':
+        return bool(row.get('page_evidence_checked') and row.get('event_startdate_evidence'))
+    if row.get('source_type') == 'public_google_news_rss':
+        host = urlsplit(url).netloc.lower()
+        return bool('news.google.com' not in host and row.get('venue') and row.get('city')
+                    and row.get('event_startdate_evidence') and not NON_MUSIC_CONTEXT.search(
+                        artist + ' ' + title + ' ' + str(row.get('snippet') or '')))
+    return False
+
+
+def publish_concerts(candidates, stamp):
+    """Merge approved-by-rules candidates into concerts.json, preserving future existing events."""
+    existing_obj = load_json(CONCERTS_FILE, {'events': []})
+    existing = rows_from(existing_obj, ('events',))
+    events_by_key = {}
+
+    def key_for(row):
+        return (norm(row.get('artist')), str(row.get('date') or ''), norm(row.get('title')))
+
+    # Keep existing future events; this also preserves manually curated entries.
+    for row in existing:
+        if not isinstance(row, dict) or not valid_date(row.get('date')):
+            continue
+        key = key_for(row)
+        if all(key):
+            events_by_key[key] = row
+
+    published_now = 0
+    for row in candidates:
+        if not publishable_candidate(row):
+            continue
+        key = key_for(row)
+        if not all(key):
+            continue
+        event = {
+            'id': str(row.get('id') or make_id(row['artist'], row['url'], row['date'], row['title'])),
+            'artist': str(row['artist']).strip(),
+            'date': row['date'],
+            'title': str(row['title']).strip(),
+            'url': canonical_url(row.get('url')),
+            'venue': str(row.get('venue') or '').strip() or None,
+            'city': str(row.get('city') or '').strip() or None,
+            'source': str(row.get('source_name') or ('Nachtfragment Künstler-/Veranstaltungsseite'
+                         if row.get('source_type') == 'public_schema_org_event' else 'Öffentliche Konzertmeldung')),
+        }
+        if key not in events_by_key:
+            published_now += 1
+        # Refresh matching events with newer source data, but do not overwrite unrelated events.
+        events_by_key[key] = {**events_by_key.get(key, {}), **event}
+
+    events = sorted(events_by_key.values(), key=lambda x: (str(x.get('date') or '9999'),
+                                                           str(x.get('artist') or '').casefold()))
+    save_json(CONCERTS_FILE, {'updated_at': stamp, 'source': 'Nachtfragment Concert Discovery',
+                              'count': len(events), 'events': events})
+    print(f'Automatische Veröffentlichung: {published_now} neue Termine; {len(events)} Termine insgesamt.')
+
+
 def main():
     artists=load_artists()
     if MAX_ARTISTS: artists=artists[:MAX_ARTISTS]
@@ -517,9 +589,10 @@ def main():
     rows=sorted(rows,key=lambda x:(x.get('date') or '9999',str(x.get('artist','')).casefold()))
     save_json(CANDIDATES_FILE,{'updated_at':stamp,'count':len(rows),'candidates':rows})
     save_json(STATUS_FILE,{'updated_at':stamp,'statuses':statuses})
+    publish_concerts(rows, stamp)
     print('Diagnose:',json.dumps(stats,ensure_ascii=False))
     print('RSS-Ablehnungsbeispiele:', json.dumps(rejection_samples, ensure_ascii=False))
-    print(f'{len(rows)} Kandidaten gespeichert. Keine automatische Veröffentlichung in concerts.json.')
+    print(f'{len(rows)} Kandidaten gespeichert.')
     if not pages: print('HINWEIS: Keine Webseiten konfiguriert. Öffentliche Club-/Veranstalterkalender in data/concert_sources.json ergänzen.')
 
 if __name__=='__main__':
