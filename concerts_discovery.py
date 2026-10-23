@@ -271,7 +271,7 @@ def extract_rss_venue_city(title, artist_name):
     return venue, city
 
 def deduplicate_candidates(rows):
-    """Merge duplicate RSS records while preserving editorial status and first_seen."""
+    """Merge duplicate RSS records even when only one row has venue/city parsed."""
     merged = {}
     for row in rows:
         if not isinstance(row, dict):
@@ -279,15 +279,13 @@ def deduplicate_candidates(rows):
         artist = norm(row.get('artist'))
         event_date = str(row.get('date') or '')
         title = norm(row.get('title'))
-        venue = norm(row.get('venue'))
-        city = norm(row.get('city'))
-        # Exact headline duplicates from Google News often have different tracking/query URLs.
-        key = (artist, event_date, title, venue, city)
+        # Venue/city are deliberately excluded from the identity key: an older
+        # duplicate may have these fields empty while a newer headline reveals them.
+        key = (artist, event_date, title)
         if key not in merged:
             merged[key] = row
             continue
         old = merged[key]
-        # Prefer a direct publisher link over a Google News wrapper if one exists.
         old_url = canonical_url(old.get('url', ''))
         new_url = canonical_url(row.get('url', ''))
         old_google = 'news.google.com' in urlsplit(old_url).netloc.lower()
@@ -301,7 +299,6 @@ def deduplicate_candidates(rows):
             old['status'] = row['status']
         old['first_seen'] = min(str(old.get('first_seen') or '9999'), str(row.get('first_seen') or '9999'))
         old['last_seen'] = max(str(old.get('last_seen') or ''), str(row.get('last_seen') or ''))
-        # Keep the stable ID from the first record; deduplication does not confirm the event.
         merged[key] = old
     return list(merged.values())
 
@@ -334,7 +331,7 @@ def search_artist_rss(artist, search_domains=None):
     """Use public Google News RSS without an API key. Do not filter by publication date:
     an older article can announce a future concert, and after:TODAY was excluding useful results.
     """
-    if not RSS_ENABLED: return [], 0, 0
+    if not RSS_ENABLED: return [], 0, 0, 0
     name=artist['name']
     # Mix event-focused queries with known ticket/listing domains. Keep the artist name
     # quoted so common names (e.g. Customs) are less likely to return unrelated news.
