@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Nachtfragment concert discovery from public artist/source pages and public Google News RSS.
 No API keys. Candidates require an explicit future event date and matching artist.
-Never publishes automatically to concerts.json.
+Only candidates with sufficient evidence are automatically published; others remain for review.
 """
 import hashlib, html, json, os, re, sys, time, urllib.parse, xml.etree.ElementTree as ET
 from datetime import date, datetime, timezone
@@ -17,7 +17,7 @@ CANDIDATES_FILE = ROOT / 'data' / 'concert_candidates.json'
 CONCERTS_FILE = ROOT / 'concerts.json'
 STATUS_FILE = ROOT / 'data' / 'concerts_status.json'
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.6; +https://nachtfragment.de)'
+UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.7; +https://nachtfragment.de)'
 MAX_ARTISTS = max(0, int(os.getenv('CONCERTS_MAX_ARTISTS', '65') or '65'))
 MAX_PAGES = max(1, int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '120') or '120'))
 PAUSE = max(0.0, float(os.getenv('CONCERTS_QUERY_PAUSE', '0.7') or '0.7'))
@@ -210,6 +210,73 @@ def fetch_text(url, accept='application/rss+xml, application/xml, text/xml, text
     except Exception as e:
         return {'ok':False,'url':url,'reason':type(e).__name__+':'+str(e)[:100]}
 
+def resolve_google_news_url(url):
+    """Resolve a Google News RSS URL to an original publisher URL when possible."""
+    original = canonical_url(url)
+    if not original or 'news.google.com' not in urlsplit(original).netloc.lower():
+        return original
+
+    result = fetch_text(original, 'text/html,application/xhtml+xml,*/*;q=0.8')
+    if not result.get('ok'):
+        return original
+    final_url = canonical_url(result.get('url', ''))
+    if final_url and 'news.google.com' not in urlsplit(final_url).netloc.lower():
+        return final_url
+
+    raw = html.unescape(result.get('raw', ''))
+    candidates = []
+    patterns = [
+        r"(?is)<meta[^>]+http-equiv=[\"']?refresh[\"']?[^>]+content=[\"'][^\"']*url=([^\"']+)",
+        r"(?is)<link[^>]+rel=[\"'][^\"']*canonical[^\"']*[\"'][^>]+href=[\"']([^\"']+)",
+        r"(?is)<meta[^>]+property=[\"']og:url[\"'][^>]+content=[\"']([^\"']+)",
+        r"(?is)(?:window\.location(?:\.href)?|location\.href)\s*=\s*[\"']([^\"']+)",
+        r"(?is)[\"'](?:url|targetUrl|articleUrl|originalUrl)[\"']\s*:\s*[\"'](https?[^\"']+)",
+        r"(?is)data-n-au=[\"']([^\"']+)[\"']",
+    ]
+    for pattern in patterns:
+        for match in re.finditer(pattern, raw):
+            value = match.group(1).replace(r"\/", "/").replace("&amp;", "&").strip()
+            value = urllib.parse.unquote(value)
+            if value.startswith("//"):
+                value = "https:" + value
+            value = canonical_url(urljoin(final_url or original, value))
+            if value:
+                candidates.append(value)
+
+    for match in re.finditer(r"(?is)<a\b[^>]*href=[\"']([^\"']+)[\"'][^>]*>(.*?)</a>", raw):
+        href = html.unescape(match.group(1)).replace(r"\/", "/")
+        label = re.sub(r"(?s)<[^>]+>", " ", html.unescape(match.group(2)))
+        label = re.sub(r"\s+", " ", label).strip().lower()
+        value = canonical_url(urljoin(final_url or original, href))
+        if value and "news.google.com" not in urlsplit(value).netloc.lower():
+            if any(word in label for word in ("read more", "full story", "original", "website",
+                                               "tickets", "event", "bandsintown", "songkick", "concert")):
+                candidates.append(value)
+
+    blocked_hosts = ("google.com", "gstatic.com", "googleusercontent.com", "facebook.com",
+                     "instagram.com", "tiktok.com", "youtube.com", "youtu.be", "spotify.com",
+                     "soundcloud.com", "bandcamp.com", "apple.com", "x.com", "twitter.com")
+    useful = []
+    for value in candidates:
+        parts = urlsplit(value)
+        host = parts.netloc.lower().split(":")[0]
+        if parts.scheme not in ("http", "https") or not host:
+            continue
+        if any(host == item or host.endswith("." + item) for item in blocked_hosts):
+            continue
+        if not parts.path.strip("/"):
+            continue
+        useful.append(value)
+    useful = list(dict.fromkeys(useful))
+    markers = ("/e/", "/event", "/events/", "/concert", "/gig", "/show", "/tour",
+               "/tickets", "/artist/", "/artists/")
+    useful.sort(key=lambda value: (
+        0 if any(marker in urlsplit(value).path.lower() for marker in markers) else 1,
+        len(urlsplit(value).path)
+    ))
+    return useful[0] if useful else original
+
+
 def parse_rss_date(text):
     """Extract an explicit event date from result text; never use RSS publication date as gig date."""
     text=html.unescape(re.sub(r'<[^>]+>',' ',str(text or '')))
@@ -378,8 +445,17 @@ def publishable_candidate(row):
     if row.get('source_type') == 'public_schema_org_event':
         return bool(row.get('page_evidence_checked') and row.get('event_startdate_evidence'))
     if row.get('source_type') == 'public_google_news_rss':
-        host = urlsplit(url).netloc.lower()
-        return bool('news.google.com' not in host and row.get('venue') and row.get('city')
+        parts = urlsplit(url)
+        host = parts.netloc.lower().split(':')[0]
+        path = parts.path.strip('/')
+        blocked_hosts = ('news.google.com', 'google.com', 'gstatic.com', 'facebook.com',
+                         'instagram.com', 'youtube.com', 'youtu.be', 'spotify.com',
+                         'bandcamp.com', 'apple.com', 'x.com', 'twitter.com')
+        external_article_url = bool(
+            parts.scheme in ('http', 'https') and path and
+            not any(host == item or host.endswith('.' + item) for item in blocked_hosts)
+        )
+        return bool(external_article_url and row.get('venue') and row.get('city')
                     and row.get('event_startdate_evidence') and not NON_MUSIC_CONTEXT.search(
                         artist + ' ' + title + ' ' + str(row.get('snippet') or '')))
     return False
@@ -564,11 +640,7 @@ def main():
                 # Resolve Google News links when possible. If they remain on Google,
                 # preserve the publisher source URL/name separately.
                 if url and 'news.google.com' in urlsplit(url).netloc.lower():
-                    resolved=fetch_text(url)
-                    if resolved['ok']:
-                        final_url=canonical_url(resolved['url'])
-                        if final_url and 'news.google.com' not in urlsplit(final_url).netloc.lower():
-                            url=final_url
+                    url = resolve_google_news_url(url)
                 title=item['title']
                 guessed_venue, guessed_city = extract_rss_venue_city(title, artist['name'])
                 cid=make_id(artist['name'],url,dt,title); prev=by_id.get(cid,{}); stamp=now_iso()
@@ -593,6 +665,8 @@ def main():
     print('Diagnose:',json.dumps(stats,ensure_ascii=False))
     print('RSS-Ablehnungsbeispiele:', json.dumps(rejection_samples, ensure_ascii=False))
     print(f'{len(rows)} Kandidaten gespeichert.')
+    review_only = sum(1 for row in rows if not publishable_candidate(row))
+    print(f'{review_only} Kandidaten bleiben zur Prüfung; ungeklärte Google-News-Links werden nicht automatisch veröffentlicht.')
     if not pages: print('HINWEIS: Keine Webseiten konfiguriert. Öffentliche Club-/Veranstalterkalender in data/concert_sources.json ergänzen.')
 
 if __name__=='__main__':
