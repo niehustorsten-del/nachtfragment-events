@@ -17,12 +17,12 @@ CANDIDATES_FILE = ROOT / 'data' / 'concert_candidates.json'
 CONCERTS_FILE = ROOT / 'concerts.json'
 STATUS_FILE = ROOT / 'data' / 'concerts_status.json'
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.7; +https://nachtfragment.de)'
+UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.8; +https://nachtfragment.de)'
 MAX_ARTISTS = max(0, int(os.getenv('CONCERTS_MAX_ARTISTS', '65') or '65'))
 MAX_PAGES = max(1, int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '120') or '120'))
 PAUSE = max(0.0, float(os.getenv('CONCERTS_QUERY_PAUSE', '0.7') or '0.7'))
 MAX_BYTES = 1_500_000
-RSS_PER_ARTIST = max(1, int(os.getenv('CONCERTS_RSS_RESULTS', '18') or '18'))
+RSS_PER_ARTIST = max(1, int(os.getenv('CONCERTS_RSS_RESULTS', '30') or '30'))
 RSS_ENABLED = os.getenv('CONCERTS_RSS_ENABLED', '1').strip().lower() not in {'0','false','no'}
 EVENT_WORDS = re.compile(r'\b(live|concert|gig|show|tour|festival|konzert|auftritt|termine|tourdates|tour dates|tickets|supporting|upcoming dates|live dates|on stage|doors open)\b', re.I)
 REVIEW_OR_RELEASE = re.compile(r'\b(review|live review|concert review|album review|track review|premiere|new single|new album|new ep|releases? (?:new |a |their )?(?:single|album|ep)|release date|music video|official video|remix|interview|conversation with|album stream|track-by-track)\b', re.I)
@@ -640,7 +640,12 @@ def main():
                 # Resolve Google News links when possible. If they remain on Google,
                 # preserve the publisher source URL/name separately.
                 if url and 'news.google.com' in urlsplit(url).netloc.lower():
+                    original_news_url = url
                     url = resolve_google_news_url(url)
+                    if url and 'news.google.com' not in urlsplit(url).netloc.lower():
+                        print(f"  RSS-QUELLE AUFGELÖST: {artist['name']} | {url}")
+                    else:
+                        print(f"  RSS-QUELLE NICHT AUFGELÖST: {artist['name']} | {original_news_url[:160]}")
                 title=item['title']
                 guessed_venue, guessed_city = extract_rss_venue_city(title, artist['name'])
                 cid=make_id(artist['name'],url,dt,title); prev=by_id.get(cid,{}); stamp=now_iso()
@@ -666,7 +671,13 @@ def main():
     print('RSS-Ablehnungsbeispiele:', json.dumps(rejection_samples, ensure_ascii=False))
     print(f'{len(rows)} Kandidaten gespeichert.')
     review_only = sum(1 for row in rows if not publishable_candidate(row))
+    unresolved_news = sum(
+        1 for row in rows
+        if row.get('source_type') == 'public_google_news_rss'
+        and 'news.google.com' in urlsplit(canonical_url(row.get('url'))).netloc.lower()
+    )
     print(f'{review_only} Kandidaten bleiben zur Prüfung; ungeklärte Google-News-Links werden nicht automatisch veröffentlicht.')
+    print(f'Prüfdiagnose: {unresolved_news} RSS-Kandidaten haben noch einen Google-News-Link; RSS-Trefferlimit pro Künstler={RSS_PER_ARTIST}.')
     if not pages: print('HINWEIS: Keine Webseiten konfiguriert. Öffentliche Club-/Veranstalterkalender in data/concert_sources.json ergänzen.')
 
 if __name__=='__main__':
