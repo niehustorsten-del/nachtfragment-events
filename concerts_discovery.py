@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Nachtfragment concert discovery from artist pages, linked official event pages, and public Google News RSS.
-No API keys. Candidates require an explicit future event date and matching artist.
+No API keys. Candidates require an explicit future event date and matching artist.\nVersion 5.12 filters internal/placeholder URLs from crawling, candidate retention, and publication.
 Only candidates with sufficient evidence are automatically published; others remain for review.
 """
 import hashlib, html, json, os, re, sys, time, urllib.parse, xml.etree.ElementTree as ET
@@ -17,7 +17,7 @@ CANDIDATES_FILE = ROOT / 'data' / 'concert_candidates.json'
 CONCERTS_FILE = ROOT / 'concerts.json'
 STATUS_FILE = ROOT / 'data' / 'concerts_status.json'
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.11; +https://nachtfragment.de)'
+UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.12; +https://nachtfragment.de)'
 MAX_ARTISTS = max(0, int(os.getenv('CONCERTS_MAX_ARTISTS', '65') or '65'))
 MAX_PAGES = max(1, int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '120') or '120'))
 PAUSE = max(0.0, float(os.getenv('CONCERTS_QUERY_PAUSE', '0.7') or '0.7'))
@@ -59,6 +59,29 @@ def canonical_url(value):
         q = [(k,v) for k,v in parse_qsl(p.query, keep_blank_values=True) if not k.lower().startswith('utm_') and k.lower() not in TRACKING]
         return urlunsplit((p.scheme.lower(), p.netloc.lower(), p.path or '/', urlencode(q), ''))
     except Exception: return ''
+
+
+def is_internal_or_invalid_url(value):
+    """Reject templates, placeholders, and Nachtfragment's own site/repository as event sources."""
+    url = canonical_url(value)
+    if not url:
+        return True
+    parts = urlsplit(url)
+    host = (parts.hostname or '').lower().removeprefix('www.')
+    path = (parts.path or '').lower()
+    if any(token in str(value).lower() for token in ('${esc(', '${', '{{', '}}', '{artist}', 'javascript:', 'mailto:')):
+        return True
+    internal_hosts = {
+        'nachtfragment.de',
+        'github.com',
+        'github.io',
+        'raw.githubusercontent.com',
+    }
+    if host in internal_hosts or host.endswith('.github.io') or host.endswith('.nachtfragment.de'):
+        return True
+    if host == 'niehustorsten-del.github.io' and path.startswith('/nachtfragment-events'):
+        return True
+    return False
 
 def norm(value):
     return re.sub(r'[^\w]+', ' ', html.unescape(str(value or '')).casefold(), flags=re.UNICODE).strip()
@@ -192,7 +215,7 @@ def discover_event_links(raw, base_url, artist_name):
         label=re.sub(r'(?s)<[^>]+>',' ',m.group(4))
         label=re.sub(r'\s+',' ',html.unescape(label)).strip()
         url=canonical_url(urljoin(base_url,href))
-        if not url or urlsplit(url).netloc.lower().endswith('nachtfragment.de'):
+        if not url or is_internal_or_invalid_url(url):
             continue
         host=urlsplit(url).netloc.lower()
         if any(x in host for x in ('facebook.com','instagram.com','tiktok.com','youtube.com','youtu.be','spotify.com','soundcloud.com','bandcamp.com','apple.com','x.com','twitter.com')):
@@ -453,7 +476,9 @@ def publishable_candidate(row):
     # Structured Event markup is strongest evidence. RSS candidates need a direct
     # non-Google source link plus both venue and city; otherwise keep them as candidates.
     if row.get('source_type') == 'public_schema_org_event':
-        return bool(row.get('page_evidence_checked') and row.get('event_startdate_evidence'))
+        return bool(not is_internal_or_invalid_url(url)
+                    and row.get('page_evidence_checked')
+                    and row.get('event_startdate_evidence'))
     if row.get('source_type') == 'public_google_news_rss':
         parts = urlsplit(url)
         host = parts.netloc.lower().split(':')[0]
@@ -463,6 +488,7 @@ def publishable_candidate(row):
                          'bandcamp.com', 'apple.com', 'x.com', 'twitter.com')
         external_article_url = bool(
             parts.scheme in ('http', 'https') and path and
+            not is_internal_or_invalid_url(url) and
             not any(host == item or host.endswith('.' + item) for item in blocked_hosts)
         )
         return bool(external_article_url and row.get('venue') and row.get('city')
@@ -627,6 +653,10 @@ def main():
     for r in old_rows:
         if not isinstance(r,dict) or not r.get('id') or r.get('id') in bad_ids:
             continue
+        # Drop stale internal pages, placeholders, and invalid URLs from prior runs.
+        if is_internal_or_invalid_url(r.get('url')):
+            stats['old_candidates_dropped_invalid_url'] += 1
+            continue
         if r.get('source_type') == 'public_google_news_rss':
             old_text=str(r.get('artist',''))+' '+str(r.get('title',''))+' '+str(r.get('snippet',''))
             if NON_MUSIC_CONTEXT.search(old_text):
@@ -634,7 +664,7 @@ def main():
             if not valid_date(r.get('date')):
                 continue
         by_id[r['id']]=r
-    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'artist_pages_checked':0,'calendar_links_discovered':0,'calendar_pages_checked':0,'visible_date_candidates':0,'schema_events_seen':0,'date_without_year_candidates':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_artist_match':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0}
+    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'artist_pages_checked':0,'calendar_links_discovered':0,'calendar_pages_checked':0,'visible_date_candidates':0,'schema_events_seen':0,'date_without_year_candidates':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_artist_match':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0,'old_candidates_dropped_invalid_url':0}
     # Keep a few real examples of RSS rejections in the Actions log, so filters can be tuned from evidence.
     rejection_samples = {'no_artist_match': [], 'no_event_word': [], 'no_date': [], 'non_music_context': []}
     def remember_rejection(reason, artist_name, item, combined):
@@ -659,7 +689,8 @@ def main():
             stats['artist_pages_checked'] += 1
         if p.get('kind') in {'nachtfragment_artist_page', 'discovered_artist_link'}:
             for discovered in discover_event_links(raw, final, p['name']):
-                if discovered['url'] not in seen and len(pages) < MAX_PAGES:
+                if (not is_internal_or_invalid_url(discovered['url'])
+                        and discovered['url'] not in seen and len(pages) < MAX_PAGES):
                     pages.append(discovered)
                     seen.add(discovered['url'])
                     stats['calendar_links_discovered'] += 1
