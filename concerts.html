@@ -3,59 +3,44 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Live & Konzerte – Nachtfragment</title>
-<meta name="description" content="Kommende Konzerte, Gigs und Festivaltermine von Artists aus dem Nachtfragment-Universum.">
+<meta name="theme-color" content="#111015">
+<meta name="description" content="Nachtfragment – Verzeichnis für Gothic, Darkwave, EBM, Industrial, Clubs, Shops, Magazine und kommende Konzerte.">
+<title>Nachtfragment – Dark Music Directory & Konzerte</title>
 <style>
-:root{color-scheme:dark;--bg:#0b0b0e;--panel:#15151b;--line:#30303a;--text:#eeeaf1;--muted:#aaa5b2;--accent:#b8a0c9}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
-main{max-width:1050px;margin:auto;padding:32px 18px 60px}a{color:var(--accent);overflow-wrap:anywhere}
-header{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:24px}h1{font-size:clamp(2rem,5vw,3.2rem);margin:.15em 0}p{color:var(--muted)}
-.tools{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}input,select{background:var(--panel);color:var(--text);border:1px solid var(--line);padding:12px;border-radius:8px;min-width:180px}
-.list{display:grid;gap:12px}.event{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;display:grid;grid-template-columns:125px 1fr;gap:16px}
-.date{font-weight:700;color:var(--accent)}.event h2{font-size:1.15rem;margin:0 0 5px}.meta{color:var(--muted);margin:0 0 8px}.tag{display:inline-block;border:1px solid var(--line);padding:3px 8px;border-radius:999px;font-size:.8rem;color:var(--muted)}
-.empty{padding:22px;background:var(--panel);border:1px dashed var(--line);border-radius:12px;color:var(--muted)}
-footer{border-top:1px solid var(--line);margin-top:28px;padding-top:18px;font-size:.9rem;color:var(--muted)}
-@media(max-width:600px){.event{grid-template-columns:1fr;gap:5px}.date{font-size:.95rem}input,select{width:100%}}
+:root{color-scheme:dark;--bg:#111015;--panel:#1b1921;--panel2:#211e29;--line:#393341;--text:#f2eef5;--muted:#b9b0c2;--accent:#c5a3ff;--accent2:#8f70c5;--green:#8bd6a3;--red:#ff9d9d;--radius:16px}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#292133 0,#111015 48rem);color:var(--text);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline;color:#e0d0ff}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.hero{padding:46px 0 28px;border-bottom:1px solid var(--line)}.eyebrow{text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-size:.78rem;font-weight:700}.hero h1{font-size:clamp(2.2rem,6vw,4.5rem);line-height:1.03;margin:.4rem 0 1rem;letter-spacing:-.04em}.hero p{max-width:760px;color:var(--muted);font-size:1.08rem}.nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.nav a,.pill,.button{border:1px solid var(--line);background:#211e29;border-radius:999px;padding:8px 14px;color:var(--text);font-size:.9rem}.nav a:hover,.button:hover{border-color:var(--accent);text-decoration:none}.section{padding:30px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:18px}.section h2{font-size:clamp(1.55rem,3vw,2.15rem);margin:0;letter-spacing:-.025em}.section-intro{color:var(--muted);margin:.35rem 0 0}.status{font-size:.82rem;color:var(--muted)}.status.good{color:var(--green)}.controls{display:grid;grid-template-columns:minmax(200px,1fr) minmax(160px,240px);gap:10px;margin:18px 0}.controls input,.controls select{width:100%;padding:12px 14px;background:#17151c;border:1px solid var(--line);border-radius:10px;color:var(--text);font:inherit}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{min-width:0;background:linear-gradient(150deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--radius);padding:18px;display:flex;flex-direction:column;gap:9px;box-shadow:0 8px 24px #0002}.card h3{font-size:1.1rem;line-height:1.3;margin:0;overflow-wrap:anywhere}.card p{margin:0;color:var(--muted);font-size:.93rem;overflow-wrap:anywhere}.meta{display:flex;flex-wrap:wrap;gap:6px}.pill{font-size:.75rem;padding:4px 9px;color:var(--muted)}.card .actions{margin-top:auto;padding-top:8px;display:flex;gap:12px;flex-wrap:wrap}.card .actions a{font-size:.9rem}.date{color:var(--green);font-weight:700}.empty,.loading,.error{grid-column:1/-1;border:1px dashed var(--line);padding:22px;border-radius:var(--radius);color:var(--muted)}.error{color:var(--red)}.divider{border:0;border-top:1px solid var(--line);margin:0}.smallprint{font-size:.82rem;color:var(--muted);padding:20px 0 35px}.count{color:var(--muted);font-size:.9rem}.hidden{display:none!important}.tagline{display:inline-block;border:1px solid #58476d;background:#30263e;color:#e2d5f4;border-radius:8px;padding:3px 8px;font-size:.78rem}@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.wrap{width:min(100% - 22px,1180px)}.hero{padding-top:32px}.controls{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.card{padding:16px}}
 </style>
 </head>
-<body><main>
-<header>
-<p>NACHTFRAGMENT · DARK MUSIC</p>
-<h1>Live & Konzerte</h1>
-<p>Konzerte, Gigs und Festivaltermine von Artists, die auf Nachtfragment vorgestellt werden.</p>
-</header>
-<div class="tools">
-<input id="search" type="search" placeholder="Artist, Stadt oder Venue suchen" aria-label="Suche">
-<select id="period" aria-label="Zeitraum"><option value="all">Alle kommenden Termine</option><option value="30">Nächste 30 Tage</option><option value="90">Nächste 90 Tage</option></select>
-</div>
-<div id="status" class="meta">Termine werden geladen …</div>
-<section id="events" class="list" aria-live="polite"></section>
-<footer>Automatisch gefundene Suchtreffer werden nicht ungeprüft als bestätigte Konzerte veröffentlicht. Angaben bitte beim Veranstalter prüfen. <a href="https://nachtfragment.de/">Zurück zu Nachtfragment</a></footer>
-</main>
+<body>
+<header class="hero"><div class="wrap"><div class="eyebrow">Nachtfragment · Dark Music Directory</div><h1>Wo die Dunkelheit<br>weiter klingt.</h1><p>Ein wachsendes Verzeichnis für die dunkle Musikszene: Künstler, Clubs, Bars, Shops, Magazine und kommende Konzerte. Für das, was heute entsteht – und morgen vielleicht Kult wird.</p><nav class="nav" aria-label="Seitennavigation"><a href="#konzerte">Kommende Konzerte</a><a href="#verzeichnis">Verzeichnis</a><a href="https://nachtfragment.de/" target="_blank" rel="noopener">Nachtfragment.de ↗</a><a href="https://github.com/niehustorsten-del/nachtfragment-events" target="_blank" rel="noopener">Projekt auf GitHub ↗</a></nav></div></header>
+<main class="wrap">
+<section class="section" id="konzerte"><div class="section-head"><div><div class="eyebrow">Live · Tour · Underground</div><h2>Kommende Konzerte</h2><p class="section-intro">Automatisch aus der aktuellen Konzertdatei geladen.</p></div><div id="concert-status" class="status">Lade Konzerttermine …</div></div><div class="controls"><input id="concert-search" type="search" placeholder="Künstler, Stadt oder Veranstaltungsort suchen …" aria-label="Konzerte durchsuchen"><select id="concert-month" aria-label="Konzerte nach Zeitraum filtern"><option value="all">Alle kommenden Termine</option><option value="30">Nächste 30 Tage</option><option value="90">Nächste 90 Tage</option><option value="365">Nächstes Jahr</option></select></div><div id="concert-grid" class="grid"><div class="loading">Konzerttermine werden geladen …</div></div></section>
+<hr class="divider">
+<section class="section" id="verzeichnis"><div class="section-head"><div><div class="eyebrow">Szene · Orte · Medien</div><h2>Verzeichnis</h2><p class="section-intro">Shops, Clubs, Bars, Magazine und weitere Anlaufstellen der Dark-Music-Szene.</p></div><div id="directory-status" class="status">Lade Verzeichniseinträge …</div></div><div class="controls"><input id="directory-search" type="search" placeholder="Name, Ort, Land oder Kategorie suchen …" aria-label="Verzeichnis durchsuchen"><select id="directory-type" aria-label="Verzeichnis nach Kategorie filtern"><option value="all">Alle Kategorien</option><option value="shop">Shops</option><option value="club">Clubs & Bars</option><option value="magazine">Magazine</option><option value="other">Weitere Einträge</option></select></div><div id="directory-grid" class="grid"><div class="loading">Verzeichniseinträge werden geladen …</div></div></section>
+</main><footer class="wrap smallprint">Nachtfragment · Unabhängiges Verzeichnis für dunkle Musik und Kultur. Konzertangaben können sich ändern; bitte vor der Anreise die verlinkte Quelle prüfen. <span id="last-updated"></span></footer>
 <script>
-const DATA_URL = "data/concerts.json";
-let allEvents = [];
-const $ = id => document.getElementById(id);
-function safe(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
-function render(){
- const q=$("search").value.trim().toLocaleLowerCase("de");
- const period=$("period").value;
- const today=new Date(); today.setHours(0,0,0,0);
- const filtered=allEvents.filter(e=>{
-   if(e.status!=="confirmed"||!e.date)return false;
-   const d=new Date(e.date+"T00:00:00");
-   if(Number.isNaN(d.getTime())||d<today)return false;
-   if(period!=="all"&&(d-today)>Number(period)*86400000)return false;
-   return [e.artist,e.city,e.venue,e.title,e.country].join(" ").toLocaleLowerCase("de").includes(q);
- }).sort((a,b)=>a.date.localeCompare(b.date));
- $("status").textContent=`${filtered.length} bestätigte kommende Termine`;
- $("events").innerHTML=filtered.length?filtered.map(e=>{
-  const d=new Date(e.date+"T00:00:00").toLocaleDateString("de-DE",{day:"2-digit",month:"short",year:"numeric"});
-  const place=[e.venue,e.city,e.country].filter(Boolean).join(" · ");
-  return `<article class="event"><div class="date">${safe(d)}${e.time?`<br>${safe(e.time)}`:""}</div><div><h2>${safe(e.artist||e.title||"Konzert")}</h2><p class="meta">${safe(place||"Veranstaltungsort noch offen")}</p>${e.title&&e.title!==e.artist?`<p>${safe(e.title)}</p>`:""}${e.source_url?`<a href="${safe(e.source_url)}" target="_blank" rel="noopener noreferrer">Veranstaltungsdetails ↗</a>`:""} <span class="tag">bestätigt</span></div></article>`;
- }).join(""):'<div class="empty">Aktuell liegen noch keine bestätigten kommenden Konzerttermine vor. Neue Suchtreffer werden zunächst geprüft, bevor sie hier erscheinen.</div>';
-}
-$("search").addEventListener("input",render);$("period").addEventListener("change",render);
-fetch(DATA_URL,{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("Daten nicht verfügbar");return r.json()}).then(d=>{allEvents=d.events||[];render()}).catch(()=>{$("status").textContent="Konzertdaten konnten nicht geladen werden."; $("events").innerHTML='<div class="empty">Bitte später erneut versuchen.</div>';});
+const CONCERT_URLS=['concerts.json','./concerts.json','data/concerts.json'];
+const DIRECTORY_URLS=['data/nachtfragment.json','data/candidates.json'];
+const $=id=>document.getElementById(id);
+const text=(v)=>v==null?'':String(v).trim();
+const first=(obj,keys)=>{for(const k of keys){if(obj&&obj[k]!=null&&text(obj[k]))return obj[k]}return ''};
+function arrayFrom(data){if(Array.isArray(data))return data;if(!data||typeof data!=='object')return[];for(const k of ['candidates','events','items','entries','results','locations','data'])if(Array.isArray(data[k]))return data[k];return[]}
+async function loadJson(paths){let last;for(const path of paths){try{const r=await fetch(path+'?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error(path+' – HTTP '+r.status);return {data:await r.json(),path}}catch(e){last=e}}throw last||new Error('Datei nicht gefunden')}
+function safeDate(v){if(!v)return null;const s=String(v).slice(0,10);if(!/^\d{4}-\d{2}-\d{2}$/.test(s))return null;const d=new Date(s+'T12:00:00');return Number.isNaN(d.getTime())?null:d}
+function fmtDate(d){return new Intl.DateTimeFormat('de-DE',{weekday:'short',day:'2-digit',month:'long',year:'numeric'}).format(d)}
+function safeUrl(v){try{const u=new URL(v,location.href);return ['http:','https:'].includes(u.protocol)?u.href:''}catch{return''}}
+function el(tag,cls,content){const n=document.createElement(tag);if(cls)n.className=cls;if(content!=null)n.textContent=content;return n}
+let concerts=[];
+function renderConcerts(){const q=$('concert-search').value.trim().toLocaleLowerCase('de');const range=$('concert-month').value;const now=new Date();now.setHours(0,0,0,0);const filtered=concerts.filter(c=>{const hay=[c.artist,c.title,c.city,c.venue,c.snippet].join(' ').toLocaleLowerCase('de');if(q&&!hay.includes(q))return false;const d=safeDate(c.date);if(d&&d<now)return false;if(range!=='all'&&d&&d>new Date(now.getTime()+Number(range)*86400000))return false;return true}).sort((a,b)=>(a.date||'9999').localeCompare(b.date||'9999'));
+const grid=$('concert-grid');grid.replaceChildren();if(!filtered.length){grid.append(el('div','empty',concerts.length?'Keine passenden kommenden Termine gefunden.':'In der Konzertdatei wurden keine Termine gefunden.'));return}
+for(const c of filtered){const card=el('article','card');const d=safeDate(c.date);if(d)card.append(el('div','date',fmtDate(d)));card.append(el('h3',null,text(first(c,['artist','band','name']))||'Konzert'));const title=text(c.title);if(title&&title.toLocaleLowerCase('de')!==text(c.artist).toLocaleLowerCase('de'))card.append(el('p',null,title));const where=[text(c.venue),text(c.city)].filter((v,i,a)=>v&&a.indexOf(v)===i).join(' · ');if(where)card.append(el('p',null,'📍 '+where));const tags=el('div','meta');tags.append(el('span','pill',text(c.source_name)||'Konzertfund'));if(c.review_required||c.status==='needs_review')tags.append(el('span','pill','Quelle noch nicht bestätigt'));card.append(tags);const url=safeUrl(first(c,['event_url','source_url','url','link']));if(url){const actions=el('div','actions');const a=el('a',null,'Veranstaltung / Quelle öffnen ↗');a.href=url;a.target='_blank';a.rel='noopener noreferrer';actions.append(a);card.append(actions)}grid.append(card)}
+$('concert-status').textContent=filtered.length+' von '+concerts.length+' Terminen';$('concert-status').className='status good';}
+const category=(c)=>text(first(c,['category','type','kind','section','group','category_name'])).toLocaleLowerCase('de');
+function classify(c){const s=category(c)+' '+text(first(c,['name','title','type','description'])).toLocaleLowerCase('de');if(/shop|store|laden|boutique/.test(s))return'shop';if(/club|bar|discothek|disco|venue|nachtclub/.test(s))return'club';if(/magazin|magazine|zine|journal|publication/.test(s))return'magazine';return'other'}
+let directory=[];
+function renderDirectory(){const q=$('directory-search').value.trim().toLocaleLowerCase('de');const type=$('directory-type').value;const filtered=directory.filter(c=>{const hay=Object.values(c).filter(v=>typeof v==='string'||typeof v==='number').join(' ').toLocaleLowerCase('de');return(!q||hay.includes(q))&&(type==='all'||classify(c)===type)});const grid=$('directory-grid');grid.replaceChildren();if(!filtered.length){grid.append(el('div','empty',directory.length?'Keine passenden Einträge gefunden.':'Noch keine Verzeichniseinträge geladen.'));return}for(const c of filtered){const card=el('article','card');const name=text(first(c,['name','title','artist','band','business_name']))||'Eintrag';card.append(el('h3',null,name));const cat=text(first(c,['category','type','kind','section','group','category_name']));if(cat)card.append(el('div','meta', '')).append(el('span','pill',cat));const place=[text(first(c,['city','town','location','address'])),text(first(c,['country','region']))].filter(Boolean).join(' · ');if(place)card.append(el('p',null,'📍 '+place));const desc=text(first(c,['description','snippet','notes','summary']));if(desc)card.append(el('p',null,desc.slice(0,260)+(desc.length>260?'…':'')));const url=safeUrl(first(c,['website','url','link','source_url','homepage']));if(url){const actions=el('div','actions');const a=el('a',null,'Website öffnen ↗');a.href=url;a.target='_blank';a.rel='noopener noreferrer';actions.append(a);card.append(actions)}grid.append(card)}$('directory-status').textContent=filtered.length+' von '+directory.length+' Einträgen';$('directory-status').className='status good'}
+async function init(){try{const result=await loadJson(CONCERT_URLS);concerts=arrayFrom(result.data);$('concert-status').textContent=concerts.length+' Termine geladen';renderConcerts()}catch(e){$('concert-status').textContent='Datei nicht geladen';$('concert-status').className='status';$('concert-grid').replaceChildren(el('div','error','concerts.json konnte nicht geladen werden. Bitte prüfen, ob die Datei im Repository im selben Verzeichnis wie index.html liegt. Technischer Hinweis: '+e.message))}
+try{const results=await Promise.all(DIRECTORY_URLS.map(async path=>{const r=await fetch(path+'?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error(path+' HTTP '+r.status);return arrayFrom(await r.json())}));const seen=new Set();directory=results.flat().filter(c=>{const id=text(first(c,['id','url','website','name','title'])).toLowerCase();if(!id||seen.has(id))return false;seen.add(id);return true});renderDirectory()}catch(e){$('directory-status').textContent='Verzeichnisdateien nicht vollständig geladen';$('directory-grid').replaceChildren(el('div','error','Mindestens eine Verzeichnisdatei konnte nicht geladen werden. Prüfe data/nachtfragment.json und data/candidates.json. Technischer Hinweis: '+e.message))}
+$('last-updated').textContent=' · Zuletzt im Browser geladen: '+new Date().toLocaleString('de-DE')}
+$('concert-search').addEventListener('input',renderConcerts);$('concert-month').addEventListener('change',renderConcerts);$('directory-search').addEventListener('input',renderDirectory);$('directory-type').addEventListener('change',renderDirectory);init();
 </script>
 </body></html>
