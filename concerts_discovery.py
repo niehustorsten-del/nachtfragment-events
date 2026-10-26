@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Nachtfragment concert discovery from artist pages, linked official event pages, and public Google News RSS.
-No API keys. Candidates require an explicit future event date and matching artist.\nVersion 5.12 filters internal/placeholder URLs from crawling, candidate retention, and publication.
+No API keys. Candidates require an explicit future event date and matching artist.\nVersion 5.14 adds strict candidate quality checks, year-consistency validation, and junk/duplicate filtering.
 Only candidates with sufficient evidence are automatically published; others remain for review.
 """
 import hashlib, html, json, os, re, sys, time, urllib.parse, xml.etree.ElementTree as ET
@@ -17,7 +17,7 @@ CANDIDATES_FILE = ROOT / 'data' / 'concert_candidates.json'
 CONCERTS_FILE = ROOT / 'concerts.json'
 STATUS_FILE = ROOT / 'data' / 'concerts_status.json'
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.12; +https://nachtfragment.de)'
+UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.14; +https://nachtfragment.de)'
 MAX_ARTISTS = max(0, int(os.getenv('CONCERTS_MAX_ARTISTS', '65') or '65'))
 MAX_PAGES = max(1, int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '120') or '120'))
 PAUSE = max(0.0, float(os.getenv('CONCERTS_QUERY_PAUSE', '0.7') or '0.7'))
@@ -461,6 +461,82 @@ def search_artist_rss(artist, search_domains=None):
     return found[:RSS_PER_ARTIST], feeds_ok, feed_errors, len(queries)
 
 
+NAVIGATION_TITLE = re.compile(r'^(?:learn more|read more|buy tickets?|tickets?|search by event(?:, venue or city)?|browse events?|events?|calendar|home|menu|more|only on bandcamp\.?|available only on bandcamp\.?|all unreleased material\.?|punk|dark elektro|dark electro)$', re.I)
+
+
+def candidate_quality_reason(row):
+    """Return a reason when a candidate is clearly not a concert announcement."""
+    if not isinstance(row, dict):
+        return 'not_object'
+    title = re.sub(r'\s+', ' ', str(row.get('title') or '')).strip(' -–|')
+    artist = str(row.get('artist') or '').strip()
+    url = canonical_url(row.get('url'))
+    if not artist or not title or len(title) < 5:
+        return 'missing_artist_or_title'
+    if NAVIGATION_TITLE.fullmatch(title):
+        return 'navigation_or_fragment_title'
+    if REVIEW_OR_RELEASE.search(title):
+        return 'review_or_release_title'
+    if is_internal_or_invalid_url(url):
+        return 'invalid_or_internal_url'
+    # If a source explicitly names a year in its title, never keep a different inferred year.
+    date_text = str(row.get('date') or '')
+    explicit_years = {int(y) for y in re.findall(r'\b(20\d{2})\b', title)}
+    if explicit_years and date_text:
+        try:
+            saved_year = date.fromisoformat(date_text[:10]).year
+            if saved_year not in explicit_years:
+                return 'year_conflicts_with_title'
+        except ValueError:
+            return 'invalid_date'
+    combined = title + ' ' + str(row.get('snippet') or '')
+    if NON_MUSIC_CONTEXT.search(artist + ' ' + combined):
+        return 'non_music_context'
+    # Artist-page text is especially noisy: require an actual event clue in the evidence.
+    if row.get('source_type') == 'public_artist_page_text':
+        if not EVENT_WORDS.search(combined):
+            return 'no_event_language'
+        if re.search(r'\b(?:only on bandcamp|unreleased material|available only|listen now|stream now|new album|new single)\b', combined, re.I):
+            return 'release_or_navigation_fragment'
+        # A year inferred from nearby page text is too weak to retain as a concert date.
+        # Keep only artist-page candidates whose source actually states the event year.
+        if row.get('date_inferred_year'):
+            return 'artist_page_date_year_inferred'
+    return ''
+
+
+def quality_filter_candidates(rows):
+    """Remove obvious false positives and collapse duplicate event candidates."""
+    kept=[]
+    for row in rows:
+        if candidate_quality_reason(row):
+            continue
+        dt=valid_date(row.get('date'))
+        if not dt:
+            continue
+        row['date']=dt
+        kept.append(row)
+    # Collapse duplicate event records even if title snippets differ slightly.
+    merged={}
+    for row in kept:
+        key=(norm(row.get('artist')), str(row.get('date') or ''), norm(row.get('venue') or ''), norm(row.get('city') or ''))
+        if key not in merged:
+            merged[key]=row
+            continue
+        old=merged[key]
+        # Prefer a direct event URL over a generic artist/homepage URL.
+        old_url=canonical_url(old.get('url')); new_url=canonical_url(row.get('url'))
+        old_specific=bool(re.search(r'/event|/concert|/gig|/show|/tickets|/e/', urlsplit(old_url).path, re.I))
+        new_specific=bool(re.search(r'/event|/concert|/gig|/show|/tickets|/e/', urlsplit(new_url).path, re.I))
+        if new_specific and not old_specific:
+            old['url']=new_url
+        for field in ('title','snippet','source_name','source_url','venue','city'):
+            if len(str(row.get(field) or '')) > len(str(old.get(field) or '')):
+                old[field]=row[field]
+        merged[key]=old
+    return list(merged.values())
+
+
 def publishable_candidate(row):
     """Only publish future events with explicit event evidence and useful details."""
     if not isinstance(row, dict):
@@ -566,6 +642,10 @@ def extract_visible_page_events(raw, base_url, page_name, page_artists, artists)
         dt = parse_rss_date(value)
         if dt:
             return dt
+        # If the surrounding text contains a year but no valid future date was parsed,
+        # do not invent a different year for a date fragment from that same text.
+        if re.search(r'\b20\d{2}\b', value):
+            return None
         # Calendar widgets often omit the year. Infer the next occurrence only for
         # explicit day/month forms; these remain review-only and never auto-publish.
         months = {'jan':1,'january':1,'feb':2,'february':2,'mar':3,'march':3,'apr':4,'april':4,
@@ -625,7 +705,7 @@ def extract_visible_page_events(raw, base_url, page_name, page_artists, artists)
     for row in results:
         key=(norm(row['artist']),row['date'],norm(row['title']))
         unique[key]=row
-    return list(unique.values())[:50]
+    return quality_filter_candidates(list(unique.values()))[:50]
 
 
 def main():
@@ -658,12 +738,10 @@ def main():
         if is_internal_or_invalid_url(r.get('url')):
             stats['old_candidates_dropped_invalid_url'] += 1
             continue
-        if r.get('source_type') == 'public_google_news_rss':
-            old_text=str(r.get('artist',''))+' '+str(r.get('title',''))+' '+str(r.get('snippet',''))
-            if NON_MUSIC_CONTEXT.search(old_text):
-                continue
-            if not valid_date(r.get('date')):
-                continue
+        if not valid_date(r.get('date')):
+            continue
+        if candidate_quality_reason(r):
+            continue
         by_id[r['id']]=r
     # Keep a few real examples of RSS rejections in the Actions log, so filters can be tuned from evidence.
     rejection_samples = {'no_artist_match': [], 'no_event_word': [], 'no_date': [], 'non_music_context': []}
@@ -814,6 +892,9 @@ def main():
             if ai % 10 == 0: print(f'  RSS-Suche: {ai}/{len(artists)} Künstler geprüft')
     stamp=now_iso()
     rows=deduplicate_candidates(list(by_id.values()))
+    before_quality=len(rows)
+    rows=quality_filter_candidates(rows)
+    stats['candidates_removed_quality_filter']=before_quality-len(rows)
     rows=sorted(rows,key=lambda x:(x.get('date') or '9999',str(x.get('artist','')).casefold()))
     save_json(CANDIDATES_FILE,{'updated_at':stamp,'count':len(rows),'candidates':rows})
     save_json(STATUS_FILE,{'updated_at':stamp,'statuses':statuses})
