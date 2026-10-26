@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Nachtfragment concert discovery from artist pages, linked official event pages, and public Google News RSS.
 No API keys. Candidates require an explicit future event date and matching artist.\nVersion 5.14 adds strict candidate quality checks, year-consistency validation, and junk/duplicate filtering.
-Only candidates with sufficient evidence are automatically published; others remain for review.
+All valid dated candidates are automatically published, even if their source still needs review.
 """
 import hashlib, html, json, os, re, sys, time, urllib.parse, xml.etree.ElementTree as ET
 from datetime import date, datetime, timezone
@@ -538,7 +538,7 @@ def quality_filter_candidates(rows):
 
 
 def publishable_candidate(row):
-    """Only publish future events with explicit event evidence and useful details."""
+    """Publish every dated concert candidate automatically, including unverified sources."""
     if not isinstance(row, dict):
         return False
     dt = valid_date(row.get('date'))
@@ -547,34 +547,15 @@ def publishable_candidate(row):
     artist = str(row.get('artist') or '').strip()
     title = str(row.get('title') or '').strip()
     url = canonical_url(row.get('url'))
+    # A dated candidate with an artist, title and usable URL is published.
+    # Source confidence remains metadata; it no longer blocks publication.
     if not artist or not title or not url:
         return False
-    # Structured Event markup is strongest evidence. RSS candidates need a direct
-    # non-Google source link plus both venue and city; otherwise keep them as candidates.
-    if row.get('source_type') == 'public_schema_org_event':
-        return bool(not is_internal_or_invalid_url(url)
-                    and row.get('page_evidence_checked')
-                    and row.get('event_startdate_evidence'))
-    if row.get('source_type') == 'public_google_news_rss':
-        parts = urlsplit(url)
-        host = parts.netloc.lower().split(':')[0]
-        path = parts.path.strip('/')
-        blocked_hosts = ('news.google.com', 'google.com', 'gstatic.com', 'facebook.com',
-                         'instagram.com', 'youtube.com', 'youtu.be', 'spotify.com',
-                         'bandcamp.com', 'apple.com', 'x.com', 'twitter.com')
-        external_article_url = bool(
-            parts.scheme in ('http', 'https') and path and
-            not is_internal_or_invalid_url(url) and
-            not any(host == item or host.endswith('.' + item) for item in blocked_hosts)
-        )
-        return bool(external_article_url and row.get('venue') and row.get('city')
-                    and row.get('event_startdate_evidence') and not NON_MUSIC_CONTEXT.search(
-                        artist + ' ' + title + ' ' + str(row.get('snippet') or '')))
-    return False
-
+    parts = urlsplit(url)
+    return parts.scheme in ('http', 'https') and bool(parts.netloc)
 
 def publish_concerts(candidates, stamp):
-    """Merge approved-by-rules candidates into concerts.json, preserving future existing events."""
+    """Publish all valid dated candidates into concerts.json, preserving existing events."""
     existing_obj = load_json(CONCERTS_FILE, {'events': []})
     existing = rows_from(existing_obj, ('events',))
     events_by_key = {}
