@@ -17,7 +17,7 @@ CANDIDATES_FILE = ROOT / 'data' / 'concert_candidates.json'
 CONCERTS_FILE = ROOT / 'concerts.json'
 STATUS_FILE = ROOT / 'data' / 'concerts_status.json'
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.10; +https://nachtfragment.de)'
+UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.11; +https://nachtfragment.de)'
 MAX_ARTISTS = max(0, int(os.getenv('CONCERTS_MAX_ARTISTS', '65') or '65'))
 MAX_PAGES = max(1, int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '120') or '120'))
 PAUSE = max(0.0, float(os.getenv('CONCERTS_QUERY_PAUSE', '0.7') or '0.7'))
@@ -520,50 +520,86 @@ def publish_concerts(candidates, stamp):
 
 
 def extract_visible_page_events(raw, base_url, page_name, page_artists, artists):
-    """Extract conservative review candidates from visible text on official artist/event pages.
-    These text-only matches are never auto-published; editors can verify the original page.
-    """
-    text = html.unescape(re.sub(r'(?is)<(script|style|noscript)\b[^>]*>.*?</\1\s*>', ' ', raw))
-    text = re.sub(r'(?is)<br\s*/?>|</(p|div|li|tr|h[1-6]|section|article|td|th)\s*>', '\n', text)
+    """Extract review-only event candidates from visible text, including dates split across calendar elements."""
+    # Preserve structural boundaries common in tables and calendar widgets before removing markup.
+    text = html.unescape(raw)
+    text = re.sub(r'(?is)<(script|style|noscript|svg|template)\b[^>]*>.*?</\1\s*>', ' ', text)
+    text = re.sub(r'(?i)<\s*(br|hr)\b[^>]*>', '\n', text)
+    text = re.sub(r'(?i)</\s*(p|div|li|tr|h[1-6]|section|article|td|th|time|button|header|footer|summary)\s*>', '\n', text)
     text = re.sub(r'(?s)<[^>]+>', ' ', text)
+    text = re.sub(r'&nbsp;|&#160;', ' ', text, flags=re.I)
     text = re.sub(r'[ \t\r\f\v]+', ' ', text)
-    lines = [re.sub(r'\s+', ' ', x).strip(' -–|•') for x in text.splitlines()]
+    lines = [re.sub(r'\s+', ' ', x).strip(' -–|•\u00a0') for x in text.splitlines()]
     lines = [x for x in lines if x]
-    results = []
-    known = page_artists if page_artists else []
+    known = [str(x) for x in (page_artists or []) if x]
     if not known:
         known = [a['name'] for a in artists if mentioned(a['name'], page_name)]
+
+    def parse_calendar_date(value):
+        # First prefer the strict parser, which requires a year.
+        dt = parse_rss_date(value)
+        if dt:
+            return dt
+        # Calendar widgets often omit the year. Infer the next occurrence only for
+        # explicit day/month forms; these remain review-only and never auto-publish.
+        months = {'jan':1,'january':1,'feb':2,'february':2,'mar':3,'march':3,'apr':4,'april':4,
+                  'may':5,'jun':6,'june':6,'jul':7,'july':7,'aug':8,'august':8,'sep':9,'sept':9,
+                  'september':9,'oct':10,'october':10,'nov':11,'november':11,'dec':12,'december':12,
+                  'januar':1,'februar':2,'märz':3,'maerz':3,'mai':5,'juni':6,'juli':7,'oktober':10,'dezember':12}
+        patterns = [
+            r'\b(\d{1,2})\s*[./]\s*(\d{1,2})(?!\s*[./]\s*\d{2,4})',
+            r'\b(\d{1,2})\.?\s+([A-Za-zÄÖÜäöü]{3,9})\.?\b',
+            r'\b([A-Za-zÄÖÜäöü]{3,9})\.?\s+(\d{1,2})(?:st|nd|rd|th)?\b'
+        ]
+        candidates=[]
+        for m in re.finditer(patterns[0], value):
+            d, mo = map(int, m.groups())
+            try: candidates.append(date(TODAY.year, mo, d))
+            except ValueError: pass
+        for m in re.finditer(patterns[1], value, re.I):
+            mo=months.get(m.group(2).casefold())
+            if mo:
+                try: candidates.append(date(TODAY.year, mo, int(m.group(1))))
+                except ValueError: pass
+        for m in re.finditer(patterns[2], value, re.I):
+            mo=months.get(m.group(1).casefold())
+            if mo:
+                try: candidates.append(date(TODAY.year, mo, int(m.group(2))))
+                except ValueError: pass
+        candidates=[d if d >= TODAY else date(d.year+1, d.month, d.day) for d in candidates]
+        candidates=[d for d in candidates if d <= date(TODAY.year+3,12,31)]
+        return min(candidates).isoformat() if candidates else None
+
+    results=[]
     for i, line in enumerate(lines):
-        if not EVENT_WORDS.search(line):
-            continue
-        context = ' | '.join(lines[max(0, i-1):min(len(lines), i+2)])
+        # Calendars often separate date, artist, and event label into adjacent nodes.
+        context=' | '.join(lines[max(0,i-2):min(len(lines),i+3)])
         if REVIEW_OR_RELEASE.search(line) or NON_MUSIC_CONTEXT.search(context):
             continue
-        artist = next((name for name in known if mentioned(name, context)), None)
+        artist=next((name for name in known if mentioned(name, context)), None)
         if not artist:
-            artist = next((a['name'] for a in artists if mentioned(a['name'], context)), None)
+            artist=next((a['name'] for a in artists if mentioned(a['name'], context)), None)
         if not artist:
             continue
-        dt = parse_rss_date(context)
+        if not EVENT_WORDS.search(context):
+            continue
+        dt=parse_calendar_date(context)
         if not dt:
             continue
-        title = line[:240]
-        if len(title) < 4:
-            continue
-        results.append({
-            'artist': artist, 'date': dt, 'title': title,
-            'url': canonical_url(base_url), 'venue': None, 'city': None,
-            'snippet': context[:500], 'source_name': page_name,
-            'source_type': 'public_artist_page_text', 'review_required': True,
-            'candidate_type': 'visible_page_event_text', 'page_evidence_checked': True,
-            'event_startdate_evidence': True
-        })
-    # Avoid a wall of duplicate snippets from a calendar page.
-    unique = {}
+        # The source must contain an event clue and explicit date text near the artist.
+        title=line[:240]
+        if len(title)<3:
+            title=f'{artist} – möglicher Konzerttermin'
+        results.append({'artist':artist,'date':dt,'title':title,'url':canonical_url(base_url),
+            'venue':None,'city':None,'snippet':context[:700],'source_name':page_name,
+            'source_type':'public_artist_page_text','review_required':True,
+            'candidate_type':'visible_page_event_text','page_evidence_checked':True,
+            'event_startdate_evidence':True,'date_inferred_year': not bool(re.search(r'\b20\d{2}\b', context))})
+    unique={}
     for row in results:
-        key = (norm(row['artist']), row['date'], norm(row['title']))
-        unique[key] = row
-    return list(unique.values())[:30]
+        key=(norm(row['artist']),row['date'],norm(row['title']))
+        unique[key]=row
+    return list(unique.values())[:50]
 
 
 def main():
@@ -598,7 +634,7 @@ def main():
             if not valid_date(r.get('date')):
                 continue
         by_id[r['id']]=r
-    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'artist_pages_checked':0,'calendar_links_discovered':0,'calendar_pages_checked':0,'visible_date_candidates':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_artist_match':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0}
+    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'artist_pages_checked':0,'calendar_links_discovered':0,'calendar_pages_checked':0,'visible_date_candidates':0,'schema_events_seen':0,'date_without_year_candidates':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_artist_match':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0}
     # Keep a few real examples of RSS rejections in the Actions log, so filters can be tuned from evidence.
     rejection_samples = {'no_artist_match': [], 'no_event_word': [], 'no_date': [], 'non_music_context': []}
     def remember_rejection(reason, artist_name, item, combined):
@@ -664,6 +700,7 @@ def main():
         if p.get('kind') in {'nachtfragment_artist_page', 'discovered_artist_link', 'public_source'}:
             visible_events = extract_visible_page_events(raw, final, p.get('name', final), page_artist_names, artists)
             stats['visible_date_candidates'] += len(visible_events)
+            stats['date_without_year_candidates'] += sum(1 for e in visible_events if e.get('date_inferred_year'))
             for page_event in visible_events:
                 cid = make_id(page_event['artist'], final, page_event['date'], page_event['title'])
                 prev = by_id.get(cid, {})
