@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T17:16:58+00:00",
+  "updated_at": "2026-10-26T17:56:38+00:00",
   "count": 41,
   "candidates": [
     {
@@ -36,7 +36,7 @@
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-10-25T16:09:57+00:00",
-      "last_seen": "2026-10-26T17:15:33+00:00",
+      "last_seen": "2026-10-26T17:55:16+00:00",
       "source_type": "public_google_news_rss",
       "review_required": true,
       "candidate_type": "rss_event_announcement",
@@ -58,7 +58,7 @@
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-10-26T16:41:51+00:00",
-      "last_seen": "2026-10-26T17:15:33+00:00",
+      "last_seen": "2026-10-26T17:55:16+00:00",
       "source_type": "public_google_news_rss",
       "review_required": true,
       "candidate_type": "rss_event_announcement",
@@ -80,7 +80,7 @@
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-10-23T16:36:27+00:00",
-      "last_seen": "2026-10-26T17:14:13+00:00",
+      "last_seen": "2026-10-26T17:54:00+00:00",
       "source_type": "public_google_news_rss",
       "review_required": true,
       "candidate_type": "rss_event_announcement",
@@ -122,7 +122,7 @@
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-10-25T16:09:56+00:00",
-      "last_seen": "2026-10-26T17:15:32+00:00",
+      "last_seen": "2026-10-26T17:55:16+00:00",
       "source_type": "public_google_news_rss",
       "review_required": true,
       "candidate_type": "rss_event_announcement",
@@ -144,7 +144,7 @@
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-10-21T16:01:20+00:00",
-      "last_seen": "2026-10-26T17:16:18+00:00",
+      "last_seen": "2026-10-26T17:55:59+00:00",
       "source_type": "public_google_news_rss",
       "review_required": true,
       "candidate_type": "rss_event_announcement",
@@ -172,7 +172,7 @@
       "id": "73cb2eabec14446f",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:28+00:00",
-      "last_seen": "2026-10-26T17:11:28+00:00",
+      "last_seen": "2026-10-26T17:51:14+00:00",
       "score": 12
     },
     {
@@ -192,8 +192,8 @@
       "date_inferred_year": false,
       "id": "46a4778c076ec5e2",
       "status": "needs_review",
-      "first_seen": "2026-10-26T17:09:28+00:00",
-      "last_seen": "2026-10-26T17:09:28+00:00",
+      "first_seen": "2026-10-26T17:49:31+00:00",
+      "last_seen": "2026-10-26T17:49:31+00:00",
       "score": 12
     },
     {
@@ -214,7 +214,7 @@
       "id": "685d2fa7371fa018",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:10:45+00:00",
-      "last_seen": "2026-10-26T17:10:45+00:00",
+      "last_seen": "2026-10-26T17:50:38+00:00",
       "score": 12
     },
     {
@@ -235,7 +235,7 @@
       "id": "eaa8c5cacc7ced9c",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:10:45+00:00",
-      "last_seen": "2026-10-26T17:10:45+00:00",
+      "last_seen": "2026-10-26T17:50:38+00:00",
       "score": 12
     },
     {
@@ -256,7 +256,7 @@
       "id": "a38362095bd90b40",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:10:45+00:00",
-      "last_seen": "2026-10-26T17:10:45+00:00",
+      "last_seen": "2026-10-26T17:50:38+00:00",
       "score": 12
     },
     {
@@ -277,7 +277,7 @@
       "id": "cc44b950527cd136",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:10:45+00:00",
-      "last_seen": "2026-10-26T17:10:45+00:00",
+      "last_seen": "2026-10-26T17:50:38+00:00",
       "score": 12
     },
     {
@@ -298,7 +298,7 @@
       "id": "03408a70882f8c8c",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:10:45+00:00",
-      "last_seen": "2026-10-26T17:10:45+00:00",
+      "last_seen": "2026-10-26T17:50:38+00:00",
       "score": 12
     },
     {
@@ -318,8 +318,8 @@
       "date_inferred_year": false,
       "id": "f716684d8b4a5b64",
       "status": "needs_review",
-      "first_seen": "2026-10-26T17:09:10+00:00",
-      "last_seen": "2026-10-26T17:09:10+00:00",
+      "first_seen": "2026-10-26T17:49:14+00:00",
+      "last_seen": "2026-10-26T17:49:14+00:00",
       "score": 12
     },
     {
@@ -362,7 +362,7 @@
       "id": "91d803ba43d2b619",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:10:45+00:00",
-      "last_seen": "2026-10-26T17:10:45+00:00",
+      "last_seen": "2026-10-26T17:50:38+00:00",
       "score": 12
     },
     {
@@ -383,7 +383,7 @@
       "id": "d271cc2c1c02bf5d",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:10:45+00:00",
-      "last_seen": "2026-10-26T17:10:45+00:00",
+      "last_seen": "2026-10-26T17:50:38+00:00",
       "score": 12
     },
     {
@@ -404,7 +404,7 @@
       "id": "86929e131e91b10b",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:10:45+00:00",
-      "last_seen": "2026-10-26T17:10:45+00:00",
+      "last_seen": "2026-10-26T17:50:38+00:00",
       "score": 12
     },
     {
@@ -425,7 +425,7 @@
       "id": "1ea1c68d4b3e6faa",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:10:45+00:00",
-      "last_seen": "2026-10-26T17:10:45+00:00",
+      "last_seen": "2026-10-26T17:50:38+00:00",
       "score": 12
     },
     {
@@ -446,7 +446,7 @@
       "id": "780ae688c0e63072",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:10:45+00:00",
-      "last_seen": "2026-10-26T17:10:45+00:00",
+      "last_seen": "2026-10-26T17:50:38+00:00",
       "score": 12
     },
     {
@@ -467,7 +467,7 @@
       "id": "a1922298c0244d30",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:23+00:00",
-      "last_seen": "2026-10-26T17:11:23+00:00",
+      "last_seen": "2026-10-26T17:51:08+00:00",
       "score": 12
     },
     {
@@ -488,7 +488,7 @@
       "id": "177667cb2ecbe355",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:23+00:00",
-      "last_seen": "2026-10-26T17:11:23+00:00",
+      "last_seen": "2026-10-26T17:51:08+00:00",
       "score": 12
     },
     {
@@ -509,7 +509,7 @@
       "id": "0e41dbc5ab38a7c2",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:23+00:00",
-      "last_seen": "2026-10-26T17:11:23+00:00",
+      "last_seen": "2026-10-26T17:51:08+00:00",
       "score": 12
     },
     {
@@ -530,7 +530,7 @@
       "id": "8d73e7602bd09955",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:23+00:00",
-      "last_seen": "2026-10-26T17:11:23+00:00",
+      "last_seen": "2026-10-26T17:51:08+00:00",
       "score": 12
     },
     {
@@ -551,7 +551,7 @@
       "id": "ecba32608b0aa894",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:23+00:00",
-      "last_seen": "2026-10-26T17:11:23+00:00",
+      "last_seen": "2026-10-26T17:51:08+00:00",
       "score": 12
     },
     {
@@ -572,7 +572,7 @@
       "id": "3afb9333f766ce28",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:24+00:00",
-      "last_seen": "2026-10-26T17:11:24+00:00",
+      "last_seen": "2026-10-26T17:51:09+00:00",
       "score": 12
     },
     {
@@ -593,7 +593,7 @@
       "id": "abdc90df21cece92",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:24+00:00",
-      "last_seen": "2026-10-26T17:11:24+00:00",
+      "last_seen": "2026-10-26T17:51:09+00:00",
       "score": 12
     },
     {
@@ -614,7 +614,7 @@
       "id": "3e58f62c136a283e",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:24+00:00",
-      "last_seen": "2026-10-26T17:11:24+00:00",
+      "last_seen": "2026-10-26T17:51:09+00:00",
       "score": 12
     },
     {
@@ -635,7 +635,7 @@
       "id": "749a138a55b555a7",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:24+00:00",
-      "last_seen": "2026-10-26T17:11:24+00:00",
+      "last_seen": "2026-10-26T17:51:09+00:00",
       "score": 12
     },
     {
@@ -656,7 +656,7 @@
       "id": "a01f0914c0bc8766",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:24+00:00",
-      "last_seen": "2026-10-26T17:11:24+00:00",
+      "last_seen": "2026-10-26T17:51:09+00:00",
       "score": 12
     },
     {
@@ -677,7 +677,7 @@
       "id": "ee698812ddff358d",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:25+00:00",
-      "last_seen": "2026-10-26T17:11:25+00:00",
+      "last_seen": "2026-10-26T17:51:10+00:00",
       "score": 12
     },
     {
@@ -698,7 +698,7 @@
       "id": "06c6819c10d31d44",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:25+00:00",
-      "last_seen": "2026-10-26T17:11:25+00:00",
+      "last_seen": "2026-10-26T17:51:10+00:00",
       "score": 12
     },
     {
@@ -719,7 +719,7 @@
       "id": "15cd9e9cea7ea62b",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:25+00:00",
-      "last_seen": "2026-10-26T17:11:25+00:00",
+      "last_seen": "2026-10-26T17:51:10+00:00",
       "score": 12
     },
     {
@@ -740,7 +740,7 @@
       "id": "4315ca88f4e34e9b",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:25+00:00",
-      "last_seen": "2026-10-26T17:11:25+00:00",
+      "last_seen": "2026-10-26T17:51:10+00:00",
       "score": 12
     },
     {
@@ -761,7 +761,7 @@
       "id": "29d2c29c2e32065b",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:25+00:00",
-      "last_seen": "2026-10-26T17:11:25+00:00",
+      "last_seen": "2026-10-26T17:51:10+00:00",
       "score": 12
     },
     {
@@ -782,7 +782,7 @@
       "id": "67f725f10aa02f82",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:26+00:00",
-      "last_seen": "2026-10-26T17:11:26+00:00",
+      "last_seen": "2026-10-26T17:51:11+00:00",
       "score": 12
     },
     {
@@ -803,7 +803,7 @@
       "id": "409a9049efd2a318",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:26+00:00",
-      "last_seen": "2026-10-26T17:11:26+00:00",
+      "last_seen": "2026-10-26T17:51:11+00:00",
       "score": 12
     },
     {
@@ -824,7 +824,7 @@
       "id": "8b1da57cf0b1c7ee",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:26+00:00",
-      "last_seen": "2026-10-26T17:11:26+00:00",
+      "last_seen": "2026-10-26T17:51:11+00:00",
       "score": 12
     },
     {
@@ -845,7 +845,7 @@
       "id": "6e9e7519883d1fb0",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:26+00:00",
-      "last_seen": "2026-10-26T17:11:26+00:00",
+      "last_seen": "2026-10-26T17:51:11+00:00",
       "score": 12
     },
     {
@@ -866,7 +866,7 @@
       "id": "6a1ca734425fb94d",
       "status": "needs_review",
       "first_seen": "2026-10-26T17:11:26+00:00",
-      "last_seen": "2026-10-26T17:11:26+00:00",
+      "last_seen": "2026-10-26T17:51:11+00:00",
       "score": 12
     }
   ]
