@@ -17,7 +17,7 @@ CANDIDATES_FILE = ROOT / 'data' / 'concert_candidates.json'
 CONCERTS_FILE = ROOT / 'concerts.json'
 STATUS_FILE = ROOT / 'data' / 'concerts_status.json'
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.9; +https://nachtfragment.de)'
+UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.10; +https://nachtfragment.de)'
 MAX_ARTISTS = max(0, int(os.getenv('CONCERTS_MAX_ARTISTS', '65') or '65'))
 MAX_PAGES = max(1, int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '120') or '120'))
 PAUSE = max(0.0, float(os.getenv('CONCERTS_QUERY_PAUSE', '0.7') or '0.7'))
@@ -198,7 +198,17 @@ def discover_event_links(raw, base_url, artist_name):
         if any(x in host for x in ('facebook.com','instagram.com','tiktok.com','youtube.com','youtu.be','spotify.com','soundcloud.com','bandcamp.com','apple.com','x.com','twitter.com')):
             continue
         clue=(label+' '+href+' '+attrs).casefold()
-        if re.search(r'official|website|homepage|tour|live dates|concert|gig|shows|events|calendar|termine|konzert|veranstaltung|auftritt',clue):
+        event_clue = re.search(
+            r'official|website|homepage|tour|live.?dates?|concert|gig|shows?|events?|calendar|termine|konzert|veranstaltung|auftritt|tickets|'
+            r'bandsintown|songkick|dice\.fm|eventbrite|ticketmaster|resident.?advisor|'
+            r'upcoming|on.?tour|touring|live.?schedule|veranstaltungs',
+            clue, re.I)
+        # Calendar providers are useful even when the visible link label is just the artist name.
+        calendar_host = any(x in host for x in (
+            'bandsintown.com', 'songkick.com', 'dice.fm', 'eventbrite.com',
+            'ticketmaster.com', 'residentadvisor.net', 'ra.co'
+        ))
+        if event_clue or calendar_host:
             links.append({'url':url,'name':artist_name+' – entdeckte Terminseite','artists':[artist_name],'kind':'discovered_artist_link'})
     return links
 
@@ -588,7 +598,7 @@ def main():
             if not valid_date(r.get('date')):
                 continue
         by_id[r['id']]=r
-    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_artist_match':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0}
+    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'artist_pages_checked':0,'calendar_links_discovered':0,'calendar_pages_checked':0,'visible_date_candidates':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_artist_match':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0}
     # Keep a few real examples of RSS rejections in the Actions log, so filters can be tuned from evidence.
     rejection_samples = {'no_artist_match': [], 'no_event_word': [], 'no_date': [], 'non_music_context': []}
     def remember_rejection(reason, artist_name, item, combined):
@@ -607,12 +617,22 @@ def main():
         if not result['ok']:
             stats['page_errors']+=1; print(f"  FEHLER {n}/{len(pages)} {p['url']}: {result['reason']}"); continue
         raw=result['raw']; final=canonical_url(result['url']) or p['url']; found=[]
+        # Discover event/calendar links on artist pages AND on linked official artist sites.
+        # This allows a Nachtfragment profile -> official homepage -> /live or /tour chain.
         if p.get('kind') == 'nachtfragment_artist_page':
+            stats['artist_pages_checked'] += 1
+        if p.get('kind') in {'nachtfragment_artist_page', 'discovered_artist_link'}:
             for discovered in discover_event_links(raw, final, p['name']):
                 if discovered['url'] not in seen and len(pages) < MAX_PAGES:
-                    pages.append(discovered); seen.add(discovered['url'])
+                    pages.append(discovered)
+                    seen.add(discovered['url'])
+                    stats['calendar_links_discovered'] += 1
+                    print(f"  TERMINLINK ENTDECKT: {p['name']} | {discovered['url']}")
         for obj in jsonld_objects(raw): found.extend(events_in(obj))
-        stats['pages_ok']+=1; stats['schema_events_seen']+=len(found)
+        stats['pages_ok']+=1
+        if p.get('kind') == 'discovered_artist_link':
+            stats['calendar_pages_checked'] += 1
+        stats['schema_events_seen']+=len(found)
         for ev in found:
             title=html.unescape(str(ev.get('name') or ev.get('headline') or '')).strip()
             performer=performer_names(ev)
@@ -642,7 +662,9 @@ def main():
         # These are review-only candidates unless stronger structured event evidence exists.
         page_artist_names = [str(x) for x in p.get('artists', []) if x]
         if p.get('kind') in {'nachtfragment_artist_page', 'discovered_artist_link', 'public_source'}:
-            for page_event in extract_visible_page_events(raw, final, p.get('name', final), page_artist_names, artists):
+            visible_events = extract_visible_page_events(raw, final, p.get('name', final), page_artist_names, artists)
+            stats['visible_date_candidates'] += len(visible_events)
+            for page_event in visible_events:
                 cid = make_id(page_event['artist'], final, page_event['date'], page_event['title'])
                 prev = by_id.get(cid, {})
                 stamp = now_iso()
