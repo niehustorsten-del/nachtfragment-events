@@ -649,6 +649,7 @@ def main():
     if not isinstance(statuses,dict): statuses={}
     # Remove known false positives and expired RSS candidates. Keep current/future candidates for editorial review.
     bad_ids={'c8ba5648f1de96fa','ae2fc94b7c61ac8d','413541aaf8af59fd','5357e2e135ac7882'}
+    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'artist_pages_checked':0,'calendar_links_discovered':0,'calendar_pages_checked':0,'visible_date_candidates':0,'schema_events_seen':0,'date_without_year_candidates':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_artist_match':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0,'old_candidates_dropped_invalid_url':0}
     by_id={}
     for r in old_rows:
         if not isinstance(r,dict) or not r.get('id') or r.get('id') in bad_ids:
@@ -664,7 +665,6 @@ def main():
             if not valid_date(r.get('date')):
                 continue
         by_id[r['id']]=r
-    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'artist_pages_checked':0,'calendar_links_discovered':0,'calendar_pages_checked':0,'visible_date_candidates':0,'schema_events_seen':0,'date_without_year_candidates':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_artist_match':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0,'old_candidates_dropped_invalid_url':0}
     # Keep a few real examples of RSS rejections in the Actions log, so filters can be tuned from evidence.
     rejection_samples = {'no_artist_match': [], 'no_event_word': [], 'no_date': [], 'non_music_context': []}
     def remember_rejection(reason, artist_name, item, combined):
