@@ -1,6 +1,107 @@
 {
-  "updated_at": "2026-10-26T18:13:59+00:00",
+  "updated_at": "2026-10-26T18:31:27+00:00",
   "source": "Nachtfragment Concert Discovery",
-  "count": 0,
-  "events": []
+  "count": 10,
+  "events": [
+    {
+      "id": "09e4e4009a9102db",
+      "artist": "Schwarzes Fragment",
+      "date": "2026-11-07",
+      "title": "Schwarzes Fragment Leipzig Tickets, Bandhaus Nov 07, 2026 - Bandsintown",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNanp3N2pqbUhIYnBvZVg2TUJBMjRua3FVWTlqTTNLVGR5T3N1cklJNWN6dDNmTVJ1S3FBQmE2N0VOUDFLeFc5ZUR6eUdlSTI4cVdBX0JFbmRMdGd0U3ZCSnNaSmF2aXZ2QjhwQm9BRTdSRjQySDlLSkRUZGJONGxWSGV5VEFma09ZalR1dGVyOVhZRVhJckNzdVd4U0NXYlZhOGRVWFJjYmctZGlmTG9za2VJZ0xXZ1VYWjR3Zmh2WDlCUVFrSjM3eEhIUWdmcTFXcjZBakhtbkpMQ0FhVzZEMg?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "venue": "Bandhaus",
+      "city": "Leipzig",
+      "source": "Bandsintown"
+    },
+    {
+      "id": "ab343ba0a96b325b",
+      "artist": "Paradox Obscur",
+      "date": "2026-11-13",
+      "title": "Free Paradox Obscur Hamburg Tickets, Markthalle Nov 13, 2026 - Bandsintown",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcGlNUy1zY0VRVE8tcDF0dXZrNFVWYTRKWmNrUFd5OWpWTlp2MC1JSkpNczBrRkdIejZRTkhIV0ZhUFRtY1ZZUkhDeWJWQjBldkltVEkxZHpMRWJjb1BRUWVYWW9uMzlTSTRpVG5reVNJNFVHZnF0VFl4WHRPdkg4azE3MWpfMUFaRGllS3JOZTBnY040eEE5NTRnZjNOWUpMSWFBMDVwZURHYXpjLWJmRl9BTlEzalFGLTlGR0hVcFU?oc=5",
+      "venue": "Markthalle",
+      "city": "Free Paradox Obscur Hamburg",
+      "source": "Bandsintown"
+    },
+    {
+      "id": "22fa56bff3dc9cda",
+      "artist": "Paradox Obscur",
+      "date": "2026-11-14",
+      "title": "Free Paradox Obscur Dresden Tickets, Alter Schlachthof Nov 14, 2026 - Bandsintown",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPc3duUEJXQ3owS2FjTTlFbWtCLVR0VUZJWGczS3huOHVTdVhHLVFzSVpnTmNhVGxVaEFPS3dtT0ozaXFpTVZyaVdDVF9hd0xkLXZoZDNuaEpHVVBIYVd3ZXBNQnlPRlN4YzVqSDJ6UFdoMGowb3JQNm5pVzZUODdPUE1XdXlKZWdxVVQ5VTAtOXB2dkhTME90UDd6bTBhR2NTdGlXcWFuOGFjVGJlcElQQ0lrY3l4UlktNE5hNEo4ME81bVBNNENqbmE4OGRwTTRrNGZhaFJTRGZnbVlZWUp1RF9kS0oyVEk?oc=5",
+      "venue": "Alter Schlachthof",
+      "city": "Free Paradox Obscur Dresden",
+      "source": "Bandsintown"
+    },
+    {
+      "id": "c4a4cd03394fc489",
+      "artist": "Hinfort",
+      "date": "2026-11-21",
+      "title": "hinfort Bielefeld Tickets, Stereo Club Nov 21, 2026 - Bandsintown",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUzBOdkQwbzdsSHpPcm5KU2ZsZFRrT21DVjkzelFkOUJpbXZmX2VwX011VndyODQ2NU4xcExnSmlqaHgxbUx5cXd1OXotMnR2ZFRvNTFEdzFoNTJsblc0VjdqYU5TU09OcG1aWG9OX1lNcjdZZ180LV9iR0YtQmVjeWdKYl9vckZvU0Zxb0tDX09RR0lVMG9tb18wMkJhaHFNMEM5bWRLLWhrUU9DRzQtdHZQaWRuMHVTWjJpclh6NlQ?oc=5",
+      "venue": "Stereo Club",
+      "city": "Bielefeld",
+      "source": "Bandsintown"
+    },
+    {
+      "id": "430d0e6625b725fd",
+      "artist": "Hinfort",
+      "date": "2026-12-12",
+      "title": "hinfort Berlin Tickets, Urban Spree Dec 12, 2026 - Bandsintown",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPU0k3TFQ1OGdoeUpJaWZPM3NwUkNuT2U2cG1NQ0U5bk5TMkNqTFAtbEM0UFlXYXRzT3pUNjRvdlBWc21sYmFNd0ZEVVJGaF9jMmtCZnR6NXphUnlfeHp2U2tUbzBpbDN4MkdxWTk4UWUyM2czbkhKalpmb2hEcjcwNFp0aDR1MkV2LURvOHFHcDNDNEhZZktud1p4U1FSV29ubVlNakYzV1hqLTNyYzlCNk95Tlk4Q21nWTZzandUNkZDS0pJejcwUkR2cnMwX1M5OXlqcmVpMVJWVkVsSUE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "venue": null,
+      "city": null,
+      "source": "Öffentliche Konzertmeldung"
+    },
+    {
+      "id": "6a7bb99442b136ca",
+      "artist": "Paradox Obscur",
+      "date": "2026-12-12",
+      "title": "Free Paradox Obscur Sofia Tickets, Club Pave Dec 12, 2026 - Bandsintown",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdmZPRmdnSTMyUUJ0VVBqWTNoelhkUXo3dHkwc2JxQkpVZDFDa3hJZDhmdDR3eURjSGwzQ3B4U2lNbnltendvRVgzbG14UWJjNF9TVXQ1c3FlVmswSEI3V2c1NmpHN1BVYU04UXZrMXpIMVBybmtqQnV1djBmbnNveVpHcFNZa09lcWpodXdmeXZUYnVQX0pBSDFHVTVzdHpSamZiQ25IWTdsM044ZVY5SW9WQ1laSURabXU1b1hzMWtqRUdfcVNmRFZPQy1PQjV4TndabUR5cTh4Zw?oc=5",
+      "venue": "Club Pave",
+      "city": "Free Paradox Obscur Sofia",
+      "source": "Bandsintown"
+    },
+    {
+      "id": "3d10142693253fb0",
+      "artist": "Thalie Némésis",
+      "date": "2027-01-29",
+      "title": "Thalie Némésis Fréjus Tickets, Monster'S Art Jan 29, 2027 - Bandsintown",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQd1lBOXFTODBGVGZYNXN3UGU0cnVUdXhtUVNVOHZ5Yi0wa0Yxai10bzdhVzZONWRWa1VDYWlvTWtVY3RST3c2dklGLUdhWEFfZkJIRTRrekF3d2NFaFZ1S0c2eV9QQzR0eWtfZjVUQWc5dG4tTE12OVJBa3l3OUlIcVVLT1Nwa3otbkwtY1VXanVJdVhtZF9jSTVIZFdicU1MOF9ZTHFDazNqZHBwdnZkazJoT2duRkJ0dnJWdFVqQW1LVUptSVFnWTBfTzJSbkp5M1Y0T1RuLThkOWVo?oc=5",
+      "venue": "Monster'S Art",
+      "city": "Fréjus",
+      "source": "Bandsintown"
+    },
+    {
+      "id": "eaa8c5cacc7ced9c",
+      "artist": "Lana Del Rabies",
+      "date": "2027-05-08",
+      "title": "Lana Del Rabies will play Northwest Terror Fest on Friday, May 8th in Seattle, WA. NWTF is the PNW’s only destination extreme metal festival.",
+      "url": "https://lanadelrabies.com/",
+      "venue": null,
+      "city": null,
+      "source": "Lana Del Rabies – entdeckte Terminseite"
+    },
+    {
+      "id": "505b132edf97335c",
+      "artist": "Hinfort",
+      "date": "2027-05-14",
+      "title": "hinfort Kassel Tickets, Goldgrube May 14, 2027 - Bandsintown",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPb0Y1WE45MnpiY1RHYnBOY3hJVFhEWjEwcWhXTmlUWkpIQTBLdXFkNDhpNGR6VjlQTVdxYU1Zc3VMZFRCQ3VxOUtGU1pqV3F2N2taT2d4c0dTcGxDTDY1ODgtT3Q2U2VuZGFkQVY1M1ZUSEFVb1hCc3JJY184cmRJWFlqMWdtd01LYXVYSFFsMnhtNkl5Q25yVEo0T2hRbnZQT203TjF0bjN6eXk4WVBYMm9uWm12ZXFi?oc=5",
+      "venue": "Goldgrube",
+      "city": "Kassel",
+      "source": "Bandsintown"
+    },
+    {
+      "id": "67f725f10aa02f82",
+      "artist": "Then Comes Silence",
+      "date": "2027-09-18",
+      "title": "Venerdì 18 Settembre: WHISPERING DARKNESS goth night con THEN COMES SILENCE e THE FOREIGN RESORT live at Q77 Theater",
+      "url": "https://www.tickettailor.com/events/whisperingdarkness/2256892",
+      "venue": null,
+      "city": null,
+      "source": "Then Comes Silence – entdeckte Terminseite – entdeckte Terminseite"
+    }
+  ]
 }
