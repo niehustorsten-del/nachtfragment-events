@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Nachtfragment concert discovery from public artist/source pages and public Google News RSS.
+"""Nachtfragment concert discovery from artist pages, linked official event pages, and public Google News RSS.
 No API keys. Candidates require an explicit future event date and matching artist.
 Only candidates with sufficient evidence are automatically published; others remain for review.
 """
@@ -17,7 +17,7 @@ CANDIDATES_FILE = ROOT / 'data' / 'concert_candidates.json'
 CONCERTS_FILE = ROOT / 'concerts.json'
 STATUS_FILE = ROOT / 'data' / 'concerts_status.json'
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.8; +https://nachtfragment.de)'
+UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.9; +https://nachtfragment.de)'
 MAX_ARTISTS = max(0, int(os.getenv('CONCERTS_MAX_ARTISTS', '65') or '65'))
 MAX_PAGES = max(1, int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '120') or '120'))
 PAUSE = max(0.0, float(os.getenv('CONCERTS_QUERY_PAUSE', '0.7') or '0.7'))
@@ -508,6 +508,54 @@ def publish_concerts(candidates, stamp):
     print(f'Automatische Veröffentlichung: {published_now} neue Termine; {len(events)} Termine insgesamt.')
 
 
+
+def extract_visible_page_events(raw, base_url, page_name, page_artists, artists):
+    """Extract conservative review candidates from visible text on official artist/event pages.
+    These text-only matches are never auto-published; editors can verify the original page.
+    """
+    text = html.unescape(re.sub(r'(?is)<(script|style|noscript)\b[^>]*>.*?</\1\s*>', ' ', raw))
+    text = re.sub(r'(?is)<br\s*/?>|</(p|div|li|tr|h[1-6]|section|article|td|th)\s*>', '\n', text)
+    text = re.sub(r'(?s)<[^>]+>', ' ', text)
+    text = re.sub(r'[ \t\r\f\v]+', ' ', text)
+    lines = [re.sub(r'\s+', ' ', x).strip(' -–|•') for x in text.splitlines()]
+    lines = [x for x in lines if x]
+    results = []
+    known = page_artists if page_artists else []
+    if not known:
+        known = [a['name'] for a in artists if mentioned(a['name'], page_name)]
+    for i, line in enumerate(lines):
+        if not EVENT_WORDS.search(line):
+            continue
+        context = ' | '.join(lines[max(0, i-1):min(len(lines), i+2)])
+        if REVIEW_OR_RELEASE.search(line) or NON_MUSIC_CONTEXT.search(context):
+            continue
+        artist = next((name for name in known if mentioned(name, context)), None)
+        if not artist:
+            artist = next((a['name'] for a in artists if mentioned(a['name'], context)), None)
+        if not artist:
+            continue
+        dt = parse_rss_date(context)
+        if not dt:
+            continue
+        title = line[:240]
+        if len(title) < 4:
+            continue
+        results.append({
+            'artist': artist, 'date': dt, 'title': title,
+            'url': canonical_url(base_url), 'venue': None, 'city': None,
+            'snippet': context[:500], 'source_name': page_name,
+            'source_type': 'public_artist_page_text', 'review_required': True,
+            'candidate_type': 'visible_page_event_text', 'page_evidence_checked': True,
+            'event_startdate_evidence': True
+        })
+    # Avoid a wall of duplicate snippets from a calendar page.
+    unique = {}
+    for row in results:
+        key = (norm(row['artist']), row['date'], norm(row['title']))
+        unique[key] = row
+    return list(unique.values())[:30]
+
+
 def main():
     artists=load_artists()
     if MAX_ARTISTS: artists=artists[:MAX_ARTISTS]
@@ -590,6 +638,19 @@ def main():
                 'source_type':'public_schema_org_event','review_required':True,'candidate_type':'structured_event',
                 'page_evidence_checked':True,'event_startdate_evidence':True}
             stats['accepted']+=1
+        # Also inspect visible text for dates on artist pages and linked official calendars.
+        # These are review-only candidates unless stronger structured event evidence exists.
+        page_artist_names = [str(x) for x in p.get('artists', []) if x]
+        if p.get('kind') in {'nachtfragment_artist_page', 'discovered_artist_link', 'public_source'}:
+            for page_event in extract_visible_page_events(raw, final, p.get('name', final), page_artist_names, artists):
+                cid = make_id(page_event['artist'], final, page_event['date'], page_event['title'])
+                prev = by_id.get(cid, {})
+                stamp = now_iso()
+                by_id[cid] = {**prev, **page_event, 'id': cid,
+                    'status': statuses.get(cid, prev.get('status', 'needs_review')),
+                    'first_seen': prev.get('first_seen') or stamp, 'last_seen': stamp,
+                    'score': 12}
+                stats['accepted'] += 1
         print(f"  OK {n}/{len(pages)} {p['url']} | Schema.org-Events: {len(found)}")
         if PAUSE: time.sleep(PAUSE)
     # Search public news RSS for event announcements. A result is only kept when the
