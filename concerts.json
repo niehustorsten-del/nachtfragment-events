@@ -1,8 +1,18 @@
 {
-  "updated_at": "2026-10-27T20:21:52+00:00",
+  "updated_at": "2026-11-01T13:40:24+00:00",
   "source": "Nachtfragment Concert Discovery",
-  "count": 24,
+  "count": 29,
   "events": [
+    {
+      "id": "7b3344397c42f4dd",
+      "artist": "Raskolnikov",
+      "date": "2026-11-06",
+      "title": "Raskolnikov Annemasse Tickets, Chateau Rouge Nov 06, 2026 - Bandsintown",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNlVkQ2tPc2dBYmQ3Nnd2cGtDeGRXNVJWOUdveGJQdHBrb0F0dWk2Z1Q4MlMydmlOOG9BR0Z5RFFvY0piVlFXN0FoQXpZYXJWdGNPR2d1VF83UVhhQ2dCR1lPTy1RczZEUVBQVzY2NF91NEZPVEd2NjByM196T1hwOWN0UGNkWHFzNXphTkFwbjd5a1c3SXR4UmJMQUVvYVhrQ093Y2VpXzNWT0xOcmpud25VYkVxOGUyc3Vtb0xLM2FFQ0tmazFSOW9zSmR5SGlaeTdOWUlWRWxKVjNVM3c?oc=5",
+      "venue": "Chateau Rouge",
+      "city": "Annemasse",
+      "source": "Bandsintown"
+    },
     {
       "id": "schwarzes-fragment-2026",
       "artist": "Schwarzes Fragment",
@@ -21,6 +31,16 @@
       "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNanp3N2pqbUhIYnBvZVg2TUJBMjRua3FVWTlqTTNLVGR5T3N1cklJNWN6dDNmTVJ1S3FBQmE2N0VOUDFLeFc5ZUR6eUdlSTI4cVdBX0JFbmRMdGd0U3ZCSnNaSmF2aXZ2QjhwQm9BRTdSRjQySDlLSkRUZGJONGxWSGV5VEFma09ZalR1dGVyOVhZRVhJckNzdVd4U0NXYlZhOGRVWFJjYmctZGlmTG9za2VJZ0xXZ1VYWjR3Zmh2WDlCUVFrSjM3eEhIUWdmcTFXcjZBakhtbkpMQ0FhVzZEMg?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
       "venue": "Bandhaus",
       "city": "Leipzig",
+      "source": "Bandsintown"
+    },
+    {
+      "id": "d5011ef23357e90c",
+      "artist": "Unverkalt",
+      "date": "2026-11-07",
+      "title": "unverkalt Schwedt/Oder Tickets, Jugend- & Musikcafé EXIT e. V. Nov 07, 2026 - Bandsintown",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZko4YW9QTFNLb3NyMEw2UnNfM3JZWVl2UlYxNHBZT2o0LXhvQjhTaGdETmQ0T012dmlwRlVTTjJ5QmZZSEdNSGR5cEk0c0h3cU8yN185Z3loYnBoMzZ6OWEwQmpXRUJaTm8tOGk4U0pDdzBTckQydXBON09IV25KbXVtUERqajRzdEJrby1LMHNLY0VDVlUzdHVaU01IbGc?oc=5",
+      "venue": "Jugend- & Musikcafé EXIT e. V.",
+      "city": "Schwedt/Oder",
       "source": "Bandsintown"
     },
     {
@@ -191,6 +211,36 @@
       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQd1lBOXFTODBGVGZYNXN3UGU0cnVUdXhtUVNVOHZ5Yi0wa0Yxai10bzdhVzZONWRWa1VDYWlvTWtVY3RST3c2dklGLUdhWEFfZkJIRTRrekF3d2NFaFZ1S0c2eV9QQzR0eWtfZjVUQWc5dG4tTE12OVJBa3l3OUlIcVVLT1Nwa3otbkwtY1VXanVJdVhtZF9jSTVIZFdicU1MOF9ZTHFDazNqZHBwdnZkazJoT2duRkJ0dnJWdFVqQW1LVUptSVFnWTBfTzJSbkp5M1Y0T1RuLThkOWVo?oc=5",
       "venue": "Monster'S Art",
       "city": "Fréjus",
+      "source": "Bandsintown"
+    },
+    {
+      "id": "99ab70199eb47598",
+      "artist": "Paradox Obscur",
+      "date": "2027-02-06",
+      "title": "Paradox Obscur Montreuil Tickets, La Marbrerie Feb 06, 2027 - Bandsintown",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNS3hob3JsTXZmV0NpRGdxdncwT0hvYXBlX0VVUjlYakR5Z3ZLZS1HTllzcVBBVktIR0ZEbVEyRkw4MTc2U2Q4RE5GSUlqeWhkb1hMUmV5ZUtEdFNDdFo4azJKTG9zTjRSUVpOZTFUclpYdHZIaWlJSlBIM1dPeWFPMGxadFdOZnp0M0JHNmI5eEhwT1JpaXFLV2ZaazhwZUZqY1JySEEyNlVwQXV5LXFCcFZDYWFFTm5U?oc=5",
+      "venue": "La Marbrerie",
+      "city": "Montreuil",
+      "source": "Bandsintown"
+    },
+    {
+      "id": "3ea1b0dd00c3ba67",
+      "artist": "Raskolnikov",
+      "date": "2027-02-13",
+      "title": "Raskolnikov Kreuzlingen Tickets, Horst Klub Feb 13, 2027 - Bandsintown",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdzY5SHU2VFF1bVlXVWZ0cklSRGNKa3EwbUx5bTNpcEthOHdEUFU1ZlRqRjU1dnpmMFhjbXNnQlpGODJYdHdMUWc4ZjVJeWo1ZFFyQVY0WnB2ZHB5N0w1MzBpN1p3eTQwV1JSOE1rcHRxUnhFQWxvUmZGU0JfQlhkT3NIOHhsZw?oc=5",
+      "venue": "Horst Klub",
+      "city": "Kreuzlingen",
+      "source": "Bandsintown"
+    },
+    {
+      "id": "bbf42835f0c6378a",
+      "artist": "Raskolnikov",
+      "date": "2027-03-05",
+      "title": "Raskolnikov București Tickets, Expirat Mar 05, 2027 - Bandsintown",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNWjBUeWp4N3dIcFJJRTVZZWN3SERZaHQ4bnNseVNKdnVHd05HQTBIUnBDU1dlWTg2TVZldk9nQU5RT2FPRHlWZDRRUXJOdWdZa1FFQ0pTMW5QUjE3M3RFU1lSbTNaVmEwZ1hHX1BPZ1E5TUhfZHRWMGc3MkZodXV2ZUNTSjRCNWhHN2NxZXdPR1hNLW5XY0FWTi1RbXZ3ZGRyZ1d6b1lidWd0THdUUFFiQmdteldfWVhfVXJ0TFgwZ3c0OW9NMTVtQ0VtajVIbTVmMlpSQkNHS04?oc=5",
+      "venue": "Expirat",
+      "city": "București",
       "source": "Bandsintown"
     },
     {
