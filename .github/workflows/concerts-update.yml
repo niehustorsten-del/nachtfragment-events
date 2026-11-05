@@ -1,36 +1,102 @@
 name: Nachtfragment Concert Discovery
+
 on:
   schedule:
-    - cron: "35 5 * * 0"
+    # Mittwochs und sonntags um 05:35 UTC
+    # Entspricht 06:35 Uhr im Winter und 07:35 Uhr im Sommer (Hamburg).
+    - cron: "35 5 * * 3,0"
   workflow_dispatch:
+
 permissions:
   contents: write
+
 concurrency:
   group: nachtfragment-concert-discovery
   cancel-in-progress: false
+
 jobs:
   discover:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
+
     steps:
-      - name: Checkout repository
+      - name: Repository auschecken
         uses: actions/checkout@v4
-      - name: Set up Python
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Python einrichten
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Discover artists and concert candidates
-        env:
-          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
-          NACHTFRAGMENT_SITE: https://nachtfragment.de
-        run: python concerts_discovery.py
-      - name: Commit updated data
+
+      - name: Eingabedateien prüfen
+        shell: bash
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/artists.json data/concerts.json data/concert_candidates.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Update Nachtfragment concert discovery data"
-            git push
-          else
-            echo "No data changes."
+          set -euo pipefail
+          test -f concerts_discovery.py
+          test -f data/artists.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          for name in ("data/artists.json", "data/concert_sources.json"):
+              path = Path(name)
+              if path.exists():
+                  with path.open("r", encoding="utf-8") as handle:
+                      json.load(handle)
+                  print(f"OK: {name}")
+              elif name == "data/artists.json":
+                  raise SystemExit(f"Pflichtdatei fehlt: {name}")
+              else:
+                  print(f"HINWEIS: {name} fehlt – es werden nur Künstlerseiten und RSS-Suchen verwendet.")
+          PY
+
+      - name: Underground- und Konzerttermine recherchieren
+        env:
+          CONCERTS_MAX_ARTISTS: "65"
+          CONCERTS_MAX_PAGE_CHECKS: "120"
+          CONCERTS_QUERY_PAUSE: "0.7"
+          CONCERTS_RSS_RESULTS: "18"
+          CONCERTS_RSS_ENABLED: "1"
+        run: python concerts_discovery.py
+
+      - name: Ergebnisdateien validieren
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          required = (
+              "data/concert_candidates.json",
+              "data/concerts_status.json",
+          )
+          for name in required:
+              path = Path(name)
+              if not path.is_file():
+                  raise SystemExit(f"Ausgabedatei fehlt: {name}")
+              with path.open("r", encoding="utf-8") as handle:
+                  data = json.load(handle)
+              if not isinstance(data, (dict, list)):
+                  raise SystemExit(f"Ungültiges JSON-Format: {name}")
+              print(f"OK: {name}")
+          PY
+
+      - name: Neue Kandidaten und Prüfstatus committen
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Nachtfragment Bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add data/concert_candidates.json data/concerts_status.json
+
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen – nichts zu committen."
+            exit 0
           fi
+
+          git commit -m "Update Nachtfragment concert candidates"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
