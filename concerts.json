@@ -1,27 +1,52 @@
 {
-  "updated_at": "2026-11-04T20:04:23+00:00",
-  "source": "Nachtfragment Concert Discovery",
-  "count": 60,
+  "updated_at": "2026-11-05T18:22:06+00:00",
+  "source": "Nachtfragment Gig Calendar – Underground-Erweiterung und zusammengeführte Recherche",
+  "count": 75,
+  "status_legend": {
+    "confirmed": "Termin auf offizieller Band-, Venue- oder Veranstalterseite gelistet.",
+    "date_confirmed": "Festivaldatum bestätigt",
+    "date_confirmed_lineup_pending": "Datum bestätigt; Line-up noch nicht vollständig",
+    "lineup_announced": "Line-up-Ankündigung gefunden; Details vor Import prüfen",
+    "listed_check_venue": "Termin in Szene-/Eventkalender gelistet; Venue vor Veröffentlichung nochmals gegenprüfen.",
+    "listed_check_organizer": "In Festivalverzeichnis gelistet; Veranstalterseite noch prüfen",
+    "needs_verification": "Hinweis aus Tour-/Szeneliste; vor Veröffentlichung beim Veranstalter oder Venue gegenprüfen."
+  },
   "events": [
     {
-      "id": "7b3344397c42f4dd",
-      "artist": "Raskolnikov",
+      "id": "same-old-madness-2026-11-06",
+      "artist": "Same Old Madness",
       "date": "2026-11-06",
-      "title": "Raskolnikov Annemasse Tickets, Chateau Rouge Nov 06, 2026 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNlVkQ2tPc2dBYmQ3Nnd2cGtDeGRXNVJWOUdveGJQdHBrb0F0dWk2Z1Q4MlMydmlOOG9BR0Z5RFFvY0piVlFXN0FoQXpZYXJWdGNPR2d1VF83UVhhQ2dCR1lPTy1RczZEUVBQVzY2NF91NEZPVEd2NjByM196T1hwOWN0UGNkWHFzNXphTkFwbjd5a1c3SXR4UmJMQUVvYVhrQ093Y2VpXzNWT0xOcmpud25VYkVxOGUyc3Vtb0xLM2FFQ0tmazFSOW9zSmR5SGlaeTdOWUlWRWxKVjNVM3c?oc=5",
-      "venue": "Chateau Rouge",
-      "city": "Annemasse",
-      "source": "Bandsintown"
+      "title": "Pentagon Edition – Minimal Wave / EBM / Post-Punk / Coldwave",
+      "url": "https://kulturfabrik-moabit.de/category/programm/slaughterhouse/",
+      "venue": "Slaughterhouse",
+      "city": "Berlin",
+      "source": "Slaughterhouse / Kulturfabrik Moabit",
+      "status": "confirmed",
+      "category": "clubnight"
     },
     {
-      "id": "1982ebe717e141d5",
-      "artist": "Twin Tribes",
+      "id": "billy-zach-snakevision-2026-11-06",
+      "artist": "Billy Zach / Snakevision",
       "date": "2026-11-06",
-      "title": "Acid Bath, Twin Tribes, and Kylesa San Antonio Tickets, Boeing Center at Tech Port, 06 Nov 2026 - Songkick",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNaDgxUmdjZTZVU3BxTVJzendWWnJwcUxsNUlMQS16X0g2VG1zdWdvRU1fZnFjSVAzeHVHSFlKNzJOVC0xUkROX2hzNEJIaGRnRzdlcGZxc3FFVU41SkJQVXlGWmJETk9Ya1BSYkFEMU0zYWtxZll5Q0k1TWd0eFFpRHViSE5Db1ppcFE?oc=5",
-      "venue": null,
-      "city": null,
-      "source": "Songkick"
+      "title": "A Little Hope – Release Concert",
+      "url": "https://events.musicofourdesire.com/de/events/Hamburg/genre/darkwave",
+      "venue": "Hafenklang",
+      "city": "Hamburg",
+      "source": "Music of Our Desire",
+      "status": "listed_check_venue",
+      "category": "concert"
+    },
+    {
+      "id": "kiss-my-blood-2026-11-07",
+      "artist": "Kiss My Blood",
+      "date": "2026-11-07",
+      "title": "Synth Wave / Electro – for queers and friends",
+      "url": "https://kulturfabrik-moabit.de/category/programm/slaughterhouse/",
+      "venue": "Slaughterhouse",
+      "city": "Berlin",
+      "source": "Slaughterhouse / Kulturfabrik Moabit",
+      "status": "confirmed",
+      "category": "clubnight"
     },
     {
       "id": "clan-of-xymox-2026-11-07",
@@ -60,26 +85,6 @@
       "category": "concert"
     },
     {
-      "id": "09e4e4009a9102db",
-      "artist": "Schwarzes Fragment",
-      "date": "2026-11-07",
-      "title": "Schwarzes Fragment Leipzig Tickets, Bandhaus Nov 07, 2026 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNanp3N2pqbUhIYnBvZVg2TUJBMjRua3FVWTlqTTNLVGR5T3N1cklJNWN6dDNmTVJ1S3FBQmE2N0VOUDFLeFc5ZUR6eUdlSTI4cVdBX0JFbmRMdGd0U3ZCSnNaSmF2aXZ2QjhwQm9BRTdSRjQySDlLSkRUZGJONGxWSGV5VEFma09ZalR1dGVyOVhZRVhJckNzdVd4U0NXYlZhOGRVWFJjYmctZGlmTG9za2VJZ0xXZ1VYWjR3Zmh2WDlCUVFrSjM3eEhIUWdmcTFXcjZBakhtbkpMQ0FhVzZEMg?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "venue": "Bandhaus",
-      "city": "Leipzig",
-      "source": "Bandsintown"
-    },
-    {
-      "id": "d5011ef23357e90c",
-      "artist": "Unverkalt",
-      "date": "2026-11-07",
-      "title": "unverkalt Schwedt/Oder Tickets, Jugend- & Musikcafé EXIT e. V. Nov 07, 2026 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZko4YW9QTFNLb3NyMEw2UnNfM3JZWVl2UlYxNHBZT2o0LXhvQjhTaGdETmQ0T012dmlwRlVTTjJ5QmZZSEdNSGR5cEk0c0h3cU8yN185Z3loYnBoMzZ6OWEwQmpXRUJaTm8tOGk4U0pDdzBTckQydXBON09IV25KbXVtUERqajRzdEJrby1LMHNLY0VDVlUzdHVaU01IbGc?oc=5",
-      "venue": "Jugend- & Musikcafé EXIT e. V.",
-      "city": "Schwedt/Oder",
-      "source": "Bandsintown"
-    },
-    {
       "id": "ultra-sunn-2026-11-11",
       "artist": "Ultra Sunn",
       "date": "2026-11-11",
@@ -89,6 +94,30 @@
       "city": "Bochum",
       "source": "Dark and Alternative World",
       "status": "needs_verification",
+      "category": "concert"
+    },
+    {
+      "id": "plattenbau-carg-2026-11-11",
+      "artist": "Plattenbau / Carg",
+      "date": "2026-11-11",
+      "title": "Post-Punk / Noise-Rock / Wave",
+      "url": "https://www.sandershaus.de/programmdetails/termin/konzert-plattenbau-tba-post-punk-noise-rock-wave",
+      "venue": "Sandershaus – Subterrain",
+      "city": "Kassel",
+      "source": "Sandershaus / Weltsubkulturerbe e.V.",
+      "status": "confirmed",
+      "category": "concert"
+    },
+    {
+      "id": "plattenbau-lauren-lakis-2026-11-12",
+      "artist": "Plattenbau / Lauren Lakis",
+      "date": "2026-11-12",
+      "title": "Live at Hafenklang",
+      "url": "https://events.musicofourdesire.com/de/events/Hamburg/genre/darkwave",
+      "venue": "Hafenklang",
+      "city": "Hamburg",
+      "source": "Music of Our Desire",
+      "status": "listed_check_venue",
       "category": "concert"
     },
     {
@@ -116,28 +145,6 @@
       "category": "festival"
     },
     {
-      "id": "ab343ba0a96b325b",
-      "artist": "Paradox Obscur",
-      "date": "2026-11-13",
-      "title": "Free Paradox Obscur Hamburg Tickets, Markthalle Nov 13, 2026 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcGlNUy1zY0VRVE8tcDF0dXZrNFVWYTRKWmNrUFd5OWpWTlp2MC1JSkpNczBrRkdIejZRTkhIV0ZhUFRtY1ZZUkhDeWJWQjBldkltVEkxZHpMRWJjb1BRUWVYWW9uMzlTSTRpVG5reVNJNFVHZnF0VFl4WHRPdkg4azE3MWpfMUFaRGllS3JOZTBnY040eEE5NTRnZjNOWUpMSWFBMDVwZURHYXpjLWJmRl9BTlEzalFGLTlGR0hVcFU?oc=5",
-      "venue": "Markthalle",
-      "city": "Free Paradox Obscur Hamburg",
-      "source": "Bandsintown"
-    },
-    {
-      "id": "love-never-dies-meets-gothika-2026-11-14",
-      "artist": "Love Never Dies meets Gothika",
-      "date": "2026-11-14",
-      "title": "Love Never Dies meets Gothika",
-      "url": "https://slowpulseboy.dance/termine/",
-      "venue": "Cadillac",
-      "city": "Oldenburg",
-      "source": "Slow Pulse Boy",
-      "status": "listed_check_venue",
-      "category": "clubnight"
-    },
-    {
       "id": "nachtmahr-2026-11-14",
       "artist": "Nachtmahr",
       "date": "2026-11-14",
@@ -148,16 +155,6 @@
       "source": "Werk68",
       "status": "needs_verification",
       "category": "concert"
-    },
-    {
-      "id": "22fa56bff3dc9cda",
-      "artist": "Paradox Obscur",
-      "date": "2026-11-14",
-      "title": "Free Paradox Obscur Dresden Tickets, Alter Schlachthof Nov 14, 2026 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPc3duUEJXQ3owS2FjTTlFbWtCLVR0VUZJWGczS3huOHVTdVhHLVFzSVpnTmNhVGxVaEFPS3dtT0ozaXFpTVZyaVdDVF9hd0xkLXZoZDNuaEpHVVBIYVd3ZXBNQnlPRlN4YzVqSDJ6UFdoMGowb3JQNm5pVzZUODdPUE1XdXlKZWdxVVQ5VTAtOXB2dkhTME90UDd6bTBhR2NTdGlXcWFuOGFjVGJlcElQQ0lrY3l4UlktNE5hNEo4ME81bVBNNENqbmE4OGRwTTRrNGZhaFJTRGZnbVlZWUp1RF9kS0oyVEk?oc=5",
-      "venue": "Alter Schlachthof",
-      "city": "Free Paradox Obscur Dresden",
-      "source": "Bandsintown"
     },
     {
       "id": "return-of-the-living-dead-2026-11-14",
@@ -172,6 +169,78 @@
       "category": "clubnight"
     },
     {
+      "id": "hinfort-myrna-loy-2026-11-14",
+      "artist": "Hinfort / Myrna Loy",
+      "date": "2026-11-14",
+      "title": "Hinfort live with Myrna Loy",
+      "url": "https://hinfortmusic.com/home",
+      "venue": "Luxor",
+      "city": "Köln",
+      "source": "Hinfort official",
+      "status": "confirmed",
+      "category": "concert"
+    },
+    {
+      "id": "love-never-dies-meets-gothika-2026-11-14",
+      "artist": "Love Never Dies meets Gothika",
+      "date": "2026-11-14",
+      "title": "Love Never Dies meets Gothika",
+      "url": "https://slowpulseboy.dance/termine/",
+      "venue": "Cadillac",
+      "city": "Oldenburg",
+      "source": "Slow Pulse Boy",
+      "status": "listed_check_venue",
+      "category": "clubnight"
+    },
+    {
+      "id": "jakuzi-2026-11-15",
+      "artist": "Jakuzi",
+      "date": "2026-11-15",
+      "title": "Live with von rohbau",
+      "url": "https://events.musicofourdesire.com/de/events/Hamburg/genre/darkwave",
+      "venue": "MS Stubnitz",
+      "city": "Hamburg",
+      "source": "Music of Our Desire",
+      "status": "listed_check_venue",
+      "category": "concert"
+    },
+    {
+      "id": "hinfort-diary-of-dreams-2026-11-19",
+      "artist": "Hinfort / Diary of Dreams",
+      "date": "2026-11-19",
+      "title": "Hinfort live with Diary of Dreams",
+      "url": "https://hinfortmusic.com/home",
+      "venue": "Club Zenit",
+      "city": "Schwerin",
+      "source": "Hinfort official",
+      "status": "confirmed",
+      "category": "concert"
+    },
+    {
+      "id": "hinfort-diary-of-dreams-2026-11-20",
+      "artist": "Hinfort / Diary of Dreams",
+      "date": "2026-11-20",
+      "title": "Hinfort live with Diary of Dreams",
+      "url": "https://hinfortmusic.com/home",
+      "venue": "KuFa Haus",
+      "city": "Braunschweig",
+      "source": "Hinfort official",
+      "status": "confirmed",
+      "category": "concert"
+    },
+    {
+      "id": "lorning-ostpol-2026-11-20",
+      "artist": "Lorning",
+      "date": "2026-11-20",
+      "title": "Dark Wave / Post-Punk / EBM",
+      "url": "https://krach.app/de/artists/lorning",
+      "venue": "Ostpol",
+      "city": "Dresden",
+      "source": "KRACH",
+      "status": "listed_check_venue",
+      "category": "concert"
+    },
+    {
       "id": "plage-noire-festival-2026-11-20",
       "artist": "Plage Noire Festival",
       "date": "2026-11-20",
@@ -184,14 +253,14 @@
       "category": "festival"
     },
     {
-      "id": "sitd-2026-11-21",
-      "artist": "[:SITD:]",
+      "id": "hinfort-2026-11-21",
+      "artist": "Hinfort",
       "date": "2026-11-21",
-      "title": "[:SITD:]",
-      "url": "https://metaldar.com/genre/goth-industrial",
-      "venue": "Kulttempel",
-      "city": "Oberhausen",
-      "source": "Metaldar",
+      "title": "Hinfort + Diary of Dreams",
+      "url": "https://hinfortmusic.com/",
+      "venue": "Stereo Club",
+      "city": "Bielefeld",
+      "source": "Hinfort",
       "status": "needs_verification",
       "category": "concert"
     },
@@ -208,26 +277,16 @@
       "category": "concert"
     },
     {
-      "id": "hinfort-2026-11-21",
-      "artist": "Hinfort",
+      "id": "sitd-2026-11-21",
+      "artist": "[:SITD:]",
       "date": "2026-11-21",
-      "title": "Hinfort + Diary of Dreams",
-      "url": "https://hinfortmusic.com/",
-      "venue": "Stereo Club",
-      "city": "Bielefeld",
-      "source": "Hinfort",
+      "title": "[:SITD:]",
+      "url": "https://metaldar.com/genre/goth-industrial",
+      "venue": "Kulttempel",
+      "city": "Oberhausen",
+      "source": "Metaldar",
       "status": "needs_verification",
       "category": "concert"
-    },
-    {
-      "id": "c4a4cd03394fc489",
-      "artist": "Hinfort",
-      "date": "2026-11-21",
-      "title": "hinfort Bielefeld Tickets, Stereo Club Nov 21, 2026 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUzBOdkQwbzdsSHpPcm5KU2ZsZFRrT21DVjkzelFkOUJpbXZmX2VwX011VndyODQ2NU4xcExnSmlqaHgxbUx5cXd1OXotMnR2ZFRvNTFEdzFoNTJsblc0VjdqYU5TU09OcG1aWG9OX1lNcjdZZ180LV9iR0YtQmVjeWdKYl9vckZvU0Zxb0tDX09RR0lVMG9tb18wMkJhaHFNMEM5bWRLLWhrUU9DRzQtdHZQaWRuMHVTWjJpclh6NlQ?oc=5",
-      "venue": "Stereo Club",
-      "city": "Bielefeld",
-      "source": "Bandsintown"
     },
     {
       "id": "diary-of-dreams-2026-11-22",
@@ -239,6 +298,18 @@
       "city": "Oberhausen",
       "source": "Metaldar",
       "status": "needs_verification",
+      "category": "concert"
+    },
+    {
+      "id": "hinfort-diary-of-dreams-2026-11-22",
+      "artist": "Hinfort / Diary of Dreams",
+      "date": "2026-11-22",
+      "title": "Hinfort live with Diary of Dreams",
+      "url": "https://hinfortmusic.com/home",
+      "venue": "Kulttempel",
+      "city": "Oberhausen",
+      "source": "Hinfort official",
+      "status": "confirmed",
       "category": "concert"
     },
     {
@@ -278,6 +349,18 @@
       "category": "concert"
     },
     {
+      "id": "hinfort-diary-of-dreams-2026-11-25",
+      "artist": "Hinfort / Diary of Dreams",
+      "date": "2026-11-25",
+      "title": "Hinfort live with Diary of Dreams",
+      "url": "https://hinfortmusic.com/home",
+      "venue": "Die Stadtmitte",
+      "city": "Karlsruhe",
+      "source": "Hinfort official",
+      "status": "confirmed",
+      "category": "concert"
+    },
+    {
       "id": "boy-harsher-2026-11-25",
       "artist": "Boy Harsher",
       "date": "2026-11-25",
@@ -290,14 +373,16 @@
       "category": "concert"
     },
     {
-      "id": "971e83790c1bc03e",
-      "artist": "Hinfort",
-      "date": "2026-11-25",
-      "title": "hinfort Karlsruhe Tickets, Die Stadtmitte Nov 25, 2026 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5aN0gzdmF2VmNCekdELXpnWHVJSjdRV2FUTEUxd0E5dWhMVFBIenFnVDl1VTdDWWdxeGwxdzRpWUJLUmNjbnBqTDZSRQ?oc=5",
-      "venue": "Die Stadtmitte",
-      "city": "Karlsruhe",
-      "source": "Bandsintown"
+      "id": "hinfort-diary-of-dreams-2026-11-26",
+      "artist": "Hinfort / Diary of Dreams",
+      "date": "2026-11-26",
+      "title": "Hinfort live with Diary of Dreams",
+      "url": "https://hinfortmusic.com/home",
+      "venue": "Kesselhaus",
+      "city": "Wiesbaden",
+      "source": "Hinfort official",
+      "status": "confirmed",
+      "category": "concert"
     },
     {
       "id": "gloomy-friday-2026-11-27",
@@ -312,6 +397,54 @@
       "category": "clubnight"
     },
     {
+      "id": "hinfort-diary-of-dreams-2026-11-27",
+      "artist": "Hinfort / Diary of Dreams",
+      "date": "2026-11-27",
+      "title": "Hinfort live with Diary of Dreams",
+      "url": "https://hinfortmusic.com/home",
+      "venue": "F-Haus",
+      "city": "Jena",
+      "source": "Hinfort official",
+      "status": "confirmed",
+      "category": "concert"
+    },
+    {
+      "id": "lorning-zalvox-twins-2026-11-27",
+      "artist": "Lorning / Zalvox / Twins in Colour",
+      "date": "2026-11-27",
+      "title": "Dark Wave / Post-Punk / EBM",
+      "url": "https://krach.app/de/artists/lorning",
+      "venue": "Ilses Erika",
+      "city": "Leipzig",
+      "source": "KRACH",
+      "status": "listed_check_venue",
+      "category": "concert"
+    },
+    {
+      "id": "hinfort-diary-of-dreams-2026-11-28",
+      "artist": "Hinfort / Diary of Dreams",
+      "date": "2026-11-28",
+      "title": "Hinfort live with Diary of Dreams",
+      "url": "https://hinfortmusic.com/home",
+      "venue": "Kulturzentrum Lagerhaus",
+      "city": "Bremen",
+      "source": "Hinfort official",
+      "status": "confirmed",
+      "category": "concert"
+    },
+    {
+      "id": "lorning-2026-11-28",
+      "artist": "Lorning",
+      "date": "2026-11-28",
+      "title": "Dark Wave / Post-Punk / EBM",
+      "url": "https://krach.app/de/artists/lorning",
+      "venue": "Museumskeller",
+      "city": "Erfurt",
+      "source": "KRACH",
+      "status": "listed_check_venue",
+      "category": "concert"
+    },
+    {
       "id": "pink-turns-blue-2026-11-28",
       "artist": "Pink Turns Blue",
       "date": "2026-11-28",
@@ -324,6 +457,18 @@
       "category": "concert"
     },
     {
+      "id": "evanora-unlimited-2026-11-30",
+      "artist": "Evanora Unlimited",
+      "date": "2026-11-30",
+      "title": "Live at Hafenklang",
+      "url": "https://events.musicofourdesire.com/de/events/Hamburg/genre/darkwave",
+      "venue": "Hafenklang",
+      "city": "Hamburg",
+      "source": "Music of Our Desire",
+      "status": "listed_check_venue",
+      "category": "concert"
+    },
+    {
       "id": "lebanon-hanover-2026-12-03",
       "artist": "Lebanon Hanover",
       "date": "2026-12-03",
@@ -333,6 +478,54 @@
       "city": "Winterthur",
       "source": "Metaldar",
       "status": "needs_verification",
+      "category": "concert"
+    },
+    {
+      "id": "same-old-madness-party-2026-12-04",
+      "artist": "Same Old Madness",
+      "date": "2026-12-04",
+      "title": "Minimal Wave / EBM / Post-Punk / Coldwave",
+      "url": "https://slaughterhouse-berlin.de/",
+      "venue": "Slaughterhouse",
+      "city": "Berlin",
+      "source": "Slaughterhouse",
+      "status": "needs_verification",
+      "category": "clubnight"
+    },
+    {
+      "id": "permanently-shadowed-2026-12-04",
+      "artist": "Birthed / Jugendwerkhof / .PK. / smr.tni / Tintin Patrone",
+      "date": "2026-12-04",
+      "title": "Permanently Shadowed – Harsh Noise / Wall Noise / Power Electronics",
+      "url": "https://ra.co/events/2561530",
+      "venue": "MS Stubnitz",
+      "city": "Hamburg",
+      "source": "Resident Advisor / MS Stubnitz",
+      "status": "confirmed",
+      "category": "underground_noise"
+    },
+    {
+      "id": "lorning-sonic-boom-lizard-pool-2026-12-05",
+      "artist": "Lorning / Sonic Boom Foundation / Lizard Pool",
+      "date": "2026-12-05",
+      "title": "Dark Wave / Post-Punk / EBM",
+      "url": "https://krach.app/de/artists/lorning",
+      "venue": "Café Saalekiez",
+      "city": "Halle (Saale)",
+      "source": "KRACH",
+      "status": "listed_check_venue",
+      "category": "concert"
+    },
+    {
+      "id": "tan-leracoon-cub-wolf-2026-12-05",
+      "artist": "Tan LeRacoon & Racoonery / Cub & Wolf",
+      "date": "2026-12-05",
+      "title": "Live at Elbdeich Studio",
+      "url": "https://events.musicofourdesire.com/de/events/Hamburg/genre/darkwave",
+      "venue": "Elbdeich Studio",
+      "city": "Hamburg",
+      "source": "Music of Our Desire",
+      "status": "listed_check_venue",
       "category": "concert"
     },
     {
@@ -360,6 +553,18 @@
       "category": "concert"
     },
     {
+      "id": "desinteresse-crush-of-souls-2026-12-06",
+      "artist": "Desinteresse / Crush of Souls",
+      "date": "2026-12-06",
+      "title": "Live at MS Stubnitz",
+      "url": "https://events.musicofourdesire.com/de/events/Hamburg/genre/darkwave",
+      "venue": "MS Stubnitz",
+      "city": "Hamburg",
+      "source": "Music of Our Desire",
+      "status": "listed_check_venue",
+      "category": "concert"
+    },
+    {
       "id": "kontravoid-2026-12-08",
       "artist": "Kontravoid",
       "date": "2026-12-08",
@@ -384,6 +589,18 @@
       "category": "concert"
     },
     {
+      "id": "fliehende-stuerme-2026-12-11",
+      "artist": "Fliehende Stürme",
+      "date": "2026-12-11",
+      "title": "Live",
+      "url": "https://brokensilence.de/live/?s=Darkwave",
+      "venue": "Treibsand",
+      "city": "Lübeck",
+      "source": "Broken Silence – Live on Tour",
+      "status": "needs_verification",
+      "category": "concert"
+    },
+    {
       "id": "hinfort-2026-12-12",
       "artist": "Hinfort",
       "date": "2026-12-12",
@@ -396,24 +613,16 @@
       "category": "concert"
     },
     {
-      "id": "430d0e6625b725fd",
-      "artist": "Hinfort",
+      "id": "fliehende-stuerme-2026-12-12",
+      "artist": "Fliehende Stürme",
       "date": "2026-12-12",
-      "title": "hinfort Berlin Tickets, Urban Spree Dec 12, 2026 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPU0k3TFQ1OGdoeUpJaWZPM3NwUkNuT2U2cG1NQ0U5bk5TMkNqTFAtbEM0UFlXYXRzT3pUNjRvdlBWc21sYmFNd0ZEVVJGaF9jMmtCZnR6NXphUnlfeHp2U2tUbzBpbDN4MkdxWTk4UWUyM2czbkhKalpmb2hEcjcwNFp0aDR1MkV2LURvOHFHcDNDNEhZZktud1p4U1FSV29ubVlNakYzV1hqLTNyYzlCNk95Tlk4Q21nWTZzandUNkZDS0pJejcwUkR2cnMwX1M5OXlqcmVpMVJWVkVsSUE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "venue": null,
-      "city": null,
-      "source": "Öffentliche Konzertmeldung"
-    },
-    {
-      "id": "6a7bb99442b136ca",
-      "artist": "Paradox Obscur",
-      "date": "2026-12-12",
-      "title": "Free Paradox Obscur Sofia Tickets, Club Pave Dec 12, 2026 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdmZPRmdnSTMyUUJ0VVBqWTNoelhkUXo3dHkwc2JxQkpVZDFDa3hJZDhmdDR3eURjSGwzQ3B4U2lNbnltendvRVgzbG14UWJjNF9TVXQ1c3FlVmswSEI3V2c1NmpHN1BVYU04UXZrMXpIMVBybmtqQnV1djBmbnNveVpHcFNZa09lcWpodXdmeXZUYnVQX0pBSDFHVTVzdHpSamZiQ25IWTdsM044ZVY5SW9WQ1laSURabXU1b1hzMWtqRUdfcVNmRFZPQy1PQjV4TndabUR5cTh4Zw?oc=5",
-      "venue": "Club Pave",
-      "city": "Free Paradox Obscur Sofia",
-      "source": "Bandsintown"
+      "title": "Live",
+      "url": "https://brokensilence.de/live/?s=Darkwave",
+      "venue": "Lila Eule",
+      "city": "Bremen",
+      "source": "Broken Silence – Live on Tour",
+      "status": "needs_verification",
+      "category": "concert"
     },
     {
       "id": "project-pitchfork-2026-12-12",
@@ -440,6 +649,18 @@
       "category": "clubnight"
     },
     {
+      "id": "fliehende-stuerme-2026-12-18",
+      "artist": "Fliehende Stürme",
+      "date": "2026-12-18",
+      "title": "Live",
+      "url": "https://brokensilence.de/live/?s=Darkwave",
+      "venue": "Alte Hackerei",
+      "city": "Karlsruhe",
+      "source": "Broken Silence – Live on Tour",
+      "status": "needs_verification",
+      "category": "concert"
+    },
+    {
       "id": "up-before-christmas-2026-12-19",
       "artist": "Up before Christmas",
       "date": "2026-12-19",
@@ -452,14 +673,28 @@
       "category": "clubnight"
     },
     {
-      "id": "0aa7e7b2f507e9aa",
-      "artist": "Hinfort",
-      "date": "2026-12-27",
-      "title": "hinfort Meschede Tickets, mono-deluxe Cocktailbar Veranstaltungsort Dec 27, 2026 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBIcDZkWEc4dEItU2NLU3Z6elZhMk9IMjI5X2FrRnBOOUUyZDBKTmxuUGNwWjQtX1VvZkxUWE1FQnhxN0NaY3Q0VkRRbw?oc=5",
-      "venue": "mono-deluxe Cocktailbar Veranstaltungsort",
-      "city": "Meschede",
-      "source": "Bandsintown"
+      "id": "fliehende-stuerme-2026-12-19",
+      "artist": "Fliehende Stürme",
+      "date": "2026-12-19",
+      "title": "Live",
+      "url": "https://brokensilence.de/live/?s=Darkwave",
+      "venue": "Museumskeller",
+      "city": "Erfurt",
+      "source": "Broken Silence – Live on Tour",
+      "status": "needs_verification",
+      "category": "concert"
+    },
+    {
+      "id": "fliehende-stuerme-2027-01-08",
+      "artist": "Fliehende Stürme",
+      "date": "2027-01-08",
+      "title": "Live",
+      "url": "https://brokensilence.de/live/?s=Darkwave",
+      "venue": "Cantine",
+      "city": "Bielefeld",
+      "source": "Broken Silence – Live on Tour",
+      "status": "needs_verification",
+      "category": "concert"
     },
     {
       "id": "owls-n-bats-winterfest-2027-01-09",
@@ -474,14 +709,40 @@
       "category": "festival"
     },
     {
-      "id": "c61b4d6fe3cd8912",
-      "artist": "Schwarzes Fragment",
-      "date": "2027-01-16",
-      "title": "Schwarzes Fragment Erfurt Tickets, From Hell Jan 16, 2027 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVUx2bXV3TzhoQjVPY3pYb0ZfbUpWanJMM1Bjd1pIa1Z3bGVVNGVURDVveWpqd29zNkFmWWwzLWljRW1VZGdfWk9mQllKVUM0RkdQeHRsWGI3TXBGMExOdC00cW01a3hOSE4yTUI0YmwwWFVpQ1I2TEVQRC1qMjNPM1BGckgwWExNcVgxTzNSc2pJXzZjUVh0SnZ5NXdQNEQ5UnhTUS1SdTlGZklPTElHNjRjU3BnbDcyNWRQdHhDZ18?oc=5",
-      "venue": "From Hell",
-      "city": "Erfurt",
-      "source": "Bandsintown"
+      "id": "fliehende-stuerme-2027-01-09",
+      "artist": "Fliehende Stürme",
+      "date": "2027-01-09",
+      "title": "Live",
+      "url": "https://brokensilence.de/live/?s=Darkwave",
+      "venue": "Werk II",
+      "city": "Leipzig",
+      "source": "Broken Silence – Live on Tour",
+      "status": "needs_verification",
+      "category": "concert"
+    },
+    {
+      "id": "fliehende-stuerme-2027-01-22",
+      "artist": "Fliehende Stürme",
+      "date": "2027-01-22",
+      "title": "Live",
+      "url": "https://brokensilence.de/live/?s=Darkwave",
+      "venue": "Chemiefabrik",
+      "city": "Dresden",
+      "source": "Broken Silence – Live on Tour",
+      "status": "needs_verification",
+      "category": "concert"
+    },
+    {
+      "id": "fliehende-stuerme-2027-01-23",
+      "artist": "Fliehende Stürme",
+      "date": "2027-01-23",
+      "title": "Live",
+      "url": "https://brokensilence.de/live/?s=Darkwave",
+      "venue": "SO36",
+      "city": "Berlin",
+      "source": "Broken Silence – Live on Tour",
+      "status": "needs_verification",
+      "category": "concert"
     },
     {
       "id": "thalie-némésis-2027-01-29",
@@ -496,16 +757,6 @@
       "category": "concert"
     },
     {
-      "id": "3d10142693253fb0",
-      "artist": "Thalie Némésis",
-      "date": "2027-01-29",
-      "title": "Thalie Némésis Fréjus Tickets, Monster'S Art Jan 29, 2027 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQd1lBOXFTODBGVGZYNXN3UGU0cnVUdXhtUVNVOHZ5Yi0wa0Yxai10bzdhVzZONWRWa1VDYWlvTWtVY3RST3c2dklGLUdhWEFfZkJIRTRrekF3d2NFaFZ1S0c2eV9QQzR0eWtfZjVUQWc5dG4tTE12OVJBa3l3OUlIcVVLT1Nwa3otbkwtY1VXanVJdVhtZF9jSTVIZFdicU1MOF9ZTHFDazNqZHBwdnZkazJoT2duRkJ0dnJWdFVqQW1LVUptSVFnWTBfTzJSbkp5M1Y0T1RuLThkOWVo?oc=5",
-      "venue": "Monster'S Art",
-      "city": "Fréjus",
-      "source": "Bandsintown"
-    },
-    {
       "id": "disorder-festival-2027-02-06",
       "artist": "Disorder Festival",
       "date": "2027-02-06",
@@ -516,16 +767,6 @@
       "source": "Side-Line / EBM.gr",
       "status": "lineup_announced",
       "category": "festival"
-    },
-    {
-      "id": "99ab70199eb47598",
-      "artist": "Paradox Obscur",
-      "date": "2027-02-06",
-      "title": "Paradox Obscur Montreuil Tickets, La Marbrerie Feb 06, 2027 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNS3hob3JsTXZmV0NpRGdxdncwT0hvYXBlX0VVUjlYakR5Z3ZLZS1HTllzcVBBVktIR0ZEbVEyRkw4MTc2U2Q4RE5GSUlqeWhkb1hMUmV5ZUtEdFNDdFo4azJKTG9zTjRSUVpOZTFUclpYdHZIaWlJSlBIM1dPeWFPMGxadFdOZnp0M0JHNmI5eEhwT1JpaXFLV2ZaazhwZUZqY1JySEEyNlVwQXV5LXFCcFZDYWFFTm5U?oc=5",
-      "venue": "La Marbrerie",
-      "city": "Montreuil",
-      "source": "Bandsintown"
     },
     {
       "id": "grauzone-festival-2027-02-11",
@@ -540,34 +781,28 @@
       "category": "festival"
     },
     {
-      "id": "3ea1b0dd00c3ba67",
-      "artist": "Raskolnikov",
-      "date": "2027-02-13",
-      "title": "Raskolnikov Kreuzlingen Tickets, Horst Klub Feb 13, 2027 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdzY5SHU2VFF1bVlXVWZ0cklSRGNKa3EwbUx5bTNpcEthOHdEUFU1ZlRqRjU1dnpmMFhjbXNnQlpGODJYdHdMUWc4ZjVJeWo1ZFFyQVY0WnB2ZHB5N0w1MzBpN1p3eTQwV1JSOE1rcHRxUnhFQWxvUmZGU0JfQlhkT3NIOHhsZw?oc=5",
-      "venue": "Horst Klub",
-      "city": "Kreuzlingen",
-      "source": "Bandsintown"
+      "id": "fliehende-stuerme-2027-03-12",
+      "artist": "Fliehende Stürme",
+      "date": "2027-03-12",
+      "title": "Live",
+      "url": "https://brokensilence.de/live/?s=Darkwave",
+      "venue": "Vortex Surfer Musikclub",
+      "city": "Siegen",
+      "source": "Broken Silence – Live on Tour",
+      "status": "needs_verification",
+      "category": "concert"
     },
     {
-      "id": "da0448fd93bac38a",
-      "artist": "Raskolnikov",
-      "date": "2027-02-20",
-      "title": "Raskolnikov Paris Tickets, Nouveau Casino Feb 20, 2027 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQS0lfUUhmV3BfNUUxczU5aHhiaE5RWEZ0T2FvYW5IOExhX1l3MU5YdV9ZaFRiT25CNDJ5cVdLTkxkcG5JczFxdkNnc2N4SWZIQnM1Wm0tU3hHX2VKUnk5dVFYN1E2WW5GV0J5YktEZzEtNjluM0pDc2owZnljczl2U2JLOWtWMjVPUnZXc1FsREVrNjlDWjQ4N0ZQRWN5Y0U5NWNBVXdUR1lKWW1WOXptQ1FkYUoxYlhnZUtORQ?oc=5",
-      "venue": "Nouveau Casino",
-      "city": "Paris",
-      "source": "Bandsintown"
-    },
-    {
-      "id": "bbf42835f0c6378a",
-      "artist": "Raskolnikov",
-      "date": "2027-03-05",
-      "title": "Raskolnikov București Tickets, Expirat Mar 05, 2027 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNWjBUeWp4N3dIcFJJRTVZZWN3SERZaHQ4bnNseVNKdnVHd05HQTBIUnBDU1dlWTg2TVZldk9nQU5RT2FPRHlWZDRRUXJOdWdZa1FFQ0pTMW5QUjE3M3RFU1lSbTNaVmEwZ1hHX1BPZ1E5TUhfZHRWMGc3MkZodXV2ZUNTSjRCNWhHN2NxZXdPR1hNLW5XY0FWTi1RbXZ3ZGRyZ1d6b1lidWd0THdUUFFiQmdteldfWVhfVXJ0TFgwZ3c0OW9NMTVtQ0VtajVIbTVmMlpSQkNHS04?oc=5",
-      "venue": "Expirat",
-      "city": "București",
-      "source": "Bandsintown"
+      "id": "fliehende-stuerme-2027-03-13",
+      "artist": "Fliehende Stürme",
+      "date": "2027-03-13",
+      "title": "Live",
+      "url": "https://brokensilence.de/live/?s=Darkwave",
+      "venue": "Goldgrube",
+      "city": "Kassel",
+      "source": "Broken Silence – Live on Tour",
+      "status": "needs_verification",
+      "category": "concert"
     },
     {
       "id": "e-tropolis-festival-2027-03-20",
@@ -582,6 +817,18 @@
       "category": "festival"
     },
     {
+      "id": "fliehende-stuerme-2027-03-25",
+      "artist": "Fliehende Stürme",
+      "date": "2027-03-25",
+      "title": "Live",
+      "url": "https://brokensilence.de/live/?s=Darkwave",
+      "venue": "AJZ Talschock",
+      "city": "Chemnitz",
+      "source": "Broken Silence – Live on Tour",
+      "status": "needs_verification",
+      "category": "concert"
+    },
+    {
       "id": "lana-del-rabies-2027-05-08",
       "artist": "Lana Del Rabies",
       "date": "2027-05-08",
@@ -592,16 +839,6 @@
       "source": "Artist website",
       "status": "needs_verification",
       "category": "festival"
-    },
-    {
-      "id": "eaa8c5cacc7ced9c",
-      "artist": "Lana Del Rabies",
-      "date": "2027-05-08",
-      "title": "Lana Del Rabies will play Northwest Terror Fest on Friday, May 8th in Seattle, WA. NWTF is the PNW’s only destination extreme metal festival.",
-      "url": "https://lanadelrabies.com/",
-      "venue": null,
-      "city": null,
-      "source": "Lana Del Rabies – entdeckte Terminseite"
     },
     {
       "id": "hinfort-2027-05-14",
@@ -616,16 +853,6 @@
       "category": "concert"
     },
     {
-      "id": "505b132edf97335c",
-      "artist": "Hinfort",
-      "date": "2027-05-14",
-      "title": "hinfort Kassel Tickets, Goldgrube May 14, 2027 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPb0Y1WE45MnpiY1RHYnBOY3hJVFhEWjEwcWhXTmlUWkpIQTBLdXFkNDhpNGR6VjlQTVdxYU1Zc3VMZFRCQ3VxOUtGU1pqV3F2N2taT2d4c0dTcGxDTDY1ODgtT3Q2U2VuZGFkQVY1M1ZUSEFVb1hCc3JJY184cmRJWFlqMWdtd01LYXVYSFFsMnhtNkl5Q25yVEo0T2hRbnZQT203TjF0bjN6eXk4WVBYMm9uWm12ZXFi?oc=5",
-      "venue": "Goldgrube",
-      "city": "Kassel",
-      "source": "Bandsintown"
-    },
-    {
       "id": "wave-gotik-treffen-2027-05-14",
       "artist": "Wave-Gotik-Treffen",
       "date": "2027-05-14",
@@ -636,6 +863,18 @@
       "source": "Official festival website",
       "status": "date_confirmed_lineup_pending",
       "category": "festival"
+    },
+    {
+      "id": "fliehende-stuerme-2027-06-12",
+      "artist": "Fliehende Stürme",
+      "date": "2027-06-12",
+      "title": "Live",
+      "url": "https://brokensilence.de/live/?s=Darkwave",
+      "venue": "Tante Manfred",
+      "city": "Halle (Saale)",
+      "source": "Broken Silence – Live on Tour",
+      "status": "needs_verification",
+      "category": "concert"
     },
     {
       "id": "amphi-festival-2027-07-24",
@@ -672,16 +911,6 @@
       "source": "Official festival website",
       "status": "date_confirmed_lineup_pending",
       "category": "festival"
-    },
-    {
-      "id": "67f725f10aa02f82",
-      "artist": "Then Comes Silence",
-      "date": "2027-09-18",
-      "title": "Venerdì 18 Settembre: WHISPERING DARKNESS goth night con THEN COMES SILENCE e THE FOREIGN RESORT live at Q77 Theater",
-      "url": "https://www.tickettailor.com/events/whisperingdarkness/2256892",
-      "venue": null,
-      "city": null,
-      "source": "Then Comes Silence – entdeckte Terminseite – entdeckte Terminseite"
     }
   ]
 }
