@@ -55,6 +55,7 @@ jobs:
           test -f directory_sources.json
           test -f data/nachtfragment.json
           test -f data/candidates.json
+          test -f data/directory_candidates.json
           test -f data/changes.json
           test -f data/geocache.json
 
