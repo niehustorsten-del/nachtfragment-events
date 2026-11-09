@@ -7466,7 +7466,7 @@
     "quality_status": "green",
     "quality_label": "🟢 geprüft / relevante Veranstaltung",
     "quality_note": "Verifizierter Szene-Eintrag mit Quelle und aktuellem bzw. wiederkehrendem Terminindikator.",
-    "quality_checked_at": "2026-10-19T09:53:20.304674+00:00"
+    "quality_checked_at": "2026-11-09T21:54:35.029772+00:00"
   },
   {
     "id": "directory-831e2591d0b26f",
@@ -9458,5 +9458,359 @@
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Last+Cathedral+-+Special+Bars+with+a+Twist-+top10berlin.de%2C+Berlin%2C+Deutschland",
     "google_maps_status": "search_link",
     "geocoded": false
+  },
+  {
+    "id": "directory-82247b2d0f5d73",
+    "record_type": "shop",
+    "name": "anmelden",
+    "city": null,
+    "country_name": null,
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core"
+    ],
+    "url": "https://gothic.at/forum/login.php",
+    "source_url": "https://gothic.at/forum/login.php",
+    "description": null,
+    "verified": true,
+    "verified_date": "2026-11-09",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_link_sources_v1",
+    "confidence_score": 5,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt"
+    ],
+    "auto_sources": [
+      "https://www.gothic.at/links/szene/",
+      "https://gothic.at/forum/login.php"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "last_source_check": "2026-11-09T21:54:35.029772+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=anmelden",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=anmelden",
+    "google_maps_status": "search_link",
+    "geocoded": false,
+    "discovery_source_name": "gothic.at – Szenelinks"
+  },
+  {
+    "id": "directory-68ff34ba7ac77c",
+    "record_type": "shop",
+    "name": "Forum",
+    "city": null,
+    "country_name": null,
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core"
+    ],
+    "url": "https://gothic.at/forum",
+    "source_url": "https://gothic.at/forum",
+    "description": null,
+    "verified": true,
+    "verified_date": "2026-11-09",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_link_sources_v1",
+    "confidence_score": 7,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt"
+    ],
+    "auto_sources": [
+      "https://www.gothic.at/links/szene/",
+      "https://gothic.at/forum"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "last_source_check": "2026-11-09T21:54:35.029772+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Forum",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Forum",
+    "google_maps_status": "search_link",
+    "geocoded": false,
+    "discovery_source_name": "gothic.at – Szenelinks"
+  },
+  {
+    "id": "directory-7adb0d0bafe8bb",
+    "record_type": "magazine",
+    "name": "Neue Links",
+    "city": "Rome",
+    "country_name": "Deutschland",
+    "type": [
+      "magazine"
+    ],
+    "categories": [
+      "Dark-Music-Magazin"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "ebm_industrial"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "⚡ EBM / Industrial"
+    ],
+    "url": "https://andre-fuhrmann.de/link_neu.html",
+    "source_url": "https://andre-fuhrmann.de/link_neu.html",
+    "description": null,
+    "verified": true,
+    "verified_date": "2026-11-09",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_link_sources_v1",
+    "confidence_score": 12,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://www.andre-fuhrmann.de/link_verschiedenes.html",
+      "https://andre-fuhrmann.de/link_neu.html"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "last_source_check": "2026-11-09T21:54:35.029772+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Neue+Links%2C+Rome%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Neue+Links%2C+Rome%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false,
+    "discovery_source_name": "Andre Fuhrmann – Dark Music Linkpage"
+  },
+  {
+    "id": "directory-df7dec19a5b913",
+    "record_type": "shop",
+    "name": "Black",
+    "city": "Montreal",
+    "country_name": "Deutschland",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://blackmagazin.com",
+    "source_url": "https://blackmagazin.com",
+    "description": null,
+    "verified": true,
+    "verified_date": "2026-11-09",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_link_sources_v1",
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://www.andre-fuhrmann.de/link_verschiedenes.html",
+      "https://blackmagazin.com"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "last_source_check": "2026-11-09T21:54:35.029772+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Black%2C+Montreal%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Black%2C+Montreal%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false,
+    "discovery_source_name": "Andre Fuhrmann – Dark Music Linkpage"
+  },
+  {
+    "id": "directory-209c22ca4d0406",
+    "record_type": "club",
+    "name": "Cornucopia - Belfast",
+    "city": null,
+    "country_name": "Irland",
+    "type": [
+      "club"
+    ],
+    "categories": [
+      "Gothic-Club"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial"
+    ],
+    "url": "https://cornucopia.gothic.ie",
+    "source_url": "https://cornucopia.gothic.ie",
+    "description": null,
+    "verified": true,
+    "verified_date": "2026-11-09",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_link_sources_v1",
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://dominion.gothic.ie/links/",
+      "https://cornucopia.gothic.ie"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "last_source_check": "2026-11-09T21:54:35.029772+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cornucopia+-+Belfast%2C+Irland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Cornucopia+-+Belfast%2C+Irland",
+    "google_maps_status": "search_link",
+    "geocoded": false,
+    "discovery_source_name": "Dominion – Scene Links"
+  },
+  {
+    "id": "directory-c097e5885b6b8f",
+    "record_type": "magazine",
+    "name": "lots of ex-clubs",
+    "city": null,
+    "country_name": "Irland",
+    "type": [
+      "magazine"
+    ],
+    "categories": [
+      "Dark-Music-Magazin"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://archive.gothic.ie",
+    "source_url": "https://archive.gothic.ie",
+    "description": null,
+    "verified": true,
+    "verified_date": "2026-11-09",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_link_sources_v1",
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://dominion.gothic.ie/links/",
+      "https://archive.gothic.ie"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "last_source_check": "2026-11-09T21:54:35.029772+00:00",
+    "online_only": true,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=lots+of+ex-clubs%2C+Irland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=lots+of+ex-clubs%2C+Irland",
+    "google_maps_status": "search_link",
+    "geocoded": false,
+    "discovery_source_name": "Dominion – Scene Links"
+  },
+  {
+    "id": "directory-4bd6a0e15041c0",
+    "record_type": "shop",
+    "name": "Main Page",
+    "city": "Los Angeles",
+    "country_name": "USA",
+    "type": [
+      "shop"
+    ],
+    "categories": [
+      "Gothic-Laden"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "http://ipso-facto.com",
+    "source_url": "http://ipso-facto.com",
+    "description": null,
+    "verified": true,
+    "verified_date": "2026-11-09",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_link_sources_v1",
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://www.ipso-facto.com/links.htm",
+      "http://ipso-facto.com"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "last_source_check": "2026-11-09T21:54:35.029772+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Main+Page%2C+Los+Angeles%2C+USA",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Main+Page%2C+Los+Angeles%2C+USA",
+    "google_maps_status": "search_link",
+    "geocoded": false,
+    "discovery_source_name": "Ipso Facto – Goth Links"
   }
 ]

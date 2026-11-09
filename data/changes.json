@@ -1,5 +1,194 @@
 [
   {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Main Page",
+    "city": "Los Angeles",
+    "source": "http://ipso-facto.com",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "directory_imported",
+    "record_type": "magazine",
+    "name": "lots of ex-clubs",
+    "city": null,
+    "source": "https://archive.gothic.ie",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "directory_imported",
+    "record_type": "club",
+    "name": "Cornucopia - Belfast",
+    "city": null,
+    "source": "https://cornucopia.gothic.ie",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Black",
+    "city": "Montreal",
+    "source": "https://blackmagazin.com",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "directory_imported",
+    "record_type": "magazine",
+    "name": "Neue Links",
+    "city": "Rome",
+    "source": "https://andre-fuhrmann.de/link_neu.html",
+    "score": 12
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "Forum",
+    "city": null,
+    "source": "https://gothic.at/forum",
+    "score": 7
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "directory_imported",
+    "record_type": "shop",
+    "name": "anmelden",
+    "city": null,
+    "source": "https://gothic.at/forum/login.php",
+    "score": 5
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "source_error",
+    "source": "https://www.plage-noire.de/",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "candidate",
+    "name": "Mera Luna Festival 2027 07.-08.08.2027 Hildesheim",
+    "city": "",
+    "source": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "candidate",
+    "name": "Hexentanz Festival 2027 30.04.-02.05.2027 Thallichtenberg",
+    "city": "",
+    "source": "https://www.festivalhopper.de/festivals/genre/gothic",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "candidate",
+    "name": "Depeche Mode Party",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "candidate",
+    "name": "The Cassandra Complex @ Plage Noire Festival",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "candidate",
+    "name": "Die Krupps @ Plage Noire Festival",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "candidate",
+    "name": "Diary of Dreams @ Stereo Live Club",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "candidate",
+    "name": "Covenant @ Plage Noire Festival",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "candidate",
+    "name": "Project Pitchfork @ Plage Noire Festival",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "candidate",
+    "name": "In Strict Confidence @ Plage Noire Festival",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "candidate",
+    "name": "Bragolin live - Berlin",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "candidate",
+    "name": "Nacht und Nebel",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "candidate",
+    "name": "She Past Away @ Cold Hearted Festival",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "candidate",
+    "name": "Qual @ Cold Hearted Festival",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "candidate",
+    "name": "Kaelan Mikla @ Cold Hearted Festival",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-11-09T21:54:35.029772+00:00",
+    "type": "candidate",
+    "name": "Ash Code @ Cold Hearted Festival",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 8
+  },
+  {
     "timestamp": "2026-10-19T09:53:20.304674+00:00",
     "type": "source_error",
     "source": "https://www.plage-noire.de/",

@@ -1,1 +1,638 @@
-[]
+[
+  {
+    "id": "auto-a6adff98653786",
+    "record_type": "event",
+    "name": "Ash Code @ Cold Hearted Festival",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/ash-code-2026-11-13-hamburg-cold-hearted-festival-markthalle/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-13",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt",
+      "Festival erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ash+Code+%40+Cold+Hearted+Festival%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Ash+Code+%40+Cold+Hearted+Festival%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-f9b5ae2defe895",
+    "record_type": "event",
+    "name": "Kaelan Mikla @ Cold Hearted Festival",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/kaelan-mikla-2026-11-13-hamburg-cold-hearted-festival-markthalle/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-13",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt",
+      "Festival erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kaelan+Mikla+%40+Cold+Hearted+Festival%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Kaelan+Mikla+%40+Cold+Hearted+Festival%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-da20ccf1e67cbf",
+    "record_type": "event",
+    "name": "Qual @ Cold Hearted Festival",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/qual-2026-11-14-dresden-cold-hearted-festival-alter-schlachthof-dresden/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-14",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt",
+      "Festival erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Qual+%40+Cold+Hearted+Festival%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Qual+%40+Cold+Hearted+Festival%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-e12bb75c5d0f67",
+    "record_type": "event",
+    "name": "She Past Away @ Cold Hearted Festival",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/she-past-away-2026-11-14-dresden-cold-hearted-festival-alter-schlachthof-dresden/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-14",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt",
+      "Festival erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=She+Past+Away+%40+Cold+Hearted+Festival%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=She+Past+Away+%40+Cold+Hearted+Festival%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-f2912fff72c67a",
+    "record_type": "event",
+    "name": "Nacht und Nebel",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/nacht-und-nebel-ulm-2026-11-14/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-14",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nacht+und+Nebel%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Nacht+und+Nebel%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-f734e986e2474b",
+    "record_type": "event",
+    "name": "Bragolin live - Berlin",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/bragolin-live-berlin-2026-11-19/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-19",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bragolin+live+-+Berlin%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Bragolin+live+-+Berlin%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-2e8daec14c5bea",
+    "record_type": "event",
+    "name": "In Strict Confidence @ Plage Noire Festival",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/in-strict-confidence-2026-11-20-weissenhaeuser-strand-plage-noire-festival-ferienpark-weissenhaeuser-strand/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-20",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt",
+      "Festival erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=In+Strict+Confidence+%40+Plage+Noire+Festival%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=In+Strict+Confidence+%40+Plage+Noire+Festival%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-4b95bdc9787354",
+    "record_type": "event",
+    "name": "Project Pitchfork @ Plage Noire Festival",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/project-pitchfork-2026-11-20-weissenhaeuser-strand-plage-noire-festival-ferienpark-weissenhaeuser-strand/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-20",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt",
+      "Festival erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Project+Pitchfork+%40+Plage+Noire+Festival%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Project+Pitchfork+%40+Plage+Noire+Festival%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-ddd9d7b684f546",
+    "record_type": "event",
+    "name": "Covenant @ Plage Noire Festival",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/covenant-2026-11-20-weissenhaeuser-strand-plage-noire-festival-ferienpark-weissenhaeuser-strand/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-20",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt",
+      "Festival erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Covenant+%40+Plage+Noire+Festival%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Covenant+%40+Plage+Noire+Festival%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-efce550d791c9c",
+    "record_type": "event",
+    "name": "Diary of Dreams @ Stereo Live Club",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/diary-of-dreams-2026-11-21-bielefeld-stereo-live-club/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-21",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Diary+of+Dreams+%40+Stereo+Live+Club%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Diary+of+Dreams+%40+Stereo+Live+Club%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-2e70b5f9c90254",
+    "record_type": "event",
+    "name": "Die Krupps @ Plage Noire Festival",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/die-krupps-2026-11-20-weissenhaeuser-strand-plage-noire-festival-ferienpark-weissenhaeuser-strand/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-20",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt",
+      "Festival erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Die+Krupps+%40+Plage+Noire+Festival%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Die+Krupps+%40+Plage+Noire+Festival%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-09cc513d088b5c",
+    "record_type": "event",
+    "name": "The Cassandra Complex @ Plage Noire Festival",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/the-cassandra-complex-2026-11-20-weissenhaeuser-strand-plage-noire-festival-ferienpark-weissenhaeuser-strand/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-20",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt",
+      "Festival erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Cassandra+Complex+%40+Plage+Noire+Festival%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=The+Cassandra+Complex+%40+Plage+Noire+Festival%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-6634e05cd5cc96",
+    "record_type": "event",
+    "name": "Depeche Mode Party",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/depeche-mode-party-rostock-2026-11-21/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-21",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Depeche+Mode+Party%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Depeche+Mode+Party%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-5f26df2be4c226",
+    "record_type": "event",
+    "name": "Hexentanz Festival 2027 30.04.-02.05.2027 Thallichtenberg",
+    "city": null,
+    "country": "EU",
+    "country_name": "Europa",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [],
+    "szenerelevanz": [],
+    "szenerelevanz_labels": [],
+    "url": "https://www.festivalhopper.de/festival/hexentanz-festival-2027",
+    "source_url": "https://www.festivalhopper.de/festivals/genre/gothic",
+    "date_text": "02.05.2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "Datum erkannt",
+      "Festival erkannt"
+    ],
+    "auto_sources": [
+      "https://www.festivalhopper.de/festivals/genre/gothic"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Hexentanz+Festival+2027+30.04.-02.05.2027+Thallichtenberg%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Hexentanz+Festival+2027+30.04.-02.05.2027+Thallichtenberg%2C+Europa",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-d07a31fe90a989",
+    "record_type": "event",
+    "name": "Mera Luna Festival 2027 07.-08.08.2027 Hildesheim",
+    "city": null,
+    "country": "EU",
+    "country_name": "Europa",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [],
+    "szenerelevanz": [],
+    "szenerelevanz_labels": [],
+    "url": "https://www.festivalhopper.de/festival/mera-luna-festival-2027",
+    "source_url": "https://www.festivalhopper.de/festivals/genre/ebm",
+    "date_text": "08.08.2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "Datum erkannt",
+      "Festival erkannt"
+    ],
+    "auto_sources": [
+      "https://www.festivalhopper.de/festivals/genre/ebm"
+    ],
+    "discovered_at": "2026-11-09T21:54:35.029772+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mera+Luna+Festival+2027+07.-08.08.2027+Hildesheim%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Mera+Luna+Festival+2027+07.-08.08.2027+Hildesheim%2C+Europa",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  }
+]
