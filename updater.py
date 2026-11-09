@@ -348,6 +348,50 @@ def verify_directory_result(result,query,geocache):
    rec.update({'lat':geo['lat'],'lng':geo['lng'],'geocoded':True,'google_maps_status':'geocoded','google_maps_coords_url':'https://www.google.com/maps/search/?api=1&query='+urllib.parse.quote_plus(f"{geo['lat']},{geo['lng']}")})
  return rec
 
+
+DIRECTORY_SOURCES=os.path.join(ROOT,'directory_sources.json')
+
+def discover_directory_link_sources(geocache):
+ """Discover directory entities through public link collections; no search API or key required."""
+ if not os.path.exists(DIRECTORY_SOURCES):
+  print('DIRECTORY SOURCES: registry missing')
+  return [],0
+ rows=[]; errors=0; seen=set(); scanned=0
+ social_hosts=('facebook.com','instagram.com','twitter.com','x.com','youtube.com','tiktok.com','pinterest.com','discord.gg','discord.com','archive.org')
+ for source in load_json(DIRECTORY_SOURCES,[]):
+  try:
+   if not isinstance(source,dict) or not source.get('url','').startswith(('http://','https://')): continue
+   status,ctype,body=fetch(source['url'],'text/html,application/xhtml+xml,*/*;q=0.5')
+   if status!=200: raise RuntimeError('HTTP '+str(status))
+   parser=LinkParser(source['url']); parser.feed(body)
+   allowed=set(source.get('allowed_types',list(ENTITY_TYPES)))
+   max_links=max(1,min(int(source.get('max_links',8)),12))
+   used=0
+   for title,url in parser.items:
+    if used>=max_links: break
+    url=norm_url(url); title=re.sub(r'\\s+',' ',str(title)).strip()
+    if not url or len(title)<3 or url==norm_url(source['url']): continue
+    host=urllib.parse.urlsplit(url).netloc.lower()
+    if any(host==h or host.endswith('.'+h) for h in social_hosts): continue
+    if url in seen: continue
+    seen.add(url); used+=1; scanned+=1
+    try:
+     rec=verify_directory_result({'title':title,'link':url,'snippet':''},source.get('name','Public link collection'),geocache)
+     if rec and rec.get('record_type') in allowed:
+      rec['auto_importer']='directory_link_sources_v1'
+      rec['source_url']=url
+      rec['auto_sources']=list(dict.fromkeys([source['url'],url]))
+      rec['discovery_source_name']=source.get('name')
+      rows.append(rec)
+    except Exception as e:
+     errors+=1; print('DIRECTORY LINK ITEM ERROR',url,repr(e))
+    time.sleep(0.15)
+   print('DIRECTORY LINK SOURCE',source.get('name',source['url']),'links_checked',used,'accepted',sum(1 for x in rows if x.get('discovery_source_name')==source.get('name')))
+  except Exception as e:
+   errors+=1; print('DIRECTORY LINK SOURCE ERROR',source.get('url'),repr(e))
+ print('DIRECTORY LINK DISCOVERY scanned',scanned,'accepted',len(rows),'errors',errors)
+ return rows,errors
+
 def discover_directory_entities(geocache):
  if not SERPAPI_KEY:
   print('DIRECTORY IMPORT: Websuche übersprungen (SERPAPI_KEY fehlt)'); return [],0
@@ -595,6 +639,9 @@ def main():
  # Directory importer: shops, clubs, bars and magazines; verify original pages.
  directory_promoted = recheck_directory_candidates(data,candidates,changes)
  directory_rows,directory_errors = discover_directory_entities(geocache)
+ link_rows,link_errors = discover_directory_link_sources(geocache)
+ directory_rows.extend(link_rows)
+ directory_errors += link_errors
  known_directory={entity_key(x) for x in data}
  imported_directory=0
  for rec in directory_rows:
