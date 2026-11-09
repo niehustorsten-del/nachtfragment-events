@@ -65,7 +65,7 @@ jobs:
 
           files = [
               "data/nachtfragment.json",
-              "data/candidates.json",
+              "data/directory_candidates.json",
               "data/changes.json",
               "data/geocache.json",
               "discovery_sources.json",
@@ -116,7 +116,7 @@ jobs:
 
           git add \
             data/nachtfragment.json \
-            data/candidates.json \
+            data/directory_candidates.json \
             data/changes.json \
             data/geocache.json
 
