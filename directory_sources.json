@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Gothic Empire – Shops",
+    "url": "https://www.gothic-empire.de/infos/shops/",
+    "allowed_types": [
+      "shop"
+    ],
+    "max_links": 18,
+    "priority": "high"
+  },
+  {
+    "name": "Wave-Gotik-Treffen – Verweise",
+    "url": "https://www.wave-gotik-treffen.de/links.php",
+    "allowed_types": [
+      "shop",
+      "magazine"
+    ],
+    "max_links": 18,
+    "priority": "high"
+  },
+  {
+    "name": "gothic.at – Szenelinks",
+    "url": "https://www.gothic.at/links/szene/",
+    "allowed_types": [
+      "club",
+      "bar",
+      "magazine",
+      "shop"
+    ],
+    "max_links": 18,
+    "priority": "high"
+  },
+  {
+    "name": "WeirDave – Gothic Clubs",
+    "url": "https://www.weirdave.com/gothic-clubs.html",
+    "allowed_types": [
+      "club",
+      "bar"
+    ],
+    "max_links": 18,
+    "priority": "high"
+  },
+  {
+    "name": "ODP – Gothic Directory",
+    "url": "https://www.odp.org/World/Deutsch/Gesellschaft/Subkulturen/Gothic/",
+    "allowed_types": [
+      "shop",
+      "magazine",
+      "club"
+    ],
+    "max_links": 18,
+    "priority": "medium"
+  },
+  {
+    "name": "Dominion – Scene Links",
+    "url": "https://dominion.gothic.ie/links/",
+    "allowed_types": [
+      "club",
+      "bar",
+      "magazine",
+      "shop"
+    ],
+    "max_links": 18,
+    "priority": "medium"
+  },
+  {
+    "name": "Ipso Facto – Goth Links",
+    "url": "https://www.ipso-facto.com/links.htm",
+    "allowed_types": [
+      "club",
+      "bar",
+      "magazine",
+      "shop"
+    ],
+    "max_links": 18,
+    "priority": "medium"
+  },
+  {
+    "name": "Gothic.no – Projects",
+    "url": "https://www.gothic.no/",
+    "allowed_types": [
+      "shop",
+      "club",
+      "magazine"
+    ],
+    "max_links": 18,
+    "priority": "high"
+  },
+  {
+    "name": "Darkindex – Curated Scene Index",
+    "url": "https://darkindex.de/",
+    "allowed_types": [
+      "shop",
+      "club",
+      "bar",
+      "magazine"
+    ],
+    "max_links": 18,
+    "priority": "high"
+  }
+]
