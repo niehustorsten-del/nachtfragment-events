@@ -15,7 +15,7 @@ import xml.etree.ElementTree as ET
 
 ROOT=os.path.dirname(os.path.abspath(__file__))
 DATA=os.path.join(ROOT,'data','nachtfragment.json')
-CANDIDATES=os.path.join(ROOT,'data','candidates.json')
+CANDIDATES=os.path.join(ROOT,'data','directory_candidates.json')
 CHANGES=os.path.join(ROOT,'data','changes.json')
 GEOCACHE=os.path.join(ROOT,'data','geocache.json')
 STATUS=os.path.join(ROOT,'data','status.json')
