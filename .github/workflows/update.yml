@@ -52,6 +52,7 @@ jobs:
           test -f updater.py
           test -f discovery_sources.json
           test -f search_queries.json
+          test -f directory_sources.json
           test -f data/nachtfragment.json
           test -f data/candidates.json
           test -f data/changes.json
@@ -69,6 +70,7 @@ jobs:
               "data/geocache.json",
               "discovery_sources.json",
               "search_queries.json",
+              "directory_sources.json",
           ]
           for name in files:
               path = Path(name)
