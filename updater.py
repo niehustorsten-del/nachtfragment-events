@@ -365,13 +365,15 @@ def discover_directory_link_sources(geocache):
    if status!=200: raise RuntimeError('HTTP '+str(status))
    parser=LinkParser(source['url']); parser.feed(body)
    allowed=set(source.get('allowed_types',list(ENTITY_TYPES)))
-   max_links=max(1,min(int(source.get('max_links',8)),12))
+   max_links=max(1,min(int(source.get('max_links',8)),8))
    used=0
    for title,url in parser.items:
     if used>=max_links: break
     url=norm_url(url); title=re.sub(r'\\s+',' ',str(title)).strip()
     if not url or len(title)<3 or url==norm_url(source['url']): continue
     host=urllib.parse.urlsplit(url).netloc.lower()
+    source_host=urllib.parse.urlsplit(source['url']).netloc.lower()
+    if host==source_host or host.endswith('.'+source_host): continue
     if any(host==h or host.endswith('.'+h) for h in social_hosts): continue
     if url in seen: continue
     seen.add(url); used+=1; scanned+=1
