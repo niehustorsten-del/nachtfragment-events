@@ -369,7 +369,7 @@ def discover_directory_link_sources(geocache):
    used=0
    for title,url in parser.items:
     if used>=max_links: break
-    url=norm_url(url); title=re.sub(r'\s+,' ',str(title)).strip()
+    url=norm_url(url); title=re.sub(r'\s+',' ',str(title)).strip()
     if not url or len(title)<3 or url==norm_url(source['url']): continue
     host=urllib.parse.urlsplit(url).netloc.lower()
     source_host=urllib.parse.urlsplit(source['url']).netloc.lower()
