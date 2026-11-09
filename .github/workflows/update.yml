@@ -92,7 +92,7 @@ jobs:
 
           required = [
               "data/nachtfragment.json",
-              "data/candidates.json",
+              "data/directory_candidates.json",
               "data/changes.json",
               "data/geocache.json",
           ]
