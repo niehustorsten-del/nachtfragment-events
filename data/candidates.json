@@ -1,87 +1,130 @@
-	
-updated_at	"2026-10-21T15:18:00+00:00"
-count	4
-candidates	
-0	
-id	"7e50980ca634ee53"
-artist	"Schwarzes Fragment"
-date	"2026-10-24"
-title	"Schwarzes Fragment & Alien-Ghost – First Contact, Galerie ZeitZone"
-url	"https://www.galeriezeitzone.com/events/schwarzes-fragment-alien-ghost"
-snippet	"Offizielle Veranstaltungsseite nennt 24.10.2026, 19:00–22:00 Uhr, Galerie ZeitZone, Adalbertstraße 79, 10997 Berlin."
-venue	"Galerie ZeitZone"
-city	"Berlin"
-score	25
-status	"needs_review"
-first_seen	"2026-10-20T15:15:57+00:00"
-last_seen	"2026-10-20T15:15:57+00:00"
-source_type	"verified_official_event_page"
-review_required	true
-candidate_type	"structured_event_manual_verification"
-page_evidence_checked	true
-event_startdate_evidence	true
-source_name	"Galerie ZeitZone"
-source_url	"https://www.galeriezeitzone.com/events/schwarzes-fragment-alien-ghost"
-1	
-id	"ce00c13255603caa"
-artist	"Unverkalt"
-date	"2026-10-24"
-title	"unverkalt – Neue Zukunft, Berlin"
-url	"https://www.bandsintown.com/e/108107057-unverkalt-at-neue-zukunft"
-snippet	"Bandsintown listet unverkalt am 24.10.2026 um 19:00 Uhr in der Neuen Zukunft, Alt-Stralau 68, Berlin."
-venue	"Neue Zukunft"
-city	"Berlin"
-score	25
-status	"needs_review"
-first_seen	"2026-10-20T15:16:41+00:00"
-last_seen	"2026-10-20T15:16:41+00:00"
-source_type	"verified_event_listing"
-review_required	true
-candidate_type	"event_listing_manual_verification"
-page_evidence_checked	true
-event_startdate_evidence	true
-source_name	"Bandsintown"
-source_url	"https://www.bandsintown.com/e/108107057-unverkalt-at-neue-zukunft"
-2	
-id	"09e4e4009a9102db"
-artist	"Schwarzes Fragment"
-date	"2026-11-07"
-title	"ECHOES OF THE FACTORY Vol.2 – Antibody, Schwarzes Fragment & Ton:Fehler"
-url	"https://www.bandsintown.com/de/e/108139966"
-snippet	"Bandsintown listet ECHOES OF THE FACTORY Vol.2 am 07.11.2026 um 19:00 Uhr im Bandhaus Leipzig, Saarländer Straße 17."
-venue	"Bandhaus Leipzig"
-city	"Leipzig"
-score	25
-status	"needs_review"
-first_seen	"2026-10-20T15:15:57+00:00"
-last_seen	"2026-10-20T15:15:57+00:00"
-source_type	"verified_event_listing"
-review_required	true
-candidate_type	"event_listing_manual_verification"
-page_evidence_checked	true
-event_startdate_evidence	true
-source_name	"Bandsintown"
-source_url	"https://www.bandsintown.com/de/e/108139966"
-3	
-id	"430d0e6625b725fd"
-artist	"Hinfort"
-date	"2026-12-12"
-title	"Twin Noir + Hinfort – Urban Spree, Berlin"
-url	"https://www.urbanspree.com/program/concerts/twin-noir-hinfort-urban-spree%2C-berlin.html"
-snippet	"Offizielle Veranstalterseite nennt 12.12.2026, 20:00 Uhr, Urban Spree, Revaler Straße 99, 10245 Berlin."
-venue	"Urban Spree"
-city	"Berlin"
-score	25
-status	"needs_review"
-first_seen	"2026-10-20T15:14:27+00:00"
-last_seen	"2026-10-20T15:14:27+00:00"
-source_type	"verified_official_event_page"
-review_required	true
-candidate_type	"structured_event_manual_verification"
-page_evidence_checked	true
-event_startdate_evidence	true
-source_name	"Urban Spree"
-source_url	"https://www.urbanspree.com/program/concerts/twin-noir-hinfort-urban-spree%2C-berlin.html"
-candidates
-0
-first_seen
+[
+  {
+    "id": "7e50980ca634ee53",
+    "name": "Schwarzes Fragment",
+    "artist": "Schwarzes Fragment",
+    "date": "2026-10-24",
+    "date_text": "24.10.2026",
+    "title": "Schwarzes Fragment & Alien-Ghost – First Contact, Galerie ZeitZone",
+    "url": "https://www.galeriezeitzone.com/events/schwarzes-fragment-alien-ghost",
+    "source_url": "https://www.galeriezeitzone.com/events/schwarzes-fragment-alien-ghost",
+    "snippet": "Offizielle Veranstaltungsseite nennt 24.10.2026, 19:00–22:00 Uhr, Galerie ZeitZone, Adalbertstraße 79, 10997 Berlin.",
+    "venue": "Galerie ZeitZone",
+    "city": "Berlin",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "record_type": "event",
+    "szenerelevanz": [
+      "gothic_core"
+    ],
+    "aktivitaet": "unchecked",
+    "score": 25,
+    "status": "needs_review",
+    "first_seen": "2026-10-20T15:15:57+00:00",
+    "last_seen": "2026-10-20T15:15:57+00:00",
+    "source_type": "verified_official_event_page",
+    "review_required": true,
+    "candidate_type": "structured_event_manual_verification",
+    "page_evidence_checked": true,
+    "event_startdate_evidence": true,
+    "source_name": "Galerie ZeitZone"
+  },
+  {
+    "id": "ce00c13255603caa",
+    "name": "Unverkalt",
+    "artist": "Unverkalt",
+    "date": "2026-10-24",
+    "date_text": "24.10.2026",
+    "title": "unverkalt – Neue Zukunft, Berlin",
+    "url": "https://www.bandsintown.com/e/108107057-unverkalt-at-neue-zukunft",
+    "source_url": "https://www.bandsintown.com/e/108107057-unverkalt-at-neue-zukunft",
+    "snippet": "Bandsintown listet unverkalt am 24.10.2026 um 19:00 Uhr in der Neuen Zukunft, Alt-Stralau 68, Berlin.",
+    "venue": "Neue Zukunft",
+    "city": "Berlin",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "record_type": "event",
+    "szenerelevanz": [
+      "darkwave_wave"
+    ],
+    "aktivitaet": "unchecked",
+    "score": 25,
+    "status": "needs_review",
+    "first_seen": "2026-10-20T15:16:41+00:00",
+    "last_seen": "2026-10-20T15:16:41+00:00",
+    "source_type": "verified_event_listing",
+    "review_required": true,
+    "candidate_type": "event_listing_manual_verification",
+    "page_evidence_checked": true,
+    "event_startdate_evidence": true,
+    "source_name": "Bandsintown"
+  },
+  {
+    "id": "09e4e4009a9102db",
+    "name": "Schwarzes Fragment",
+    "artist": "Schwarzes Fragment",
+    "date": "2026-11-07",
+    "date_text": "07.11.2026",
+    "title": "ECHOES OF THE FACTORY Vol.2 – Antibody, Schwarzes Fragment & Ton:Fehler",
+    "url": "https://www.bandsintown.com/de/e/108139966",
+    "source_url": "https://www.bandsintown.com/de/e/108139966",
+    "snippet": "Bandsintown listet ECHOES OF THE FACTORY Vol.2 am 07.11.2026 um 19:00 Uhr im Bandhaus Leipzig, Saarländer Straße 17.",
+    "venue": "Bandhaus Leipzig",
+    "city": "Leipzig",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "record_type": "event",
+    "szenerelevanz": [
+      "ebm_industrial"
+    ],
+    "aktivitaet": "unchecked",
+    "score": 25,
+    "status": "needs_review",
+    "first_seen": "2026-10-20T15:15:57+00:00",
+    "last_seen": "2026-10-20T15:15:57+00:00",
+    "source_type": "verified_event_listing",
+    "review_required": true,
+    "candidate_type": "event_listing_manual_verification",
+    "page_evidence_checked": true,
+    "event_startdate_evidence": true,
+    "source_name": "Bandsintown"
+  },
+  {
+    "id": "430d0e6625b725fd",
+    "name": "Hinfort",
+    "artist": "Hinfort",
+    "date": "2026-12-12",
+    "date_text": "12.12.2026",
+    "title": "Twin Noir + Hinfort – Urban Spree, Berlin",
+    "url": "https://www.urbanspree.com/program/concerts/twin-noir-hinfort-urban-spree%2C-berlin.html",
+    "source_url": "https://www.urbanspree.com/program/concerts/twin-noir-hinfort-urban-spree%2C-berlin.html",
+    "snippet": "Offizielle Veranstalterseite nennt 12.12.2026, 20:00 Uhr, Urban Spree, Revaler Straße 99, 10245 Berlin.",
+    "venue": "Urban Spree",
+    "city": "Berlin",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "record_type": "event",
+    "szenerelevanz": [
+      "darkwave_wave"
+    ],
+    "aktivitaet": "unchecked",
+    "score": 25,
+    "status": "needs_review",
+    "first_seen": "2026-10-20T15:14:27+00:00",
+    "last_seen": "2026-10-20T15:14:27+00:00",
+    "source_type": "verified_official_event_page",
+    "review_required": true,
+    "candidate_type": "structured_event_manual_verification",
+    "page_evidence_checked": true,
+    "event_startdate_evidence": true,
+    "source_name": "Urban Spree"
+  }
+]
