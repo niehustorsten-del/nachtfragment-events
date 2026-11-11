@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T13:40:06+00:00",
+  "updated_at": "2026-11-11T13:04:03+00:00",
   "count": 19,
   "candidates": [
     {
@@ -124,7 +124,7 @@
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-11-05T18:31:27+00:00",
-      "last_seen": "2026-11-08T13:37:39+00:00",
+      "last_seen": "2026-11-11T13:01:41+00:00",
       "source_type": "public_google_news_rss",
       "review_required": true,
       "candidate_type": "rss_event_announcement",
@@ -210,7 +210,7 @@
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-10-27T20:20:54+00:00",
-      "last_seen": "2026-11-08T13:39:09+00:00",
+      "last_seen": "2026-11-11T13:03:07+00:00",
       "source_type": "public_google_news_rss",
       "review_required": true,
       "candidate_type": "rss_event_announcement",
@@ -385,7 +385,7 @@
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-10-21T15:41:35+00:00",
-      "last_seen": "2026-10-23T17:43:46+00:00",
+      "last_seen": "2026-11-11T13:01:41+00:00",
       "source_type": "public_google_news_rss",
       "review_required": true,
       "candidate_type": "rss_event_announcement",
