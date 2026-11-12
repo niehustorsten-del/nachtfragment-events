@@ -20,7 +20,7 @@ def load_json(path):
 def clean_name(value):
     name = re.sub(r"\s*[–-]\s*(Porträt|Portrait|Playlist|Linkliste).*$", "", value, flags=re.I).strip()
     words = name.split()
-    if len(words) >= 4 and len(words) % 2 == 0:
+    if len(words) >= 2 and len(words) % 2 == 0:
         half = len(words) // 2
         if [w.casefold() for w in words[:half]] == [w.casefold() for w in words[half:]]:
             name = " ".join(words[:half])
