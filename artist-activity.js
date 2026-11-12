@@ -12,6 +12,26 @@
   };
   const mount = document.getElementById("nachtfragment-artist-activity") || document.createElement("div");
   mount.id = "nachtfragment-artist-activity";
+  if (!document.getElementById("nf-artist-activity-style")) {
+    const style = document.createElement("style");
+    style.id = "nf-artist-activity-style";
+    style.textContent = ".nf-artist-activity{margin:1.8rem 0 2.2rem;padding:1.25rem 1.4rem;background:#111116;border:1px solid #34303b;border-left:3px solid #8b6a91;color:#e8e3e9}" +
+      ".nf-activity-kicker{display:block;font-size:.68rem;letter-spacing:.16em;color:#aa91b0;margin-bottom:.35rem}" +
+      ".nf-activity-heading h2{margin:0 0 1rem;font-size:1.35rem;color:#f3edf4}" +
+      ".nf-activity-list{list-style:none;margin:0;padding:0}" +
+      ".nf-activity-event{display:grid;grid-template-columns:minmax(125px,165px) 1fr;gap:.8rem;padding:.8rem 0;border-top:1px solid #302c35}" +
+      ".nf-activity-event time{font-size:.88rem;color:#c5b1cb}" +
+      ".nf-activity-event-main{display:flex;flex-direction:column;gap:.18rem}" +
+      ".nf-activity-event-main>a{color:#f0e8f2;text-decoration:none;font-weight:600}" +
+      ".nf-activity-event-main>a:hover{color:#c7a5d0;text-decoration:underline}" +
+      ".nf-activity-place{font-size:.9rem;color:#c6c0c9}" +
+      ".nf-activity-meta,.nf-activity-foot{font-size:.76rem;color:#96909b}" +
+      ".nf-activity-empty{padding:.65rem 0;color:#c6c0c9}" +
+      ".nf-activity-foot{margin:1rem 0 0;padding-top:.75rem;border-top:1px solid #302c35}" +
+      ".nf-activity-foot a{color:#b89ac0}" +
+      "@media(max-width:600px){.nf-activity-event{grid-template-columns:1fr;gap:.25rem}}";
+    document.head.appendChild(style);
+  }
   fetch(FEED_URL + "?v=" + Date.now(), {cache:"no-store"})
     .then((r) => { if (!r.ok) throw new Error("Feed nicht erreichbar"); return r.json(); })
     .then((feed) => {
