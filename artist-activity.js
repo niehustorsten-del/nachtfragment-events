@@ -2,7 +2,7 @@
 (() => {
   "use strict";
   const FEED_URL = "https://niehustorsten-del.github.io/nachtfragment-events/data/artist-activity.json";
-  const slugMatch = window.location.pathname.match(/\\/index\\.php\\/artists\\/([a-z0-9-]+)\\/?$/i);
+  const slugMatch = window.location.pathname.match(/\/index\.php\/artists\/([a-z0-9-]+)\/?$/i);
   if (!slugMatch) return;
   const slug = slugMatch[1].toLowerCase();
   const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
