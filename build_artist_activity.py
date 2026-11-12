@@ -11,14 +11,14 @@ ARTISTS_FILE = ROOT / "data" / "artists.json"
 CONCERTS_FILE = ROOT / "concerts.json"
 OUTPUT_FILE = ROOT / "data" / "artist-activity.json"
 ALLOWED_STATUSES = {"confirmed", "date_confirmed", "lineup_announced", "date_confirmed_lineup_pending"}
-SKIP_NAME = re.compile(r"newcomer|linkliste|weblinks|rezension|review|top\\s*50|playlist|zwischen darkwave|bands|magazine|verzeichnis", re.I)
+SKIP_NAME = re.compile(r"newcomer|linkliste|weblinks|rezension|review|top\s*50|playlist|zwischen darkwave|bands|magazine|verzeichnis", re.I)
 
 def load_json(path):
     with path.open("r", encoding="utf-8") as handle:
         return json.load(handle)
 
 def clean_name(value):
-    name = re.sub(r"\\s*[–-]\\s*(Porträt|Portrait|Playlist|Linkliste).*$", "", value, flags=re.I).strip()
+    name = re.sub(r"\s*[–-]\s*(Porträt|Portrait|Playlist|Linkliste).*$", "", value, flags=re.I).strip()
     words = name.split()
     if len(words) >= 4 and len(words) % 2 == 0:
         half = len(words) // 2
@@ -27,14 +27,14 @@ def clean_name(value):
     return name
 
 def norm(value):
-    return " ".join(re.findall(r"[^\\W_]+", str(value or "").casefold(), flags=re.UNICODE))
+    return " ".join(re.findall(r"[^\W_]+", str(value or "").casefold(), flags=re.UNICODE))
 
 def artist_slug(url):
     try:
         path = urlsplit(url).path.rstrip("/")
     except ValueError:
         return None
-    match = re.fullmatch(r"/index\\.php/artists/([a-z0-9-]+)", path, flags=re.I)
+    match = re.fullmatch(r"/index\.php/artists/([a-z0-9-]+)", path, flags=re.I)
     return match.group(1).casefold() if match else None
 
 def load_artists():
@@ -52,7 +52,7 @@ def load_artists():
 def matches_artist(name, event):
     haystack = norm(" ".join(str(event.get(k) or "") for k in ("artist", "title")))
     needle = norm(name)
-    return bool(needle and re.search(r"(?<![\\w])" + re.escape(needle) + r"(?![\\w])", haystack, flags=re.UNICODE))
+    return bool(needle and re.search(r"(?<![\w])" + re.escape(needle) + r"(?![\w])", haystack, flags=re.UNICODE))
 
 def main():
     artists = load_artists()
@@ -64,7 +64,7 @@ def main():
             continue
         event_date = str(event.get("date") or "")[:10]
         status = str(event.get("status") or "").casefold()
-        if status not in ALLOWED_STATUSES or not re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", event_date) or event_date < today:
+        if status not in ALLOWED_STATUSES or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", event_date) or event_date < today:
             continue
         url = str(event.get("url") or "").strip()
         if not url.startswith(("https://", "http://")):
@@ -94,7 +94,7 @@ def main():
     }
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     temp = OUTPUT_FILE.with_suffix(".json.tmp")
-    temp.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    temp.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     temp.replace(OUTPUT_FILE)
     print(f"Artist Activity: {len(artists)} Künstlerseiten, {output['event_count']} bestätigte Termine.")
 
