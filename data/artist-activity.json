@@ -1,0 +1,411 @@
+{
+  "updated_at": "2026-11-12T22:38:51.644Z",
+  "source": "Nachtfragment published concerts.json",
+  "artist_count": 58,
+  "event_count": 10,
+  "artists": {
+    "2dcat": {
+      "name": "2DCAT",
+      "url": "https://nachtfragment.de/index.php/artists/2dcat",
+      "events": []
+    },
+    "aktion-fiasko": {
+      "name": "Aktion : Fiasko",
+      "url": "https://nachtfragment.de/index.php/artists/aktion-fiasko",
+      "events": []
+    },
+    "anja-huwe": {
+      "name": "Anja Huwe",
+      "url": "https://nachtfragment.de/index.php/artists/anja-huwe",
+      "events": []
+    },
+    "bleib-modern": {
+      "name": "Bleib Modern",
+      "url": "https://nachtfragment.de/index.php/artists/bleib-modern",
+      "events": []
+    },
+    "blue-forge": {
+      "name": "Blue Forge",
+      "url": "https://nachtfragment.de/index.php/artists/blue-forge",
+      "events": []
+    },
+    "buzz-kull": {
+      "name": "Buzz Kull",
+      "url": "https://nachtfragment.de/index.php/artists/buzz-kull",
+      "events": []
+    },
+    "customs": {
+      "name": "Customs",
+      "url": "https://nachtfragment.de/index.php/artists/customs",
+      "events": []
+    },
+    "darcy": {
+      "name": "D'Arcy",
+      "url": "https://nachtfragment.de/index.php/artists/darcy",
+      "events": []
+    },
+    "dark-minimal-project": {
+      "name": "Dark Minimal Project",
+      "url": "https://nachtfragment.de/index.php/artists/dark-minimal-project",
+      "events": []
+    },
+    "das-kelzer": {
+      "name": "Das Kelzer",
+      "url": "https://nachtfragment.de/index.php/artists/das-kelzer",
+      "events": []
+    },
+    "death-by-love": {
+      "name": "DEATH BY LØVE",
+      "url": "https://nachtfragment.de/index.php/artists/death-by-love",
+      "events": []
+    },
+    "deep-imagination": {
+      "name": "Deep Imagination",
+      "url": "https://nachtfragment.de/index.php/artists/deep-imagination",
+      "events": []
+    },
+    "destroy-me-again": {
+      "name": "Destroy Me Again",
+      "url": "https://nachtfragment.de/index.php/artists/destroy-me-again",
+      "events": []
+    },
+    "deus-ex-lumina": {
+      "name": "Deus Ex Lumina",
+      "url": "https://nachtfragment.de/index.php/artists/deus-ex-lumina",
+      "events": []
+    },
+    "deux-ex-lumina": {
+      "name": "Deux Ex Lumina",
+      "url": "https://nachtfragment.de/index.php/artists/deux-ex-lumina",
+      "events": []
+    },
+    "drab-majesty": {
+      "name": "Drab Majesty",
+      "url": "https://nachtfragment.de/index.php/artists/drab-majesty",
+      "events": []
+    },
+    "emmon": {
+      "name": "Emmon",
+      "url": "https://nachtfragment.de/index.php/artists/emmon",
+      "events": []
+    },
+    "euroshima": {
+      "name": "Euroshima",
+      "url": "https://nachtfragment.de/index.php/artists/euroshima",
+      "events": []
+    },
+    "harsh-symmetry": {
+      "name": "Harsh Symmetry",
+      "url": "https://nachtfragment.de/index.php/artists/harsh-symmetry",
+      "events": []
+    },
+    "hinfort": {
+      "name": "Hinfort",
+      "url": "https://nachtfragment.de/index.php/artists/hinfort",
+      "events": [
+        {
+          "id": "hinfort-myrna-loy-2026-11-14",
+          "date": "2026-11-14",
+          "title": "Hinfort live with Myrna Loy",
+          "venue": "Luxor",
+          "city": "Köln",
+          "category": "concert",
+          "status": "confirmed",
+          "url": "https://hinfortmusic.com/home",
+          "source": "Hinfort official"
+        },
+        {
+          "id": "hinfort-diary-of-dreams-2026-11-19",
+          "date": "2026-11-19",
+          "title": "Hinfort live with Diary of Dreams",
+          "venue": "Club Zenit",
+          "city": "Schwerin",
+          "category": "concert",
+          "status": "confirmed",
+          "url": "https://hinfortmusic.com/home",
+          "source": "Hinfort official"
+        },
+        {
+          "id": "hinfort-diary-of-dreams-2026-11-20",
+          "date": "2026-11-20",
+          "title": "Hinfort live with Diary of Dreams",
+          "venue": "KuFa Haus",
+          "city": "Braunschweig",
+          "category": "concert",
+          "status": "confirmed",
+          "url": "https://hinfortmusic.com/home",
+          "source": "Hinfort official"
+        },
+        {
+          "id": "hinfort-diary-of-dreams-2026-11-22",
+          "date": "2026-11-22",
+          "title": "Hinfort live with Diary of Dreams",
+          "venue": "Kulttempel",
+          "city": "Oberhausen",
+          "category": "concert",
+          "status": "confirmed",
+          "url": "https://hinfortmusic.com/home",
+          "source": "Hinfort official"
+        },
+        {
+          "id": "hinfort-diary-of-dreams-2026-11-25",
+          "date": "2026-11-25",
+          "title": "Hinfort live with Diary of Dreams",
+          "venue": "Die Stadtmitte",
+          "city": "Karlsruhe",
+          "category": "concert",
+          "status": "confirmed",
+          "url": "https://hinfortmusic.com/home",
+          "source": "Hinfort official"
+        },
+        {
+          "id": "hinfort-diary-of-dreams-2026-11-26",
+          "date": "2026-11-26",
+          "title": "Hinfort live with Diary of Dreams",
+          "venue": "Kesselhaus",
+          "city": "Wiesbaden",
+          "category": "concert",
+          "status": "confirmed",
+          "url": "https://hinfortmusic.com/home",
+          "source": "Hinfort official"
+        },
+        {
+          "id": "hinfort-diary-of-dreams-2026-11-27",
+          "date": "2026-11-27",
+          "title": "Hinfort live with Diary of Dreams",
+          "venue": "F-Haus",
+          "city": "Jena",
+          "category": "concert",
+          "status": "confirmed",
+          "url": "https://hinfortmusic.com/home",
+          "source": "Hinfort official"
+        },
+        {
+          "id": "hinfort-diary-of-dreams-2026-11-28",
+          "date": "2026-11-28",
+          "title": "Hinfort live with Diary of Dreams",
+          "venue": "Kulturzentrum Lagerhaus",
+          "city": "Bremen",
+          "category": "concert",
+          "status": "confirmed",
+          "url": "https://hinfortmusic.com/home",
+          "source": "Hinfort official"
+        }
+      ]
+    },
+    "horror-vacui": {
+      "name": "Horror Vacui",
+      "url": "https://nachtfragment.de/index.php/artists/horror-vacui",
+      "events": []
+    },
+    "in-mitra-medusa-inri": {
+      "name": "In Mitra Medusa Inri",
+      "url": "https://nachtfragment.de/index.php/artists/in-mitra-medusa-inri",
+      "events": []
+    },
+    "ist-ist": {
+      "name": "IST IST",
+      "url": "https://nachtfragment.de/index.php/artists/ist-ist",
+      "events": []
+    },
+    "jahrund": {
+      "name": "Jahrund",
+      "url": "https://nachtfragment.de/index.php/artists/jahrund",
+      "events": []
+    },
+    "kontravoid": {
+      "name": "Kontravoid",
+      "url": "https://nachtfragment.de/index.php/artists/kontravoid",
+      "events": []
+    },
+    "korine": {
+      "name": "Korine",
+      "url": "https://nachtfragment.de/index.php/artists/korine",
+      "events": []
+    },
+    "lana-del-rabies": {
+      "name": "Lana Del Rabies",
+      "url": "https://nachtfragment.de/index.php/artists/lana-del-rabies",
+      "events": []
+    },
+    "martine": {
+      "name": "MARTINÉ",
+      "url": "https://nachtfragment.de/index.php/artists/martine",
+      "events": []
+    },
+    "mercy-girl": {
+      "name": "Mercy Girl",
+      "url": "https://nachtfragment.de/index.php/artists/mercy-girl",
+      "events": []
+    },
+    "mila-nervt-berlin": {
+      "name": "Mila nervt Berlin",
+      "url": "https://nachtfragment.de/index.php/artists/mila-nervt-berlin",
+      "events": []
+    },
+    "mildrea": {
+      "name": "Mildrea",
+      "url": "https://nachtfragment.de/index.php/artists/mildrea",
+      "events": []
+    },
+    "minuit-machine": {
+      "name": "Minuit Machine",
+      "url": "https://nachtfragment.de/index.php/artists/minuit-machine",
+      "events": []
+    },
+    "mitra-mitra": {
+      "name": "Mitra Mitra",
+      "url": "https://nachtfragment.de/index.php/artists/mitra-mitra",
+      "events": []
+    },
+    "mona-mur": {
+      "name": "Mona Mur",
+      "url": "https://nachtfragment.de/index.php/artists/mona-mur",
+      "events": []
+    },
+    "musikprojekt-1g4sh0": {
+      "name": "Musikprojekt 1G4SH0",
+      "url": "https://nachtfragment.de/index.php/artists/musikprojekt-1g4sh0",
+      "events": []
+    },
+    "neila-invo": {
+      "name": "Neila Invo",
+      "url": "https://nachtfragment.de/index.php/artists/neila-invo",
+      "events": []
+    },
+    "ocinn": {
+      "name": "Ocinn",
+      "url": "https://nachtfragment.de/index.php/artists/ocinn",
+      "events": []
+    },
+    "paradox-obscur": {
+      "name": "Paradox Obscur",
+      "url": "https://nachtfragment.de/index.php/artists/paradox-obscur",
+      "events": [
+        {
+          "id": "cold-hearted-festival-2026-11-13",
+          "date": "2026-11-13",
+          "title": "Cold Hearted Festival – GVLLOW, Paradox Obscur, Ash Code, Haunt Me, Darkways, Vioflesh",
+          "venue": "Markthalle",
+          "city": "Hamburg",
+          "category": "festival",
+          "status": "confirmed",
+          "url": "https://markthalle-hamburg.de/konzerte/cold-hearted-festival/",
+          "source": "Markthalle / Pluswelt Promotion"
+        }
+      ]
+    },
+    "pixel-grip": {
+      "name": "Pixel Grip",
+      "url": "https://nachtfragment.de/index.php/artists/pixel-grip",
+      "events": []
+    },
+    "raskolnikov": {
+      "name": "Raskolnikov",
+      "url": "https://nachtfragment.de/index.php/artists/raskolnikov",
+      "events": []
+    },
+    "rein": {
+      "name": "REIN",
+      "url": "https://nachtfragment.de/index.php/artists/rein",
+      "events": []
+    },
+    "schwarzes-fragment": {
+      "name": "Schwarzes Fragment",
+      "url": "https://nachtfragment.de/index.php/artists/schwarzes-fragment",
+      "events": []
+    },
+    "selofan": {
+      "name": "Selofan",
+      "url": "https://nachtfragment.de/index.php/artists/selofan",
+      "events": []
+    },
+    "seraphya": {
+      "name": "Seraphya",
+      "url": "https://nachtfragment.de/index.php/artists/seraphya",
+      "events": []
+    },
+    "sinister-seduction": {
+      "name": "Sinister Seduction",
+      "url": "https://nachtfragment.de/index.php/artists/sinister-seduction",
+      "events": []
+    },
+    "sotiria": {
+      "name": "Sotiria Sotiria",
+      "url": "https://nachtfragment.de/index.php/artists/sotiria",
+      "events": []
+    },
+    "sugartin": {
+      "name": "Sugartin",
+      "url": "https://nachtfragment.de/index.php/artists/sugartin",
+      "events": []
+    },
+    "synapsyche": {
+      "name": "SYNAPSYCHE",
+      "url": "https://nachtfragment.de/index.php/artists/synapsyche",
+      "events": []
+    },
+    "thalie-nemesis": {
+      "name": "Thalie Némésis",
+      "url": "https://nachtfragment.de/index.php/artists/thalie-nemesis",
+      "events": []
+    },
+    "the-electrozigxx": {
+      "name": "The Electrozixx",
+      "url": "https://nachtfragment.de/index.php/artists/the-electrozigxx",
+      "events": []
+    },
+    "the-memory-of-snow": {
+      "name": "The Memory Of Snow",
+      "url": "https://nachtfragment.de/index.php/artists/the-memory-of-snow",
+      "events": []
+    },
+    "then-comes-silence": {
+      "name": "Then Comes Silence",
+      "url": "https://nachtfragment.de/index.php/artists/then-comes-silence",
+      "events": []
+    },
+    "twin-tribes": {
+      "name": "Twin Tribes",
+      "url": "https://nachtfragment.de/index.php/artists/twin-tribes",
+      "events": []
+    },
+    "unverkalt": {
+      "name": "Unverkalt",
+      "url": "https://nachtfragment.de/index.php/artists/unverkalt",
+      "events": []
+    },
+    "vioflesh": {
+      "name": "Vioflesh",
+      "url": "https://nachtfragment.de/index.php/artists/vioflesh",
+      "events": [
+        {
+          "id": "cold-hearted-festival-2026-11-13",
+          "date": "2026-11-13",
+          "title": "Cold Hearted Festival – GVLLOW, Paradox Obscur, Ash Code, Haunt Me, Darkways, Vioflesh",
+          "venue": "Markthalle",
+          "city": "Hamburg",
+          "category": "festival",
+          "status": "confirmed",
+          "url": "https://markthalle-hamburg.de/konzerte/cold-hearted-festival/",
+          "source": "Markthalle / Pluswelt Promotion"
+        }
+      ]
+    },
+    "vitrais-mortos": {
+      "name": "Vitrais Mortos",
+      "url": "https://nachtfragment.de/index.php/artists/vitrais-mortos",
+      "events": []
+    },
+    "vox-umbra": {
+      "name": "Vox Umbra",
+      "url": "https://nachtfragment.de/index.php/artists/vox-umbra",
+      "events": []
+    },
+    "zanias": {
+      "name": "Zanias",
+      "url": "https://nachtfragment.de/index.php/artists/zanias",
+      "events": []
+    }
+  }
+}
