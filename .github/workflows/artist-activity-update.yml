@@ -1,0 +1,47 @@
+name: Nachtfragment Artist Activity Feed
+
+on:
+  schedule:
+    - cron: "45 6 * * 3,0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nachtfragment-artist-activity
+  cancel-in-progress: false
+
+jobs:
+  build-feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Feed erzeugen
+        run: python build_artist_activity.py
+      - name: JSON validieren
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("data/artist-activity.json").read_text(encoding="utf-8"))
+          assert isinstance(data.get("artists"), dict)
+          assert data.get("artist_count") == len(data["artists"])
+          print("Feed OK:", data["artist_count"], "Künstlerseiten /", data["event_count"], "Termine")
+          PY
+      - name: Feed veröffentlichen
+        run: |
+          git config user.name "Nachtfragment Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/artist-activity.json
+          if git diff --cached --quiet; then echo "Keine Änderungen."; exit 0; fi
+          git commit -m "Update artist activity feed"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
