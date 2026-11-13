@@ -1,129 +1,164 @@
-{
-  "version": "1.0",
-  "updated_at": "2026-11-13",
-  "purpose": "Erweiterte öffentliche Quellenbasis für die Nachtfragment-Konzert- und Underground-Recherche.",
-  "important": "Quellen liefern Recherchehinweise. Ein Event gilt erst nach Prüfung einer konkreten Künstler-, Venue- oder Veranstalterseite als bestätigt.",
-  "sources": [
-    {
-      "name": "Nocturna Events – Dark Music Events weltweit",
-      "url": "https://nocturna.events/events",
-      "type": "scene_source",
-      "region": "worldwide",
-      "focus": [
-        "goth",
-        "darkwave",
-        "post-punk",
-        "coldwave",
-        "ebm",
-        "industrial",
-        "minimal wave",
-        "synthpop",
-        "club nights",
-        "underground"
-      ],
-      "priority": "high",
-      "notes": "Spezialisierter Dark-Music-Kalender; jeden Eintrag zur Veranstalterquelle zurückverfolgen."
-    },
-    {
-      "name": "Festivolts – Synth, Goth, EBM und Post-Punk weltweit",
-      "url": "https://festivolts.com/en",
-      "type": "scene_source",
-      "region": "worldwide",
-      "focus": [
-        "gigs",
-        "club nights",
-        "festivals",
-        "artists",
-        "venues",
-        "underground"
-      ],
-      "priority": "high",
-      "notes": "Internationaler Szenekalender mit Quellen- und Verifikationshinweisen."
-    },
-    {
-      "name": "Dark and Alternative World – Veranstaltungskalender",
-      "url": "https://darkandalternativeworld.de/veranstaltungen/",
-      "type": "scene_source",
-      "region": "Germany",
-      "focus": [
-        "gothic",
-        "darkwave",
-        "ebm",
-        "industrial",
-        "post-punk",
-        "club nights",
-        "concerts"
-      ],
-      "priority": "high",
-      "notes": "Kuratiertes Verzeichnis von Konzerten, Festivals und Szene-Reihen."
-    },
-    {
-      "name": "Metaldar – Goth & Industrial",
-      "url": "https://metaldar.com/genre/goth-industrial",
-      "type": "scene_source",
-      "region": "Germany and Switzerland",
-      "focus": [
-        "goth",
-        "industrial",
-        "ebm",
-        "darkwave",
-        "post-punk",
-        "concerts",
-        "festivals"
-      ],
-      "priority": "high",
-      "notes": "Genre-Kalender; einzelne Termine beim Venue oder Promoter gegenprüfen."
-    },
-    {
-      "name": "Music of Our Desire – Hamburg Darkwave Events",
-      "url": "https://events.musicofourdesire.com/de/events/Hamburg/genre/darkwave",
-      "type": "scene_source",
-      "region": "Hamburg",
-      "focus": [
-        "darkwave",
-        "post-punk",
-        "coldwave",
-        "ebm",
-        "industrial",
-        "club nights"
-      ],
-      "priority": "high",
-      "notes": "Stadt- und genrebezogener Kalender; Primärquelle prüfen."
-    },
-    {
-      "name": "Music of Our Desire – Berlin Darkwave Events",
-      "url": "https://events.musicofourdesire.com/events/Berlin/genre/darkwave",
-      "type": "scene_source",
-      "region": "Berlin",
-      "focus": [
-        "darkwave",
-        "post-punk",
-        "coldwave",
-        "ebm",
-        "industrial",
-        "club nights"
-      ],
-      "priority": "high",
-      "notes": "Stadt- und genrebezogener Kalender; Primärquelle prüfen."
-    },
-    {
-      "name": "CAT Ulm – Programm",
-      "url": "https://www.cat-cafe.de/termine/",
-      "type": "venue_calendar",
-      "region": "Germany",
-      "city": "Ulm",
-      "focus": [
-        "gothic",
-        "darkwave",
-        "ebm",
-        "industrial",
-        "minimal synth",
-        "post-punk",
-        "punk",
-        "underground"
-      ],
-      "priority": "high",
-      "notes": "Clubprogramm mit einschlägigen Clubnächten und unabhängigen Konzertveranstaltungen."
-    }
-  ]
-}
+	
+version	"1.1"
+updated_at	"2026-11-13"
+purpose	"Erweiterte öffentliche Quellenbasis: internationale Szenekalender, Tourübersichten, regionale Agenden, Venue-Programme und iCalendar-Feeds."
+important	"Quellen liefern Recherchehinweise. Ein Event gilt erst nach Prüfung einer konkreten Künstler-, Venue- oder Veranstalterseite als bestätigt. iCalendar-Einträge bleiben zunächst Kandidaten."
+sources	
+0	
+name	"Nocturna Events – Dark Music Events weltweit"
+url	"https://nocturna.events/events"
+type	"scene_source"
+region	"worldwide"
+focus	
+0	"goth"
+1	"darkwave"
+2	"post-punk"
+3	"coldwave"
+4	"ebm"
+5	"industrial"
+6	"minimal wave"
+7	"synthpop"
+8	"club nights"
+9	"underground"
+priority	"high"
+notes	"Spezialisierter Dark-Music-Kalender; jeden Eintrag zur Veranstalterquelle zurückverfolgen."
+1	
+name	"Festivolts – Synth, Goth, EBM und Post-Punk weltweit"
+url	"https://festivolts.com/en"
+type	"scene_source"
+region	"worldwide"
+focus	
+0	"gigs"
+1	"club nights"
+2	"festivals"
+3	"artists"
+4	"venues"
+5	"underground"
+priority	"high"
+notes	"Internationaler Szenekalender mit Quellen- und Verifikationshinweisen."
+2	
+name	"Dark and Alternative World – Veranstaltungskalender"
+url	"https://darkandalternativeworld.de/veranstaltungen/"
+type	"scene_source"
+region	"Germany"
+focus	
+0	"gothic"
+1	"darkwave"
+2	"ebm"
+3	"industrial"
+4	"post-punk"
+5	"club nights"
+6	"concerts"
+priority	"high"
+notes	"Kuratiertes Verzeichnis von Konzerten, Festivals und Szene-Reihen."
+3	
+name	"Metaldar – Goth & Industrial"
+url	"https://metaldar.com/genre/goth-industrial"
+type	"scene_source"
+region	"Germany and Switzerland"
+focus	
+0	"goth"
+1	"industrial"
+2	"ebm"
+3	"darkwave"
+4	"post-punk"
+5	"concerts"
+6	"festivals"
+priority	"high"
+notes	"Genre-Kalender; einzelne Termine beim Venue oder Promoter gegenprüfen."
+4	
+name	"Music of Our Desire – Hamburg Darkwave Events"
+url	"https://events.musicofourdesire.com/de/events/Hamburg/genre/darkwave"
+type	"scene_source"
+region	"Hamburg"
+focus	
+0	"darkwave"
+1	"post-punk"
+2	"coldwave"
+3	"ebm"
+4	"industrial"
+5	"club nights"
+priority	"high"
+notes	"Stadt- und genrebezogener Kalender; Primärquelle prüfen."
+5	
+name	"Music of Our Desire – Berlin Darkwave Events"
+url	"https://events.musicofourdesire.com/events/Berlin/genre/darkwave"
+type	"scene_source"
+region	"Berlin"
+focus	
+0	"darkwave"
+1	"post-punk"
+2	"coldwave"
+3	"ebm"
+4	"industrial"
+5	"club nights"
+priority	"high"
+notes	"Stadt- und genrebezogener Kalender; Primärquelle prüfen."
+6	
+name	"CAT Ulm – Programm"
+url	"https://www.cat-cafe.de/termine/"
+type	"venue_calendar"
+region	"Germany"
+city	"Ulm"
+focus	
+0	"gothic"
+1	"darkwave"
+2	"ebm"
+3	"industrial"
+4	"minimal synth"
+5	"post-punk"
+6	"punk"
+7	"underground"
+priority	"high"
+notes	"Clubprogramm mit einschlägigen Clubnächten und unabhängigen Konzertveranstaltungen."
+7	
+name	"Metaldar – Goth & Industrial iCalendar-Feed"
+url	"https://metaldar.com/feeds/genre/goth-industrial.ics"
+type	"calendar_feed"
+region	"Germany and Switzerland"
+focus	
+0	"goth"
+1	"industrial"
+2	"ebm"
+3	"darkwave"
+4	"post-punk"
+5	"concerts"
+6	"festivals"
+priority	"high"
+notes	"Direkter öffentlicher iCalendar-Feed; enthält Termine der Genre-Kalenderseite. Primärquelle bei Venue/Promoter gegenprüfen."
+8	
+name	"Catastrophe Ballet – Berlin Post-Punk / Cold Wave / Industrial Agenda"
+url	"https://catastrophe-ballet.com/agenda/berlin/"
+type	"scene_source"
+region	"Berlin, Germany"
+focus	
+0	"post-punk"
+1	"coldwave"
+2	"darkwave"
+3	"industrial"
+4	"ebm"
+5	"minimal wave"
+6	"synth wave"
+priority	"high"
+notes	"Kuratiertes Berlin-Agendaformat mit Verweisen auf Venue-Quellen; Termine einzeln prüfen."
+9	
+name	"Dark Synthesis – internationale Tourdaten"
+url	"https://darksynthesis.net/tour"
+type	"scene_source"
+region	"worldwide"
+focus	
+0	"darkwave"
+1	"goth"
+2	"industrial"
+3	"post-punk"
+4	"deathrock"
+5	"ebm"
+6	"futurepop"
+7	"tour dates"
+priority	"high"
+notes	"Artistbezogene Tourübersicht; Daten beim Künstler oder Veranstalter bestätigen."
+source_count	10
+sources
+0
+focus
+3
