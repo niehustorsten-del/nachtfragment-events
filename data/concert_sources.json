@@ -1,25 +1,129 @@
 {
   "version": "1.0",
-  "updated_at": "2026-10-20",
-  "description": "Öffentliche Quellen zur Recherche kommender Konzerte. Treffer müssen geprüft werden; Quellenlinks sind keine bestätigten Konzerttermine.",
+  "updated_at": "2026-11-13",
+  "purpose": "Erweiterte öffentliche Quellenbasis für die Nachtfragment-Konzert- und Underground-Recherche.",
+  "important": "Quellen liefern Recherchehinweise. Ein Event gilt erst nach Prüfung einer konkreten Künstler-, Venue- oder Veranstalterseite als bestätigt.",
   "sources": [
-    {"id": "songkick", "name": "Songkick", "type": "artist_search", "url_template": "https://www.songkick.com/search?query={artist}", "enabled": true, "priority": 1},
-    {"id": "bandsintown", "name": "Bandsintown", "type": "artist_search", "url_template": "https://www.bandsintown.com/search?query={artist}", "enabled": true, "priority": 1},
-    {"id": "setlist_fm", "name": "setlist.fm", "type": "artist_search", "url_template": "https://www.setlist.fm/search?query={artist}", "enabled": true, "priority": 2, "notes": "Nur zur Gegenprüfung; vergangene Auftritte sind keine zukünftigen Termine."},
-    {"id": "official_artist_sites", "name": "Offizielle Künstler-Websites", "type": "artist_official_site", "url_template": "{artist_website}", "enabled": true, "priority": 1},
-    {"id": "songkick_concerts", "name": "Songkick – Konzertkalender", "type": "event_search", "url": "https://www.songkick.com/concerts", "enabled": true, "priority": 2},
-    {"id": "bandsintown_events", "name": "Bandsintown – Veranstaltungssuche", "type": "event_search", "url": "https://www.bandsintown.com/", "enabled": true, "priority": 2},
-    {"id": "darkwave_search", "name": "Darkwave / Gothic – Suchreferenz", "type": "search_reference", "url": "https://www.google.com/search?q=darkwave+gothic+concerts+2026+2027", "enabled": true, "priority": 3},
-    {"id": "ebm_search", "name": "EBM / Industrial – Suchreferenz", "type": "search_reference", "url": "https://www.google.com/search?q=EBM+industrial+concerts+2026+2027", "enabled": true, "priority": 3},
-    {"id": "postpunk_search", "name": "Post-Punk – Suchreferenz", "type": "search_reference", "url": "https://www.google.com/search?q=post-punk+concerts+2026+2027", "enabled": true, "priority": 3}
-  ],
-  "publication_rules": {
-    "future_dates_only": true,
-    "require_artist_match": true,
-    "require_event_date": true,
-    "require_venue_or_city": true,
-    "require_source_url": true,
-    "auto_publish": true,
-    "note": "Unbestätigte Treffer bleiben Kandidaten und werden nicht automatisch veröffentlicht."
-  }
+    {
+      "name": "Nocturna Events – Dark Music Events weltweit",
+      "url": "https://nocturna.events/events",
+      "type": "scene_source",
+      "region": "worldwide",
+      "focus": [
+        "goth",
+        "darkwave",
+        "post-punk",
+        "coldwave",
+        "ebm",
+        "industrial",
+        "minimal wave",
+        "synthpop",
+        "club nights",
+        "underground"
+      ],
+      "priority": "high",
+      "notes": "Spezialisierter Dark-Music-Kalender; jeden Eintrag zur Veranstalterquelle zurückverfolgen."
+    },
+    {
+      "name": "Festivolts – Synth, Goth, EBM und Post-Punk weltweit",
+      "url": "https://festivolts.com/en",
+      "type": "scene_source",
+      "region": "worldwide",
+      "focus": [
+        "gigs",
+        "club nights",
+        "festivals",
+        "artists",
+        "venues",
+        "underground"
+      ],
+      "priority": "high",
+      "notes": "Internationaler Szenekalender mit Quellen- und Verifikationshinweisen."
+    },
+    {
+      "name": "Dark and Alternative World – Veranstaltungskalender",
+      "url": "https://darkandalternativeworld.de/veranstaltungen/",
+      "type": "scene_source",
+      "region": "Germany",
+      "focus": [
+        "gothic",
+        "darkwave",
+        "ebm",
+        "industrial",
+        "post-punk",
+        "club nights",
+        "concerts"
+      ],
+      "priority": "high",
+      "notes": "Kuratiertes Verzeichnis von Konzerten, Festivals und Szene-Reihen."
+    },
+    {
+      "name": "Metaldar – Goth & Industrial",
+      "url": "https://metaldar.com/genre/goth-industrial",
+      "type": "scene_source",
+      "region": "Germany and Switzerland",
+      "focus": [
+        "goth",
+        "industrial",
+        "ebm",
+        "darkwave",
+        "post-punk",
+        "concerts",
+        "festivals"
+      ],
+      "priority": "high",
+      "notes": "Genre-Kalender; einzelne Termine beim Venue oder Promoter gegenprüfen."
+    },
+    {
+      "name": "Music of Our Desire – Hamburg Darkwave Events",
+      "url": "https://events.musicofourdesire.com/de/events/Hamburg/genre/darkwave",
+      "type": "scene_source",
+      "region": "Hamburg",
+      "focus": [
+        "darkwave",
+        "post-punk",
+        "coldwave",
+        "ebm",
+        "industrial",
+        "club nights"
+      ],
+      "priority": "high",
+      "notes": "Stadt- und genrebezogener Kalender; Primärquelle prüfen."
+    },
+    {
+      "name": "Music of Our Desire – Berlin Darkwave Events",
+      "url": "https://events.musicofourdesire.com/events/Berlin/genre/darkwave",
+      "type": "scene_source",
+      "region": "Berlin",
+      "focus": [
+        "darkwave",
+        "post-punk",
+        "coldwave",
+        "ebm",
+        "industrial",
+        "club nights"
+      ],
+      "priority": "high",
+      "notes": "Stadt- und genrebezogener Kalender; Primärquelle prüfen."
+    },
+    {
+      "name": "CAT Ulm – Programm",
+      "url": "https://www.cat-cafe.de/termine/",
+      "type": "venue_calendar",
+      "region": "Germany",
+      "city": "Ulm",
+      "focus": [
+        "gothic",
+        "darkwave",
+        "ebm",
+        "industrial",
+        "minimal synth",
+        "post-punk",
+        "punk",
+        "underground"
+      ],
+      "priority": "high",
+      "notes": "Clubprogramm mit einschlägigen Clubnächten und unabhängigen Konzertveranstaltungen."
+    }
+  ]
 }
