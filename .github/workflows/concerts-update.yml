@@ -48,8 +48,8 @@ jobs:
       - name: Öffentliche Künstler- und Szenekalender durchsuchen
         env:
           CONCERTS_MAX_ARTISTS: "0"
-          CONCERTS_MAX_PAGE_CHECKS: "180"
-          CONCERTS_QUERY_PAUSE: "0.8"
+          CONCERTS_MAX_PAGE_CHECKS: "240"
+          CONCERTS_QUERY_PAUSE: "0.6"
           CONCERTS_RSS_ENABLED: "0"
           CONCERTS_RSS_RESULTS: "18"
         run: python concerts_discovery.py
