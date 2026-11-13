@@ -1,56 +1,8 @@
 {
-  "updated_at": "2026-11-08T13:40:06+00:00",
+  "updated_at": "2026-11-13T22:25:22+00:00",
   "source": "Nachtfragment Concert Discovery",
-  "count": 88,
+  "count": 84,
   "events": [
-    {
-      "id": "plattenbau-carg-2026-11-11",
-      "artist": "Plattenbau / Carg",
-      "date": "2026-11-11",
-      "title": "Post-Punk / Noise-Rock / Wave",
-      "url": "https://www.sandershaus.de/programmdetails/termin/konzert-plattenbau-tba-post-punk-noise-rock-wave",
-      "venue": "Sandershaus – Subterrain",
-      "city": "Kassel",
-      "source": "Sandershaus / Weltsubkulturerbe e.V.",
-      "status": "confirmed",
-      "category": "concert"
-    },
-    {
-      "id": "ultra-sunn-2026-11-11",
-      "artist": "Ultra Sunn",
-      "date": "2026-11-11",
-      "title": "Ultra Sunn",
-      "url": "https://darkandalternativeworld.de/veranstaltungen/",
-      "venue": "Die Trompete",
-      "city": "Bochum",
-      "source": "Dark and Alternative World",
-      "status": "needs_verification",
-      "category": "concert"
-    },
-    {
-      "id": "plattenbau-lauren-lakis-2026-11-12",
-      "artist": "Plattenbau / Lauren Lakis",
-      "date": "2026-11-12",
-      "title": "Live at Hafenklang",
-      "url": "https://events.musicofourdesire.com/de/events/Hamburg/genre/darkwave",
-      "venue": "Hafenklang",
-      "city": "Hamburg",
-      "source": "Music of Our Desire",
-      "status": "listed_check_venue",
-      "category": "concert"
-    },
-    {
-      "id": "ultra-sunn-2026-11-12",
-      "artist": "Ultra Sunn",
-      "date": "2026-11-12",
-      "title": "Ultra Sunn",
-      "url": "https://darkandalternativeworld.de/veranstaltungen/",
-      "venue": "Moritzbastei",
-      "city": "Leipzig",
-      "source": "Dark and Alternative World",
-      "status": "needs_verification",
-      "category": "concert"
-    },
     {
       "id": "cold-hearted-festival-2026-11-13",
       "artist": "Cold Hearted Festival",
