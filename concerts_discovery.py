@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Nachtfragment concert discovery from public artist/source pages and public Google News RSS.
+"""Nachtfragment concert discovery from public artist/source pages and public HTML, Schema.org, iCalendar feeds and optional public Google News RSS.
 No API keys. Candidates require an explicit future event date and matching artist.
 Only candidates with sufficient evidence are automatically published; others remain for review.
 """
@@ -17,7 +17,7 @@ CANDIDATES_FILE = ROOT / 'data' / 'concert_candidates.json'
 CONCERTS_FILE = ROOT / 'concerts.json'
 STATUS_FILE = ROOT / 'data' / 'concerts_status.json'
 TODAY = date.fromisoformat(os.getenv('NACHTFRAGMENT_TODAY', date.today().isoformat()))
-UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.7; +https://nachtfragment.de)'
+UA = 'Mozilla/5.0 (compatible; Nachtfragment-Concert-Discovery/5.8; +https://nachtfragment.de)'
 MAX_ARTISTS = max(0, int(os.getenv('CONCERTS_MAX_ARTISTS', '65') or '65'))
 MAX_PAGES = max(1, int(os.getenv('CONCERTS_MAX_PAGE_CHECKS', '180') or '120'))
 PAUSE = max(0.0, float(os.getenv('CONCERTS_QUERY_PAUSE', '0.7') or '0.7'))
@@ -103,7 +103,7 @@ def load_sources():
             # Artist search templates are used to construct targeted RSS searches, not fetched as event pages.
             if row.get('url_template') or kind in {'artist_search', 'search_reference'}:
                 continue
-            if kind not in {'event_search', 'event_calendar', 'event_page', 'venue_calendar', 'organizer_calendar', 'festival_calendar', 'scene_source'}:
+            if kind not in {'event_search', 'event_calendar', 'event_page', 'venue_calendar', 'organizer_calendar', 'festival_calendar', 'scene_source', 'calendar_feed'}:
                 continue
             url = row.get('url') or row.get('website') or row.get('calendar_url') or row.get('events_url') or ''
             name = str(row.get('name') or row.get('title') or url)
@@ -137,11 +137,53 @@ def fetch(url):
     try:
         with urlopen(req, timeout=18) as r:
             final=r.geturl(); typ=(r.headers.get('Content-Type') or '').lower()
-            if 'html' not in typ and 'xhtml' not in typ: return {'ok':False,'reason':'non_html','url':final}
-            return {'ok':True,'reason':'ok','url':final,'raw':r.read(MAX_BYTES).decode('utf-8','replace')}
+            raw=r.read(MAX_BYTES).decode('utf-8','replace')
+            if 'html' not in typ and 'xhtml' not in typ and 'calendar' not in typ and not final.lower().endswith(('.ics','.ical')):
+                return {'ok':False,'reason':'unsupported_content:'+typ[:70],'url':final}
+            return {'ok':True,'reason':'ok','url':final,'content_type':typ,'raw':raw}
     except HTTPError as e: return {'ok':False,'reason':f'http_{e.code}','url':url}
     except URLError as e: return {'ok':False,'reason':'url_error:'+str(getattr(e,'reason',e))[:100],'url':url}
     except Exception as e: return {'ok':False,'reason':type(e).__name__+':'+str(e)[:100],'url':url}
+
+def unfold_ical_lines(raw):
+    """Unfold RFC 5545 continuation lines and return property/value pairs."""
+    text = raw.replace('\r\n', '\n').replace('\r', '\n')
+    physical = text.split('\n')
+    logical = []
+    for line in physical:
+        if line.startswith((' ', '\t')) and logical:
+            logical[-1] += line[1:]
+        else:
+            logical.append(line)
+    return logical
+
+def ical_unescape(value):
+    return (value or '').replace(r'\n', ' ').replace(r'\N', ' ').replace(r'\,', ',').replace(r'\;', ';').replace(r'\\', '\\').strip()
+
+def parse_ical_events(raw):
+    """Read public .ics feeds without external packages; retain only VEVENT fields."""
+    events=[]; current=None
+    for line in unfold_ical_lines(raw):
+        if line.strip().upper() == 'BEGIN:VEVENT':
+            current={}; continue
+        if line.strip().upper() == 'END:VEVENT':
+            if current: events.append(current)
+            current=None; continue
+        if current is None or ':' not in line: continue
+        left,value=line.split(':',1)
+        key=left.split(';',1)[0].upper()
+        if key in {'SUMMARY','DTSTART','DTEND','URL','LOCATION','DESCRIPTION','UID'}:
+            current[key]=ical_unescape(value)
+    return events
+
+def parse_ical_date(value):
+    value=(value or '').strip()
+    if not value: return None
+    # RFC5545 date-only and UTC/local datetime forms.
+    m=re.match(r'^(\d{4})(\d{2})(\d{2})',value)
+    if not m: return None
+    try: return valid_date(f'{m.group(1)}-{m.group(2)}-{m.group(3)}')
+    except Exception: return None
 
 def jsonld_objects(raw):
     blocks=re.findall(r'(?is)<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script\s*>',raw)
@@ -619,7 +661,7 @@ def main():
             if not valid_date(r.get('date')):
                 continue
         by_id[r['id']]=r
-    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_artist_match':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0,'html_event_cards_seen':0}
+    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_artist_match':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0,'html_event_cards_seen':0,'ical_feeds_ok':0,'ical_events_seen':0,'ical_candidates':0}
     # Keep a few real examples of RSS rejections in the Actions log, so filters can be tuned from evidence.
     rejection_samples = {'no_artist_match': [], 'no_event_word': [], 'no_date': [], 'non_music_context': []}
     def remember_rejection(reason, artist_name, item, combined):
@@ -638,6 +680,27 @@ def main():
         if not result['ok']:
             stats['page_errors']+=1; print(f"  FEHLER {n}/{len(pages)} {p['url']}: {result['reason']}"); continue
         raw=result['raw']; final=canonical_url(result['url']) or p['url']; found=[]
+        if p.get('kind') == 'calendar_feed' or 'calendar' in result.get('content_type','') or final.lower().endswith(('.ics','.ical')):
+            feed_events=parse_ical_events(raw); stats['ical_feeds_ok']+=1; stats['ical_events_seen']+=len(feed_events)
+            for ev in feed_events:
+                summary=ev.get('SUMMARY',''); desc=ev.get('DESCRIPTION',''); combined=summary+' '+desc
+                artist=next((a['name'] for a in artists if mentioned(a['name'],combined)),None)
+                if not artist: continue
+                dt=parse_ical_date(ev.get('DTSTART',''))
+                if not dt: continue
+                event_url=canonical_url(ev.get('URL') or final) or final
+                location=ev.get('LOCATION','').strip(); venue=location or None; city=None
+                cid=make_id(artist,event_url,dt,summary); prev=by_id.get(cid,{}); stamp=now_iso()
+                by_id[cid]={**prev,'id':cid,'artist':artist,'date':dt,'title':summary or f'{artist} – Konzert','url':event_url,
+                    'snippet':desc[:500],'venue':venue or prev.get('venue'),'city':city or prev.get('city'),'score':18,
+                    'status':statuses.get(cid,prev.get('status','needs_review')),'first_seen':prev.get('first_seen') or stamp,'last_seen':stamp,
+                    'source_type':'public_ical_event','review_required':True,'candidate_type':'calendar_feed_event',
+                    'page_evidence_checked':True,'event_startdate_evidence':True,'source_name':p['name'],'source_url':final,
+                    'verification_note':'Termin aus öffentlichem iCalendar-Feed; Veranstalter-/Venue-Seite vor Veröffentlichung prüfen.'}
+                stats['ical_candidates']+=1
+            print(f"  OK {n}/{len(pages)} {p['url']} | iCalendar-Termine: {len(feed_events)} | passende Künstler: {stats['ical_candidates']}")
+            if PAUSE: time.sleep(PAUSE)
+            continue
         if p.get('kind') == 'nachtfragment_artist_page':
             for discovered in discover_event_links(raw, final, p['name']):
                 if discovered['url'] not in seen and len(pages) < MAX_PAGES:
