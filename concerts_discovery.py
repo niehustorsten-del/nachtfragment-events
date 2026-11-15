@@ -578,7 +578,7 @@ def publishable_candidate(row):
             parts.scheme in ('http', 'https') and path and
             not any(host == item or host.endswith('.' + item) for item in blocked_hosts)
         )
-        return bool(external_article_url and row.get('venue') and row.get('city')
+        return bool(external_article_url and row.get('page_evidence_checked') and row.get('venue') and row.get('city')
                     and row.get('event_startdate_evidence') and not NON_MUSIC_CONTEXT.search(
                         artist + ' ' + title + ' ' + str(row.get('snippet') or '')))
     return False
@@ -651,7 +651,7 @@ def main():
     statuses=status_obj.get('statuses',{}) if isinstance(status_obj,dict) else {}
     if not isinstance(statuses,dict): statuses={}
     # Remove known false positives and expired RSS candidates. Keep current/future candidates for editorial review.
-    bad_ids={'c8ba5648f1de96fa','ae2fc94b7c61ac8d','413541aaf8af59fd','5357e2e135ac7882','108f755e43ad48a6','9f711f589d88a560','c61b4d6fe3cd8912','eaa8c5cacc7ced9c'}
+    bad_ids={'c8ba5648f1de96fa','ae2fc94b7c61ac8d','413541aaf8af59fd','5357e2e135ac7882','108f755e43ad48a6','9f711f589d88a560','c61b4d6fe3cd8912','eaa8c5cacc7ced9c','67f725f10aa02f82'}
     by_id={}
     for r in old_rows:
         if not isinstance(r,dict) or not r.get('id') or r.get('id') in bad_ids:
