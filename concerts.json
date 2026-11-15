@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-15T20:02:51+00:00",
+  "updated_at": "2026-11-15",
   "source": "Nachtfragment Concert Discovery",
-  "count": 76,
+  "count": 69,
   "events": [
     {
       "id": "jakuzi-2026-11-15",
@@ -95,19 +95,9 @@
       "url": "https://hinfortmusic.com/",
       "venue": "Stereo Club",
       "city": "Bielefeld",
-      "source": "Hinfort",
+      "source": "Hinfort – offizielle Künstlerseite",
       "status": "needs_verification",
       "category": "concert"
-    },
-    {
-      "id": "c4a4cd03394fc489",
-      "artist": "Hinfort",
-      "date": "2026-11-21",
-      "title": "hinfort Bielefeld Tickets, Stereo Club Nov 21, 2026 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUzBOdkQwbzdsSHpPcm5KU2ZsZFRrT21DVjkzelFkOUJpbXZmX2VwX011VndyODQ2NU4xcExnSmlqaHgxbUx5cXd1OXotMnR2ZFRvNTFEdzFoNTJsblc0VjdqYU5TU09OcG1aWG9OX1lNcjdZZ180LV9iR0YtQmVjeWdKYl9vckZvU0Zxb0tDX09RR0lVMG9tb18wMkJhaHFNMEM5bWRLLWhrUU9DRzQtdHZQaWRuMHVTWjJpclh6NlQ?oc=5",
-      "venue": "Stereo Club",
-      "city": "Bielefeld",
-      "source": "Bandsintown"
     },
     {
       "id": "diary-of-dreams-2026-11-22",
@@ -119,6 +109,18 @@
       "city": "Oberhausen",
       "source": "Metaldar",
       "status": "needs_verification",
+      "category": "concert"
+    },
+    {
+      "id": "hinfort-2026-11-22",
+      "artist": "Hinfort",
+      "date": "2026-11-22",
+      "title": "Hinfort + Diary of Dreams",
+      "url": "https://hinfortmusic.com/",
+      "venue": "Kulttempel",
+      "city": "Oberhausen",
+      "source": "Hinfort – offizielle Künstlerseite",
+      "status": "verified",
       "category": "concert"
     },
     {
@@ -186,10 +188,10 @@
       "artist": "Hinfort",
       "date": "2026-11-25",
       "title": "hinfort Karlsruhe Tickets, Die Stadtmitte Nov 25, 2026 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5aN0gzdmF2VmNCekdELXpnWHVJSjdRV2FUTEUxd0E5dWhMVFBIenFnVDl1VTdDWWdxeGwxdzRpWUJLUmNjbnBqTDZSRQ?oc=5",
+      "url": "https://hinfortmusic.com/",
       "venue": "Die Stadtmitte",
       "city": "Karlsruhe",
-      "source": "Bandsintown"
+      "source": "Hinfort – offizielle Künstlerseite"
     },
     {
       "id": "hinfort-diary-of-dreams-2026-11-25",
@@ -304,10 +306,10 @@
       "artist": "Hinfort",
       "date": "2026-12-03",
       "title": "hinfort Toulouse Tickets, DAda Dec 03, 2026 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBPdUhQeU1oTFVBNkVzMmN6MDRoaTJOcjEzVHl2Wk1FQVhjVXBoYVpJX2VlX1ZQV182UnVLaWRLTnN5TWJqUm1NSHdhNnI?oc=5",
+      "url": "https://hinfortmusic.com/",
       "venue": "DAda",
       "city": "Toulouse",
-      "source": "Bandsintown"
+      "source": "Hinfort – offizielle Künstlerseite"
     },
     {
       "id": "lebanon-hanover-2026-12-03",
@@ -461,7 +463,7 @@
       "url": "https://hinfortmusic.com/",
       "venue": "Urban Spree",
       "city": "Berlin",
-      "source": "Hinfort",
+      "source": "Hinfort – offizielle Künstlerseite",
       "status": "needs_verification",
       "category": "concert"
     },
@@ -474,16 +476,6 @@
       "venue": null,
       "city": null,
       "source": "Öffentliche Konzertmeldung"
-    },
-    {
-      "id": "6a7bb99442b136ca",
-      "artist": "Paradox Obscur",
-      "date": "2026-12-12",
-      "title": "Free Paradox Obscur Sofia Tickets, Club Pave Dec 12, 2026 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdmZPRmdnSTMyUUJ0VVBqWTNoelhkUXo3dHkwc2JxQkpVZDFDa3hJZDhmdDR3eURjSGwzQ3B4U2lNbnltendvRVgzbG14UWJjNF9TVXQ1c3FlVmswSEI3V2c1NmpHN1BVYU04UXZrMXpIMVBybmtqQnV1djBmbnNveVpHcFNZa09lcWpodXdmeXZUYnVQX0pBSDFHVTVzdHpSamZiQ25IWTdsM044ZVY5SW9WQ1laSURabXU1b1hzMWtqRUdfcVNmRFZPQy1PQjV4TndabUR5cTh4Zw?oc=5",
-      "venue": "Club Pave",
-      "city": "Free Paradox Obscur Sofia",
-      "source": "Bandsintown"
     },
     {
       "id": "project-pitchfork-2026-12-12",
@@ -549,11 +541,11 @@
       "id": "0aa7e7b2f507e9aa",
       "artist": "Hinfort",
       "date": "2026-12-27",
-      "title": "hinfort Meschede Tickets, mono-deluxe Cocktailbar Veranstaltungsort Dec 27, 2026 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBIcDZkWEc4dEItU2NLU3Z6elZhMk9IMjI5X2FrRnBOOUUyZDBKTmxuUGNwWjQtX1VvZkxUWE1FQnhxN0NaY3Q0VkRRbw?oc=5",
-      "venue": "mono-deluxe Cocktailbar Veranstaltungsort",
+      "title": "Hinfort – Inbetween Days",
+      "url": "https://hinfortmusic.com/",
+      "venue": "monoBAR",
       "city": "Meschede",
-      "source": "Bandsintown"
+      "source": "Hinfort – offizielle Künstlerseite"
     },
     {
       "id": "fliehende-stuerme-2027-01-08",
@@ -592,16 +584,6 @@
       "category": "festival"
     },
     {
-      "id": "c61b4d6fe3cd8912",
-      "artist": "Schwarzes Fragment",
-      "date": "2027-01-16",
-      "title": "Schwarzes Fragment Erfurt Tickets, From Hell Jan 16, 2027 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVUx2bXV3TzhoQjVPY3pYb0ZfbUpWanJMM1Bjd1pIa1Z3bGVVNGVURDVveWpqd29zNkFmWWwzLWljRW1VZGdfWk9mQllKVUM0RkdQeHRsWGI3TXBGMExOdC00cW01a3hOSE4yTUI0YmwwWFVpQ1I2TEVQRC1qMjNPM1BGckgwWExNcVgxTzNSc2pJXzZjUVh0SnZ5NXdQNEQ5UnhTUS1SdTlGZklPTElHNjRjU3BnbDcyNWRQdHhDZ18?oc=5",
-      "venue": "From Hell",
-      "city": "Erfurt",
-      "source": "Bandsintown"
-    },
-    {
       "id": "fliehende-stuerme-2027-01-22",
       "artist": "Fliehende Stürme",
       "date": "2027-01-22",
@@ -626,28 +608,6 @@
       "category": "concert"
     },
     {
-      "id": "thalie-némésis-2027-01-29",
-      "artist": "Thalie Némésis",
-      "date": "2027-01-29",
-      "title": "Thalie Némésis",
-      "url": "https://bandsintown.com/",
-      "venue": "Monster'S Art",
-      "city": "Fréjus",
-      "source": "Bandsintown",
-      "status": "needs_verification",
-      "category": "concert"
-    },
-    {
-      "id": "3d10142693253fb0",
-      "artist": "Thalie Némésis",
-      "date": "2027-01-29",
-      "title": "Thalie Némésis Fréjus Tickets, Monster'S Art Jan 29, 2027 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQd1lBOXFTODBGVGZYNXN3UGU0cnVUdXhtUVNVOHZ5Yi0wa0Yxai10bzdhVzZONWRWa1VDYWlvTWtVY3RST3c2dklGLUdhWEFfZkJIRTRrekF3d2NFaFZ1S0c2eV9QQzR0eWtfZjVUQWc5dG4tTE12OVJBa3l3OUlIcVVLT1Nwa3otbkwtY1VXanVJdVhtZF9jSTVIZFdicU1MOF9ZTHFDazNqZHBwdnZkazJoT2duRkJ0dnJWdFVqQW1LVUptSVFnWTBfTzJSbkp5M1Y0T1RuLThkOWVo?oc=5",
-      "venue": "Monster'S Art",
-      "city": "Fréjus",
-      "source": "Bandsintown"
-    },
-    {
       "id": "disorder-festival-2027-02-06",
       "artist": "Disorder Festival",
       "date": "2027-02-06",
@@ -658,16 +618,6 @@
       "source": "Side-Line / EBM.gr",
       "status": "lineup_announced",
       "category": "festival"
-    },
-    {
-      "id": "99ab70199eb47598",
-      "artist": "Paradox Obscur",
-      "date": "2027-02-06",
-      "title": "Paradox Obscur Montreuil Tickets, La Marbrerie Feb 06, 2027 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNS3hob3JsTXZmV0NpRGdxdncwT0hvYXBlX0VVUjlYakR5Z3ZLZS1HTllzcVBBVktIR0ZEbVEyRkw4MTc2U2Q4RE5GSUlqeWhkb1hMUmV5ZUtEdFNDdFo4azJKTG9zTjRSUVpOZTFUclpYdHZIaWlJSlBIM1dPeWFPMGxadFdOZnp0M0JHNmI5eEhwT1JpaXFLV2ZaazhwZUZqY1JySEEyNlVwQXV5LXFCcFZDYWFFTm5U?oc=5",
-      "venue": "La Marbrerie",
-      "city": "Montreuil",
-      "source": "Bandsintown"
     },
     {
       "id": "grauzone-festival-2027-02-11",
@@ -804,16 +754,6 @@
       "category": "concert"
     },
     {
-      "id": "505b132edf97335c",
-      "artist": "Hinfort",
-      "date": "2027-05-14",
-      "title": "hinfort Kassel Tickets, Goldgrube May 14, 2027 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPb0Y1WE45MnpiY1RHYnBOY3hJVFhEWjEwcWhXTmlUWkpIQTBLdXFkNDhpNGR6VjlQTVdxYU1Zc3VMZFRCQ3VxOUtGU1pqV3F2N2taT2d4c0dTcGxDTDY1ODgtT3Q2U2VuZGFkQVY1M1ZUSEFVb1hCc3JJY184cmRJWFlqMWdtd01LYXVYSFFsMnhtNkl5Q25yVEo0T2hRbnZQT203TjF0bjN6eXk4WVBYMm9uWm12ZXFi?oc=5",
-      "venue": "Goldgrube",
-      "city": "Kassel",
-      "source": "Bandsintown"
-    },
-    {
       "id": "wave-gotik-treffen-2027-05-14",
       "artist": "Wave-Gotik-Treffen",
       "date": "2027-05-14",
@@ -872,16 +812,6 @@
       "source": "Official festival website",
       "status": "date_confirmed_lineup_pending",
       "category": "festival"
-    },
-    {
-      "id": "67f725f10aa02f82",
-      "artist": "Then Comes Silence",
-      "date": "2027-09-18",
-      "title": "Venerdì 18 Settembre: WHISPERING DARKNESS goth night con THEN COMES SILENCE e THE FOREIGN RESORT live at Q77 Theater",
-      "url": "https://www.tickettailor.com/events/whisperingdarkness/2256892",
-      "venue": null,
-      "city": null,
-      "source": "Then Comes Silence – entdeckte Terminseite – entdeckte Terminseite"
     }
   ]
 }
