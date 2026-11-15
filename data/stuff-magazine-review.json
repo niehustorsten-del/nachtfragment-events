@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-11-15",
   "description": "Unsichere Treffer, die nicht automatisch veröffentlicht wurden.",
   "candidates": [
     {
@@ -183,6 +183,13 @@
       "url": "https://janefriedman.com/how-to-outline-a-gothic-novel",
       "query": "independent international darkwave gothic post-punk webzine reviews interviews",
       "reason": "Site reachable, but music/editorial relevance is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "https://www.ebay.de/sl/list?mode=SellLikeItem&item...",
+      "url": "https://signin.ebay.de/signin",
+      "query": "Gothic alternative fashion shop Germany independent official",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
     }
   ]
 }
