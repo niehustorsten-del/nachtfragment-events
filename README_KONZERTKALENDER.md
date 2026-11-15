@@ -1,51 +1,53 @@
-# Nachtfragment: Live & Konzerte — additive Erweiterung
+# Nachtfragment – Konzert- und Gig-Kalender
 
-Diese Dateien sind als **zusätzliche** Erweiterung für `nachtfragment-events` gedacht. Sie überschreiben weder `updater.py` noch `data/nachtfragment.json` oder den vorhandenen Workflow.
+Der Konzertkalender ist eine eigenständige Erweiterung des Dark Scene Directory. Er verwendet die Künstlerliste und recherchiert öffentliche Konzert- und Kalenderseiten.
 
-## Dateien hinzufügen
+## Aktive Dateien
 
-Die ZIP-Struktur entspricht dem Repository. Entpacke den Inhalt in das Repository und lade die neuen Dateien über GitHub hoch:
-
-- `concerts_discovery.py` — sammelt Artist-Seiten und Suchtreffer
-- `concerts.html` — eigenständige dunkle Kalenderansicht
-- `data/artists.json` — erkannte Artists
-- `data/concerts.json` — nur manuell/extern bestätigte Termine für die öffentliche Anzeige
-- `data/concert_candidates.json` — unbestätigte Suchtreffer
-- `.github/workflows/concerts-update.yml` — täglicher und manueller Lauf
-
-## API-Schlüssel
-
-Der bestehende `SERPAPI_KEY` kann verwendet werden. Er muss in GitHub unter **Settings → Secrets and variables → Actions** liegen. Niemals den Schlüssel in HTML, JSON oder Python eintragen.
+- `concerts_discovery.py` – Konzertrecherche
+- `concerts.html` – Kalenderoberfläche
+- `concerts.json` – veröffentlichte Konzertdaten (im Repository-Hauptverzeichnis)
+- `data/artists.json` – erfasste Nachtfragment-Künstler
+- `data/concert_sources.json` – öffentliche Konzert- und Szenekalender
+- `data/concert_candidates.json` – unbestätigte Recherchefunde
+- `data/concerts_status.json` – Statusinformationen
+- `.github/workflows/concerts-update.yml` – automatische Recherche mittwochs und sonntags
 
 ## Ablauf
 
-1. GitHub → Actions → **Nachtfragment Concert Discovery** → **Run workflow**.
-2. Der erste Lauf aktualisiert die Künstlerliste und sammelt Suchtreffer.
-3. Roh-Suchtreffer landen ausschließlich in `data/concert_candidates.json` und werden nicht automatisch als bestätigte Konzerte veröffentlicht.
-4. Erst nach Prüfung dürfen Termine in `data/concerts.json` eingetragen werden, mit mindestens:
-   `artist`, `date` (`YYYY-MM-DD`), `status: "confirmed"` und `source_url`.
-   Optional: `time`, `venue`, `city`, `country`, `title`.
+1. Der Workflow durchsucht öffentliche Künstler- und Szenekalender.
+2. Treffer mit unzureichenden Belegen werden in `data/concert_candidates.json` abgelegt.
+3. Nur ausreichend belegte Termine können in `concerts.json` veröffentlicht werden.
+4. Der Artist-Activity-Workflow liest ausschließlich bestätigte Einträge aus `concerts.json` und erzeugt daraus `data/artist-activity.json`.
 
-Beispiel eines bestätigten Eintrags:
+Ein Suchtreffer ist kein bestätigter Konzerttermin. Prüfe Datum, Künstler und Veranstaltungsort anhand einer Künstler-, Venue- oder Veranstalterquelle, bevor du einen Eintrag in den öffentlichen Datenbestand übernimmst.
+
+## Manuelle Ausführung
+
+GitHub → **Actions** → **Nachtfragment Concert Discovery** → **Run workflow**.
+
+Der Workflow benötigt keinen SerpApi-Schlüssel. Die Recherche basiert auf öffentlich erreichbaren Seiten und konfigurierten Kalenderquellen.
+
+## Konzertdaten – Beispiel
+
+Ein bestätigter Eintrag in `concerts.json` verwendet beispielsweise diese Struktur:
 
 ```json
 {
-  "artist": "Artist Name",
-  "date": "2026-11-21",
-  "time": "20:00",
-  "venue": "Club Name",
-  "city": "Hamburg",
-  "country": "Deutschland",
-  "title": "Artist Name live",
-  "source_url": "https://example.org/event",
-  "status": "confirmed"
+  "events": [
+    {
+      "artist": "Artist Name",
+      "date": "2026-11-21",
+      "time": "20:00",
+      "venue": "Club Name",
+      "city": "Hamburg",
+      "country": "Deutschland",
+      "title": "Artist Name live",
+      "url": "https://example.org/event",
+      "status": "confirmed"
+    }
+  ]
 }
 ```
 
-## Grenzen und nächste Ausbaustufe
-
-- Der Importer hängt von einer öffentlich erreichbaren Sitemap und passenden URL-Strukturen für Künstlerporträts ab. Falls Nachtfragment andere URL-Muster nutzt, müssen die Filter angepasst werden.
-- Google-Suchergebnisse sind Hinweise, keine verlässliche Bestätigung von Datum oder Venue. Die erste Version markiert alle Treffer als `needs_review`.
-- Die automatische Erkennung einzelner Artists aus Übersichtsseiten ist bewusst konservativ; Übersichtsseiten mit vielen Künstlern sollten später mit einem spezifischen Parser ergänzt werden.
-- Das Skript verändert keine bereits vorhandenen bestätigten Termine und veröffentlicht keine unbestätigten Treffer.
-- `concerts.html` ist zunächst eine eigenständige Seite im GitHub-Pages-Projekt. Eine Joomla-Einbindung erfolgt anschließend über einen Link oder iframe, abhängig von deiner gewünschten Navigation.
+Die Website und das Artist Activity Feed verwenden den veröffentlichten Bestand `concerts.json`, nicht den Kandidatenbestand.
