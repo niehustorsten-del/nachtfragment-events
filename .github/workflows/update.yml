@@ -8,9 +8,8 @@ on:
 permissions:
   contents: write
 
-# Shared with Scene Discovery to prevent concurrent writes to the same JSON files.
 concurrency:
-  group: nachtfragment-auto-update
+  group: nachtfragment-repository-updates
   cancel-in-progress: false
 
 jobs:
@@ -132,4 +131,5 @@ jobs:
           fi
 
           git commit -m "Update Nachtfragment events and festivals"
+          git pull --rebase origin "$GITHUB_REF_NAME"
           git push origin "HEAD:${GITHUB_REF_NAME}"
