@@ -634,5 +634,89 @@
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Mera+Luna+Festival+2027+07.-08.08.2027+Hildesheim%2C+Europa",
     "geocoded": false,
     "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-ca4f08dc3adb11",
+    "record_type": "event",
+    "name": "The Chameleons live - Berlin",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/the-chameleons-live-berlin-2026-11-23/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-23",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-15T19:58:23.588100+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Chameleons+live+-+Berlin%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=The+Chameleons+live+-+Berlin%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-161f39a2d1812e",
+    "record_type": "event",
+    "name": "The Birthday Massacre live - Leipzig",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/the-birthday-massacre-live-leipzig-2026-11-24/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-24",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-15T19:58:23.588100+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Birthday+Massacre+live+-+Leipzig%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=The+Birthday+Massacre+live+-+Leipzig%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
   }
 ]

@@ -1,5 +1,27 @@
 [
   {
+    "timestamp": "2026-11-15T19:58:23.588100+00:00",
+    "type": "source_error",
+    "source": "https://www.plage-noire.de/",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "timestamp": "2026-11-15T19:58:23.588100+00:00",
+    "type": "candidate",
+    "name": "The Birthday Massacre live - Leipzig",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-11-15T19:58:23.588100+00:00",
+    "type": "candidate",
+    "name": "The Chameleons live - Berlin",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
     "timestamp": "2026-11-09T21:54:35.029772+00:00",
     "type": "directory_imported",
     "record_type": "shop",
