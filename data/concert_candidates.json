@@ -1,29 +1,7 @@
 {
   "updated_at": "2026-11-15T20:02:51+00:00",
-  "count": 19,
+  "count": 14,
   "candidates": [
-    {
-      "id": "108f755e43ad48a6",
-      "artist": "Hinfort",
-      "date": "2026-11-16",
-      "title": "Post-Punk, Cold Wave and Industrial Gigs in Berlin Berlin is a fixed stop on the European touring circuit for this music, and a scene of its own between tours. This page lists upcoming Berlin gigs that fall within what C",
-      "url": "https://catastrophe-ballet.com/agenda/berlin/",
-      "snippet": "Post-Punk, Cold Wave and Industrial Gigs in Berlin Berlin is a fixed stop on the European touring circuit for this music, and a scene of its own between tours. This page lists upcoming Berlin gigs that fall within what Catastrophe Ballet covers: post-punk, cold and dark wave, industrial, EBM, minimal and synth wave. Dates are grouped by month. We write from Brussels. This is a curated agenda, not a local guide — selected by the same editorial line as the rest of the site, and no more exhaustive than our time allows. Where we have written about an artist, the listing links to the piece. .cb-hub",
-      "venue": null,
-      "city": null,
-      "score": 12,
-      "status": "needs_review",
-      "first_seen": "2026-11-15T20:02:44+00:00",
-      "last_seen": "2026-11-15T20:02:44+00:00",
-      "source_type": "public_html_event_card",
-      "review_required": true,
-      "candidate_type": "html_event_card",
-      "page_evidence_checked": true,
-      "event_startdate_evidence": true,
-      "source_name": "Catastrophe Ballet – Berlin Post-Punk / Cold Wave / Industrial Agenda",
-      "source_url": "https://catastrophe-ballet.com/agenda/berlin/",
-      "verification_note": "Datum und Künstlername auf öffentlicher Kalenderseite gefunden; Veranstaltungsort/Stadt noch manuell prüfen."
-    },
     {
       "id": "c4a4cd03394fc489",
       "artist": "Hinfort",
@@ -53,28 +31,6 @@
       "title": "19:00 Uhr Diary of Dreams mit Special Guest hinfort – Einlass 18:00 Oberhausen · Kulttempel Band-Konzert Diary of Dreams mit Special Guest hinfort am 22. November 2026 im Kulttempel Oberhausen. Einlass: 18:00 Uhr; Beginn",
       "url": "https://darkandalternativeworld.de/veranstaltungen/diary-of-dreams-2026-11-22-oberhausen-kulttempel/",
       "snippet": "19:00 Uhr Diary of Dreams mit Special Guest hinfort – Einlass 18:00 Oberhausen · Kulttempel Band-Konzert Diary of Dreams mit Special Guest hinfort am 22. November 2026 im Kulttempel Oberhausen. Einlass: 18:00 Uhr; Beginn: 19:00 Uhr laut Veranstalter. …",
-      "venue": null,
-      "city": null,
-      "score": 12,
-      "status": "needs_review",
-      "first_seen": "2026-11-15T20:02:40+00:00",
-      "last_seen": "2026-11-15T20:02:40+00:00",
-      "source_type": "public_html_event_card",
-      "review_required": true,
-      "candidate_type": "html_event_card",
-      "page_evidence_checked": true,
-      "event_startdate_evidence": true,
-      "source_name": "Dark and Alternative World – Veranstaltungskalender",
-      "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
-      "verification_note": "Datum und Künstlername auf öffentlicher Kalenderseite gefunden; Veranstaltungsort/Stadt noch manuell prüfen."
-    },
-    {
-      "id": "9f711f589d88a560",
-      "artist": "Hinfort",
-      "date": "2026-11-22",
-      "title": "22 Nov. 2026 19:00 Uhr Diary of Dreams mit Special Guest hinfort – Einlass 18:00 Oberhausen · Kulttempel Band-Konzert Diary of Dreams mit Special Guest hinfort am 22. November 2026 im Kulttempel Oberhausen. Einlass: 18:0",
-      "url": "https://darkandalternativeworld.de/veranstaltungen/diary-of-dreams-2026-11-22-oberhausen-kulttempel/",
-      "snippet": "22 Nov. 2026 19:00 Uhr Diary of Dreams mit Special Guest hinfort – Einlass 18:00 Oberhausen · Kulttempel Band-Konzert Diary of Dreams mit Special Guest hinfort am 22. November 2026 im Kulttempel Oberhausen. Einlass: 18:00 Uhr; Beginn: 19:00 Uhr laut Veranstalter. … Details ansehen →",
       "venue": null,
       "city": null,
       "score": 12,
@@ -161,8 +117,8 @@
       "title": "Free Paradox Obscur Sofia Tickets, Club Pave Dec 12, 2026 - Bandsintown",
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdmZPRmdnSTMyUUJ0VVBqWTNoelhkUXo3dHkwc2JxQkpVZDFDa3hJZDhmdDR3eURjSGwzQ3B4U2lNbnltendvRVgzbG14UWJjNF9TVXQ1c3FlVmswSEI3V2c1NmpHN1BVYU04UXZrMXpIMVBybmtqQnV1djBmbnNveVpHcFNZa09lcWpodXdmeXZUYnVQX0pBSDFHVTVzdHpSamZiQ25IWTdsM044ZVY5SW9WQ1laSURabXU1b1hzMWtqRUdfcVNmRFZPQy1PQjV4TndabUR5cTh4Zw?oc=5",
       "snippet": "Free Paradox Obscur Sofia Tickets, Club Pave Dec 12, 2026 Bandsintown",
-      "venue": "Club Pave",
-      "city": "Free Paradox Obscur Sofia",
+      "venue": null,
+      "city": null,
       "score": 15,
       "status": "needs_review",
       "first_seen": "2026-10-25T16:09:56+00:00",
@@ -174,7 +130,8 @@
       "event_startdate_evidence": true,
       "search_query": "site:bandsintown.com \"Paradox Obscur\" (concert OR tour OR tickets OR events)",
       "source_name": "Bandsintown",
-      "source_url": "https://www.bandsintown.com/"
+      "source_url": "https://www.bandsintown.com/",
+      "verification_note": "Ortsangabe im Suchtreffer fehlerhaft zusammengesetzt (‚Free Paradox Obscur Sofia‘); erst nach Prüfung einer Künstler-, Venue- oder Veranstalterquelle übernehmen."
     },
     {
       "id": "0aa7e7b2f507e9aa",
@@ -199,28 +156,6 @@
       "source_url": "https://bandsintown.com/"
     },
     {
-      "id": "c61b4d6fe3cd8912",
-      "artist": "Schwarzes Fragment",
-      "date": "2027-01-16",
-      "title": "Schwarzes Fragment Erfurt Tickets, From Hell Jan 16, 2027 - Bandsintown",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVUx2bXV3TzhoQjVPY3pYb0ZfbUpWanJMM1Bjd1pIa1Z3bGVVNGVURDVveWpqd29zNkFmWWwzLWljRW1VZGdfWk9mQllKVUM0RkdQeHRsWGI3TXBGMExOdC00cW01a3hOSE4yTUI0YmwwWFVpQ1I2TEVQRC1qMjNPM1BGckgwWExNcVgxTzNSc2pJXzZjUVh0SnZ5NXdQNEQ5UnhTUS1SdTlGZklPTElHNjRjU3BnbDcyNWRQdHhDZ18?oc=5",
-      "snippet": "Schwarzes Fragment Erfurt Tickets, From Hell Jan 16, 2027 Bandsintown",
-      "venue": "From Hell",
-      "city": "Erfurt",
-      "score": 15,
-      "status": "needs_review",
-      "first_seen": "2026-10-27T20:20:54+00:00",
-      "last_seen": "2026-11-11T13:03:07+00:00",
-      "source_type": "public_google_news_rss",
-      "review_required": true,
-      "candidate_type": "rss_event_announcement",
-      "page_evidence_checked": false,
-      "event_startdate_evidence": true,
-      "search_query": "site:bandsintown.com \"Schwarzes Fragment\" (concert OR tour OR tickets OR events)",
-      "source_name": "Bandsintown",
-      "source_url": "https://www.bandsintown.com/"
-    },
-    {
       "id": "3d10142693253fb0",
       "artist": "Thalie Némésis",
       "date": "2027-01-29",
@@ -240,7 +175,8 @@
       "event_startdate_evidence": true,
       "search_query": "site:bandsintown.com \"Thalie Némésis\" (concert OR tour OR tickets OR events)",
       "source_name": "Bandsintown",
-      "source_url": "https://www.bandsintown.com/"
+      "source_url": "https://www.bandsintown.com/",
+      "verification_note": "Bandsintown-Suchtreffer; Termin und Line-up vor Veröffentlichung auf Künstler- oder Venue-Seite bestätigen."
     },
     {
       "id": "99ab70199eb47598",
@@ -262,7 +198,8 @@
       "event_startdate_evidence": true,
       "search_query": "site:bandsintown.com \"Paradox Obscur\" (concert OR tour OR tickets OR events)",
       "source_name": "Bandsintown",
-      "source_url": "https://bandsintown.com/"
+      "source_url": "https://bandsintown.com/",
+      "verification_note": "Bandsintown-Suchtreffer für La Marbrerie; konkrete Beteiligung von Paradox Obscur noch anhand der Festival-/Venue-Primärquelle bestätigen."
     },
     {
       "id": "3ea1b0dd00c3ba67",
@@ -353,27 +290,6 @@
       "source_url": "https://www.bandsintown.com/"
     },
     {
-      "artist": "Lana Del Rabies",
-      "date": "2027-05-08",
-      "title": "Lana Del Rabies will play Northwest Terror Fest on Friday, May 8th in Seattle, WA. NWTF is the PNW’s only destination extreme metal festival.",
-      "url": "https://lanadelrabies.com/",
-      "venue": null,
-      "city": null,
-      "snippet": "GET TICKETS | Sam An aka Lana Del Rabies will join the Roadburn 2026 Side Programme on the panel Dismantling Convention, on navigating the music industry through unconventional means. She will be joined by members of Street Sects and Portrayal of Guilt. | Lana Del Rabies will play Sled Island Fest in Calgary, Canada, as a part of a curated selection of artists by Clipping. | Lana Del Rabies will play Northwest Terror Fest on Friday, May 8th in Seattle, WA. NWTF is the PNW’s only destination extreme metal festival. | LANA DEL RABIES LAUNCHES NEW LABEL // FERAL CRONE RECORDINGS",
-      "source_name": "Lana Del Rabies – entdeckte Terminseite",
-      "source_type": "public_artist_page_text",
-      "review_required": true,
-      "candidate_type": "visible_page_event_text",
-      "page_evidence_checked": true,
-      "event_startdate_evidence": true,
-      "date_inferred_year": false,
-      "id": "eaa8c5cacc7ced9c",
-      "status": "needs_review",
-      "first_seen": "2026-10-26T17:10:45+00:00",
-      "last_seen": "2026-10-26T17:50:38+00:00",
-      "score": 12
-    },
-    {
       "id": "505b132edf97335c",
       "artist": "Hinfort",
       "date": "2027-05-14",
@@ -394,27 +310,7 @@
       "search_query": "site:bandsintown.com \"Hinfort\" (concert OR tour OR tickets OR events)",
       "source_name": "Bandsintown",
       "source_url": "https://bandsintown.com/"
-    },
-    {
-      "artist": "Then Comes Silence",
-      "date": "2027-09-18",
-      "title": "Venerdì 18 Settembre: WHISPERING DARKNESS goth night con THEN COMES SILENCE e THE FOREIGN RESORT live at Q77 Theater",
-      "url": "https://www.tickettailor.com/events/whisperingdarkness/2256892",
-      "venue": null,
-      "city": null,
-      "snippet": "Q77 Vertigo Theater, Corso Brescia, 77 - Torino | Buy tickets | Venerdì 18 Settembre: WHISPERING DARKNESS goth night con THEN COMES SILENCE e THE FOREIGN RESORT live at Q77 Theater | Fri 18 Sep 2026 21:00 - 03:00 | Q77 Vertigo Theater, Corso Brescia, 77 - Torino",
-      "source_name": "Then Comes Silence – entdeckte Terminseite – entdeckte Terminseite",
-      "source_type": "public_artist_page_text",
-      "review_required": true,
-      "candidate_type": "visible_page_event_text",
-      "page_evidence_checked": true,
-      "event_startdate_evidence": true,
-      "date_inferred_year": false,
-      "id": "67f725f10aa02f82",
-      "status": "needs_review",
-      "first_seen": "2026-10-26T17:11:26+00:00",
-      "last_seen": "2026-10-26T17:51:11+00:00",
-      "score": 12
     }
-  ]
+  ],
+  "review_note": "Manuelle Prüfung 2026-11-15: bestätigte Hinfort-Termine anhand offizieller Künstlerseite abgeglichen; falscher 16.11.-Treffer, doppelte 22.11.-Karte, abgesagter 16.01.-Termin, fachfremder Lana-Del-Rabies-Treffer und vergangener 18.09.2026-Termin entfernt. Paradox-Obscur- und Thalie-Némésis-Treffer bleiben unbestätigt."
 }
