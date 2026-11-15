@@ -1,7 +1,7 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "updated_at": "2026-11-15",
-  "purpose": "Erweiterte öffentliche Quellenbasis: internationale Szenekalender, Tourübersichten, regionale Agenden, Venue-Programme und iCalendar-Feeds.",
+  "purpose": "Erweiterte öffentliche Quellenbasis: internationale Underground-Szenekalender, regionale Dark-Music-Agenden, unabhängige Label-Tourdaten, Venue-Programme, Festival-Line-ups und offizielle Künstlerseiten.",
   "important": "Quellen liefern Recherchehinweise. Ein Event gilt erst nach Prüfung einer konkreten Künstler-, Venue- oder Veranstalterseite als bestätigt. iCalendar-Einträge bleiben zunächst Kandidaten.",
   "sources": [
     {
@@ -176,7 +176,139 @@
       ],
       "priority": "high",
       "notes": "Artistbezogene Tourübersicht; Daten beim Künstler oder Veranstalter bestätigen."
+    },
+    {
+      "name": "Dark Party – deutscher Gothic-, Darkwave- und EBM-Veranstaltungskalender",
+      "url": "https://dark-party.de/events/liste/",
+      "type": "scene_source",
+      "region": "Germany",
+      "focus": [
+        "gothic",
+        "darkwave",
+        "post-punk",
+        "ebm",
+        "industrial",
+        "club nights",
+        "concerts"
+      ],
+      "priority": "high",
+      "notes": "Spezialisierter Szenekalender mit vielen kleineren Club- und Konzertveranstaltungen; einzelne Live-Acts anhand der Originalveranstalterseite prüfen."
+    },
+    {
+      "name": "Hidden Agenda – Darkwave / Post-Punk / EBM (Niederlande)",
+      "url": "https://www.hiddenagenda.nl/",
+      "type": "scene_source",
+      "region": "Netherlands",
+      "focus": [
+        "darkwave",
+        "post-punk",
+        "ebm",
+        "industrial",
+        "goth",
+        "underground",
+        "concerts"
+      ],
+      "priority": "high",
+      "notes": "Kuratiertes niederländisches Underground-Programm mit Genre-Tags, Line-ups, Veranstaltungsorten und Datumsangaben."
+    },
+    {
+      "name": "Brokken Silence – Darkwave Live On Tour",
+      "url": "https://brokensilence.de/live/?s=Darkwave",
+      "type": "scene_source",
+      "region": "Europe",
+      "focus": [
+        "darkwave",
+        "dark electro",
+        "ebm",
+        "post-punk",
+        "industrial",
+        "tour dates"
+      ],
+      "priority": "high",
+      "notes": "Independent-Label- und Vertriebsumfeld mit Tourdaten kleiner und mittlerer Dark-Music-Acts; Angaben möglichst mit Band/Venue abgleichen."
+    },
+    {
+      "name": "Wildwechsel Terminator – Genre Dark",
+      "url": "https://www.wildwechsel.de/wildwechsel-terminator/genre/dark/",
+      "type": "scene_source",
+      "region": "Germany",
+      "focus": [
+        "gothic",
+        "darkwave",
+        "dark rock",
+        "industrial",
+        "concerts",
+        "festivals"
+      ],
+      "priority": "high",
+      "notes": "Regionaler Veranstaltungskalender mit Konzerten und Festivals, insbesondere Deutschland."
+    },
+    {
+      "name": "24hBerlin – EBM, Industrial und Dark Electro",
+      "url": "https://www.twenty-four-hours.info/berlin/musik/ebm-industrial/",
+      "type": "scene_source",
+      "region": "Berlin, Germany",
+      "focus": [
+        "ebm",
+        "industrial",
+        "dark electro",
+        "darkwave",
+        "club nights",
+        "concerts"
+      ],
+      "priority": "medium",
+      "notes": "Genrebezogene Berliner Veranstaltungssammlung; Konzerttermine bevorzugen, reine DJ-Partys nicht in den Gig-Kalender übernehmen."
+    },
+    {
+      "name": "Hellsinki Industrial Festival – Line-up",
+      "url": "https://www.hellsinkiindustrialfestival.com/lineup",
+      "type": "festival_calendar",
+      "region": "Helsinki, Finland",
+      "focus": [
+        "industrial",
+        "goth",
+        "ebm",
+        "electro",
+        "darkwave",
+        "festivals"
+      ],
+      "priority": "high",
+      "notes": "Offizielle Festival-Line-up-Seite mit internationalen Underground-Acts; Festivaltermine beim Veranstalter prüfen."
+    },
+    {
+      "name": "TechnoBeatsCloud – EBM Events",
+      "url": "https://technobeatscloud.com/en/events/genres/ebm",
+      "type": "scene_source",
+      "region": "Europe and worldwide",
+      "focus": [
+        "ebm",
+        "industrial",
+        "darkwave",
+        "electro",
+        "underground",
+        "concerts",
+        "club nights"
+      ],
+      "priority": "medium",
+      "notes": "Internationaler Genre-Eventindex; wegen breiter elektronischer Ausrichtung nur passende Dark-Music-Acts übernehmen."
+    },
+    {
+      "name": "Hinfort – offizielle Shows & Tickets",
+      "url": "https://hinfortmusic.com/",
+      "type": "event_page",
+      "region": "Worldwide",
+      "artists": [
+        "Hinfort"
+      ],
+      "focus": [
+        "post-punk",
+        "darkwave",
+        "concerts",
+        "tour dates"
+      ],
+      "priority": "high",
+      "notes": "Offizielle Künstlerseite mit konkreten Tourdaten, Veranstaltungsorten und Ticketlinks; Primärquelle."
     }
   ],
-  "source_count": 10
+  "source_count": 18
 }
