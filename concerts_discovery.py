@@ -229,7 +229,7 @@ class EventCardParser(__import__('html.parser').parser.HTMLParser):
         self.stack=[]; self.blocks=[]; self.active=[]
     def handle_starttag(self, tag, attrs):
         attrs=dict(attrs); cls=(attrs.get('class') or '').casefold(); ident=(attrs.get('id') or '').casefold()
-        is_block = tag in {'article','li'} or (tag in {'div','section'} and re.search(r'event|calendar|listing|gig|concert|termin|card|program', cls+' '+ident))
+        is_block = tag in {'article','li'} or (tag in {'div','section'} and re.search(r'event[-_ ]?(?:card|item|entry)|gig[-_ ]?(?:card|item|entry)|concert[-_ ]?(?:card|item|entry)|listing[-_ ]?(?:item|entry)|termin[-_ ]?(?:card|item|entry)|veranstaltung[-_ ]?(?:card|item|entry)', cls+' '+ident))
         if is_block:
             item={'tag':tag,'depth':len(self.stack),'text':[],'links':[]}
             self.active.append(item)
@@ -294,7 +294,9 @@ def extract_html_event_cards(raw, base_url, artists):
         out.append({'artist':artist,'date':dt,'title':title,'url':event_url,'snippet':text[:600]})
     # De-duplicate overlapping article/li/div wrappers.
     unique={}
-    for row in out: unique[(row['artist'].casefold(),row['date'],norm(row['title'])[:140])]=row
+    for row in out:
+        # Collapse nested wrappers for the same artist/date on the same source page.
+        unique[(row['artist'].casefold(),row['date'],canonical_url(base_url),canonical_url(row['url']))]=row
     return list(unique.values())
 
 def make_id(artist,url,dt,title):
@@ -649,7 +651,7 @@ def main():
     statuses=status_obj.get('statuses',{}) if isinstance(status_obj,dict) else {}
     if not isinstance(statuses,dict): statuses={}
     # Remove known false positives and expired RSS candidates. Keep current/future candidates for editorial review.
-    bad_ids={'c8ba5648f1de96fa','ae2fc94b7c61ac8d','413541aaf8af59fd','5357e2e135ac7882'}
+    bad_ids={'c8ba5648f1de96fa','ae2fc94b7c61ac8d','413541aaf8af59fd','5357e2e135ac7882','108f755e43ad48a6','9f711f589d88a560','c61b4d6fe3cd8912','<LANARABIES_ID>'}
     by_id={}
     for r in old_rows:
         if not isinstance(r,dict) or not r.get('id') or r.get('id') in bad_ids:
