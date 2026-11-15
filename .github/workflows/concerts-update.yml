@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: nachtfragment-concert-discovery
+  group: nachtfragment-repository-updates
   cancel-in-progress: false
 
 jobs:
@@ -80,4 +80,5 @@ jobs:
             exit 0
           fi
           git commit -m "Expand Nachtfragment concert discovery"
+          git pull --rebase origin "$GITHUB_REF_NAME"
           git push origin "HEAD:${GITHUB_REF_NAME}"
