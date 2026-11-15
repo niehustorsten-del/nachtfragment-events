@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-12T22:38:51.644Z",
+  "updated_at": "2026-11-15T14:19:23+00:00",
   "source": "Nachtfragment published concerts.json",
   "artist_count": 58,
-  "event_count": 10,
+  "event_count": 7,
   "artists": {
     "2dcat": {
       "name": "2DCAT",
@@ -103,17 +103,6 @@
       "name": "Hinfort",
       "url": "https://nachtfragment.de/index.php/artists/hinfort",
       "events": [
-        {
-          "id": "hinfort-myrna-loy-2026-11-14",
-          "date": "2026-11-14",
-          "title": "Hinfort live with Myrna Loy",
-          "venue": "Luxor",
-          "city": "Köln",
-          "category": "concert",
-          "status": "confirmed",
-          "url": "https://hinfortmusic.com/home",
-          "source": "Hinfort official"
-        },
         {
           "id": "hinfort-diary-of-dreams-2026-11-19",
           "date": "2026-11-19",
@@ -281,19 +270,7 @@
     "paradox-obscur": {
       "name": "Paradox Obscur",
       "url": "https://nachtfragment.de/index.php/artists/paradox-obscur",
-      "events": [
-        {
-          "id": "cold-hearted-festival-2026-11-13",
-          "date": "2026-11-13",
-          "title": "Cold Hearted Festival – GVLLOW, Paradox Obscur, Ash Code, Haunt Me, Darkways, Vioflesh",
-          "venue": "Markthalle",
-          "city": "Hamburg",
-          "category": "festival",
-          "status": "confirmed",
-          "url": "https://markthalle-hamburg.de/konzerte/cold-hearted-festival/",
-          "source": "Markthalle / Pluswelt Promotion"
-        }
-      ]
+      "events": []
     },
     "pixel-grip": {
       "name": "Pixel Grip",
@@ -378,19 +355,7 @@
     "vioflesh": {
       "name": "Vioflesh",
       "url": "https://nachtfragment.de/index.php/artists/vioflesh",
-      "events": [
-        {
-          "id": "cold-hearted-festival-2026-11-13",
-          "date": "2026-11-13",
-          "title": "Cold Hearted Festival – GVLLOW, Paradox Obscur, Ash Code, Haunt Me, Darkways, Vioflesh",
-          "venue": "Markthalle",
-          "city": "Hamburg",
-          "category": "festival",
-          "status": "confirmed",
-          "url": "https://markthalle-hamburg.de/konzerte/cold-hearted-festival/",
-          "source": "Markthalle / Pluswelt Promotion"
-        }
-      ]
+      "events": []
     },
     "vitrais-mortos": {
       "name": "Vitrais Mortos",
