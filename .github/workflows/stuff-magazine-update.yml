@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: nachtfragment-stuff-magazine-update
+  group: nachtfragment-repository-updates
   cancel-in-progress: false
 
 jobs:
@@ -42,5 +42,6 @@ jobs:
             echo "Keine Änderungen zu veröffentlichen."
           else
             git commit -m "chore: update Stuff and Magazine directories"
-            git push
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
