@@ -651,7 +651,7 @@ def main():
     statuses=status_obj.get('statuses',{}) if isinstance(status_obj,dict) else {}
     if not isinstance(statuses,dict): statuses={}
     # Remove known false positives and expired RSS candidates. Keep current/future candidates for editorial review.
-    bad_ids={'c8ba5648f1de96fa','ae2fc94b7c61ac8d','413541aaf8af59fd','5357e2e135ac7882','108f755e43ad48a6','9f711f589d88a560','c61b4d6fe3cd8912','<LANARABIES_ID>'}
+    bad_ids={'c8ba5648f1de96fa','ae2fc94b7c61ac8d','413541aaf8af59fd','5357e2e135ac7882','108f755e43ad48a6','9f711f589d88a560','c61b4d6fe3cd8912','eaa8c5cacc7ced9c'}
     by_id={}
     for r in old_rows:
         if not isinstance(r,dict) or not r.get('id') or r.get('id') in bad_ids:
