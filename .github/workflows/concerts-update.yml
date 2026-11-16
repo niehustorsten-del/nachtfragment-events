@@ -51,6 +51,7 @@ jobs:
           CONCERTS_MAX_PAGE_CHECKS: "240"
           CONCERTS_QUERY_PAUSE: "0.6"
           CONCERTS_RSS_ENABLED: "0"
+          FACEBOOK_EVENTS_ENABLED: "1"
           CONCERTS_RSS_RESULTS: "18"
         run: python concerts_discovery.py
 
