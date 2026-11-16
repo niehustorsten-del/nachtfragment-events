@@ -732,7 +732,7 @@ def main():
             if not valid_date(r.get('date')):
                 continue
         by_id[r['id']]=r
-    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_artist_match':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0,'html_event_cards_seen':0,'ical_feeds_ok':0,'ical_events_seen':0,'ical_candidates':0,'facebook_queries':0,'facebook_search_errors':0,'facebook_events_seen':0,'facebook_candidates':0}
+    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_artist_match':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0,'html_event_cards_seen':0,'ical_feeds_ok':0,'ical_events_seen':0,'ical_candidates':0,'facebook_queries':0,'facebook_search_errors':0,'facebook_search_items_seen':0,'facebook_events_seen':0,'facebook_candidates':0}
     # Keep a few real examples of RSS rejections in the Actions log, so filters can be tuned from evidence.
     rejection_samples = {'no_artist_match': [], 'no_event_word': [], 'no_date': [], 'non_music_context': []}
     def remember_rejection(reason, artist_name, item, combined):
@@ -886,9 +886,10 @@ def main():
     facebook_enabled = os.getenv('FACEBOOK_EVENTS_ENABLED', '1').strip().lower() not in {'0','false','no'}
     if facebook_enabled:
         for ai, artist in enumerate(artists, 1):
-            found, searched, errors = search_public_facebook_events(artist)
+            found, searched, errors, items_seen = search_public_facebook_events(artist)
             stats['facebook_queries'] += searched
             stats['facebook_search_errors'] += errors
+            stats['facebook_search_items_seen'] += items_seen
             stats['facebook_events_seen'] += len(found)
             for item in found:
                 cid=make_id(artist['name'],item['url'],item['date'],item['title'])
