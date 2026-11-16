@@ -575,7 +575,7 @@ def search_public_facebook_events(artist):
             continue
         found.append({
             'artist':name,'date':dt,'title':item.get('title','')[:220],
-            'url':link,'snippet':re.sub(r'\\s+',' ',re.sub(r'(?s)<[^>]+>',' ',item.get('description',''))).strip()[:600],
+            'url':link,'snippet':re.sub(r'\s+',' ',re.sub(r'(?s)<[^>]+>',' ',item.get('description',''))).strip()[:600],
             'source_name':'Facebook – öffentlich auffindbare Veranstaltung',
             'source_url':link,'search_query':query
         })
