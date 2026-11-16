@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T22:39:12+00:00",
+  "updated_at": "2026-11-16T22:52:49+00:00",
   "count": 16,
   "candidates": [
     {
@@ -13,8 +13,8 @@
       "city": null,
       "score": 12,
       "status": "needs_review",
-      "first_seen": "2026-11-16T22:38:09+00:00",
-      "last_seen": "2026-11-16T22:38:09+00:00",
+      "first_seen": "2026-11-16T22:50:04+00:00",
+      "last_seen": "2026-11-16T22:50:04+00:00",
       "source_type": "public_html_event_card",
       "review_required": true,
       "candidate_type": "html_event_card",
@@ -81,7 +81,7 @@
       "score": 12,
       "status": "needs_review",
       "first_seen": "2026-11-16T22:38:05+00:00",
-      "last_seen": "2026-11-16T22:38:05+00:00",
+      "last_seen": "2026-11-16T22:50:00+00:00",
       "source_type": "public_html_event_card",
       "review_required": true,
       "candidate_type": "html_event_card",
