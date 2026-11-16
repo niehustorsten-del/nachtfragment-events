@@ -28,6 +28,8 @@ GitHub → **Actions** → **Nachtfragment Concert Discovery** → **Run workflo
 
 Der Workflow benötigt keinen SerpApi-Schlüssel. Die Recherche basiert auf öffentlich erreichbaren Seiten und konfigurierten Kalenderquellen.
 
+Zusätzlich durchsucht die Recherche die Suchmaschinen-Indizes gezielt nach **öffentlich auffindbaren Facebook-Events** zu den Nachtfragment-Künstlern. Facebook-Treffer werden ausschließlich in `data/concert_candidates.json` als prüfpflichtige Kandidaten gespeichert. Sie werden nie automatisch veröffentlicht. Eine Veranstaltung muss ohne Login öffentlich erreichbar sein und vor der Übernahme anhand von Datum, Venue und Veranstalter-/Künstlerangaben geprüft werden. Nicht öffentlich zugängliche oder hinter einer Login-Schranke liegende Inhalte werden nicht umgangen.
+
 ## Konzertdaten – Beispiel
 
 Ein bestätigter Eintrag in `concerts.json` verwendet beispielsweise diese Struktur:
