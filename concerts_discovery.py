@@ -437,6 +437,18 @@ def parse_rss_date(text):
                 dt=date(int(m.group(3)),mo,int(m.group(1)))
                 if TODAY <= dt <= date(TODAY.year+3,12,31): candidates.append((m.start(),dt.isoformat()))
             except ValueError: pass
+    # German month names commonly appear in Facebook event snippets.
+    german_months={'jan':1,'januar':1,'feb':2,'februar':2,'mär':3,'märz':3,'maerz':3,
+        'apr':4,'april':4,'mai':5,'jun':6,'juni':6,'jul':7,'juli':7,'aug':8,'august':8,
+        'sep':9,'sept':9,'september':9,'okt':10,'oktober':10,'nov':11,'november':11,
+        'dez':12,'dezember':12}
+    for m in re.finditer(r'\\b(\\d{1,2})\\.?\\s+(Jan(?:uar)?|Feb(?:ruar)?|Mär(?:z)?|Maerz|Apr(?:il)?|Mai|Jun(?:i)?|Jul(?:i)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Okt(?:ober)?|Nov(?:ember)?|Dez(?:ember)?)\\.?[,]?\\s+(20\\d{2})\\b',text,re.I):
+        month=german_months.get(m.group(2).casefold()[:4]) or german_months.get(m.group(2).casefold()[:3])
+        if month:
+            try:
+                dt=date(int(m.group(3)),month,int(m.group(1)))
+                if TODAY <= dt <= date(TODAY.year+3,12,31): candidates.append((m.start(),dt.isoformat()))
+            except ValueError: pass
     return min(candidates)[1] if candidates else None
 
 
@@ -549,37 +561,59 @@ def search_artist_rss(artist, search_domains=None):
 
 
 def search_public_facebook_events(artist):
-    """Find publicly indexed Facebook event pages via Bing's public search feed.
-    Facebook results are review-only: never auto-publish and never bypass login walls.
+    """Search several public Bing-indexed Facebook event queries.
+    Only public event URLs are retained; all hits stay review-only.
     """
     name=artist['name']
-    query=f'site:facebook.com/events "{name}" (concert OR gig OR live OR festival OR Konzert OR Tour) (2026 OR 2027)'
-    url='https://www.bing.com/search?format=rss&q='+urllib.parse.quote(query)
-    result=fetch_text(url, 'application/rss+xml, application/xml, text/xml, */*;q=0.5')
-    if not result.get('ok'):
-        return [], 0, 1
-    items=rss_items(result.get('raw',''))
-    found=[]
-    for item in items:
-        link=canonical_url(item.get('url'))
-        host=urlsplit(link).netloc.lower().removeprefix('www.')
-        if host not in {'facebook.com','m.facebook.com'}:
+    # Use separate queries: Facebook event pages are inconsistently indexed and
+    # one large boolean query tends to suppress useful results.
+    queries=[
+        f'site:facebook.com/events "{name}"',
+        f'site:m.facebook.com/events "{name}"',
+        f'site:facebook.com/events "{name}" (concert OR gig OR live OR show OR tour)',
+        f'site:facebook.com/events "{name}" (Konzert OR Festival OR Veranstaltung OR Club)',
+    ]
+    found=[]; seen=set(); errors=0; items_seen=0
+    for query in queries:
+        url='https://www.bing.com/search?format=rss&count=50&q='+urllib.parse.quote(query)
+        result=fetch_text(url, 'application/rss+xml, application/xml, text/xml, */*;q=0.5')
+        if not result.get('ok'):
+            errors += 1
             continue
-        combined=item.get('title','')+' '+re.sub(r'(?s)<[^>]+>',' ',item.get('description',''))
-        if not mentioned(name, combined) or not EVENT_WORDS.search(combined):
-            continue
-        if REVIEW_OR_RELEASE.search(item.get('title','')) or NON_MUSIC_CONTEXT.search(combined):
-            continue
-        dt=parse_rss_date(combined)
-        if not dt:
-            continue
-        found.append({
-            'artist':name,'date':dt,'title':item.get('title','')[:220],
-            'url':link,'snippet':re.sub(r'\s+',' ',re.sub(r'(?s)<[^>]+>',' ',item.get('description',''))).strip()[:600],
-            'source_name':'Facebook – öffentlich auffindbare Veranstaltung',
-            'source_url':link,'search_query':query
-        })
-    return found, 1, 0
+        items=rss_items(result.get('raw',''))
+        items_seen += len(items)
+        for item in items:
+            link=canonical_url(item.get('url'))
+            host=urlsplit(link).netloc.lower().removeprefix('www.')
+            if host not in {'facebook.com','m.facebook.com'}:
+                continue
+            path=urlsplit(link).path.lower()
+            # Keep event pages, not Facebook profiles, groups or generic search pages.
+            if not re.match(r'^/events?/\d+', path):
+                continue
+            combined=' '.join((item.get('title',''), re.sub(r'(?s)<[^>]+>',' ',item.get('description',''))))
+            if not mentioned(name, combined):
+                continue
+            if not EVENT_WORDS.search(combined) and not re.search(r'\\b(event|veranstaltung)\\b', combined, re.I):
+                continue
+            if REVIEW_OR_RELEASE.search(item.get('title','')) or NON_MUSIC_CONTEXT.search(combined):
+                continue
+            dt=parse_rss_date(combined)
+            if not dt:
+                continue
+            # Strip common tracking/query parameters; canonical_url already removes fbclid.
+            key=(link,dt)
+            if key in seen:
+                continue
+            seen.add(key)
+            found.append({
+                'artist':name,'date':dt,'title':item.get('title','')[:220],
+                'url':link,'snippet':re.sub(r'\\s+',' ',re.sub(r'(?s)<[^>]+>',' ',item.get('description',''))).strip()[:600],
+                'source_name':'Facebook – öffentlich auffindbare Veranstaltung',
+                'source_url':link,'search_query':query
+            })
+        if PAUSE: time.sleep(min(PAUSE,0.35))
+    return found, len(queries), errors, items_seen
 
 
 def publishable_candidate(row):
