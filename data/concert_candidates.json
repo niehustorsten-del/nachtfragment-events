@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-11-15T20:08:51.920Z",
-  "count": 14,
+  "updated_at": "2026-11-16T22:39:12+00:00",
+  "count": 16,
   "candidates": [
+    {
+      "id": "108f755e43ad48a6",
+      "artist": "Hinfort",
+      "date": "2026-11-16",
+      "title": "Post-Punk, Cold Wave and Industrial Gigs in Berlin Berlin is a fixed stop on the European touring circuit for this music, and a scene of its own between tours. This page lists upcoming Berlin gigs that fall within what C",
+      "url": "https://catastrophe-ballet.com/agenda/berlin/",
+      "snippet": "Post-Punk, Cold Wave and Industrial Gigs in Berlin Berlin is a fixed stop on the European touring circuit for this music, and a scene of its own between tours. This page lists upcoming Berlin gigs that fall within what Catastrophe Ballet covers: post-punk, cold and dark wave, industrial, EBM, minimal and synth wave. Dates are grouped by month. We write from Brussels. This is a curated agenda, not a local guide — selected by the same editorial line as the rest of the site, and no more exhaustive than our time allows. Where we have written about an artist, the listing links to the piece. .cb-hub",
+      "venue": null,
+      "city": null,
+      "score": 12,
+      "status": "needs_review",
+      "first_seen": "2026-11-16T22:38:09+00:00",
+      "last_seen": "2026-11-16T22:38:09+00:00",
+      "source_type": "public_html_event_card",
+      "review_required": true,
+      "candidate_type": "html_event_card",
+      "page_evidence_checked": true,
+      "event_startdate_evidence": true,
+      "source_name": "Catastrophe Ballet – Berlin Post-Punk / Cold Wave / Industrial Agenda",
+      "source_url": "https://catastrophe-ballet.com/agenda/berlin/",
+      "verification_note": "Datum und Künstlername auf öffentlicher Kalenderseite gefunden; Veranstaltungsort/Stadt noch manuell prüfen."
+    },
     {
       "id": "c4a4cd03394fc489",
       "artist": "Hinfort",
@@ -46,6 +68,28 @@
       "source_name": "Hinfort – offizielle Künstlerseite",
       "source_url": "https://hinfortmusic.com/",
       "verification_note": "Datum, Line-up, Venue und Stadt auf der offiziellen Künstlerseite bestätigt."
+    },
+    {
+      "id": "6bb3443f01442c5c",
+      "artist": "Hinfort",
+      "date": "2026-11-22",
+      "title": "22 Nov. 2026 19:00 Uhr Diary of Dreams mit Special Guest hinfort – Einlass 18:00 Oberhausen · Kulttempel Location: Kulttempel – Kontakt & Anfahrt Band-Konzert Diary of Dreams mit Special Guest hinfort am 22. November 202",
+      "url": "https://darkandalternativeworld.de/veranstaltungen/diary-of-dreams-2026-11-22-oberhausen-kulttempel/",
+      "snippet": "22 Nov. 2026 19:00 Uhr Diary of Dreams mit Special Guest hinfort – Einlass 18:00 Oberhausen · Kulttempel Location: Kulttempel – Kontakt & Anfahrt Band-Konzert Diary of Dreams mit Special Guest hinfort am 22. November 2026 im Kulttempel Oberhausen. Einlass: 18:00 Uhr; Beginn: 19:00 Uhr laut Veranstalter. … Details ansehen →",
+      "venue": null,
+      "city": null,
+      "score": 12,
+      "status": "needs_review",
+      "first_seen": "2026-11-16T22:38:05+00:00",
+      "last_seen": "2026-11-16T22:38:05+00:00",
+      "source_type": "public_html_event_card",
+      "review_required": true,
+      "candidate_type": "html_event_card",
+      "page_evidence_checked": true,
+      "event_startdate_evidence": true,
+      "source_name": "Dark and Alternative World – Veranstaltungskalender",
+      "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+      "verification_note": "Datum und Künstlername auf öffentlicher Kalenderseite gefunden; Veranstaltungsort/Stadt noch manuell prüfen."
     },
     {
       "id": "971e83790c1bc03e",
@@ -319,6 +363,5 @@
       "source_url": "https://hinfortmusic.com/",
       "verification_note": "Datum, Line-up, Venue und Stadt auf der offiziellen Künstlerseite bestätigt."
     }
-  ],
-  "review_note": "Manuelle Prüfung 2026-11-15: bestätigte Hinfort-Termine anhand offizieller Künstlerseite abgeglichen; falscher 16.11.-Treffer, doppelte 22.11.-Karte, abgesagter 16.01.-Termin, fachfremder Lana-Del-Rabies-Treffer und vergangener 18.09.2026-Termin entfernt. Paradox-Obscur- und Thalie-Némésis-Treffer bleiben unbestätigt."
+  ]
 }

@@ -1,20 +1,8 @@
 {
-  "updated_at": "2026-11-15",
+  "updated_at": "2026-11-16T22:39:12+00:00",
   "source": "Nachtfragment Concert Discovery",
-  "count": 68,
+  "count": 70,
   "events": [
-    {
-      "id": "jakuzi-2026-11-15",
-      "artist": "Jakuzi",
-      "date": "2026-11-15",
-      "title": "Live with von rohbau",
-      "url": "https://events.musicofourdesire.com/de/events/Hamburg/genre/darkwave",
-      "venue": "MS Stubnitz",
-      "city": "Hamburg",
-      "source": "Music of Our Desire",
-      "status": "listed_check_venue",
-      "category": "concert"
-    },
     {
       "id": "hinfort-diary-of-dreams-2026-11-19",
       "artist": "Hinfort / Diary of Dreams",
@@ -88,12 +76,12 @@
       "category": "concert"
     },
     {
-      "id": "hinfort-2026-11-21",
+      "id": "c4a4cd03394fc489",
       "artist": "Hinfort",
       "date": "2026-11-21",
       "title": "Hinfort + Diary of Dreams",
       "url": "https://hinfortmusic.com/",
-      "venue": "Stereo Club",
+      "venue": "Stereo Live Club",
       "city": "Bielefeld",
       "source": "Hinfort – offizielle Künstlerseite",
       "status": "needs_verification",
@@ -112,7 +100,7 @@
       "category": "concert"
     },
     {
-      "id": "hinfort-2026-11-22",
+      "id": "906e868764c1d126",
       "artist": "Hinfort",
       "date": "2026-11-22",
       "title": "Hinfort + Diary of Dreams",
@@ -188,6 +176,16 @@
       "artist": "Hinfort",
       "date": "2026-11-25",
       "title": "hinfort Karlsruhe Tickets, Die Stadtmitte Nov 25, 2026 - Bandsintown",
+      "url": "https://hinfortmusic.com/",
+      "venue": "Die Stadtmitte",
+      "city": "Karlsruhe",
+      "source": "Hinfort – offizielle Künstlerseite"
+    },
+    {
+      "id": "971e83790c1bc03e",
+      "artist": "Hinfort",
+      "date": "2026-11-25",
+      "title": "Hinfort + Diary of Dreams",
       "url": "https://hinfortmusic.com/",
       "venue": "Die Stadtmitte",
       "city": "Karlsruhe",
@@ -308,6 +306,16 @@
       "title": "hinfort Toulouse Tickets, DAda Dec 03, 2026 - Bandsintown",
       "url": "https://hinfortmusic.com/",
       "venue": "DAda",
+      "city": "Toulouse",
+      "source": "Hinfort – offizielle Künstlerseite"
+    },
+    {
+      "id": "d64a3898c67c67df",
+      "artist": "Hinfort",
+      "date": "2026-12-03",
+      "title": "Hinfort – Setmana Santa",
+      "url": "https://hinfortmusic.com/",
+      "venue": "dada",
       "city": "Toulouse",
       "source": "Hinfort – offizielle Künstlerseite"
     },
@@ -464,6 +472,16 @@
       "venue": null,
       "city": null,
       "source": "Öffentliche Konzertmeldung"
+    },
+    {
+      "id": "430d0e6625b725fd",
+      "artist": "Hinfort",
+      "date": "2026-12-12",
+      "title": "Hinfort + Twin Noir",
+      "url": "https://hinfortmusic.com/",
+      "venue": "Urban Spree",
+      "city": "Berlin",
+      "source": "Hinfort – offizielle Künstlerseite"
     },
     {
       "id": "project-pitchfork-2026-12-12",
@@ -730,7 +748,7 @@
       "source": "Lana Del Rabies – entdeckte Terminseite"
     },
     {
-      "id": "hinfort-2027-05-14",
+      "id": "505b132edf97335c",
       "artist": "Hinfort",
       "date": "2027-05-14",
       "title": "Hinfort + NITE",
