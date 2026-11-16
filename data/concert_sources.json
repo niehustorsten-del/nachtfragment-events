@@ -1,8 +1,8 @@
 {
-  "version": "1.2",
-  "updated_at": "2026-11-15",
-  "purpose": "Erweiterte öffentliche Quellenbasis: internationale Underground-Szenekalender, regionale Dark-Music-Agenden, unabhängige Label-Tourdaten, Venue-Programme, Festival-Line-ups und offizielle Künstlerseiten.",
-  "important": "Quellen liefern Recherchehinweise. Ein Event gilt erst nach Prüfung einer konkreten Künstler-, Venue- oder Veranstalterseite als bestätigt. iCalendar-Einträge bleiben zunächst Kandidaten.",
+  "version": "1.3",
+  "updated_at": "2026-11-16",
+  "purpose": "Erweiterte öffentliche Quellenbasis inklusive gezielter Suche nach öffentlich indexierten Facebook-Veranstaltungen.",
+  "important": "Facebook-Treffer sind ausschließlich Recherchekandidaten. Keine Umgehung von Login-Schranken und keine automatische Veröffentlichung ohne unabhängige Prüfung.",
   "sources": [
     {
       "name": "Nocturna Events – Dark Music Events weltweit",
@@ -308,7 +308,28 @@
       ],
       "priority": "high",
       "notes": "Offizielle Künstlerseite mit konkreten Tourdaten, Veranstaltungsorten und Ticketlinks; Primärquelle."
+    },
+    {
+      "name": "Facebook Events – öffentliche Veranstaltungen (gezielte Suche)",
+      "type": "search_reference",
+      "region": "worldwide",
+      "enabled": true,
+      "focus": [
+        "gothic",
+        "darkwave",
+        "post-punk",
+        "coldwave",
+        "ebm",
+        "industrial",
+        "dark electro",
+        "synthpop",
+        "punk",
+        "underground",
+        "concerts",
+        "festivals"
+      ],
+      "notes": "Die Recherche sucht pro Nachtfragment-Act nach öffentlich indexierten Facebook-Eventseiten. Nur ohne Login öffentlich erreichbare Eventseiten; Treffer bleiben Kandidaten und werden nicht automatisch veröffentlicht."
     }
   ],
-  "source_count": 18
+  "source_count": 19
 }
