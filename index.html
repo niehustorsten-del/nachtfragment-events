@@ -19,12 +19,45 @@ input,select{width:100%;min-width:0;min-height:44px;padding:10px 12px;border:1px
 .empty{grid-column:1/-1;text-align:center;padding:42px 18px;color:var(--muted);border:1px dashed var(--line);border-radius:12px}.sectionTitle{font:400 1.3rem Georgia,serif;margin:0 0 13px;color:var(--text)}.footer{border-top:1px solid var(--line);padding:25px 20px;text-align:center;color:#777482;font-size:.8rem}.footer a{text-decoration:none}.footer a:hover{color:var(--text)}
 @media(max-width:950px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.filters input{grid-column:1/-1}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.head,.wrap{padding-left:16px;padding-right:16px}.hero{padding:50px 16px 28px}}
 @media(max-width:650px){.head{align-items:flex-start;flex-direction:column;padding-top:14px;padding-bottom:14px;gap:9px}nav{gap:14px}.hero{padding:42px 16px 28px}.filters{grid-template-columns:1fr}.filters input{grid-column:auto}.grid{grid-template-columns:1fr}.card{min-height:0;padding:17px}.stats{align-items:flex-start;flex-direction:column}.links{gap:7px}.links a{padding:8px 10px}}
+
+/* Nachtfragment – einheitliches Layout wie concerts.html */
+:root{color-scheme:dark;--bg:#08090b;--panel:#111318;--panel2:#17191f;--line:#292d35;--border:#292d35;--text:#e7e7ea;--muted:#999da8;--accent:#b9b9c4;--accent2:#777b86;--green:#8bd6a3;--radius:12px;--shadow:0 8px 24px #0002}
+body{background:radial-gradient(ellipse at 15% 0%,rgba(130,130,150,.09),transparent 28rem),radial-gradient(ellipse at 85% 20%,rgba(100,100,120,.06),transparent 25rem),var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--accent)}
+.top,header{background:rgba(8,9,11,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.head,.header-inner{width:min(1180px,calc(100% - 32px));max-width:1180px;margin:auto;min-height:68px;padding:14px 0;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand,.logo{font:500 1.1rem Georgia,serif;letter-spacing:.13em;text-transform:uppercase;color:var(--text)}
+.brand span,.logo span{color:var(--muted);letter-spacing:.04em}
+nav{display:flex!important;gap:8px;flex-wrap:wrap;align-items:center}
+nav a{display:inline-flex;margin:0!important;border:1px solid var(--line);background:#111318;border-radius:999px;padding:7px 12px;color:var(--text)!important;text-decoration:none;font-size:.86rem;white-space:normal}
+nav a:hover,nav a[aria-current="page"]{border-color:var(--accent);background:#1a1c22;color:#fff!important;text-decoration:none}
+.hero{width:min(1180px,calc(100% - 32px));max-width:1180px;margin:auto;padding:46px 0 28px;border-bottom:1px solid var(--line)}
+.kicker{color:var(--accent);font-size:.78rem;letter-spacing:.18em;font-weight:700}
+h1{font:400 clamp(2.2rem,6vw,4.5rem)/1.03 Georgia,serif;letter-spacing:-.035em;color:var(--text);margin:14px 0 16px}
+.hero p{max-width:760px;color:var(--muted);font-size:1.06rem}
+.wrap,main.wrap{width:min(1180px,calc(100% - 32px));max-width:1180px;margin-left:auto;margin-right:auto;padding-left:0;padding-right:0}
+.controls{background:linear-gradient(150deg,#17191f,#111318 72%);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+input,select{background:#111012!important;border:1px solid var(--line)!important;border-radius:10px!important;color:var(--text)!important;font:inherit}
+input:focus,select:focus{outline:1px solid var(--accent);border-color:var(--accent)!important}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{min-width:0;background:linear-gradient(150deg,#17191f,var(--panel) 72%);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);transition:border-color .18s,transform .18s;overflow-wrap:anywhere}
+.card:hover{border-color:#626773;transform:translateY(-2px)}
+.name,.card h2{font:400 1.25rem/1.25 Georgia,serif;color:var(--text)}
+.meta,.location,.summary,.stats,.hero p{color:var(--muted)}
+.badge,.tag{border:1px solid var(--line);background:#111318;color:#b9b9c4;border-radius:6px}
+.links a,.visit{display:inline-flex;align-items:center;border:1px solid #454a54;border-radius:8px;padding:8px 12px;color:var(--text);text-decoration:none;background:#111318}
+.links a:hover,.visit:hover{border-color:var(--accent);background:#1b1e24;color:#fff}
+.empty{border:1px dashed var(--line);border-radius:var(--radius);color:var(--muted)}
+footer,.footer{border-top:1px solid var(--line);color:var(--muted);padding:24px 16px;text-align:center}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.head,.header-inner{width:calc(100% - 22px);align-items:flex-start;flex-direction:column;padding:14px 0;gap:10px}nav{display:flex!important;gap:7px}nav a{font-size:.82rem;padding:7px 10px}.hero{width:calc(100% - 22px);padding:34px 0 24px}.wrap,main.wrap{width:calc(100% - 22px)}.grid{grid-template-columns:1fr}.card{min-height:0;padding:16px}.controls{padding:14px}.summary,.stats{align-items:flex-start;flex-direction:column}}
+
 </style>
 </head>
 <body>
 <header class="top"><div class="head">
   <div class="brand">Nachtfragment <span>/ Dark Scene Directory</span></div>
-  <nav aria-label="Hauptnavigation"><a href="https://nachtfragment.de/">Hauptseite</a><a href="https://nachtfragment.de/Stuff/">Stuff</a><a href="https://nachtfragment.de/Magazine/">Magazine</a><a href="#directory">Verzeichnis</a></nav>
+  <nav aria-label="Hauptnavigation"><a href="./" aria-current="page">Dark Scene Directory</a><a href="./concerts.html" target="_blank" rel="noopener">Konzerte &amp; Gigs ↗</a><a href="./Stuff/" target="_blank" rel="noopener">Stuff &amp; Dark Lifestyle ↗</a><a href="./Magazine/" target="_blank" rel="noopener">Magazine ↗</a><a href="https://nachtfragment.de/" target="_blank" rel="noopener">Nachtfragment.de ↗</a></nav>
 </div></header>
 <section class="hero">
   <div class="kicker">Nachtfragment · Dark Music & Culture</div>
