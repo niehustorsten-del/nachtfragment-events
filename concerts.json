@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-15",
   "source": "Nachtfragment Concert Discovery",
-  "count": 69,
+  "count": 68,
   "events": [
     {
       "id": "jakuzi-2026-11-15",
@@ -393,18 +393,6 @@
       "city": "Hamburg",
       "source": "Music of Our Desire",
       "status": "needs_verification",
-      "category": "concert"
-    },
-    {
-      "id": "desinteresse-crush-of-souls-2026-12-06",
-      "artist": "Desinteresse / Crush of Souls",
-      "date": "2026-12-06",
-      "title": "Live at MS Stubnitz",
-      "url": "https://events.musicofourdesire.com/de/events/Hamburg/genre/darkwave",
-      "venue": "MS Stubnitz",
-      "city": "Hamburg",
-      "source": "Music of Our Desire",
-      "status": "listed_check_venue",
       "category": "concert"
     },
     {
