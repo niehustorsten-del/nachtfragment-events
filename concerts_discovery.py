@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Nachtfragment concert discovery from public artist/source pages and public HTML, Schema.org, iCalendar feeds and optional public Google News RSS.
+"""Nachtfragment concert discovery from public artist/source pages, Schema.org, iCalendar feeds, public search feeds and publicly indexed Facebook events.
 No API keys. Candidates require an explicit future event date and matching artist.
 Only candidates with sufficient evidence are automatically published; others remain for review.
 """
@@ -547,6 +547,41 @@ def search_artist_rss(artist, search_domains=None):
     return found[:RSS_PER_ARTIST], feeds_ok, feed_errors, len(queries)
 
 
+
+def search_public_facebook_events(artist):
+    """Find publicly indexed Facebook event pages via Bing's public search feed.
+    Facebook results are review-only: never auto-publish and never bypass login walls.
+    """
+    name=artist['name']
+    query=f'site:facebook.com/events "{name}" (concert OR gig OR live OR festival OR Konzert OR Tour) (2026 OR 2027)'
+    url='https://www.bing.com/search?format=rss&q='+urllib.parse.quote(query)
+    result=fetch_text(url, 'application/rss+xml, application/xml, text/xml, */*;q=0.5')
+    if not result.get('ok'):
+        return [], 0, 1
+    items=rss_items(result.get('raw',''))
+    found=[]
+    for item in items:
+        link=canonical_url(item.get('url'))
+        host=urlsplit(link).netloc.lower().removeprefix('www.')
+        if host not in {'facebook.com','m.facebook.com'}:
+            continue
+        combined=item.get('title','')+' '+re.sub(r'(?s)<[^>]+>',' ',item.get('description',''))
+        if not mentioned(name, combined) or not EVENT_WORDS.search(combined):
+            continue
+        if REVIEW_OR_RELEASE.search(item.get('title','')) or NON_MUSIC_CONTEXT.search(combined):
+            continue
+        dt=parse_rss_date(combined)
+        if not dt:
+            continue
+        found.append({
+            'artist':name,'date':dt,'title':item.get('title','')[:220],
+            'url':link,'snippet':re.sub(r'\\s+',' ',re.sub(r'(?s)<[^>]+>',' ',item.get('description',''))).strip()[:600],
+            'source_name':'Facebook – öffentlich auffindbare Veranstaltung',
+            'source_url':link,'search_query':query
+        })
+    return found, 1, 0
+
+
 def publishable_candidate(row):
     """Only publish future events with explicit event evidence and useful details."""
     if not isinstance(row, dict):
@@ -663,7 +698,7 @@ def main():
             if not valid_date(r.get('date')):
                 continue
         by_id[r['id']]=r
-    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_artist_match':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0,'html_event_cards_seen':0,'ical_feeds_ok':0,'ical_events_seen':0,'ical_candidates':0}
+    stats={'pages_attempted':0,'pages_ok':0,'page_errors':0,'schema_events_seen':0,'accepted':0,'rejected_no_artist_match':0,'rejected_no_future_date':0,'rss_queries':0,'rss_feeds_ok':0,'rss_feed_errors':0,'rss_items_seen':0,'rss_rejected_no_artist_match':0,'rss_rejected_no_date':0,'rss_rejected_no_event_word':0,'rss_rejected_non_music_context':0,'html_event_cards_seen':0,'ical_feeds_ok':0,'ical_events_seen':0,'ical_candidates':0,'facebook_queries':0,'facebook_search_errors':0,'facebook_events_seen':0,'facebook_candidates':0}
     # Keep a few real examples of RSS rejections in the Actions log, so filters can be tuned from evidence.
     rejection_samples = {'no_artist_match': [], 'no_event_word': [], 'no_date': [], 'non_music_context': []}
     def remember_rejection(reason, artist_name, item, combined):
@@ -812,6 +847,33 @@ def main():
                     'source_url':item.get('source_url','')}
                 stats['accepted'] += 1
             if ai % 10 == 0: print(f'  RSS-Suche: {ai}/{len(artists)} Künstler geprüft')
+
+    # Public Facebook events: search engine indexing only; all hits remain review-only.
+    facebook_enabled = os.getenv('FACEBOOK_EVENTS_ENABLED', '1').strip().lower() not in {'0','false','no'}
+    if facebook_enabled:
+        for ai, artist in enumerate(artists, 1):
+            found, searched, errors = search_public_facebook_events(artist)
+            stats['facebook_queries'] += searched
+            stats['facebook_search_errors'] += errors
+            stats['facebook_events_seen'] += len(found)
+            for item in found:
+                cid=make_id(artist['name'],item['url'],item['date'],item['title'])
+                prev=by_id.get(cid,{})
+                stamp=now_iso()
+                by_id[cid]={**prev,'id':cid,'artist':artist['name'],'date':item['date'],
+                    'title':item['title'],'url':item['url'],'snippet':item['snippet'],
+                    'score':12,'status':statuses.get(cid,prev.get('status','needs_review')),
+                    'first_seen':prev.get('first_seen') or stamp,'last_seen':stamp,
+                    'source_type':'public_facebook_event_search','candidate_type':'facebook_public_event',
+                    'review_required':True,'page_evidence_checked':False,
+                    'event_startdate_evidence':True,'source_name':item['source_name'],
+                    'source_url':item['source_url'],'search_query':item['search_query'],
+                    'verification_note':'Öffentlich indexierte Facebook-Veranstaltung; vor Veröffentlichung Datum, Veranstaltungsort und öffentliche Erreichbarkeit direkt prüfen. Keine automatische Veröffentlichung.'}
+                stats['facebook_candidates'] += 1
+            if ai % 10 == 0:
+                print(f'  Facebook-Eventsuche: {ai}/{len(artists)} Künstler geprüft')
+            if PAUSE: time.sleep(min(PAUSE,0.5))
+
     stamp=now_iso()
     rows=deduplicate_candidates(list(by_id.values()))
     rows=sorted(rows,key=lambda x:(x.get('date') or '9999',str(x.get('artist','')).casefold()))
