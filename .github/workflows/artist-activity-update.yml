@@ -7,6 +7,7 @@ on:
       - "build_artist_activity.py"
       - ".github/workflows/artist-activity-update.yml"
       - "data/artists.json"
+      - "data/artist-news.json"
   schedule:
     - cron: "45 6 * * 3,0"
   workflow_dispatch:
