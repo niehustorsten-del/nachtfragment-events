@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-17T17:58:41+00:00",
+  "updated_at": "2026-11-17T18:00:00+00:00",
   "lookback_days": 45,
   "artist_count": 60,
-  "candidate_count": 16,
+  "candidate_count": 15,
   "approval_required": true,
   "items": [
     {
@@ -28,19 +28,6 @@
       "category": "Release",
       "publisher": "SIDE-LINE",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1JZWFpLUFxU2tWanpsVFlIakVWbWQtV21obDlDa2xZcWdCTWVXLXpRYnNhM3NzOEJxNWZkUTQwVW8yd3RSSUhZbWlUYWt4ZUk0ckE4WjVrdWpRcjJRRGpLTkE3bHJ2Ymx6X0ww?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "126ac67cf0e0866c31e9",
-      "artist": "Buzz Kull",
-      "artist_slug": "buzz-kull",
-      "title": "Buzz Kull release video for ‘In the Cut’ ahead of North American tour - SIDE-LINE",
-      "summary": "Buzz Kull release video for ‘In the Cut’ ahead of North American tour    SIDE-LINE",
-      "date": "2026-11-13T08:58:52+00:00",
-      "category": "Video",
-      "publisher": "SIDE-LINE",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1kQmZlRW5nVEF5Z1hlb0gxTUY2dGpjQUl3eVFhOGVBRWFMVDA4WEQ2SXVmaC15LTIzNGZYZkwtYzVFS1FkRzZUN3lvSXRsaDZnS2hLVWFJLTlZSHJSYk1pX2laZw?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
