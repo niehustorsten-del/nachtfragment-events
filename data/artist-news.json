@@ -1,5 +1,126 @@
 {
-  "updated_at": "",
-  "instructions": "Nur geprüfte Meldungen mit status=approved hier eintragen. Kandidaten stehen in artist-news-candidates.json; ungeprüfte Meldungen nicht übernehmen.",
-  "items": []
+  "updated_at": "2026-11-17T17:58:28.711Z",
+  "instructions": "Redaktionell geprüfte Meldungen. Nur status=approved wird in den Artist Activity Feed übernommen.",
+  "items": [
+    {
+      "id": "horror-vacui-shadows-sanctuary-review-2026-11-15",
+      "artist": "Horror Vacui",
+      "artist_slug": "horror-vacui",
+      "title": "Horror Vacui – Shadows Sanctuary: Albumreview",
+      "summary": "SIDE-LINE bespricht das neue Album „Shadows Sanctuary“. Die Rezension hebt den Dark-Wave- und Post-Punk-Sound, die markanten Gitarren und die düstere Atmosphäre hervor.",
+      "date": "2026-11-15T00:00:00+00:00",
+      "category": "Review",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/horror-vacui-shadows-sanctuary-review/",
+      "status": "approved"
+    },
+    {
+      "id": "darcy-xtc-flaunt-2026-10-31",
+      "artist": "D'Arcy",
+      "artist_slug": "darcy",
+      "title": "The Dark-Pop Shadows and Nocturnal Euphoria of D’Arcy’s Single “XTC”",
+      "summary": "Flaunt porträtiert D’Arcys Single „XTC“ und das dazugehörige Video. Im Mittelpunkt stehen Dark Pop, Electronica, Shoegaze und die nächtliche Bildsprache des Clips.",
+      "date": "2026-10-31T00:00:00+00:00",
+      "category": "Release",
+      "publisher": "Flaunt Magazine",
+      "url": "https://www.flaunt.com/post/darcys-single-xtc",
+      "status": "approved"
+    },
+    {
+      "id": "then-comes-silence-bye-bye-land-2026-10-17",
+      "artist": "Then Comes Silence",
+      "artist_slug": "then-comes-silence",
+      "title": "Then Comes Silence teilen „Bye Bye Land“ – dritte Single aus „Requiem Ballroom“",
+      "summary": "SIDE-LINE berichtet über die dritte Vorab-Single des kommenden Albums „Requiem Ballroom“, das am 20. November 2026 über Metropolis Records erscheint.",
+      "date": "2026-10-17T00:00:00+00:00",
+      "category": "Release",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/then-comes-silence-bye-bye-land/",
+      "status": "approved"
+    },
+    {
+      "id": "then-comes-silence-requiem-ballroom-2026-10-19",
+      "artist": "Then Comes Silence",
+      "artist_slug": "then-comes-silence",
+      "title": "Then Comes Silence kündigen neues Album „Requiem Ballroom“ an",
+      "summary": "Die Band kündigt ihr achtes Studioalbum für den 20. November 2026 an. SIDE-LINE beschreibt das Konzept des Albums und nennt die bereits veröffentlichten Vorab-Singles.",
+      "date": "2026-10-19T00:00:00+00:00",
+      "category": "Release",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/then-comes-silence-requiem-ballroom/",
+      "status": "approved"
+    },
+    {
+      "id": "then-comes-silence-2027-tour-2026-11-10",
+      "artist": "Then Comes Silence",
+      "artist_slug": "then-comes-silence",
+      "title": "Then Comes Silence kündigen Januar-2027-Tour mit Agent Side Grinder an",
+      "summary": "Für Januar 2027 ist eine gemeinsame Tour durch Deutschland, Frankreich, Belgien und Dänemark angekündigt. Auf dem Plan stehen unter anderem Hamburg, Detmold, Oberhausen und Hannover.",
+      "date": "2026-11-10T00:00:00+00:00",
+      "category": "Tour / Live",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/then-comes-silence-2027-tour-agent-side/",
+      "status": "approved"
+    },
+    {
+      "id": "ghostbells-phantoms-2026-10-30",
+      "artist": "ghostbells",
+      "artist_slug": "ghostbells",
+      "title": "ghostbells veröffentlichen „Phantoms“ mit Musikvideo über Out Of Line Music",
+      "summary": "Die Darkwave-/EBM-Duo veröffentlicht die Single samt Video. SIDE-LINE berichtet außerdem über weitere Festival- und Konzerttermine sowie die Arbeit am Debütalbum.",
+      "date": "2026-10-30T00:00:00+00:00",
+      "category": "Video",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/ghostbells-phantoms/",
+      "status": "approved"
+    },
+    {
+      "id": "memory-of-snow-dark-christmas-ep-2026-10-26",
+      "artist": "The Memory Of Snow",
+      "artist_slug": "the-memory-of-snow",
+      "title": "The Memory Of Snow kündigen „The Dark Christmas EP“ an",
+      "summary": "Albin Wagener veröffentlicht am 4. Dezember 2026 über Meridian Noir Records eine sechsteilige EP mit düsteren Neuinterpretationen bekannter Weihnachtssongs. Die EP ist bereits vorbestellbar.",
+      "date": "2026-10-26T00:00:00+00:00",
+      "category": "Release",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/the-memory-of-snow-dark-christmas-ep/",
+      "status": "approved"
+    },
+    {
+      "id": "kontravoid-sound-of-the-void-2026-10-06",
+      "artist": "Kontravoid",
+      "artist_slug": "kontravoid",
+      "title": "Kontravoid veröffentlichen neues Album „Sound Of The Void“",
+      "summary": "Das zehn Tracks umfassende Album erschien am 2. Oktober 2026 über Artoffact Records. SIDE-LINE ordnet die Veröffentlichung zwischen Coldwave, EBM und Electro ein.",
+      "date": "2026-10-06T00:00:00+00:00",
+      "category": "Release",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/kontravoid-sound-of-the-void-out/",
+      "status": "approved"
+    },
+    {
+      "id": "kontravoid-europe-fall-tour-2026-10-06",
+      "artist": "Kontravoid",
+      "artist_slug": "kontravoid",
+      "title": "Kontravoid kündigen Europa-Herbsttour mit Boy Harsher, Choir Boy und Spike Hellis an",
+      "summary": "Die Tour führt im November und Dezember 2026 durch Europa. Auf dem bestätigten Plan stehen auch Frankfurt, München, Hamburg, Kopenhagen und Berlin.",
+      "date": "2026-10-06T00:00:00+00:00",
+      "category": "Tour / Live",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/kontravoid-europe-fall-tour-2026/",
+      "status": "approved"
+    },
+    {
+      "id": "vioflesh-melancolia-review-2026-10-11",
+      "artist": "Vioflesh",
+      "artist_slug": "vioflesh",
+      "title": "Vioflesh – „Melancolia“: Albumreview",
+      "summary": "SIDE-LINE bespricht das dritte Album des chilenischen Coldwave-/Synthpop-Duos und hebt insbesondere die Verbindung aus ätherischen Klangflächen, tanzbaren Rhythmen und Gesang hervor.",
+      "date": "2026-10-11T00:00:00+00:00",
+      "category": "Review",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/vioflesh-melancolia-review/",
+      "status": "approved"
+    }
+  ]
 }
