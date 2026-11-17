@@ -98,12 +98,14 @@ def main():
         page=str(row.get("nachtfragment_url") or row.get("url") or "").strip()
         match=re.search(r"/index\.php/artists/([a-z0-9-]+)/?$",urlsplit(page).path,re.I)
         if not match or not name: continue
-        name=re.sub(r"\s*[–-]\s*(Porträt|Portrait|Playlist|Linkliste).*$","",name,flags=re.I).strip()
+        name=re.sub(r"\s*[–-]\s*(Porträt|Portrait|Playlist|Linkliste|Zwischen Darkwave.*|Zwischen .*).*$","",name,flags=re.I).strip()
+        name=re.sub(r"\s+Playlist$","",name,flags=re.I).strip()
         words=name.split()
-        if len(words)>=4 and len(words)%2==0:
+        if len(words)>=2 and len(words)%2==0:
             half=len(words)//2
             if [w.casefold() for w in words[:half]]==[w.casefold() for w in words[half:]]: name=" ".join(words[:half])
-        if re.search(r"newcomer|linkliste|weblinks|rezension|review|top\s*50|playlist|verzeichnis",name,re.I): continue
+        if match.group(1).lower()=="nctrl-music": name="N/CTRL"
+        if re.search(r"newcomer|linkliste|weblinks|rezension|review|top\s*50|verzeichnis",name,re.I): continue
         valid.append((name,match.group(1).lower()))
     for index,(name,slug) in enumerate(valid[:MAX_ARTISTS],1):
         q=quote_plus('"'+name+'" (music OR band OR album OR single OR interview OR video OR tour)')
@@ -117,8 +119,8 @@ def main():
                 if not title or not item["url"] or not contains_artist(name,full): continue
                 if not MUSIC_WORDS.search(title) or NOISE.search(title): continue
                 title_fold=title.casefold()
-                if "korine fujiwara" in title_fold or "free rein" in title_fold or "d’arcy james" in title_fold or "d'arcy james" in title_fold or "d’arcy street" in title_fold or "d'arcy street" in title_fold or "d’arcy carden" in title_fold or "d'arcy carden" in title_fold: continue
-                if name.casefold()=="customs" and not re.search(r"\b(band|album|ep|new single|song|track|tour|festival|concert|gig|darkwave|gothic|post.?punk|industrial|ebm|synth|coldwave|record label|remix)\b",title,re.I): continue
+                if "korine fujiwara" in title_fold or "free rein" in title_fold or "james d’arcy" in title_fold or "james d'arcy" in title_fold or "d’arcy james" in title_fold or "d'arcy james" in title_fold or "d’arcy street" in title_fold or "d'arcy street" in title_fold or "d’arcy carden" in title_fold or "d'arcy carden" in title_fold or "d’arcy’s march" in title_fold or "d'arcy's march" in title_fold: continue
+                if name.casefold()=="customs" and not re.search(r"\b(band|album|ep|new single|song|track|festival|concert|gig|darkwave|gothic|post.?punk|industrial|ebm|synth|coldwave|record label|remix)\b",title,re.I): continue
                 published=parse_date(item["published"])
                 if not published: continue
                 try: dt=datetime.fromisoformat(published)
