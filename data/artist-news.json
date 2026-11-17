@@ -1,0 +1,5 @@
+{
+  "updated_at": "",
+  "instructions": "Nur geprüfte Meldungen mit status=approved hier eintragen. Kandidaten stehen in artist-news-candidates.json; ungeprüfte Meldungen nicht übernehmen.",
+  "items": []
+}
