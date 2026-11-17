@@ -42,6 +42,9 @@ def load_artists():
         url=str(row.get("nachtfragment_url") or row.get("url") or "").strip()
         slug=artist_slug(url)
         name=clean_name(str(row.get("name") or row.get("artist") or "").strip())
+        if slug=="nctrl-music": name="N/CTRL"
+        if slug=="ghostbells": name="ghostbells"
+        if slug=="ist-ist": name="IST IST"
         if slug and name and not SKIP_NAME.search(name):
             result.setdefault(slug,{"name":name,"url":url,"events":[],"news":[]})
     return result
