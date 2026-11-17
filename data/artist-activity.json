@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-17T17:56:11+00:00",
+  "updated_at": "2026-11-17T17:59:50+00:00",
   "source": "Nachtfragment published concerts.json + manually approved artist-news.json",
   "artist_count": 60,
   "event_count": 7,
-  "news_count": 0,
+  "news_count": 10,
   "artists": {
     "2dcat": {
       "name": "2DCAT",
@@ -51,7 +51,17 @@
       "name": "D'Arcy",
       "url": "https://nachtfragment.de/index.php/artists/darcy",
       "events": [],
-      "news": []
+      "news": [
+        {
+          "id": "darcy-xtc-flaunt-2026-10-31",
+          "title": "The Dark-Pop Shadows and Nocturnal Euphoria of D’Arcy’s Single “XTC”",
+          "summary": "Flaunt porträtiert D’Arcys Single „XTC“ und das dazugehörige Video. Im Mittelpunkt stehen Dark Pop, Electronica, Shoegaze und die nächtliche Bildsprache des Clips.",
+          "date": "2026-10-31T00:00:00+00:00",
+          "category": "Release",
+          "publisher": "Flaunt Magazine",
+          "url": "https://www.flaunt.com/post/darcys-single-xtc"
+        }
+      ]
     },
     "dark-minimal-project": {
       "name": "Dark Minimal Project",
@@ -117,7 +127,17 @@
       "name": "ghostbells",
       "url": "https://nachtfragment.de/index.php/artists/ghostbells",
       "events": [],
-      "news": []
+      "news": [
+        {
+          "id": "ghostbells-phantoms-2026-10-30",
+          "title": "ghostbells veröffentlichen „Phantoms“ mit Musikvideo über Out Of Line Music",
+          "summary": "Die Darkwave-/EBM-Duo veröffentlicht die Single samt Video. SIDE-LINE berichtet außerdem über weitere Festival- und Konzerttermine sowie die Arbeit am Debütalbum.",
+          "date": "2026-10-30T00:00:00+00:00",
+          "category": "Video",
+          "publisher": "SIDE-LINE",
+          "url": "https://www.side-line.com/ghostbells-phantoms/"
+        }
+      ]
     },
     "harsh-symmetry": {
       "name": "Harsh Symmetry",
@@ -213,7 +233,17 @@
       "name": "Horror Vacui",
       "url": "https://nachtfragment.de/index.php/artists/horror-vacui",
       "events": [],
-      "news": []
+      "news": [
+        {
+          "id": "horror-vacui-shadows-sanctuary-review-2026-11-15",
+          "title": "Horror Vacui – Shadows Sanctuary: Albumreview",
+          "summary": "SIDE-LINE bespricht das neue Album „Shadows Sanctuary“. Die Rezension hebt den Dark-Wave- und Post-Punk-Sound, die markanten Gitarren und die düstere Atmosphäre hervor.",
+          "date": "2026-11-15T00:00:00+00:00",
+          "category": "Review",
+          "publisher": "SIDE-LINE",
+          "url": "https://www.side-line.com/horror-vacui-shadows-sanctuary-review/"
+        }
+      ]
     },
     "in-mitra-medusa-inri": {
       "name": "In Mitra Medusa Inri",
@@ -237,7 +267,26 @@
       "name": "Kontravoid",
       "url": "https://nachtfragment.de/index.php/artists/kontravoid",
       "events": [],
-      "news": []
+      "news": [
+        {
+          "id": "kontravoid-sound-of-the-void-2026-10-06",
+          "title": "Kontravoid veröffentlichen neues Album „Sound Of The Void“",
+          "summary": "Das zehn Tracks umfassende Album erschien am 2. Oktober 2026 über Artoffact Records. SIDE-LINE ordnet die Veröffentlichung zwischen Coldwave, EBM und Electro ein.",
+          "date": "2026-10-06T00:00:00+00:00",
+          "category": "Release",
+          "publisher": "SIDE-LINE",
+          "url": "https://www.side-line.com/kontravoid-sound-of-the-void-out/"
+        },
+        {
+          "id": "kontravoid-europe-fall-tour-2026-10-06",
+          "title": "Kontravoid kündigen Europa-Herbsttour mit Boy Harsher, Choir Boy und Spike Hellis an",
+          "summary": "Die Tour führt im November und Dezember 2026 durch Europa. Auf dem bestätigten Plan stehen auch Frankfurt, München, Hamburg, Kopenhagen und Berlin.",
+          "date": "2026-10-06T00:00:00+00:00",
+          "category": "Tour / Live",
+          "publisher": "SIDE-LINE",
+          "url": "https://www.side-line.com/kontravoid-europe-fall-tour-2026/"
+        }
+      ]
     },
     "korine": {
       "name": "Korine",
@@ -399,13 +448,51 @@
       "name": "The Memory Of Snow",
       "url": "https://nachtfragment.de/index.php/artists/the-memory-of-snow",
       "events": [],
-      "news": []
+      "news": [
+        {
+          "id": "memory-of-snow-dark-christmas-ep-2026-10-26",
+          "title": "The Memory Of Snow kündigen „The Dark Christmas EP“ an",
+          "summary": "Albin Wagener veröffentlicht am 4. Dezember 2026 über Meridian Noir Records eine sechsteilige EP mit düsteren Neuinterpretationen bekannter Weihnachtssongs. Die EP ist bereits vorbestellbar.",
+          "date": "2026-10-26T00:00:00+00:00",
+          "category": "Release",
+          "publisher": "SIDE-LINE",
+          "url": "https://www.side-line.com/the-memory-of-snow-dark-christmas-ep/"
+        }
+      ]
     },
     "then-comes-silence": {
       "name": "Then Comes Silence",
       "url": "https://nachtfragment.de/index.php/artists/then-comes-silence",
       "events": [],
-      "news": []
+      "news": [
+        {
+          "id": "then-comes-silence-2027-tour-2026-11-10",
+          "title": "Then Comes Silence kündigen Januar-2027-Tour mit Agent Side Grinder an",
+          "summary": "Für Januar 2027 ist eine gemeinsame Tour durch Deutschland, Frankreich, Belgien und Dänemark angekündigt. Auf dem Plan stehen unter anderem Hamburg, Detmold, Oberhausen und Hannover.",
+          "date": "2026-11-10T00:00:00+00:00",
+          "category": "Tour / Live",
+          "publisher": "SIDE-LINE",
+          "url": "https://www.side-line.com/then-comes-silence-2027-tour-agent-side/"
+        },
+        {
+          "id": "then-comes-silence-requiem-ballroom-2026-10-19",
+          "title": "Then Comes Silence kündigen neues Album „Requiem Ballroom“ an",
+          "summary": "Die Band kündigt ihr achtes Studioalbum für den 20. November 2026 an. SIDE-LINE beschreibt das Konzept des Albums und nennt die bereits veröffentlichten Vorab-Singles.",
+          "date": "2026-10-19T00:00:00+00:00",
+          "category": "Release",
+          "publisher": "SIDE-LINE",
+          "url": "https://www.side-line.com/then-comes-silence-requiem-ballroom/"
+        },
+        {
+          "id": "then-comes-silence-bye-bye-land-2026-10-17",
+          "title": "Then Comes Silence teilen „Bye Bye Land“ – dritte Single aus „Requiem Ballroom“",
+          "summary": "SIDE-LINE berichtet über die dritte Vorab-Single des kommenden Albums „Requiem Ballroom“, das am 20. November 2026 über Metropolis Records erscheint.",
+          "date": "2026-10-17T00:00:00+00:00",
+          "category": "Release",
+          "publisher": "SIDE-LINE",
+          "url": "https://www.side-line.com/then-comes-silence-bye-bye-land/"
+        }
+      ]
     },
     "twin-tribes": {
       "name": "Twin Tribes",
@@ -423,7 +510,17 @@
       "name": "Vioflesh",
       "url": "https://nachtfragment.de/index.php/artists/vioflesh",
       "events": [],
-      "news": []
+      "news": [
+        {
+          "id": "vioflesh-melancolia-review-2026-10-11",
+          "title": "Vioflesh – „Melancolia“: Albumreview",
+          "summary": "SIDE-LINE bespricht das dritte Album des chilenischen Coldwave-/Synthpop-Duos und hebt insbesondere die Verbindung aus ätherischen Klangflächen, tanzbaren Rhythmen und Gesang hervor.",
+          "date": "2026-10-11T00:00:00+00:00",
+          "category": "Review",
+          "publisher": "SIDE-LINE",
+          "url": "https://www.side-line.com/vioflesh-melancolia-review/"
+        }
+      ]
     },
     "vitrais-mortos": {
       "name": "Vitrais Mortos",
