@@ -1,103 +1,123 @@
 {
-  "updated_at": "2026-11-15T14:19:23+00:00",
-  "source": "Nachtfragment published concerts.json",
-  "artist_count": 58,
+  "updated_at": "2026-11-17T17:47:56+00:00",
+  "source": "Nachtfragment published concerts.json + manually approved artist-news.json",
+  "artist_count": 59,
   "event_count": 7,
+  "news_count": 0,
   "artists": {
     "2dcat": {
       "name": "2DCAT",
       "url": "https://nachtfragment.de/index.php/artists/2dcat",
-      "events": []
+      "events": [],
+      "news": []
     },
     "aktion-fiasko": {
       "name": "Aktion : Fiasko",
       "url": "https://nachtfragment.de/index.php/artists/aktion-fiasko",
-      "events": []
+      "events": [],
+      "news": []
     },
     "anja-huwe": {
       "name": "Anja Huwe",
       "url": "https://nachtfragment.de/index.php/artists/anja-huwe",
-      "events": []
+      "events": [],
+      "news": []
     },
     "bleib-modern": {
       "name": "Bleib Modern",
       "url": "https://nachtfragment.de/index.php/artists/bleib-modern",
-      "events": []
+      "events": [],
+      "news": []
     },
     "blue-forge": {
       "name": "Blue Forge",
       "url": "https://nachtfragment.de/index.php/artists/blue-forge",
-      "events": []
+      "events": [],
+      "news": []
     },
     "buzz-kull": {
       "name": "Buzz Kull",
       "url": "https://nachtfragment.de/index.php/artists/buzz-kull",
-      "events": []
+      "events": [],
+      "news": []
     },
     "customs": {
       "name": "Customs",
       "url": "https://nachtfragment.de/index.php/artists/customs",
-      "events": []
+      "events": [],
+      "news": []
     },
     "darcy": {
       "name": "D'Arcy",
       "url": "https://nachtfragment.de/index.php/artists/darcy",
-      "events": []
+      "events": [],
+      "news": []
     },
     "dark-minimal-project": {
       "name": "Dark Minimal Project",
       "url": "https://nachtfragment.de/index.php/artists/dark-minimal-project",
-      "events": []
+      "events": [],
+      "news": []
     },
     "das-kelzer": {
       "name": "Das Kelzer",
       "url": "https://nachtfragment.de/index.php/artists/das-kelzer",
-      "events": []
+      "events": [],
+      "news": []
     },
     "death-by-love": {
       "name": "DEATH BY LØVE",
       "url": "https://nachtfragment.de/index.php/artists/death-by-love",
-      "events": []
+      "events": [],
+      "news": []
     },
     "deep-imagination": {
       "name": "Deep Imagination",
       "url": "https://nachtfragment.de/index.php/artists/deep-imagination",
-      "events": []
+      "events": [],
+      "news": []
     },
     "destroy-me-again": {
       "name": "Destroy Me Again",
       "url": "https://nachtfragment.de/index.php/artists/destroy-me-again",
-      "events": []
+      "events": [],
+      "news": []
     },
     "deus-ex-lumina": {
       "name": "Deus Ex Lumina",
       "url": "https://nachtfragment.de/index.php/artists/deus-ex-lumina",
-      "events": []
+      "events": [],
+      "news": []
     },
     "deux-ex-lumina": {
       "name": "Deux Ex Lumina",
       "url": "https://nachtfragment.de/index.php/artists/deux-ex-lumina",
-      "events": []
+      "events": [],
+      "news": []
     },
     "drab-majesty": {
       "name": "Drab Majesty",
       "url": "https://nachtfragment.de/index.php/artists/drab-majesty",
-      "events": []
+      "events": [],
+      "news": []
     },
     "emmon": {
       "name": "Emmon",
       "url": "https://nachtfragment.de/index.php/artists/emmon",
-      "events": []
+      "events": [],
+      "news": []
     },
     "euroshima": {
       "name": "Euroshima",
       "url": "https://nachtfragment.de/index.php/artists/euroshima",
-      "events": []
+      "events": [],
+      "news": []
     },
     "harsh-symmetry": {
       "name": "Harsh Symmetry",
       "url": "https://nachtfragment.de/index.php/artists/harsh-symmetry",
-      "events": []
+      "events": [],
+      "news": []
     },
     "hinfort": {
       "name": "Hinfort",
@@ -180,197 +200,242 @@
           "url": "https://hinfortmusic.com/home",
           "source": "Hinfort official"
         }
-      ]
+      ],
+      "news": []
     },
     "horror-vacui": {
       "name": "Horror Vacui",
       "url": "https://nachtfragment.de/index.php/artists/horror-vacui",
-      "events": []
+      "events": [],
+      "news": []
     },
     "in-mitra-medusa-inri": {
       "name": "In Mitra Medusa Inri",
       "url": "https://nachtfragment.de/index.php/artists/in-mitra-medusa-inri",
-      "events": []
+      "events": [],
+      "news": []
     },
     "ist-ist": {
       "name": "IST",
       "url": "https://nachtfragment.de/index.php/artists/ist-ist",
-      "events": []
+      "events": [],
+      "news": []
     },
     "jahrund": {
       "name": "Jahrund",
       "url": "https://nachtfragment.de/index.php/artists/jahrund",
-      "events": []
+      "events": [],
+      "news": []
     },
     "kontravoid": {
       "name": "Kontravoid",
       "url": "https://nachtfragment.de/index.php/artists/kontravoid",
-      "events": []
+      "events": [],
+      "news": []
     },
     "korine": {
       "name": "Korine",
       "url": "https://nachtfragment.de/index.php/artists/korine",
-      "events": []
+      "events": [],
+      "news": []
     },
     "lana-del-rabies": {
       "name": "Lana Del Rabies",
       "url": "https://nachtfragment.de/index.php/artists/lana-del-rabies",
-      "events": []
+      "events": [],
+      "news": []
     },
     "martine": {
       "name": "MARTINÉ",
       "url": "https://nachtfragment.de/index.php/artists/martine",
-      "events": []
+      "events": [],
+      "news": []
     },
     "mercy-girl": {
       "name": "Mercy Girl",
       "url": "https://nachtfragment.de/index.php/artists/mercy-girl",
-      "events": []
+      "events": [],
+      "news": []
     },
     "mila-nervt-berlin": {
       "name": "Mila nervt Berlin",
       "url": "https://nachtfragment.de/index.php/artists/mila-nervt-berlin",
-      "events": []
+      "events": [],
+      "news": []
     },
     "mildrea": {
       "name": "Mildrea",
       "url": "https://nachtfragment.de/index.php/artists/mildrea",
-      "events": []
+      "events": [],
+      "news": []
     },
     "minuit-machine": {
       "name": "Minuit Machine",
       "url": "https://nachtfragment.de/index.php/artists/minuit-machine",
-      "events": []
+      "events": [],
+      "news": []
     },
     "mitra-mitra": {
       "name": "Mitra",
       "url": "https://nachtfragment.de/index.php/artists/mitra-mitra",
-      "events": []
+      "events": [],
+      "news": []
     },
     "mona-mur": {
       "name": "Mona Mur",
       "url": "https://nachtfragment.de/index.php/artists/mona-mur",
-      "events": []
+      "events": [],
+      "news": []
     },
     "musikprojekt-1g4sh0": {
       "name": "Musikprojekt 1G4SH0",
       "url": "https://nachtfragment.de/index.php/artists/musikprojekt-1g4sh0",
-      "events": []
+      "events": [],
+      "news": []
+    },
+    "nctrl-music": {
+      "name": "NCTRL Music N/CTRL Playlist",
+      "url": "https://nachtfragment.de/index.php/artists/nctrl-music",
+      "events": [],
+      "news": []
     },
     "neila-invo": {
       "name": "Neila Invo",
       "url": "https://nachtfragment.de/index.php/artists/neila-invo",
-      "events": []
+      "events": [],
+      "news": []
     },
     "ocinn": {
       "name": "Ocinn",
       "url": "https://nachtfragment.de/index.php/artists/ocinn",
-      "events": []
+      "events": [],
+      "news": []
     },
     "paradox-obscur": {
       "name": "Paradox Obscur",
       "url": "https://nachtfragment.de/index.php/artists/paradox-obscur",
-      "events": []
+      "events": [],
+      "news": []
     },
     "pixel-grip": {
       "name": "Pixel Grip",
       "url": "https://nachtfragment.de/index.php/artists/pixel-grip",
-      "events": []
+      "events": [],
+      "news": []
     },
     "raskolnikov": {
       "name": "Raskolnikov",
       "url": "https://nachtfragment.de/index.php/artists/raskolnikov",
-      "events": []
+      "events": [],
+      "news": []
     },
     "rein": {
       "name": "REIN",
       "url": "https://nachtfragment.de/index.php/artists/rein",
-      "events": []
+      "events": [],
+      "news": []
     },
     "schwarzes-fragment": {
       "name": "Schwarzes Fragment",
       "url": "https://nachtfragment.de/index.php/artists/schwarzes-fragment",
-      "events": []
+      "events": [],
+      "news": []
     },
     "selofan": {
       "name": "Selofan",
       "url": "https://nachtfragment.de/index.php/artists/selofan",
-      "events": []
+      "events": [],
+      "news": []
     },
     "seraphya": {
       "name": "Seraphya",
       "url": "https://nachtfragment.de/index.php/artists/seraphya",
-      "events": []
+      "events": [],
+      "news": []
     },
     "sinister-seduction": {
       "name": "Sinister Seduction",
       "url": "https://nachtfragment.de/index.php/artists/sinister-seduction",
-      "events": []
+      "events": [],
+      "news": []
     },
     "sotiria": {
       "name": "Sotiria",
       "url": "https://nachtfragment.de/index.php/artists/sotiria",
-      "events": []
+      "events": [],
+      "news": []
     },
     "sugartin": {
       "name": "Sugartin",
       "url": "https://nachtfragment.de/index.php/artists/sugartin",
-      "events": []
+      "events": [],
+      "news": []
     },
     "synapsyche": {
       "name": "SYNAPSYCHE",
       "url": "https://nachtfragment.de/index.php/artists/synapsyche",
-      "events": []
+      "events": [],
+      "news": []
     },
     "thalie-nemesis": {
       "name": "Thalie Némésis",
       "url": "https://nachtfragment.de/index.php/artists/thalie-nemesis",
-      "events": []
+      "events": [],
+      "news": []
     },
     "the-electrozigxx": {
       "name": "The Electrozixx",
       "url": "https://nachtfragment.de/index.php/artists/the-electrozigxx",
-      "events": []
+      "events": [],
+      "news": []
     },
     "the-memory-of-snow": {
       "name": "The Memory Of Snow",
       "url": "https://nachtfragment.de/index.php/artists/the-memory-of-snow",
-      "events": []
+      "events": [],
+      "news": []
     },
     "then-comes-silence": {
       "name": "Then Comes Silence",
       "url": "https://nachtfragment.de/index.php/artists/then-comes-silence",
-      "events": []
+      "events": [],
+      "news": []
     },
     "twin-tribes": {
       "name": "Twin Tribes",
       "url": "https://nachtfragment.de/index.php/artists/twin-tribes",
-      "events": []
+      "events": [],
+      "news": []
     },
     "unverkalt": {
       "name": "Unverkalt",
       "url": "https://nachtfragment.de/index.php/artists/unverkalt",
-      "events": []
+      "events": [],
+      "news": []
     },
     "vioflesh": {
       "name": "Vioflesh",
       "url": "https://nachtfragment.de/index.php/artists/vioflesh",
-      "events": []
+      "events": [],
+      "news": []
     },
     "vitrais-mortos": {
       "name": "Vitrais Mortos",
       "url": "https://nachtfragment.de/index.php/artists/vitrais-mortos",
-      "events": []
+      "events": [],
+      "news": []
     },
     "vox-umbra": {
       "name": "Vox Umbra",
       "url": "https://nachtfragment.de/index.php/artists/vox-umbra",
-      "events": []
+      "events": [],
+      "news": []
     },
     "zanias": {
       "name": "Zanias",
       "url": "https://nachtfragment.de/index.php/artists/zanias",
-      "events": []
+      "events": [],
+      "news": []
     }
   }
 }
