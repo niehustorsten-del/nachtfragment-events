@@ -15,34 +15,40 @@ concurrency:
 jobs:
   build-feed:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 20
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref_name }}
+          ref: \${{ github.ref_name }}
       - name: Python einrichten
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Feed erzeugen
+      - name: Öffentliche Künstlernews suchen
+        run: python discover_artist_news.py
+      - name: Aktivitätsfeed erzeugen
         run: python build_artist_activity.py
       - name: JSON validieren
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          data = json.loads(Path("data/artist-activity.json").read_text(encoding="utf-8"))
-          assert isinstance(data.get("artists"), dict)
-          assert data.get("artist_count") == len(data["artists"])
-          print("Feed OK:", data["artist_count"], "Künstlerseiten /", data["event_count"], "Termine")
+          candidates = json.loads(Path("data/artist-news-candidates.json").read_text(encoding="utf-8"))
+          feed = json.loads(Path("data/artist-activity.json").read_text(encoding="utf-8"))
+          assert candidates.get("approval_required") is True
+          assert isinstance(candidates.get("items"), list)
+          assert isinstance(feed.get("artists"), dict)
+          assert feed.get("artist_count") == len(feed["artists"])
+          print("News-Kandidaten:", candidates.get("candidate_count", 0))
+          print("Aktivitätsfeed:", feed["artist_count"], "Künstler /", feed.get("news_count", 0), "freigegebene News")
           PY
-      - name: Feed veröffentlichen
+      - name: Feeds veröffentlichen
         run: |
           git config user.name "Nachtfragment Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/artist-activity.json
+          git add data/artist-news-candidates.json data/artist-activity.json
           if git diff --cached --quiet; then echo "Keine Änderungen."; exit 0; fi
-          git commit -m "Update artist activity feed"
+          git commit -m "Update artist news candidates and activity feed"
           git pull --rebase origin "$GITHUB_REF_NAME"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          git push origin "HEAD:$GITHUB_REF_NAME"
