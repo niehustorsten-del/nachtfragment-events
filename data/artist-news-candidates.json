@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-17T17:48:57+00:00",
+  "updated_at": "2026-11-17T17:50:18+00:00",
   "lookback_days": 45,
   "artist_count": 59,
-  "candidate_count": 17,
+  "candidate_count": 13,
   "approval_required": true,
   "items": [
     {
@@ -15,32 +15,6 @@
       "category": "Release",
       "publisher": "SIDE-LINE",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5XYm1udTlBc1dkcGpDWjdxMElsZ2NPQm41OWgydG9CX1dEN1gtR1BlMGdVOXJNU0J4WG04UDRuOFVpN3dTODRaVzE2cUtMNWEwRU9xb3F0TlJkaGtxRDc4SFpPZm9tTTBMWVdMcnNGQTJadw?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "b998a480ef8a4d6c121f",
-      "artist": "Vioflesh",
-      "artist_slug": "vioflesh",
-      "title": "VIOFLESH releases new coldwave single ‘Call Me’ - SIDE-LINE",
-      "summary": "VIOFLESH releases new coldwave single ‘Call Me’    SIDE-LINE",
-      "date": "2026-11-14T07:19:34+00:00",
-      "category": "Release",
-      "publisher": "SIDE-LINE",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1JZWFpLUFxU2tWanpsVFlIakVWbWQtV21obDlDa2xZcWdCTWVXLXpRYnNhM3NzOEJxNWZkUTQwVW8yd3RSSUhZbWlUYWt4ZUk0ckE4WjVrdWpRcjJRRGpLTkE3bHJ2Ymx6X0ww?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "126ac67cf0e0866c31e9",
-      "artist": "Buzz Kull",
-      "artist_slug": "buzz-kull",
-      "title": "Buzz Kull release video for ‘In the Cut’ ahead of North American tour - SIDE-LINE",
-      "summary": "Buzz Kull release video for ‘In the Cut’ ahead of North American tour    SIDE-LINE",
-      "date": "2026-11-13T08:58:52+00:00",
-      "category": "Video",
-      "publisher": "SIDE-LINE",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1kQmZlRW5nVEF5Z1hlb0gxTUY2dGpjQUl3eVFhOGVBRWFMVDA4WEQ2SXVmaC15LTIzNGZYZkwtYzVFS1FkRzZUN3lvSXRsaDZnS2hLVWFJLTlZSHJSYk1pX2laZw?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
@@ -93,19 +67,6 @@
       "category": "Release",
       "publisher": "Flaunt Magazine",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1hOGxnVlB2a21wUjR1Ym9qbnptV1Jrby1XTDNHV0FHbUE2ZmFHNV92UjlMVGN2VWg0Y085Y0hyWXR6aDVBOV92X242UjhYVjJucy02MkxjazQ?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "0c5ca6e412deb0b86a23",
-      "artist": "The Memory Of Snow",
-      "artist_slug": "the-memory-of-snow",
-      "title": "The Memory Of Snow release ‘The Dark Christmas EP’ on Meridian Noir Records - Side-Line",
-      "summary": "The Memory Of Snow release ‘The Dark Christmas EP’ on Meridian Noir Records    Side-Line",
-      "date": "2026-10-26T07:00:00+00:00",
-      "category": "Release",
-      "publisher": "Side-Line",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE53a0FISW01eWk1a091RUNVZ2trT24yTGRFaUZwZ29LTlhDNXhvN21PT1RaRXozUVRxWDNYLTNab0hscTA3RXV3MjlRLVBSbGFWOWhFZTZfcDVlMkg2VE1Hb0FZZTNIX1VEa1F2UDlqUFk?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
@@ -184,19 +145,6 @@
       "category": "News",
       "publisher": "The Journal of Music in Ireland",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE95Q0NjcFgyNlNJTy11VjlIcU1odDBjT1NISUJxcnh5eGRybi1kdmNhaWgzeXRKOVJVNDQxM3M0d21JZFFUQkF0RlBSMGxhWGdxNmJUaVZ0bTRCSFJZbjZmZGY0OGFOTXdvbUZLZTJ1amw2Y3YteTdQbmZMSHI?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "b5f28f7d64b019873920",
-      "artist": "Vioflesh",
-      "artist_slug": "vioflesh",
-      "title": "Vioflesh 'Melancolia' – album review - SIDE-LINE",
-      "summary": "Vioflesh 'Melancolia' – album review    SIDE-LINE",
-      "date": "2026-10-11T07:00:00+00:00",
-      "category": "Release",
-      "publisher": "SIDE-LINE",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9qZFNDdkxaakxqRHJzMFh1cjVxaHpfOXM2VjdKdlR0UWdjc05VNkdCS1lheUp6aGVpMnlxc2xMeS1aeDBqTFFvUVZ1UFRwUVN0UkRXZWwzWmpiMjhsQU1fNkRuZw?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
