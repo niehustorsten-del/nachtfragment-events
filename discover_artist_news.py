@@ -15,7 +15,7 @@ UA = "Mozilla/5.0 (compatible; Nachtfragment-NewsBot/1.0; +https://nachtfragment
 MAX_ARTISTS = max(1, int(os.getenv("ARTIST_NEWS_MAX_ARTISTS", "65")))
 MAX_PER_ARTIST = 12
 DAYS = 45
-MUSIC_WORDS = re.compile(r"\b(music|musician|band|artist|singer|album|ep|single|track|song|release|released|premiere|video|tour|festival|concert|interview|darkwave|gothic|post.?punk|industrial|ebm|synth|wave|record|label|remix|lineup|line-up|auftritt|konzert|veröffentlich|interview|musikvideo|tournee)\b", re.I)
+MUSIC_WORDS = re.compile(r"\b(music|musician|band|singer|album|ep|lp|new single|single [‘“'"]|song|track|release|released|premiere|music video|tour|festival|concert|gig|darkwave|gothic|post.?punk|industrial|ebm|synth|coldwave|new wave|record label|remix|lineup|line-up|auftritt|konzert|veröffentlich|musikvideo|tournee|dark-pop)\b", re.I)
 NOISE = re.compile(r"\b(weather|stock market|share price|football|soccer|basketball|cricket|politician|election|obituary|tribute act|cover band|customs seized|tax authority)\b", re.I)
 
 def load_json(path, default):
@@ -115,7 +115,10 @@ def main():
                 summary=html.unescape(re.sub(r"<[^>]+>"," ",item["summary"])).strip()
                 full=title+" "+summary
                 if not title or not item["url"] or not contains_artist(name,full): continue
-                if not MUSIC_WORDS.search(full) or NOISE.search(full): continue
+                if not MUSIC_WORDS.search(title) or NOISE.search(title): continue
+                title_fold=title.casefold()
+                if "korine fujiwara" in title_fold or "free rein" in title_fold or "d’arcy james" in title_fold or "d'arcy james" in title_fold or "d’arcy street" in title_fold or "d'arcy street" in title_fold or "d’arcy carden" in title_fold or "d'arcy carden" in title_fold: continue
+                if name.casefold()=="customs" and not re.search(r"\b(band|album|ep|new single|song|track|tour|festival|concert|gig|darkwave|gothic|post.?punk|industrial|ebm|synth|coldwave|record label|remix)\b",title,re.I): continue
                 published=parse_date(item["published"])
                 if not published: continue
                 try: dt=datetime.fromisoformat(published)
