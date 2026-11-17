@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-17T17:52:46+00:00",
+  "updated_at": "2026-11-17T17:54:48+00:00",
   "source": "Nachtfragment published concerts.json + manually approved artist-news.json",
-  "artist_count": 59,
+  "artist_count": 60,
   "event_count": 7,
   "news_count": 0,
   "artists": {
@@ -113,6 +113,12 @@
       "events": [],
       "news": []
     },
+    "ghostbells": {
+      "name": "ghostbells",
+      "url": "https://nachtfragment.de/index.php/artists/ghostbells",
+      "events": [],
+      "news": []
+    },
     "harsh-symmetry": {
       "name": "Harsh Symmetry",
       "url": "https://nachtfragment.de/index.php/artists/harsh-symmetry",
@@ -216,7 +222,7 @@
       "news": []
     },
     "ist-ist": {
-      "name": "IST",
+      "name": "IST IST",
       "url": "https://nachtfragment.de/index.php/artists/ist-ist",
       "events": [],
       "news": []
@@ -294,7 +300,7 @@
       "news": []
     },
     "nctrl-music": {
-      "name": "NCTRL Music N/CTRL Playlist",
+      "name": "N/CTRL",
       "url": "https://nachtfragment.de/index.php/artists/nctrl-music",
       "events": [],
       "news": []
