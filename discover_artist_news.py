@@ -15,7 +15,7 @@ UA = "Mozilla/5.0 (compatible; Nachtfragment-NewsBot/1.0; +https://nachtfragment
 MAX_ARTISTS = max(1, int(os.getenv("ARTIST_NEWS_MAX_ARTISTS", "65")))
 MAX_PER_ARTIST = 12
 DAYS = 45
-MUSIC_WORDS = re.compile(r"\b(music|musician|band|singer|album|ep|lp|new single|single [‘“'"]|song|track|release|released|premiere|music video|tour|festival|concert|gig|darkwave|gothic|post.?punk|industrial|ebm|synth|coldwave|new wave|record label|remix|lineup|line-up|auftritt|konzert|veröffentlich|musikvideo|tournee|dark-pop)\b", re.I)
+MUSIC_WORDS = re.compile(r"\b(music|musician|band|singer|album|ep|lp|new single|single [‘“']|song|track|release|released|premiere|music video|tour|festival|concert|gig|darkwave|gothic|post.?punk|industrial|ebm|synth|coldwave|new wave|record label|remix|lineup|line-up|auftritt|konzert|veröffentlich|musikvideo|tournee|dark-pop)\b", re.I)
 NOISE = re.compile(r"\b(weather|stock market|share price|football|soccer|basketball|cricket|politician|election|obituary|tribute act|cover band|customs seized|tax authority)\b", re.I)
 
 def load_json(path, default):
