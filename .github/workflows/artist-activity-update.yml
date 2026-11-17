@@ -1,6 +1,12 @@
 name: Nachtfragment Artist Activity Feed
 
 on:
+  push:
+    paths:
+      - "discover_artist_news.py"
+      - "build_artist_activity.py"
+      - ".github/workflows/artist-activity-update.yml"
+      - "data/artists.json"
   schedule:
     - cron: "45 6 * * 3,0"
   workflow_dispatch:
@@ -20,7 +26,7 @@ jobs:
       - name: Repository auschecken
         uses: actions/checkout@v4
         with:
-          ref: \${{ github.ref_name }}
+          ref: main
       - name: Python einrichten
         uses: actions/setup-python@v5
         with:
