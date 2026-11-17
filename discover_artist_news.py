@@ -105,6 +105,7 @@ def main():
             half=len(words)//2
             if [w.casefold() for w in words[:half]]==[w.casefold() for w in words[half:]]: name=" ".join(words[:half])
         if match.group(1).lower()=="nctrl-music": name="N/CTRL"
+        if match.group(1).lower()=="ist-ist": name="IST IST"
         if re.search(r"newcomer|linkliste|weblinks|rezension|review|top\s*50|verzeichnis",name,re.I): continue
         valid.append((name,match.group(1).lower()))
     for index,(name,slug) in enumerate(valid[:MAX_ARTISTS],1):
