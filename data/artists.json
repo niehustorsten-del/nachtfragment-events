@@ -1,11 +1,19 @@
 {
-  "updated_at": "2026-10-18T09:52:03.759745+00:00",
-  "source": "https://nachtfragment.de",
-  "count": 65,
+  "updated_at": "2026-11-18T23:39:33.212373+00:00",
+  "source": "Live crawl of Nachtfragment public sitemap and artist pages",
+  "count": 131,
   "artists": [
     {
       "name": "2DCAT",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/2dcat"
+    },
+    {
+      "name": "Adam Tristar",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/adam-tristar"
+    },
+    {
+      "name": "Agent Side Grinder",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/agent-side-grinder"
     },
     {
       "name": "Aktion : Fiasko",
@@ -16,16 +24,60 @@
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/anja-huwe"
     },
     {
+      "name": "Archura",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/archura"
+    },
+    {
+      "name": "Athamay",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/athamay"
+    },
+    {
+      "name": "Ayria",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/ayria"
+    },
+    {
+      "name": "Black Doldrums",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/black-doldrums"
+    },
+    {
       "name": "Bleib Modern",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/bleib-modern"
+    },
+    {
+      "name": "Blind Delon",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/blind-delon"
     },
     {
       "name": "Blue Forge",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/blue-forge"
     },
     {
+      "name": "Boy Deluxe",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/boy-deluxe"
+    },
+    {
+      "name": "Brigade Enzephalon",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/brigade-enzephalon"
+    },
+    {
+      "name": "Brittany Bindrim",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/brittany-bindrim"
+    },
+    {
       "name": "Buzz Kull",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/buzz-kull"
+    },
+    {
+      "name": "CALAVERX",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/calaverx"
+    },
+    {
+      "name": "Crying Vessel",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/crying-vessel"
+    },
+    {
+      "name": "Cult Noir",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/cult-noir"
     },
     {
       "name": "Customs",
@@ -36,8 +88,20 @@
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/darcy"
     },
     {
+      "name": "Dance My Darling",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/dance-my-darling"
+    },
+    {
+      "name": "Dancing Plague",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/dancing-plague"
+    },
+    {
       "name": "Dark Minimal Project",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/dark-minimal-project"
+    },
+    {
+      "name": "Darkways",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/darkways"
     },
     {
       "name": "Das Kelzer",
@@ -52,24 +116,40 @@
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/deep-imagination"
     },
     {
+      "name": "Denuit",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/denuit"
+    },
+    {
       "name": "Destroy Me Again",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/destroy-me-again"
     },
     {
-      "name": "Deus Ex Lumina Deus Ex Lumina",
+      "name": "Deus Ex Lumina",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/deus-ex-lumina"
     },
     {
-      "name": "Deux Ex Lumina Deux Ex Lumina",
+      "name": "Deux Ex Lumina",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/deux-ex-lumina"
+    },
+    {
+      "name": "Devil - M",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/devil-m"
+    },
+    {
+      "name": "Diavol Strâin",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/diavol-strain"
+    },
+    {
+      "name": "DIGITAL ENERGY",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/digital-energy"
     },
     {
       "name": "Drab Majesty",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/drab-majesty"
     },
     {
-      "name": "EBM Newcomer EBM Newcomer EBM Newcomer 2026 – Linkliste",
-      "nachtfragment_url": "https://nachtfragment.de/index.php/bands/ebm-newcomer"
+      "name": "Ductape",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/ductape"
     },
     {
       "name": "Emmon",
@@ -80,12 +160,40 @@
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/euroshima"
     },
     {
-      "name": "ghostbells ghostbells – Zwischen Darkwave, EBM und moderner Melancholie",
+      "name": "Excubitors",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/excubitors"
+    },
+    {
+      "name": "Frontal Boundary",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/frontal-boundary"
+    },
+    {
+      "name": "Geometric Vision",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/geometric-vision"
+    },
+    {
+      "name": "Ghost Cop",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/ghost-cop"
+    },
+    {
+      "name": "ghostbells",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/ghostbells"
+    },
+    {
+      "name": "Ground Nero",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/ground-nero"
+    },
+    {
+      "name": "Gürel",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/guerel"
     },
     {
       "name": "Harsh Symmetry",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/harsh-symmetry"
+    },
+    {
+      "name": "Haruka",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/haruka"
     },
     {
       "name": "Hinfort",
@@ -96,7 +204,15 @@
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/horror-vacui"
     },
     {
-      "name": "In Mitra Medusa Inri In Mitra Medusa Inri",
+      "name": "House of Harm",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/house-of-harm"
+    },
+    {
+      "name": "Iamnoone",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/iamnoone"
+    },
+    {
+      "name": "In Mitra Medusa Inri",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/in-mitra-medusa-inri"
     },
     {
@@ -104,20 +220,72 @@
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/ist-ist"
     },
     {
+      "name": "IżoL",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/izol"
+    },
+    {
+      "name": "J'ean-Luc Loret",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/jean-luc-loret"
+    },
+    {
+      "name": "J-LMusic",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/j-lmusic"
+    },
+    {
       "name": "Jahrund",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/jahrund"
+    },
+    {
+      "name": "Julia Holter",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/julia-holter"
+    },
+    {
+      "name": "Julien-K",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/julien-k"
+    },
+    {
+      "name": "Kiss of the Whip",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/kiss-of-the-whip"
     },
     {
       "name": "Kontravoid",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/kontravoid"
     },
     {
+      "name": "Kopetti",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/kopetti"
+    },
+    {
       "name": "Korine",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/korine"
     },
     {
+      "name": "Kurs Valüt",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/kurs-valuet"
+    },
+    {
+      "name": "Kælan Mikla",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/kaelan-mikla"
+    },
+    {
+      "name": "La Rissa uk",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/la-rissa-uk"
+    },
+    {
       "name": "Lana Del Rabies",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/lana-del-rabies"
+    },
+    {
+      "name": "Last Grasp",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/last-grasp"
+    },
+    {
+      "name": "LOWSUNDAY",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/lowsunday"
+    },
+    {
+      "name": "LÖNA",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/loena"
     },
     {
       "name": "MARTINÉ",
@@ -126,6 +294,10 @@
     {
       "name": "Mercy Girl",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/mercy-girl"
+    },
+    {
+      "name": "Midnight Poetry",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/midnight-poetry"
     },
     {
       "name": "Mila nervt Berlin",
@@ -144,24 +316,32 @@
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/mitra-mitra"
     },
     {
+      "name": "Modele",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/modele"
+    },
+    {
       "name": "Mona Mur",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/mona-mur"
+    },
+    {
+      "name": "Moons In Retrograde",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/moons-in-retrograde"
+    },
+    {
+      "name": "Mouth Ulcers",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/mouth-ulcers"
     },
     {
       "name": "Musikprojekt 1G4SH0",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/musikprojekt-1g4sh0"
     },
     {
-      "name": "NCTRL Music N/CTRL Playlist",
+      "name": "NCTRL Music",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/nctrl-music"
     },
     {
       "name": "Neila Invo",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/neila-invo"
-    },
-    {
-      "name": "Newcomer 2016 - 2026 Newcomers 2016–2026",
-      "nachtfragment_url": "https://nachtfragment.de/index.php/bands/newcomer-2016-2026"
     },
     {
       "name": "Ocinn",
@@ -172,8 +352,20 @@
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/paradox-obscur"
     },
     {
+      "name": "Pentastone",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/pentastone"
+    },
+    {
       "name": "Pixel Grip",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/pixel-grip"
+    },
+    {
+      "name": "Potochkine",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/potochkine"
+    },
+    {
+      "name": "R. Missing",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/r-missing"
     },
     {
       "name": "Raskolnikov",
@@ -184,8 +376,16 @@
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/rein"
     },
     {
-      "name": "Rezension - In Mitra Medusa Inri - estrangement",
-      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/in-mitra-medusa-inri/rezension-in-mitra-medusa-inri-estrangement"
+      "name": "Sacred Skin",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sacred-skin"
+    },
+    {
+      "name": "Scarrow",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/scarrow"
+    },
+    {
+      "name": "Scheitan",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/scheitan"
     },
     {
       "name": "Schwarzes Fragment",
@@ -200,11 +400,43 @@
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/seraphya"
     },
     {
+      "name": "Sexual Purity",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sexual-purity"
+    },
+    {
+      "name": "SIIE",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/siie"
+    },
+    {
+      "name": "SINE",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sine"
+    },
+    {
       "name": "Sinister Seduction",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sinister-seduction"
     },
     {
-      "name": "Sotiria Sotiria – Porträt",
+      "name": "Skulptura",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/skulptura"
+    },
+    {
+      "name": "Sleek Teeth",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sleek-teeth"
+    },
+    {
+      "name": "Sleeping Witch & Saturn",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sleeping-witch-saturn"
+    },
+    {
+      "name": "Soft Vein",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/soft-vein"
+    },
+    {
+      "name": "SORT - the band",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sort-the-band"
+    },
+    {
+      "name": "Sotiria",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sotiria"
     },
     {
@@ -216,8 +448,16 @@
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/synapsyche"
     },
     {
+      "name": "T!ANA",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/t-ana"
+    },
+    {
       "name": "Thalie Némésis",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/thalie-nemesis"
+    },
+    {
+      "name": "The Drug Apostles",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/the-drug-apostles"
     },
     {
       "name": "The Electrozixx",
@@ -232,8 +472,16 @@
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/then-comes-silence"
     },
     {
-      "name": "Top 50 Newcomer ab 2016 Top 50 Newcomer 2016–2026 / 50 neue Stimmen aus der Dunkelheit",
-      "nachtfragment_url": "https://nachtfragment.de/index.php/bands/top-50-newcomer-ab-2016"
+      "name": "They Die",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/they-die"
+    },
+    {
+      "name": "Total Resistance",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/total-resistance"
+    },
+    {
+      "name": "TRAITRS",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/traitrs"
     },
     {
       "name": "Twin Tribes",
@@ -244,8 +492,20 @@
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/unverkalt"
     },
     {
+      "name": "VeRa",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/vera"
+    },
+    {
+      "name": "Videotraum",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/videotraum"
+    },
+    {
       "name": "Vioflesh",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/vioflesh"
+    },
+    {
+      "name": "VIOLENT VICKIE",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/violent-vickie"
     },
     {
       "name": "Vitrais Mortos",
@@ -256,8 +516,12 @@
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/vox-umbra"
     },
     {
-      "name": "Weblinks",
-      "nachtfragment_url": "https://nachtfragment.de/index.php/bands/weblinks"
+      "name": "Years of Denial",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/years-of-denial"
+    },
+    {
+      "name": "Zabriskie",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/zabriskie"
     },
     {
       "name": "Zanias",

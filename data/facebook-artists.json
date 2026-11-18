@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-18T23:31:30.665607+00:00",
-  "source": "Public Nachtfragment artist pages and publicly indexed search results",
-  "count": 59,
-  "notice": "Matches require manual verification. No login, private content access, or automated Facebook follow actions.",
+  "updated_at": "2026-11-18T23:43:37.794701+00:00",
+  "source": "Live Nachtfragment artist crawl, official page links and publicly indexed search results",
+  "count": 131,
+  "notice": "Facebook matches are suggestions requiring manual verification. Following is always manual; no Facebook login or automated follow actions.",
   "artists": [
     {
       "name": "2DCAT",
@@ -12,6 +12,40 @@
       "candidates": [
         {
           "url": "https://www.facebook.com/the2dcat",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Adam Tristar",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/adam-tristar",
+      "facebook_url": "https://www.facebook.com/AdamTristar",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/AdamTristar",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Agent Side Grinder",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/agent-side-grinder",
+      "facebook_url": "https://www.facebook.com/agentsidegrinder",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/agentsidegrinder",
           "title": "Auf der Nachtfragment-Artistseite verlinkt",
           "snippet": "",
           "score": 5,
@@ -63,6 +97,66 @@
       "notes": ""
     },
     {
+      "name": "Archura",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/archura",
+      "facebook_url": "https://www.facebook.com/archuramusic",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/archuramusic",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Athamay",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/athamay",
+      "facebook_url": "https://www.facebook.com/athamay666",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/athamay666",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Ayria",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/ayria",
+      "facebook_url": "https://www.facebook.com/Ayria.Official",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/Ayria.Official",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Black Doldrums",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/black-doldrums",
+      "facebook_url": "",
+      "match_status": "not_found",
+      "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
       "name": "Bleib Modern",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/bleib-modern",
       "facebook_url": "https://www.facebook.com/bleibmodern",
@@ -70,6 +164,23 @@
       "candidates": [
         {
           "url": "https://www.facebook.com/bleibmodern",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Blind Delon",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/blind-delon",
+      "facebook_url": "https://www.facebook.com/blinddelon",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/blinddelon",
           "title": "Auf der Nachtfragment-Artistseite verlinkt",
           "snippet": "",
           "score": 5,
@@ -97,45 +208,111 @@
       "notes": ""
     },
     {
-      "name": "Buzz Kull",
-      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/buzz-kull",
-      "facebook_url": "https://www.facebook.com/buzzkull",
-      "match_status": "public_search_candidate",
+      "name": "Boy Deluxe",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/boy-deluxe",
+      "facebook_url": "https://www.facebook.com/boydeluxemusic",
+      "match_status": "found_on_artist_page",
       "candidates": [
         {
-          "url": "https://www.facebook.com/buzzkull",
-          "title": "Buzz Kull - Facebook",
-          "snippet": "MONDAY 9.28 Buzz Kull & Kontravoid bring their dark electronic mastery to Minneapolis for one powerful co- headline night. Kontravoid's decade-spanning catalog of EBM, goth, and electro anthems will command the dancefloor alongside Buzz Kull 's signature industrial energy. With DJ Gwiingwans setting the stage, this is a night for the dark music fai",
-          "score": 3,
-          "source": "public_search"
-        },
+          "url": "https://www.facebook.com/boydeluxemusic",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Brigade Enzephalon",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/brigade-enzephalon",
+      "facebook_url": "https://www.facebook.com/BrigadeEnzephalon",
+      "match_status": "found_on_artist_page",
+      "candidates": [
         {
-          "url": "https://www.facebook.com/buzzkull/music",
-          "title": "Buzz Kull - Facebook",
-          "snippet": "Music More Artists Boy Harsher Rue Oberkampf Crush of Souls COLD / HEAT",
-          "score": 3,
-          "source": "public_search"
-        },
+          "url": "https://www.facebook.com/BrigadeEnzephalon",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Brittany Bindrim",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/brittany-bindrim",
+      "facebook_url": "https://www.facebook.com/bindrim",
+      "match_status": "found_on_artist_page",
+      "candidates": [
         {
-          "url": "https://www.facebook.com/buzzkull/posts/merch-store-now-online-or-for-us-customerssome-items-are-available-at-the-heartw/1734279650980957",
-          "title": "Buzz Kull - MERCH STORE NOW ONLINE... | Facebook",
-          "snippet": "I would like THIS particular tee. But where do we order for CANADA? Hm.",
-          "score": 2,
-          "source": "public_search"
-        },
+          "url": "https://www.facebook.com/bindrim",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Buzz Kull",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/buzz-kull",
+      "facebook_url": "",
+      "match_status": "not_found",
+      "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "CALAVERX",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/calaverx",
+      "facebook_url": "https://www.facebook.com/calaverx",
+      "match_status": "found_on_artist_page",
+      "candidates": [
         {
-          "url": "https://www.facebook.com/buzzkull/posts/954560582286205",
-          "title": "Buzz Kull - NEW TSHIRTS RECENTLY ADDED TO THE MERCH STORE ... - Facebook",
-          "snippet": "I will also be playing some music after the show at @wavroom_ . Anyone got any recommendations on DJ headphones, lmk.. I left mine back in Australia 🫡 + Denver at @killyouclub with Rosa, @blone_noble and Black Curse +5 Daniel Colebank and 47 others 󰍸",
-          "score": 3,
-          "source": "public_search"
-        },
+          "url": "https://www.facebook.com/calaverx",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Crying Vessel",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/crying-vessel",
+      "facebook_url": "https://www.facebook.com/cryingvessel",
+      "match_status": "found_on_artist_page",
+      "candidates": [
         {
-          "url": "https://www.facebook.com/radioentertheshadows/posts/2165330080281734",
-          "title": "New album released by Buzz Kull... - Rádio Enter The Shadows | Facebook",
-          "snippet": "New album released by Buzz Kull called Good Spell (Max Berry Audio Accompaniment) - EP. Check it out on EnterTheShadows Radio link below....",
-          "score": 2,
-          "source": "public_search"
+          "url": "https://www.facebook.com/cryingvessel",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Cult Noir",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/cult-noir",
+      "facebook_url": "https://www.facebook.com/cult.noir",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/cult.noir",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
         }
       ],
       "follow_status": "not_checked",
@@ -176,11 +353,62 @@
       "notes": ""
     },
     {
+      "name": "Dance My Darling",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/dance-my-darling",
+      "facebook_url": "https://www.facebook.com/dancemydarling",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/dancemydarling",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Dancing Plague",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/dancing-plague",
+      "facebook_url": "https://www.facebook.com/dancingplaguemusic",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/dancingplaguemusic",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
       "name": "Dark Minimal Project",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/dark-minimal-project",
       "facebook_url": "",
       "match_status": "not_found",
       "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Darkways",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/darkways",
+      "facebook_url": "https://www.facebook.com/darkwaysband",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/darkwaysband",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
       "follow_status": "not_checked",
       "notes": ""
     },
@@ -236,6 +464,23 @@
       "notes": ""
     },
     {
+      "name": "Denuit",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/denuit",
+      "facebook_url": "https://www.facebook.com/Denuit.band",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/Denuit.band",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
       "name": "Destroy Me Again",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/destroy-me-again",
       "facebook_url": "https://www.facebook.com/destroymeagain",
@@ -253,7 +498,7 @@
       "notes": ""
     },
     {
-      "name": "Deus Ex Lumina Deus Ex Lumina",
+      "name": "Deus Ex Lumina",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/deus-ex-lumina",
       "facebook_url": "",
       "match_status": "not_found",
@@ -262,7 +507,7 @@
       "notes": ""
     },
     {
-      "name": "Deux Ex Lumina Deux Ex Lumina",
+      "name": "Deux Ex Lumina",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/deux-ex-lumina",
       "facebook_url": "",
       "match_status": "not_found",
@@ -271,8 +516,68 @@
       "notes": ""
     },
     {
+      "name": "Devil - M",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/devil-m",
+      "facebook_url": "https://www.facebook.com/devilmband",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/devilmband",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Diavol Strâin",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/diavol-strain",
+      "facebook_url": "https://www.facebook.com/diavolstrain",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/diavolstrain",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "DIGITAL ENERGY",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/digital-energy",
+      "facebook_url": "https://www.facebook.com/digitalenergymusic",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/digitalenergymusic",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
       "name": "Drab Majesty",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/drab-majesty",
+      "facebook_url": "",
+      "match_status": "not_found",
+      "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Ductape",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/ductape",
       "facebook_url": "",
       "match_status": "not_found",
       "candidates": [],
@@ -314,8 +619,102 @@
       "notes": ""
     },
     {
-      "name": "ghostbells ghostbells – Zwischen Darkwave, EBM und moderner Melancholie",
+      "name": "Excubitors",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/excubitors",
+      "facebook_url": "https://www.facebook.com/excubitors",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/excubitors",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Frontal Boundary",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/frontal-boundary",
+      "facebook_url": "https://www.facebook.com/FrontalBoundaryOfficial",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/FrontalBoundaryOfficial",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Geometric Vision",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/geometric-vision",
+      "facebook_url": "https://www.facebook.com/GeometricVision",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/GeometricVision",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Ghost Cop",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/ghost-cop",
+      "facebook_url": "https://www.facebook.com/ghostc0p",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/ghostc0p",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "ghostbells",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/ghostbells",
+      "facebook_url": "",
+      "match_status": "not_found",
+      "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Ground Nero",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/ground-nero",
+      "facebook_url": "https://www.facebook.com/Groundnero",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/Groundnero",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Gürel",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/guerel",
       "facebook_url": "",
       "match_status": "not_found",
       "candidates": [],
@@ -328,6 +727,23 @@
       "facebook_url": "",
       "match_status": "not_found",
       "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Haruka",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/haruka",
+      "facebook_url": "https://www.facebook.com/haruka.heartwave",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/haruka.heartwave",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
       "follow_status": "not_checked",
       "notes": ""
     },
@@ -358,7 +774,33 @@
       "notes": ""
     },
     {
-      "name": "In Mitra Medusa Inri In Mitra Medusa Inri",
+      "name": "House of Harm",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/house-of-harm",
+      "facebook_url": "",
+      "match_status": "not_found",
+      "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Iamnoone",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/iamnoone",
+      "facebook_url": "https://www.facebook.com/iamn8ne",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/iamn8ne",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "In Mitra Medusa Inri",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/in-mitra-medusa-inri",
       "facebook_url": "",
       "match_status": "not_found",
@@ -384,6 +826,41 @@
       "notes": ""
     },
     {
+      "name": "IżoL",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/izol",
+      "facebook_url": "https://www.facebook.com/izol.official",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/izol.official",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "J'ean-Luc Loret",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/jean-luc-loret",
+      "facebook_url": "",
+      "match_status": "not_found",
+      "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "J-LMusic",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/j-lmusic",
+      "facebook_url": "",
+      "match_status": "not_found",
+      "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
       "name": "Jahrund",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/jahrund",
       "facebook_url": "https://www.facebook.com/jahrund",
@@ -391,6 +868,57 @@
       "candidates": [
         {
           "url": "https://www.facebook.com/jahrund",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Julia Holter",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/julia-holter",
+      "facebook_url": "https://www.facebook.com/juliashammasholter",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/juliashammasholter",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Julien-K",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/julien-k",
+      "facebook_url": "https://www.facebook.com/julienk",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/julienk",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Kiss of the Whip",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/kiss-of-the-whip",
+      "facebook_url": "https://www.facebook.com/KISSOFTHEWHIP",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/KISSOFTHEWHIP",
           "title": "Auf der Nachtfragment-Artistseite verlinkt",
           "snippet": "",
           "score": 5,
@@ -418,6 +946,15 @@
       "notes": ""
     },
     {
+      "name": "Kopetti",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/kopetti",
+      "facebook_url": "",
+      "match_status": "not_found",
+      "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
       "name": "Korine",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/korine",
       "facebook_url": "https://www.facebook.com/korineband",
@@ -435,6 +972,57 @@
       "notes": ""
     },
     {
+      "name": "Kurs Valüt",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/kurs-valuet",
+      "facebook_url": "https://www.facebook.com/kursvalutband",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/kursvalutband",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Kælan Mikla",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/kaelan-mikla",
+      "facebook_url": "https://www.facebook.com/Kaelanmikla",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/Kaelanmikla",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "La Rissa uk",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/la-rissa-uk",
+      "facebook_url": "https://www.facebook.com/larissamusicuk",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/larissamusicuk",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
       "name": "Lana Del Rabies",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/lana-del-rabies",
       "facebook_url": "https://www.facebook.com/LanaDelRabiesMusic",
@@ -442,6 +1030,41 @@
       "candidates": [
         {
           "url": "https://www.facebook.com/LanaDelRabiesMusic",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Last Grasp",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/last-grasp",
+      "facebook_url": "",
+      "match_status": "not_found",
+      "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "LOWSUNDAY",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/lowsunday",
+      "facebook_url": "",
+      "match_status": "not_found",
+      "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "LÖNA",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/loena",
+      "facebook_url": "https://www.facebook.com/lonamusiclona",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/lonamusiclona",
           "title": "Auf der Nachtfragment-Artistseite verlinkt",
           "snippet": "",
           "score": 5,
@@ -476,6 +1099,23 @@
       "candidates": [
         {
           "url": "https://www.facebook.com/mercygirlband",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Midnight Poetry",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/midnight-poetry",
+      "facebook_url": "https://www.facebook.com/midnightpoetrygr",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/midnightpoetrygr",
           "title": "Auf der Nachtfragment-Artistseite verlinkt",
           "snippet": "",
           "score": 5,
@@ -538,6 +1178,15 @@
       "notes": ""
     },
     {
+      "name": "Modele",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/modele",
+      "facebook_url": "",
+      "match_status": "not_found",
+      "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
       "name": "Mona Mur",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/mona-mur",
       "facebook_url": "https://www.facebook.com/monamurprivate",
@@ -555,11 +1204,61 @@
       "notes": ""
     },
     {
+      "name": "Moons In Retrograde",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/moons-in-retrograde",
+      "facebook_url": "https://www.facebook.com/moonsinretrograde",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/moonsinretrograde",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Mouth Ulcers",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/mouth-ulcers",
+      "facebook_url": "",
+      "match_status": "not_found",
+      "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
       "name": "Musikprojekt 1G4SH0",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/musikprojekt-1g4sh0",
       "facebook_url": "",
       "match_status": "not_found",
       "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "NCTRL Music",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/nctrl-music",
+      "facebook_url": "https://www.facebook.com/l.php",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/l.php",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        },
+        {
+          "url": "https://www.facebook.com/n.ctrl.music",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
       "follow_status": "not_checked",
       "notes": ""
     },
@@ -599,11 +1298,62 @@
       "notes": ""
     },
     {
+      "name": "Pentastone",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/pentastone",
+      "facebook_url": "https://www.facebook.com/media/set",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/media/set",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
       "name": "Pixel Grip",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/pixel-grip",
       "facebook_url": "",
       "match_status": "not_found",
       "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Potochkine",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/potochkine",
+      "facebook_url": "https://www.facebook.com/potochkine",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/potochkine",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "R. Missing",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/r-missing",
+      "facebook_url": "https://www.facebook.com/rmissingmusic",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/rmissingmusic",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
       "follow_status": "not_checked",
       "notes": ""
     },
@@ -632,6 +1382,57 @@
       "candidates": [
         {
           "url": "https://www.facebook.com/reinofficialmusic",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Sacred Skin",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sacred-skin",
+      "facebook_url": "https://www.facebook.com/SacredSkinsound",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/SacredSkinsound",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Scarrow",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/scarrow",
+      "facebook_url": "https://www.facebook.com/lostforever000/about",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/lostforever000/about",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Scheitan",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/scheitan",
+      "facebook_url": "https://www.facebook.com/scheitanofficial",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/scheitanofficial",
           "title": "Auf der Nachtfragment-Artistseite verlinkt",
           "snippet": "",
           "score": 5,
@@ -685,6 +1486,57 @@
       "notes": ""
     },
     {
+      "name": "Sexual Purity",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sexual-purity",
+      "facebook_url": "https://www.facebook.com/sxlpurity",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/sxlpurity",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "SIIE",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/siie",
+      "facebook_url": "https://www.facebook.com/SIIEmusic",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/SIIEmusic",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "SINE",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sine",
+      "facebook_url": "https://www.facebook.com/SINEbandofficial",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/SINEbandofficial",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
       "name": "Sinister Seduction",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sinister-seduction",
       "facebook_url": "",
@@ -694,7 +1546,84 @@
       "notes": ""
     },
     {
-      "name": "Sotiria Sotiria – Porträt",
+      "name": "Skulptura",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/skulptura",
+      "facebook_url": "https://www.facebook.com/plugins/video.php",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/plugins/video.php",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Sleek Teeth",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sleek-teeth",
+      "facebook_url": "https://www.facebook.com/sleekteeth",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/sleekteeth",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Sleeping Witch & Saturn",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sleeping-witch-saturn",
+      "facebook_url": "https://www.facebook.com/sleepingwitchandsaturn",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/sleepingwitchandsaturn",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Soft Vein",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/soft-vein",
+      "facebook_url": "https://www.facebook.com/softveinmusic",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/softveinmusic",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "SORT - the band",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sort-the-band",
+      "facebook_url": "",
+      "match_status": "not_found",
+      "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Sotiria",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/sotiria",
       "facebook_url": "https://www.facebook.com/sotiriamusik",
       "match_status": "found_on_artist_page",
@@ -745,6 +1674,23 @@
       "notes": ""
     },
     {
+      "name": "T!ANA",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/t-ana",
+      "facebook_url": "https://www.facebook.com/backphotographie.de",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/backphotographie.de",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
       "name": "Thalie Némésis",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/thalie-nemesis",
       "facebook_url": "https://www.facebook.com/Thalie.darkmusic",
@@ -752,6 +1698,23 @@
       "candidates": [
         {
           "url": "https://www.facebook.com/Thalie.darkmusic",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "The Drug Apostles",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/the-drug-apostles",
+      "facebook_url": "https://www.facebook.com/theDrugApostles",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/theDrugApostles",
           "title": "Auf der Nachtfragment-Artistseite verlinkt",
           "snippet": "",
           "score": 5,
@@ -805,6 +1768,49 @@
       "notes": ""
     },
     {
+      "name": "They Die",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/they-die",
+      "facebook_url": "https://www.facebook.com/theydie",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/theydie",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Total Resistance",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/total-resistance",
+      "facebook_url": "",
+      "match_status": "not_found",
+      "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "TRAITRS",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/traitrs",
+      "facebook_url": "https://www.facebook.com/traitrs",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/traitrs",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
       "name": "Twin Tribes",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/twin-tribes",
       "facebook_url": "https://www.facebook.com/TwinTribes",
@@ -839,6 +1845,40 @@
       "notes": ""
     },
     {
+      "name": "VeRa",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/vera",
+      "facebook_url": "https://www.facebook.com/Veramusicuy",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/Veramusicuy",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Videotraum",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/videotraum",
+      "facebook_url": "https://www.facebook.com/Videotraum",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/Videotraum",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
       "name": "Vioflesh",
       "nachtfragment_url": "https://nachtfragment.de/index.php/artists/vioflesh",
       "facebook_url": "https://www.facebook.com/vioflesh",
@@ -846,6 +1886,23 @@
       "candidates": [
         {
           "url": "https://www.facebook.com/vioflesh",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "VIOLENT VICKIE",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/violent-vickie",
+      "facebook_url": "https://www.facebook.com/ViolentVickieMusic",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/ViolentVickieMusic",
           "title": "Auf der Nachtfragment-Artistseite verlinkt",
           "snippet": "",
           "score": 5,
@@ -878,6 +1935,40 @@
       "facebook_url": "",
       "match_status": "not_found",
       "candidates": [],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Years of Denial",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/years-of-denial",
+      "facebook_url": "https://www.facebook.com/yearsofdenial",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/yearsofdenial",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
+      "follow_status": "not_checked",
+      "notes": ""
+    },
+    {
+      "name": "Zabriskie",
+      "nachtfragment_url": "https://nachtfragment.de/index.php/artists/zabriskie",
+      "facebook_url": "https://www.facebook.com/Zabriskieband",
+      "match_status": "found_on_artist_page",
+      "candidates": [
+        {
+          "url": "https://www.facebook.com/Zabriskieband",
+          "title": "Auf der Nachtfragment-Artistseite verlinkt",
+          "snippet": "",
+          "score": 5,
+          "source": "nachtfragment"
+        }
+      ],
       "follow_status": "not_checked",
       "notes": ""
     },
