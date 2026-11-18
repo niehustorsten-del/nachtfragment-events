@@ -24,13 +24,13 @@ def clean(raw):
 
 def artist_page(item):
     name=str(item.get("name","")).strip(); url=str(item.get("nachtfragment_url",""))
-    return bool(name and not any(x in name.lower() for x in SKIP) and re.search(r"/index\\.php/artists/[^/?#]+$",url))
+    return bool(name and not any(x in name.lower() for x in SKIP) and re.search(r"/index\.php/artists/[^/?#]+$",url))
 
 def page_links(url):
     try:
         r=S.get(url,timeout=18); r.raise_for_status(); soup=BeautifulSoup(r.text,"html.parser"); out=[]
         raw=[a.get("href","") for a in soup.select("a[href]")]
-        raw += re.findall(r'https?://(?:www\\.)?(?:m\\.)?facebook\\.com/[^\\s"\\'<>]+',r.text,re.I)
+        raw += re.findall(r'https?://(?:www\.)?(?:m\.)?facebook\.com/[^\\s"\\'<>]+',r.text,re.I)
         for x in raw:
             u=clean(x.replace("&amp;","&"))
             if u and u not in out: out.append(u)
@@ -80,6 +80,6 @@ def main():
         time.sleep(float(os.getenv("FACEBOOK_QUERY_PAUSE","1.4")))
     result={"updated_at":datetime.now(timezone.utc).isoformat(),"source":"Public Nachtfragment artist pages and publicly indexed search results",
       "count":len(output),"notice":"Matches require manual verification. No login, private content access, or automated Facebook follow actions.","artists":output}
-    output_file.parent.mkdir(parents=True,exist_ok=True); output_file.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    output_file.parent.mkdir(parents=True,exist_ok=True); output_file.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("Fertig:",len(output),"Artists;",sum(bool(x["facebook_url"]) for x in output),"mit Facebook-Kandidat")
 if __name__=="__main__": main()
