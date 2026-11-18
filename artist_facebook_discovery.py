@@ -27,7 +27,7 @@ def canonical_artist_url(raw):
     try:
         u=urlparse(urljoin(BASE,raw))
         if u.netloc.lower().split(":")[0] not in ("nachtfragment.de","www.nachtfragment.de"): return ""
-        m=re.search(r"(/index\\.php/artists/[^/?#]+)",u.path,re.I)
+        m=re.search(r"(/index\.php/artists/[^/?#]+)",u.path,re.I)
         if not m: return ""
         path=m.group(1).rstrip("/")
         if any(x in path.rsplit("/",1)[-1].lower() for x in ("rezension","review","playlist","linkliste","newcomer","top-50","weblinks")): return ""
@@ -94,9 +94,9 @@ def page_data(url):
     if not title:
         og=soup.find("meta",property="og:title"); title=og.get("content","").strip() if og else ""
     if not title and soup.title: title=soup.title.get_text(" ",strip=True)
-    title=re.sub(r"\\s*[|–-]\\s*Nachtfragment.*$","",title,flags=re.I).strip()
+    title=re.sub(r"\s*[|–-]\s*Nachtfragment.*$","",title,flags=re.I).strip()
     raw=[a.get("href","") for a in soup.select("a[href]")]
-    raw += re.findall(r"""https?://(?:www\\.)?(?:m\\.)?(?:facebook\\.com|fb\\.com)/[^\\s"'<>]+""",r.text,re.I)
+    raw += re.findall(r"""https?://(?:www\.)?(?:m\.)?(?:facebook\.com|fb\.com)/[^\s"'<>]+""",r.text,re.I)
     links=[]
     for x in raw:
         u=clean_facebook(x.replace("&amp;","&"))
@@ -126,7 +126,7 @@ def public_search(name):
         print("Öffentliche Suche fehlgeschlagen:",name,str(e)[:160]); return []
 
 def valid_artist_url(url):
-    return bool(re.search(r"^https://nachtfragment\\.de/index\\.php/artists/[^/?#]+$",url))
+    return bool(re.search(r"^https://nachtfragment\.de/index\.php/artists/[^/?#]+$",url))
 
 def main():
     old_artists={}; old_fb={}
@@ -150,7 +150,7 @@ def main():
     artists=sorted({a["nachtfragment_url"]:a for a in entries}.values(),key=lambda x:x["name"].casefold())
     (ROOT/"data/artists.json").write_text(json.dumps({
         "updated_at":datetime.now(timezone.utc).isoformat(),"source":"Live crawl of Nachtfragment public sitemap and artist pages",
-        "count":len(artists),"artists":artists},ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+        "count":len(artists),"artists":artists},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("Artist-Stammliste aktualisiert:",len(artists))
     output=[]; pause=float(os.getenv("FACEBOOK_QUERY_PAUSE","1.0"))
     for i,a in enumerate(artists,1):
@@ -169,7 +169,7 @@ def main():
         "count":len(output),"notice":"Facebook matches are suggestions requiring manual verification. Following is always manual; no Facebook login or automated follow actions.",
         "artists":output}
     out=ROOT/"data/facebook-artists.json"; out.parent.mkdir(parents=True,exist_ok=True)
-    out.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    out.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("Fertig:",len(output),"Artists;",sum(bool(x["facebook_url"]) for x in output),"mit Facebook-Kandidat")
 
 if __name__=="__main__": main()
