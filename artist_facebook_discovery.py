@@ -30,7 +30,7 @@ def page_links(url):
     try:
         r=S.get(url,timeout=18); r.raise_for_status(); soup=BeautifulSoup(r.text,"html.parser"); out=[]
         raw=[a.get("href","") for a in soup.select("a[href]")]
-        raw += re.findall(r"https?://(?:www\.)?(?:m\.)?facebook\.com/[^\s"'<>]+",r.text,re.I)
+        raw += re.findall(r"""https?://(?:www\.)?(?:m\.)?facebook\.com/[^\s"'<>]+""",r.text,re.I)
         for x in raw:
             u=clean(x.replace("&amp;","&"))
             if u and u not in out: out.append(u)
