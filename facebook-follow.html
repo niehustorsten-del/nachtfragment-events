@@ -11,8 +11,8 @@ function safe(v){try{const u=new URL(v);return u.protocol==='https:'&&(/(^|\.)fa
 function safeNachtfragment(v){try{const u=new URL(v);return u.protocol==='https:'&&u.hostname.toLowerCase()==='nachtfragment.de'&&u.pathname.startsWith('/index.php/artists/')?u.href:''}catch{return''}}
 function state(a){return statuses[a.name]||'not_followed'}function el(tag,cls,txt){const n=document.createElement(tag);if(cls)n.className=cls;if(txt!=null)n.textContent=txt;return n}
 function save(name,value){statuses[name]=value;localStorage.setItem(KEY,JSON.stringify(statuses));render()}
-function norm(v){return String(v||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLocaleLowerCase('de').replace(/&amp;/g,'&').replace(/[^a-z0-9]+/g,'').trim()}
-function fbKey(v){const u=safe(v);if(!u)return'';const x=new URL(u);return x.pathname.toLowerCase().replace(/\\/$/,'')+(x.searchParams.get('id')?'?id='+x.searchParams.get('id'):'')}
+function norm(v){return String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('de').replace(/&amp;/g,'&').replace(/[^a-z0-9]+/g,'').trim()}
+function fbKey(v){const u=safe(v);if(!u)return'';const x=new URL(u);return x.pathname.toLowerCase().replace(/\/$/,'')+(x.searchParams.get('id')?'?id='+x.searchParams.get('id'):'')}
 function collectImportEntries(data){
  const out=[],seen=new Set();
  const add=(name,url)=>{name=String(name||'').trim();url=String(url||'').trim();if(!name&&!url)return;const k=norm(name)+'|'+fbKey(url);if(!seen.has(k)){seen.add(k);out.push({name,url})}};
@@ -25,8 +25,8 @@ async function importFollowList(){
  const file=$('followImport').files[0],box=$('importResult');if(!file){box.className='import-result error';box.textContent='Bitte wähle zuerst eine JSON- oder HTML-Datei aus deinem Facebook-Datenexport.';return}
  try{
   const raw=await file.text();let entries=[];
-  if(/\\.json$/i.test(file.name)){entries=collectImportEntries(JSON.parse(raw))}
-  else{const doc=new DOMParser().parseFromString(raw,'text/html');doc.querySelectorAll('a[href]').forEach(a=>{const href=a.getAttribute('href')||'';if(safe(href))entries.push({name:a.textContent.trim(),url:href})});if(!entries.length){const text=doc.body?.innerText||'';const urls=text.match(/https?:\\/\\/(?:www\\.)?(?:facebook\\.com|fb\\.com)\\/[^\\s"'<>]+/gi)||[];urls.forEach(url=>entries.push({name:'',url}))}}
+  if(/\.json$/i.test(file.name)){entries=collectImportEntries(JSON.parse(raw))}
+  else{const doc=new DOMParser().parseFromString(raw,'text/html');doc.querySelectorAll('a[href]').forEach(a=>{const href=a.getAttribute('href')||'';if(safe(href))entries.push({name:a.textContent.trim(),url:href})});if(!entries.length){const text=doc.body?.innerText||'';const urls=text.match(/https?:\/\/(?:www\.)?(?:facebook\.com|fb\.com)\/[^\s"'<>]+/gi)||[];urls.forEach(url=>entries.push({name:'',url}))}}
   if(!entries.length)throw new Error('In dieser Datei wurden keine Facebook-Seiten erkannt. Wähle bitte die Datei mit den gefolgten Seiten aus.');
   const byUrl=new Map(),byName=new Map();for(const e of entries){const u=fbKey(e.url);if(u)byUrl.set(u,e);const n=norm(e.name);if(n)byName.set(n,e)}
   let matched=0;const matchedNames=[];
