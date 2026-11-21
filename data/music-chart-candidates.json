@@ -1,21 +1,21 @@
 {
   "title": "Nachtfragment Music Charts – Recherchekandidaten",
-  "updated_at": "2026-11-21T07:32:21+00:00",
+  "updated_at": "2026-11-21T07:34:39+00:00",
   "approval_required": true,
   "automatic_publication": false,
-  "source_count": 16,
+  "source_count": 23,
   "sources_checked": [
     {
       "name": "Side-Line",
       "url": "https://www.side-line.com/",
       "article_links": 50,
-      "candidates": 12
+      "candidates": 9
     },
     {
       "name": "Post-Punk.com – New Releases",
       "url": "https://post-punk.com/category/new-releases/",
       "article_links": 3,
-      "candidates": 3
+      "candidates": 2
     },
     {
       "name": "Post-Punk.com – Singles",
@@ -26,7 +26,49 @@
     {
       "name": "ReGen Magazine",
       "url": "https://regenmag.com/",
-      "error": "HTTPError"
+      "article_links": 0,
+      "candidates": 0
+    },
+    {
+      "name": "IDIEY OUDIE",
+      "url": "https://www.idieyoudie.com/",
+      "article_links": 0,
+      "candidates": 0
+    },
+    {
+      "name": "Brutal Resonance",
+      "url": "https://www.brutalresonance.com/",
+      "error": "URLError"
+    },
+    {
+      "name": "Obscure Sound",
+      "url": "https://www.obscuresound.com/",
+      "article_links": 0,
+      "candidates": 0
+    },
+    {
+      "name": "Dais Records",
+      "url": "https://daisrecords.com/collections/all",
+      "article_links": 0,
+      "candidates": 0
+    },
+    {
+      "name": "Dark Entries Records",
+      "url": "https://darkentriesrecords.com/collections/all",
+      "article_links": 0,
+      "candidates": 0
+    },
+    {
+      "name": "Manic Depression Records",
+      "url": "https://manicdepressionrecords.com/",
+      "article_links": 0,
+      "candidates": 0
+    },
+    {
+      "name": "Mannequin Records",
+      "url": "https://mannequinrecords.com/",
+      "article_links": 0,
+      "candidates": 0
     },
     {
       "name": "Bandcamp – Darkwave",
@@ -89,30 +131,12 @@
       "candidates": 0
     }
   ],
-  "candidate_count": 15,
+  "candidate_count": 11,
   "candidates": [
-    {
-      "id": "bbf3064f0dc98100",
-      "artist_guess": "Night Nail",
-      "release_title_guess": "Feelings Are Monsters",
-      "headline": "Night Nail releases 'Feelings Are Monsters' video",
-      "genre_tags": [
-        "Darkwave"
-      ],
-      "release_date": "",
-      "article_date": "2026-11-20",
-      "format_guess": "EP / Album / unklar",
-      "publisher": "Side-Line",
-      "source_url": "https://www.side-line.com/night-nail-feelings-are-monsters/",
-      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/night-nail-feelings-are-monsters-cover.webp",
-      "status": "needs_editorial_review",
-      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
-      "already_in_chart": true
-    },
     {
       "id": "eb47a248b9d06f9b",
       "artist_guess": "Conn.RAR",
-      "release_title_guess": "You Don",
+      "release_title_guess": "You Don't Care",
       "headline": "Conn.RAR releases EBM single 'You Don't Care'",
       "genre_tags": [
         "EBM"
@@ -125,7 +149,7 @@
       "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/connrar-you-dont-care-cover.webp",
       "status": "needs_editorial_review",
       "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
-      "already_in_chart": false
+      "already_in_chart": true
     },
     {
       "id": "d79893e858e16850",
@@ -219,44 +243,6 @@
       "already_in_chart": true
     },
     {
-      "id": "c4196650c7d93718",
-      "artist_guess": "",
-      "release_title_guess": "",
-      "headline": "Nervous Damage signs to Progress Productions",
-      "genre_tags": [
-        "Industrial"
-      ],
-      "release_date": "",
-      "article_date": "2026-11-20",
-      "format_guess": "EP / Album / unklar",
-      "publisher": "Side-Line",
-      "source_url": "https://www.side-line.com/nervous-damage-almost-human-single/",
-      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/nervous-damage-band-photo-scaled.webp",
-      "status": "needs_editorial_review",
-      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
-      "already_in_chart": false
-    },
-    {
-      "id": "5c213b1cbd99fa67",
-      "artist_guess": "",
-      "release_title_guess": "",
-      "headline": "kinGeorg interview: new album and 2027 plans",
-      "genre_tags": [
-        "EBM",
-        "Dark Electro",
-        "Synthpop"
-      ],
-      "release_date": "",
-      "article_date": "2026-11-19",
-      "format_guess": "EP / Album / unklar",
-      "publisher": "Side-Line",
-      "source_url": "https://www.side-line.com/kingeorg-interview-2027-album/",
-      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/kingeorg-kim-georg-lunde-portrait.webp",
-      "status": "needs_editorial_review",
-      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
-      "already_in_chart": false
-    },
-    {
       "id": "7f701faa218a48da",
       "artist_guess": "Eden Script",
       "release_title_guess": "Humans Remain",
@@ -283,7 +269,7 @@
         "EBM",
         "Synthpop"
       ],
-      "release_date": "",
+      "release_date": "2026-11-18",
       "article_date": "2026-11-18",
       "format_guess": "Single / Track",
       "publisher": "Side-Line",
@@ -328,25 +314,6 @@
       "publisher": "Post-Punk.com – New Releases",
       "source_url": "https://post-punk.com/san-diego-post-punk-duo-twin-ion-engine-explore-romance-and-ruin-on-third-album-iii-midsummer-lover/",
       "artwork": "https://post-punk.com/wp-content/uploads/2026/11/Twin-Ion-Engine.jpg",
-      "status": "needs_editorial_review",
-      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
-      "already_in_chart": false
-    },
-    {
-      "id": "145ba1fd9c732c9a",
-      "artist_guess": "",
-      "release_title_guess": "pathOS",
-      "headline": "“From the Screen to the Grave” — Boustrophedon Confront Digital Alienation and Manufactured Identity on Industrial Synth Debut Album “pathOS” — Post-Punk.com",
-      "genre_tags": [
-        "Post-Punk",
-        "Industrial"
-      ],
-      "release_date": "",
-      "article_date": "2026-11-14",
-      "format_guess": "EP / Album / unklar",
-      "publisher": "Post-Punk.com – New Releases",
-      "source_url": "https://post-punk.com/from-the-screen-to-the-grave-boustrophedon-confront-digital-alienation-and-manufactured-identity-on-industrial-synth-debut-album-pathos/",
-      "artwork": "https://post-punk.com/wp-content/uploads/2026/11/AndyJoinsTheBattle_SlipperClutch_2025_07_04-1160x873.jpg",
       "status": "needs_editorial_review",
       "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
       "already_in_chart": false
