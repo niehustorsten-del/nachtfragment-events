@@ -1,0 +1,80 @@
+name: Nachtfragment Music Charts – Discovery
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "music_charts_discovery.py"
+      - ".github/workflows/music-charts-discovery.yml"
+  schedule:
+    # Mittwoch und Sonntag, 08:00 UTC
+    - cron: "0 8 * * 3,0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nachtfragment-repository-updates
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    name: Öffentliche Dark-Underground-Releases finden
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Python-Syntax prüfen
+        run: python -m py_compile music_charts_discovery.py
+
+      - name: Chartdaten und Quellen prüfen
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          chart = json.loads(Path("data/music-charts.json").read_text(encoding="utf-8"))
+          assert isinstance(chart.get("tracks"), list) and len(chart["tracks"]) == 50
+          print("Bestehende Top 50:", len(chart["tracks"]), "Einträge")
+          PY
+
+      - name: Öffentliche HTML-Quellen durchsuchen
+        run: python music_charts_discovery.py
+
+      - name: Rechercheergebnisse validieren
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("data/music-chart-candidates.json")
+          data = json.loads(p.read_text(encoding="utf-8"))
+          assert data.get("approval_required") is True
+          assert data.get("automatic_publication") is False
+          assert isinstance(data.get("candidates"), list)
+          assert data.get("candidate_count") == len(data["candidates"])
+          print("Quellen geprüft:", len(data.get("sources_checked", [])))
+          print("Kandidaten:", data["candidate_count"])
+          print("Top 50 bleibt unverändert.")
+          PY
+
+      - name: Kandidaten speichern
+        run: |
+          git config user.name "Nachtfragment Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/music-chart-candidates.json
+          if git diff --cached --quiet; then
+            echo "Keine neuen oder geänderten Kandidaten."
+            exit 0
+          fi
+          git commit -m "Update Music Charts discovery candidates"
+          git pull --rebase origin main
+          git push origin HEAD:main
