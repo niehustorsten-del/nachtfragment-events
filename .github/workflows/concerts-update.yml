@@ -36,6 +36,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Python-Syntax prüfen
+        run: python -m py_compile concerts_discovery.py build_artist_activity.py
+
       - name: Eingabedateien prüfen
         shell: bash
         run: |
