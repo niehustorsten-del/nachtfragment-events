@@ -173,6 +173,7 @@ def guess_artist(headline: str) -> str:
         match = re.search(pattern, value, re.I)
         if match:
             guess = match.group(1).strip(" –—-")
+            guess = re.sub(r"^(?:mighty\\s+)?(?:darkwave\\s+|post[- ]?punk\\s+|gothic\\s+|industrial\\s+)?(?:duo|trio|quartet|band|project|act|outfit)\\s+", "", guess, flags=re.I)
             if len(guess) > 1 and len(guess) < 100:
                 return guess
     return ""
@@ -231,6 +232,15 @@ def parse_article(url: str, publisher: str, source_kind: str) -> dict | None:
     release = guess_release(headline)
     if not artist or not release:
         return None
+    external_links = []
+    for link in page.links:
+        target = clean_url(urljoin(final_url, link.get("href", "")))
+        host = urlsplit(target).netloc.lower()
+        if target and any(domain in host for domain in ("bandcamp.com", "spotify.com", "music.apple.com", "soundcloud.com")):
+            external_links.append(target)
+    primary_release_url = next((u for u in external_links if "bandcamp.com" in urlsplit(u).netloc.lower()), "")
+    if not primary_release_url and external_links:
+        primary_release_url = external_links[0]
     artwork = page.meta.get("og:image", "")
     key = hashlib.sha256((clean_url(final_url) or url).encode()).hexdigest()[:16]
     return {
@@ -244,6 +254,8 @@ def parse_article(url: str, publisher: str, source_kind: str) -> dict | None:
         "format_guess": "Single / Track" if re.search(r"single|track|song", headline, re.I) else "EP / Album / unklar",
         "publisher": publisher,
         "source_url": clean_url(final_url) or clean_url(url),
+        "primary_release_url": primary_release_url,
+        "external_release_links": external_links[:8],
         "artwork": clean_url(artwork),
         "status": "needs_editorial_review",
         "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen."
