@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-21T00:56:11+00:00",
+  "updated_at": "2026-11-21T01:04:33+00:00",
   "source": "Nachtfragment published concerts.json + manually approved artist-news.json",
   "artist_count": 131,
   "event_count": 5,
-  "news_count": 11,
+  "news_count": 14,
   "artists": {
     "2dcat": {
       "name": "2DCAT",
@@ -21,7 +21,17 @@
       "name": "Agent Side Grinder",
       "url": "https://nachtfragment.de/index.php/artists/agent-side-grinder",
       "events": [],
-      "news": []
+      "news": [
+        {
+          "id": "agent-side-grinder-the-choir-2026-11-13",
+          "title": "Agent Side Grinder veröffentlichen „The Choir“ über Metropolis Records",
+          "summary": "Die schwedische Post-Punk- und Elektronik-Band veröffentlicht mit „The Choir“ ihre erste neue Original-Single seit 2023 und zugleich den Einstand bei Metropolis Records. Für März 2027 ist außerdem eine neue EP angekündigt.",
+          "date": "2026-11-13T00:00:00+00:00",
+          "category": "Release",
+          "publisher": "SIDE-LINE",
+          "url": "https://www.side-line.com/agent-side-grinder-the-choir/"
+        }
+      ]
     },
     "aktion-fiasko": {
       "name": "Aktion : Fiasko",
@@ -151,7 +161,17 @@
       "name": "Dancing Plague",
       "url": "https://nachtfragment.de/index.php/artists/dancing-plague",
       "events": [],
-      "news": []
+      "news": [
+        {
+          "id": "dancing-plague-endlessness-2026-11-19",
+          "title": "Dancing Plague kündigen neues Album „Endlessness“ an und veröffentlichen Video",
+          "summary": "Das Dark-Electro-Projekt von Conor Knowles veröffentlicht am 5. Februar 2027 über Artoffact Records das neue Album „Endlessness“. Zur Ankündigung erschien das Video zum Albumtrack „Heart So Close“.",
+          "date": "2026-11-19T00:00:00+00:00",
+          "category": "Release / Video",
+          "publisher": "SIDE-LINE",
+          "url": "https://www.side-line.com/dancing-plague-endlessness-album/"
+        }
+      ]
     },
     "dark-minimal-project": {
       "name": "Dark Minimal Project",
@@ -223,7 +243,17 @@
       "name": "DIGITAL ENERGY",
       "url": "https://nachtfragment.de/index.php/artists/digital-energy",
       "events": [],
-      "news": []
+      "news": [
+        {
+          "id": "digital-energy-echoes-of-tomorrow-review-2026-11-18",
+          "title": "Digital Energy – „Echoes Of Tomorrow“: Albumreview",
+          "summary": "SIDE-LINE bespricht das im August 2026 über Infacted Recordings erschienene Album. Die Rezension hebt den melodischen Electro-Pop-Sound, die prägnante Produktion und die Zusammenarbeit mit Produzent Gerrit Thomas hervor.",
+          "date": "2026-11-18T00:00:00+00:00",
+          "category": "Review",
+          "publisher": "SIDE-LINE",
+          "url": "https://www.side-line.com/digital-energy-echoes-of-tomorrow-review/"
+        }
+      ]
     },
     "drab-majesty": {
       "name": "Drab Majesty",

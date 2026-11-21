@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-21T00:53:46+00:00",
+  "updated_at": "2026-11-21T01:01:54+00:00",
   "lookback_days": 45,
   "artist_count": 131,
-  "candidate_count": 48,
+  "candidate_count": 55,
   "approval_required": true,
   "items": [
     {
@@ -110,6 +110,19 @@
       "status": "needs_review"
     },
     {
+      "id": "65b9f90a8dffae5c2d22",
+      "artist": "VeRa",
+      "artist_slug": "vera",
+      "title": "Vera Matović and Ljuba Alićić review their careers and earnings in popular music - Foro3D",
+      "summary": "Vera Matović and Ljuba Alićić review their careers and earnings in popular music    Foro3D",
+      "date": "2026-11-17T15:01:03+00:00",
+      "category": "News",
+      "publisher": "Foro3D",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaGZIYVoyNEk5OE0zbmxwME1wbW16c2NrdDFReWVwQ2tPb04xWV81czRSQXlCUkt5NnRCN3pWZ3daRUM2aHQ3c2JyY05WY0hHUUdxY0RjSzRndkdXUDJ4V1luTk8zNEg2T0hsVElfalY3VEFKczlORlphMF94aHlMSVh5bXNmbFdBWFBFS04xUzNTMzFQZmhLbFhuRjd3Zmk5dGZyTTZvZ1NwTG13QllPdmJ3?oc=5",
+      "source": "Google News",
+      "status": "needs_review"
+    },
+    {
       "id": "b998a480ef8a4d6c121f",
       "artist": "Vioflesh",
       "artist_slug": "vioflesh",
@@ -123,6 +136,19 @@
       "status": "needs_review"
     },
     {
+      "id": "4264bd8a9dfe67093c17",
+      "artist": "VeRa",
+      "artist_slug": "vera",
+      "title": "The Milk Carton Kids — Lost Cause Lover Fool Holiday Tour with special guest Vera Sola - edhat",
+      "summary": "The Milk Carton Kids — Lost Cause Lover Fool Holiday Tour with special guest Vera Sola    edhat",
+      "date": "2026-11-14T02:57:46+00:00",
+      "category": "Tour / Live",
+      "publisher": "edhat",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTWE3VVZLbDk2LXVERUQ0dDhPVG1pRVBWOHZacjNuN0V2WkpRYU1qZnQ1OVhwODlRbUYzRjNxcklWM1V6Nno5aFpPMkxWRExwN21aYkpWVDhkeGNuUG1OanlUMW9BVGNRRlNLTEg1U296Nk9XUXVzX21qdk5rMHRZcnpIYzZ5SmNScDVmeFE0QVVZZDMzUEwzWFhlbHdrWjcxalZJTy1zNmw2aHMxM2dxZ05mWQ?oc=5",
+      "source": "Google News",
+      "status": "needs_review"
+    },
+    {
       "id": "ea250b1129d7de7fea39",
       "artist": "VeRa",
       "artist_slug": "vera",
@@ -132,6 +158,19 @@
       "category": "Release",
       "publisher": "Popzine",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZkVRQ2dFMDhzMWRyT2ROdXd3VGEtSFhLbXNXRnp6bFQyaDBuS0E1aEN6djlncnFXREFEa01XLWpXZnlXeWd2RzhvQWxfRmtxNUdQdFhtX3p6bjA5aFE2SWh1MmVsS0k1NUxYVHk2dUpienVMZUt2S2NWalgtVzJrb0lBVS1CRlpBYzdxb04xeTR5YXZD?oc=5",
+      "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "5ec6ef2b0735ef216149",
+      "artist": "Agent Side Grinder",
+      "artist_slug": "agent-side-grinder",
+      "title": "Agent Side Grinder Return With “The Choir” and Announce Signals EP - Портал Експеримент",
+      "summary": "Agent Side Grinder Return With “The Choir” and Announce Signals EP    Портал Експеримент",
+      "date": "2026-11-13T09:23:00+00:00",
+      "category": "Release",
+      "publisher": "Портал Експеримент",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOalYwbEtjRzhtamdmdzczalhtTnJKTC1mZm1NZjU5U1dFUnJabWN4cTBrbms4SU4xUWJlV1c2bllTY2xyX3VPZ2VDZC13ZmZtaFVHWGI5a216UlFQbXpKSFE4SkViNDlOVW5ja3FiMHN6NV92UnY1dGlia1ZJZHpvTEZzaTJ1VUd0OWtzcWRPUzRldTQ3UWdIR2ZMdktheTFiOVFGSmw1T2VYMVJY?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
@@ -158,19 +197,6 @@
       "category": "News",
       "publisher": "Arcana.fm",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9zR2NpM1BvVzR1VnVNVlptblJMcUd4X1NlRzhjaG9FcXJDR3BTSU9adER0cUFwQ3JrOHFEZGJ0cGVWUm9uYzhFclI4SHR4VW11TUE?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "806877e9350f4bdfecbb",
-      "artist": "Thalie Némésis",
-      "artist_slug": "thalie-nemesis",
-      "title": "Thalie Némésis – Dé(s)figurations (Digital/CD Album – Meridian Noir Records) - SIDE-LINE",
-      "summary": "Thalie Némésis – Dé(s)figurations (Digital/CD Album – Meridian Noir Records)    SIDE-LINE",
-      "date": "2026-11-12T19:21:30+00:00",
-      "category": "Release",
-      "publisher": "SIDE-LINE",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9EYnlSN3puV0lXZjdBV2VtN3pvdzFyUGJjQ3VyNFJVZ1Y5Ml9WWTQ5RE1XdXduWEluMFItYWRSdGlnQjVldWVldWZyQjN4NnlsNzEtTVBKUFZWUjR1R21ub1I2ZWpHLWlYMHEzZlZlaWQ3b3M?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
@@ -240,6 +266,19 @@
       "status": "needs_review"
     },
     {
+      "id": "9c5cbf80237862902bc6",
+      "artist": "VeRa",
+      "artist_slug": "vera",
+      "title": "Skepta and Asake’s Aloe Vera Debuts at No. 3 on Spotify Nigeria - InterSpace Music Distribution",
+      "summary": "Skepta and Asake’s Aloe Vera Debuts at No. 3 on Spotify Nigeria    InterSpace Music Distribution",
+      "date": "2026-11-08T08:00:00+00:00",
+      "category": "News",
+      "publisher": "InterSpace Music Distribution",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOY2htY0FqMVJzQ3hhTWZWNHFkbG1ZUDF5SEhjTEJINUdoMjlGUk42TURsUS0zeGU5OWswdTZnNTItRXY0N0FyZXBEWGZiRWNqdGRVNExZMWdMWi1JODJTaDRjU0xnT2FFRkduTk5ZWjRybjNEZlVMNTZZVHdURnpKUlpFOElXaGRkMENzNzBB?oc=5",
+      "source": "Google News",
+      "status": "needs_review"
+    },
+    {
       "id": "701af944fef4fbd347f7",
       "artist": "SINE",
       "artist_slug": "sine",
@@ -288,6 +327,19 @@
       "category": "Release",
       "publisher": "vijesti.me",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSk9MWFVMLVRobEwyWFhvN2s4OS1kX0twTEVRVng3aUh3TEtQVFZnLW4xbk9PWFc3bzFDQWROY0V1dXBjX2JxTnA0My1MTHQ3bnJxRWVCUk9ET0NjUi1tS0FzN2RFTmx4MlN2SndtaFVNMWZvcUhqVDdUWnRmZ0Y4TXpLamVKbndKWUt1WU9zeFFhampISHdWOERpX0lzakVZZ19XUmEzX3VSYmNQNG9qONIBpwFBVV95cUxQYmgzc21hczJWWWZCQjFtQXFvSDhBRXNoa2tMaHNrQkwwNDVkQWRRdVNjcVprbG9SdXVGWmtvNFN3UlN3R09BdGloRG9NcTZfLXNSbVh4WjNBQU9rZTBpQnNjTS1HVkNlOXZEZXNMUVppZWRSaVFaeTk5QUJ6NjVRWF9CeFQyWXpKSldSX2pkTzZNV0ljQjJvbkhSZy1IQlZLTzdLM2JMWQ?oc=5",
+      "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "58c0f7ff45acec486278",
+      "artist": "VeRa",
+      "artist_slug": "vera",
+      "title": "Wayfarer Teams Up With Munly J Munly & Rebecca Vera For Confessional Lament “Grey Country” - Wildfire Music + News",
+      "summary": "Wayfarer Teams Up With Munly J Munly & Rebecca Vera For Confessional Lament “Grey Country”    Wildfire Music + News",
+      "date": "2026-11-01T19:00:00+00:00",
+      "category": "News",
+      "publisher": "Wildfire Music + News",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNmRDdkJMMjBRdnl2eG5mcllVQjMzZmVhMjFoS25mb3RKVHJOMUNTNGZQSmhxTlFYai10S1paTURDV2JqYWY5TzRDQmZrV29jcy1BREJudUpyZ1huVFZFVjlSNFV0b0VTaTE2SHRETHQ1Qk1ZNlVmQUUxS0p1TzF1SUtOMFI2QkZyejVBanRFM2I4aG1sNXZVblg3OUs3YVNJVXlhcnJlVFpMOFJZa2I2NXVjLWtHZUZuMERQUFBzdlV0Zw?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
@@ -370,6 +422,32 @@
       "status": "needs_review"
     },
     {
+      "id": "f0ad4fa3b1d335abacae",
+      "artist": "VeRa",
+      "artist_slug": "vera",
+      "title": "News: Ball Park Music, Vera Blue and Ladyhawke join Matt and Alex’s 5 Raves in 5 Days - Backseat Mafia",
+      "summary": "News: Ball Park Music, Vera Blue and Ladyhawke join Matt and Alex’s 5 Raves in 5 Days    Backseat Mafia",
+      "date": "2026-10-27T07:00:00+00:00",
+      "category": "News",
+      "publisher": "Backseat Mafia",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdVA3TlN4WHQ4ODRwWHhzd191ZUJkdU5sRjZNbDNFaXhhMHJkUmhtNjFqLTlmZzc0czlwcGdtcXpnZnFBeWhZR0I1R0RvQjZhLWV2NGx4c3NCQ2pleXJnUzUwV2pWS1RJMmQxU2wyRXZEMGJiT3N5dXduQWpOaVI2SmRaYldONDlyU05zdHl4aTRSRGlEazNma1MzQ3NDU29JNzlhM1N6b1N2YzRicHMzaURzMA?oc=5",
+      "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "f2d78751d03dcfd9e03a",
+      "artist": "VeRa",
+      "artist_slug": "vera",
+      "title": "Wayfarer Unveil Final Single “Grey Country” featuring Munly J Munly and Rebecca Vera Ahead of “Riders of the Setting Sun” - Metal Blade Records",
+      "summary": "Wayfarer Unveil Final Single “Grey Country” featuring Munly J Munly and Rebecca Vera Ahead of “Riders of the Setting Sun”    Metal Blade Records",
+      "date": "2026-10-27T07:00:00+00:00",
+      "category": "Release",
+      "publisher": "Metal Blade Records",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSnRDaFhVbzNhT2xTWnVrRzZsWTlybG1SZUhzSXRaNkgwdk1pWng3b0xYOE1HNEpuVngzU0tLV0VzeGRLcWRfWGc2bTgxWFZCNGZWbzQxZnBua3VzOVNPYm9rUG9zYVJEWUoyYS1ybjNlb0pXeHpJbC16UlFYOG5QanVlZw?oc=5",
+      "source": "Google News",
+      "status": "needs_review"
+    },
+    {
       "id": "dc6ac243f3220707b2f5",
       "artist": "SINE",
       "artist_slug": "sine",
@@ -405,6 +483,19 @@
       "category": "Video",
       "publisher": "Yahoo",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPc3d6Z0FZTmFfWnNUeHZ6dWNVRlZ2Q3dTcXV1LXoydlItTmFHMW1GWjJfNVBoQUVjWFg4YXRGelRRSk5HNTlqRURDMl9PRzhHVlY3cWcyZWQyZGxiV2dqb3J0RWpwNnZyLTlQM19HRHg5VVVIU3lTaWZfZUllaXFsd0lkYVhTRUlVcXBaQ3B5c1IwSGxvcmE2MWdn?oc=5",
+      "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "c39cfa01cf07aa80edc9",
+      "artist": "VeRa",
+      "artist_slug": "vera",
+      "title": "THE YAGAS Featuring Hollywood Actress VERA FARMIGA Unleash New Single ‘Runaway’ – Dark Alternative Rock With A Powerful Edge! - https://theriffreport.co.uk/",
+      "summary": "THE YAGAS Featuring Hollywood Actress VERA FARMIGA Unleash New Single ‘Runaway’ – Dark Alternative Rock With A Powerful Edge!    https://theriffreport.co.uk/",
+      "date": "2026-10-23T07:00:00+00:00",
+      "category": "Release",
+      "publisher": "https://theriffreport.co.uk/",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOUlVscC05XzR5QXRGSTh6UjNSc3VneDZMY1RoUHFoaWRBUW80eEJKRnAzT202Y0xfQTNPTWhZN3FlQkRNcFhJVjAzYW9hdzFwbmd1dk5ka2RGSU00MDJ3T2JqM2t1eW81QnUtcktRQnBtSGtPaXFQVFYyUl85Ykx5UGliRzhIdURZQnlEZElIYVpNMjkyQk5HdjRkTTdpWmI4amEyb0Z6VC1YcjlLR1VUMTVmTHJmNm1IbEZvMFFfTnJRdk5oWlVZUGk3OEptdndSLUg4aDdDSTRxM21IS080bmhjUkJiaFUzZWFKUndrNkFORXJlS1dJUnluN01LQ2VfQzh6NA?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
