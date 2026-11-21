@@ -21,7 +21,7 @@
       "Neofolk"
     ],
     "cadence": "Wöchentliche redaktionelle Prüfung, monatliche Top 30",
-    "note": "Redaktionell kuratierte erste Auswahl auf Basis verifizierter Neuveröffentlichungen im November 2026. Keine Wiederveröffentlichungen, Reissues oder Re-Releases. Rangfolge ist eine Nachtfragment-Auswahl und keine Verkaufs- oder Streamingmessung.",
+    "note": "Redaktionell kuratierte Auswahl neuer Veröffentlichungen. Keine Wiederveröffentlichungen, Reissues oder Re-Releases. Die Liste bezieht ausdrücklich DIY- und Underground-Releases ein; Rangfolge ist eine Nachtfragment-Auswahl und keine Verkaufs- oder Streamingmessung.",
     "discovery_sources": [
       "Bandcamp und Bandcamp-Labels",
       "Independent- und Underground-Labels",
@@ -297,6 +297,26 @@
       "country": "Australia",
       "movement": "new",
       "source": "turn936847search4"
+    },
+    {
+      "position": 26,
+      "artist": "Distant Stares",
+      "title": "Nothing More Beautiful Than Us",
+      "genre": "Darkwave",
+      "release": "2026-11-05",
+      "country": "Finland",
+      "movement": "new",
+      "source": "https://thesanctuarygate.com/en/gazette/2026-11-05/"
+    },
+    {
+      "position": 27,
+      "artist": "In Atlas",
+      "title": "Tears",
+      "genre": "Darkwave",
+      "release": "2026-11-05",
+      "country": "Denmark / Greece",
+      "movement": "new",
+      "source": "https://thesanctuarygate.com/en/gazette/2026-11-05/"
     }
   ]
 }
