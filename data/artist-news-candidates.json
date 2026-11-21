@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-21T01:38:23+00:00",
+  "updated_at": "2026-11-21T02:04:56+00:00",
   "lookback_days": 45,
   "artist_count": 131,
-  "candidate_count": 75,
+  "candidate_count": 76,
   "source_groups": 3,
   "direct_feed_count": 2,
   "approval_required": true,
@@ -255,19 +255,6 @@
       "status": "needs_review"
     },
     {
-      "id": "8fc806d9701fe41e66f5",
-      "artist": "Kælan Mikla",
-      "artist_slug": "kaelan-mikla",
-      "title": "AMPHI FESTIVAL 2024: KÆLAN MIKLA, RUINED CONFLICT & DEUS EX LUMINA COMPLETE THE LINE-UP! - Peek-a-Boo Magazine",
-      "summary": "AMPHI FESTIVAL 2024: KÆLAN MIKLA, RUINED CONFLICT & DEUS EX LUMINA COMPLETE THE LINE-UP!    Peek-a-Boo Magazine",
-      "date": "2026-11-14T04:44:44+00:00",
-      "category": "Tour / Live",
-      "publisher": "Peek-a-Boo Magazine",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMVZPVkI4b1RWNmg3aFNRYzUxX2JDbEt0MlNTd1QwR0ZuMmdWVUtyTmd1WjdCaTB3c3cyWGhIZDZvSVgtR0lPVWNoNF9LaFFVVndUMkZ1bTAtWldCOThTRmxlVVRoNFlWM28waXlHalNxYUtNQjB3aFhEeGJNczdUYk9nZzF4U1JQRzhtV1BqMnU4ZVdtcXBmTVhiU044Y2J5U2Q1RVVtVHFyNlJ4dUJLTW9jWEN3elc4RGZhSFRrNHZoeWdxRTlma1pSSQ?oc=5",
-      "source": "Dark scene magazines / Google News",
-      "status": "needs_review"
-    },
-    {
       "id": "ea280eeee7a412f0de2f",
       "artist": "Agent Side Grinder",
       "artist_slug": "agent-side-grinder",
@@ -395,6 +382,19 @@
       "publisher": "Foro3D",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPV3owVlFjSDhQOE1mcnJIM1h3b3lXbTdDUXp5Q0YtRk5KT1R1R1lwM1ZMYUNndDZjRjNOeFUyQThoRGtvSE9URU5KZjlma2I5V3VnUzctSUlKdFlITVRYODVRWC01blVpTzUtYVZURVVTVWZocVU5VTlNc21GV3Zqbmk0YmhGdUNnVHZtN0syNnNMWnhIQVhTQ29WWkZEcjEzeUhnWWRRTEN2Slpz?oc=5",
       "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "f1a1dbb10265298946f9",
+      "artist": "Ductape",
+      "artist_slug": "ductape",
+      "title": "Ductape release new video for ‘D.E.R.T’ off ‘Faded Flowers’",
+      "summary": "Post-punk duo Ductape release a new video for “D.E.R.T,” the sixth video from their album “Faded Flowers,” directed by Begüm Koçum. 🇺🇦 Side-Line stands with Ukraine - Show your Support Post-punk and ...",
+      "date": "2026-11-10T03:15:00+00:00",
+      "category": "Video",
+      "publisher": "Dark scene magazines / Bing News",
+      "url": "https://www.side-line.com/ductape-dert-video/",
+      "source": "Dark scene magazines / Bing News",
       "status": "needs_review"
     },
     {
@@ -733,6 +733,19 @@
       "publisher": "Post-Punk.com",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdVJhanU4MWFMYXAzTGtzM01vc0RWVW8xTVMxRnhOS3ZQNjkwcE54SERza0JDM3dRcGJkX3ZubnNVcFIyWWxIMHgtWUlpcWhzbEp1dXZZQllTdTdGWS13WVVHcnRVaU95VG9fVGhYU182SHZDeENRdlJhbDM4SVBWUnkwYWlWbEo2YUJ2Z0x3RTNMQVlNUlFxeWxtREhhVXRZT0lReGpoSVlxM3R1MGxpcHQ0RVhobmtU?oc=5",
       "source": "Dark scene magazines / Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "1ce6c61b10d723527001",
+      "artist": "Julia Holter",
+      "artist_slug": "julia-holter",
+      "title": "Premiere: Hologram Teen Shares New Julia Holter Remix of “Wolkman” - Under the Radar Magazine",
+      "summary": "Premiere: Hologram Teen Shares New Julia Holter Remix of “Wolkman”    Under the Radar Magazine",
+      "date": "2026-10-19T07:00:00+00:00",
+      "category": "Release",
+      "publisher": "Under the Radar Magazine",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPOFdPaXFXTU13M0M2dDg4cHd6QTJfWGtZOFRjWGd1Q3dOYmRaZkU0NEt2RUtDRG53eFpFZWtXZlEta0c2dk5GNE5sN2c3MHRpREF6RFZremw5eE1laXFfRHk0WmFfNnZrQXhxak55ZkVCNl9MZ05GaUtlQjRqOHg0VS1zeTg1UGNXeUVkY3Q5aFEwQ29WUExydTdBVzR0VUxvTk9JMQ?oc=5",
+      "source": "Google News",
       "status": "needs_review"
     },
     {
