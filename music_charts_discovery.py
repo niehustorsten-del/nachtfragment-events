@@ -31,6 +31,13 @@ SOURCES = [
     {"name": "Post-Punk.com – New Releases", "url": "https://post-punk.com/category/new-releases/", "kind": "editorial"},
     {"name": "Post-Punk.com – Singles", "url": "https://post-punk.com/category/new-releases/singles/", "kind": "editorial"},
     {"name": "ReGen Magazine", "url": "https://regenmag.com/", "kind": "editorial"},
+    {"name": "IDIEY OUDIE", "url": "https://www.idieyoudie.com/", "kind": "editorial"},
+    {"name": "Brutal Resonance", "url": "https://www.brutalresonance.com/", "kind": "editorial"},
+    {"name": "Obscure Sound", "url": "https://www.obscuresound.com/", "kind": "editorial"},
+    {"name": "Dais Records", "url": "https://daisrecords.com/collections/all", "kind": "editorial"},
+    {"name": "Dark Entries Records", "url": "https://darkentriesrecords.com/collections/all", "kind": "editorial"},
+    {"name": "Manic Depression Records", "url": "https://manicdepressionrecords.com/", "kind": "editorial"},
+    {"name": "Mannequin Records", "url": "https://mannequinrecords.com/", "kind": "editorial"},
     {"name": "Bandcamp – Darkwave", "url": "https://bandcamp.com/tag/darkwave?tab=all_releases&s=newest", "kind": "bandcamp"},
     {"name": "Bandcamp – Post-Punk", "url": "https://bandcamp.com/tag/post-punk?tab=all_releases&s=newest", "kind": "bandcamp"},
     {"name": "Bandcamp – Coldwave", "url": "https://bandcamp.com/tag/coldwave?tab=all_releases&s=newest", "kind": "bandcamp"},
@@ -171,10 +178,8 @@ def guess_artist(headline: str) -> str:
     return ""
 
 def guess_release(headline: str) -> str:
-    matches = re.findall(r"[“\"']([^”\"']{2,100})[”\"']", html.unescape(headline))
-    if matches:
-        return matches[-1].strip()
-    return ""
+    match = re.search(r"[“\"'](.+)[”\"']", html.unescape(headline))
+    return match.group(1).strip() if match else ""
 
 def parse_article(url: str, publisher: str, source_kind: str) -> dict | None:
     try:
@@ -192,6 +197,13 @@ def parse_article(url: str, publisher: str, source_kind: str) -> dict | None:
     combined = headline + " " + content[:12000]
     tags = genre_tags(combined)
     if not tags or not RELEASE_WORDS.search(headline + " " + content[:4500]):
+        return None
+    # Video-only coverage and interviews are not chart releases.
+    if re.search(r"\b(interview|conversation|talks? to)\b", headline, re.I):
+        return None
+    if re.search(r"\bvideo\b", headline, re.I) and not re.search(r"\b(single|track|song|album|ep)\b", headline, re.I):
+        return None
+    if re.search(r"\b(signs? to|signing to|record deal)\b", headline, re.I):
         return None
     if REISSUE_WORDS.search(headline):
         return None
@@ -211,12 +223,14 @@ def parse_article(url: str, publisher: str, source_kind: str) -> dict | None:
 
     release_date = ""
     release_match = re.search(
-        r"\b(?:released|out|available)\s+(?:on\s+)?((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+20\d{2}|\d{4}-\d{2}-\d{2})",
-        content[:7000], re.I)
+        r"\b(?:released|release|out|available)\b.{0,220}?\b(?:on\s+)?((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+20\d{2}|20\d{2}-\d{2}-\d{2})",
+        content[:9000], re.I | re.S)
     if release_match:
         release_date = extract_date(release_match.group(1))
     artist = guess_artist(headline)
     release = guess_release(headline)
+    if not artist or not release:
+        return None
     artwork = page.meta.get("og:image", "")
     key = hashlib.sha256((clean_url(final_url) or url).encode()).hexdigest()[:16]
     return {
