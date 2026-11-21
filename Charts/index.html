@@ -89,7 +89,7 @@ nav{min-width:0}
   const response=await fetch('../data/music-charts.json',{cache:'no-store'});
   if(!response.ok)throw new Error('chart data unavailable');
   const data=await response.json();
-  const tracks=Array.isArray(data.tracks)?data.tracks.slice(0,30):[];
+  const tracks=Array.isArray(data.tracks)?data.tracks.slice(0,50):[];
   document.getElementById('issue-label').textContent=data.issue||'Erste Ausgabe in Vorbereitung';
   document.getElementById('updated').textContent=data.updated_at?'Stand: '+new Date(data.updated_at).toLocaleDateString('de-DE'):'Die erste Chartausgabe wird zusammengestellt.';
   if(!tracks.length)return;
@@ -101,7 +101,7 @@ nav{min-width:0}
    const links=[['Bandcamp',t.bandcamp],['YouTube',t.youtube],['Spotify',t.spotify],['Infos',t.source&&t.source.indexOf('turn')!==0?t.source:null],['Artist',t.artist_url]].filter(function(x){return x[1]}).map(function(x){return '<a href="'+esc(x[1])+'" target="_blank" rel="noopener noreferrer">'+x[0]+' ↗</a>'}).join(' · ');
    const initials=(t.artist||'NF').split(/\s+/).slice(0,2).map(function(x){return x.charAt(0)}).join('').toUpperCase();
    const cover=t.artwork?'<img src="'+esc(t.artwork)+'" alt="Cover '+esc(t.artist)+' – '+esc(t.title)+'" width="64" height="64">':'';
-   return '<li class="entry"><div class="rank">'+pos+'.</div><div class="cover" data-artist="'+esc(t.artist)+'" data-title="'+esc(t.title)+'">'+cover+initials+'</div><div><div class="song">'+esc(t.artist)+' – '+esc(t.title)+' <span class="movement">'+move+'</span></div><div class="details">'+[t.genre,t.release,t.country].filter(Boolean).map(esc).join(' · ')+'</div>'+(links?'<div class="links">'+links+'</div>':'')+'</div></li>';
+   return '<li class="entry"><div class="rank">'+pos+'.</div><div class="cover" data-artist="'+esc(t.artist)+'" data-title="'+esc(t.title)+'">'+cover+initials+'</div><div><div class="song">'+esc(t.artist)+' – '+esc(t.title)+' <span class="movement">'+move+'</span></div><div class="details">'+[t.genre,t.format,t.release,t.country].filter(Boolean).map(esc).join(' · ')+'</div>'+(links?'<div class="links">'+links+'</div>':'')+'</div></li>';
   }).join('')+'</ol>';
   function norm(s){return String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim()}
   const items=Array.from(box.querySelectorAll('.cover')).filter(function(el){return !el.querySelector('img')});
