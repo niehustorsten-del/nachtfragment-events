@@ -173,7 +173,7 @@ def guess_artist(headline: str) -> str:
         match = re.search(pattern, value, re.I)
         if match:
             guess = match.group(1).strip(" –—-")
-            guess = re.sub(r"^(?:mighty\\s+)?(?:darkwave\\s+|post[- ]?punk\\s+|gothic\\s+|industrial\\s+)?(?:duo|trio|quartet|band|project|act|outfit)\\s+", "", guess, flags=re.I)
+            guess = re.sub(r"^(?:mighty\s+)?(?:darkwave\s+|post[- ]?punk\s+|gothic\s+|industrial\s+)?(?:duo|trio|quartet|band|project|act|outfit)\s+", "", guess, flags=re.I)
             if len(guess) > 1 and len(guess) < 100:
                 return guess
     return ""
@@ -233,11 +233,21 @@ def parse_article(url: str, publisher: str, source_kind: str) -> dict | None:
     if not artist or not release:
         return None
     external_links = []
+    artist_bandcamp_url = ""
     for link in page.links:
         target = clean_url(urljoin(final_url, link.get("href", "")))
         host = urlsplit(target).netloc.lower()
-        if target and any(domain in host for domain in ("bandcamp.com", "spotify.com", "music.apple.com", "soundcloud.com")):
-            external_links.append(target)
+        path = urlsplit(target).path.lower()
+        if not target:
+            continue
+        if "bandcamp.com" in host:
+            if host != "sidelinemag.bandcamp.com" and not artist_bandcamp_url:
+                artist_bandcamp_url = target
+            if re.search(r"/(track|album)/", path):
+                external_links.append(target)
+        elif any(domain in host for domain in ("spotify.com", "music.apple.com", "soundcloud.com")):
+            if re.search(r"/(track|album)/", path) or "music.apple.com" in host:
+                external_links.append(target)
     primary_release_url = next((u for u in external_links if "bandcamp.com" in urlsplit(u).netloc.lower()), "")
     if not primary_release_url and external_links:
         primary_release_url = external_links[0]
@@ -255,6 +265,7 @@ def parse_article(url: str, publisher: str, source_kind: str) -> dict | None:
         "publisher": publisher,
         "source_url": clean_url(final_url) or clean_url(url),
         "primary_release_url": primary_release_url,
+        "artist_bandcamp_url": artist_bandcamp_url,
         "external_release_links": external_links[:8],
         "artwork": clean_url(artwork),
         "status": "needs_editorial_review",
