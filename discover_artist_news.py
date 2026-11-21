@@ -4,7 +4,7 @@ from __future__ import annotations
 import hashlib, html, json, re, time, os
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import quote_plus, urlsplit
+from urllib.parse import quote_plus, urlsplit, parse_qs, unquote
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
@@ -27,14 +27,32 @@ def norm(s):
     return " ".join(re.findall(r"[^\W_]+", html.unescape(str(s or "")).casefold(), flags=re.UNICODE))
 
 def contains_artist(name, text):
+    # Preserve distinctive mixed-case spelling for short names such as VeRa.
+    if name == "VeRa":
+        return bool(re.search(r"(?<![\\w])VeRa(?![\\w])", html.unescape(str(text or ""))))
     n, t = norm(name), norm(text)
-    return bool(n and t and re.search(r"(?<![\w])" + re.escape(n).replace(r"\ ", r"\s+") + r"(?![\w])", t))
+    return bool(n and t and re.search(r"(?<![\\w])" + re.escape(n).replace(r"\\ ", r"\\s+") + r"(?![\\w])", t))
 
 def clean_url(url):
     url = html.unescape(str(url or "")).strip()
     p = urlsplit(url)
     if p.scheme not in ("http", "https") or not p.netloc: return ""
     return url.split("#", 1)[0]
+
+def canonical_url(url):
+    url = clean_url(url)
+    if not url: return ""
+    p = urlsplit(url)
+    query = parse_qs(p.query)
+    # Bing RSS wraps the real publisher URL in an encoded query parameter.
+    if "bing.com" in p.netloc and query.get("url"):
+        unwrapped = clean_url(unquote(query["url"][0]))
+        if unwrapped: return unwrapped
+    return url
+
+def dedupe_title(title):
+    value = norm(title)
+    return re.sub(r"\\s+(side line|post punk com|peek a boo magazine|broadwayworld)$", "", value)
 
 def fetch_xml(url):
     req = Request(url, headers={"User-Agent": UA, "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml"})
@@ -140,7 +158,8 @@ def main():
             title=html.unescape(item["title"]).strip()
             summary=html.unescape(re.sub(r"<[^>]+>"," ",item["summary"])).strip()
             full=title+" "+summary
-            if not title or not item["url"] or not contains_artist(name,full): continue
+            article_url=canonical_url(item["url"])
+            if not title or not article_url or not contains_artist(name,full): continue
             if not MUSIC_WORDS.search(title) or NOISE.search(title): continue
             title_fold=title.casefold()
             if "korine fujiwara" in title_fold or "free rein" in title_fold or "james d’arcy" in title_fold or "james d'arcy" in title_fold or "d’arcy james" in title_fold or "d'arcy james" in title_fold or "d’arcy street" in title_fold or "d'arcy street" in title_fold or "d’arcy carden" in title_fold or "d'arcy carden" in title_fold or "d’arcy’s march" in title_fold or "d'arcy's march" in title_fold: continue
@@ -150,12 +169,30 @@ def main():
             try: dt=datetime.fromisoformat(published)
             except ValueError: continue
             if dt<cutoff or dt>now+timedelta(days=2): continue
-            key=(slug,item["url"].split("?",1)[0].casefold())
+            # Reject clearly stale festival/live announcements resurfacing with a fresh aggregator timestamp.
+            if re.search(r"\\b(festival|line.?up|tour|concert|gig)\\b", title, re.I):
+                years=[int(y) for y in re.findall(r"\\b20\\d{2}\\b", title)]
+                if years and max(years)<now.year: continue
+            title_key=dedupe_title(title)
+            key=(slug, title_key, published[:10])
             if key in seen: continue
             seen.add(key)
-            digest=hashlib.sha256((slug+"|"+item["url"]).encode()).hexdigest()[:20]
-            artist_items.append({"id":digest,"artist":name,"artist_slug":slug,"title":title[:300],"summary":summary[:700],"date":published,"category":category(full),"publisher":item["publisher"],"url":item["url"],"source":feed_name,"status":"needs_review"})
+            digest=hashlib.sha256((slug+"|"+article_url+"|"+title_key).encode()).hexdigest()[:20]
+            publisher=str(item.get("publisher") or feed_name)
+            artist_items.append({"id":digest,"artist":name,"artist_slug":slug,"title":title[:300],"summary":summary[:700],"date":published,"category":category(full),"publisher":publisher,"url":article_url,"source":feed_name,"status":"needs_review"})
 
+        best={}
+        for candidate in artist_items:
+            k=(candidate["artist_slug"],dedupe_title(candidate["title"]),candidate["date"][:10])
+            score=0 if "news.google.com" in candidate["url"] or "bing.com" in candidate["url"] else 2
+            if candidate["publisher"] in ("Google News","Bing News"): score=0
+            old=best.get(k)
+            if old is None:
+                best[k]=candidate
+            else:
+                old_score=0 if "news.google.com" in old["url"] or "bing.com" in old["url"] else 2
+                if score>old_score: best[k]=candidate
+        artist_items=list(best.values())
         artist_items.sort(key=lambda x:x["date"],reverse=True)
         results.extend(artist_items[:MAX_PER_ARTIST])
         print(f"[{index}/{len(selected)}] {name}: {len(artist_items)} Treffer")
