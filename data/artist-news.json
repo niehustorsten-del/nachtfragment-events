@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T18:00:49.260Z",
+  "updated_at": "2026-11-21T00:00:00Z",
   "instructions": "Redaktionell geprüfte Meldungen. Nur status=approved wird in den Artist Activity Feed übernommen.",
   "items": [
     {
@@ -120,6 +120,18 @@
       "category": "Review",
       "publisher": "SIDE-LINE",
       "url": "https://www.side-line.com/vioflesh-melancolia-review/",
+      "status": "approved"
+    },
+    {
+      "id": "then-comes-silence-requiem-ballroom-out-now-2026-11-20",
+      "artist": "Then Comes Silence",
+      "artist_slug": "then-comes-silence",
+      "title": "Then Comes Silence veröffentlichen „Requiem Ballroom“",
+      "summary": "Das achte Studioalbum der schwedischen Post-Punk-Band ist am 20. November 2026 über Metropolis Records erschienen. Das 12-Track-Album ist in zwei Teile gegliedert: „Requiem“ und „Ballroom“; als Fokus-Track wird „Witches and Demons“ hervorgehoben.",
+      "date": "2026-11-20T00:00:00+00:00",
+      "category": "Release",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/then-comes-silence-requiem-ballroom-out-now/",
       "status": "approved"
     }
   ]
