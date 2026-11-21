@@ -1,0 +1,376 @@
+{
+  "title": "Nachtfragment Music Charts – Recherchekandidaten",
+  "updated_at": "2026-11-21T07:32:21+00:00",
+  "approval_required": true,
+  "automatic_publication": false,
+  "source_count": 16,
+  "sources_checked": [
+    {
+      "name": "Side-Line",
+      "url": "https://www.side-line.com/",
+      "article_links": 50,
+      "candidates": 12
+    },
+    {
+      "name": "Post-Punk.com – New Releases",
+      "url": "https://post-punk.com/category/new-releases/",
+      "article_links": 3,
+      "candidates": 3
+    },
+    {
+      "name": "Post-Punk.com – Singles",
+      "url": "https://post-punk.com/category/new-releases/singles/",
+      "article_links": 1,
+      "candidates": 1
+    },
+    {
+      "name": "ReGen Magazine",
+      "url": "https://regenmag.com/",
+      "error": "HTTPError"
+    },
+    {
+      "name": "Bandcamp – Darkwave",
+      "url": "https://bandcamp.com/tag/darkwave?tab=all_releases&s=newest",
+      "candidates": 0
+    },
+    {
+      "name": "Bandcamp – Post-Punk",
+      "url": "https://bandcamp.com/tag/post-punk?tab=all_releases&s=newest",
+      "candidates": 0
+    },
+    {
+      "name": "Bandcamp – Coldwave",
+      "url": "https://bandcamp.com/tag/coldwave?tab=all_releases&s=newest",
+      "candidates": 0
+    },
+    {
+      "name": "Bandcamp – EBM",
+      "url": "https://bandcamp.com/tag/ebm?tab=all_releases&s=newest",
+      "candidates": 0
+    },
+    {
+      "name": "Bandcamp – Industrial",
+      "url": "https://bandcamp.com/tag/industrial?tab=all_releases&s=newest",
+      "candidates": 0
+    },
+    {
+      "name": "Bandcamp – Minimal Synth",
+      "url": "https://bandcamp.com/tag/minimal-synth?tab=all_releases&s=newest",
+      "candidates": 0
+    },
+    {
+      "name": "Bandcamp – Deathrock",
+      "url": "https://bandcamp.com/tag/deathrock?tab=all_releases&s=newest",
+      "candidates": 0
+    },
+    {
+      "name": "Bandcamp – Gothic Rock",
+      "url": "https://bandcamp.com/tag/gothic-rock?tab=all_releases&s=newest",
+      "candidates": 0
+    },
+    {
+      "name": "Bandcamp – Dark Electro",
+      "url": "https://bandcamp.com/tag/dark-electro?tab=all_releases&s=newest",
+      "candidates": 0
+    },
+    {
+      "name": "Detriti Records",
+      "url": "https://detritirecords.bandcamp.com/",
+      "candidates": 0
+    },
+    {
+      "name": "Dark Entries Records",
+      "url": "https://darkentriesrecords.bandcamp.com/",
+      "candidates": 0
+    },
+    {
+      "name": "Mannequin Records",
+      "url": "https://mannequinrecords.bandcamp.com/",
+      "candidates": 0
+    }
+  ],
+  "candidate_count": 15,
+  "candidates": [
+    {
+      "id": "bbf3064f0dc98100",
+      "artist_guess": "Night Nail",
+      "release_title_guess": "Feelings Are Monsters",
+      "headline": "Night Nail releases 'Feelings Are Monsters' video",
+      "genre_tags": [
+        "Darkwave"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-20",
+      "format_guess": "EP / Album / unklar",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/night-nail-feelings-are-monsters/",
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/night-nail-feelings-are-monsters-cover.webp",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": true
+    },
+    {
+      "id": "eb47a248b9d06f9b",
+      "artist_guess": "Conn.RAR",
+      "release_title_guess": "You Don",
+      "headline": "Conn.RAR releases EBM single 'You Don't Care'",
+      "genre_tags": [
+        "EBM"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-20",
+      "format_guess": "Single / Track",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/connrar-you-dont-care/",
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/connrar-you-dont-care-cover.webp",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": false
+    },
+    {
+      "id": "d79893e858e16850",
+      "artist_guess": "Pawn Pawn",
+      "release_title_guess": "Silhouette",
+      "headline": "Pawn Pawn releases synthpop single 'Silhouette'",
+      "genre_tags": [
+        "Synthpop"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-20",
+      "format_guess": "Single / Track",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/pawn-pawn-silhouette/",
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/pawn-pawn-silhouette-cover.webp",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": true
+    },
+    {
+      "id": "ab5be552fabd063f",
+      "artist_guess": "Projekt Ich",
+      "release_title_guess": "The Night Before Christmas",
+      "headline": "Projekt Ich releases 'The Night Before Christmas'",
+      "genre_tags": [
+        "Synthpop"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-20",
+      "format_guess": "EP / Album / unklar",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/projekt-ich-the-night-before-christmas/",
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/projekt-ich-the-night-before-christmas-cover.webp",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": false
+    },
+    {
+      "id": "aa3e0f6a0f74ac9c",
+      "artist_guess": "CØLDSTAR",
+      "release_title_guess": "Into The Void",
+      "headline": "CØLDSTAR releases new single 'Into The Void'",
+      "genre_tags": [
+        "Dark Synth",
+        "Synthpop"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-20",
+      "format_guess": "Single / Track",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/coldstar-into-the-void/",
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/coldstar-into-the-void-cover.webp",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": false
+    },
+    {
+      "id": "4a6dda3b4379a303",
+      "artist_guess": "99 Gravestones",
+      "release_title_guess": "Order Of The Fly",
+      "headline": "99 Gravestones releases 'Order Of The Fly'",
+      "genre_tags": [
+        "Industrial"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-20",
+      "format_guess": "EP / Album / unklar",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/99-gravestones-order-of-the-fly/",
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/99-gravestones-order-of-the-fly-cover.webp",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": false
+    },
+    {
+      "id": "95d74b23545f842b",
+      "artist_guess": "I Ya Toyah",
+      "release_title_guess": "Error Prospect: Human",
+      "headline": "I Ya Toyah releases 'Error Prospect: Human' EP",
+      "genre_tags": [
+        "Industrial"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-20",
+      "format_guess": "EP / Album / unklar",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/i-ya-toyah-error-prospect-human/",
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/i-ya-toyah-error-prospect-human-cover.webp",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": true
+    },
+    {
+      "id": "c4196650c7d93718",
+      "artist_guess": "",
+      "release_title_guess": "",
+      "headline": "Nervous Damage signs to Progress Productions",
+      "genre_tags": [
+        "Industrial"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-20",
+      "format_guess": "EP / Album / unklar",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/nervous-damage-almost-human-single/",
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/nervous-damage-band-photo-scaled.webp",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": false
+    },
+    {
+      "id": "5c213b1cbd99fa67",
+      "artist_guess": "",
+      "release_title_guess": "",
+      "headline": "kinGeorg interview: new album and 2027 plans",
+      "genre_tags": [
+        "EBM",
+        "Dark Electro",
+        "Synthpop"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-19",
+      "format_guess": "EP / Album / unklar",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/kingeorg-interview-2027-album/",
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/kingeorg-kim-georg-lunde-portrait.webp",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": false
+    },
+    {
+      "id": "7f701faa218a48da",
+      "artist_guess": "Eden Script",
+      "release_title_guess": "Humans Remain",
+      "headline": "Eden Script releases single 'Humans Remain'",
+      "genre_tags": [
+        "Dark Electro"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-19",
+      "format_guess": "Single / Track",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/eden-script-humans-remain-single/",
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/eden-script-humans-remain-cover-scaled.webp",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": true
+    },
+    {
+      "id": "76762abbeaa56e07",
+      "artist_guess": "Aliens Corporation",
+      "release_title_guess": "Altered Moods",
+      "headline": "Aliens Corporation release single 'Altered Moods'",
+      "genre_tags": [
+        "EBM",
+        "Synthpop"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-18",
+      "format_guess": "Single / Track",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/aliens-corporation-altered-moods/",
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/aliens.webp",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": true
+    },
+    {
+      "id": "a15e08d312959987",
+      "artist_guess": "J Wølf",
+      "release_title_guess": "Tainted Scent",
+      "headline": "J Wølf releases 'Tainted Scent' EP with Frank M. Spinath",
+      "genre_tags": [
+        "EBM",
+        "Dark Electro",
+        "Synthpop"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-18",
+      "format_guess": "EP / Album / unklar",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/j-wolf-tainted-scent-ep/",
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/jwolf-tainted-scent-cover.webp",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": false
+    },
+    {
+      "id": "8eb8343244ab9486",
+      "artist_guess": "Twin Ion Engine",
+      "release_title_guess": "(III) Midsummer Lover",
+      "headline": "San Diego Post-Punk Duo Twin Ion Engine Explores Romance and Ruin on Third Album \"(III) Midsummer Lover\" — Post-Punk.com",
+      "genre_tags": [
+        "Post-Punk",
+        "Industrial"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-17",
+      "format_guess": "EP / Album / unklar",
+      "publisher": "Post-Punk.com – New Releases",
+      "source_url": "https://post-punk.com/san-diego-post-punk-duo-twin-ion-engine-explore-romance-and-ruin-on-third-album-iii-midsummer-lover/",
+      "artwork": "https://post-punk.com/wp-content/uploads/2026/11/Twin-Ion-Engine.jpg",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": false
+    },
+    {
+      "id": "145ba1fd9c732c9a",
+      "artist_guess": "",
+      "release_title_guess": "pathOS",
+      "headline": "“From the Screen to the Grave” — Boustrophedon Confront Digital Alienation and Manufactured Identity on Industrial Synth Debut Album “pathOS” — Post-Punk.com",
+      "genre_tags": [
+        "Post-Punk",
+        "Industrial"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-14",
+      "format_guess": "EP / Album / unklar",
+      "publisher": "Post-Punk.com – New Releases",
+      "source_url": "https://post-punk.com/from-the-screen-to-the-grave-boustrophedon-confront-digital-alienation-and-manufactured-identity-on-industrial-synth-debut-album-pathos/",
+      "artwork": "https://post-punk.com/wp-content/uploads/2026/11/AndyJoinsTheBattle_SlipperClutch_2025_07_04-1160x873.jpg",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": false
+    },
+    {
+      "id": "23f219610414fa93",
+      "artist_guess": "Mighty Darkwave Duo Deathday",
+      "release_title_guess": "Hungry Ghosts",
+      "headline": "Mighty Darkwave Duo Deathday Returns with Venemous New Single \"Hungry Ghosts\" — Post-Punk.com",
+      "genre_tags": [
+        "Darkwave",
+        "Post-Punk",
+        "Industrial"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-13",
+      "format_guess": "Single / Track",
+      "publisher": "Post-Punk.com – New Releases",
+      "source_url": "https://post-punk.com/mighty-darkwave-duo-deathday-returns-with-venemous-new-single-hungry-ghosts/",
+      "artwork": "https://post-punk.com/wp-content/uploads/2026/11/0048482412_10.jpg",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": false
+    }
+  ],
+  "note": "Recherche aus öffentlichen HTML-Seiten. Kandidaten sind keine bestätigten Chart-Neuzugänge; Veröffentlichungsdatum, Reissue-Status, Artist, Titel und Primärquelle redaktionell prüfen."
+}
