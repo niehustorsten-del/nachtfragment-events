@@ -137,25 +137,25 @@ def main():
             candidate_sources.extend((feed_name, item) for item in parse_feed(fetch_xml(feed_url),feed_name))
             time.sleep(0.15)
         for feed_name,item in candidate_sources:
-                title=html.unescape(item["title"]).strip()
-                summary=html.unescape(re.sub(r"<[^>]+>"," ",item["summary"])).strip()
-                full=title+" "+summary
-                if not title or not item["url"] or not contains_artist(name,full): continue
-                if not MUSIC_WORDS.search(title) or NOISE.search(title): continue
-                title_fold=title.casefold()
-                if "korine fujiwara" in title_fold or "free rein" in title_fold or "james d’arcy" in title_fold or "james d'arcy" in title_fold or "d’arcy james" in title_fold or "d'arcy james" in title_fold or "d’arcy street" in title_fold or "d'arcy street" in title_fold or "d’arcy carden" in title_fold or "d'arcy carden" in title_fold or "d’arcy’s march" in title_fold or "d'arcy's march" in title_fold: continue
-                if name.casefold()=="customs" and not re.search(r"\b(band|album|ep|new single|song|track|festival|concert|gig|darkwave|gothic|post.?punk|industrial|ebm|synth|coldwave|record label|remix)\b",title,re.I): continue
-                published=parse_date(item["published"])
-                if not published: continue
-                try: dt=datetime.fromisoformat(published)
-                except ValueError: continue
-                if dt<cutoff or dt>now+timedelta(days=2): continue
-                key=(slug,item["url"].split("?",1)[0].casefold())
-                if key in seen: continue
-                seen.add(key)
-                digest=hashlib.sha256((slug+"|"+item["url"]).encode()).hexdigest()[:20]
-                artist_items.append({"id":digest,"artist":name,"artist_slug":slug,"title":title[:300],"summary":summary[:700],"date":published,"category":category(full),"publisher":item["publisher"],"url":item["url"],"source":feed_name,"status":"needs_review"})
-            time.sleep(0.25)
+            title=html.unescape(item["title"]).strip()
+            summary=html.unescape(re.sub(r"<[^>]+>"," ",item["summary"])).strip()
+            full=title+" "+summary
+            if not title or not item["url"] or not contains_artist(name,full): continue
+            if not MUSIC_WORDS.search(title) or NOISE.search(title): continue
+            title_fold=title.casefold()
+            if "korine fujiwara" in title_fold or "free rein" in title_fold or "james d’arcy" in title_fold or "james d'arcy" in title_fold or "d’arcy james" in title_fold or "d'arcy james" in title_fold or "d’arcy street" in title_fold or "d'arcy street" in title_fold or "d’arcy carden" in title_fold or "d'arcy carden" in title_fold or "d’arcy’s march" in title_fold or "d'arcy's march" in title_fold: continue
+            if name.casefold()=="customs" and not re.search(r"\b(band|album|ep|new single|song|track|festival|concert|gig|darkwave|gothic|post.?punk|industrial|ebm|synth|coldwave|record label|remix)\b",title,re.I): continue
+            published=parse_date(item["published"])
+            if not published: continue
+            try: dt=datetime.fromisoformat(published)
+            except ValueError: continue
+            if dt<cutoff or dt>now+timedelta(days=2): continue
+            key=(slug,item["url"].split("?",1)[0].casefold())
+            if key in seen: continue
+            seen.add(key)
+            digest=hashlib.sha256((slug+"|"+item["url"]).encode()).hexdigest()[:20]
+            artist_items.append({"id":digest,"artist":name,"artist_slug":slug,"title":title[:300],"summary":summary[:700],"date":published,"category":category(full),"publisher":item["publisher"],"url":item["url"],"source":feed_name,"status":"needs_review"})
+
         artist_items.sort(key=lambda x:x["date"],reverse=True)
         results.extend(artist_items[:MAX_PER_ARTIST])
         print(f"[{index}/{len(selected)}] {name}: {len(artist_items)} Treffer")
