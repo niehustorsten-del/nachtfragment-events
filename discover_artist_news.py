@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parent
 ARTISTS_FILE = ROOT / "data" / "artists.json"
 OUTPUT_FILE = ROOT / "data" / "artist-news-candidates.json"
 UA = "Mozilla/5.0 (compatible; Nachtfragment-NewsBot/1.0; +https://nachtfragment.de)"
-MAX_ARTISTS = max(1, int(os.getenv("ARTIST_NEWS_MAX_ARTISTS", "65")))
+MAX_ARTISTS = max(0, int(os.getenv("ARTIST_NEWS_MAX_ARTISTS", "0")))  # 0 = alle Artists
 MAX_PER_ARTIST = 12
 DAYS = 45
 MUSIC_WORDS = re.compile(r"\b(music|musician|band|singer|album|ep|lp|new single|single [‘“']|song|track|release|released|premiere|music video|tour|festival|concert|gig|darkwave|gothic|post.?punk|industrial|ebm|synth|coldwave|new wave|record label|remix|lineup|line-up|auftritt|konzert|veröffentlich|musikvideo|tournee|dark-pop)\b", re.I)
@@ -108,7 +108,8 @@ def main():
         if match.group(1).lower()=="ist-ist": name="IST IST"
         if re.search(r"newcomer|linkliste|weblinks|rezension|review|top\s*50|verzeichnis",name,re.I): continue
         valid.append((name,match.group(1).lower()))
-    for index,(name,slug) in enumerate(valid[:MAX_ARTISTS],1):
+    selected = valid[:MAX_ARTISTS] if MAX_ARTISTS else valid
+    for index,(name,slug) in enumerate(selected,1):
         q=quote_plus('"'+name+'" (music OR band OR album OR single OR interview OR video OR tour)')
         feeds=[("Google News",f"https://news.google.com/rss/search?q={q}+when%3A{DAYS}d&hl=en-US&gl=US&ceid=US:en"),("Bing News",f"https://www.bing.com/news/search?q={q}+when%3A{DAYS}d&format=rss")]
         artist_items=[]
@@ -135,10 +136,10 @@ def main():
             time.sleep(0.25)
         artist_items.sort(key=lambda x:x["date"],reverse=True)
         results.extend(artist_items[:MAX_PER_ARTIST])
-        print(f"[{index}/{min(len(valid),MAX_ARTISTS)}] {name}: {len(artist_items)} Treffer")
+        print(f"[{index}/{len(selected)}] {name}: {len(artist_items)} Treffer")
         time.sleep(0.2)
     results.sort(key=lambda x:x["date"],reverse=True)
-    payload={"updated_at":now.isoformat(timespec="seconds"),"lookback_days":DAYS,"artist_count":min(len(valid),MAX_ARTISTS),"candidate_count":len(results),"approval_required":True,"items":results}
+    payload={"updated_at":now.isoformat(timespec="seconds"),"lookback_days":DAYS,"artist_count":len(selected),"candidate_count":len(results),"approval_required":True,"items":results}
     OUTPUT_FILE.parent.mkdir(parents=True,exist_ok=True)
     tmp=OUTPUT_FILE.with_suffix(".json.tmp")
     tmp.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")

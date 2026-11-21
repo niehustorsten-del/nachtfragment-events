@@ -2,6 +2,7 @@ name: Nachtfragment Artist Activity Feed
 
 on:
   push:
+    branches: [main]
     paths:
       - "discover_artist_news.py"
       - "build_artist_activity.py"
@@ -22,7 +23,7 @@ concurrency:
 jobs:
   build-feed:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v4
@@ -32,7 +33,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Öffentliche Künstlernews suchen
+
+      - name: Python-Syntax prüfen
+        run: python -m py_compile discover_artist_news.py build_artist_activity.py
+      - name: Öffentliche Künstlernews für alle Artists suchen
+        env:
+          ARTIST_NEWS_MAX_ARTISTS: "0"
         run: python discover_artist_news.py
       - name: Aktivitätsfeed erzeugen
         run: python build_artist_activity.py
