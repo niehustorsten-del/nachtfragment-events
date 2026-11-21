@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-21",
   "description": "Unsichere Treffer, die nicht automatisch veröffentlicht wurden.",
   "candidates": [
     {
@@ -190,6 +190,13 @@
       "url": "https://signin.ebay.de/signin",
       "query": "Gothic alternative fashion shop Germany independent official",
       "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "magazine",
+      "name": "music reviews - Carlisle's Punk Bands - WordPress.com",
+      "url": "https://carlislepunkbands.wordpress.com/category/music-reviews",
+      "query": "UK independent post-punk gothic industrial music webzine magazine interviews reviews",
+      "reason": "Site reachable, but music/editorial relevance is not strong enough for automatic publication."
     }
   ]
 }

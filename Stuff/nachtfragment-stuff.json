@@ -1,13 +1,13 @@
 {
   "title": "Nachtfragment Stuff – Worldwide Dark Culture Directory",
-  "version": "2026-10-15-round4-dark-art-tattoo-labels-auto-2026-10-16-auto-2026-10-18",
-  "updated": "2026-10-18",
+  "version": "2026-10-15-round4-dark-art-tattoo-labels-auto-2026-10-16-auto-2026-10-18-auto-2026-11-21",
+  "updated": "2026-11-21",
   "scope": "Worldwide dark culture directory: Alternative Fashion, Gothic Shops, Schmuck & Accessoires, Tattoo & Body Art, Ambiente / Home & Living, Clubs & Nightlife, Szene-Verzeichnisse, Labels / Music, Artists / Merch.",
   "excluded": [
     "📰 Magazine & Online-Medien",
     "🎪 Festivals & Events"
   ],
-  "verification_note": "Round 4: additions selected from official websites; duplicate names and URLs checked against the current dataset. Website activity and styling should be periodically rechecked. Weekly automatic discovery added 28 reachable, category-matched entries on 2026-10-16; uncertain hits are logged separately. Weekly automatic discovery added 20 reachable, category-matched entries on 2026-10-18; uncertain hits are logged separately.",
+  "verification_note": "Round 4: additions selected from official websites; duplicate names and URLs checked against the current dataset. Website activity and styling should be periodically rechecked. Weekly automatic discovery added 28 reachable, category-matched entries on 2026-10-16; uncertain hits are logged separately. Weekly automatic discovery added 20 reachable, category-matched entries on 2026-10-18; uncertain hits are logged separately. Weekly automatic discovery added 7 reachable, category-matched entries on 2026-11-21; uncertain hits are logged separately.",
   "entries": [
     {
       "name": "Beserk",
@@ -3466,6 +3466,104 @@
         "Alternative"
       ],
       "url": "https://gothyka.com/bijoux-gothiques-sur-la-boutique-gothique-romantique-gothyka-_r_123_va_1.html"
+    },
+    {
+      "name": "Abaddon Mystic Store - Gothic Empire",
+      "category": [
+        "Alternative Fashion"
+      ],
+      "country": "Germany",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Alternative Fashion",
+        "Punk"
+      ],
+      "url": "https://gothic-empire.de/info/abaddon-mystic-store"
+    },
+    {
+      "name": "https://www.bol.com/nl/nl/vaak-samen-gekocht/alter...",
+      "category": [
+        "Alternative Fashion"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Alternative Fashion",
+        "Punk"
+      ],
+      "url": "https://bol.com/nl/nl/vaak-samen-gekocht/alternative-shops/1001004007710163"
+    },
+    {
+      "name": "Gothic Clothing | Dark Alternative Fashion",
+      "category": [
+        "Gothic Shops"
+      ],
+      "country": "Switzerland",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Alternative",
+        "Mode"
+      ],
+      "url": "https://punkrave.ch/fr/collections/gothic"
+    },
+    {
+      "name": "Best post-punk labels - Send your music",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Post-Punk",
+        "Coldwave",
+        "Darkwave"
+      ],
+      "url": "https://groover.co/en/influencer/list/tags/post-punk/label"
+    },
+    {
+      "name": "darkwave Archives",
+      "category": [
+        "Labels / Music"
+      ],
+      "country": "International",
+      "status": "verified",
+      "tags": [
+        "Darkwave",
+        "Post-Punk",
+        "Coldwave"
+      ],
+      "url": "https://post-punk.com/tag/darkwave"
+    },
+    {
+      "name": "Gothic jewelry and steampunk jewelry - Alchemy, Restyle",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "Netherlands",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Alternative",
+        "Handmade"
+      ],
+      "url": "https://trukado.nl/en/gothic-steampunk/jewelry"
+    },
+    {
+      "name": "Mimode : le webzine mode qui ne vous dit pas les choses à ...",
+      "category": [
+        "Schmuck & Accessoires"
+      ],
+      "country": "France",
+      "status": "verified",
+      "tags": [
+        "Gothic",
+        "Bijoux",
+        "Alternative"
+      ],
+      "url": "https://mimode.fr"
     }
   ]
 }
