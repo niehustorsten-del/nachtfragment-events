@@ -1,0 +1,100 @@
+name: Music Charts – Datenprüfung
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Mittwoch und Sonntag, 08:10 UTC
+    - cron: "10 8 * * 3,0"
+  push:
+    paths:
+      - "data/music-charts.json"
+      - ".github/workflows/music-charts-check.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nachtfragment-music-charts-check
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    name: Top-50-Daten und Quellen prüfen
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Chartdaten validieren
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          import sys
+          from datetime import date
+          from pathlib import Path
+          from urllib.parse import urlparse
+
+          path = Path("data/music-charts.json")
+          if not path.is_file():
+              sys.exit("FEHLER: data/music-charts.json fehlt.")
+
+          try:
+              data = json.loads(path.read_text(encoding="utf-8"))
+          except Exception as exc:
+              sys.exit(f"FEHLER: JSON ist nicht lesbar: {exc}")
+
+          tracks = data.get("tracks")
+          if not isinstance(tracks, list):
+              sys.exit("FEHLER: 'tracks' muss eine Liste sein.")
+          if len(tracks) != 50:
+              sys.exit(f"FEHLER: Erwartet werden 50 Einträge, gefunden: {len(tracks)}.")
+
+          required = ("artist", "title", "genre", "release", "source")
+          seen = set()
+          errors = []
+
+          for index, track in enumerate(tracks, 1):
+              if not isinstance(track, dict):
+                  errors.append(f"Position {index}: Eintrag ist kein Objekt.")
+                  continue
+              for key in required:
+                  if not track.get(key):
+                      errors.append(f"Position {index}: Feld '{key}' fehlt.")
+              expected_position = index
+              if track.get("position") != expected_position:
+                  errors.append(f"Position {index}: Rang muss {expected_position} sein.")
+              try:
+                  date.fromisoformat(str(track.get("release", "")))
+              except ValueError:
+                  errors.append(f"Position {index}: ungültiges Veröffentlichungsdatum.")
+              source = str(track.get("source", ""))
+              parsed = urlparse(source)
+              if parsed.scheme not in ("http", "https") or not parsed.netloc:
+                  errors.append(f"Position {index}: Primärquelle ist keine gültige HTTP(S)-URL.")
+              key = (str(track.get("artist", "")).strip().casefold(),
+                     str(track.get("title", "")).strip().casefold())
+              if key in seen:
+                  errors.append(f"Position {index}: möglicher Duplikat-Eintrag {key}.")
+              seen.add(key)
+
+          updated = str(data.get("updated_at", ""))
+          try:
+              date.fromisoformat(updated)
+          except ValueError:
+              errors.append("'updated_at' fehlt oder ist kein ISO-Datum.")
+
+          if errors:
+              print("\n".join("::error::" + e for e in errors))
+              sys.exit(f"Chartprüfung fehlgeschlagen: {len(errors)} Problem(e).")
+
+          print(f"OK: {len(tracks)} Chart-Einträge geprüft.")
+          print(f"Letzter Datenstand: {updated}")
+          print("Alle Einträge enthalten Pflichtfelder, Datum und HTTP(S)-Quellen.")
+          PY
