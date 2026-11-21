@@ -224,7 +224,7 @@ def parse_article(url: str, publisher: str, source_kind: str) -> dict | None:
 
     release_date = ""
     release_match = re.search(
-        r"\b(?:released|release|out|available)\b.{0,220}?\b(?:on\s+)?((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+20\d{2}|20\d{2}-\d{2}-\d{2})",
+        r"\b(?:released|release|out|available)\b.{0,260}?\b(?:on\s+)?((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+20\d{2}|\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+20\d{2}|20\d{2}-\d{2}-\d{2})",
         content[:9000], re.I | re.S)
     if release_match:
         release_date = extract_date(release_match.group(1))
