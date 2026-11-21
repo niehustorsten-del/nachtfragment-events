@@ -1,0 +1,87 @@
+<!-- Nachtfragment Joomla-Modul: Stuff & Dark Lifestyle
+     Einbindung: gesamten Inhalt in einen Joomla-Beitrag oder ein HTML-Modul kopieren.
+     Datenquelle: GitHub Stuff/nachtfragment-stuff.json (wird live geladen).
+-->
+<div id="nf-stuff">
+  <style>
+    #nf-stuff{--bg:#090a0d;--panel:#14161b;--line:#2b2e36;--text:#e8e8eb;--muted:#a0a2aa;--accent:#b9b9c4;color:var(--text);font:15px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);padding:clamp(14px,3vw,28px);border:1px solid var(--line);border-radius:14px;box-sizing:border-box}
+    #nf-stuff *{box-sizing:border-box}#nf-stuff a{color:inherit}
+    #nf-stuff .nf-kicker{color:var(--accent);font-size:.75rem;letter-spacing:.18em;text-transform:uppercase}
+    #nf-stuff h2{font:400 clamp(2rem,5vw,3.5rem)/1.08 Georgia,serif;margin:9px 0 12px;color:var(--text)}
+    #nf-stuff .nf-intro{max-width:820px;color:var(--muted);margin:0 0 22px}
+    #nf-stuff .nf-controls{background:linear-gradient(145deg,#191b21,#111318);border:1px solid var(--line);border-radius:12px;padding:15px;margin-bottom:18px}
+    #nf-stuff .nf-row{display:grid;grid-template-columns:minmax(0,2fr) minmax(160px,1fr);gap:10px}
+    #nf-stuff input,#nf-stuff select{width:100%;min-width:0;min-height:44px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:#0c0e12;color:var(--text);font:inherit}
+    #nf-stuff input:focus,#nf-stuff select:focus{outline:1px solid var(--accent);border-color:var(--accent)}
+    #nf-stuff .nf-filters{display:flex;flex-wrap:wrap;gap:7px;margin-top:11px}
+    #nf-stuff .nf-filters button{background:#0d0f13;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:7px 11px;cursor:pointer;font:inherit;font-size:.8rem}
+    #nf-stuff .nf-filters button.active,#nf-stuff .nf-filters button:hover{border-color:#858995;color:#fff;background:#24262d}
+    #nf-stuff .nf-summary{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:13px;color:var(--muted);font-size:.82rem}
+    #nf-stuff .nf-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+    #nf-stuff .nf-card{min-width:0;display:flex;flex-direction:column;gap:9px;padding:16px;background:linear-gradient(145deg,#191b21,#111318);border:1px solid var(--line);border-radius:11px;overflow-wrap:anywhere}
+    #nf-stuff .nf-card h3{font:400 1.2rem/1.25 Georgia,serif;margin:0;color:var(--text)}
+    #nf-stuff .nf-location{color:var(--muted);font-size:.82rem}
+    #nf-stuff .nf-tags{display:flex;flex-wrap:wrap;gap:5px}
+    #nf-stuff .nf-tag{font-size:.7rem;color:#c2c4cb;border:1px solid #353842;border-radius:5px;padding:3px 7px}
+    #nf-stuff .nf-cardfoot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+    #nf-stuff .nf-status{font-size:.72rem;color:var(--muted)}
+    #nf-stuff .nf-visit{display:inline-block;text-decoration:none;border:1px solid #50545f;border-radius:7px;padding:7px 10px;font-size:.8rem}
+    #nf-stuff .nf-visit:hover{background:#252830;border-color:#aeb1bb}
+    #nf-stuff .nf-empty{grid-column:1/-1;text-align:center;padding:34px 15px;color:var(--muted);border:1px dashed var(--line);border-radius:10px}
+    #nf-stuff .nf-foot{border-top:1px solid var(--line);margin-top:22px;padding-top:14px;color:var(--muted);font-size:.78rem}
+    @media(max-width:850px){#nf-stuff .nf-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:560px){#nf-stuff .nf-row,#nf-stuff .nf-grid{grid-template-columns:1fr}#nf-stuff{padding:14px}#nf-stuff .nf-summary{flex-direction:column}}
+  </style>
+  <div class="nf-kicker">Nachtfragment · Beyond Music</div>
+  <h2>Stuff &amp; Dark Lifestyle</h2>
+  <p class="nf-intro">Die dunkle Ästhetik jenseits der Musik: Alternative und Gothic Fashion, Shops, Schmuck, Tattoos, Ambiente, Szene-Locations, Labels und Artist-Merch. International gesammelt und laufend erweitert.</p>
+  <section class="nf-controls" aria-label="Verzeichnis filtern">
+    <div class="nf-row">
+      <input type="search" data-nf-search placeholder="Name, Stadt, Land, Kategorie oder Stil suchen …" aria-label="Verzeichnis durchsuchen">
+      <select data-nf-country aria-label="Nach Land filtern"><option value="">Alle Länder</option></select>
+    </div>
+    <div class="nf-filters" data-nf-filters></div>
+    <div class="nf-summary"><span data-nf-count>Verzeichnis wird geladen …</span><span>Letzte Aktualisierung: <strong data-nf-updated>–</strong></span></div>
+  </section>
+  <section class="nf-grid" data-nf-grid aria-live="polite"></section>
+  <div class="nf-foot">Nachtfragment · Internationales Dark Culture Directory · Magazine sowie Festivals und Veranstaltungen findest du in den entsprechenden Nachtfragment-Bereichen.</div>
+</div>
+<script>
+(()=>{
+  const root=document.getElementById('nf-stuff');if(!root||root.dataset.ready)return;root.dataset.ready='1';
+  const DATA='https://raw.githubusercontent.com/niehustorsten-del/nachtfragment-events/main/Stuff/nachtfragment-stuff.json';
+  const $=s=>root.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const url=s=>{try{const u=new URL(String(s||''));return ['http:','https:'].includes(u.protocol)?u.href:''}catch{return ''}};
+  let entries=[],category='';
+  const categoryList=['Alle','Alternative Fashion','Gothic Shops','Gothic Fashion','Schmuck & Accessoires','Tattoo & Body Art','Ambiente / Home & Living','Clubs & Nightlife','Szene-Verzeichnisse','Labels / Music','Artists / Merch','Designer / Handmade'];
+  function makeFilters(){
+    $('[data-nf-filters]').innerHTML=categoryList.map((c,i)=>'<button type="button" data-cat="'+esc(i?'':'')+'" class="'+(i===0?'active':'')+'">'+esc(c)+'</button>').join('');
+    $('[data-nf-filters]').querySelectorAll('button').forEach((b,i)=>b.addEventListener('click',()=>{category=i?categoryList[i]:'';$('[data-nf-filters]').querySelectorAll('button').forEach(x=>x.classList.remove('active'));b.classList.add('active');render()}));
+  }
+  function render(){
+    const q=$('[data-nf-search]').value.trim().toLocaleLowerCase('de'),country=$('[data-nf-country]').value;
+    const filtered=entries.filter(e=>{
+      const hay=[e.name,e.city,e.country,...(e.category||[]),...(e.tags||[])].join(' ').toLocaleLowerCase('de');
+      return (!q||hay.includes(q))&&(!country||e.country===country)&&(!category||(e.category||[]).includes(category));
+    });
+    $('[data-nf-count]').textContent=filtered.length+' von '+entries.length+' Einträgen';
+    if(!filtered.length){$('[data-nf-grid]').innerHTML='<div class="nf-empty">Keine passenden Einträge gefunden.</div>';return}
+    $('[data-nf-grid]').innerHTML=filtered.map(e=>{
+      const link=url(e.url),cats=(e.category||[]).map(c=>'<span class="nf-tag">'+esc(c)+'</span>').join(''),tags=(e.tags||[]).slice(0,5).map(t=>'<span class="nf-tag">'+esc(t)+'</span>').join('');
+      return '<article class="nf-card"><div><h3>'+esc(e.name)+'</h3><div class="nf-location">'+[e.city,e.country].filter(Boolean).map(esc).join(' · ')+'</div></div><div class="nf-tags">'+cats+tags+'</div><div class="nf-cardfoot"><span class="nf-status">'+(e.status==='verified'?'Geprüfter Eintrag':e.status==='needs_review'?'Noch zu prüfen':'Eintrag')+'</span>'+(link?'<a class="nf-visit" href="'+esc(link)+'" target="_blank" rel="noopener noreferrer">Website öffnen ↗</a>':'')+'</div></article>';
+    }).join('');
+  }
+  async function init(){
+    try{
+      const response=await fetch(DATA+'?v='+Date.now(),{cache:'no-store'});if(!response.ok)throw new Error('HTTP '+response.status);
+      const data=await response.json();entries=Array.isArray(data.entries)?data.entries:[];
+      $('[data-nf-updated]').textContent=data.updated||'–';
+      const countries=[...new Set(entries.map(e=>e.country).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'de'));
+      $('[data-nf-country]').innerHTML='<option value="">Alle Länder</option>'+countries.map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join('');
+      makeFilters();render();
+      $('[data-nf-search]').addEventListener('input',render);$('[data-nf-country]').addEventListener('change',render);
+    }catch(err){$('[data-nf-count]').textContent='Daten konnten nicht geladen werden: '+err.message;$('[data-nf-grid]').innerHTML='<div class="nf-empty">Die aktuelle Datenquelle ist vorübergehend nicht erreichbar. Bitte später erneut versuchen.</div>'}
+  }
+  init();
+})();
+</script>
