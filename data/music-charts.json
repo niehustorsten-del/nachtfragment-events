@@ -1,6 +1,6 @@
 {
   "title": "Nachtfragment Music Charts",
-  "issue": "November 2026 · Erste Ausgabe",
+  "issue": "November 2026 · Update",
   "updated_at": "2026-11-21",
   "methodology": {
     "scope": "Internationaler Dark Underground – inklusive DIY-, Bandcamp-, Independent- und Kleinstlabel-Veröffentlichungen",
@@ -20,7 +20,7 @@
       "Ethereal",
       "Neofolk"
     ],
-    "cadence": "Wöchentliche redaktionelle Prüfung, monatliche Top 30",
+    "cadence": "Zweimal wöchentliche redaktionelle Prüfung (Mittwoch und Sonntag), monatliche Top 30",
     "note": "Redaktionell kuratierte Auswahl neuer Veröffentlichungen. Keine Wiederveröffentlichungen, Reissues oder Re-Releases. Die Liste bezieht ausdrücklich DIY- und Underground-Releases ein; Rangfolge ist eine Nachtfragment-Auswahl und keine Verkaufs- oder Streamingmessung.",
     "discovery_sources": [
       "Bandcamp und Bandcamp-Labels",
@@ -120,13 +120,14 @@
     },
     {
       "position": 9,
-      "artist": "https://angelzoom.de/angelzoom-discography",
+      "artist": "Angelzoom",
       "title": "Borrowed Light",
       "genre": "Darkwave",
       "release": "2026-11-06",
       "country": "Germany",
       "movement": "new",
-      "source": "https://www.side-line.com/angelzoom-borrowed-light/"
+      "source": "https://www.side-line.com/angelzoom-borrowed-light/",
+      "artist_url": "https://angelzoom.de/angelzoom-discography"
     },
     {
       "position": 10,
@@ -317,6 +318,36 @@
       "country": "Denmark / Greece",
       "movement": "new",
       "source": "https://thesanctuarygate.com/en/gazette/2026-11-05/"
+    },
+    {
+      "position": 28,
+      "artist": "Night Nail",
+      "title": "Feelings Are Monsters",
+      "genre": "Darkwave",
+      "release": "2026-11-20",
+      "country": "Germany",
+      "movement": "new",
+      "source": "https://www.side-line.com/night-nail-feelings-are-monsters/"
+    },
+    {
+      "position": 29,
+      "artist": "Lucifers Bathroom",
+      "title": "Cursed",
+      "genre": "Dark Alternative / Industrial",
+      "release": "2026-11-13",
+      "country": "Germany",
+      "movement": "new",
+      "source": "https://www.side-line.com/lucifers-bathroom-cursed-single/"
+    },
+    {
+      "position": 30,
+      "artist": "Secrecy",
+      "title": "Winter In A&E",
+      "genre": "Post-Punk",
+      "release": "2026-11-18",
+      "country": "United Kingdom",
+      "movement": "new",
+      "source": "https://www.side-line.com/secrecy-winter-in-ae/"
     }
   ]
 }
