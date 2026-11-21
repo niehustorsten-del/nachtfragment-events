@@ -2,6 +2,7 @@ name: Nachtfragment Concert Discovery
 
 on:
   push:
+    branches: [main]
     paths:
       - 'concerts_discovery.py'
       - 'data/concert_sources.json'
