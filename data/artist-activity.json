@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-21T01:38:12+00:00",
+  "updated_at": "2026-11-21T01:45:33+00:00",
   "source": "Nachtfragment published concerts.json + manually approved artist-news.json",
   "artist_count": 131,
   "event_count": 5,
-  "news_count": 14,
+  "news_count": 16,
   "artists": {
     "2dcat": {
       "name": "2DCAT",
@@ -265,7 +265,17 @@
       "name": "Ductape",
       "url": "https://nachtfragment.de/index.php/artists/ductape",
       "events": [],
-      "news": []
+      "news": [
+        {
+          "id": "ductape-dert-video-2026-11-10",
+          "title": "Ductape veröffentlichen neues Video zu „D.E.R.T“",
+          "summary": "Das Darkwave-/Post-Punk-Duo veröffentlicht ein weiteres Video aus dem Album „Faded Flowers“. „D.E.R.T“ ist der sechste Clip aus dem Album; Regie führte Begüm Koçum.",
+          "date": "2026-11-10T00:00:00+00:00",
+          "category": "Video",
+          "publisher": "SIDE-LINE",
+          "url": "https://www.side-line.com/ductape-dert-video/"
+        }
+      ]
     },
     "emmon": {
       "name": "Emmon",
@@ -917,7 +927,17 @@
       "name": "Unverkalt",
       "url": "https://nachtfragment.de/index.php/artists/unverkalt",
       "events": [],
-      "news": []
+      "news": [
+        {
+          "id": "unverkalt-penumbrian-lament-live-session-2026-11-16",
+          "title": "Unverkalt veröffentlichen Live-Session-Video zu „Penumbrian Lament“",
+          "summary": "Die Band veröffentlicht eine im RAWBITE Studio aufgenommene Live-Session zu „Penumbrian Lament“ aus dem Album „Héréditaire“. Gleichzeitig gibt Unverkalt die Zusammenarbeit mit The Flaming Arts Agency bekannt.",
+          "date": "2026-11-16T00:00:00+00:00",
+          "category": "Video",
+          "publisher": "Season of Mist",
+          "url": "https://www.season-of-mist.com/news/unverkalt-2026-11-16/"
+        }
+      ]
     },
     "vera": {
       "name": "VeRa",
