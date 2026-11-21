@@ -6,6 +6,7 @@ on:
     paths:
       - 'concerts_discovery.py'
       - 'build_artist_activity.py'
+      # Artist registry changes refresh concerts and the shared Artist Activity feed.
       - 'data/artists.json'
       - 'data/concert_sources.json'
       - '.github/workflows/concerts-update.yml'
