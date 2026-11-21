@@ -35,7 +35,6 @@ jobs:
         run: |
           python - <<'PY'
           import json
-          import re
           import sys
           from datetime import date
           from pathlib import Path
@@ -98,5 +97,5 @@ jobs:
 
           print(f"OK: {len(tracks)} Chart-Einträge geprüft.")
           print(f"Letzter Datenstand: {updated}")
-          print("Alle Einträge enthalten Pflichtfelder, Datum und HTTP(S)-Quellen.")
+          print("Pflichtfelder, Datumsformat, Rangfolge und Dubletten geprüft; ältere Quellenhinweise werden als Warnung ausgegeben.")
           PY
