@@ -11,6 +11,7 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parent
 ARTISTS_FILE = ROOT / "data" / "artists.json"
 OUTPUT_FILE = ROOT / "data" / "artist-news-candidates.json"
+SOURCE_CONFIG = ROOT / "artist_news_sources.json"
 UA = "Mozilla/5.0 (compatible; Nachtfragment-NewsBot/1.0; +https://nachtfragment.de)"
 MAX_ARTISTS = max(0, int(os.getenv("ARTIST_NEWS_MAX_ARTISTS", "0")))  # 0 = alle Artists
 MAX_PER_ARTIST = 12
@@ -109,12 +110,33 @@ def main():
         if re.search(r"newcomer|linkliste|weblinks|rezension|review|top\s*50|verzeichnis",name,re.I): continue
         valid.append((name,match.group(1).lower()))
     selected = valid[:MAX_ARTISTS] if MAX_ARTISTS else valid
+    source_config = load_json(SOURCE_CONFIG, {})
+    domain_groups = source_config.get("search_domain_groups", [])
+    # Direct publication feeds are fetched once, then matched against every artist.
+    direct_items = []
+    for feed in source_config.get("direct_feeds", []):
+        for item in parse_feed(fetch_xml(feed["url"]), feed["name"]):
+            direct_items.append(item | {"source": feed["name"]})
+        time.sleep(0.3)
     for index,(name,slug) in enumerate(selected,1):
         q=quote_plus('"'+name+'" (music OR band OR album OR single OR interview OR video OR tour)')
         feeds=[("Google News",f"https://news.google.com/rss/search?q={q}+when%3A{DAYS}d&hl=en-US&gl=US&ceid=US:en"),("Bing News",f"https://www.bing.com/news/search?q={q}+when%3A{DAYS}d&format=rss")]
+        for group in domain_groups:
+            domains = " OR ".join("site:" + d for d in group.get("domains", []))
+            if not domains: continue
+            targeted = quote_plus(f'"{name}" ({domains})')
+            feeds.extend([
+                (group.get("name", "Underground search") + " / Google News",
+                 f"https://news.google.com/rss/search?q={targeted}+when%3A{DAYS}d&hl=en-US&gl=US&ceid=US:en"),
+                (group.get("name", "Underground search") + " / Bing News",
+                 f"https://www.bing.com/news/search?q={targeted}+when%3A{DAYS}d&format=rss")
+            ])
         artist_items=[]
+        candidate_sources = [(item.get("source", item["publisher"]), item) for item in direct_items]
         for feed_name,feed_url in feeds:
-            for item in parse_feed(fetch_xml(feed_url),feed_name):
+            candidate_sources.extend((feed_name, item) for item in parse_feed(fetch_xml(feed_url),feed_name))
+            time.sleep(0.15)
+        for feed_name,item in candidate_sources:
                 title=html.unescape(item["title"]).strip()
                 summary=html.unescape(re.sub(r"<[^>]+>"," ",item["summary"])).strip()
                 full=title+" "+summary
@@ -139,7 +161,7 @@ def main():
         print(f"[{index}/{len(selected)}] {name}: {len(artist_items)} Treffer")
         time.sleep(0.2)
     results.sort(key=lambda x:x["date"],reverse=True)
-    payload={"updated_at":now.isoformat(timespec="seconds"),"lookback_days":DAYS,"artist_count":len(selected),"candidate_count":len(results),"approval_required":True,"items":results}
+    payload={"updated_at":now.isoformat(timespec="seconds"),"lookback_days":DAYS,"artist_count":len(selected),"candidate_count":len(results),"source_groups":len(domain_groups),"direct_feed_count":len(source_config.get("direct_feeds", [])),"approval_required":True,"items":results}
     OUTPUT_FILE.parent.mkdir(parents=True,exist_ok=True)
     tmp=OUTPUT_FILE.with_suffix(".json.tmp")
     tmp.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
