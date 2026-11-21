@@ -1,6 +1,6 @@
 {
   "title": "Nachtfragment Music Charts – Recherchekandidaten",
-  "updated_at": "2026-11-21T07:34:39+00:00",
+  "updated_at": "2026-11-21T07:36:19+00:00",
   "approval_required": true,
   "automatic_publication": false,
   "source_count": 23,
@@ -26,8 +26,7 @@
     {
       "name": "ReGen Magazine",
       "url": "https://regenmag.com/",
-      "article_links": 0,
-      "candidates": 0
+      "error": "HTTPError"
     },
     {
       "name": "IDIEY OUDIE",
@@ -55,8 +54,7 @@
     {
       "name": "Dark Entries Records",
       "url": "https://darkentriesrecords.com/collections/all",
-      "article_links": 0,
-      "candidates": 0
+      "error": "RemoteDisconnected"
     },
     {
       "name": "Manic Depression Records",
@@ -146,6 +144,17 @@
       "format_guess": "Single / Track",
       "publisher": "Side-Line",
       "source_url": "https://www.side-line.com/connrar-you-dont-care/",
+      "primary_release_url": "https://sidelinemag.bandcamp.com/",
+      "external_release_links": [
+        "https://sidelinemag.bandcamp.com/",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction",
+        "https://connrar.bandcamp.com/album/you-dont-care",
+        "https://sidelinemag.bandcamp.com/album/united-1-the-freya-files",
+        "https://sidelinemag.bandcamp.com/album/united-2-the-odin-files",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-nightside-sessions",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-session-1",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction"
+      ],
       "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/connrar-you-dont-care-cover.webp",
       "status": "needs_editorial_review",
       "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
@@ -164,6 +173,17 @@
       "format_guess": "Single / Track",
       "publisher": "Side-Line",
       "source_url": "https://www.side-line.com/pawn-pawn-silhouette/",
+      "primary_release_url": "https://sidelinemag.bandcamp.com/",
+      "external_release_links": [
+        "https://sidelinemag.bandcamp.com/",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction",
+        "https://pawnpawn.bandcamp.com/track/silhouette",
+        "https://sidelinemag.bandcamp.com/album/united-1-the-freya-files",
+        "https://sidelinemag.bandcamp.com/album/united-2-the-odin-files",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-nightside-sessions",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-session-1",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction"
+      ],
       "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/pawn-pawn-silhouette-cover.webp",
       "status": "needs_editorial_review",
       "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
@@ -182,6 +202,17 @@
       "format_guess": "EP / Album / unklar",
       "publisher": "Side-Line",
       "source_url": "https://www.side-line.com/projekt-ich-the-night-before-christmas/",
+      "primary_release_url": "https://sidelinemag.bandcamp.com/",
+      "external_release_links": [
+        "https://sidelinemag.bandcamp.com/",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction",
+        "https://projektich.bandcamp.com/album/the-night-before-christmas",
+        "https://sidelinemag.bandcamp.com/album/united-1-the-freya-files",
+        "https://sidelinemag.bandcamp.com/album/united-2-the-odin-files",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-nightside-sessions",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-session-1",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction"
+      ],
       "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/projekt-ich-the-night-before-christmas-cover.webp",
       "status": "needs_editorial_review",
       "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
@@ -201,6 +232,17 @@
       "format_guess": "Single / Track",
       "publisher": "Side-Line",
       "source_url": "https://www.side-line.com/coldstar-into-the-void/",
+      "primary_release_url": "https://sidelinemag.bandcamp.com/",
+      "external_release_links": [
+        "https://sidelinemag.bandcamp.com/",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction",
+        "https://coldstarmusic.bandcamp.com/track/into-the-void",
+        "https://sidelinemag.bandcamp.com/album/united-1-the-freya-files",
+        "https://sidelinemag.bandcamp.com/album/united-2-the-odin-files",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-nightside-sessions",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-session-1",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction"
+      ],
       "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/coldstar-into-the-void-cover.webp",
       "status": "needs_editorial_review",
       "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
@@ -219,6 +261,17 @@
       "format_guess": "EP / Album / unklar",
       "publisher": "Side-Line",
       "source_url": "https://www.side-line.com/99-gravestones-order-of-the-fly/",
+      "primary_release_url": "https://sidelinemag.bandcamp.com/",
+      "external_release_links": [
+        "https://sidelinemag.bandcamp.com/",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction",
+        "https://99gravestones.bandcamp.com/album/order-of-the-fly",
+        "https://sidelinemag.bandcamp.com/album/united-1-the-freya-files",
+        "https://sidelinemag.bandcamp.com/album/united-2-the-odin-files",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-nightside-sessions",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-session-1",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction"
+      ],
       "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/99-gravestones-order-of-the-fly-cover.webp",
       "status": "needs_editorial_review",
       "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
@@ -237,6 +290,17 @@
       "format_guess": "EP / Album / unklar",
       "publisher": "Side-Line",
       "source_url": "https://www.side-line.com/i-ya-toyah-error-prospect-human/",
+      "primary_release_url": "https://sidelinemag.bandcamp.com/",
+      "external_release_links": [
+        "https://sidelinemag.bandcamp.com/",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction",
+        "https://iyatoyah.bandcamp.com/album/error-prospect-human",
+        "https://sidelinemag.bandcamp.com/album/united-1-the-freya-files",
+        "https://sidelinemag.bandcamp.com/album/united-2-the-odin-files",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-nightside-sessions",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-session-1",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction"
+      ],
       "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/i-ya-toyah-error-prospect-human-cover.webp",
       "status": "needs_editorial_review",
       "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
@@ -255,6 +319,17 @@
       "format_guess": "Single / Track",
       "publisher": "Side-Line",
       "source_url": "https://www.side-line.com/eden-script-humans-remain-single/",
+      "primary_release_url": "https://sidelinemag.bandcamp.com/",
+      "external_release_links": [
+        "https://sidelinemag.bandcamp.com/",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction",
+        "https://edenscript.bandcamp.com/track/humans-remain",
+        "https://sidelinemag.bandcamp.com/album/united-1-the-freya-files",
+        "https://sidelinemag.bandcamp.com/album/united-2-the-odin-files",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-nightside-sessions",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-session-1",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction"
+      ],
       "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/eden-script-humans-remain-cover-scaled.webp",
       "status": "needs_editorial_review",
       "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
@@ -274,6 +349,17 @@
       "format_guess": "Single / Track",
       "publisher": "Side-Line",
       "source_url": "https://www.side-line.com/aliens-corporation-altered-moods/",
+      "primary_release_url": "https://sidelinemag.bandcamp.com/",
+      "external_release_links": [
+        "https://sidelinemag.bandcamp.com/",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction",
+        "https://open.spotify.com/track/0scfA4aSj2pkPO8pU5vtwm",
+        "https://sidelinemag.bandcamp.com/album/united-1-the-freya-files",
+        "https://sidelinemag.bandcamp.com/album/united-2-the-odin-files",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-nightside-sessions",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-session-1",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction"
+      ],
       "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/aliens.webp",
       "status": "needs_editorial_review",
       "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
@@ -294,6 +380,17 @@
       "format_guess": "EP / Album / unklar",
       "publisher": "Side-Line",
       "source_url": "https://www.side-line.com/j-wolf-tainted-scent-ep/",
+      "primary_release_url": "https://sidelinemag.bandcamp.com/",
+      "external_release_links": [
+        "https://sidelinemag.bandcamp.com/",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction",
+        "https://jwolfmusic.bandcamp.com/album/tainted-scent",
+        "https://jwolfmusic.bandcamp.com/album/tainted-scent",
+        "https://sidelinemag.bandcamp.com/album/united-1-the-freya-files",
+        "https://sidelinemag.bandcamp.com/album/united-2-the-odin-files",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-nightside-sessions",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-session-1"
+      ],
       "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/jwolf-tainted-scent-cover.webp",
       "status": "needs_editorial_review",
       "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
@@ -313,6 +410,13 @@
       "format_guess": "EP / Album / unklar",
       "publisher": "Post-Punk.com – New Releases",
       "source_url": "https://post-punk.com/san-diego-post-punk-duo-twin-ion-engine-explore-romance-and-ruin-on-third-album-iii-midsummer-lover/",
+      "primary_release_url": "https://tie-music.bandcamp.com/album/iii-midsummer-lover",
+      "external_release_links": [
+        "https://tie-music.bandcamp.com/album/iii-midsummer-lover",
+        "https://soundcloud.com/alice-teeple-646638185",
+        "https://manicdepressionrecords.bandcamp.com/",
+        "https://metropolisrecords.bandcamp.com/"
+      ],
       "artwork": "https://post-punk.com/wp-content/uploads/2026/11/Twin-Ion-Engine.jpg",
       "status": "needs_editorial_review",
       "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
@@ -333,6 +437,14 @@
       "format_guess": "Single / Track",
       "publisher": "Post-Punk.com – New Releases",
       "source_url": "https://post-punk.com/mighty-darkwave-duo-deathday-returns-with-venemous-new-single-hungry-ghosts/",
+      "primary_release_url": "https://deathday.bandcamp.com/",
+      "external_release_links": [
+        "https://deathday.bandcamp.com/",
+        "https://open.spotify.com/artist/2UO0UK7YfDlK7ITX3Izuas?si=Sa6A83GUTXKLcp-pmRacXA",
+        "https://soundcloud.com/deathday",
+        "https://manicdepressionrecords.bandcamp.com/",
+        "https://metropolisrecords.bandcamp.com/"
+      ],
       "artwork": "https://post-punk.com/wp-content/uploads/2026/11/0048482412_10.jpg",
       "status": "needs_editorial_review",
       "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
