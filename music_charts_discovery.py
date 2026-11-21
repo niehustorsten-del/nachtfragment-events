@@ -243,7 +243,7 @@ def parse_article(url: str, publisher: str, source_kind: str) -> dict | None:
         if "bandcamp.com" in host:
             if host != "sidelinemag.bandcamp.com" and not artist_bandcamp_url:
                 artist_bandcamp_url = target
-            if re.search(r"/(track|album)/", path):
+            if host != "sidelinemag.bandcamp.com" and path != "/" and re.search(r"/(track|album)/", path):
                 external_links.append(target)
         elif any(domain in host for domain in ("spotify.com", "music.apple.com", "soundcloud.com")):
             if re.search(r"/(track|album)/", path) or "music.apple.com" in host:
