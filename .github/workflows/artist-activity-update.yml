@@ -32,7 +32,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Öffentliche Künstlernews suchen
+      - name: Öffentliche Künstlernews für alle Artists suchen
+        env:
+          ARTIST_NEWS_MAX_ARTISTS: "0"
         run: python discover_artist_news.py
       - name: Aktivitätsfeed erzeugen
         run: python build_artist_activity.py
