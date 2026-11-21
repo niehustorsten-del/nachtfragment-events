@@ -1,0 +1,26 @@
+{
+  "title": "Nachtfragment Music Charts",
+  "issue": "Erste Ausgabe in Vorbereitung",
+  "updated_at": null,
+  "methodology": {
+    "scope": "Internationaler Dark Underground",
+    "genres": [
+      "Darkwave",
+      "Post-Punk",
+      "Coldwave",
+      "Gothic Rock",
+      "EBM",
+      "Industrial",
+      "Dark Electro",
+      "Dark Synth",
+      "Minimal Synth",
+      "Deathrock",
+      "Dark Pop",
+      "Ethereal",
+      "Neofolk"
+    ],
+    "cadence": "Wöchentliche Prüfung, monatliche Top 30",
+    "note": "Keine Chartpositionen ohne verifizierte Trackdaten und nachvollziehbare Bewertungsgrundlage."
+  },
+  "tracks": []
+}
