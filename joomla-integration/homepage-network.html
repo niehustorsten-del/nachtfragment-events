@@ -1,0 +1,24 @@
+<!-- Nachtfragment: internes Network-Menü für die Joomla-Startseite
+     Die ersten vier Links entsprechen bereits vorhandenen Joomla-Beiträgen.
+     Für Dark Scene Directory und Music Charts die angegebenen Menü-Aliase anlegen. -->
+<div id="nf-home-network">
+  <style>
+    #nf-home-network{--bg:#0b0c10;--panel:#15171d;--line:#30333d;--text:#e9e8eb;--muted:#a5a5af;--accent:#c4bfcc;color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;margin:20px 0}
+    #nf-home-network *{box-sizing:border-box}
+    #nf-home-network .nf-network-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    #nf-home-network a{display:block;min-width:0;padding:17px 18px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(145deg,#191c23,#111318);color:var(--text);text-decoration:none;transition:border-color .18s,transform .18s}
+    #nf-home-network a:hover{border-color:var(--accent);transform:translateY(-2px);color:#fff}
+    #nf-home-network strong{display:block;font:400 1.16rem/1.25 Georgia,serif;margin-bottom:6px}
+    #nf-home-network span{display:block;color:var(--muted);font-size:.86rem}
+    @media(max-width:760px){#nf-home-network .nf-network-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:520px){#nf-home-network .nf-network-grid{grid-template-columns:1fr}#nf-home-network a{padding:15px}}
+  </style>
+  <div class="nf-network-grid" aria-label="Nachtfragment Network">
+    <a href="/index.php/dark-scene-directory"><strong>Dark Scene Directory</strong><span>Shops, Clubs, Bars, Festivals und Szeneorte</span></a>
+    <a href="/index.php/konzerte-gigs"><strong>Konzerte &amp; Gigs</strong><span>Kommende Live-Termine aus dem Nachtfragment-Radar</span></a>
+    <a href="/index.php/ambiente-wohnen-tattoos"><strong>Stuff &amp; Dark Lifestyle</strong><span>Fashion, Ambiente, Tattoos und dunkle Ästhetik</span></a>
+    <a href="/index.php/magazine"><strong>Magazine &amp; Webzines</strong><span>Magazine, Fanzines und unabhängige Publikationen</span></a>
+    <a href="/index.php/music-charts"><strong>Nachtfragment Music Charts</strong><span>Neue Veröffentlichungen und aktuelle Entdeckungen</span></a>
+    <a href="/index.php/followmanager"><strong>Artist Follow Manager</strong><span>Nachtfragment-Artists auf Facebook entdecken</span></a>
+  </div>
+</div>
