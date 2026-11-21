@@ -1,6 +1,6 @@
 {
   "title": "Nachtfragment Music Charts",
-  "issue": "Laufende Ausgabe · regelmäßig aktualisiert",
+  "issue": "Top 50 · laufende Ausgabe",
   "updated_at": "2026-11-21",
   "methodology": {
     "scope": "Internationaler Dark Underground – inklusive DIY-, Bandcamp-, Independent- und Kleinstlabel-Veröffentlichungen",
@@ -21,7 +21,7 @@
       "Neofolk"
     ],
     "cadence": "Laufende Aktualisierung; redaktionelle Prüfung mittwochs und sonntags",
-    "note": "Redaktionell kuratierte Auswahl neuer Veröffentlichungen. Keine Wiederveröffentlichungen, Reissues oder Re-Releases. Die Liste bezieht ausdrücklich DIY- und Underground-Releases ein; Rangfolge ist eine Nachtfragment-Auswahl und keine Verkaufs- oder Streamingmessung.",
+    "note": "Redaktionell kuratierte Top-50-Auswahl neuer Veröffentlichungen. Keine Wiederveröffentlichungen, Reissues oder Re-Releases. Die Liste bezieht ausdrücklich DIY- und Underground-Releases ein; Rangfolge ist eine Nachtfragment-Auswahl und keine Verkaufs- oder Streamingmessung. Singles, EPs und Alben können berücksichtigt werden, sofern die Veröffentlichung in den musikalischen Rahmen passt.",
     "discovery_sources": [
       "Bandcamp Discover: genre-, tag- und standortbasierte Suche nach neuen Veröffentlichungen",
       "Bandcamp Daily: redaktionelle Entdeckungen, Labelporträts und Underground-Szenen",
@@ -38,7 +38,7 @@
       "Artist-eigene Websites, Bandcamp-Seiten, YouTube-Kanäle und SoundCloud-Profile",
       "Unabhängige Musikblogs, Szene-Newsletter, Radiosendungen und DJ-/Community-Empfehlungen"
     ],
-    "selection_policy": "Underground-Relevanz ausdrücklich erwünscht: unbekannte und neue Acts, DIY-Releases, kleine Labels und selbstveröffentlichte Musik erhalten denselben redaktionellen Stellenwert wie etabliertere Namen. Reichweite oder Streamingzahlen sind keine Voraussetzung.",
+    "selection_policy": "Underground-Relevanz ausdrücklich erwünscht: unbekannte und neue Acts, DIY-Releases, kleine Labels und selbstveröffentlichte Musik erhalten denselben redaktionellen Stellenwert wie etabliertere Namen. Reichweite oder Streamingzahlen sind keine Voraussetzung. Die Charts umfassen bis zu 50 Positionen. Neben Singles werden passende EPs und Alben berücksichtigt; die Veröffentlichungsart wird im Datensatz ausgewiesen.",
     "source_catalog": [
       {
         "name": "Bandcamp Discover",
@@ -436,6 +436,230 @@
       "country": "United Kingdom",
       "movement": "new",
       "source": "https://www.side-line.com/secrecy-winter-in-ae/"
+    },
+    {
+      "artist": "Silent Impulse",
+      "title": "Transmutation",
+      "genre": "Industrial / Powernoise / Dark Electronics",
+      "release": "2026-11-20",
+      "country": "USA",
+      "movement": "new",
+      "format": "EP",
+      "source": "https://www.side-line.com/silent-impulse-transmutation-ep/",
+      "position": 31
+    },
+    {
+      "artist": "Boustrophedon",
+      "title": "pathOS",
+      "genre": "Industrial / EBM / Post-Punk",
+      "release": "2026-11-13",
+      "country": "USA",
+      "movement": "new",
+      "format": "Album",
+      "source": "https://www.side-line.com/boustrophedon-pathos/",
+      "position": 32
+    },
+    {
+      "artist": "Marcel Miska",
+      "title": "Happy New Year (Farewell My Dear)",
+      "genre": "Gothic Synthpop / Darkwave",
+      "release": "2026-11-09",
+      "country": "United Kingdom",
+      "movement": "new",
+      "format": "Single",
+      "source": "https://www.side-line.com/marcel-miska-happy-new-year/",
+      "position": 33
+    },
+    {
+      "artist": "TéMèT",
+      "title": "Not the Same Soul",
+      "genre": "Synthpop / Darkwave",
+      "release": "2026-11-13",
+      "country": "France",
+      "movement": "new",
+      "format": "Single",
+      "source": "https://www.side-line.com/temet-not-the-same-soul-single/",
+      "position": 34
+    },
+    {
+      "artist": "Spectre Rebel",
+      "title": "Wouldn’t You Like To Know",
+      "genre": "Electro / Synthpop",
+      "release": "2026-11-06",
+      "country": "Norway",
+      "movement": "new",
+      "format": "Single",
+      "source": "https://www.side-line.com/spectre-rebel-wouldnt-you-like-to-know/",
+      "position": 35
+    },
+    {
+      "artist": "Graufasern",
+      "title": "Mood",
+      "genre": "Dark Trip-Hop / Synthpop / Experimental Electronics",
+      "release": "2026-11-07",
+      "country": "Germany",
+      "movement": "new",
+      "format": "EP",
+      "source": "https://www.side-line.com/graufasern-mood-ep/",
+      "position": 36
+    },
+    {
+      "artist": "Beauty In Chaos",
+      "title": "Outtasight Outtamind (feat. Leo Luganskiy)",
+      "genre": "Dark Alternative / Gothic Rock",
+      "release": "2026-11-12",
+      "country": "USA",
+      "movement": "new",
+      "format": "Single",
+      "source": "https://www.side-line.com/beauty-in-chaos-outtasight-outtamind/",
+      "position": 37
+    },
+    {
+      "artist": "EGOamp",
+      "title": "Testament",
+      "genre": "Synthpop",
+      "release": "2026-11-13",
+      "country": "Germany",
+      "movement": "new",
+      "format": "EP",
+      "source": "https://www.side-line.com/egoamp-testament-ep/",
+      "position": 38
+    },
+    {
+      "artist": "Lakeside X",
+      "title": "Babylon Kids",
+      "genre": "Post-Punk / Alternative / Synthpop",
+      "release": "2026-11-13",
+      "country": "Czech Republic",
+      "movement": "new",
+      "format": "Single",
+      "source": "https://lakesidex.bandcamp.com/album/babylon-kids-single-edit",
+      "position": 39
+    },
+    {
+      "artist": "Vlimmer",
+      "title": "Kiemenatmung",
+      "genre": "Darkwave / Post-Punk / Darkgaze",
+      "release": "2026-11-13",
+      "country": "Germany",
+      "movement": "new",
+      "format": "Album",
+      "source": "https://www.side-line.com/vlimmer-kiemenatmung-album/",
+      "bandcamp": "https://blackjackilluministrecords.bandcamp.com/album/kiemenatmung",
+      "position": 40
+    },
+    {
+      "artist": "Agent Side Grinder",
+      "title": "The Choir",
+      "genre": "Electronic Post-Punk / Industrial",
+      "release": "2026-11-13",
+      "country": "Sweden",
+      "movement": "new",
+      "format": "Single",
+      "source": "https://www.side-line.com/agent-side-grinder-the-choir/",
+      "position": 41
+    },
+    {
+      "artist": "Foule",
+      "title": "Aurore",
+      "genre": "Darkwave / Post-Punk",
+      "release": "2026-10-31",
+      "country": "France",
+      "movement": "new",
+      "format": "Single",
+      "source": "https://www.side-line.com/foule-aurore-single/",
+      "position": 42
+    },
+    {
+      "artist": "Dark the Keeper & Ghost Reflection",
+      "title": "In the Arms of the Abyss",
+      "genre": "Dark Ambient / Industrial",
+      "release": "2026-11-12",
+      "country": "Slovakia",
+      "movement": "new",
+      "format": "Split Album",
+      "source": "https://www.side-line.com/dark-the-keeper-ghost-reflection-abyss/",
+      "position": 43
+    },
+    {
+      "artist": "I Ya Toyah",
+      "title": "Error Prospect: Human",
+      "genre": "Industrial Rock / Darkwave / Dark Pop",
+      "release": "2026-11-20",
+      "country": "USA",
+      "movement": "new",
+      "format": "EP",
+      "source": "https://www.side-line.com/i-ya-toyah-error-prospect-human/",
+      "bandcamp": "https://iyatoyah.bandcamp.com/album/error-prospect-human",
+      "position": 44
+    },
+    {
+      "artist": "Black Lung",
+      "title": "Ordo Ab Chao",
+      "genre": "Industrial / Experimental Electronics",
+      "release": "2026-11-16",
+      "country": "Australia",
+      "movement": "new",
+      "format": "Album",
+      "source": "https://www.side-line.com/black-lung-ordo-ab-chao-lp/",
+      "position": 45
+    },
+    {
+      "artist": "digital ENERGY",
+      "title": "Echoes Of Tomorrow",
+      "genre": "Electro / Futurepop / Synthpop",
+      "release": "2026-10-09",
+      "country": "Germany",
+      "movement": "new",
+      "format": "Album",
+      "source": "https://www.side-line.com/digital-energy-echoes-of-tomorrow-review/",
+      "bandcamp": "https://infactedrecordings.bandcamp.com/album/echoes-of-tomorrow-2",
+      "position": 46
+    },
+    {
+      "artist": "Ghost Painted Sky",
+      "title": "Failure Blooms",
+      "genre": "Darkwave / Post-Punk",
+      "release": "2026-11-11",
+      "country": "USA",
+      "movement": "new",
+      "format": "Album",
+      "source": "https://www.side-line.com/ghost-painted-sky-failure-blooms/",
+      "position": 47
+    },
+    {
+      "artist": "99 Gravestones",
+      "title": "The Order Of The Fly",
+      "genre": "Gothic / Industrial Metal",
+      "release": "2026-11-20",
+      "country": "USA",
+      "movement": "new",
+      "format": "Album",
+      "source": "https://www.side-line.com/99-gravestones-order-of-the-fly/",
+      "position": 48
+    },
+    {
+      "artist": "Anantakara",
+      "title": "True North (Remembered)",
+      "genre": "Dark Ambient / Experimental Electronics",
+      "release": "2026-11-20",
+      "country": "International",
+      "movement": "new",
+      "format": "Album",
+      "source": "https://www.side-line.com/anantakara-true-north-remembered/",
+      "bandcamp": "https://cyclicaldreams.bandcamp.com/album/true-north-remembered-cyd-0171",
+      "position": 49
+    },
+    {
+      "artist": "La Chanson Noire",
+      "title": "Grand Mal",
+      "genre": "Goth / Darkwave / Alternative",
+      "release": "2026-11-01",
+      "country": "Portugal",
+      "movement": "new",
+      "format": "Single",
+      "source": "https://www.side-line.com/la-chanson-noire-grand-mal/",
+      "position": 50
     }
   ]
 }
