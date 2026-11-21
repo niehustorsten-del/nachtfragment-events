@@ -1,21 +1,42 @@
-# Artist News – Nachtfragment
+# Artist Activity – Nachtfragment
 
-## Ablauf
-- discover_artist_news.py durchsucht für alle Künstler in data/artists.json öffentliche Google-News- und Bing-News-Suchergebnisse der letzten 45 Tage.
-- Nur Treffer mit expliziter Künstlernennung und Musik-/Szenenbezug werden als Kandidaten gespeichert.
-- Kandidaten landen in data/artist-news-candidates.json mit status needs_review. Sie werden NICHT automatisch auf Nachtfragment veröffentlicht.
-- Nach redaktioneller Prüfung werden geeignete Einträge in data/artist-news.json übernommen und auf status approved gesetzt.
-- build_artist_activity.py verbindet freigegebene Meldungen mit bestätigten Konzertdaten in data/artist-activity.json.
-- artist-activity.js zeigt News und Konzerttermine auf der passenden Joomla-Künstlerseite. Ohne freigegebene News und bestätigte Termine verschwindet der Block.
+## Gemeinsame Artist-Datenbasis
 
-## Meldung freigeben
-Kopiere einen passenden Eintrag aus data/artist-news-candidates.json in das Feld items in data/artist-news.json. Prüfe:
-1. Betrifft die Meldung tatsächlich den genannten Act?
-2. Sind Datum und Artikel aktuell und erreichbar?
-3. Ist es eine echte Musik-/Szenenmeldung und keine Namensgleichheit?
-4. Ist die Quelle für eine Verlinkung geeignet?
+`data/artists.json` ist die zentrale Liste aller Nachtfragment-Künstlerseiten. Sie enthält den Artist-Namen und die zugehörige Joomla-URL. Die aktuelle Liste umfasst 131 Artists. Für die Aufnahme in die automatische Recherche müssen Bands keine zusätzlichen Konten, API-Schlüssel oder Nachtfragment-Formulare einrichten.
 
-Setze danach status auf approved. Die nächste Artist Activity Workflow-Ausführung übernimmt die Meldung in den Live-Feed. Für sofortige Aktualisierung kann der Workflow manuell gestartet werden.
+Öffentlich verlinkte offizielle Webseiten und Terminseiten auf den Artist-Profilen helfen der Konzertrecherche, passende Kalender und Veranstaltungsseiten zu finden. Die News-Recherche sucht zusätzlich nach dem Artist-Namen in öffentlichen News-Indizes.
+
+## Gemeinsamer Ablauf
+
+1. **Artist-Bestand:** `data/artists.json` liefert Namen und Künstlerseiten für beide Recherchen.
+2. **News-Recherche:** `discover_artist_news.py` durchsucht öffentliche Google-News- und Bing-News-Ergebnisse der letzten 45 Tage für alle Artists. Treffer werden als Kandidaten gespeichert.
+3. **Konzert-Recherche:** `concerts_discovery.py` durchsucht Künstlerseiten und öffentliche Veranstaltungs-/Kalenderquellen. Ungeprüfte Kandidaten bleiben im Review-Bestand; nur die bereits definierten belastbaren Event-Nachweise können in `concerts.json` übernommen werden.
+4. **Gemeinsamer Feed:** `build_artist_activity.py` verbindet bestätigte zukünftige Konzerttermine und redaktionell freigegebene News in `data/artist-activity.json`.
+5. **Artist-Seiten:** `artist-activity.js` lädt diesen Feed und zeigt die passenden News und Termine auf der Joomla-Seite des jeweiligen Artists.
+
+## News freigeben
+
+Neue Suchtreffer landen in `data/artist-news-candidates.json` mit `status: needs_review`. Sie werden nicht automatisch auf Nachtfragment veröffentlicht.
+
+Für eine Freigabe:
+1. Prüfen, ob die Meldung tatsächlich den genannten Artist betrifft.
+2. Datum und Originalartikel auf Erreichbarkeit und Aktualität prüfen.
+3. Musik-/Szenenbezug und Quelle prüfen.
+4. Den geprüften Eintrag in `data/artist-news.json` übernehmen und `status: approved` setzen.
+
+Nur Einträge mit `status: approved` erscheinen im Artist Activity Feed.
+
+## Konzertfreigabe
+
+Der Artist Activity Feed übernimmt ausschließlich Konzertdaten mit einem der freigegebenen Statuswerte `confirmed`, `date_confirmed`, `lineup_announced` oder `date_confirmed_lineup_pending`. Ungeprüfte Kandidaten aus `data/concert_candidates.json` werden nicht direkt auf Artist-Seiten angezeigt.
+
+## Aktualisierung
+
+- Konzertrecherche: Mittwoch und Sonntag, 05:35 UTC.
+- News-Recherche und Feed: Mittwoch und Sonntag, 06:45 UTC.
+- Nach einer Konzertrecherche wird der gemeinsame Artist Activity Feed jetzt unmittelbar neu gebaut. Ein manueller Start des Konzert-Workflows aktualisiert damit ebenfalls die Artist-Seiten-Daten.
+- Beide Workflows verwenden dieselbe GitHub-Concurrency-Gruppe, damit parallele Schreibvorgänge im Repository vermieden werden.
 
 ## Grenzen
-„Alle News im Internet“ kann kein Suchsystem vollständig garantieren. Die Suche kombiniert öffentliche News-Indizes und ist kostenlos sowie ohne API-Schlüssel nutzbar. Nicht indexierte Social-Media-Posts, geschlossene Plattformen und nicht öffentlich zugängliche Inhalte werden nicht zuverlässig erfasst. Die Konzertsuche bleibt davon getrennt und unverändert.
+
+Die Suche ist kostenlos und benötigt keine zusätzlichen API-Schlüssel. Sie kann nicht das gesamte Internet oder geschlossene Social-Media-Inhalte vollständig erfassen. Öffentliche News-Indizes können Meldungen übersehen oder unpassende Treffer liefern; deshalb bleiben News redaktionell prüfpflichtig.
