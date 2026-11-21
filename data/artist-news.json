@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T00:00:00Z",
+  "updated_at": "2026-11-21T01:00:00Z",
   "instructions": "Redaktionell geprüfte Meldungen. Nur status=approved wird in den Artist Activity Feed übernommen.",
   "items": [
     {
@@ -132,6 +132,42 @@
       "category": "Release",
       "publisher": "SIDE-LINE",
       "url": "https://www.side-line.com/then-comes-silence-requiem-ballroom-out-now/",
+      "status": "approved"
+    },
+    {
+      "id": "agent-side-grinder-the-choir-2026-11-13",
+      "artist": "Agent Side Grinder",
+      "artist_slug": "agent-side-grinder",
+      "title": "Agent Side Grinder veröffentlichen „The Choir“ über Metropolis Records",
+      "summary": "Die schwedische Post-Punk- und Elektronik-Band veröffentlicht mit „The Choir“ ihre erste neue Original-Single seit 2023 und zugleich den Einstand bei Metropolis Records. Für März 2027 ist außerdem eine neue EP angekündigt.",
+      "date": "2026-11-13T00:00:00+00:00",
+      "category": "Release",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/agent-side-grinder-the-choir/",
+      "status": "approved"
+    },
+    {
+      "id": "dancing-plague-endlessness-2026-11-19",
+      "artist": "Dancing Plague",
+      "artist_slug": "dancing-plague",
+      "title": "Dancing Plague kündigen neues Album „Endlessness“ an und veröffentlichen Video",
+      "summary": "Das Dark-Electro-Projekt von Conor Knowles veröffentlicht am 5. Februar 2027 über Artoffact Records das neue Album „Endlessness“. Zur Ankündigung erschien das Video zum Albumtrack „Heart So Close“.",
+      "date": "2026-11-19T00:00:00+00:00",
+      "category": "Release / Video",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/dancing-plague-endlessness-album/",
+      "status": "approved"
+    },
+    {
+      "id": "digital-energy-echoes-of-tomorrow-review-2026-11-18",
+      "artist": "DIGITAL ENERGY",
+      "artist_slug": "digital-energy",
+      "title": "Digital Energy – „Echoes Of Tomorrow“: Albumreview",
+      "summary": "SIDE-LINE bespricht das im August 2026 über Infacted Recordings erschienene Album. Die Rezension hebt den melodischen Electro-Pop-Sound, die prägnante Produktion und die Zusammenarbeit mit Produzent Gerrit Thomas hervor.",
+      "date": "2026-11-18T00:00:00+00:00",
+      "category": "Review",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/digital-energy-echoes-of-tomorrow-review/",
       "status": "approved"
     }
   ]
