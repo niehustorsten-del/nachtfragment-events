@@ -1,10 +1,25 @@
 {
-  "updated_at": "2026-11-21T01:01:54+00:00",
+  "updated_at": "2026-11-21T01:13:34+00:00",
   "lookback_days": 45,
   "artist_count": 131,
-  "candidate_count": 55,
+  "candidate_count": 77,
+  "source_groups": 3,
+  "direct_feed_count": 2,
   "approval_required": true,
   "items": [
+    {
+      "id": "68d84cf0b612e2b77819",
+      "artist": "Then Comes Silence",
+      "artist_slug": "then-comes-silence",
+      "title": "Then Comes Silence split ‘Requiem Ballroom’ into two halves for eighth album",
+      "summary": "Then Comes Silence release eighth album \"Requiem Ballroom\" on Metropolis Records, led by focus track \"Witches and Demons\", ahead of a January 2027 EU tour.",
+      "date": "2026-11-20T18:43:14+00:00",
+      "category": "Tour / Live",
+      "publisher": "Side-Line Magazine",
+      "url": "https://www.side-line.com/then-comes-silence-requiem-ballroom-out-now/",
+      "source": "Side-Line Magazine",
+      "status": "needs_review"
+    },
     {
       "id": "4fb2b3bcd720fa05b1d9",
       "artist": "Then Comes Silence",
@@ -58,6 +73,45 @@
       "status": "needs_review"
     },
     {
+      "id": "ac4b332a64b357764b5f",
+      "artist": "Dancing Plague",
+      "artist_slug": "dancing-plague",
+      "title": "Dancing Plague Announces New Album ‘Endlessness’, Shares Video For ‘Heart So Close’",
+      "summary": "Portland dark electro project Dancing Plague will release the album \"Endlessness\" via Artoffact Records on 5 February 2027.",
+      "date": "2026-11-19T08:44:35+00:00",
+      "category": "Video",
+      "publisher": "Side-Line Magazine",
+      "url": "https://www.side-line.com/dancing-plague-endlessness-album/",
+      "source": "Side-Line Magazine",
+      "status": "needs_review"
+    },
+    {
+      "id": "5ce0260c2c9d788f37d0",
+      "artist": "Years of Denial",
+      "artist_slug": "years-of-denial",
+      "title": "“Always a Weirdo” — Darkwave Duo Years of Denial Take a Crowbar to Respectability in Video for “Z.F.G.” - Post-Punk.com",
+      "summary": "“Always a Weirdo” — Darkwave Duo Years of Denial Take a Crowbar to Respectability in Video for “Z.F.G.”    Post-Punk.com",
+      "date": "2026-11-18T18:01:04+00:00",
+      "category": "Video",
+      "publisher": "Post-Punk.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOHhZbllwaEdJcjFod0MwTVNoVVNYd3JjZG9IbmdMUDBWNkFSbk9JZjhaX1VwUTBHbHhKaGxkTGZQRzNVampXOV9EdVJWYkpWMlFiSGlaWVhtaFhxT0RCTmptbUVKemljcG5oYk14czFLR2s0SlpPVldueEVEQmltbzh2S0hobEoyaGwtcGN3WEludzFpdmEyalpYSnFYQ2ZuUk5EQllOMWRSeVVFRWNUcFVuYWF1M2dNeFJ3?oc=5",
+      "source": "Dark scene magazines / Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "c28117440112a7b05688",
+      "artist": "Years of Denial",
+      "artist_slug": "years-of-denial",
+      "title": "“Always a Weirdo” — Darkwave Duo Years of Denial Take a Crowbar to Respectability in Video for “Z.F.G.”",
+      "summary": "The struggle is real but you know how it feels when you just don’t care The world has developed a remarkable talent for turning misery into merchandise and selling rebellion…   The post  “Always a Weirdo” — Darkwave Duo Years of Denial Take a Crowbar to Respectability in Video for “Z.F.G.”  appeared first on  Post-Punk.com .",
+      "date": "2026-11-18T15:28:04+00:00",
+      "category": "Video",
+      "publisher": "Post-Punk.com",
+      "url": "https://post-punk.com/always-a-weirdo-darkwave-duo-years-of-denial-take-a-crowbar-to-respectability-in-video-for-z-f-g/",
+      "source": "Post-Punk.com",
+      "status": "needs_review"
+    },
+    {
       "id": "88e29e79efb6d2aa9b2c",
       "artist": "Unverkalt",
       "artist_slug": "unverkalt",
@@ -68,6 +122,32 @@
       "publisher": "https://rocknloadmag.com/",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSGlqUjcyMVQ0aTNlZ0N0RkdsVHpBQlJ4RDZMcUZzSHFvQ1R2N29fOURKZEVsUkcxcDI2VEpDU0NiUlpXWUdpYWh0NVhaa2Q3UUl0Q19TbklsRXVNeVNVWEFMZVRnREptQ1dXaHI3UlZpa1U1cU9NOUZGWGs3TENlaGpHaFJRWDRRMXhCaw?oc=5",
       "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "9bfb2c0df3408e402fc0",
+      "artist": "Ductape",
+      "artist_slug": "ductape",
+      "title": "\"Reflections in the Night\" — Turkish Darkwave Duo Ductape Hold Moonlight in Their Hands in Video for \"D.E.R.T\" - Post-Punk.com",
+      "summary": "\"Reflections in the Night\" — Turkish Darkwave Duo Ductape Hold Moonlight in Their Hands in Video for \"D.E.R.T\"    Post-Punk.com",
+      "date": "2026-11-18T12:54:52+00:00",
+      "category": "Video",
+      "publisher": "Post-Punk.com",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSFo4MWNLUmVYNGg1SUxaenpkS0lpcFJQV1FsbW9FV0pXMG9GV1NZT05UQXlBLVFrY3BtckJ4dGJwQ0Y3OEJsbHVYMzZyUUJZVFM4MXNESFd1QkYxREJBeXIyci1sUTF3UjhTb0JtNVUzRzN3aDRuLXA1OWgtOExraUhDaGpSNFdMQVlPR1R6WUEzN2lkczJESXloQTJSaE9DWG14QmtLY0QxcFN6WEYtTkx6UmN6cjZIX0hhQXJBemZQWmk1MkE?oc=5",
+      "source": "Dark scene magazines / Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "e334880a19d56879dca0",
+      "artist": "Ductape",
+      "artist_slug": "ductape",
+      "title": "“Reflections in the Night” — Turkish Darkwave Duo Ductape Hold Moonlight in Their Hands in Video for “D.E.R.T”",
+      "summary": "In a crowded place I’m still unknown Dancing lights, reflections in the night Empty room just messes with my mind The beat goes on Modern civilization has become a magnificent…   The post  “Reflections in the Night” — Turkish Darkwave Duo Ductape Hold Moonlight in Their Hands in Video for “D.E.R.T”  appeared first on  Post-Punk.com .",
+      "date": "2026-11-18T11:46:23+00:00",
+      "category": "Video",
+      "publisher": "Post-Punk.com",
+      "url": "https://post-punk.com/reflections-in-the-night-turkish-darkwave-duo-ductape-hold-moonlight-in-their-hands-in-video-for-d-e-r-t/",
+      "source": "Post-Punk.com",
       "status": "needs_review"
     },
     {
@@ -110,16 +190,16 @@
       "status": "needs_review"
     },
     {
-      "id": "65b9f90a8dffae5c2d22",
-      "artist": "VeRa",
-      "artist_slug": "vera",
-      "title": "Vera Matović and Ljuba Alićić review their careers and earnings in popular music - Foro3D",
-      "summary": "Vera Matović and Ljuba Alićić review their careers and earnings in popular music    Foro3D",
-      "date": "2026-11-17T15:01:03+00:00",
-      "category": "News",
-      "publisher": "Foro3D",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaGZIYVoyNEk5OE0zbmxwME1wbW16c2NrdDFReWVwQ2tPb04xWV81czRSQXlCUkt5NnRCN3pWZ3daRUM2aHQ3c2JyY05WY0hHUUdxY0RjSzRndkdXUDJ4V1luTk8zNEg2T0hsVElfalY3VEFKczlORlphMF94aHlMSVh5bXNmbFdBWFBFS04xUzNTMzFQZmhLbFhuRjd3Zmk5dGZyTTZvZ1NwTG13QllPdmJ3?oc=5",
-      "source": "Google News",
+      "id": "1b60f33dafa038810936",
+      "artist": "Horror Vacui",
+      "artist_slug": "horror-vacui",
+      "title": "Horror Vacui – Shadows Sanctuary (Digital/CD/Vinyl Album – Artoffact Records)",
+      "summary": "The Italian band Horror Vacui has been active since 2010. For their fifth album, they have teamed up with Artoffact Records, a move that will undoubtedly help them reach a wider audience. “Shadows ...",
+      "date": "2026-11-15T00:00:00+00:00",
+      "category": "Release",
+      "publisher": "Dark scene magazines / Bing News",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6b00f0e8992d4a50907cd0cfdaa9118a&url=https%3a%2f%2fwww.side-line.com%2fhorror-vacui-shadows-sanctuary-review%2f&c=18032118108034743772&mkt=en-us",
+      "source": "Dark scene magazines / Bing News",
       "status": "needs_review"
     },
     {
@@ -136,16 +216,16 @@
       "status": "needs_review"
     },
     {
-      "id": "4264bd8a9dfe67093c17",
-      "artist": "VeRa",
-      "artist_slug": "vera",
-      "title": "The Milk Carton Kids — Lost Cause Lover Fool Holiday Tour with special guest Vera Sola - edhat",
-      "summary": "The Milk Carton Kids — Lost Cause Lover Fool Holiday Tour with special guest Vera Sola    edhat",
-      "date": "2026-11-14T02:57:46+00:00",
+      "id": "5c6b3dbcc02d0696478f",
+      "artist": "Deus Ex Lumina",
+      "artist_slug": "deus-ex-lumina",
+      "title": "AMPHI FESTIVAL 2024: KÆLAN MIKLA, RUINED CONFLICT & DEUS EX LUMINA COMPLETE THE LINE-UP! - Peek-a-Boo Magazine",
+      "summary": "AMPHI FESTIVAL 2024: KÆLAN MIKLA, RUINED CONFLICT & DEUS EX LUMINA COMPLETE THE LINE-UP!    Peek-a-Boo Magazine",
+      "date": "2026-11-14T04:44:44+00:00",
       "category": "Tour / Live",
-      "publisher": "edhat",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTWE3VVZLbDk2LXVERUQ0dDhPVG1pRVBWOHZacjNuN0V2WkpRYU1qZnQ1OVhwODlRbUYzRjNxcklWM1V6Nno5aFpPMkxWRExwN21aYkpWVDhkeGNuUG1OanlUMW9BVGNRRlNLTEg1U296Nk9XUXVzX21qdk5rMHRZcnpIYzZ5SmNScDVmeFE0QVVZZDMzUEwzWFhlbHdrWjcxalZJTy1zNmw2aHMxM2dxZ05mWQ?oc=5",
-      "source": "Google News",
+      "publisher": "Peek-a-Boo Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMVZPVkI4b1RWNmg3aFNRYzUxX2JDbEt0MlNTd1QwR0ZuMmdWVUtyTmd1WjdCaTB3c3cyWGhIZDZvSVgtR0lPVWNoNF9LaFFVVndUMkZ1bTAtWldCOThTRmxlVVRoNFlWM28waXlHalNxYUtNQjB3aFhEeGJNczdUYk9nZzF4U1JQRzhtV1BqMnU4ZVdtcXBmTVhiU044Y2J5U2Q1RVVtVHFyNlJ4dUJLTW9jWEN3elc4RGZhSFRrNHZoeWdxRTlma1pSSQ?oc=5",
+      "source": "Dark scene magazines / Google News",
       "status": "needs_review"
     },
     {
@@ -175,6 +255,19 @@
       "status": "needs_review"
     },
     {
+      "id": "ddc0586c19956bd49136",
+      "artist": "Agent Side Grinder",
+      "artist_slug": "agent-side-grinder",
+      "title": "Agent Side Grinder release single ‘The Choir’ on Metropolis Records",
+      "summary": "Agent Side Grinder released ‘The Choir’ on Metropolis Records on 13 November 2026, their first new single since 2023 and a signing to the US label. 🇺🇦 Side-Line stands with Ukraine - Show your ...",
+      "date": "2026-11-13T04:54:00+00:00",
+      "category": "Release",
+      "publisher": "Dark scene magazines / Bing News",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6b00f049de1c40d0b94b1b0a6274436a&url=https%3a%2f%2fwww.side-line.com%2fagent-side-grinder-the-choir%2f&c=3122100782833146954&mkt=en-us",
+      "source": "Dark scene magazines / Bing News",
+      "status": "needs_review"
+    },
+    {
       "id": "137194566ee68b98bdf9",
       "artist": "Agent Side Grinder",
       "artist_slug": "agent-side-grinder",
@@ -198,6 +291,32 @@
       "publisher": "Arcana.fm",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9zR2NpM1BvVzR1VnVNVlptblJMcUd4X1NlRzhjaG9FcXJDR3BTSU9adER0cUFwQ3JrOHFEZGJ0cGVWUm9uYzhFclI4SHR4VW11TUE?oc=5",
       "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "806877e9350f4bdfecbb",
+      "artist": "Thalie Némésis",
+      "artist_slug": "thalie-nemesis",
+      "title": "Thalie Némésis – Dé(s)figurations (Digital/CD Album – Meridian Noir Records) - SIDE-LINE",
+      "summary": "Thalie Némésis – Dé(s)figurations (Digital/CD Album – Meridian Noir Records)    SIDE-LINE",
+      "date": "2026-11-12T19:21:30+00:00",
+      "category": "Release",
+      "publisher": "SIDE-LINE",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9EYnlSN3puV0lXZjdBV2VtN3pvdzFyUGJjQ3VyNFJVZ1Y5Ml9WWTQ5RE1XdXduWEluMFItYWRSdGlnQjVldWVldWZyQjN4NnlsNzEtTVBKUFZWUjR1R21ub1I2ZWpHLWlYMHEzZlZlaWQ3b3M?oc=5",
+      "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "ffa31d3a0852c32b8925",
+      "artist": "Twin Tribes",
+      "artist_slug": "twin-tribes",
+      "title": "Darkwave Duo Twin Tribes Cast Their Spell Over San Antonio — Review and Photo Gallery - Post-Punk.com",
+      "summary": "Darkwave Duo Twin Tribes Cast Their Spell Over San Antonio — Review and Photo Gallery    Post-Punk.com",
+      "date": "2026-11-12T04:49:49+00:00",
+      "category": "News",
+      "publisher": "Post-Punk.com",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdWlpeUlwemtMdU9zSGtUbTVwaVJyZ0pGV2tKRzBiSmVrOTVJaEUtME5CSG1Ib2V1RWVNT2FPOXRfZ09sdzJIeFZ6UFJDenlQY1FUUFJZMXc1NXlZZVF0UjFxNGFqZFFZbmxCS0xiNlhPMFpiQ2NXdW43NjJWYkQwUG1BQmt0RWFkZDRFSFV3M09Pc3luTlExUGxLUHhpQk90YVZZUDc3VjNwUQ?oc=5",
+      "source": "Dark scene magazines / Google News",
       "status": "needs_review"
     },
     {
@@ -227,6 +346,32 @@
       "status": "needs_review"
     },
     {
+      "id": "b69a4e2789d6193dde11",
+      "artist": "Agent Side Grinder",
+      "artist_slug": "agent-side-grinder",
+      "title": "Then Comes Silence announces January 2027 tour with Agent Side Grinder - SIDE-LINE",
+      "summary": "Then Comes Silence announces January 2027 tour with Agent Side Grinder    SIDE-LINE",
+      "date": "2026-11-10T09:16:28+00:00",
+      "category": "Tour / Live",
+      "publisher": "SIDE-LINE",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBzYVRMR0dzSzduUmc0Sk9EWkRmOHladGh6am1NNDhtajdZdlR6dlBWcW5vd2V5cjhTYngwTzl3eklIZ2VKTk03dlk3M1MyN1NJN2QzOG5iM0xUQTFsT2ZWMjRzNHNWbS1oU0Z5ZWJHbmVVUlFG?oc=5",
+      "source": "Dark scene magazines / Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "4345a7a4d6790b7c897d",
+      "artist": "Then Comes Silence",
+      "artist_slug": "then-comes-silence",
+      "title": "Then Comes Silence announces January 2027 tour with Agent Side Grinder - SIDE-LINE",
+      "summary": "Then Comes Silence announces January 2027 tour with Agent Side Grinder    SIDE-LINE",
+      "date": "2026-11-10T09:16:28+00:00",
+      "category": "Tour / Live",
+      "publisher": "SIDE-LINE",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBzYVRMR0dzSzduUmc0Sk9EWkRmOHladGh6am1NNDhtajdZdlR6dlBWcW5vd2V5cjhTYngwTzl3eklIZ2VKTk03dlk3M1MyN1NJN2QzOG5iM0xUQTFsT2ZWMjRzNHNWbS1oU0Z5ZWJHbmVVUlFG?oc=5",
+      "source": "Dark scene magazines / Google News",
+      "status": "needs_review"
+    },
+    {
       "id": "96bb7963346d987a5a4c",
       "artist": "Julia Holter",
       "artist_slug": "julia-holter",
@@ -237,6 +382,32 @@
       "publisher": "Foro3D",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPV3owVlFjSDhQOE1mcnJIM1h3b3lXbTdDUXp5Q0YtRk5KT1R1R1lwM1ZMYUNndDZjRjNOeFUyQThoRGtvSE9URU5KZjlma2I5V3VnUzctSUlKdFlITVRYODVRWC01blVpTzUtYVZURVVTVWZocVU5VTlNc21GV3Zqbmk0YmhGdUNnVHZtN0syNnNMWnhIQVhTQ29WWkZEcjEzeUhnWWRRTEN2Slpz?oc=5",
       "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "945192761b66c4375f17",
+      "artist": "Ductape",
+      "artist_slug": "ductape",
+      "title": "Ductape release new video for ‘D.E.R.T’ off ‘Faded Flowers’",
+      "summary": "Post-punk duo Ductape release a new video for “D.E.R.T,” the sixth video from their album “Faded Flowers,” directed by Begüm Koçum. 🇺🇦 Side-Line stands with Ukraine - Show your Support Post-punk and ...",
+      "date": "2026-11-10T03:15:00+00:00",
+      "category": "Video",
+      "publisher": "Dark scene magazines / Bing News",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6b00f0bd40d54b7caac1d8549f18f16b&url=https%3a%2f%2fwww.side-line.com%2fductape-dert-video%2f&c=12605169058642526819&mkt=en-us",
+      "source": "Dark scene magazines / Bing News",
+      "status": "needs_review"
+    },
+    {
+      "id": "3d9a4333953b6ef949dd",
+      "artist": "Then Comes Silence",
+      "artist_slug": "then-comes-silence",
+      "title": "Then Comes Silence announces January 2027 tour with Agent Side Grinder",
+      "summary": "Then Comes Silence will tour Germany, France, Belgium and Denmark in January 2027 with Agent Side Grinder, behind the album “Requiem Ballroom”. 🇺🇦 Side-Line stands with Ukraine - Show your Support ...",
+      "date": "2026-11-10T01:16:00+00:00",
+      "category": "Tour / Live",
+      "publisher": "Dark scene magazines / Bing News",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6b00f1cb5ad541a0b27be0680af515e1&url=https%3a%2f%2fwww.side-line.com%2fthen-comes-silence-2027-tour-agent-side%2f&c=1512858777763964515&mkt=en-us",
+      "source": "Dark scene magazines / Bing News",
       "status": "needs_review"
     },
     {
@@ -262,19 +433,6 @@
       "category": "Release",
       "publisher": "That Eric Alper",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbnJCOG01YVRWVnZoOTlCbldBZ1lrVmhaV1cwMXNlYWNUMDNWcTNfcDh0ekNQaFZMWlZZbWtWMzROcmlJZ0NNelpmMm04c2sxQUhzTUxESHRCcHhjcGd4NXJPMzJyZFp1NjZrbWs1aDBua2hDQkk0R0ZvMG91a1NnOG94ZzhhY0tuWS1PMF9QU1VYVDZITEZjZUxCaDFTOVZkWnJ6Z3FyYUhqQUx4T3ZBVS1CRmw?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "9c5cbf80237862902bc6",
-      "artist": "VeRa",
-      "artist_slug": "vera",
-      "title": "Skepta and Asake’s Aloe Vera Debuts at No. 3 on Spotify Nigeria - InterSpace Music Distribution",
-      "summary": "Skepta and Asake’s Aloe Vera Debuts at No. 3 on Spotify Nigeria    InterSpace Music Distribution",
-      "date": "2026-11-08T08:00:00+00:00",
-      "category": "News",
-      "publisher": "InterSpace Music Distribution",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOY2htY0FqMVJzQ3hhTWZWNHFkbG1ZUDF5SEhjTEJINUdoMjlGUk42TURsUS0zeGU5OWswdTZnNTItRXY0N0FyZXBEWGZiRWNqdGRVNExZMWdMWi1JODJTaDRjU0xnT2FFRkduTk5ZWjRybjNEZlVMNTZZVHdURnpKUlpFOElXaGRkMENzNzBB?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
@@ -318,6 +476,19 @@
       "status": "needs_review"
     },
     {
+      "id": "7f503337c3b9d7b1b18a",
+      "artist": "ghostbells",
+      "artist_slug": "ghostbells",
+      "title": "Ghostbells - Phantoms (Music video) - Electrozombies",
+      "summary": "Ghostbells - Phantoms (Music video)    Electrozombies",
+      "date": "2026-11-05T08:57:44+00:00",
+      "category": "Video",
+      "publisher": "Electrozombies",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1NelZvMG1zbEZiOTlOazBmYkk3ajcwQjU2cXd1MG5uX1FmenRaY1pQd3R6SjUyREpQLTlBbE9MNkRnX0NpYU5oRUNLRjVPaWpOQzV5b0ZWLVVSZnl5LWR1YUdKYm9fZ1BBLTFqeTdoNTBndw?oc=5",
+      "source": "Dark scene magazines / Google News",
+      "status": "needs_review"
+    },
+    {
       "id": "ff9beb07d6802e029f04",
       "artist": "SINE",
       "artist_slug": "sine",
@@ -327,19 +498,6 @@
       "category": "Release",
       "publisher": "vijesti.me",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSk9MWFVMLVRobEwyWFhvN2s4OS1kX0twTEVRVng3aUh3TEtQVFZnLW4xbk9PWFc3bzFDQWROY0V1dXBjX2JxTnA0My1MTHQ3bnJxRWVCUk9ET0NjUi1tS0FzN2RFTmx4MlN2SndtaFVNMWZvcUhqVDdUWnRmZ0Y4TXpLamVKbndKWUt1WU9zeFFhampISHdWOERpX0lzakVZZ19XUmEzX3VSYmNQNG9qONIBpwFBVV95cUxQYmgzc21hczJWWWZCQjFtQXFvSDhBRXNoa2tMaHNrQkwwNDVkQWRRdVNjcVprbG9SdXVGWmtvNFN3UlN3R09BdGloRG9NcTZfLXNSbVh4WjNBQU9rZTBpQnNjTS1HVkNlOXZEZXNMUVppZWRSaVFaeTk5QUJ6NjVRWF9CeFQyWXpKSldSX2pkTzZNV0ljQjJvbkhSZy1IQlZLTzdLM2JMWQ?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "58c0f7ff45acec486278",
-      "artist": "VeRa",
-      "artist_slug": "vera",
-      "title": "Wayfarer Teams Up With Munly J Munly & Rebecca Vera For Confessional Lament “Grey Country” - Wildfire Music + News",
-      "summary": "Wayfarer Teams Up With Munly J Munly & Rebecca Vera For Confessional Lament “Grey Country”    Wildfire Music + News",
-      "date": "2026-11-01T19:00:00+00:00",
-      "category": "News",
-      "publisher": "Wildfire Music + News",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNmRDdkJMMjBRdnl2eG5mcllVQjMzZmVhMjFoS25mb3RKVHJOMUNTNGZQSmhxTlFYai10S1paTURDV2JqYWY5TzRDQmZrV29jcy1BREJudUpyZ1huVFZFVjlSNFV0b0VTaTE2SHRETHQ1Qk1ZNlVmQUUxS0p1TzF1SUtOMFI2QkZyejVBanRFM2I4aG1sNXZVblg3OUs3YVNJVXlhcnJlVFpMOFJZa2I2NXVjLWtHZUZuMERQUFBzdlV0Zw?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
@@ -354,6 +512,32 @@
       "publisher": "Flaunt Magazine",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1hOGxnVlB2a21wUjR1Ym9qbnptV1Jrby1XTDNHV0FHbUE2ZmFHNV92UjlMVGN2VWg0Y085Y0hyWXR6aDVBOV92X242UjhYVjJucy02MkxjazQ?oc=5",
       "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "5f431bf88887635aa69d",
+      "artist": "Years of Denial",
+      "artist_slug": "years-of-denial",
+      "title": "Years Of Denial - Zero Fucks Given (Music video) - Electrozombies",
+      "summary": "Years Of Denial - Zero Fucks Given (Music video)    Electrozombies",
+      "date": "2026-10-31T09:18:35+00:00",
+      "category": "Video",
+      "publisher": "Electrozombies",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcTJ5QV9TRXI5Q19wRkFKLTJvbDBHbFlYWmRVSVBNZlcwcjg1bHg0VnotSmRCVUdfNmxIZzZKOTE1SThtSE5KV1pYalFfUmZ4MWh4NUdCcENKczVkaGk2dnFFRGNBVlpGSW1yV2hRMjhuOEJjVFpHMjFoWkNpaGI0dU5YWQ?oc=5",
+      "source": "Dark scene magazines / Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "55402fb012bd45827676",
+      "artist": "ghostbells",
+      "artist_slug": "ghostbells",
+      "title": "Ghostbells release ‘Phantoms’ single and video via Out Of Line Music",
+      "summary": "Darkwave/EBM duo Ghostbells released the single and video “Phantoms” via Out Of Line Music on October 30, 2026, following “Curses” and “The Silence”. Darkwave/EBM duo Ghostbells released the single ...",
+      "date": "2026-10-30T13:36:00+00:00",
+      "category": "Video",
+      "publisher": "Dark scene magazines / Bing News",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6b00f0d45a964348a0baa0bd98d07a23&url=https%3a%2f%2fwww.side-line.com%2fghostbells-phantoms%2f&c=1241048191685310349&mkt=en-us",
+      "source": "Dark scene magazines / Bing News",
       "status": "needs_review"
     },
     {
@@ -396,6 +580,19 @@
       "status": "needs_review"
     },
     {
+      "id": "07b1d007311fbd2fea1b",
+      "artist": "Black Doldrums",
+      "artist_slug": "black-doldrums",
+      "title": "Black Doldrums confirm mainland European tour for ‘Repetition Compulsion’",
+      "summary": "“Repetition Compulsion” closes the band’s “State of Mind Trilogy,” a three-album exploration of identity, memory and human connection that began with 2022’s “Dead Awake” and continued on 2024’s “In ...",
+      "date": "2026-10-29T07:43:00+00:00",
+      "category": "Tour / Live",
+      "publisher": "Dark scene magazines / Bing News",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6b00f05d74c6406ea77f15033a98856d&url=https%3a%2f%2fwww.side-line.com%2fblack-doldrums-european-tour-dates%2f&c=9652650203408481397&mkt=en-us",
+      "source": "Dark scene magazines / Bing News",
+      "status": "needs_review"
+    },
+    {
       "id": "714426c9f2a3ed0c218c",
       "artist": "Black Doldrums",
       "artist_slug": "black-doldrums",
@@ -422,29 +619,16 @@
       "status": "needs_review"
     },
     {
-      "id": "f0ad4fa3b1d335abacae",
-      "artist": "VeRa",
-      "artist_slug": "vera",
-      "title": "News: Ball Park Music, Vera Blue and Ladyhawke join Matt and Alex’s 5 Raves in 5 Days - Backseat Mafia",
-      "summary": "News: Ball Park Music, Vera Blue and Ladyhawke join Matt and Alex’s 5 Raves in 5 Days    Backseat Mafia",
-      "date": "2026-10-27T07:00:00+00:00",
-      "category": "News",
-      "publisher": "Backseat Mafia",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdVA3TlN4WHQ4ODRwWHhzd191ZUJkdU5sRjZNbDNFaXhhMHJkUmhtNjFqLTlmZzc0czlwcGdtcXpnZnFBeWhZR0I1R0RvQjZhLWV2NGx4c3NCQ2pleXJnUzUwV2pWS1RJMmQxU2wyRXZEMGJiT3N5dXduQWpOaVI2SmRaYldONDlyU05zdHl4aTRSRGlEazNma1MzQ3NDU29JNzlhM1N6b1N2YzRicHMzaURzMA?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "f2d78751d03dcfd9e03a",
-      "artist": "VeRa",
-      "artist_slug": "vera",
-      "title": "Wayfarer Unveil Final Single “Grey Country” featuring Munly J Munly and Rebecca Vera Ahead of “Riders of the Setting Sun” - Metal Blade Records",
-      "summary": "Wayfarer Unveil Final Single “Grey Country” featuring Munly J Munly and Rebecca Vera Ahead of “Riders of the Setting Sun”    Metal Blade Records",
-      "date": "2026-10-27T07:00:00+00:00",
+      "id": "2720e6a7a970e7bba84d",
+      "artist": "Emmon",
+      "artist_slug": "emmon",
+      "title": "EMMON – ICONMIXED (Digital Album – Icons Creating Evil Art)",
+      "summary": "My relationship with EMMON’s music goes back many years, and following Emma Nylén’s artistic evolution has never ceased to interest me. The woman often called the queen of Swedish EBM has developed a ...",
+      "date": "2026-10-27T07:25:00+00:00",
       "category": "Release",
-      "publisher": "Metal Blade Records",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSnRDaFhVbzNhT2xTWnVrRzZsWTlybG1SZUhzSXRaNkgwdk1pWng3b0xYOE1HNEpuVngzU0tLV0VzeGRLcWRfWGc2bTgxWFZCNGZWbzQxZnBua3VzOVNPYm9rUG9zYVJEWUoyYS1ybjNlb0pXeHpJbC16UlFYOG5QanVlZw?oc=5",
-      "source": "Google News",
+      "publisher": "Dark scene magazines / Bing News",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6b00f0c072ed48d7867e0172b35cda66&url=https%3a%2f%2fwww.side-line.com%2femmon-iconmixed-digital-album%2f&c=342400918051226188&mkt=en-us",
+      "source": "Dark scene magazines / Bing News",
       "status": "needs_review"
     },
     {
@@ -474,6 +658,45 @@
       "status": "needs_review"
     },
     {
+      "id": "27761fb43452b79f66e9",
+      "artist": "The Memory Of Snow",
+      "artist_slug": "the-memory-of-snow",
+      "title": "The Memory Of Snow release ‘The Dark Christmas EP’ on Meridian Noir Records",
+      "summary": "The Memory Of Snow releases “The Dark Christmas EP” on Meridian Noir Records December 4, 2026, six Christmas song covers from Albin Wagener. The Memory Of Snow, the French coldwave and darkwave ...",
+      "date": "2026-10-26T01:27:00+00:00",
+      "category": "Release",
+      "publisher": "Dark scene magazines / Bing News",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6b00f1c79d8e42278e58597248f1b180&url=https%3a%2f%2fwww.side-line.com%2fthe-memory-of-snow-dark-christmas-ep%2f&c=2585630213685010785&mkt=en-us",
+      "source": "Dark scene magazines / Bing News",
+      "status": "needs_review"
+    },
+    {
+      "id": "10617d8ffe4ce7eb886d",
+      "artist": "Scheitan",
+      "artist_slug": "scheitan",
+      "title": "Scheitan release goth rock single ‘In The Dead of Night’ - SIDE-LINE",
+      "summary": "Scheitan release goth rock single ‘In The Dead of Night’    SIDE-LINE",
+      "date": "2026-10-23T09:50:58+00:00",
+      "category": "Release",
+      "publisher": "SIDE-LINE",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4wOVo3RFJDenR0czVJMms4V2NWLTdwSnVMTnNDR2FaSjZobm9YZThJUy1WTWV1SncwcGstZmZra0tBVjhnRGZKUVdfNjFTWTYzYzJrbnNzNGxPTlZnSFM2Zk9xMExlcWc?oc=5",
+      "source": "Dark scene magazines / Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "d738fa4cf65395b39e0d",
+      "artist": "Drab Majesty",
+      "artist_slug": "drab-majesty",
+      "title": "Substance Festival Returns to LA and SF This Weekend and Next with Drab Majesty, Cold Cave, Desire, and More! - Post-Punk.com",
+      "summary": "Substance Festival Returns to LA and SF This Weekend and Next with Drab Majesty, Cold Cave, Desire, and More!    Post-Punk.com",
+      "date": "2026-10-23T07:00:00+00:00",
+      "category": "Tour / Live",
+      "publisher": "Post-Punk.com",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSlQ1MlJPR0NMaU9mQXpxRXhxb0VUR01yU19NUG9QeVo4QWtCZG10c2V4dXNINWNMTG9tWU54cmhHZnFTeElBNWU2UDIzTkVGeEJvb0hhOEkyek9ULTdFNTNHRkZYcFNKaUZkc3RxYnNwMDBDeHR2Q2owRXVyaUtIcFNGSGt6YU5EcUc2eTJCcEdOZ3E1ejZPZFRGRklMbEFnZUtkNWJ4azVEVzltSEhvejhuRG1UekwwcmgtV0FzbHVfc0w3NUlR?oc=5",
+      "source": "Dark scene magazines / Google News",
+      "status": "needs_review"
+    },
+    {
       "id": "0f6fadc3bcb05accd50b",
       "artist": "VeRa",
       "artist_slug": "vera",
@@ -483,19 +706,6 @@
       "category": "Video",
       "publisher": "Yahoo",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPc3d6Z0FZTmFfWnNUeHZ6dWNVRlZ2Q3dTcXV1LXoydlItTmFHMW1GWjJfNVBoQUVjWFg4YXRGelRRSk5HNTlqRURDMl9PRzhHVlY3cWcyZWQyZGxiV2dqb3J0RWpwNnZyLTlQM19HRHg5VVVIU3lTaWZfZUllaXFsd0lkYVhTRUlVcXBaQ3B5c1IwSGxvcmE2MWdn?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "c39cfa01cf07aa80edc9",
-      "artist": "VeRa",
-      "artist_slug": "vera",
-      "title": "THE YAGAS Featuring Hollywood Actress VERA FARMIGA Unleash New Single ‘Runaway’ – Dark Alternative Rock With A Powerful Edge! - https://theriffreport.co.uk/",
-      "summary": "THE YAGAS Featuring Hollywood Actress VERA FARMIGA Unleash New Single ‘Runaway’ – Dark Alternative Rock With A Powerful Edge!    https://theriffreport.co.uk/",
-      "date": "2026-10-23T07:00:00+00:00",
-      "category": "Release",
-      "publisher": "https://theriffreport.co.uk/",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOUlVscC05XzR5QXRGSTh6UjNSc3VneDZMY1RoUHFoaWRBUW80eEJKRnAzT202Y0xfQTNPTWhZN3FlQkRNcFhJVjAzYW9hdzFwbmd1dk5ka2RGSU00MDJ3T2JqM2t1eW81QnUtcktRQnBtSGtPaXFQVFYyUl85Ykx5UGliRzhIdURZQnlEZElIYVpNMjkyQk5HdjRkTTdpWmI4amEyb0Z6VC1YcjlLR1VUMTVmTHJmNm1IbEZvMFFfTnJRdk5oWlVZUGk3OEptdndSLUg4aDdDSTRxM21IS080bmhjUkJiaFUzZWFKUndrNkFORXJlS1dJUnluN01LQ2VfQzh6NA?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
@@ -513,16 +723,29 @@
       "status": "needs_review"
     },
     {
-      "id": "5505287d85bd29907d44",
-      "artist": "Julia Holter",
-      "artist_slug": "julia-holter",
-      "title": "Premiere: Hologram Teen Shares New Julia Holter Remix of “Wolkman” - Under the Radar Magazine",
-      "summary": "Premiere: Hologram Teen Shares New Julia Holter Remix of “Wolkman”    Under the Radar Magazine",
-      "date": "2026-10-19T07:00:00+00:00",
+      "id": "9a883fe6d430a382a45d",
+      "artist": "Scheitan",
+      "artist_slug": "scheitan",
+      "title": "Scheitan release goth rock single ‘In The Dead of Night’",
+      "summary": "Swedish gothic rock band Scheitan release the single “In The Dead of Night,” mixed by Daniel Bergstrand, ahead of a new album due spring 2027. 🇺🇦 Side-Line stands with Ukraine - Show your Support ...",
+      "date": "2026-10-23T02:47:00+00:00",
       "category": "Release",
-      "publisher": "Under the Radar Magazine",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPOFdPaXFXTU13M0M2dDg4cHd6QTJfWGtZOFRjWGd1Q3dOYmRaZkU0NEt2RUtDRG53eFpFZWtXZlEta0c2dk5GNE5sN2c3MHRpREF6RFZremw5eE1laXFfRHk0WmFfNnZrQXhxak55ZkVCNl9MZ05GaUtlQjRqOHg0VS1zeTg1UGNXeUVkY3Q5aFEwQ29WUExydTdBVzR0VUxvTk9JMQ?oc=5",
-      "source": "Google News",
+      "publisher": "Dark scene magazines / Bing News",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6b00f185c94c49d4a3eac4c85183b4c0&url=https%3a%2f%2fwww.side-line.com%2fscheitan-in-the-dead-of-night%2f&c=2970072293547747087&mkt=en-us",
+      "source": "Dark scene magazines / Bing News",
+      "status": "needs_review"
+    },
+    {
+      "id": "e598131cdf73e3c1e143",
+      "artist": "TRAITRS",
+      "artist_slug": "traitrs",
+      "title": "Dark Force Fest 2027 Announces Full Lineup Including IAMX, ACTORS, TRAITRS, Agonal Gasps, and More - Post-Punk.com",
+      "summary": "Dark Force Fest 2027 Announces Full Lineup Including IAMX, ACTORS, TRAITRS, Agonal Gasps, and More    Post-Punk.com",
+      "date": "2026-10-22T07:00:00+00:00",
+      "category": "Tour / Live",
+      "publisher": "Post-Punk.com",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdVJhanU4MWFMYXAzTGtzM01vc0RWVW8xTVMxRnhOS3ZQNjkwcE54SERza0JDM3dRcGJkX3ZubnNVcFIyWWxIMHgtWUlpcWhzbEp1dXZZQllTdTdGWS13WVVHcnRVaU95VG9fVGhYU182SHZDeENRdlJhbDM4SVBWUnkwYWlWbEo2YUJ2Z0x3RTNMQVlNUlFxeWxtREhhVXRZT0lReGpoSVlxM3R1MGxpcHQ0RVhobmtU?oc=5",
+      "source": "Dark scene magazines / Google News",
       "status": "needs_review"
     },
     {
@@ -562,6 +785,19 @@
       "publisher": "YouTube",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qZTgwRlBWbzI0dHpfUWtmQ3dhWjVDWHFFUE5WdnV5WVV5V2g5STlhbmRPeHc3aWZRZ2RwbGVlT2Qxd1M5cUZZaWo4MEgycWlwWFJWbDZ5VEJpWXl2?oc=5",
       "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "3a385a1baff3d5967073",
+      "artist": "DIGITAL ENERGY",
+      "artist_slug": "digital-energy",
+      "title": "digital ENERGY - Echoes of Tomorrow (Music video) - Electrozombies",
+      "summary": "digital ENERGY - Echoes of Tomorrow (Music video)    Electrozombies",
+      "date": "2026-10-17T07:00:00+00:00",
+      "category": "Video",
+      "publisher": "Electrozombies",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQU042bEZDTzRJbHRUTVZ6MUxmZXJVelBtU2FmazI4XzZzakRJYVJseHFtczZucV9XQkVDZjduOFhyWE5aMHBWUjd2dlVyTGVqSFNMTUU1Sk15MkJZVGFwel9zR045aDdQRUNxTzFHaGp4WTUzaFdDWERURHJTRm8weHhYSGo?oc=5",
+      "source": "Dark scene magazines / Google News",
       "status": "needs_review"
     },
     {
@@ -614,6 +850,19 @@
       "publisher": "Live4ever Media",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBUVFpjZ09QVHFrVDN0QkI1dE9GV2ZUZkFXYnVwSkx2WjROS01GZHBHdkNSUXFnLWYycWVrXzRybDRBM2psZVhJTzFqdlh4Y3ZuRFBjbjdYeXBwTVVIRkpGS3VLcHpKQTRaWUczcjVuTQ?oc=5",
       "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "49671b2e95756b677787",
+      "artist": "Mouth Ulcers",
+      "artist_slug": "mouth-ulcers",
+      "title": "London Goth Rockers Mouth Ulcers Tell a Tale of an Ancient Vampire in Their Video for “Lady Rust,” Starring The March Violets’ Rosie Garland - Post-Punk.com",
+      "summary": "London Goth Rockers Mouth Ulcers Tell a Tale of an Ancient Vampire in Their Video for “Lady Rust,” Starring The March Violets’ Rosie Garland    Post-Punk.com",
+      "date": "2026-10-16T07:00:00+00:00",
+      "category": "Video",
+      "publisher": "Post-Punk.com",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQVHFibWRSbDZmWDc4NlkyVVB1bmJFOEhmQXM3YV9NVHhUZXFQTVFJQjFWVmtmWERTWmpENXpHUjJuNTZ2N3UwbVhwSkFSYmVEYjZmTHJnRnZNZ2M4YnNTSldpczF5bnRHQkxwdTNDWWl4MUhZZ25UZHk1ZUVmU19NZWFCUk9DY3VWV1JhRG1LVFhnQjY4V09heHZNVjdHckVfZU9lMXBienJIS0NDMmRrOG5DdEtWZkpHUWdfOGZtRDRpLUVYeThVam9mU0FZeGRMWEhIQktjOEZpUXphV0JLOTA3d3lVSXhBbmN0WERXOWg?oc=5",
+      "source": "Dark scene magazines / Google News",
       "status": "needs_review"
     },
     {
@@ -718,6 +967,45 @@
       "publisher": "SIDE-LINE",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9qZFNDdkxaakxqRHJzMFh1cjVxaHpfOXM2VjdKdlR0UWdjc05VNkdCS1lheUp6aGVpMnlxc2xMeS1aeDBqTFFvUVZ1UFRwUVN0UkRXZWwzWmpiMjhsQU1fNkRuZw?oc=5",
       "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "ee579337584eb902e93e",
+      "artist": "Vioflesh",
+      "artist_slug": "vioflesh",
+      "title": "Vioflesh – Melancolia (Digital Album – darkTunes Music Group)",
+      "summary": "The Chilean duo Vioflesh released their third album earlier this year. Following their previous album, “Nostalgia”, they continue with “Melancolia”, which features 12 tracks. Many of these songs had ...",
+      "date": "2026-10-11T00:00:00+00:00",
+      "category": "Release",
+      "publisher": "Dark scene magazines / Bing News",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6b00f1e64cad43e8ba0c3dd39f43f3bf&url=https%3a%2f%2fwww.side-line.com%2fvioflesh-melancolia-review%2f&c=5158181537318054484&mkt=en-us",
+      "source": "Dark scene magazines / Bing News",
+      "status": "needs_review"
+    },
+    {
+      "id": "93905571dcb1f87f62de",
+      "artist": "LOWSUNDAY",
+      "artist_slug": "lowsunday",
+      "title": "Lowsunday release ‘Call Silence Remixed’ single - SIDE-LINE",
+      "summary": "Lowsunday release ‘Call Silence Remixed’ single    SIDE-LINE",
+      "date": "2026-10-10T16:44:08+00:00",
+      "category": "Release",
+      "publisher": "SIDE-LINE",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBnTTQ5T0IxaE5JQkxva3F0Rl9QeEc2WTNjX0tVSS1wLWk4NUlnVnlIdDNMazZ6SS1iNHllWkFYT3ZjdXM4MXF5ZEVqY3NmVTVfOC16aHZhWi1DMVZVSDRvbXF6RU9OR2JP?oc=5",
+      "source": "Dark scene magazines / Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "b3476f829a5f1e838a5e",
+      "artist": "LOWSUNDAY",
+      "artist_slug": "lowsunday",
+      "title": "Lowsunday release ‘Call Silence Remixed’ single",
+      "summary": "Psychotribe, the alias of DEATĦ B¥ LØVE’s Peter Guellard, contributes the “Silent Tribe Remix,” pushing the song’s post-punk tension into EBM and electronic territory. Sam Rosenthal, founder of ...",
+      "date": "2026-10-10T09:43:00+00:00",
+      "category": "Release",
+      "publisher": "Dark scene magazines / Bing News",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6b00f12bfb9044fdaf23ec7d271e8b3f&url=https%3a%2f%2fwww.side-line.com%2flowsunday-call-silence-remixed%2f&c=6873153720375477727&mkt=en-us",
+      "source": "Dark scene magazines / Bing News",
       "status": "needs_review"
     }
   ]
