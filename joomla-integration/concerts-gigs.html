@@ -1,0 +1,102 @@
+<!-- Nachtfragment Joomla-Einbindung: Konzerte & Gigs -->
+<div id="nf-concerts">
+  <style>
+    #nf-concerts{--bg:#090a0d;--panel:#12141a;--panel2:#191c23;--line:#2b303a;--text:#e9e8eb;--muted:#a3a3ad;--accent:#c2bdca;--green:#8bd6a3;--amber:#e8c27b;--red:#f09b9b;color:var(--text);background:var(--bg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;padding:clamp(16px,3vw,30px);border:1px solid var(--line);border-radius:16px;box-sizing:border-box}
+    #nf-concerts *{box-sizing:border-box}#nf-concerts a{color:var(--accent);text-decoration:none}#nf-concerts a:hover{color:#fff;text-decoration:underline}
+    #nf-concerts .nf-kicker{font-size:.76rem;letter-spacing:.17em;text-transform:uppercase;color:var(--accent);font-weight:700}
+    #nf-concerts h2{font:500 clamp(1.8rem,4vw,3rem)/1.1 Georgia,serif;letter-spacing:-.025em;margin:.35rem 0 .6rem;color:var(--text)}
+    #nf-concerts .nf-intro{color:var(--muted);max-width:780px;margin:0 0 18px}
+    #nf-concerts .nf-top{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:18px}
+    #nf-concerts .nf-status{font-size:.85rem;color:var(--muted)}#nf-concerts .nf-status.good{color:var(--green)}
+    #nf-concerts .nf-controls{display:grid;grid-template-columns:minmax(180px,1fr) minmax(150px,220px);gap:10px;margin:18px 0}
+    #nf-concerts input[type=search],#nf-concerts select{width:100%;min-width:0;padding:12px 14px;background:#111319;border:1px solid var(--line);border-radius:10px;color:var(--text);font:inherit}
+    #nf-concerts .nf-toggle{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:.88rem;margin:0 0 18px}
+    #nf-concerts .nf-toggle input{accent-color:#aaa}
+    #nf-concerts .nf-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+    #nf-concerts .nf-card{min-width:0;display:flex;flex-direction:column;gap:9px;padding:17px;background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:12px}
+    #nf-concerts .nf-card h3{font-size:1.08rem;line-height:1.3;margin:0;overflow-wrap:anywhere}
+    #nf-concerts .nf-date{color:var(--green);font-weight:700;font-size:.92rem}
+    #nf-concerts .nf-meta{color:var(--muted);font-size:.91rem;margin:0;overflow-wrap:anywhere}
+    #nf-concerts .nf-tags{display:flex;flex-wrap:wrap;gap:6px}
+    #nf-concerts .nf-tag{font-size:.72rem;padding:3px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+    #nf-concerts .nf-tag.review{color:var(--amber);border-color:#6b5733}
+    #nf-concerts .nf-actions{margin-top:auto;padding-top:5px}
+    #nf-concerts .nf-actions a{display:inline-block;font-size:.88rem}
+    #nf-concerts .nf-empty,#nf-concerts .nf-error{grid-column:1/-1;padding:20px;border:1px dashed var(--line);border-radius:12px;color:var(--muted)}
+    #nf-concerts .nf-error{color:var(--red)}
+    #nf-concerts .nf-foot{font-size:.78rem;color:var(--muted);border-top:1px solid var(--line);margin-top:20px;padding-top:13px}
+    @media(max-width:850px){#nf-concerts .nf-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:580px){#nf-concerts{padding:16px}#nf-concerts .nf-controls,#nf-concerts .nf-grid{grid-template-columns:1fr}#nf-concerts .nf-card{padding:15px}}
+  </style>
+  <div class="nf-top">
+    <div><div class="nf-kicker">Live · Tour · Underground</div><h2>Konzerte &amp; Gigs</h2><p class="nf-intro">Kommende Live-Termine aus dem Nachtfragment-Künstlerumfeld und der Dark-Music-Szene. Die Übersicht wird direkt aus dem GitHub-Datenbestand geladen.</p></div>
+    <div class="nf-status" id="nf-concert-status" aria-live="polite">Lade Konzerttermine …</div>
+  </div>
+  <div class="nf-controls">
+    <input id="nf-concert-search" type="search" placeholder="Artist, Stadt oder Venue suchen …" aria-label="Konzerte durchsuchen">
+    <select id="nf-concert-range" aria-label="Zeitraum auswählen"><option value="all">Alle kommenden Termine</option><option value="30">Nächste 30 Tage</option><option value="90">Nächste 90 Tage</option><option value="365">Nächste 12 Monate</option></select>
+  </div>
+  <label class="nf-toggle"><input type="checkbox" id="nf-show-review"> Auch ungeprüfte Konzertfunde anzeigen (deutlich markiert)</label>
+  <div class="nf-grid" id="nf-concert-grid"><div class="nf-empty">Konzerttermine werden geladen …</div></div>
+  <div class="nf-foot">Termine mit Prüfstatus „bestätigt“ stammen laut Datenbestand aus geprüften Quellen. Ungeprüfte Funde werden standardmäßig ausgeblendet. Bitte vor Ticketkauf und Anreise immer die verlinkte Künstler-, Venue- oder Veranstalterseite prüfen. <span id="nf-concert-updated"></span></div>
+  <script>
+  (function(){
+    const root=document.getElementById('nf-concerts');if(!root||root.dataset.ready)return;root.dataset.ready='1';
+    const DATA_URL='https://raw.githubusercontent.com/niehustorsten-del/nachtfragment-events/main/data/concert_candidates.json';
+    const $=id=>root.querySelector('#'+id);
+    const clean=v=>v==null?'':String(v).trim();
+    const safeUrl=v=>{try{const u=new URL(v);return ['https:','http:'].includes(u.protocol)?u.href:''}catch(e){return''}};
+    const dateOf=v=>{if(!/^\d{4}-\d{2}-\d{2}$/.test(clean(v)))return null;const d=new Date(v+'T12:00:00');return Number.isNaN(d.getTime())?null:d};
+    const dateLabel=d=>new Intl.DateTimeFormat('de-DE',{weekday:'short',day:'2-digit',month:'long',year:'numeric'}).format(d);
+    const make=(tag,cls,txt)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(txt!==undefined)n.textContent=txt;return n};
+    let events=[];
+    function render(){
+      const q=$('nf-concert-search').value.trim().toLocaleLowerCase('de');
+      const range=$('nf-concert-range').value,showReview=$('nf-show-review').checked;
+      const today=new Date();today.setHours(0,0,0,0);
+      const shown=events.filter(e=>{
+        const verified=e.status==='verified'&&e.review_required!==true;
+        if(!verified&&!showReview)return false;
+        const d=dateOf(e.date);if(!d||d<today)return false;
+        if(range!=='all'&&d>new Date(today.getTime()+Number(range)*86400000))return false;
+        const hay=[e.artist,e.title,e.city,e.venue,e.snippet,e.source_name].join(' ').toLocaleLowerCase('de');
+        return !q||hay.includes(q);
+      }).sort((a,b)=>a.date.localeCompare(b.date));
+      const grid=$('nf-concert-grid');grid.replaceChildren();
+      if(!shown.length){grid.append(make('div','nf-empty','Keine passenden kommenden Termine gefunden.'));$('nf-concert-status').textContent='0 Termine';return}
+      shown.forEach(e=>{
+        const verified=e.status==='verified'&&e.review_required!==true;
+        const card=make('article','nf-card');
+        const d=dateOf(e.date);if(d)card.append(make('div','nf-date',dateLabel(d)));
+        card.append(make('h3','',clean(e.artist)||'Konzert'));
+        if(clean(e.title)&&clean(e.title).toLocaleLowerCase('de')!==clean(e.artist).toLocaleLowerCase('de'))card.append(make('p','nf-meta',clean(e.title)));
+        const where=[clean(e.venue),clean(e.city)].filter((v,i,a)=>v&&a.indexOf(v)===i).join(' · ');
+        if(where)card.append(make('p','nf-meta','📍 '+where));
+        const tags=make('div','nf-tags');
+        tags.append(make('span','nf-tag',verified?'Quelle geprüft':'Noch nicht redaktionell bestätigt'));
+        if(clean(e.source_name))tags.append(make('span','nf-tag',clean(e.source_name)));
+        if(!verified)tags.lastChild.classList.add('review');
+        card.append(tags);
+        const url=safeUrl(e.url)||safeUrl(e.source_url);
+        if(url){const actions=make('div','nf-actions');const a=make('a','',verified?'Termin / Quelle öffnen ↗':'Fundstelle prüfen ↗');a.href=url;a.target='_blank';a.rel='noopener noreferrer';actions.append(a);card.append(actions)}
+        grid.append(card);
+      });
+      $('nf-concert-status').textContent=shown.length+' Termine angezeigt';$('nf-concert-status').className='nf-status good';
+    }
+    async function init(){
+      try{
+        const r=await fetch(DATA_URL+'?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);
+        const data=await r.json();events=Array.isArray(data.candidates)?data.candidates:[];
+        $('nf-concert-updated').textContent=data.updated_at?' · Datenstand: '+new Date(data.updated_at).toLocaleString('de-DE'):'';
+        render();
+        const reviewCount=events.filter(e=>e.status!=='verified'||e.review_required===true).length;
+        $('nf-concert-status').textContent=$('nf-concert-status').textContent+' · '+reviewCount+' ungeprüfte Hinweise zurückgehalten';
+      }catch(err){$('nf-concert-status').textContent='Daten konnten nicht geladen werden';$('nf-concert-grid').replaceChildren(make('div','nf-error','Die Konzertdaten sind momentan nicht erreichbar. Bitte später erneut versuchen. ('+err.message+')'))}
+    }
+    $('nf-concert-search').addEventListener('input',render);
+    $('nf-concert-range').addEventListener('change',render);
+    $('nf-show-review').addEventListener('change',render);
+    init();
+  })();
+  </script>
+</div>
