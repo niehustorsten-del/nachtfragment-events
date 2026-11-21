@@ -1,0 +1,78 @@
+{
+  "version": "1.0",
+  "description": "Public, no-login source inventory for Nachtfragment artist-news discovery. Directory pages are used as discovery maps and their domains are included in targeted searches.",
+  "direct_feeds": [
+    {
+      "name": "Post-Punk.com",
+      "url": "https://post-punk.com/feed/"
+    },
+    {
+      "name": "Side-Line Magazine",
+      "url": "https://www.side-line.com/feed/"
+    }
+  ],
+  "directories": [
+    {
+      "name": "Wilting Flesh Scene Hub – artists",
+      "url": "https://wiltingflesh.org/scene/artist/",
+      "role": "artist_directory",
+      "note": "Independent artist directory for witch house, wave, darkwave and dark electronic underground."
+    },
+    {
+      "name": "Wilting Flesh Scene Hub – scene map",
+      "url": "https://wiltingflesh.org/scene/",
+      "role": "scene_directory",
+      "note": "Labels, collectives, curators, playlists, channels, radio, blogs, zines, booking agencies and festivals."
+    }
+  ],
+  "search_domain_groups": [
+    {
+      "name": "Dark scene magazines",
+      "domains": [
+        "post-punk.com",
+        "side-line.com",
+        "peek-a-boo-magazine.be",
+        "soundsandshadows.com",
+        "brutalresonance.com",
+        "electrozombies.com",
+        "idieyoudie.com",
+        "regenmag.com",
+        "reflectionsofdarkness.com",
+        "sonic-seducer.de"
+      ]
+    },
+    {
+      "name": "Underground blogs and directories",
+      "domains": [
+        "wiltingflesh.org",
+        "darkitalia.com",
+        "gothicandamazing.com",
+        "festivolts.com",
+        "postpunkmonk.com",
+        "thelisteningposting.com",
+        "rightchordmusic.com",
+        "systems-of-romance.com"
+      ]
+    },
+    {
+      "name": "Independent labels and release platforms",
+      "domains": [
+        "artoffact.com",
+        "coldtransmission.com",
+        "youngandcold.de",
+        "swissdarknights.com",
+        "infacted-recordings.de",
+        "ant-zen.com",
+        "manicdepressionrecords.com",
+        "fabrika-records.com",
+        "bandcamp.com"
+      ]
+    }
+  ],
+  "search_policy": {
+    "lookback_days": 45,
+    "public_sources_only": true,
+    "login_or_api_key_required": false,
+    "approval_required": true
+  }
+}
