@@ -75,6 +75,13 @@ footer,.footer{border-top:1px solid var(--line);color:var(--muted);padding:24px 
 .site-nav nav a:hover,.site-nav nav a[aria-current="page"]{border-color:#b9b9c4;background:#1a1c22;color:#fff!important;text-decoration:none}
 @media(max-width:760px){.site-nav-inner{width:calc(100% - 22px);align-items:flex-start;flex-direction:column;gap:10px;padding:12px 0}.site-nav nav{gap:6px}.site-nav nav a{font-size:.78rem;padding:7px 9px}}
 
+
+/* Navigation auch in den bestehenden Header-Containern der Unterseiten */
+header:not(.hero) nav{display:flex!important;gap:7px;flex-wrap:wrap;align-items:center}
+header:not(.hero) nav a{display:inline-flex;margin:0!important;border:1px solid #292d35;background:#111318;border-radius:999px;padding:7px 11px;color:#e7e7ea!important;text-decoration:none;font-size:.82rem;line-height:1.35;white-space:normal}
+header:not(.hero) nav a:hover,header:not(.hero) nav a[aria-current="page"]{border-color:#b9b9c4;background:#1a1c22;color:#fff!important;text-decoration:none}
+@media(max-width:760px){header:not(.hero) nav{gap:6px}header:not(.hero) nav a{font-size:.78rem;padding:7px 9px}}
+
 </style>
 </head>
 <body>
