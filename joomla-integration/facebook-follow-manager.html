@@ -1,0 +1,94 @@
+<!-- Nachtfragment Joomla-Einbindung: Facebook Follow Manager -->
+<div id="nf-facebook-follow">
+<style>
+#nf-facebook-follow{--bg:#090a0d;--panel:#12141a;--line:#2b303a;--text:#e9e8eb;--muted:#a3a3ad;--accent:#c2bdca;--green:#8bd6a3;--blue:#4267a9;color:var(--text);background:var(--bg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;padding:clamp(16px,3vw,30px);border:1px solid var(--line);border-radius:16px;box-sizing:border-box}
+#nf-facebook-follow *{box-sizing:border-box}#nf-facebook-follow a{color:var(--accent);text-decoration:none}#nf-facebook-follow a:hover{color:#fff;text-decoration:underline}
+#nf-facebook-follow .nf-kicker{font-size:.76rem;letter-spacing:.17em;text-transform:uppercase;color:var(--accent);font-weight:700}
+#nf-facebook-follow h2{font:500 clamp(1.8rem,4vw,3rem)/1.1 Georgia,serif;margin:.35rem 0 .6rem;color:var(--text)}
+#nf-facebook-follow .nf-intro{color:var(--muted);max-width:780px;margin:0 0 18px}
+#nf-facebook-follow .nf-nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 20px}
+#nf-facebook-follow .nf-nav a{display:inline-flex;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:#14161c;font-size:.84rem}
+#nf-facebook-follow .nf-notice{padding:13px 15px;border:1px solid #5c5134;background:#19170f;color:#d9cea9;border-radius:10px;font-size:.88rem;margin-bottom:18px}
+#nf-facebook-follow .nf-tools{display:grid;grid-template-columns:minmax(180px,1fr) minmax(150px,220px);gap:10px;margin:16px 0}
+#nf-facebook-follow input[type=search],#nf-facebook-follow select{width:100%;min-width:0;padding:12px 14px;background:#111319;border:1px solid var(--line);border-radius:10px;color:var(--text);font:inherit}
+#nf-facebook-follow .nf-summary{display:flex;align-items:center;gap:9px;padding:12px 15px;border:1px solid #426c50;border-radius:10px;background:#142019;color:var(--green);font-weight:700;margin:14px 0}
+#nf-facebook-follow .nf-summary strong{font-size:1.3rem}
+#nf-facebook-follow .nf-stats{color:var(--muted);font-size:.85rem;margin:10px 0 14px}
+#nf-facebook-follow .nf-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+#nf-facebook-follow .nf-card{min-width:0;display:flex;flex-direction:column;gap:9px;padding:16px;background:linear-gradient(145deg,#191c23,#111318);border:1px solid var(--line);border-radius:12px}
+#nf-facebook-follow .nf-card.is-followed{border-color:#426c50;background:linear-gradient(145deg,#142019,#111318)}
+#nf-facebook-follow .nf-card h3{font-size:1.08rem;line-height:1.3;margin:0;overflow-wrap:anywhere}
+#nf-facebook-follow .nf-muted{color:var(--muted);font-size:.82rem}
+#nf-facebook-follow .nf-badge{display:inline-flex;align-self:flex-start;padding:4px 9px;border:1px solid #426c50;border-radius:999px;background:#14251a;color:var(--green);font-size:.73rem;font-weight:800}
+#nf-facebook-follow .nf-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:5px}
+#nf-facebook-follow .nf-btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);background:#171a21;border-radius:999px;padding:7px 11px;color:var(--text);font:inherit;font-size:.82rem;cursor:pointer}
+#nf-facebook-follow .nf-btn-facebook{background:#243b63;border-color:var(--blue);color:#fff;font-weight:700}
+#nf-facebook-follow .nf-btn:hover{border-color:var(--accent);text-decoration:none}
+#nf-facebook-follow .nf-empty,#nf-facebook-follow .nf-error{grid-column:1/-1;padding:20px;border:1px dashed var(--line);border-radius:12px;color:var(--muted)}
+#nf-facebook-follow .nf-error{color:#f09b9b}
+#nf-facebook-follow .nf-foot{font-size:.78rem;color:var(--muted);border-top:1px solid var(--line);margin-top:20px;padding-top:13px}
+@media(max-width:850px){#nf-facebook-follow .nf-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){#nf-facebook-follow{padding:16px}#nf-facebook-follow .nf-tools,#nf-facebook-follow .nf-grid{grid-template-columns:1fr}#nf-facebook-follow .nf-nav a{font-size:.78rem;padding:7px 9px}}
+</style>
+<div class="nf-kicker">Nachtfragment · Artist Network</div>
+<h2>Facebook Follow Manager</h2>
+<p class="nf-intro">Die Nachtfragment-Artists auf einen Blick. Öffne die öffentliche Facebook-Seite und markiere anschließend manuell, ob du dem Artist bereits mit deinem Profil folgst.</p>
+<nav class="nf-nav" aria-label="Nachtfragment-Projekte">
+<a href="https://niehustorsten-del.github.io/nachtfragment-events/" target="_blank" rel="noopener noreferrer">Shop - Club - Bar ↗</a>
+<a href="https://niehustorsten-del.github.io/nachtfragment-events/Magazine/" target="_blank" rel="noopener noreferrer">Magazine ↗</a>
+<a href="https://niehustorsten-del.github.io/nachtfragment-events/Stuff/" target="_blank" rel="noopener noreferrer">Ambiente - Wohnen - Tattoos ↗</a>
+<a href="https://niehustorsten-del.github.io/nachtfragment-events/concerts.html" target="_blank" rel="noopener noreferrer">Konzerte &amp; Gigs ↗</a>
+<a href="https://nachtfragment.de/" target="_blank" rel="noopener noreferrer">Nachtfragment ↗</a>
+</nav>
+<div class="nf-notice">Facebook-Seitenlinks sind Fundstellen und können falsch oder veraltet sein. Bitte den Artist vor dem Folgen prüfen. Das Folgen selbst erfolgt ausschließlich manuell. Deine Statusmarkierungen werden nur lokal in diesem Browser gespeichert und nicht an Facebook, Nachtfragment oder GitHub übertragen.</div>
+<div class="nf-tools">
+<input id="nf-fb-search" type="search" placeholder="Artist suchen …" aria-label="Artist suchen">
+<select id="nf-fb-filter" aria-label="Artists filtern"><option value="all">Alle Artists</option><option value="not_followed">Noch nicht als gefolgt markiert</option><option value="followed">Ich folge bereits</option><option value="no_link">Kein Facebook-Link gefunden</option></select>
+</div>
+<div class="nf-summary" id="nf-fb-summary" aria-live="polite">✓ Bereits gefolgt: <strong>0</strong> Artists</div>
+<div class="nf-stats" id="nf-fb-stats">Artist-Daten werden geladen …</div>
+<div class="nf-grid" id="nf-fb-grid"><div class="nf-empty">Lade Artist-Daten …</div></div>
+<div class="nf-foot">Die Artist-Liste wird live aus dem Nachtfragment-GitHub-Repository geladen. Persönliche Statusmarkierungen bleiben in diesem Browser erhalten. <span id="nf-fb-updated"></span></div>
+<script>
+(function(){
+ const root=document.getElementById('nf-facebook-follow');if(!root||root.dataset.ready)return;root.dataset.ready='1';
+ const DATA='https://raw.githubusercontent.com/niehustorsten-del/nachtfragment-events/main/data/facebook-artists.json';
+ const KEY='nachtfragment-facebook-follow-status-v1';
+ const $=id=>root.querySelector('#'+id),clean=v=>v==null?'':String(v).trim();
+ let artists=[],statuses={};try{statuses=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){statuses={}}
+ const make=(tag,cls,txt)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(txt!==undefined)n.textContent=txt;return n};
+ function validFb(v){try{const u=new URL(v);return u.protocol==='https:'&&/(^|\.)facebook\.com$|(^|\.)fb\.com$/i.test(u.hostname)?u.href:''}catch(e){return''}}
+ function validNf(v){try{const u=new URL(v);return u.protocol==='https:'&&u.hostname.toLowerCase()==='nachtfragment.de'&&u.pathname.startsWith('/index.php/artists/')?u.href:''}catch(e){return''}}
+ function followed(a){return statuses[a.name]==='followed'}
+ function setFollowed(name,value){if(value)statuses[name]='followed';else delete statuses[name];try{localStorage.setItem(KEY,JSON.stringify(statuses))}catch(e){}render()}
+ function render(){
+  const q=$('nf-fb-search').value.trim().toLocaleLowerCase('de'),filter=$('nf-fb-filter').value;
+  const list=artists.filter(a=>{const is=followed(a),has=!!validFb(a.facebook_url);return(!q||clean(a.name).toLocaleLowerCase('de').includes(q))&&(filter==='all'||(filter==='followed'&&is)||(filter==='not_followed'&&!is)||(filter==='no_link'&&!has))});
+  const count=artists.filter(followed).length,linked=artists.filter(a=>validFb(a.facebook_url)).length;
+  $('nf-fb-summary').replaceChildren(document.createTextNode('✓ Bereits gefolgt: '),make('strong','',String(count)),document.createTextNode(' Artists'));
+  $('nf-fb-stats').textContent=artists.length+' Artists · '+linked+' mit Facebook-Link · '+count+' als gefolgt markiert';
+  const grid=$('nf-fb-grid');grid.replaceChildren();
+  if(!list.length){grid.append(make('div','nf-empty','Keine passenden Artists gefunden.'));return}
+  list.forEach(a=>{
+   const is=followed(a),card=make('article','nf-card'+(is?' is-followed':''));
+   card.append(make('h3','',clean(a.name)||'Unbenannter Artist'));
+   if(is)card.append(make('span','nf-badge','✓ BEREITS GEFOLGT'));
+   let status='Kein Facebook-Link auf der Artistseite gefunden';
+   if(a.match_status==='found_on_artist_page')status='Facebook-Link auf der Nachtfragment-Artistseite gefunden';
+   else if(a.match_status==='public_search_candidate')status='Öffentlicher Suchtreffer – bitte prüfen';
+   card.append(make('div','nf-muted',status));
+   const links=make('div','nf-actions');
+   const nf=validNf(a.nachtfragment_url);if(nf){const p=make('a','nf-btn','Nachtfragment-Porträt ↗');p.href=nf;p.target='_blank';p.rel='noopener noreferrer';links.append(p)}
+   const fb=validFb(a.facebook_url),f=make('a','nf-btn nf-btn-facebook',fb?'Facebook-Seite öffnen ↗':'Auf Facebook suchen ↗');
+   f.href=fb||('https://www.facebook.com/search/top?q='+encodeURIComponent(a.name));f.target='_blank';f.rel='noopener noreferrer';links.append(f);
+   card.append(links);
+   const actions=make('div','nf-actions'),b=make('button','nf-btn',is?'✓ Ich folge bereits':'Ich folge bereits');b.type='button';b.setAttribute('aria-pressed',String(is));b.addEventListener('click',()=>setFollowed(a.name,!is));actions.append(b);
+   if(is){const reset=make('button','nf-btn','Markierung entfernen');reset.type='button';reset.addEventListener('click',()=>setFollowed(a.name,false));actions.append(reset)}
+   card.append(actions);grid.append(card);
+  });
+ }
+ async function init(){try{const r=await fetch(DATA+'?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);const d=await r.json();artists=Array.isArray(d.artists)?d.artists:[];if(!artists.length)throw new Error('Keine Artist-Einträge in der Datenquelle gefunden');$('nf-fb-updated').textContent=d.updated_at?' · Datenstand: '+new Date(d.updated_at).toLocaleString('de-DE'):'';render()}catch(e){$('nf-fb-stats').textContent='Datenquelle nicht erreichbar';$('nf-fb-grid').replaceChildren(make('div','nf-error','Die Artist-Liste konnte nicht geladen werden. Bitte später erneut versuchen. ('+e.message+')'))}}
+ $('nf-fb-search').addEventListener('input',render);$('nf-fb-filter').addEventListener('change',render);init();
+})();
+</script>
+</div>
