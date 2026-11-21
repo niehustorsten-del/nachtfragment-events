@@ -13,7 +13,7 @@ a{color:var(--link);text-decoration:none}a:hover{color:#fff;text-decoration:unde
 header{border-bottom:1px solid var(--line)}.nav{width:min(980px,calc(100% - 32px));margin:auto;padding:17px 0;display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}.brand{font:1.05rem Georgia,serif;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}nav{display:flex;gap:8px 16px;flex-wrap:wrap;font-size:.86rem}nav a[aria-current=page]{color:#fff;text-decoration:underline;text-underline-offset:5px}
 main{width:min(850px,calc(100% - 32px));margin:0 auto}.intro{padding:42px 0 24px;border-bottom:1px solid var(--line)}.eyebrow{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}h1{font:400 clamp(2.4rem,7vw,4.2rem)/1.1 Georgia,serif;margin:10px 0 12px}.intro p{color:var(--muted);max-width:720px;margin:0}.meta{margin-top:16px;color:var(--muted);font-size:.88rem}
 section{padding:25px 0;border-bottom:1px solid var(--line)}h2{font:400 1.65rem Georgia,serif;margin:0 0 5px}.sub{color:var(--muted);font-size:.88rem;margin-bottom:17px}
-ol{list-style:none;margin:0;padding:0;counter-reset:chart}.entry{counter-increment:chart;padding:11px 0;border-bottom:1px solid #24262c;display:grid;grid-template-columns:42px 1fr;gap:10px}.entry:last-child{border-bottom:0}.rank{font:1.25rem Georgia,serif;color:var(--muted)}.song{font-weight:600}.details{font-size:.86rem;color:var(--muted)}.movement{font-size:.8rem;color:#c7b8d9;margin-left:7px}.links{font-size:.83rem;margin-top:2px}
+ol{list-style:none;margin:0;padding:0;counter-reset:chart}.entry{counter-increment:chart;padding:13px 0;border-bottom:1px solid #24262c;display:grid;grid-template-columns:34px 64px minmax(0,1fr);gap:12px;align-items:center}.entry:last-child{border-bottom:0}.rank{font:1.2rem Georgia,serif;color:var(--muted)}.cover{width:64px;height:64px;background:linear-gradient(145deg,#25252c,#101115);border:1px solid #34343d;display:flex;align-items:center;justify-content:center;overflow:hidden;color:#888;font:1rem Georgia,serif}.cover img{width:100%;height:100%;object-fit:cover;display:block}.song{font-weight:600}.details{font-size:.86rem;color:var(--muted)}.movement{font-size:.8rem;color:#c7b8d9;margin-left:7px}.links{font-size:.83rem;margin-top:2px}.cover-note{font-size:.75rem;color:#777;margin-top:12px}
 .empty{padding:18px 0;color:var(--muted)}.principle p{margin:7px 0;color:var(--muted)}footer{width:min(850px,calc(100% - 32px));margin:0 auto;padding:23px 0 32px;color:var(--muted);font-size:.82rem}
 @media(max-width:600px){.nav{align-items:flex-start;flex-direction:column}.entry{grid-template-columns:34px 1fr}.intro{padding-top:30px}}
 </style>
@@ -37,7 +37,7 @@ ol{list-style:none;margin:0;padding:0;counter-reset:chart}.entry{counter-increme
 <section>
 <h2>Top 30</h2>
 <div class="sub" id="updated">Die Charts werden laufend redaktionell aktualisiert.</div>
-<div id="chart" class="empty">Hier erscheinen laufend überprüfte Songs aus dem internationalen Dark Underground.</div>
+<div id="chart" class="empty">Hier erscheinen laufend überprüfte Songs aus dem internationalen Dark Underground.</div><div class="cover-note">Cover-Artworks werden – sofern verfügbar – automatisch ergänzt. Fehlende Cover bleiben bewusst neutral.</div>
 </section>
 <section class="principle">
 <h2>Über die Charts</h2>
@@ -48,7 +48,51 @@ ol{list-style:none;margin:0;padding:0;counter-reset:chart}.entry{counter-increme
 </main>
 <footer>Nachtfragment Music Charts · <a href="https://nachtfragment.de/" target="_blank" rel="noopener noreferrer">Nachtfragment.de</a></footer>
 <script>
-(async()=>{const box=document.getElementById('chart');try{const r=await fetch('../data/music-charts.json',{cache:'no-store'});if(!r.ok)throw new Error();const d=await r.json();const tracks=Array.isArray(d.tracks)?d.tracks.slice(0,30):[];document.getElementById('issue-label').textContent=d.issue||'Erste Ausgabe in Vorbereitung';document.getElementById('updated').textContent=d.updated_at?'Stand: '+new Date(d.updated_at).toLocaleDateString('de-DE'):'Die erste Chartausgabe wird zusammengestellt.';if(!tracks.length)return;const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));box.className='';box.innerHTML='<ol>'+tracks.map((t,i)=>{const pos=Number(t.position)||i+1;const move=t.movement==='new'?'NEU':t.previous_position?'(Vorwoche: #'+esc(t.previous_position)+')':'';const links=[['Bandcamp',t.bandcamp],['YouTube',t.youtube],['Spotify',t.spotify],['Infos',t.source],['Artist',t.artist_url]].filter(x=>x[1]).map(x=>'<a href="'+esc(x[1])+'" target="_blank" rel="noopener noreferrer">'+x[0]+' ↗</a>').join(' · ');return '<li class="entry"><div class="rank">'+pos+'.</div><div><div class="song">'+esc(t.artist)+' – '+esc(t.title)+' <span class="movement">'+move+'</span></div><div class="details">'+[t.genre,t.release,t.country].filter(Boolean).map(esc).join(' · ')+'</div>'+(links?'<div class="links">'+links+'</div>':'')+'</div></li>'}).join('')+'</ol>'}catch(e){box.textContent='Die Chartdaten sind gerade nicht verfügbar. Bitte später erneut vorbeischauen.'}})();
+(async function(){
+ const box=document.getElementById('chart');
+ try{
+  const response=await fetch('../data/music-charts.json',{cache:'no-store'});
+  if(!response.ok)throw new Error('chart data unavailable');
+  const data=await response.json();
+  const tracks=Array.isArray(data.tracks)?data.tracks.slice(0,30):[];
+  document.getElementById('issue-label').textContent=data.issue||'Erste Ausgabe in Vorbereitung';
+  document.getElementById('updated').textContent=data.updated_at?'Stand: '+new Date(data.updated_at).toLocaleDateString('de-DE'):'Die erste Chartausgabe wird zusammengestellt.';
+  if(!tracks.length)return;
+  const esc=function(v){return String(v||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+  box.className='';
+  box.innerHTML='<ol>'+tracks.map(function(t,i){
+   const pos=Number(t.position)||i+1;
+   const move=t.movement==='new'?'NEU':t.previous_position?'(Vorwoche: #'+esc(t.previous_position)+')':'';
+   const links=[['Bandcamp',t.bandcamp],['YouTube',t.youtube],['Spotify',t.spotify],['Infos',t.source&&t.source.indexOf('turn')!==0?t.source:null],['Artist',t.artist_url]].filter(function(x){return x[1]}).map(function(x){return '<a href="'+esc(x[1])+'" target="_blank" rel="noopener noreferrer">'+x[0]+' ↗</a>'}).join(' · ');
+   const initials=(t.artist||'NF').split(/\s+/).slice(0,2).map(function(x){return x.charAt(0)}).join('').toUpperCase();
+   const cover=t.artwork?'<img src="'+esc(t.artwork)+'" alt="Cover '+esc(t.artist)+' – '+esc(t.title)+'" width="64" height="64">':'';
+   return '<li class="entry"><div class="rank">'+pos+'.</div><div class="cover" data-artist="'+esc(t.artist)+'" data-title="'+esc(t.title)+'">'+cover+initials+'</div><div><div class="song">'+esc(t.artist)+' – '+esc(t.title)+' <span class="movement">'+move+'</span></div><div class="details">'+[t.genre,t.release,t.country].filter(Boolean).map(esc).join(' · ')+'</div>'+(links?'<div class="links">'+links+'</div>':'')+'</div></li>';
+  }).join('')+'</ol>';
+  function norm(s){return String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim()}
+  const items=Array.from(box.querySelectorAll('.cover')).filter(function(el){return !el.querySelector('img')});
+  async function artwork(el){
+   if(el.dataset.done)return;el.dataset.done='1';
+   try{
+    const term=encodeURIComponent(el.dataset.artist+' '+el.dataset.title);
+    const res=await fetch('https://itunes.apple.com/search?term='+term+'&media=music&entity=song&limit=8');
+    if(!res.ok)return;
+    const json=await res.json();
+    const artist=norm(el.dataset.artist),title=norm(el.dataset.title);
+    const hit=(json.results||[]).find(function(x){
+     const ar=norm(x.artistName),ti=norm(x.trackName);
+     return (ar===artist||ar.indexOf(artist)>=0||artist.indexOf(ar)>=0)&&(ti===title||ti.indexOf(title)>=0||title.indexOf(ti)>=0);
+    });
+    if(!hit||!hit.artworkUrl100)return;
+    const img=document.createElement('img');img.src=hit.artworkUrl100.replace('100x100bb','300x300bb');img.alt='Cover '+el.dataset.artist+' – '+el.dataset.title;img.width=64;img.height=64;
+    img.onload=function(){el.textContent='';el.appendChild(img)};
+   }catch(ignore){}
+  }
+  if('IntersectionObserver' in window){
+   const observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){observer.unobserve(entry.target);artwork(entry.target)}})},{rootMargin:'250px'});
+   items.forEach(function(el){observer.observe(el)});
+  }else{items.forEach(function(el,index){setTimeout(function(){artwork(el)},index*1300)})}
+ }catch(error){box.textContent='Die Chartdaten sind gerade nicht verfügbar. Bitte später erneut vorbeischauen.'}
+})();
 </script>
 </body>
 </html>
