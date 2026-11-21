@@ -48,6 +48,10 @@ jobs:
                   obj = json.load(f)
               assert isinstance(obj, (dict, list)), name
               print("OK:", name)
+          activity = json.loads(Path("data/artist-activity.json").read_text(encoding="utf-8"))
+          assert isinstance(activity.get("artists"), dict)
+          assert activity.get("artist_count") == len(activity["artists"])
+          print("Artist Activity:", activity["artist_count"], "Artists /", activity.get("event_count", 0), "bestätigte Termine")
           PY
 
       - name: Öffentliche Künstler- und Szenekalender durchsuchen
@@ -60,12 +64,15 @@ jobs:
           CONCERTS_RSS_RESULTS: "18"
         run: python concerts_discovery.py
 
+      - name: Gemeinsamen Artist Activity Feed aktualisieren
+        run: python build_artist_activity.py
+
       - name: Ergebnisdateien validieren
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          for name in ("data/concert_candidates.json", "data/concerts_status.json", "concerts.json"):
+          for name in ("data/concert_candidates.json", "data/concerts_status.json", "concerts.json", "data/artist-activity.json"):
               p = Path(name)
               if not p.is_file():
                   raise SystemExit(f"Datei fehlt: {name}")
@@ -80,7 +87,7 @@ jobs:
           set -euo pipefail
           git config user.name "Nachtfragment Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add concerts_discovery.py data/concert_sources.json data/concert_candidates.json data/concerts_status.json concerts.json
+          git add concerts_discovery.py build_artist_activity.py data/concert_sources.json data/concert_candidates.json data/concerts_status.json concerts.json data/artist-activity.json
           if git diff --cached --quiet; then
             echo "Keine Änderungen – nichts zu committen."
             exit 0
