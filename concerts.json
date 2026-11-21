@@ -1,56 +1,8 @@
 {
-  "updated_at": "2026-11-18T14:34:56+00:00",
+  "updated_at": "2026-11-21T00:46:11+00:00",
   "source": "Nachtfragment Concert Discovery",
-  "count": 70,
+  "count": 66,
   "events": [
-    {
-      "id": "hinfort-diary-of-dreams-2026-11-19",
-      "artist": "Hinfort / Diary of Dreams",
-      "date": "2026-11-19",
-      "title": "Hinfort live with Diary of Dreams",
-      "url": "https://hinfortmusic.com/home",
-      "venue": "Club Zenit",
-      "city": "Schwerin",
-      "source": "Hinfort official",
-      "status": "confirmed",
-      "category": "concert"
-    },
-    {
-      "id": "hinfort-diary-of-dreams-2026-11-20",
-      "artist": "Hinfort / Diary of Dreams",
-      "date": "2026-11-20",
-      "title": "Hinfort live with Diary of Dreams",
-      "url": "https://hinfortmusic.com/home",
-      "venue": "KuFa Haus",
-      "city": "Braunschweig",
-      "source": "Hinfort official",
-      "status": "confirmed",
-      "category": "concert"
-    },
-    {
-      "id": "lorning-ostpol-2026-11-20",
-      "artist": "Lorning",
-      "date": "2026-11-20",
-      "title": "Dark Wave / Post-Punk / EBM",
-      "url": "https://krach.app/de/artists/lorning",
-      "venue": "Ostpol",
-      "city": "Dresden",
-      "source": "KRACH",
-      "status": "listed_check_venue",
-      "category": "concert"
-    },
-    {
-      "id": "plage-noire-festival-2026-11-20",
-      "artist": "Plage Noire Festival",
-      "date": "2026-11-20",
-      "title": "Plage Noire Festival 2026",
-      "url": "https://www.rockantenne.hamburg/mitrocken/konzertkalender/20-21-11-2026-plage-noire-festival-2026",
-      "venue": "Weissenhäuser Strand",
-      "city": "Wangels",
-      "source": "ROCK ANTENNE Hamburg",
-      "status": "confirmed",
-      "category": "festival"
-    },
     {
       "id": "sitd-2026-11-21",
       "artist": "[:SITD:]",
