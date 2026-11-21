@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-11-21T00:33:36+00:00",
+  "updated_at": "2026-11-21T00:53:46+00:00",
   "lookback_days": 45,
   "artist_count": 131,
-  "candidate_count": 49,
+  "candidate_count": 48,
   "approval_required": true,
   "items": [
     {
       "id": "4fb2b3bcd720fa05b1d9",
       "artist": "Then Comes Silence",
       "artist_slug": "then-comes-silence",
-      "title": "Then Comes Silence split ‘Requiem Ballroom’ into two halves for eighth album - Side-Line",
-      "summary": "Then Comes Silence split ‘Requiem Ballroom’ into two halves for eighth album    Side-Line",
+      "title": "Then Comes Silence split ‘Requiem Ballroom’ into two halves for eighth album - SIDE-LINE",
+      "summary": "Then Comes Silence split ‘Requiem Ballroom’ into two halves for eighth album    SIDE-LINE",
       "date": "2026-11-20T18:43:14+00:00",
       "category": "Release",
-      "publisher": "Side-Line",
+      "publisher": "SIDE-LINE",
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBUQzk0V3BROG9QN2FuUl9OTU1WUnhZd28yNGFWYmF2QUNJOFRUQ08ybFRJZVdhejJuNmsycW5IVjZIcGFQWmFFNGR4cE82VFdla1Q4dXZlOC03ZVFERnpjcGJleVlwb1BMZTVjcWEyeUM0aDhVZGJwblRR?oc=5",
       "source": "Google News",
       "status": "needs_review"
@@ -132,19 +132,6 @@
       "category": "Release",
       "publisher": "Popzine",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZkVRQ2dFMDhzMWRyT2ROdXd3VGEtSFhLbXNXRnp6bFQyaDBuS0E1aEN6djlncnFXREFEa01XLWpXZnlXeWd2RzhvQWxfRmtxNUdQdFhtX3p6bjA5aFE2SWh1MmVsS0k1NUxYVHk2dUpienVMZUt2S2NWalgtVzJrb0lBVS1CRlpBYzdxb04xeTR5YXZD?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "5ec6ef2b0735ef216149",
-      "artist": "Agent Side Grinder",
-      "artist_slug": "agent-side-grinder",
-      "title": "Agent Side Grinder Return With “The Choir” and Announce Signals EP - Портал Експеримент",
-      "summary": "Agent Side Grinder Return With “The Choir” and Announce Signals EP    Портал Експеримент",
-      "date": "2026-11-13T09:23:00+00:00",
-      "category": "Release",
-      "publisher": "Портал Експеримент",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOalYwbEtjRzhtamdmdzczalhtTnJKTC1mZm1NZjU5U1dFUnJabWN4cTBrbms4SU4xUWJlV1c2bllTY2xyX3VPZ2VDZC13ZmZtaFVHWGI5a216UlFQbXpKSFE4SkViNDlOVW5ja3FiMHN6NV92UnY1dGlia1ZJZHpvTEZzaTJ1VUd0OWtzcWRPUzRldTQ3UWdIR2ZMdktheTFiOVFGSmw1T2VYMVJY?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
@@ -327,6 +314,19 @@
       "category": "Video",
       "publisher": "SIDE-LINE",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nQnZMYktUMVpEZXFjeUtNclRKTGN2NnQzaklJVkR2eDYtN2YzTnFiTDlYZ25IR1lua3EzQTZMa2J1bElwc2dEUGdwV01MNjJCVWFRNGtTQ3p0QQ?oc=5",
+      "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "e9aee68a0947f99f986a",
+      "artist": "Modele",
+      "artist_slug": "modele",
+      "title": "Modele Unleash New Single \"Just Like This\" - kool rock radio",
+      "summary": "Modele Unleash New Single \"Just Like This\"    kool rock radio",
+      "date": "2026-10-30T07:00:00+00:00",
+      "category": "Release",
+      "publisher": "kool rock radio",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ucXJjVUFrUVpUN2pBQkhaaFRWT18yMllDZHlCdnllRG5VY3R4UmZDdjkxQTJ6ay12ZVdaS3Bqa0lBcXlhRVpBQWtlTm1rVXY0T0JycEVNQnFIZ2hrRDFiX0lPaDhRN2RqQmg0N2FFRTBZLWFQb3c?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
@@ -626,19 +626,6 @@
       "category": "Release",
       "publisher": "SIDE-LINE",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9qZFNDdkxaakxqRHJzMFh1cjVxaHpfOXM2VjdKdlR0UWdjc05VNkdCS1lheUp6aGVpMnlxc2xMeS1aeDBqTFFvUVZ1UFRwUVN0UkRXZWwzWmpiMjhsQU1fNkRuZw?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "076125e176c57d379995",
-      "artist": "REIN",
-      "artist_slug": "rein",
-      "title": "Rein Is Suddenly Expelled from the Guild... Anime 'The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life' Episode 1 Synopsis and Teaser Cuts Released | ANIME NEWS | ANIME FREAKS - ABEMA TIMES",
-      "summary": "Rein Is Suddenly Expelled from the Guild... Anime 'The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life' Episode 1 Synopsis and Teaser Cuts Released | ANIME NEWS | ANIME FREAKS    ABEMA TIMES",
-      "date": "2026-10-08T07:00:00+00:00",
-      "category": "Release",
-      "publisher": "ABEMA TIMES",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9MbFNLVTVPYVBJWF9mSE4yWXJkbm9TWTUwQl9sUTBrbVRCalZpcTVWclFVWVpudVV3V0FNRG0zbFVxSmE5ZEt3VHJOZE1NU1hURFNUNmhRSGg?oc=5",
       "source": "Google News",
       "status": "needs_review"
     }

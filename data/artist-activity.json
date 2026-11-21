@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-21T00:46:11+00:00",
+  "updated_at": "2026-11-21T00:56:11+00:00",
   "source": "Nachtfragment published concerts.json + manually approved artist-news.json",
   "artist_count": 131,
   "event_count": 5,
-  "news_count": 10,
+  "news_count": 11,
   "artists": {
     "2dcat": {
       "name": "2DCAT",
@@ -821,6 +821,15 @@
       "url": "https://nachtfragment.de/index.php/artists/then-comes-silence",
       "events": [],
       "news": [
+        {
+          "id": "then-comes-silence-requiem-ballroom-out-now-2026-11-20",
+          "title": "Then Comes Silence veröffentlichen „Requiem Ballroom“",
+          "summary": "Das achte Studioalbum der schwedischen Post-Punk-Band ist am 20. November 2026 über Metropolis Records erschienen. Das 12-Track-Album ist in zwei Teile gegliedert: „Requiem“ und „Ballroom“; als Fokus-Track wird „Witches and Demons“ hervorgehoben.",
+          "date": "2026-11-20T00:00:00+00:00",
+          "category": "Release",
+          "publisher": "SIDE-LINE",
+          "url": "https://www.side-line.com/then-comes-silence-requiem-ballroom-out-now/"
+        },
         {
           "id": "then-comes-silence-2027-tour-2026-11-10",
           "title": "Then Comes Silence kündigen Januar-2027-Tour mit Agent Side Grinder an",
