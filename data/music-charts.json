@@ -1,7 +1,7 @@
 {
   "title": "Nachtfragment Music Charts",
-  "issue": "Erste Ausgabe in Vorbereitung",
-  "updated_at": null,
+  "issue": "November 2026 · Erste Ausgabe",
+  "updated_at": "2026-11-21",
   "methodology": {
     "scope": "Internationaler Dark Underground",
     "genres": [
@@ -13,14 +13,306 @@
       "Industrial",
       "Dark Electro",
       "Dark Synth",
+      "Synthpop",
       "Minimal Synth",
       "Deathrock",
       "Dark Pop",
       "Ethereal",
       "Neofolk"
     ],
-    "cadence": "Wöchentliche Prüfung, monatliche Top 30",
-    "note": "Keine Chartpositionen ohne verifizierte Trackdaten und nachvollziehbare Bewertungsgrundlage."
+    "cadence": "Wöchentliche redaktionelle Prüfung, monatliche Top 30",
+    "note": "Redaktionell kuratierte erste Auswahl. Keine Wiederveröffentlichungen, Reissues oder Re-Releases. Rangfolge ist eine Nachtfragment-Auswahl und keine Verkaufs- oder Streamingmessung."
   },
-  "tracks": []
+  "tracks": [
+    {
+      "position": 1,
+      "artist": "John X Belmonte",
+      "title": "A Sky Full of Black Stars",
+      "genre": "Darkwave",
+      "release": "2026-11-14",
+      "country": "USA",
+      "movement": "new",
+      "source": "turn936847search0"
+    },
+    {
+      "position": 2,
+      "artist": "Deathday",
+      "title": "Hungry Ghosts",
+      "genre": "Darkwave",
+      "release": "2026-11-14",
+      "country": "USA",
+      "movement": "new",
+      "source": "turn936847search0"
+    },
+    {
+      "position": 3,
+      "artist": "Corlyx",
+      "title": "Die Young",
+      "genre": "Gothic Rock / Death Pop",
+      "release": "2026-11-14",
+      "country": "International",
+      "movement": "new",
+      "source": "turn936847search0"
+    },
+    {
+      "position": 4,
+      "artist": "Kind Kid",
+      "title": "Bleed",
+      "genre": "Dark Synthpop",
+      "release": "2026-11-12",
+      "country": "USA",
+      "movement": "new",
+      "source": "turn237416search2"
+    },
+    {
+      "position": 5,
+      "artist": "Anton",
+      "title": "Répression",
+      "genre": "Coldwave",
+      "release": "2026-11-12",
+      "country": "France",
+      "movement": "new",
+      "source": "turn237416search2"
+    },
+    {
+      "position": 6,
+      "artist": "Charm School",
+      "title": "Desolation",
+      "genre": "Post-Punk / Darkwave",
+      "release": "2026-11-12",
+      "country": "USA",
+      "movement": "new",
+      "source": "turn936847search4"
+    },
+    {
+      "position": 7,
+      "artist": "The Fair Attempts",
+      "title": "Doomscroller",
+      "genre": "Industrial Rock",
+      "release": "2026-11-11",
+      "country": "Finland",
+      "movement": "new",
+      "source": "turn936847search4"
+    },
+    {
+      "position": 8,
+      "artist": "MNÆ",
+      "title": "Hunt Them All",
+      "genre": "Electro / EBM",
+      "release": "2026-11-13",
+      "country": "Germany",
+      "movement": "new",
+      "source": "turn936847search4"
+    },
+    {
+      "position": 9,
+      "artist": "Angelzoom",
+      "title": "Borrowed Light",
+      "genre": "Darkwave",
+      "release": "2026-11-06",
+      "country": "Germany",
+      "movement": "new",
+      "source": "turn936847search2"
+    },
+    {
+      "position": 10,
+      "artist": "Tobias Bernstrup",
+      "title": "Love Machines",
+      "genre": "Synthpop / Darkwave",
+      "release": "2026-11-06",
+      "country": "Sweden",
+      "movement": "new",
+      "source": "turn936847search2"
+    },
+    {
+      "position": 11,
+      "artist": "Rosa Damask",
+      "title": "Crygirl",
+      "genre": "Darkwave / Electronic",
+      "release": "2026-11-10",
+      "country": "Germany",
+      "movement": "new",
+      "source": "turn936847search2"
+    },
+    {
+      "position": 12,
+      "artist": "Amulet",
+      "title": "I Am the Dark",
+      "genre": "Gothic Rock",
+      "release": "2026-11-05",
+      "country": "USA",
+      "movement": "new",
+      "source": "turn936847search2"
+    },
+    {
+      "position": 13,
+      "artist": "Last Moon In Moscow",
+      "title": "Falling Down",
+      "genre": "Post-Punk / New Wave",
+      "release": "2026-11-08",
+      "country": "Italy",
+      "movement": "new",
+      "source": "turn936847search6"
+    },
+    {
+      "position": 14,
+      "artist": "In Strict Confidence",
+      "title": "Heartbreaker",
+      "genre": "EBM / Electro-Industrial",
+      "release": "2026-11-13",
+      "country": "Germany",
+      "movement": "new",
+      "source": "turn936847search6"
+    },
+    {
+      "position": 15,
+      "artist": "The Halo Trees",
+      "title": "Until I Disappear",
+      "genre": "Post-Punk",
+      "release": "2026-11-06",
+      "country": "Germany",
+      "movement": "new",
+      "source": "turn936847search6"
+    },
+    {
+      "position": 16,
+      "artist": "Suffer Well",
+      "title": "Came Around",
+      "genre": "Dark Alternative",
+      "release": "2026-11-12",
+      "country": "USA",
+      "movement": "new",
+      "source": "turn936847search4"
+    },
+    {
+      "position": 17,
+      "artist": "Aliens Corporation",
+      "title": "Altered Moods",
+      "genre": "Synthpop / EBM / Darkwave",
+      "release": "2026-11-18",
+      "country": "Spain",
+      "movement": "new",
+      "source": "turn237416search0"
+    },
+    {
+      "position": 18,
+      "artist": "Eden Script",
+      "title": "Humans Remain",
+      "genre": "Dark Electro",
+      "release": "2026-11-20",
+      "country": "Belgium",
+      "movement": "new",
+      "source": "turn237416search1"
+    },
+    {
+      "position": 19,
+      "artist": "Conn.RAR",
+      "title": "You Don't Care",
+      "genre": "EBM",
+      "release": "2026-11-20",
+      "country": "International",
+      "movement": "new",
+      "source": "turn237416search0"
+    },
+    {
+      "position": 20,
+      "artist": "Pawn Pawn",
+      "title": "Silhouette",
+      "genre": "Synthpop",
+      "release": "2026-11-20",
+      "country": "USA",
+      "movement": "new",
+      "source": "turn237416search0"
+    },
+    {
+      "position": 21,
+      "artist": "BERMUD",
+      "title": "Lost And Anxious",
+      "genre": "Dark Electronic",
+      "release": "2026-11-20",
+      "country": "International",
+      "movement": "new",
+      "source": "turn237416search0"
+    },
+    {
+      "position": 22,
+      "artist": "VINCE",
+      "title": "Primetime",
+      "genre": "Electronic Pop / Synthpop",
+      "release": "2026-11-08",
+      "country": "Sweden",
+      "movement": "new",
+      "source": "turn237416search0"
+    },
+    {
+      "position": 23,
+      "artist": "Claquedent",
+      "title": "Vexare",
+      "genre": "Industrial / EBM",
+      "release": "2026-11-19",
+      "country": "France",
+      "movement": "new",
+      "source": "turn237416search1"
+    },
+    {
+      "position": 24,
+      "artist": "Sabotage Q.C.Q.C.?",
+      "title": "En Ordre",
+      "genre": "EBM / Electro-Punk",
+      "release": "2026-11-14",
+      "country": "Germany",
+      "movement": "new",
+      "source": "turn237416search5"
+    },
+    {
+      "position": 25,
+      "artist": "J Wølf",
+      "title": "Tainted Scent",
+      "genre": "Electronic / EBM",
+      "release": "2026-11-18",
+      "country": "Belgium",
+      "movement": "new",
+      "source": "turn237416search1"
+    },
+    {
+      "position": 26,
+      "artist": "HAEZL",
+      "title": "Whistleblower",
+      "genre": "Dark Electronic",
+      "release": "2026-11-06",
+      "country": "USA",
+      "movement": "new",
+      "source": "turn936847search3"
+    },
+    {
+      "position": 27,
+      "artist": "Ghost Painted Sky",
+      "title": "Failure Blooms",
+      "genre": "Darkwave / Post-Punk",
+      "release": "2026-11-11",
+      "country": "USA",
+      "movement": "new",
+      "source": "turn936847search4"
+    },
+    {
+      "position": 28,
+      "artist": "Faded Pulse",
+      "title": "Elysia",
+      "genre": "Ethereal Goth",
+      "release": "2026-11-12",
+      "country": "USA",
+      "movement": "new",
+      "source": "turn237416search2"
+    },
+    {
+      "position": 29,
+      "artist": "Bitumen",
+      "title": "Perffect Dress",
+      "genre": "Industrial Post-Punk",
+      "release": "2026-11-06",
+      "country": "Australia",
+      "movement": "new",
+      "source": "turn936847search4"
+    }
+  ]
 }
