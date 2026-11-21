@@ -52,12 +52,23 @@ footer,.footer{border-top:1px solid var(--line);color:var(--muted);padding:24px 
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.head,.header-inner{width:calc(100% - 22px);align-items:flex-start;flex-direction:column;padding:14px 0;gap:10px}nav{display:flex!important;gap:7px}nav a{font-size:.82rem;padding:7px 10px}.hero{width:calc(100% - 22px);padding:34px 0 24px}.wrap,main.wrap{width:calc(100% - 22px)}.grid{grid-template-columns:1fr}.card{min-height:0;padding:16px}.controls{padding:14px}.summary,.stats{align-items:flex-start;flex-direction:column}}
 
+
+/* Einheitliche, sticky Nachtfragment-Hauptnavigation */
+.site-nav{position:sticky;top:0;z-index:1000;background:rgba(8,9,11,.96);border-bottom:1px solid #292d35;backdrop-filter:blur(14px)}
+.site-nav-inner{width:min(1180px,calc(100% - 32px));min-height:68px;margin:auto;padding:12px 0;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.site-brand{flex:0 0 auto;font:500 1.05rem Georgia,serif;letter-spacing:.12em;text-transform:uppercase;color:#e7e7ea}
+.site-brand span{color:#999da8;letter-spacing:.04em}
+.site-nav nav{display:flex!important;gap:7px;flex-wrap:wrap;align-items:center}
+.site-nav nav a{display:inline-flex;margin:0!important;border:1px solid #292d35;background:#111318;border-radius:999px;padding:7px 11px;color:#e7e7ea!important;text-decoration:none;font-size:.82rem;line-height:1.35;white-space:normal}
+.site-nav nav a:hover,.site-nav nav a[aria-current="page"]{border-color:#b9b9c4;background:#1a1c22;color:#fff!important;text-decoration:none}
+@media(max-width:760px){.site-nav-inner{width:calc(100% - 22px);align-items:flex-start;flex-direction:column;gap:10px;padding:12px 0}.site-nav nav{gap:6px}.site-nav nav a{font-size:.78rem;padding:7px 9px}}
+
 </style>
 </head>
 <body>
 <header class="top"><div class="head">
   <div class="brand">Nachtfragment <span>/ Dark Scene Directory</span></div>
-  <nav aria-label="Hauptnavigation"><a href="./" aria-current="page">Dark Scene Directory</a><a href="./concerts.html" target="_blank" rel="noopener">Konzerte &amp; Gigs ↗</a><a href="./facebook-follow.html" target="_blank" rel="noopener">🖤 Artists auf Facebook folgen ↗</a><a href="./Stuff/" target="_blank" rel="noopener">Stuff &amp; Dark Lifestyle ↗</a><a href="./Magazine/" target="_blank" rel="noopener">Magazine ↗</a><a href="https://nachtfragment.de/" target="_blank" rel="noopener">Nachtfragment.de ↗</a></nav>
+  <nav aria-label="Hauptnavigation"><a href="./" aria-current="page">Dark Scene Directory</a><a href="./concerts.html" target="_blank" rel="noopener noreferrer">Konzerte &amp; Gigs</a><a href="./#directory" target="_blank" rel="noopener noreferrer">Shop · Club · Bar</a><a href="./Stuff/" target="_blank" rel="noopener noreferrer">Stuff &amp; Dark Lifestyle</a><a href="./Magazine/" target="_blank" rel="noopener noreferrer">Magazine</a><a href="./facebook-follow.html" target="_blank" rel="noopener noreferrer">🖤 Artists folgen ↗</a><a href="https://nachtfragment.de/" target="_blank" rel="noopener noreferrer">Nachtfragment.de ↗</a></nav>
 </div></header>
 <section class="hero">
   <div class="kicker">Nachtfragment · Dark Music & Culture</div>
