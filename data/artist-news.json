@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T01:00:00Z",
+  "updated_at": "2026-11-21T02:35:00Z",
   "instructions": "Redaktionell geprüfte Meldungen. Nur status=approved wird in den Artist Activity Feed übernommen.",
   "items": [
     {
@@ -168,6 +168,30 @@
       "category": "Review",
       "publisher": "SIDE-LINE",
       "url": "https://www.side-line.com/digital-energy-echoes-of-tomorrow-review/",
+      "status": "approved"
+    },
+    {
+      "id": "unverkalt-penumbrian-lament-live-session-2026-11-16",
+      "artist": "Unverkalt",
+      "artist_slug": "unverkalt",
+      "title": "Unverkalt veröffentlichen Live-Session-Video zu „Penumbrian Lament“",
+      "summary": "Die Band veröffentlicht eine im RAWBITE Studio aufgenommene Live-Session zu „Penumbrian Lament“ aus dem Album „Héréditaire“. Gleichzeitig gibt Unverkalt die Zusammenarbeit mit The Flaming Arts Agency bekannt.",
+      "date": "2026-11-16T00:00:00+00:00",
+      "category": "Video",
+      "publisher": "Season of Mist",
+      "url": "https://www.season-of-mist.com/news/unverkalt-2026-11-16/",
+      "status": "approved"
+    },
+    {
+      "id": "ductape-dert-video-2026-11-10",
+      "artist": "Ductape",
+      "artist_slug": "ductape",
+      "title": "Ductape veröffentlichen neues Video zu „D.E.R.T“",
+      "summary": "Das Darkwave-/Post-Punk-Duo veröffentlicht ein weiteres Video aus dem Album „Faded Flowers“. „D.E.R.T“ ist der sechste Clip aus dem Album; Regie führte Begüm Koçum.",
+      "date": "2026-11-10T00:00:00+00:00",
+      "category": "Video",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/ductape-dert-video/",
       "status": "approved"
     }
   ]
