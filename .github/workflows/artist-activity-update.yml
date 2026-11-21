@@ -2,6 +2,7 @@ name: Nachtfragment Artist Activity Feed
 
 on:
   push:
+    branches: [main]
     paths:
       - "discover_artist_news.py"
       - "build_artist_activity.py"
