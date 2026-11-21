@@ -23,13 +23,101 @@
     "cadence": "Laufende Aktualisierung; redaktionelle Prüfung mittwochs und sonntags",
     "note": "Redaktionell kuratierte Auswahl neuer Veröffentlichungen. Keine Wiederveröffentlichungen, Reissues oder Re-Releases. Die Liste bezieht ausdrücklich DIY- und Underground-Releases ein; Rangfolge ist eine Nachtfragment-Auswahl und keine Verkaufs- oder Streamingmessung.",
     "discovery_sources": [
-      "Bandcamp und Bandcamp-Labels",
-      "Independent- und Underground-Labels",
-      "Artist-eigene Veröffentlichungsseiten",
-      "Spezialisierte Dark-Music- und Underground-Magazine",
-      "Szene-Datenbanken und unabhängige Musikblogs"
+      "Bandcamp Discover: genre-, tag- und standortbasierte Suche nach neuen Veröffentlichungen",
+      "Bandcamp Daily: redaktionelle Entdeckungen, Labelporträts und Underground-Szenen",
+      "Bandcamp-Artistseiten und Bandcamp-Labelkataloge: direkte Veröffentlichungsquellen",
+      "Side-Line: Darkwave, Post-Punk, EBM, Industrial, Gothic und Dark Electro",
+      "The Sanctuary Gazette: internationale Dark-Underground-Neuerscheinungen und Szenenews",
+      "Obscure Sound: unabhängige Künstler, DIY-Releases und neue alternative Musik",
+      "ReGen Magazine: Industrial, Darkwave, Gothic, EBM und verwandte Szenen",
+      "Wilting Flesh Scene Hub: Underground-Labels, Szene-Verbindungen und neue Acts",
+      "Post-Punk.com: Post-Punk, Darkwave, Goth und Coldwave",
+      "IDIEY OUDIE: Industrial, EBM und experimentelle elektronische Musik",
+      "Brutal Resonance: Industrial, EBM, Dark Electro und verwandte elektronische Szenen",
+      "Independent- und Underground-Labelkataloge: z. B. Dais, Dark Entries, Detriti, Manic Depression, Mannequin und passende Kleinstlabels",
+      "Artist-eigene Websites, Bandcamp-Seiten, YouTube-Kanäle und SoundCloud-Profile",
+      "Unabhängige Musikblogs, Szene-Newsletter, Radiosendungen und DJ-/Community-Empfehlungen"
     ],
-    "selection_policy": "Underground-Relevanz ausdrücklich erwünscht: unbekannte und neue Acts, DIY-Releases, kleine Labels und selbstveröffentlichte Musik erhalten denselben redaktionellen Stellenwert wie etabliertere Namen. Reichweite oder Streamingzahlen sind keine Voraussetzung."
+    "selection_policy": "Underground-Relevanz ausdrücklich erwünscht: unbekannte und neue Acts, DIY-Releases, kleine Labels und selbstveröffentlichte Musik erhalten denselben redaktionellen Stellenwert wie etabliertere Namen. Reichweite oder Streamingzahlen sind keine Voraussetzung.",
+    "source_catalog": [
+      {
+        "name": "Bandcamp Discover",
+        "url": "https://bandcamp.com/discover",
+        "role": "Tag- und Genre-Suche nach frischen Releases; DIY und Selbstveröffentlichungen"
+      },
+      {
+        "name": "Bandcamp Daily",
+        "url": "https://daily.bandcamp.com/",
+        "role": "Redaktionelle Entdeckungen, Szenen und Labelporträts"
+      },
+      {
+        "name": "Side-Line",
+        "url": "https://www.side-line.com/",
+        "role": "Darkwave, Post-Punk, EBM, Industrial und Gothic"
+      },
+      {
+        "name": "The Sanctuary Gazette",
+        "url": "https://thesanctuarygate.com/en/gazette/",
+        "role": "Internationale Dark-Underground-Neuerscheinungen"
+      },
+      {
+        "name": "Obscure Sound",
+        "url": "https://www.obscuresound.com/",
+        "role": "Independent- und DIY-Künstler"
+      },
+      {
+        "name": "ReGen Magazine",
+        "url": "https://regenmag.com/",
+        "role": "Industrial, EBM, Darkwave und Gothic"
+      },
+      {
+        "name": "Wilting Flesh Scene Hub",
+        "url": "https://wiltingflesh.org/scene/",
+        "role": "Underground-Labels, Künstler und Szenestrukturen"
+      },
+      {
+        "name": "Post-Punk.com",
+        "url": "https://post-punk.com/",
+        "role": "Post-Punk, Darkwave, Goth und Coldwave"
+      },
+      {
+        "name": "IDIEY OUDIE",
+        "url": "https://www.idieyoudie.com/",
+        "role": "Industrial und elektronische Underground-Musik"
+      },
+      {
+        "name": "Brutal Resonance",
+        "url": "https://www.brutalresonance.com/",
+        "role": "Industrial, EBM, Dark Electro und verwandte Genres"
+      },
+      {
+        "name": "Dais Records",
+        "url": "https://daisrecords.com/",
+        "role": "Industrial, Post-Punk, Coldwave und experimentelle Releases"
+      },
+      {
+        "name": "Dark Entries Records",
+        "url": "https://darkentriesrecords.com/",
+        "role": "Underground-Synth, Coldwave, Post-Punk und neue Künstler"
+      },
+      {
+        "name": "Detriti Records",
+        "url": "https://detritirecords.bandcamp.com/",
+        "role": "Coldwave, Minimal Synth, Post-Punk und EBM"
+      },
+      {
+        "name": "Manic Depression Records",
+        "url": "https://manicdepressionrecords.com/",
+        "role": "Gothic Rock, Post-Punk, Coldwave und Darkwave"
+      },
+      {
+        "name": "Mannequin Records",
+        "url": "https://mannequinrecords.com/",
+        "role": "Minimal Synth, EBM, Industrial und experimentelle Elektronik"
+      }
+    ],
+    "source_handling": "Quellen nicht nur über RSS erfassen: Webseiten, Suchseiten, Genre-/Tag-Seiten, Labelkataloge und direkte Artist-Veröffentlichungen regelmäßig manuell bzw. automatisiert prüfen. RSS darf ergänzen, aber niemals alleinige Grundlage sein. Jede Aufnahme möglichst anhand einer Primärquelle (Artist, Label oder Release-Seite) gegenprüfen.",
+    "verification": "Für jeden Kandidaten Veröffentlichungsdatum, Track-/Release-Titel, Artist, Genre und Primärquelle prüfen. Reissues, Remaster, Re-Releases, bloße Ankündigungen ohne bereits veröffentlichte Musik und Dubletten ausschließen. Bei unsicherem Datum nicht als Neuerscheinung werten."
   },
   "tracks": [
     {
