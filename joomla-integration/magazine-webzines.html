@@ -1,0 +1,82 @@
+<!-- Nachtfragment Joomla-Modul: Magazine & Webzines | direkt in Joomla einfügen -->
+<div id="nf-magazine">
+<style>
+#nf-magazine{--bg:#090a0d;--panel:#14161b;--line:#2b2e36;--text:#e8e8eb;--muted:#a0a2aa;--accent:#b9b9c4;color:var(--text);font:15px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);padding:clamp(14px,3vw,28px);border:1px solid var(--line);border-radius:14px;box-sizing:border-box}
+#nf-magazine *{box-sizing:border-box}#nf-magazine a{color:inherit}
+#nf-magazine .nf-kicker{color:var(--accent);font-size:.75rem;letter-spacing:.18em;text-transform:uppercase}
+#nf-magazine h2{font:400 clamp(2rem,5vw,3.5rem)/1.08 Georgia,serif;margin:9px 0 12px;color:var(--text)}
+#nf-magazine h3{font:400 1.2rem/1.25 Georgia,serif;margin:0;color:var(--text)}
+#nf-magazine .nf-intro{max-width:820px;color:var(--muted);margin:0 0 22px}
+#nf-magazine .nf-controls{background:linear-gradient(145deg,#191b21,#111318);border:1px solid var(--line);border-radius:12px;padding:15px;margin-bottom:18px}
+#nf-magazine .nf-row{display:grid;grid-template-columns:2fr repeat(4,minmax(0,1fr));gap:9px}
+#nf-magazine input,#nf-magazine select{width:100%;min-width:0;min-height:43px;padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:#0c0e12;color:var(--text);font:inherit}
+#nf-magazine input:focus,#nf-magazine select:focus{outline:1px solid var(--accent);border-color:var(--accent)}
+#nf-magazine .nf-summary{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:13px;color:var(--muted);font-size:.82rem}
+#nf-magazine .nf-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+#nf-magazine .nf-card{min-width:0;display:flex;flex-direction:column;gap:10px;padding:16px;background:linear-gradient(145deg,#191b21,#111318);border:1px solid var(--line);border-radius:11px;overflow-wrap:anywhere}
+#nf-magazine .nf-cardtop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+#nf-magazine .nf-status{flex:0 0 auto;font-size:.69rem;color:#c2c4cb;border:1px solid #424650;border-radius:20px;padding:3px 7px}
+#nf-magazine .nf-meta{color:var(--muted);font-size:.8rem}
+#nf-magazine .nf-tags{display:flex;flex-wrap:wrap;gap:5px}
+#nf-magazine .nf-tag{font-size:.69rem;color:#c2c4cb;border:1px solid #353842;border-radius:5px;padding:3px 7px}
+#nf-magazine .nf-cardfoot{margin-top:auto;padding-top:3px}
+#nf-magazine .nf-visit{display:inline-block;text-decoration:none;border:1px solid #50545f;border-radius:7px;padding:7px 10px;font-size:.8rem}
+#nf-magazine .nf-visit:hover{background:#252830;border-color:#aeb1bb}
+#nf-magazine .nf-empty{grid-column:1/-1;text-align:center;padding:34px 15px;color:var(--muted);border:1px dashed var(--line);border-radius:10px}
+#nf-magazine .nf-about{margin-top:22px;padding:17px;background:#121419;border:1px solid var(--line);border-radius:11px;color:var(--muted);font-size:.9rem}
+#nf-magazine .nf-foot{border-top:1px solid var(--line);margin-top:18px;padding-top:13px;color:var(--muted);font-size:.78rem}
+@media(max-width:900px){#nf-magazine .nf-row{grid-template-columns:repeat(2,minmax(0,1fr))}#nf-magazine .nf-row input{grid-column:1/-1}#nf-magazine .nf-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){#nf-magazine .nf-row,#nf-magazine .nf-grid{grid-template-columns:1fr}#nf-magazine .nf-row input{grid-column:auto}#nf-magazine{padding:14px}#nf-magazine .nf-summary{flex-direction:column}}
+</style>
+<div class="nf-kicker">Nachtfragment · Dark Music &amp; Culture</div>
+<h2>Magazine &amp; Webzines</h2>
+<p class="nf-intro">Eine wachsende Sammlung von Magazinen, Webzines, Fanzines und historischen Publikationen rund um Gothic, Darkwave, EBM, Industrial, Post-Punk und die vielen dunklen Zwischenräume der Szene.</p>
+<section class="nf-controls" aria-label="Magazine filtern">
+ <div class="nf-row">
+  <input type="search" data-nfm-search placeholder="Magazin, Genre, Land oder Sprache suchen …" aria-label="Magazine durchsuchen">
+  <select data-nfm-country aria-label="Land"><option value="">Alle Länder</option></select>
+  <select data-nfm-format aria-label="Format"><option value="">Alle Formate</option></select>
+  <select data-nfm-status aria-label="Status"><option value="">Alle Status</option></select>
+  <select data-nfm-genre aria-label="Genre"><option value="">Alle Genres</option></select>
+ </div>
+ <div class="nf-summary"><span data-nfm-count>Magazindaten werden geladen …</span><span>Stand: <strong data-nfm-updated>–</strong></span></div>
+</section>
+<section class="nf-grid" data-nfm-grid aria-live="polite"></section>
+<section class="nf-about"><h3>Über dieses Verzeichnis</h3><p>Nachtfragment versteht dieses Verzeichnis als lebende Datenbank. Neben aktuellen Online-Magazinen werden auch Printpublikationen, DIY-Zines und historisch wichtige Medien berücksichtigt. Aktive, projektbasierte, unklare und historische Publikationen werden getrennt gekennzeichnet. Der Schwerpunkt liegt auf unabhängiger dunkler Musik- und Subkultur.</p></section>
+<div class="nf-foot">Nachtfragment · Gothic · Darkwave · EBM · Industrial · Post-Punk</div>
+</div>
+<script>
+(()=>{
+ const root=document.getElementById('nf-magazine');if(!root||root.dataset.ready)return;root.dataset.ready='1';
+ const DATA='https://raw.githubusercontent.com/niehustorsten-del/nachtfragment-events/main/Magazine/nachtfragment-magazine.json';
+ const $=s=>root.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const safe=s=>{try{const u=new URL(String(s||''));return ['http:','https:'].includes(u.protocol)?u.href:''}catch{return ''}};
+ let items=[];
+ const fields=[['country','country'],['format','format'],['status','status'],['genre','focus']];
+ function options(selector,values){const el=$(selector);const list=[...new Set(values.flat().filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),'de'));el.innerHTML='<option value="">'+({country:'Alle Länder',format:'Alle Formate',status:'Alle Status',genre:'Alle Genres'}[selector.replace('[data-nfm-','').replace(']','')])+'</option>'+list.map(v=>'<option value="'+esc(v)+'">'+esc(v)+'</option>').join('')}
+ function matches(m){
+  const q=$('[data-nfm-search]').value.trim().toLocaleLowerCase('de');
+  const country=$('[data-nfm-country]').value,format=$('[data-nfm-format]').value,status=$('[data-nfm-status]').value,genre=$('[data-nfm-genre]').value;
+  const hay=[m.name,m.country,m.language,m.status,...(m.format||[]),...(m.focus||[])].join(' ').toLocaleLowerCase('de');
+  return (!q||hay.includes(q))&&(!country||m.country===country)&&(!format||(m.format||[]).includes(format))&&(!status||m.status===status)&&(!genre||(m.focus||[]).includes(genre));
+ }
+ function render(){
+  const list=items.filter(matches);$('[data-nfm-count]').textContent=list.length+' von '+items.length+' Magazinen angezeigt';
+  if(!list.length){$('[data-nfm-grid]').innerHTML='<div class="nf-empty">Keine passenden Magazine gefunden.</div>';return}
+  $('[data-nfm-grid]').innerHTML=list.map(m=>{
+   const link=safe(m.website),tags=(m.focus||[]).map(t=>'<span class="nf-tag">'+esc(t)+'</span>').join('');
+   return '<article class="nf-card"><div class="nf-cardtop"><h3>'+esc(m.name)+'</h3><span class="nf-status">'+esc(m.status||'Status offen')+'</span></div><div class="nf-meta">'+esc(m.country||'International')+(m.language?' · '+esc(m.language):'')+'<br>'+esc((m.format||[]).join(' · '))+'</div><div class="nf-tags">'+tags+'</div><div class="nf-cardfoot">'+(link?'<a class="nf-visit" href="'+esc(link)+'" target="_blank" rel="noopener noreferrer">Website öffnen ↗</a>':'')+'</div></article>';
+  }).join('');
+ }
+ async function init(){
+  try{
+   const r=await fetch(DATA+'?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);
+   const d=await r.json();items=Array.isArray(d)?d:(d.magazines||[]);
+   $('[data-nfm-updated]').textContent=d.updated||'–';
+   options('[data-nfm-country]',items.map(x=>x.country));options('[data-nfm-format]',items.map(x=>x.format||[]));options('[data-nfm-status]',items.map(x=>x.status));options('[data-nfm-genre]',items.map(x=>x.focus||[]));
+   render();['[data-nfm-search]','[data-nfm-country]','[data-nfm-format]','[data-nfm-status]','[data-nfm-genre]'].forEach(s=>{$(s).addEventListener('input',render);$(s).addEventListener('change',render)});
+  }catch(e){$('[data-nfm-count]').textContent='Magazindaten konnten nicht geladen werden: '+e.message;$('[data-nfm-grid]').innerHTML='<div class="nf-empty">Die aktuelle Datenquelle ist vorübergehend nicht erreichbar. Bitte später erneut versuchen.</div>'}
+ }
+ init();
+})();
+</script>
