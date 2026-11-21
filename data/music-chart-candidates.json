@@ -1,6 +1,6 @@
 {
   "title": "Nachtfragment Music Charts – Recherchekandidaten",
-  "updated_at": "2026-11-21T07:36:19+00:00",
+  "updated_at": "2026-11-21T07:38:05+00:00",
   "approval_required": true,
   "automatic_publication": false,
   "source_count": 23,
@@ -31,8 +31,7 @@
     {
       "name": "IDIEY OUDIE",
       "url": "https://www.idieyoudie.com/",
-      "article_links": 0,
-      "candidates": 0
+      "error": "URLError"
     },
     {
       "name": "Brutal Resonance",
@@ -314,7 +313,7 @@
       "genre_tags": [
         "Dark Electro"
       ],
-      "release_date": "",
+      "release_date": "2026-11-20",
       "article_date": "2026-11-19",
       "format_guess": "Single / Track",
       "publisher": "Side-Line",
@@ -366,37 +365,6 @@
       "already_in_chart": true
     },
     {
-      "id": "a15e08d312959987",
-      "artist_guess": "J Wølf",
-      "release_title_guess": "Tainted Scent",
-      "headline": "J Wølf releases 'Tainted Scent' EP with Frank M. Spinath",
-      "genre_tags": [
-        "EBM",
-        "Dark Electro",
-        "Synthpop"
-      ],
-      "release_date": "",
-      "article_date": "2026-11-18",
-      "format_guess": "EP / Album / unklar",
-      "publisher": "Side-Line",
-      "source_url": "https://www.side-line.com/j-wolf-tainted-scent-ep/",
-      "primary_release_url": "https://sidelinemag.bandcamp.com/",
-      "external_release_links": [
-        "https://sidelinemag.bandcamp.com/",
-        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction",
-        "https://jwolfmusic.bandcamp.com/album/tainted-scent",
-        "https://jwolfmusic.bandcamp.com/album/tainted-scent",
-        "https://sidelinemag.bandcamp.com/album/united-1-the-freya-files",
-        "https://sidelinemag.bandcamp.com/album/united-2-the-odin-files",
-        "https://sidelinemag.bandcamp.com/album/electronic-bodies-nightside-sessions",
-        "https://sidelinemag.bandcamp.com/album/electronic-bodies-session-1"
-      ],
-      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/jwolf-tainted-scent-cover.webp",
-      "status": "needs_editorial_review",
-      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
-      "already_in_chart": false
-    },
-    {
       "id": "8eb8343244ab9486",
       "artist_guess": "Twin Ion Engine",
       "release_title_guess": "(III) Midsummer Lover",
@@ -418,6 +386,37 @@
         "https://metropolisrecords.bandcamp.com/"
       ],
       "artwork": "https://post-punk.com/wp-content/uploads/2026/11/Twin-Ion-Engine.jpg",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": false
+    },
+    {
+      "id": "a15e08d312959987",
+      "artist_guess": "J Wølf",
+      "release_title_guess": "Tainted Scent",
+      "headline": "J Wølf releases 'Tainted Scent' EP with Frank M. Spinath",
+      "genre_tags": [
+        "EBM",
+        "Dark Electro",
+        "Synthpop"
+      ],
+      "release_date": "2026-11-13",
+      "article_date": "2026-11-18",
+      "format_guess": "EP / Album / unklar",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/j-wolf-tainted-scent-ep/",
+      "primary_release_url": "https://sidelinemag.bandcamp.com/",
+      "external_release_links": [
+        "https://sidelinemag.bandcamp.com/",
+        "https://sidelinemag.bandcamp.com/album/electronic-resistance-reconstruction",
+        "https://jwolfmusic.bandcamp.com/album/tainted-scent",
+        "https://jwolfmusic.bandcamp.com/album/tainted-scent",
+        "https://sidelinemag.bandcamp.com/album/united-1-the-freya-files",
+        "https://sidelinemag.bandcamp.com/album/united-2-the-odin-files",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-nightside-sessions",
+        "https://sidelinemag.bandcamp.com/album/electronic-bodies-session-1"
+      ],
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/jwolf-tainted-scent-cover.webp",
       "status": "needs_editorial_review",
       "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
       "already_in_chart": false
