@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "discover_artist_news.py"
+      - "artist_news_sources.json"
       - "build_artist_activity.py"
       - ".github/workflows/artist-activity-update.yml"
       - "data/artists.json"
