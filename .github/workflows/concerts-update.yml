@@ -51,10 +51,6 @@ jobs:
                   obj = json.load(f)
               assert isinstance(obj, (dict, list)), name
               print("OK:", name)
-          activity = json.loads(Path("data/artist-activity.json").read_text(encoding="utf-8"))
-          assert isinstance(activity.get("artists"), dict)
-          assert activity.get("artist_count") == len(activity["artists"])
-          print("Artist Activity:", activity["artist_count"], "Artists /", activity.get("event_count", 0), "bestätigte Termine")
           PY
 
       - name: Öffentliche Künstler- und Szenekalender durchsuchen
@@ -82,6 +78,10 @@ jobs:
               with p.open(encoding="utf-8") as f:
                   json.load(f)
               print("OK:", name)
+          activity = json.loads(Path("data/artist-activity.json").read_text(encoding="utf-8"))
+          assert isinstance(activity.get("artists"), dict)
+          assert activity.get("artist_count") == len(activity["artists"])
+          print("Artist Activity:", activity["artist_count"], "Artists /", activity.get("event_count", 0), "bestätigte Termine")
           PY
 
       - name: Rechercheergebnisse committen
