@@ -75,7 +75,7 @@ header:not(.hero) nav a:hover,header:not(.hero) nav a[aria-current="page"]{borde
 <body>
 <header class="top"><div class="head">
   <div class="brand">Nachtfragment <span>/ Dark Scene Directory</span></div>
-  <nav aria-label="Hauptnavigation"><a href="./" aria-current="page">Dark Scene Directory</a><a href="./concerts.html" target="_blank" rel="noopener noreferrer">Konzerte &amp; Gigs</a><a href="./#directory" target="_blank" rel="noopener noreferrer">Shop · Club · Bar</a><a href="./Stuff/" target="_blank" rel="noopener noreferrer">Stuff &amp; Dark Lifestyle</a><a href="./Magazine/" target="_blank" rel="noopener noreferrer">Magazine</a><a href="./facebook-follow.html" target="_blank" rel="noopener noreferrer">🖤 Artists folgen ↗</a><a href="https://nachtfragment.de/" target="_blank" rel="noopener noreferrer">Nachtfragment.de ↗</a></nav>
+  <nav aria-label="Hauptnavigation"><a href="./" aria-current="page">Dark Scene Directory</a><a href="./concerts.html" target="_blank" rel="noopener noreferrer">Konzerte &amp; Gigs</a><a href="./?type=shop#directory" target="_blank" rel="noopener noreferrer">Shops</a><a href="./?type=club#directory" target="_blank" rel="noopener noreferrer">Clubs</a><a href="./?type=bar#directory" target="_blank" rel="noopener noreferrer">Bars</a><a href="./Stuff/" target="_blank" rel="noopener noreferrer">Stuff &amp; Dark Lifestyle</a><a href="./Magazine/" target="_blank" rel="noopener noreferrer">Magazine</a><a href="./facebook-follow.html" target="_blank" rel="noopener noreferrer">🖤 Artists folgen ↗</a><a href="https://nachtfragment.de/" target="_blank" rel="noopener noreferrer">Nachtfragment.de ↗</a></nav>
 </div></header>
 <section class="hero">
   <div class="kicker">Nachtfragment · Dark Music & Culture</div>
@@ -120,6 +120,7 @@ header:not(.hero) nav a:hover,header:not(.hero) nav a[aria-current="page"]{borde
 <footer class="footer">Nachtfragment · Gothic · Darkwave · EBM · Industrial · Post-Punk<br><a href="https://nachtfragment.de/" target="_blank" rel="noopener noreferrer">Zur Hauptseite von Nachtfragment ↗</a></footer>
 <script>
 const DATA='data/nachtfragment.json',CAND='data/candidates.json',DIR_CAND='data/directory_candidates.json';let all=[],candidates=[];
+const categoryParam=new URLSearchParams(location.search).get('type');if(['shop','club','bar'].includes(categoryParam))document.getElementById('type').value=categoryParam;
 const icons={active:'🟢',event_based:'🟡',change_announced:'🟠',closed:'🔴',unchecked:'⚪'};const labels={active:'aktuell aktiv',event_based:'unregelmäßig / Event-basiert',change_announced:'angekündigte Veränderung',closed:'geschlossen',unchecked:'nicht ausreichend geprüft'};
 const A=v=>Array.isArray(v)?v:(v?[v]:[]);const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 function normalize(x,candidate=false){let a=x.aktivitaet||x.audit_status||(x.verified?'active':'unchecked');if(['green'].includes(a))a='active';if(['yellow'].includes(a))a='event_based';if(['orange'].includes(a))a='change_announced';if(['red'].includes(a))a='closed';if(!labels[a])a='unchecked';return {...x,aktivitaet:a,_candidate:candidate,categories:[...new Set(A(x.categories).concat(A(x.szenerelevanz_labels)))]}}
