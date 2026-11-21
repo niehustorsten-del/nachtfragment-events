@@ -21,7 +21,7 @@
       "Neofolk"
     ],
     "cadence": "Wöchentliche redaktionelle Prüfung, monatliche Top 30",
-    "note": "Redaktionell kuratierte erste Auswahl. Keine Wiederveröffentlichungen, Reissues oder Re-Releases. Rangfolge ist eine Nachtfragment-Auswahl und keine Verkaufs- oder Streamingmessung."
+    "note": "Redaktionell kuratierte erste Auswahl auf Basis verifizierter Neuveröffentlichungen im November 2026. Keine Wiederveröffentlichungen, Reissues oder Re-Releases. Rangfolge ist eine Nachtfragment-Auswahl und keine Verkaufs- oder Streamingmessung."
   },
   "tracks": [
     {
@@ -256,26 +256,6 @@
     },
     {
       "position": 24,
-      "artist": "Sabotage Q.C.Q.C.?",
-      "title": "En Ordre",
-      "genre": "EBM / Electro-Punk",
-      "release": "2026-11-14",
-      "country": "Germany",
-      "movement": "new",
-      "source": "turn237416search5"
-    },
-    {
-      "position": 25,
-      "artist": "J Wølf",
-      "title": "Tainted Scent",
-      "genre": "Electronic / EBM",
-      "release": "2026-11-18",
-      "country": "Belgium",
-      "movement": "new",
-      "source": "turn237416search1"
-    },
-    {
-      "position": 26,
       "artist": "HAEZL",
       "title": "Whistleblower",
       "genre": "Dark Electronic",
@@ -285,27 +265,7 @@
       "source": "turn936847search3"
     },
     {
-      "position": 27,
-      "artist": "Ghost Painted Sky",
-      "title": "Failure Blooms",
-      "genre": "Darkwave / Post-Punk",
-      "release": "2026-11-11",
-      "country": "USA",
-      "movement": "new",
-      "source": "turn936847search4"
-    },
-    {
-      "position": 28,
-      "artist": "Faded Pulse",
-      "title": "Elysia",
-      "genre": "Ethereal Goth",
-      "release": "2026-11-12",
-      "country": "USA",
-      "movement": "new",
-      "source": "turn237416search2"
-    },
-    {
-      "position": 29,
+      "position": 25,
       "artist": "Bitumen",
       "title": "Perffect Dress",
       "genre": "Industrial Post-Punk",
