@@ -1,19 +1,19 @@
 {
   "version": "5.0",
-  "timestamp": "2026-11-15T19:58:23.588100+00:00",
-  "total": 271,
-  "published": 271,
+  "timestamp": "2026-11-22T12:37:24.735709+00:00",
+  "total": 272,
+  "published": 272,
   "events": 1,
   "shops": 25,
-  "clubs": 7,
+  "clubs": 8,
   "bars": 5,
   "magazines": 10,
-  "directory_imported": 0,
+  "directory_imported": 1,
   "directory_promoted": 0,
   "directory_errors": 1,
-  "candidates": 17,
+  "candidates": 28,
   "new_published": 0,
-  "new_candidates": 2,
+  "new_candidates": 11,
   "source_errors": 1,
   "search_item_errors": 0,
   "quality_checked": 1,
@@ -21,5 +21,5 @@
   "quality_yellow": 0,
   "quality_red": 1,
   "serpapi_configured": true,
-  "today": "2026-11-15"
+  "today": "2026-11-22"
 }

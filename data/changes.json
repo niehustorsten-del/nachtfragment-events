@@ -1,5 +1,108 @@
 [
   {
+    "timestamp": "2026-11-22T12:37:24.735709+00:00",
+    "type": "directory_imported",
+    "record_type": "club",
+    "name": "Dark Party | Das Gothic Party Verzeichnis",
+    "city": "Berlin",
+    "source": "https://dark-party.de",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-11-22T12:37:24.735709+00:00",
+    "type": "candidate_web_search",
+    "name": "Dimension Festival",
+    "city": "Auckland",
+    "source": "https://www.google.com/goto?url=CAESVgHEIkXXIaYm-YPA1U0wXT6llEyLwlyciLi4HeeJ7E2jYEICU3iqQQAv_Y_DhTfComV4m5Dy-83coRmdzczqrzRt9SgBPaLQMOqepFoNFDJbFP7iMiCo",
+    "score": 9
+  },
+  {
+    "timestamp": "2026-11-22T12:37:24.735709+00:00",
+    "type": "candidate_web_search",
+    "name": "Upcoming Events",
+    "city": "Adelaide",
+    "source": "https://www.google.com/goto?url=CAESawHEIkXXykanUL0SP26lCimJmF-GEq2dmJ3L0x1vIiq1eu5hfRvPaRN_gHbFQ35KA0yeQ6vzsG_DmS2gbju9vbvyAbcYhYFZOgl8EKmStETOL5agP1pso2SxwnRfrjhjecpjXdkD3Q3H7_ex",
+    "score": 10
+  },
+  {
+    "timestamp": "2026-11-22T12:37:24.735709+00:00",
+    "type": "candidate_web_search",
+    "name": "Go Goth • European Gothic Festivals & Concerts",
+    "city": "Madrid",
+    "source": "https://www.google.com/goto?url=CAESUAHEIkXXln0v9E8fRTlK5eFzcvCo_-b4G1kSIRsImSLNSx0ujC09vym7QsEyHMX24-whKqyokSME93x80unRNjZNKSlB7U-SD5N-ngFtPfiR",
+    "score": 11
+  },
+  {
+    "timestamp": "2026-11-22T12:37:24.735709+00:00",
+    "type": "candidate_web_search",
+    "name": "EBM Festivals 2026/2027 | Termine & Tickets",
+    "city": "Hildesheim",
+    "source": "https://www.google.com/goto?url=CAESbgHEIkXXMUV7b7h1RjMY7ftdmiL7mJMQYz-nzPWnY_Q8uSN3pTC88dPgziA9PucJK1715NKiH7pQSf8Aykdn0Alc0gJPR9igQp8rzvdywTRAMKb6aj6Z9505VVY23Vl0y-axTsXXInk4VNqrxZg-",
+    "score": 13
+  },
+  {
+    "timestamp": "2026-11-22T12:37:24.735709+00:00",
+    "type": "candidate_web_search",
+    "name": "EBM Festivals 2026/2027 | Termine & Tickets",
+    "city": "Leipzig",
+    "source": "https://www.google.com/goto?url=CAESbgHEIkXX3Oc3P1Aj-dS2gFfwI4ghyk5I-OQhDqeymZzF9cbXiSfx1WU3-nRvWzQNESYlpyneNk99xwQjiihgLgxajkDtfu0-P0_vMAxbAqIB2b7sTlkzxWh6Ad30vVDdFAKGnt5vKJcgSXei5QUJ",
+    "score": 13
+  },
+  {
+    "timestamp": "2026-11-22T12:37:24.735709+00:00",
+    "type": "source_error",
+    "source": "https://www.plage-noire.de/",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "timestamp": "2026-11-22T12:37:24.735709+00:00",
+    "type": "candidate",
+    "name": "Pink Turns Blue @ Obsidian Echoes Festival",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 8
+  },
+  {
+    "timestamp": "2026-11-22T12:37:24.735709+00:00",
+    "type": "candidate",
+    "name": "Kirlian Camera live - Die Stadtmitte Karlsruhe",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-11-22T12:37:24.735709+00:00",
+    "type": "candidate",
+    "name": "The Chameleons live - Coesfeld",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-11-22T12:37:24.735709+00:00",
+    "type": "candidate",
+    "name": "Kirlian Camera live - Werk68 Nürnberg",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-11-22T12:37:24.735709+00:00",
+    "type": "candidate",
+    "name": "The Chameleons live - Hannover",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
+    "timestamp": "2026-11-22T12:37:24.735709+00:00",
+    "type": "candidate",
+    "name": "The Chameleons live - Hamburg",
+    "city": "",
+    "source": "https://darkandalternativeworld.de/veranstaltungen/",
+    "score": 6
+  },
+  {
     "timestamp": "2026-11-15T19:58:23.588100+00:00",
     "type": "source_error",
     "source": "https://www.plage-noire.de/",

@@ -718,5 +718,525 @@
     "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=The+Birthday+Massacre+live+-+Leipzig%2C+Deutschland",
     "geocoded": false,
     "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-1a12b3362058a8",
+    "record_type": "event",
+    "name": "The Chameleons live - Hamburg",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/the-chameleons-live-hamburg-2026-11-24/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-24",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-22T12:37:24.735709+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Chameleons+live+-+Hamburg%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=The+Chameleons+live+-+Hamburg%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-38c1267c83fd05",
+    "record_type": "event",
+    "name": "The Chameleons live - Hannover",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/the-chameleons-live-hannover-2026-11-26/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-26",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-22T12:37:24.735709+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Chameleons+live+-+Hannover%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=The+Chameleons+live+-+Hannover%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-cc2e667f07b616",
+    "record_type": "event",
+    "name": "Kirlian Camera live - Werk68 Nürnberg",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/kirlian-camera-live-werk68-nuernberg-2026-11-27/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-27",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-22T12:37:24.735709+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kirlian+Camera+live+-+Werk68+N%C3%BCrnberg%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Kirlian+Camera+live+-+Werk68+N%C3%BCrnberg%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-ce9cd2d5dcd9cf",
+    "record_type": "event",
+    "name": "The Chameleons live - Coesfeld",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/the-chameleons-live-coesfeld-2026-11-27/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-27",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-22T12:37:24.735709+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Chameleons+live+-+Coesfeld%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=The+Chameleons+live+-+Coesfeld%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-39c486336629e8",
+    "record_type": "event",
+    "name": "Kirlian Camera live - Die Stadtmitte Karlsruhe",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/kirlian-camera-live-die-stadtmitte-karlsruhe-2026-11-28/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-28",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 6,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-22T12:37:24.735709+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kirlian+Camera+live+-+Die+Stadtmitte+Karlsruhe%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Kirlian+Camera+live+-+Die+Stadtmitte+Karlsruhe%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "auto-513f6c68c013c1",
+    "record_type": "event",
+    "name": "Pink Turns Blue @ Obsidian Echoes Festival",
+    "city": null,
+    "country": "DE",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://darkandalternativeworld.de/veranstaltungen/pink-turns-blue-2026-11-28-essen-obsidian-echoes-festival-2026/",
+    "source_url": "https://darkandalternativeworld.de/veranstaltungen/",
+    "date_text": "2026-11-28",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "confidence_score": 8,
+    "confidence_reasons": [
+      "hoch priorisierte Quelle",
+      "Datum erkannt",
+      "Szene-Keywords erkannt",
+      "Festival erkannt"
+    ],
+    "auto_sources": [
+      "https://darkandalternativeworld.de/veranstaltungen/"
+    ],
+    "discovered_at": "2026-11-22T12:37:24.735709+00:00",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Pink+Turns+Blue+%40+Obsidian+Echoes+Festival%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Pink+Turns+Blue+%40+Obsidian+Echoes+Festival%2C+Deutschland",
+    "geocoded": false,
+    "google_maps_status": "search_link"
+  },
+  {
+    "id": "search-e4d1e72c0bfb48",
+    "record_type": "event",
+    "name": "EBM Festivals 2026/2027 | Termine & Tickets",
+    "city": "Leipzig",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://www.google.com/goto?url=CAESbgHEIkXX3Oc3P1Aj-dS2gFfwI4ghyk5I-OQhDqeymZzF9cbXiSfx1WU3-nRvWzQNESYlpyneNk99xwQjiihgLgxajkDtfu0-P0_vMAxbAqIB2b7sTlkzxWh6Ad30vVDdFAKGnt5vKJcgSXei5QUJ",
+    "source_url": "https://www.google.com/goto?url=CAESbgHEIkXX3Oc3P1Aj-dS2gFfwI4ghyk5I-OQhDqeymZzF9cbXiSfx1WU3-nRvWzQNESYlpyneNk99xwQjiihgLgxajkDtfu0-P0_vMAxbAqIB2b7sTlkzxWh6Ad30vVDdFAKGnt5vKJcgSXei5QUJ",
+    "date_text": "20.03.2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 13,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.google.com/goto?url=CAESbgHEIkXX3Oc3P1Aj-dS2gFfwI4ghyk5I-OQhDqeymZzF9cbXiSfx1WU3-nRvWzQNESYlpyneNk99xwQjiihgLgxajkDtfu0-P0_vMAxbAqIB2b7sTlkzxWh6Ad30vVDdFAKGnt5vKJcgSXei5QUJ"
+    ],
+    "discovered_at": "2026-11-22T12:37:24.735709+00:00",
+    "search_query": "Gothic events festival 2026 Germany Darkwave EBM Industrial",
+    "search_snippet": "Wave Gotik Treffen. 14.-17.05.2027 in Leipzig. Musikrichtung: Gothic Rock, Electro, Metal, Dark Wave, Industrial, Folk, EBM, Dark Ambient, Postrock, ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=EBM+Festivals+2026%2F2027+%7C+Termine+%26+Tickets%2C+Leipzig%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=EBM+Festivals+2026%2F2027+%7C+Termine+%26+Tickets%2C+Leipzig%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-d827a32cb63273",
+    "record_type": "event",
+    "name": "EBM Festivals 2026/2027 | Termine & Tickets",
+    "city": "Hildesheim",
+    "country_name": "Deutschland",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://www.google.com/goto?url=CAESbgHEIkXXMUV7b7h1RjMY7ftdmiL7mJMQYz-nzPWnY_Q8uSN3pTC88dPgziA9PucJK1715NKiH7pQSf8Aykdn0Alc0gJPR9igQp8rzvdywTRAMKb6aj6Z9505VVY23Vl0y-axTsXXInk4VNqrxZg-",
+    "source_url": "https://www.google.com/goto?url=CAESbgHEIkXXMUV7b7h1RjMY7ftdmiL7mJMQYz-nzPWnY_Q8uSN3pTC88dPgziA9PucJK1715NKiH7pQSf8Aykdn0Alc0gJPR9igQp8rzvdywTRAMKb6aj6Z9505VVY23Vl0y-axTsXXInk4VNqrxZg-",
+    "date_text": "20.03.2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 13,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.google.com/goto?url=CAESbgHEIkXXMUV7b7h1RjMY7ftdmiL7mJMQYz-nzPWnY_Q8uSN3pTC88dPgziA9PucJK1715NKiH7pQSf8Aykdn0Alc0gJPR9igQp8rzvdywTRAMKb6aj6Z9505VVY23Vl0y-axTsXXInk4VNqrxZg-"
+    ],
+    "discovered_at": "2026-11-22T12:37:24.735709+00:00",
+    "search_query": "Gothic Darkwave EBM events Europe 2027 festival",
+    "search_snippet": "Dark Wave, EBM, Darkwave Mera Luna Festival 07.-08.08.2027 in Hildesheim Musikrichtung: Gothic Rock, EBM, Darkwave, Industrial, Metal, Electropop, Dark Rock, ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=EBM+Festivals+2026%2F2027+%7C+Termine+%26+Tickets%2C+Hildesheim%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=EBM+Festivals+2026%2F2027+%7C+Termine+%26+Tickets%2C+Hildesheim%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-c020de5b1562ac",
+    "record_type": "event",
+    "name": "Go Goth • European Gothic Festivals & Concerts",
+    "city": "Madrid",
+    "country_name": "Europa",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave"
+    ],
+    "url": "https://www.google.com/goto?url=CAESUAHEIkXXln0v9E8fRTlK5eFzcvCo_-b4G1kSIRsImSLNSx0ujC09vym7QsEyHMX24-whKqyokSME93x80unRNjZNKSlB7U-SD5N-ngFtPfiR",
+    "source_url": "https://www.google.com/goto?url=CAESUAHEIkXXln0v9E8fRTlK5eFzcvCo_-b4G1kSIRsImSLNSx0ujC09vym7QsEyHMX24-whKqyokSME93x80unRNjZNKSlB7U-SD5N-ngFtPfiR",
+    "date_text": "01 Feb 2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 11,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.google.com/goto?url=CAESUAHEIkXXln0v9E8fRTlK5eFzcvCo_-b4G1kSIRsImSLNSx0ujC09vym7QsEyHMX24-whKqyokSME93x80unRNjZNKSlB7U-SD5N-ngFtPfiR"
+    ],
+    "discovered_at": "2026-11-22T12:37:24.735709+00:00",
+    "search_query": "Gothic Darkwave EBM events Europe 2027 festival",
+    "search_snippet": "Go Goth helps you find Gothic events and artists across Europe. 01 Feb 2027 — 28 Feb Madrid, Spain Darkwave … 2027 Festival 11 Feb 2027 — 14 Feb The Hague, ...",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Go+Goth+%E2%80%A2+European+Gothic+Festivals+%26+Concerts%2C+Madrid%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Go+Goth+%E2%80%A2+European+Gothic+Festivals+%26+Concerts%2C+Madrid%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-29738a79551e0e",
+    "record_type": "event",
+    "name": "Upcoming Events",
+    "city": "Adelaide",
+    "country_name": "Europa",
+    "type": [
+      "event"
+    ],
+    "categories": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial"
+    ],
+    "url": "https://www.google.com/goto?url=CAESawHEIkXXykanUL0SP26lCimJmF-GEq2dmJ3L0x1vIiq1eu5hfRvPaRN_gHbFQ35KA0yeQ6vzsG_DmS2gbju9vbvyAbcYhYFZOgl8EKmStETOL5agP1pso2SxwnRfrjhjecpjXdkD3Q3H7_ex",
+    "source_url": "https://www.google.com/goto?url=CAESawHEIkXXykanUL0SP26lCimJmF-GEq2dmJ3L0x1vIiq1eu5hfRvPaRN_gHbFQ35KA0yeQ6vzsG_DmS2gbju9vbvyAbcYhYFZOgl8EKmStETOL5agP1pso2SxwnRfrjhjecpjXdkD3Q3H7_ex",
+    "date_text": "05 Dec 2026",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt",
+      "Szenebegriffe auf Originalseite gefunden"
+    ],
+    "auto_sources": [
+      "https://www.google.com/goto?url=CAESawHEIkXXykanUL0SP26lCimJmF-GEq2dmJ3L0x1vIiq1eu5hfRvPaRN_gHbFQ35KA0yeQ6vzsG_DmS2gbju9vbvyAbcYhYFZOgl8EKmStETOL5agP1pso2SxwnRfrjhjecpjXdkD3Q3H7_ex"
+    ],
+    "discovered_at": "2026-11-22T12:37:24.735709+00:00",
+    "search_query": "gothic darkwave events Australia 2026 festival",
+    "search_snippet": "Elysium Goth Night Adelaide - Friday 27th November 2026. Promising the best in Goth-Alt-Industrial-Dark Wave-Dark Alt … 10:00 pm – 05 Dec 2026,",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Upcoming+Events%2C+Adelaide%2C+Europa",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Upcoming+Events%2C+Adelaide%2C+Europa",
+    "google_maps_status": "search_link",
+    "geocoded": false
+  },
+  {
+    "id": "search-66177a7c89c796",
+    "record_type": "event",
+    "name": "Dimension Festival",
+    "city": "Auckland",
+    "country_name": "Malta",
+    "type": [
+      "event",
+      "festival"
+    ],
+    "categories": [],
+    "szenerelevanz": [],
+    "szenerelevanz_labels": [],
+    "url": "https://www.google.com/goto?url=CAESVgHEIkXXIaYm-YPA1U0wXT6llEyLwlyciLi4HeeJ7E2jYEICU3iqQQAv_Y_DhTfComV4m5Dy-83coRmdzczqrzRt9SgBPaLQMOqepFoNFDJbFP7iMiCo",
+    "source_url": "https://www.google.com/goto?url=CAESVgHEIkXXIaYm-YPA1U0wXT6llEyLwlyciLi4HeeJ7E2jYEICU3iqQQAv_Y_DhTfComV4m5Dy-83coRmdzczqrzRt9SgBPaLQMOqepFoNFDJbFP7iMiCo",
+    "date_text": "08 FEB 2027",
+    "verified": false,
+    "aktivitaet": "unchecked",
+    "aktivitaet_label": "⚪ nicht ausreichend geprüft",
+    "discovery_status": "candidate",
+    "auto_discovered": true,
+    "search_discovered": true,
+    "confidence_score": 9,
+    "confidence_reasons": [
+      "Websuche gefunden",
+      "Originalseite abgerufen",
+      "Datum erkannt",
+      "Ort erkannt"
+    ],
+    "auto_sources": [
+      "https://www.google.com/goto?url=CAESVgHEIkXXIaYm-YPA1U0wXT6llEyLwlyciLi4HeeJ7E2jYEICU3iqQQAv_Y_DhTfComV4m5Dy-83coRmdzczqrzRt9SgBPaLQMOqepFoNFDJbFP7iMiCo"
+    ],
+    "discovered_at": "2026-11-22T12:37:24.735709+00:00",
+    "search_query": "gothic darkwave events New Zealand 2026 festival",
+    "search_snippet": "05 - 08 FEB 2027. New Zealand's boutique psychedelic festival. Four days of music, art and community in the pristine wilderness of Northland.",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dimension+Festival%2C+Auckland%2C+Malta",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dimension+Festival%2C+Auckland%2C+Malta",
+    "google_maps_status": "search_link",
+    "geocoded": false
   }
 ]

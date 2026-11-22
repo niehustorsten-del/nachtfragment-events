@@ -7466,7 +7466,7 @@
     "quality_status": "red",
     "quality_label": "🔴 Termin nicht aktuell",
     "quality_note": "Kein aktueller bzw. wiederkehrender Terminindikator vorhanden.",
-    "quality_checked_at": "2026-11-15T19:58:23.588100+00:00"
+    "quality_checked_at": "2026-11-22T12:37:24.735709+00:00"
   },
   {
     "id": "directory-831e2591d0b26f",
@@ -9812,5 +9812,61 @@
     "google_maps_status": "search_link",
     "geocoded": false,
     "discovery_source_name": "Ipso Facto – Goth Links"
+  },
+  {
+    "id": "directory-9b0639972b47d2",
+    "record_type": "club",
+    "name": "Dark Party | Das Gothic Party Verzeichnis",
+    "city": "Berlin",
+    "country_name": "Deutschland",
+    "type": [
+      "club"
+    ],
+    "categories": [
+      "Gothic-Club"
+    ],
+    "szenerelevanz": [
+      "gothic_core",
+      "darkwave_wave",
+      "ebm_industrial",
+      "dark_electro_futurepop",
+      "postpunk_deathrock",
+      "alternative_darkrock"
+    ],
+    "szenerelevanz_labels": [
+      "🖤 Gothic Core",
+      "🌑 Darkwave / Wave",
+      "⚡ EBM / Industrial",
+      "🧪 Dark Electro / Futurepop",
+      "🕷️ Post-Punk / Deathrock",
+      "🎸 Alternative / Dark Rock"
+    ],
+    "url": "https://dark-party.de",
+    "source_url": "https://dark-party.de",
+    "description": "Dein Party Kalender für die schwarze Szene. Gothic, Industrial, Electro, EBM, Darkwave und Mittelalter Veranstaltungen.",
+    "verified": true,
+    "verified_date": "2026-11-22",
+    "aktivitaet": "active",
+    "aktivitaet_label": "🟢 aktuell aktiv",
+    "discovery_status": "published",
+    "auto_discovered": true,
+    "auto_importer": "directory_v5",
+    "confidence_score": 10,
+    "confidence_reasons": [
+      "Originalseite erfolgreich abgerufen",
+      "Kategorie auf Originalseite bestätigt",
+      "Ort erkannt",
+      "Land erkannt"
+    ],
+    "auto_sources": [
+      "https://dark-party.de"
+    ],
+    "discovered_at": "2026-11-22T12:37:24.735709+00:00",
+    "last_source_check": "2026-11-22T12:37:24.735709+00:00",
+    "online_only": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dark+Party+%7C+Das+Gothic+Party+Verzeichnis%2C+Berlin%2C+Deutschland",
+    "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dark+Party+%7C+Das+Gothic+Party+Verzeichnis%2C+Berlin%2C+Deutschland",
+    "google_maps_status": "search_link",
+    "geocoded": false
   }
 ]
