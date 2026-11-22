@@ -1,12 +1,77 @@
 {
-  "updated_at": "2026-11-21T02:04:56+00:00",
+  "updated_at": "2026-11-22T14:54:23+00:00",
   "lookback_days": 45,
   "artist_count": 131,
-  "candidate_count": 76,
+  "candidate_count": 78,
   "source_groups": 3,
   "direct_feed_count": 2,
   "approval_required": true,
   "items": [
+    {
+      "id": "b224525fb540137da081",
+      "artist": "Ductape",
+      "artist_slug": "ductape",
+      "title": "‘Eastside Festival’ 2027 lineup brings Mesh, Kite and Heppner’s TanzZwang to Halle",
+      "summary": "Eastside Festival returns to Karlsbad, Halle (Saale) on 2-3 July 2027 with Mesh, Kite, Heppner's TanzZwang, TRAITRS, Ductape and Then Comes Silence.",
+      "date": "2026-11-21T18:48:59+00:00",
+      "category": "Tour / Live",
+      "publisher": "Side-Line Magazine",
+      "url": "https://www.side-line.com/eastside-festival-2027/",
+      "source": "Side-Line Magazine",
+      "status": "needs_review"
+    },
+    {
+      "id": "55b4b72431b74b71aa1c",
+      "artist": "Then Comes Silence",
+      "artist_slug": "then-comes-silence",
+      "title": "‘Eastside Festival’ 2027 lineup brings Mesh, Kite and Heppner’s TanzZwang to Halle",
+      "summary": "Eastside Festival returns to Karlsbad, Halle (Saale) on 2-3 July 2027 with Mesh, Kite, Heppner's TanzZwang, TRAITRS, Ductape and Then Comes Silence.",
+      "date": "2026-11-21T18:48:59+00:00",
+      "category": "Tour / Live",
+      "publisher": "Side-Line Magazine",
+      "url": "https://www.side-line.com/eastside-festival-2027/",
+      "source": "Side-Line Magazine",
+      "status": "needs_review"
+    },
+    {
+      "id": "b5ad528249a312411ccc",
+      "artist": "TRAITRS",
+      "artist_slug": "traitrs",
+      "title": "‘Eastside Festival’ 2027 lineup brings Mesh, Kite and Heppner’s TanzZwang to Halle",
+      "summary": "Eastside Festival returns to Karlsbad, Halle (Saale) on 2-3 July 2027 with Mesh, Kite, Heppner's TanzZwang, TRAITRS, Ductape and Then Comes Silence.",
+      "date": "2026-11-21T18:48:59+00:00",
+      "category": "Tour / Live",
+      "publisher": "Side-Line Magazine",
+      "url": "https://www.side-line.com/eastside-festival-2027/",
+      "source": "Side-Line Magazine",
+      "status": "needs_review"
+    },
+    {
+      "id": "98561bdb4368b4d5076b",
+      "artist": "TRAITRS",
+      "artist_slug": "traitrs",
+      "title": "Eastside Festival 2027 lineup: Mesh, Kite, TRAITRS - SIDE-LINE",
+      "summary": "Eastside Festival 2027 lineup: Mesh, Kite, TRAITRS    SIDE-LINE",
+      "date": "2026-11-21T18:48:59+00:00",
+      "category": "Tour / Live",
+      "publisher": "SIDE-LINE",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE96LXNNT3pUVjFxQ2hwS0N6SEFrV1pCOXdRX1VpdG9ieDBhc1ppTXgyRUd2bzBQM24zTVJQNkJ0NTBON3VFQmx0NjFKMkZ0Z1lzR0JSZWJoMjEtWHNuTGc?oc=5",
+      "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "3382c5106a6acca2cb79",
+      "artist": "Then Comes Silence",
+      "artist_slug": "then-comes-silence",
+      "title": "Then Comes Silence release new album ‘Requiem Ballroom’ on Metropolis Records - All Music Magazine UK",
+      "summary": "Then Comes Silence release new album ‘Requiem Ballroom’ on Metropolis Records    All Music Magazine UK",
+      "date": "2026-11-21T08:53:03+00:00",
+      "category": "Release",
+      "publisher": "All Music Magazine UK",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMUhzbHY1eXl0YVhqTzE1UnJFU3I2cktjM0xiQk5CaWJSQzBtNm1oVTBSMzhuVGowSG5KTXJMTUdoeTFFZWVoWmhRdXhwRVdvYmsxaHRGaEpQU2w5QUdUMDF1UmVVT2p5cmJfM21ZRXBsb0pWYWdmdEtkZ3F1Sk5sUk1ZRzVrVGlmOVJRSkFjcWc4VGxHVzk3YnZ2SFg2VmRjbnFwNGdCcFdXSFhDYnltYmQ4Y1BEdw?oc=5",
+      "source": "Google News",
+      "status": "needs_review"
+    },
     {
       "id": "d7fe50f9f16735da130d",
       "artist": "Then Comes Silence",
@@ -18,19 +83,6 @@
       "publisher": "Side-Line Magazine",
       "url": "https://www.side-line.com/then-comes-silence-requiem-ballroom-out-now/",
       "source": "Side-Line Magazine",
-      "status": "needs_review"
-    },
-    {
-      "id": "e8857c1d8d9a4ce422e4",
-      "artist": "Then Comes Silence",
-      "artist_slug": "then-comes-silence",
-      "title": "Then Comes Silence split ‘Requiem Ballroom’ into two halves for eighth album - SIDE-LINE",
-      "summary": "Then Comes Silence split ‘Requiem Ballroom’ into two halves for eighth album    SIDE-LINE",
-      "date": "2026-11-20T18:43:14+00:00",
-      "category": "Release",
-      "publisher": "SIDE-LINE",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBUQzk0V3BROG9QN2FuUl9OTU1WUnhZd28yNGFWYmF2QUNJOFRUQ08ybFRJZVdhejJuNmsycW5IVjZIcGFQWmFFNGR4cE82VFdla1Q4dXZlOC03ZVFERnpjcGJleVlwb1BMZTVjcWEyeUM0aDhVZGJwblRR?oc=5",
-      "source": "Google News",
       "status": "needs_review"
     },
     {
@@ -60,15 +112,15 @@
       "status": "needs_review"
     },
     {
-      "id": "91725ce72d963da64b63",
-      "artist": "Years of Denial",
-      "artist_slug": "years-of-denial",
-      "title": "Years of Denial Reveal New Single \"Too Bad\" - kool rock radio",
-      "summary": "Years of Denial Reveal New Single \"Too Bad\"    kool rock radio",
-      "date": "2026-11-20T10:20:00+00:00",
+      "id": "0f18d0ab0d7cb036a260",
+      "artist": "DIGITAL ENERGY",
+      "artist_slug": "digital-energy",
+      "title": "Digital Energy – Echoes Of Tomorrow (Digital/CD Album – Infacted Recordings) - SIDE-LINE",
+      "summary": "Digital Energy – Echoes Of Tomorrow (Digital/CD Album – Infacted Recordings)    SIDE-LINE",
+      "date": "2026-11-20T09:43:14+00:00",
       "category": "Release",
-      "publisher": "kool rock radio",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAzWTlPZzBEV0NvZi01alRDOVBrNWM3ZXd2RTVGcG4xRFNMcVdfSTVPTVJlaXRGb1dtcDdqSURIVkRRQm45WkUyQTdMNXRGNFA4VHFCdUpLM1dUcWZJRkMtWGM0QUt4RHAxanZpZ3dZUDc1TnRZWlhB?oc=5",
+      "publisher": "SIDE-LINE",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE13UFVURTZOaGF3MzBBVXFKbnNEWjZLMEtMZnByQVNQbVdnQWxHYndSeGJMWnE0eEJsRTlwNG54b0Y5UW5TeWUyZUJIemFDd2YzN2ZQWW55TzF3ZUM4SmJfMEpXV2RtX05xTTQzdUJOOXVLNTJsbXc?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
@@ -83,6 +135,32 @@
       "publisher": "Side-Line Magazine",
       "url": "https://www.side-line.com/anantakara-true-north-remembered/",
       "source": "Side-Line Magazine",
+      "status": "needs_review"
+    },
+    {
+      "id": "3cbfc8f3956e0c29853d",
+      "artist": "Dancing Plague",
+      "artist_slug": "dancing-plague",
+      "title": "Dancing Plague - Heart So Close (Music video) - Electrozombies",
+      "summary": "Dancing Plague - Heart So Close (Music video)    Electrozombies",
+      "date": "2026-11-20T08:11:44+00:00",
+      "category": "Video",
+      "publisher": "Electrozombies",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4tQ2syZUVLWk5kdy1ZS1Nia05TLUd2bnpWUWxzNEZaclV6Wk9QRVZOQmR3bGpJTGVGOG5VRjNFV1pNN3ZrNjJtS1VDYU9sZU9mNTJmS1hDMVJWRU95VGR2ZFpJcjgwOW4wUTVoM0VNTXVUVGZ3SVNMSm9PbmVqNVk?oc=5",
+      "source": "Dark scene magazines / Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "e8857c1d8d9a4ce422e4",
+      "artist": "Then Comes Silence",
+      "artist_slug": "then-comes-silence",
+      "title": "Then Comes Silence split ‘Requiem Ballroom’ into two halves for eighth album - SIDE-LINE",
+      "summary": "Then Comes Silence split ‘Requiem Ballroom’ into two halves for eighth album    SIDE-LINE",
+      "date": "2026-11-19T21:42:39+00:00",
+      "category": "Release",
+      "publisher": "SIDE-LINE",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBUQzk0V3BROG9QN2FuUl9OTU1WUnhZd28yNGFWYmF2QUNJOFRUQ08ybFRJZVdhejJuNmsycW5IVjZIcGFQWmFFNGR4cE82VFdla1Q4dXZlOC03ZVFERnpjcGJleVlwb1BMZTVjcWEyeUM0aDhVZGJwblRR?oc=5",
+      "source": "Google News",
       "status": "needs_review"
     },
     {
@@ -173,33 +251,20 @@
       "category": "Release",
       "publisher": "SIDE-LINE",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5XYm1udTlBc1dkcGpDWjdxMElsZ2NPQm41OWgydG9CX1dEN1gtR1BlMGdVOXJNU0J4WG04UDRuOFVpN3dTODRaVzE2cUtMNWEwRU9xb3F0TlJkaGtxRDc4SFpPZm9tTTBMWVdMcnNGQTJadw?oc=5",
-      "source": "Google News",
+      "source": "Dark scene magazines / Google News",
       "status": "needs_review"
     },
     {
-      "id": "0f18d0ab0d7cb036a260",
+      "id": "45142d1e2c2131ef35f4",
       "artist": "DIGITAL ENERGY",
       "artist_slug": "digital-energy",
-      "title": "Digital Energy – Echoes Of Tomorrow (Digital/CD Album – Infacted Recordings) - SIDE-LINE",
-      "summary": "Digital Energy – Echoes Of Tomorrow (Digital/CD Album – Infacted Recordings)    SIDE-LINE",
-      "date": "2026-11-18T08:00:00+00:00",
+      "title": "Digital Energy – Echoes Of Tomorrow (Digital/CD Album – Infacted Recordings)",
+      "summary": "Founded in 2000 as a duo, put on hold between 2009 and 2014, and returning—now as a solo project helmed by David Erdmann—this German act has arrived at its latest album. For this release, Gerrit ...",
+      "date": "2026-11-18T00:00:00+00:00",
       "category": "Release",
-      "publisher": "SIDE-LINE",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE13UFVURTZOaGF3MzBBVXFKbnNEWjZLMEtMZnByQVNQbVdnQWxHYndSeGJMWnE0eEJsRTlwNG54b0Y5UW5TeWUyZUJIemFDd2YzN2ZQWW55TzF3ZUM4SmJfMEpXV2RtX05xTTQzdUJOOXVLNTJsbXc?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "3a71c2bb9c138d383c13",
-      "artist": "Dancing Plague",
-      "artist_slug": "dancing-plague",
-      "title": "Dancing Plague Announces New Album ‘Endlessness’, Shares Video For ‘Heart So Close’ - SIDE-LINE",
-      "summary": "Dancing Plague Announces New Album ‘Endlessness’, Shares Video For ‘Heart So Close’    SIDE-LINE",
-      "date": "2026-11-17T20:48:37+00:00",
-      "category": "Video",
-      "publisher": "SIDE-LINE",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBLTGJkSUJwUEQyN3gtZWVibHVzOWtsUjVPR0RQOVpqVFRMMmlvaFZ5WGZfNXFEZElFSTNoM3JrVmxBSDduU1BmR1hLZkxVZHh5ZVlwT1JTNFpXLS1jdXVxOThQM3lzZ0dPU1dJ?oc=5",
-      "source": "Google News",
+      "publisher": "Dark scene magazines / Bing News",
+      "url": "https://www.side-line.com/digital-energy-echoes-of-tomorrow-review/",
+      "source": "Dark scene magazines / Bing News",
       "status": "needs_review"
     },
     {
@@ -229,19 +294,6 @@
       "status": "needs_review"
     },
     {
-      "id": "ce5cc123fc3b840b6d8d",
-      "artist": "Vioflesh",
-      "artist_slug": "vioflesh",
-      "title": "VIOFLESH releases new coldwave single ‘Call Me’ - SIDE-LINE",
-      "summary": "VIOFLESH releases new coldwave single ‘Call Me’    SIDE-LINE",
-      "date": "2026-11-14T07:19:34+00:00",
-      "category": "Release",
-      "publisher": "SIDE-LINE",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1JZWFpLUFxU2tWanpsVFlIakVWbWQtV21obDlDa2xZcWdCTWVXLXpRYnNhM3NzOEJxNWZkUTQwVW8yd3RSSUhZbWlUYWt4ZUk0ckE4WjVrdWpRcjJRRGpLTkE3bHJ2Ymx6X0ww?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
       "id": "b2f3291aa963552e2f9e",
       "artist": "Deus Ex Lumina",
       "artist_slug": "deus-ex-lumina",
@@ -255,16 +307,16 @@
       "status": "needs_review"
     },
     {
-      "id": "ea280eeee7a412f0de2f",
-      "artist": "Agent Side Grinder",
-      "artist_slug": "agent-side-grinder",
-      "title": "Agent Side Grinder Return With “The Choir” and Announce Signals EP - Портал Експеримент",
-      "summary": "Agent Side Grinder Return With “The Choir” and Announce Signals EP    Портал Експеримент",
-      "date": "2026-11-13T09:23:00+00:00",
-      "category": "Release",
-      "publisher": "Портал Експеримент",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOalYwbEtjRzhtamdmdzczalhtTnJKTC1mZm1NZjU5U1dFUnJabWN4cTBrbms4SU4xUWJlV1c2bllTY2xyX3VPZ2VDZC13ZmZtaFVHWGI5a216UlFQbXpKSFE4SkViNDlOVW5ja3FiMHN6NV92UnY1dGlia1ZJZHpvTEZzaTJ1VUd0OWtzcWRPUzRldTQ3UWdIR2ZMdktheTFiOVFGSmw1T2VYMVJY?oc=5",
-      "source": "Google News",
+      "id": "8fc806d9701fe41e66f5",
+      "artist": "Kælan Mikla",
+      "artist_slug": "kaelan-mikla",
+      "title": "AMPHI FESTIVAL 2024: KÆLAN MIKLA, RUINED CONFLICT & DEUS EX LUMINA COMPLETE THE LINE-UP! - Peek-a-Boo Magazine",
+      "summary": "AMPHI FESTIVAL 2024: KÆLAN MIKLA, RUINED CONFLICT & DEUS EX LUMINA COMPLETE THE LINE-UP!    Peek-a-Boo Magazine",
+      "date": "2026-11-14T04:44:44+00:00",
+      "category": "Tour / Live",
+      "publisher": "Peek-a-Boo Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMVZPVkI4b1RWNmg3aFNRYzUxX2JDbEt0MlNTd1QwR0ZuMmdWVUtyTmd1WjdCaTB3c3cyWGhIZDZvSVgtR0lPVWNoNF9LaFFVVndUMkZ1bTAtWldCOThTRmxlVVRoNFlWM28waXlHalNxYUtNQjB3aFhEeGJNczdUYk9nZzF4U1JQRzhtV1BqMnU4ZVdtcXBmTVhiU044Y2J5U2Q1RVVtVHFyNlJ4dUJLTW9jWEN3elc4RGZhSFRrNHZoeWdxRTlma1pSSQ?oc=5",
+      "source": "Dark scene magazines / Google News",
       "status": "needs_review"
     },
     {
@@ -290,19 +342,6 @@
       "category": "Release",
       "publisher": "SIDE-LINE",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9NSkNHdVhocmltMVl3WVVXdkZLMTV2c3JIZEVJZzl4SUc4OE9oeWpjQ3JHZHhqUzBpY3g2N2xncXBienZ3TUhIb0g0U3l1ajUxdWNGLWtHODE0TnB4QXRscThXUWE3UQ?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "49388ff93da09a9e1a3d",
-      "artist": "Thalie Némésis",
-      "artist_slug": "thalie-nemesis",
-      "title": "Thalie Némésis – Dé(s)figurations (Digital/CD Album – Meridian Noir Records) - SIDE-LINE",
-      "summary": "Thalie Némésis – Dé(s)figurations (Digital/CD Album – Meridian Noir Records)    SIDE-LINE",
-      "date": "2026-11-12T19:21:30+00:00",
-      "category": "Release",
-      "publisher": "SIDE-LINE",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9EYnlSN3puV0lXZjdBV2VtN3pvdzFyUGJjQ3VyNFJVZ1Y5Ml9WWTQ5RE1XdXduWEluMFItYWRSdGlnQjVldWVldWZyQjN4NnlsNzEtTVBKUFZWUjR1R21ub1I2ZWpHLWlYMHEzZlZlaWQ3b3M?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
@@ -424,6 +463,19 @@
       "status": "needs_review"
     },
     {
+      "id": "883cc6cb1504a9ac41b4",
+      "artist": "Ductape",
+      "artist_slug": "ductape",
+      "title": "Ductape - D.E.R.T (Music video) - Electrozombies",
+      "summary": "Ductape - D.E.R.T (Music video)    Electrozombies",
+      "date": "2026-11-09T11:52:55+00:00",
+      "category": "Video",
+      "publisher": "Electrozombies",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1ITmlOM2VxeVVxWGxKRGphVEVSczNzSjQzYWM0NW1kYWJ3T0xBa0FzbktVUHZWeHFGUDA1ZzRULTlVTWNqN056eDVzcEh1b0VUN18yQ0ZLWWhUcXhrVm9aZXFpRFhPcGxk?oc=5",
+      "source": "Dark scene magazines / Google News",
+      "status": "needs_review"
+    },
+    {
       "id": "d37f2f13c16c8901e224",
       "artist": "Julia Holter",
       "artist_slug": "julia-holter",
@@ -442,23 +494,10 @@
       "artist_slug": "mouth-ulcers",
       "title": "Mouth Ulcers Explore The Ghosts Of The Past On Haunting New Single \"Space\" - That Eric Alper",
       "summary": "Mouth Ulcers Explore The Ghosts Of The Past On Haunting New Single \"Space\"    That Eric Alper",
-      "date": "2026-11-08T21:13:04+00:00",
+      "date": "2026-11-08T08:00:00+00:00",
       "category": "Release",
       "publisher": "That Eric Alper",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbnJCOG01YVRWVnZoOTlCbldBZ1lrVmhaV1cwMXNlYWNUMDNWcTNfcDh0ekNQaFZMWlZZbWtWMzROcmlJZ0NNelpmMm04c2sxQUhzTUxESHRCcHhjcGd4NXJPMzJyZFp1NjZrbWs1aDBua2hDQkk0R0ZvMG91a1NnOG94ZzhhY0tuWS1PMF9QU1VYVDZITEZjZUxCaDFTOVZkWnJ6Z3FyYUhqQUx4T3ZBVS1CRmw?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "595d7547c7e6c11ba846",
-      "artist": "SINE",
-      "artist_slug": "sine",
-      "title": "SINE Turns Fame, Seduction And Dangerous Temptation Into Industrial Dancefloor Gold On 'La Mordre' - That Eric Alper",
-      "summary": "SINE Turns Fame, Seduction And Dangerous Temptation Into Industrial Dancefloor Gold On 'La Mordre'    That Eric Alper",
-      "date": "2026-11-07T08:00:00+00:00",
-      "category": "News",
-      "publisher": "That Eric Alper",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPME9nVzFCV3IyNmVFZHhCalJEbjRKaU41NHVwSERCbW9IWWRsUVNVYVU0SzZERzFhM2VXdDNyYXVtTUNVZjA3cXA4WlhZQ0FROU1WNjRMaE00ZkxRaGhadUlpb2U1Wk13cWRDV1hYakJObGF0Mk00VGFRQjJoZFdZbnpNRHcwTmlueURZMGNyTXBpV3pUUjdkQlE5b21YdGpLVDQxdndxNEZ4aXJhdlZtWHpuQng1WUVKX3NwYlFVZ2xUbHF1eTRSRUM1NHVDM3ppN3JR?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
@@ -486,19 +525,6 @@
       "publisher": "Mc Gig Music",
       "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxONUN3b0dFVHlwdnBYU0k2ZmNkR3AzdFA0NGxfZ0t1U2JFaEVlX1NCaGlVMWZSMjN5RzZUODRqREF6Q0xQSWxMdjdybGlYTm9tNEZpcDRaS1BhVko1dkhDLW90N21uWWltd1BjMnoySkdSMWpvTXFjRHJXQzZzZkhBYmFIYWVKT1dsNDBNUzAxRWd0YTdKSmJCREphMFVrNDQyZ0xvZ2NhcUs0MXYxbTEzcWJVSGJud1ZuSlRtanJRcERRbUZtOUlzWXBSa1BHQWw1TmFvSnJCRy1wQ0MxVHhvZkFvSm5Zb2h1MEFR0gHwAUFVX3lxTE9EZXJRV213czM4eHh2bUtFanN1QXRuVmZCWE90Y0FFTTRsX28wQU5lbkE4RHliZ3R4WkZxT0lKSng3YUFjUzU1MDYzak4tQl9CR2Fna3NjdGdxVW5KdTM4YWVrNkExaDRPSHBNYkVRUlBqWXZ3aUVLaV9ZV0hCbFJlN01scTBZU3I3RV9BdTF4VGRjR0pTd2ltVFdCTDZTbkU1ZDBybW54cnY2X3FlYUFjUmNlSW1sbU9IOEJfa2dYNmo0N3diTWl0TXZPOGdEcEpmeHpDenp0UFlwT1NwdHhMeUV0RW9sLXExd2Y2UXRENA?oc=5",
       "source": "Google News",
-      "status": "needs_review"
-    },
-    {
-      "id": "91038368f16f53d63166",
-      "artist": "ghostbells",
-      "artist_slug": "ghostbells",
-      "title": "Ghostbells - Phantoms (Music video) - Electrozombies",
-      "summary": "Ghostbells - Phantoms (Music video)    Electrozombies",
-      "date": "2026-11-05T08:57:44+00:00",
-      "category": "Video",
-      "publisher": "Electrozombies",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1NelZvMG1zbEZiOTlOazBmYkk3ajcwQjU2cXd1MG5uX1FmenRaY1pQd3R6SjUyREpQLTlBbE9MNkRnX0NpYU5oRUNLRjVPaWpOQzV5b0ZWLVVSZnl5LWR1YUdKYm9fZ1BBLTFqeTdoNTBndw?oc=5",
-      "source": "Dark scene magazines / Google News",
       "status": "needs_review"
     },
     {
@@ -762,6 +788,19 @@
       "status": "needs_review"
     },
     {
+      "id": "f81a02a53530dd6deecd",
+      "artist": "Then Comes Silence",
+      "artist_slug": "then-comes-silence",
+      "title": "Then Comes Silence announce new album ‘Requiem Ballroom’",
+      "summary": "“Requiem Ballroom” is built as a diptych: the first half, Requiem, represents darkness and farewell, while the second, Ballroom, moves toward light and renewal. Produced by frontman Alex Svenson, the ...",
+      "date": "2026-10-19T05:42:00+00:00",
+      "category": "Release",
+      "publisher": "Dark scene magazines / Bing News",
+      "url": "https://www.side-line.com/then-comes-silence-requiem-ballroom/",
+      "source": "Dark scene magazines / Bing News",
+      "status": "needs_review"
+    },
+    {
       "id": "b6c64f7ea72d17b5e536",
       "artist": "Julien-K",
       "artist_slug": "julien-k",
@@ -797,6 +836,19 @@
       "category": "Release",
       "publisher": "SIDE-LINE",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9SblQxaEhQQ0dnNVh6a2tqcUdTa0w5eTFaOWFtT0lzSjVhSm1GV0NUWTYza2xLcmltekFKU2VhcDU1S0NtSDg4SXpGaENXZzRNSDVQUDFJczFVUEd2ZEhPektlTHJrNU4yUGc?oc=5",
+      "source": "Google News",
+      "status": "needs_review"
+    },
+    {
+      "id": "d0d4e625b4852a032fcc",
+      "artist": "Customs",
+      "artist_slug": "customs",
+      "title": "Mahama to meet officials over Customs Act concerns during industrial tour - Adomonline.com",
+      "summary": "Mahama to meet officials over Customs Act concerns during industrial tour    Adomonline.com",
+      "date": "2026-10-16T07:00:00+00:00",
+      "category": "Tour / Live",
+      "publisher": "Adomonline.com",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNQ01GSlZnUW5zYkdUalRFWlpMTlMyd2VCdmxWS0hDSWJpNHJuVkRkNE9malRmZkxLRG12NHlrNHZ5Wm9iS1ZleGo0RnJtc3VOcGNHOGZPVDFzZTZIcEYwUE9qaV9nLV9YeDV3QTllTlBnOGpYWGxEWHh2eTNfdHkwX1NRX0lJVjFnclMzWlM1SG82N2paMzFQdTZYZVVRUFZwTjFB?oc=5",
       "source": "Google News",
       "status": "needs_review"
     },
@@ -853,19 +905,6 @@
       "status": "needs_review"
     },
     {
-      "id": "c27c126bb9f64a5d6b78",
-      "artist": "Then Comes Silence",
-      "artist_slug": "then-comes-silence",
-      "title": "Then Comes Silence confronts life’s fragility on ‘Bye Bye Land’, teasing ‘Requiem Ballroom’ album - God Is In The TV",
-      "summary": "Then Comes Silence confronts life’s fragility on ‘Bye Bye Land’, teasing ‘Requiem Ballroom’ album    God Is In The TV",
-      "date": "2026-10-16T07:00:00+00:00",
-      "category": "Release",
-      "publisher": "God Is In The TV",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVXJWUmJxcklBdndaR3ZHdTNLd1RRVDFtYWxHZ0NJMTJHQUpQSGJ6TWtBNmVlRUJPYzlIZW0tWmtOYTdDaElTUnhaVFhJVkhxUEtCVDNnRERoLXZ1SmlxeGhhSUtkVjcwN1hjV3FPYnFrRmJpaEMtRko0bEVobnVaNjlUNEJpSGZoeDBlMkdMZG1TU1d6N3dhN3M0WVJYWTNwUXVxQ1dqMDJpd2tZZ0lqcTRqYzE0XzFmcTdydHcyU1lTcUVzdXBybmhCMXU1aXVwSVRZVw?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
       "id": "a4d13ed0f51dddfbf756",
       "artist": "Mouth Ulcers",
       "artist_slug": "mouth-ulcers",
@@ -918,19 +957,6 @@
       "status": "needs_review"
     },
     {
-      "id": "425c68ad82506995d22e",
-      "artist": "Then Comes Silence",
-      "artist_slug": "then-comes-silence",
-      "title": "Then Comes Silence Release 'Bye Bye Land' Before REQUIEM BALLROOM - BroadwayWorld",
-      "summary": "Then Comes Silence Release 'Bye Bye Land' Before REQUIEM BALLROOM    BroadwayWorld",
-      "date": "2026-10-15T07:00:00+00:00",
-      "category": "Release",
-      "publisher": "BroadwayWorld",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNQWhZYUlBYnVzLXctLTUwLThybms3ei1SbndJZnBYRVFyeVJLRVpITFBDY1IweElEbWdPTVBWVmE5S3lKY2pHTVllVU1Ta1BhSWFuS2ZXQjQ2VE85WnhBOU1DcjJicnB6TzQyZmVPdE9kSHIwTy1JSkVzVUEzUDUzZHNKTlBuWlc3NWMtcFAzMnRiVTRrMUt1MDNXRFpDd0FETzF5UWJyY3J6M3owcXhkVm5CVFVkQWFWNk9j?oc=5",
-      "source": "Google News",
-      "status": "needs_review"
-    },
-    {
       "id": "f4388f9765385c5eab6c",
       "artist": "SINE",
       "artist_slug": "sine",
@@ -970,19 +996,6 @@
       "status": "needs_review"
     },
     {
-      "id": "afe231f53ee290e37b11",
-      "artist": "LOWSUNDAY",
-      "artist_slug": "lowsunday",
-      "title": "Lowsunday release ‘Call Silence Remixed’ single - SIDE-LINE",
-      "summary": "Lowsunday release ‘Call Silence Remixed’ single    SIDE-LINE",
-      "date": "2026-10-10T16:44:08+00:00",
-      "category": "Release",
-      "publisher": "SIDE-LINE",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBnTTQ5T0IxaE5JQkxva3F0Rl9QeEc2WTNjX0tVSS1wLWk4NUlnVnlIdDNMazZ6SS1iNHllWkFYT3ZjdXM4MXF5ZEVqY3NmVTVfOC16aHZhWi1DMVZVSDRvbXF6RU9OR2JP?oc=5",
-      "source": "Dark scene magazines / Google News",
-      "status": "needs_review"
-    },
-    {
       "id": "0c41bcaa78ad4a973a5b",
       "artist": "LOWSUNDAY",
       "artist_slug": "lowsunday",
@@ -993,6 +1006,19 @@
       "publisher": "Dark scene magazines / Bing News",
       "url": "https://www.side-line.com/lowsunday-call-silence-remixed/",
       "source": "Dark scene magazines / Bing News",
+      "status": "needs_review"
+    },
+    {
+      "id": "afe231f53ee290e37b11",
+      "artist": "LOWSUNDAY",
+      "artist_slug": "lowsunday",
+      "title": "Lowsunday release ‘Call Silence Remixed’ single - SIDE-LINE",
+      "summary": "Lowsunday release ‘Call Silence Remixed’ single    SIDE-LINE",
+      "date": "2026-10-10T07:00:00+00:00",
+      "category": "Release",
+      "publisher": "SIDE-LINE",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBnTTQ5T0IxaE5JQkxva3F0Rl9QeEc2WTNjX0tVSS1wLWk4NUlnVnlIdDNMazZ6SS1iNHllWkFYT3ZjdXM4MXF5ZEVqY3NmVTVfOC16aHZhWi1DMVZVSDRvbXF6RU9OR2JP?oc=5",
+      "source": "Google News",
       "status": "needs_review"
     }
   ]
