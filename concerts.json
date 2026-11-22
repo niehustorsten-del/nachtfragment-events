@@ -1,44 +1,8 @@
 {
-  "updated_at": "2026-11-21T00:46:11+00:00",
+  "updated_at": "2026-11-22T13:43:48+00:00",
   "source": "Nachtfragment Concert Discovery",
-  "count": 66,
+  "count": 63,
   "events": [
-    {
-      "id": "sitd-2026-11-21",
-      "artist": "[:SITD:]",
-      "date": "2026-11-21",
-      "title": "[:SITD:]",
-      "url": "https://metaldar.com/genre/goth-industrial",
-      "venue": "Kulttempel",
-      "city": "Oberhausen",
-      "source": "Metaldar",
-      "status": "needs_verification",
-      "category": "concert"
-    },
-    {
-      "id": "forced-to-mode-2026-11-21",
-      "artist": "Forced to Mode",
-      "date": "2026-11-21",
-      "title": "Black Celebration Tour 2026",
-      "url": "https://www.zoffconcerts.de/was-steht-auf-dem-programm/",
-      "venue": "Pier 2",
-      "city": "Bremen",
-      "source": "Zoff Concerts",
-      "status": "listed_check_venue",
-      "category": "concert"
-    },
-    {
-      "id": "c4a4cd03394fc489",
-      "artist": "Hinfort",
-      "date": "2026-11-21",
-      "title": "Hinfort + Diary of Dreams",
-      "url": "https://hinfortmusic.com/",
-      "venue": "Stereo Live Club",
-      "city": "Bielefeld",
-      "source": "Hinfort – offizielle Künstlerseite",
-      "status": "needs_verification",
-      "category": "concert"
-    },
     {
       "id": "diary-of-dreams-2026-11-22",
       "artist": "Diary of Dreams",
