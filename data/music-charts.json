@@ -1,7 +1,7 @@
 {
   "title": "Nachtfragment Music Charts",
   "issue": "Top 50 · laufende Ausgabe",
-  "updated_at": "2026-11-21",
+  "updated_at": "2026-11-22",
   "methodology": {
     "scope": "Internationaler Dark Underground – inklusive DIY-, Bandcamp-, Independent- und Kleinstlabel-Veröffentlichungen",
     "genres": [
@@ -18,13 +18,16 @@
       "Deathrock",
       "Dark Pop",
       "Ethereal",
-      "Neofolk"
+      "Neofolk",
+      "Dark Ambient",
+      "Experimental Electronics"
     ],
     "cadence": "Laufende Aktualisierung; redaktionelle Prüfung mittwochs und sonntags",
     "note": "Redaktionell kuratierte Top-50-Auswahl neuer Veröffentlichungen. Keine Wiederveröffentlichungen, Reissues oder Re-Releases. Die Liste bezieht ausdrücklich DIY- und Underground-Releases ein; Rangfolge ist eine Nachtfragment-Auswahl und keine Verkaufs- oder Streamingmessung. Singles, EPs und Alben können berücksichtigt werden, sofern die Veröffentlichung in den musikalischen Rahmen passt.",
     "discovery_sources": [
       "Bandcamp Discover: genre-, tag- und standortbasierte Suche nach neuen Veröffentlichungen",
       "Bandcamp Daily: redaktionelle Entdeckungen, Labelporträts und Underground-Szenen",
+      "Bandcamp-Genre- und Tag-Seiten: Darkwave, Coldwave, Post-Punk, EBM, Industrial, Dark Ambient und verwandte Tags",
       "Bandcamp-Artistseiten und Bandcamp-Labelkataloge: direkte Veröffentlichungsquellen",
       "Side-Line: Darkwave, Post-Punk, EBM, Industrial, Gothic und Dark Electro",
       "The Sanctuary Gazette: internationale Dark-Underground-Neuerscheinungen und Szenenews",
@@ -49,6 +52,11 @@
         "name": "Bandcamp Daily",
         "url": "https://daily.bandcamp.com/",
         "role": "Redaktionelle Entdeckungen, Szenen und Labelporträts"
+      },
+      {
+        "name": "Bandcamp Genre-/Tag-Seiten",
+        "url": "https://bandcamp.com/tag/darkwave",
+        "role": "Direkte Suche nach genre- und tagbasierten DIY- und Underground-Releases"
       },
       {
         "name": "Side-Line",
@@ -117,7 +125,7 @@
       }
     ],
     "source_handling": "Quellen nicht nur über RSS erfassen: Webseiten, Suchseiten, Genre-/Tag-Seiten, Labelkataloge und direkte Artist-Veröffentlichungen regelmäßig manuell bzw. automatisiert prüfen. RSS darf ergänzen, aber niemals alleinige Grundlage sein. Jede Aufnahme möglichst anhand einer Primärquelle (Artist, Label oder Release-Seite) gegenprüfen.",
-    "verification": "Für jeden Kandidaten Veröffentlichungsdatum, Track-/Release-Titel, Artist, Genre und Primärquelle prüfen. Reissues, Remaster, Re-Releases, bloße Ankündigungen ohne bereits veröffentlichte Musik und Dubletten ausschließen. Bei unsicherem Datum nicht als Neuerscheinung werten."
+    "verification": "Für jeden Kandidaten Veröffentlichungsdatum, Track-/Release-Titel, Artist, Genre und eine konkrete Primärquelle prüfen. Unabhängige Szenequellen ergänzen, sofern verfügbar. Reissues, Remaster, Re-Releases, bloße Ankündigungen ohne bereits veröffentlichte Musik und Dubletten ausschließen. Bei unsicherem Datum nicht als Neuerscheinung werten."
   },
   "tracks": [
     {
@@ -460,15 +468,16 @@
       "position": 32
     },
     {
-      "artist": "Marcel Miska",
-      "title": "Happy New Year (Farewell My Dear)",
-      "genre": "Gothic Synthpop / Darkwave",
-      "release": "2026-11-09",
-      "country": "United Kingdom",
+      "position": 33,
+      "artist": "Kurschatten",
+      "title": "Testbild",
+      "genre": "Post-Punk / Coldwave / Darkwave",
+      "release": "2026-11-20",
+      "country": "Germany",
       "movement": "new",
-      "format": "Single",
-      "source": "https://www.side-line.com/marcel-miska-happy-new-year/",
-      "position": 33
+      "format": "Album",
+      "source": "https://batcaveproductions.bandcamp.com/album/testbild",
+      "bandcamp": "https://batcaveproductions.bandcamp.com/album/testbild"
     },
     {
       "artist": "TéMèT",
@@ -482,26 +491,30 @@
       "position": 34
     },
     {
-      "artist": "Spectre Rebel",
-      "title": "Wouldn’t You Like To Know",
-      "genre": "Electro / Synthpop",
-      "release": "2026-11-06",
-      "country": "Norway",
-      "movement": "new",
-      "format": "Single",
-      "source": "https://www.side-line.com/spectre-rebel-wouldnt-you-like-to-know/",
-      "position": 35
-    },
-    {
-      "artist": "Graufasern",
-      "title": "Mood",
-      "genre": "Dark Trip-Hop / Synthpop / Experimental Electronics",
-      "release": "2026-11-07",
-      "country": "Germany",
+      "position": 35,
+      "artist": "Seven Trees",
+      "title": "Dream Collapse",
+      "genre": "Dark Electro / Industrial / EBM",
+      "release": "2026-11-20",
+      "country": "Sweden / USA",
       "movement": "new",
       "format": "EP",
-      "source": "https://www.side-line.com/graufasern-mood-ep/",
-      "position": 36
+      "source": "https://seventrees.bandcamp.com/album/dream-collapse",
+      "bandcamp": "https://seventrees.bandcamp.com/album/dream-collapse",
+      "secondary_source": "https://www.idieyoudie.com/2026/11/20/observer-the-devil-the-universe-and-seven-trees/"
+    },
+    {
+      "position": 36,
+      "artist": "Damien Hearse",
+      "title": "EXTINCTION EVENT",
+      "genre": "Darkwave / EBM / Industrial / Post-Punk",
+      "release": "2026-11-19",
+      "country": "USA",
+      "movement": "new",
+      "format": "Album",
+      "source": "https://damienhearse.bandcamp.com/album/extinction-event",
+      "bandcamp": "https://damienhearse.bandcamp.com/album/extinction-event",
+      "secondary_source": "https://thesanctuarygate.com/en/gazette/"
     },
     {
       "artist": "Beauty In Chaos",
@@ -515,26 +528,30 @@
       "position": 37
     },
     {
-      "artist": "EGOamp",
-      "title": "Testament",
-      "genre": "Synthpop",
+      "position": 38,
+      "artist": "The Devil & The Universe",
+      "title": "Nocturnal Transmissions",
+      "genre": "Dark Ambient / Ritual Electronics / Darkwave",
+      "release": "2026-11-13",
+      "country": "Austria",
+      "movement": "new",
+      "format": "EP",
+      "source": "https://thedeviltheuniverse.bandcamp.com/album/nocturnal-transmissions-ep",
+      "bandcamp": "https://thedeviltheuniverse.bandcamp.com/album/nocturnal-transmissions-ep",
+      "secondary_source": "https://www.idieyoudie.com/2026/11/20/observer-the-devil-the-universe-and-seven-trees/"
+    },
+    {
+      "position": 39,
+      "artist": "MARS",
+      "title": "The Scorpion",
+      "genre": "Apocalyptic Dark Folk / Neofolk",
       "release": "2026-11-13",
       "country": "Germany",
       "movement": "new",
-      "format": "EP",
-      "source": "https://www.side-line.com/egoamp-testament-ep/",
-      "position": 38
-    },
-    {
-      "artist": "Lakeside X",
-      "title": "Babylon Kids",
-      "genre": "Post-Punk / Alternative / Synthpop",
-      "release": "2026-11-13",
-      "country": "Czech Republic",
-      "movement": "new",
-      "format": "Single",
-      "source": "https://lakesidex.bandcamp.com/album/babylon-kids-single-edit",
-      "position": 39
+      "format": "Album",
+      "source": "https://darkvinylrecords.bandcamp.com/album/the-scorpion",
+      "bandcamp": "https://darkvinylrecords.bandcamp.com/album/the-scorpion",
+      "secondary_source": "https://www.side-line.com/mars-the-scorpion-album/"
     },
     {
       "artist": "Vlimmer",
@@ -560,15 +577,16 @@
       "position": 41
     },
     {
-      "artist": "Foule",
-      "title": "Aurore",
-      "genre": "Darkwave / Post-Punk",
-      "release": "2026-10-31",
-      "country": "France",
+      "position": 42,
+      "artist": "THE DEPTHS",
+      "title": "SOME THINGS LAST FOREVER",
+      "genre": "Post-Punk",
+      "release": "2026-11-20",
+      "country": "Greece",
       "movement": "new",
-      "format": "Single",
-      "source": "https://www.side-line.com/foule-aurore-single/",
-      "position": 42
+      "format": "Double Single",
+      "source": "https://thedepthsmusick.bandcamp.com/album/some-things-last-forever",
+      "bandcamp": "https://thedepthsmusick.bandcamp.com/album/some-things-last-forever"
     },
     {
       "artist": "Dark the Keeper & Ghost Reflection",
@@ -605,16 +623,16 @@
       "position": 45
     },
     {
-      "artist": "digital ENERGY",
-      "title": "Echoes Of Tomorrow",
-      "genre": "Electro / Futurepop / Synthpop",
-      "release": "2026-10-09",
-      "country": "Germany",
+      "position": 46,
+      "artist": "Glowhax",
+      "title": "Silence",
+      "genre": "Dark Electro / Industrial / Darkwave / Post-Punk",
+      "release": "2026-11-12",
+      "country": "Portugal",
       "movement": "new",
       "format": "Album",
-      "source": "https://www.side-line.com/digital-energy-echoes-of-tomorrow-review/",
-      "bandcamp": "https://infactedrecordings.bandcamp.com/album/echoes-of-tomorrow-2",
-      "position": 46
+      "source": "https://electroclashclub.bandcamp.com/album/silence",
+      "bandcamp": "https://electroclashclub.bandcamp.com/album/silence"
     },
     {
       "artist": "Ghost Painted Sky",
@@ -628,15 +646,16 @@
       "position": 47
     },
     {
-      "artist": "99 Gravestones",
-      "title": "The Order Of The Fly",
-      "genre": "Gothic / Industrial Metal",
-      "release": "2026-11-20",
-      "country": "USA",
+      "position": 48,
+      "artist": "Ancient Mysticism",
+      "title": "Silent Desolation",
+      "genre": "Dark Ambient / Drone / Experimental Electronics",
+      "release": "2026-11-17",
+      "country": "Finland",
       "movement": "new",
       "format": "Album",
-      "source": "https://www.side-line.com/99-gravestones-order-of-the-fly/",
-      "position": 48
+      "source": "https://torusdome.bandcamp.com/album/silent-desolation",
+      "bandcamp": "https://torusdome.bandcamp.com/album/silent-desolation"
     },
     {
       "artist": "Anantakara",
@@ -651,15 +670,16 @@
       "position": 49
     },
     {
-      "artist": "La Chanson Noire",
-      "title": "Grand Mal",
-      "genre": "Goth / Darkwave / Alternative",
-      "release": "2026-11-01",
-      "country": "Portugal",
+      "position": 50,
+      "artist": "Antisimetrija",
+      "title": "Fuzija",
+      "genre": "Electro-Industrial / Industrial Rock",
+      "release": "2026-11-14",
+      "country": "Serbia",
       "movement": "new",
       "format": "Single",
-      "source": "https://www.side-line.com/la-chanson-noire-grand-mal/",
-      "position": 50
+      "source": "https://antisimetrija.bandcamp.com/album/fuzija",
+      "bandcamp": "https://antisimetrija.bandcamp.com/album/fuzija"
     }
   ]
 }
