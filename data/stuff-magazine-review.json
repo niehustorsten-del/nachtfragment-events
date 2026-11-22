@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "description": "Unsichere Treffer, die nicht automatisch veröffentlicht wurden.",
   "candidates": [
     {
@@ -197,6 +197,20 @@
       "url": "https://carlislepunkbands.wordpress.com/category/music-reviews",
       "query": "UK independent post-punk gothic industrial music webzine magazine interviews reviews",
       "reason": "Site reachable, but music/editorial relevance is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "VampireFreaks Goth Clothes- Emo, Punk, Alternative Scene ...",
+      "url": "https://google.com/goto",
+      "query": "Gothic alternative fashion shop Germany independent official",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
+    },
+    {
+      "type": "stuff",
+      "name": "Untitled",
+      "url": "https://emp-online.ch/on/demandware.store/Sites-GLB-Site/de_CH/Product-RenderCategoryNavContent",
+      "query": "Gothic shop alternative fashion Switzerland official",
+      "reason": "Official page reachable, but category match is not strong enough for automatic publication."
     }
   ]
 }
