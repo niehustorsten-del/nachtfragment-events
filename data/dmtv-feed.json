@@ -1,0 +1,233 @@
+{
+  "title": "Nachtfragment Dark Music TV",
+  "updated_at": "2026-11-25T23:30:34+00:00",
+  "refresh": "Mittwoch und Sonntag; zusätzlich bei Änderungen an den Quelldaten",
+  "sources": {
+    "artists": "data/artists.json",
+    "news": "data/artist-news.json (nur status=approved)",
+    "charts": "data/music-charts.json"
+  },
+  "counts": {
+    "artists_in_directory": 131,
+    "approved_news": 16,
+    "video_news": 4,
+    "chart_highlights": 5
+  },
+  "underground_artists": [
+    {
+      "name": "R. Missing",
+      "url": "https://nachtfragment.de/index.php/artists/r-missing"
+    },
+    {
+      "name": "The Drug Apostles",
+      "url": "https://nachtfragment.de/index.php/artists/the-drug-apostles"
+    },
+    {
+      "name": "Iamnoone",
+      "url": "https://nachtfragment.de/index.php/artists/iamnoone"
+    },
+    {
+      "name": "T!ANA",
+      "url": "https://nachtfragment.de/index.php/artists/t-ana"
+    },
+    {
+      "name": "Brittany Bindrim",
+      "url": "https://nachtfragment.de/index.php/artists/brittany-bindrim"
+    },
+    {
+      "name": "Sinister Seduction",
+      "url": "https://nachtfragment.de/index.php/artists/sinister-seduction"
+    },
+    {
+      "name": "Raskolnikov",
+      "url": "https://nachtfragment.de/index.php/artists/raskolnikov"
+    },
+    {
+      "name": "Bleib Modern",
+      "url": "https://nachtfragment.de/index.php/artists/bleib-modern"
+    },
+    {
+      "name": "Customs",
+      "url": "https://nachtfragment.de/index.php/artists/customs"
+    },
+    {
+      "name": "Mouth Ulcers",
+      "url": "https://nachtfragment.de/index.php/artists/mouth-ulcers"
+    },
+    {
+      "name": "Mildrea",
+      "url": "https://nachtfragment.de/index.php/artists/mildrea"
+    },
+    {
+      "name": "Then Comes Silence",
+      "url": "https://nachtfragment.de/index.php/artists/then-comes-silence"
+    }
+  ],
+  "videos": [
+    {
+      "id": "dancing-plague-endlessness-2026-11-19",
+      "artist": "Dancing Plague",
+      "title": "Dancing Plague kündigen neues Album „Endlessness“ an und veröffentlichen Video",
+      "summary": "Das Dark-Electro-Projekt von Conor Knowles veröffentlicht am 5. Februar 2027 über Artoffact Records das neue Album „Endlessness“. Zur Ankündigung erschien das Video zum Albumtrack „Heart So Close“.",
+      "date": "2026-11-19T00:00:00+00:00",
+      "category": "Release / Video",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/dancing-plague-endlessness-album/"
+    },
+    {
+      "id": "unverkalt-penumbrian-lament-live-session-2026-11-16",
+      "artist": "Unverkalt",
+      "title": "Unverkalt veröffentlichen Live-Session-Video zu „Penumbrian Lament“",
+      "summary": "Die Band veröffentlicht eine im RAWBITE Studio aufgenommene Live-Session zu „Penumbrian Lament“ aus dem Album „Héréditaire“. Gleichzeitig gibt Unverkalt die Zusammenarbeit mit The Flaming Arts Agency bekannt.",
+      "date": "2026-11-16T00:00:00+00:00",
+      "category": "Video",
+      "publisher": "Season of Mist",
+      "url": "https://www.season-of-mist.com/news/unverkalt-2026-11-16/"
+    },
+    {
+      "id": "ductape-dert-video-2026-11-10",
+      "artist": "Ductape",
+      "title": "Ductape veröffentlichen neues Video zu „D.E.R.T“",
+      "summary": "Das Darkwave-/Post-Punk-Duo veröffentlicht ein weiteres Video aus dem Album „Faded Flowers“. „D.E.R.T“ ist der sechste Clip aus dem Album; Regie führte Begüm Koçum.",
+      "date": "2026-11-10T00:00:00+00:00",
+      "category": "Video",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/ductape-dert-video/"
+    },
+    {
+      "id": "ghostbells-phantoms-2026-10-30",
+      "artist": "ghostbells",
+      "title": "ghostbells veröffentlichen „Phantoms“ mit Musikvideo über Out Of Line Music",
+      "summary": "Das Darkwave-/EBM-Duo veröffentlicht die Single samt Video. SIDE-LINE berichtet außerdem über weitere Festival- und Konzerttermine sowie die Arbeit am Debütalbum.",
+      "date": "2026-10-30T00:00:00+00:00",
+      "category": "Video",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/ghostbells-phantoms/"
+    }
+  ],
+  "news": [
+    {
+      "id": "then-comes-silence-requiem-ballroom-out-now-2026-11-20",
+      "artist": "Then Comes Silence",
+      "title": "Then Comes Silence veröffentlichen „Requiem Ballroom“",
+      "summary": "Das achte Studioalbum der schwedischen Post-Punk-Band ist am 20. November 2026 über Metropolis Records erschienen. Das 12-Track-Album ist in zwei Teile gegliedert: „Requiem“ und „Ballroom“; als Fokus-Track wird „Witches and Demons“ hervorgehoben.",
+      "date": "2026-11-20T00:00:00+00:00",
+      "category": "Release",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/then-comes-silence-requiem-ballroom-out-now/"
+    },
+    {
+      "id": "dancing-plague-endlessness-2026-11-19",
+      "artist": "Dancing Plague",
+      "title": "Dancing Plague kündigen neues Album „Endlessness“ an und veröffentlichen Video",
+      "summary": "Das Dark-Electro-Projekt von Conor Knowles veröffentlicht am 5. Februar 2027 über Artoffact Records das neue Album „Endlessness“. Zur Ankündigung erschien das Video zum Albumtrack „Heart So Close“.",
+      "date": "2026-11-19T00:00:00+00:00",
+      "category": "Release / Video",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/dancing-plague-endlessness-album/"
+    },
+    {
+      "id": "digital-energy-echoes-of-tomorrow-review-2026-11-18",
+      "artist": "DIGITAL ENERGY",
+      "title": "Digital Energy – „Echoes Of Tomorrow“: Albumreview",
+      "summary": "SIDE-LINE bespricht das im August 2026 über Infacted Recordings erschienene Album. Die Rezension hebt den melodischen Electro-Pop-Sound, die prägnante Produktion und die Zusammenarbeit mit Produzent Gerrit Thomas hervor.",
+      "date": "2026-11-18T00:00:00+00:00",
+      "category": "Review",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/digital-energy-echoes-of-tomorrow-review/"
+    },
+    {
+      "id": "unverkalt-penumbrian-lament-live-session-2026-11-16",
+      "artist": "Unverkalt",
+      "title": "Unverkalt veröffentlichen Live-Session-Video zu „Penumbrian Lament“",
+      "summary": "Die Band veröffentlicht eine im RAWBITE Studio aufgenommene Live-Session zu „Penumbrian Lament“ aus dem Album „Héréditaire“. Gleichzeitig gibt Unverkalt die Zusammenarbeit mit The Flaming Arts Agency bekannt.",
+      "date": "2026-11-16T00:00:00+00:00",
+      "category": "Video",
+      "publisher": "Season of Mist",
+      "url": "https://www.season-of-mist.com/news/unverkalt-2026-11-16/"
+    },
+    {
+      "id": "horror-vacui-shadows-sanctuary-review-2026-11-15",
+      "artist": "Horror Vacui",
+      "title": "Horror Vacui – Shadows Sanctuary: Albumreview",
+      "summary": "SIDE-LINE bespricht das neue Album „Shadows Sanctuary“. Die Rezension hebt den Dark-Wave- und Post-Punk-Sound, die markanten Gitarren und die düstere Atmosphäre hervor.",
+      "date": "2026-11-15T00:00:00+00:00",
+      "category": "Review",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/horror-vacui-shadows-sanctuary-review/"
+    },
+    {
+      "id": "agent-side-grinder-the-choir-2026-11-13",
+      "artist": "Agent Side Grinder",
+      "title": "Agent Side Grinder veröffentlichen „The Choir“ über Metropolis Records",
+      "summary": "Die schwedische Post-Punk- und Elektronik-Band veröffentlicht mit „The Choir“ ihre erste neue Original-Single seit 2023 und zugleich den Einstand bei Metropolis Records. Für März 2027 ist außerdem eine neue EP angekündigt.",
+      "date": "2026-11-13T00:00:00+00:00",
+      "category": "Release",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/agent-side-grinder-the-choir/"
+    },
+    {
+      "id": "then-comes-silence-2027-tour-2026-11-10",
+      "artist": "Then Comes Silence",
+      "title": "Then Comes Silence kündigen Januar-2027-Tour mit Agent Side Grinder an",
+      "summary": "Für Januar 2027 ist eine gemeinsame Tour durch Deutschland, Frankreich, Belgien und Dänemark angekündigt. Auf dem Plan stehen unter anderem Hamburg, Detmold, Oberhausen und Hannover.",
+      "date": "2026-11-10T00:00:00+00:00",
+      "category": "Tour / Live",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/then-comes-silence-2027-tour-agent-side/"
+    },
+    {
+      "id": "ductape-dert-video-2026-11-10",
+      "artist": "Ductape",
+      "title": "Ductape veröffentlichen neues Video zu „D.E.R.T“",
+      "summary": "Das Darkwave-/Post-Punk-Duo veröffentlicht ein weiteres Video aus dem Album „Faded Flowers“. „D.E.R.T“ ist der sechste Clip aus dem Album; Regie führte Begüm Koçum.",
+      "date": "2026-11-10T00:00:00+00:00",
+      "category": "Video",
+      "publisher": "SIDE-LINE",
+      "url": "https://www.side-line.com/ductape-dert-video/"
+    }
+  ],
+  "chart_highlights": [
+    {
+      "position": 1,
+      "artist": "John X Belmonte",
+      "title": "A Sky Full of Black Stars",
+      "genre": "Darkwave",
+      "release": "2026-11-14",
+      "url": "https://www.side-line.com/john-x-belmonte-sky-full-black-stars/"
+    },
+    {
+      "position": 2,
+      "artist": "Deathday",
+      "title": "Hungry Ghosts",
+      "genre": "Darkwave",
+      "release": "2026-11-14",
+      "url": "https://www.side-line.com/deathday-hungry-ghosts-single/"
+    },
+    {
+      "position": 3,
+      "artist": "Corlyx",
+      "title": "Die Young",
+      "genre": "Gothic Rock / Death Pop",
+      "release": "2026-11-14",
+      "url": "https://www.metalcountdown.com/video/01a1de41-91c3-70af-b387-58c1bb3fad89"
+    },
+    {
+      "position": 4,
+      "artist": "Kind Kid",
+      "title": "Bleed",
+      "genre": "Dark Synthpop",
+      "release": "2026-11-12",
+      "url": "https://kindkid.bandcamp.com/track/bleed"
+    },
+    {
+      "position": 5,
+      "artist": "Manufracture Music",
+      "title": "Iron Breath",
+      "genre": "Industrial / EBM / Darkwave",
+      "release": "2026-11-24",
+      "url": "https://manufracturemusic.bandcamp.com/track/iron-breath-2"
+    }
+  ],
+  "editorial_note": "Video-Einträge verlinken auf die jeweilige redaktionelle Meldung; sie sind keine eingebetteten YouTube-Player."
+}
