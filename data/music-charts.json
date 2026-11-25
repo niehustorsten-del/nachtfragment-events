@@ -320,7 +320,8 @@
       "release": "2026-11-06",
       "country": "Sweden",
       "bandcamp": "https://tobiasbernstruphq.bandcamp.com/track/love-machines",
-      "format": "Single"
+      "format": "Single",
+      "source": "https://tobiasbernstruphq.bandcamp.com/track/love-machines"
     },
     {
       "position": 11,
@@ -330,7 +331,8 @@
       "release": "2026-11-06",
       "country": "Germany",
       "format": "Single",
-      "bandcamp": "https://rosadamask.bandcamp.com/track/crygirl"
+      "bandcamp": "https://rosadamask.bandcamp.com/track/crygirl",
+      "source": "https://rosadamask.bandcamp.com/track/crygirl"
     },
     {
       "position": 12,
