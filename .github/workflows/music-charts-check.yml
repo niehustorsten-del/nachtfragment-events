@@ -36,7 +36,7 @@ jobs:
           python - <<'PY'
           import json
           import sys
-          from datetime import date
+          from datetime import date, datetime
           from pathlib import Path
           from urllib.parse import urlparse
 
@@ -87,9 +87,12 @@ jobs:
 
           updated = str(data.get("updated_at", ""))
           try:
-              date.fromisoformat(updated)
+              if "T" in updated:
+                  datetime.fromisoformat(updated.replace("Z", "+00:00"))
+              else:
+                  date.fromisoformat(updated)
           except ValueError:
-              errors.append("'updated_at' fehlt oder ist kein ISO-Datum.")
+              errors.append("'updated_at' fehlt oder ist kein gültiges ISO-Datum/-Datum mit Zeitstempel.")
 
           if errors:
               print("\n".join("::error::" + e for e in errors))
