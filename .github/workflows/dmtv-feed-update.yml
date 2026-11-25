@@ -1,0 +1,70 @@
+name: Nachtfragment Dark Music TV Feed
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "build_dmtv_feed.py"
+      - ".github/workflows/dmtv-feed-update.yml"
+      - "data/artists.json"
+      - "data/artist-news.json"
+      - "data/music-charts.json"
+  schedule:
+    # Nach den regulären Artist- und Music-Charts-Läufen
+    - cron: "45 8 * * 3,0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nachtfragment-repository-updates
+  cancel-in-progress: false
+
+jobs:
+  build-dmtv-feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Python-Syntax prüfen
+        run: python -m py_compile build_dmtv_feed.py
+
+      - name: Dark Music TV Feed erzeugen
+        run: python build_dmtv_feed.py
+
+      - name: Feed validieren
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("data/dmtv-feed.json").read_text(encoding="utf-8"))
+          assert data.get("title") == "Nachtfragment Dark Music TV"
+          assert isinstance(data.get("underground_artists"), list)
+          assert isinstance(data.get("videos"), list)
+          assert isinstance(data.get("news"), list)
+          assert isinstance(data.get("chart_highlights"), list)
+          print("DMTV-Feed validiert:", data.get("counts", {}))
+          PY
+
+      - name: Feed veröffentlichen
+        run: |
+          git config user.name "Nachtfragment Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/dmtv-feed.json
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen am Dark Music TV Feed."
+            exit 0
+          fi
+          git commit -m "Update Dark Music TV feed"
+          git pull --rebase origin main
+          git push origin HEAD:main
