@@ -1,7 +1,7 @@
 {
   "title": "Nachtfragment Music Charts",
   "issue": "Top 50 · laufende Ausgabe",
-  "updated_at": "2026-11-22",
+  "updated_at": "2026-11-25T15:48:00+01:00",
   "methodology": {
     "scope": "Internationaler Dark Underground – inklusive DIY-, Bandcamp-, Independent- und Kleinstlabel-Veröffentlichungen",
     "genres": [
@@ -39,9 +39,15 @@
       "Brutal Resonance: Industrial, EBM, Dark Electro und verwandte elektronische Szenen",
       "Independent- und Underground-Labelkataloge: z. B. Dais, Dark Entries, Detriti, Manic Depression, Mannequin und passende Kleinstlabels",
       "Artist-eigene Websites, Bandcamp-Seiten, YouTube-Kanäle und SoundCloud-Profile",
-      "Unabhängige Musikblogs, Szene-Newsletter, Radiosendungen und DJ-/Community-Empfehlungen"
+      "Unabhängige Musikblogs, Szene-Newsletter, Radiosendungen und DJ-/Community-Empfehlungen",
+      "Medienkonverter: deutschsprachige News und Reviews zu Electro, Gothic, Darkwave und Industrial",
+      "Zero Music Magazine: skandinavische EBM-, Synth- und Underground-Elektronik",
+      "Electrowelt: Dark Electro, Futurepop, Synthpop und EBM",
+      "RetroFuturista: internationale Post-Punk-, Darkwave-, Coldwave- und DIY-Szene",
+      "Big Takeover: unabhängige Post-Punk-, Goth- und Alternative-Veröffentlichungen",
+      "SOM.se: schwedische Release-Metadaten zu Label, Format und Veröffentlichungsdatum"
     ],
-    "selection_policy": "Underground-Relevanz ausdrücklich erwünscht: unbekannte und neue Acts, DIY-Releases, kleine Labels und selbstveröffentlichte Musik erhalten denselben redaktionellen Stellenwert wie etabliertere Namen. Reichweite oder Streamingzahlen sind keine Voraussetzung. Die Charts umfassen bis zu 50 Positionen. Neben Singles werden passende EPs und Alben berücksichtigt; die Veröffentlichungsart wird im Datensatz ausgewiesen.",
+    "selection_policy": "Redaktionelle Rangfolge nach musikalischer Passung, Eigenständigkeit, Aktualität und Underground-Relevanz. DIY-Artists, Selbstveröffentlichungen, Bandcamp-Level-Acts und kleine Labels ausdrücklich berücksichtigen. Reichweite, Followerzahlen und Streamingzahlen sind keine Auswahlkriterien.",
     "source_catalog": [
       {
         "name": "Bandcamp Discover",
@@ -122,10 +128,55 @@
         "name": "Mannequin Records",
         "url": "https://mannequinrecords.com/",
         "role": "Minimal Synth, EBM, Industrial und experimentelle Elektronik"
+      },
+      {
+        "name": "Medienkonverter",
+        "url": "https://www.medienkonverter.de/",
+        "role": "Deutschsprachige Szene-News und Reviews zu Electro, Gothic, Darkwave und Industrial"
+      },
+      {
+        "name": "Zero Music Magazine",
+        "url": "https://zeromagazine.nu/",
+        "role": "Skandinavische EBM-, Synth- und Underground-Elektronik"
+      },
+      {
+        "name": "Electrowelt",
+        "url": "https://electrowelt.com/",
+        "role": "Dark Electro, Futurepop, Synthpop und EBM"
+      },
+      {
+        "name": "RetroFuturista",
+        "url": "https://retrofuturista.com/",
+        "role": "Internationale Post-Punk-, Darkwave-, Coldwave- und DIY-Szene"
+      },
+      {
+        "name": "Big Takeover",
+        "url": "https://bigtakeover.com/",
+        "role": "Unabhängige Post-Punk-, Goth- und Alternative-Veröffentlichungen"
+      },
+      {
+        "name": "SOM.se",
+        "url": "https://som.se/",
+        "role": "Schwedische Release-Metadaten zu Label, Format und Veröffentlichungsdatum"
       }
     ],
-    "source_handling": "Quellen nicht nur über RSS erfassen: Webseiten, Suchseiten, Genre-/Tag-Seiten, Labelkataloge und direkte Artist-Veröffentlichungen regelmäßig manuell bzw. automatisiert prüfen. RSS darf ergänzen, aber niemals alleinige Grundlage sein. Jede Aufnahme möglichst anhand einer Primärquelle (Artist, Label oder Release-Seite) gegenprüfen.",
-    "verification": "Für jeden Kandidaten Veröffentlichungsdatum, Track-/Release-Titel, Artist, Genre und eine konkrete Primärquelle prüfen. Unabhängige Szenequellen ergänzen, sofern verfügbar. Reissues, Remaster, Re-Releases, bloße Ankündigungen ohne bereits veröffentlichte Musik und Dubletten ausschließen. Bei unsicherem Datum nicht als Neuerscheinung werten."
+    "source_handling": "Nicht RSS-only arbeiten: Bandcamp-Artist- und Labelseiten, Genre-/Tag-Seiten, Labelkataloge, offizielle Artist-Websites, YouTube- und SoundCloud-Kanäle sowie unabhängige Szenequellen direkt prüfen. RSS darf nur Hinweise liefern. Veröffentlichungsdatum und Format immer an der konkreten Primärquelle prüfen; das Veröffentlichungsdatum eines Artikels nicht mit dem Release-Datum verwechseln. Wenn Bandcamp vor den Streamingdiensten veröffentlicht, das Bandcamp-Datum verwenden und spätere Plattformtermine in release_note dokumentieren.",
+    "verification": "Jeder Kandidat benötigt eine konkrete Primärquelle (Artist, Label oder Release-Seite). Soweit verfügbar, zusätzlich eine unabhängige Szenequelle. Artist, Titel, Genre, Format und tatsächliches Veröffentlichungsdatum prüfen. Singles, EPs, Alben und Split-Releases sind zulässig. Keine Preorders ohne bereits verfügbare Musik, bloßen Video-Teaser, Reissues, Remaster, Re-Releases oder Dubletten aufnehmen. Bei unklarer Datierung nicht aufnehmen.",
+    "last_checked": "2026-11-25",
+    "last_check_summary": "Acht verifizierte Neuaufnahmen; 50 Plätze beibehalten; Formatangaben für alle 50 Einträge ergänzt; fehlerhafte bzw. zu alte Release-Datierungen bereinigt.",
+    "audit_notes": [
+      "Entfernt: Anton – Répression (tatsächliche Veröffentlichung im Juni 2026, nicht November).",
+      "Entfernt: Charm School – Desolation (tatsächliche Bandcamp-Veröffentlichung im September 2026).",
+      "Entfernt: Amulet – I Am the Dark (Bandcamp-Datum 16.10.2026).",
+      "Entfernt: Distant Stares – Nothing More Beautiful Than Us (Bandcamp-Datum 05.10.2026, nicht 05.11.).",
+      "Entfernt: Ghost Painted Sky – Failure Blooms (ursprüngliche Veröffentlichung im September 2026).",
+      "Entfernt: Suffer Well, VINCE und Beauty In Chaos zugunsten einer engeren Dark-Underground-Auswahl.",
+      "Korrigiert: Rosa Damask – Crygirl auf 06.11.2026; Secrecy – Winter in A&E auf 13.11.2026; Claquedent – Vexare auf 23.11.2026.",
+      "Korrigiert: Bitumen wird mit dem Album Reality Red (06.11.2026) statt mit dem früheren Vorab-Single-Titel geführt.",
+      "Korrigiert: In Atlas wird mit dem Album Hyperreal (05.11.2026) statt mit dem Albumtrack Tears geführt.",
+      "Ausgeschlossen: Lussidotter & In Slaughter Natives – November, da dieselbe Veröffentlichung bereits im Juni auf Bandcamp erschien und die November-Seite eine mögliche Wiederveröffentlichung darstellt.",
+      "Ausgeschlossen: reine Video-Teaser ohne eigenständige Single-Veröffentlichung sowie Reissues und Neuauflagen."
+    ]
   },
   "tracks": [
     {
@@ -135,8 +186,8 @@
       "genre": "Darkwave",
       "release": "2026-11-14",
       "country": "USA",
-      "movement": "new",
-      "source": "https://www.side-line.com/john-x-belmonte-sky-full-black-stars/"
+      "source": "https://www.side-line.com/john-x-belmonte-sky-full-black-stars/",
+      "format": "Single"
     },
     {
       "position": 2,
@@ -145,8 +196,8 @@
       "genre": "Darkwave",
       "release": "2026-11-14",
       "country": "USA",
-      "movement": "new",
-      "source": "https://www.side-line.com/deathday-hungry-ghosts-single/"
+      "source": "https://www.side-line.com/deathday-hungry-ghosts-single/",
+      "format": "Single"
     },
     {
       "position": 3,
@@ -155,9 +206,9 @@
       "genre": "Gothic Rock / Death Pop",
       "release": "2026-11-14",
       "country": "International",
-      "movement": "new",
       "source": "https://www.metalcountdown.com/video/01a1de41-91c3-70af-b387-58c1bb3fad89",
-      "spotify": "https://corlyx.lnk.to/DieYoung"
+      "spotify": "https://corlyx.lnk.to/DieYoung",
+      "format": "Single"
     },
     {
       "position": 4,
@@ -166,30 +217,38 @@
       "genre": "Dark Synthpop",
       "release": "2026-11-12",
       "country": "USA",
-      "movement": "new",
       "source": "https://www.side-line.com/kind-kid-bleed/",
-      "bandcamp": "https://kindkid.bandcamp.com/track/bleed"
+      "bandcamp": "https://kindkid.bandcamp.com/track/bleed",
+      "format": "Single"
     },
     {
       "position": 5,
-      "artist": "Anton",
-      "title": "Répression",
-      "genre": "Coldwave",
-      "release": "2026-11-12",
-      "country": "France",
-      "movement": "new",
-      "source": "turn237416search2",
-      "bandcamp": "https://antonsteinbock.bandcamp.com/track/r-pression"
+      "artist": "Manufracture Music",
+      "title": "Iron Breath",
+      "genre": "Industrial / EBM / Darkwave",
+      "release": "2026-11-24",
+      "country": "Austria",
+      "format": "Single",
+      "source": "https://www.side-line.com/manufracture-music-iron-breath/",
+      "bandcamp": "https://manufracturemusic.bandcamp.com/track/iron-breath-2",
+      "primary_source": "https://manufracturemusic.bandcamp.com/track/iron-breath-2",
+      "secondary_source": "https://www.side-line.com/manufracture-music-iron-breath/",
+      "note": "Self-released; analog-hardware production",
+      "movement": "new"
     },
     {
       "position": 6,
-      "artist": "Charm School",
-      "title": "Desolation",
-      "genre": "Post-Punk / Darkwave",
-      "release": "2026-11-12",
-      "country": "USA",
-      "movement": "new",
-      "source": "turn936847search4"
+      "artist": "Todtensonntag",
+      "title": "Ein Sarg",
+      "genre": "Coldwave / Minimal Synth / Industrial / Post-Punk / Experimental",
+      "release": "2026-11-22",
+      "country": "Germany",
+      "format": "Single",
+      "source": "https://aufnahmeundwiedergabe.bandcamp.com/album/ein-sarg",
+      "bandcamp": "https://aufnahmeundwiedergabe.bandcamp.com/album/ein-sarg",
+      "primary_source": "https://aufnahmeundwiedergabe.bandcamp.com/album/ein-sarg",
+      "note": "Ein Track; veröffentlicht über aufnahme + wiedergabe",
+      "movement": "new"
     },
     {
       "position": 7,
@@ -198,9 +257,9 @@
       "genre": "Industrial Rock",
       "release": "2026-11-11",
       "country": "Finland",
-      "movement": "new",
       "source": "https://www.side-line.com/the-fair-attempts-doomscroller/",
-      "bandcamp": "https://thefairattempts.bandcamp.com/track/doomscroller"
+      "bandcamp": "https://thefairattempts.bandcamp.com/track/doomscroller",
+      "format": "Single"
     },
     {
       "position": 8,
@@ -209,10 +268,10 @@
       "genre": "Electro / EBM",
       "release": "2026-11-13",
       "country": "Germany",
-      "movement": "new",
       "source": "https://www.side-line.com/mnae-hunt-them-all/",
       "bandcamp": "https://mnaemusic.bandcamp.com",
-      "youtube": "https://www.youtube.com/@mnae-music"
+      "youtube": "https://www.youtube.com/@mnae-music",
+      "format": "Single"
     },
     {
       "position": 9,
@@ -221,9 +280,9 @@
       "genre": "Darkwave",
       "release": "2026-11-06",
       "country": "Germany",
-      "movement": "new",
       "source": "https://www.side-line.com/angelzoom-borrowed-light/",
-      "artist_url": "https://angelzoom.de/angelzoom-discography"
+      "artist_url": "https://angelzoom.de/angelzoom-discography",
+      "format": "Single"
     },
     {
       "position": 10,
@@ -232,30 +291,32 @@
       "genre": "Synthpop / Darkwave",
       "release": "2026-11-06",
       "country": "Sweden",
-      "movement": "new",
-      "source": "turn936847search2",
-      "bandcamp": "https://tobiasbernstruphq.bandcamp.com/track/love-machines"
+      "bandcamp": "https://tobiasbernstruphq.bandcamp.com/track/love-machines",
+      "format": "Single"
     },
     {
       "position": 11,
       "artist": "Rosa Damask",
       "title": "Crygirl",
       "genre": "Darkwave / Electronic",
-      "release": "2026-11-10",
+      "release": "2026-11-06",
       "country": "Germany",
-      "movement": "new",
-      "source": "turn936847search2"
+      "format": "Single",
+      "bandcamp": "https://rosadamask.bandcamp.com/track/crygirl"
     },
     {
       "position": 12,
-      "artist": "Amulet",
-      "title": "I Am the Dark",
-      "genre": "Gothic Rock",
-      "release": "2026-11-05",
-      "country": "USA",
-      "movement": "new",
-      "source": "turn936847search2",
-      "bandcamp": "https://amulettheband.bandcamp.com/track/i-am-the-dark"
+      "artist": "Crying Vessel",
+      "title": "Social Panic",
+      "genre": "Darkwave / Coldwave / EBM / Industrial",
+      "release": "2026-11-20",
+      "country": "Switzerland / USA",
+      "format": "Single",
+      "source": "https://www.medienkonverter.de/artikel/crying-vessel-warnen-mit-social-panic-vor-desinformation",
+      "bandcamp": "https://cryingvessel.bandcamp.com/track/social-panic",
+      "primary_source": "https://cryingvessel.bandcamp.com/track/social-panic",
+      "secondary_source": "https://www.medienkonverter.de/artikel/crying-vessel-warnen-mit-social-panic-vor-desinformation",
+      "movement": "new"
     },
     {
       "position": 13,
@@ -264,10 +325,10 @@
       "genre": "Post-Punk / New Wave",
       "release": "2026-11-08",
       "country": "Italy",
-      "movement": "new",
-      "source": "turn936847search6",
+      "source": "https://www.side-line.com/last-moon-in-moscow-falling-down/",
       "bandcamp": "https://lastmooninmoscow.bandcamp.com/track/falling-down",
-      "youtube": "https://youtu.be/MWLlRy9_XSQ"
+      "youtube": "https://youtu.be/MWLlRy9_XSQ",
+      "format": "Single"
     },
     {
       "position": 14,
@@ -276,11 +337,11 @@
       "genre": "EBM / Electro-Industrial",
       "release": "2026-11-13",
       "country": "Germany",
-      "movement": "new",
-      "source": "turn936847search6",
-      "bandcamp": "https://instrictconfidence.bandcamp.com/album/the-final-kiss",
+      "source": "https://www.side-line.com/in-strict-confidence-heartbreaker-single/",
+      "bandcamp": "https://instrictconfidence.bandcamp.com/track/heartbreaker",
       "spotify": "https://instrictconfidence.bfan.link/heartbreaker",
-      "youtube": "https://www.youtube.com/watch?v=PeZfCDNhtfE"
+      "youtube": "https://youtu.be/PeZfCDNhtfE",
+      "format": "Single"
     },
     {
       "position": 15,
@@ -289,19 +350,24 @@
       "genre": "Post-Punk",
       "release": "2026-11-06",
       "country": "Germany",
-      "movement": "new",
-      "source": "turn936847search6",
-      "bandcamp": "https://thehalotrees.bandcamp.com/album/until-i-disappear-single-2026"
+      "source": "https://www.side-line.com/the-halo-trees-until-i-disappear/",
+      "bandcamp": "https://thehalotrees.bandcamp.com/album/until-i-disappear-single-2026",
+      "format": "Single"
     },
     {
       "position": 16,
-      "artist": "Suffer Well",
-      "title": "Came Around",
-      "genre": "Dark Alternative",
-      "release": "2026-11-12",
-      "country": "USA",
-      "movement": "new",
-      "source": "turn936847search4"
+      "artist": "MAGNAVOLT",
+      "title": "Crucified Into Static",
+      "genre": "Dark Electro / Darksynth / Darkwave / Cyberpunk",
+      "release": "2026-11-22",
+      "country": "Poland / Sweden",
+      "format": "Single",
+      "source": "https://magnavolt.bandcamp.com/track/crucified-into-static",
+      "bandcamp": "https://magnavolt.bandcamp.com/track/crucified-into-static",
+      "primary_source": "https://magnavolt.bandcamp.com/track/crucified-into-static",
+      "youtube": "https://youtu.be/LUGbRNDTwp4",
+      "artist_url": "https://magnavoltmusic.com/",
+      "movement": "new"
     },
     {
       "position": 17,
@@ -310,8 +376,8 @@
       "genre": "Synthpop / EBM / Darkwave",
       "release": "2026-11-18",
       "country": "Spain",
-      "movement": "new",
-      "source": "turn237416search0"
+      "source": "https://www.side-line.com/aliens-corporation-altered-moods/",
+      "format": "Single"
     },
     {
       "position": 18,
@@ -320,8 +386,8 @@
       "genre": "Dark Electro",
       "release": "2026-11-20",
       "country": "Belgium",
-      "movement": "new",
-      "source": "turn237416search1"
+      "source": "https://www.side-line.com/eden-script-humans-remain-single/",
+      "format": "Single"
     },
     {
       "position": 19,
@@ -330,8 +396,8 @@
       "genre": "EBM",
       "release": "2026-11-20",
       "country": "International",
-      "movement": "new",
-      "source": "turn237416search0"
+      "source": "https://www.side-line.com/connrar-you-dont-care/",
+      "format": "Single"
     },
     {
       "position": 20,
@@ -340,8 +406,8 @@
       "genre": "Synthpop",
       "release": "2026-11-20",
       "country": "USA",
-      "movement": "new",
-      "source": "https://www.side-line.com/pawn-pawn-silhouette/"
+      "source": "https://www.side-line.com/pawn-pawn-silhouette/",
+      "format": "Single"
     },
     {
       "position": 21,
@@ -350,30 +416,34 @@
       "genre": "Dark Electronic",
       "release": "2026-11-20",
       "country": "International",
-      "movement": "new",
-      "source": "turn237416search0"
+      "source": "https://www.side-line.com/bermud-lost-and-anxious/",
+      "format": "Single"
     },
     {
       "position": 22,
-      "artist": "VINCE",
-      "title": "Primetime",
-      "genre": "Electronic Pop / Synthpop",
-      "release": "2026-11-08",
-      "country": "Sweden",
-      "movement": "new",
-      "source": "https://synthpopworld.com/vince-primetime/",
-      "bandcamp": "https://vinceelectronic.bandcamp.com/album/primetime",
-      "spotify": "https://recordu.lnk.to/hseYXg"
+      "artist": "SEASURFER",
+      "title": "Trip",
+      "genre": "Darkwave / Post-Punk / Dreampop / Shoegaze",
+      "release": "2026-11-20",
+      "country": "Germany",
+      "format": "EP",
+      "source": "https://www.side-line.com/seasurfer-trip-ep-hush-now/",
+      "bandcamp": "https://seasurfer.bandcamp.com/album/trip",
+      "primary_source": "https://seasurfer.bandcamp.com/album/trip",
+      "secondary_source": "https://www.side-line.com/seasurfer-trip-ep-hush-now/",
+      "youtube": "https://youtu.be/0BIlyEcXPS0",
+      "movement": "new"
     },
     {
       "position": 23,
       "artist": "Claquedent",
       "title": "Vexare",
       "genre": "Industrial / EBM",
-      "release": "2026-11-19",
+      "release": "2026-11-23",
       "country": "France",
-      "movement": "new",
-      "source": "turn237416search1"
+      "source": "https://www.side-line.com/claquedent-vexare-single/",
+      "format": "Single",
+      "bandcamp": "https://phagetapes.bandcamp.com/track/vexare"
     },
     {
       "position": 24,
@@ -382,38 +452,50 @@
       "genre": "Dark Electronic",
       "release": "2026-11-06",
       "country": "USA",
-      "movement": "new",
-      "source": "turn936847search3"
+      "source": "https://www.side-line.com/haezl-whistleblower/",
+      "format": "Single"
     },
     {
       "position": 25,
       "artist": "Bitumen",
-      "title": "Perffect Dress",
-      "genre": "Industrial Post-Punk",
+      "title": "Reality Red",
+      "genre": "Gothic Rock / Post-Punk / Synth-Punk / Darkwave / Industrial",
       "release": "2026-11-06",
       "country": "Australia",
-      "movement": "new",
-      "source": "turn936847search4"
+      "source": "https://www.side-line.com/bitumen-reality-red-perffect-dress/",
+      "format": "Album",
+      "bandcamp": "https://bitumenbitumen.bandcamp.com/album/reality-red",
+      "primary_source": "https://bitumenbitumen.bandcamp.com/album/reality-red"
     },
     {
       "position": 26,
-      "artist": "Distant Stares",
-      "title": "Nothing More Beautiful Than Us",
-      "genre": "Darkwave",
-      "release": "2026-11-05",
-      "country": "Finland",
-      "movement": "new",
-      "source": "https://thesanctuarygate.com/en/gazette/2026-11-05/"
+      "artist": "DEADLY SINS",
+      "title": "Ghosts",
+      "genre": "Dark Electro / EBM / Electro-Industrial",
+      "release": "2026-11-22",
+      "country": "Belgium",
+      "format": "Single + 2 Remixes",
+      "source": "https://www.side-line.com/deadly-sins-ghosts-single/",
+      "bandcamp": "https://dresscodeblack.bandcamp.com/album/ghosts",
+      "primary_source": "https://dresscodeblack.bandcamp.com/album/ghosts",
+      "secondary_sources": [
+        "https://www.side-line.com/deadly-sins-ghosts-single/",
+        "https://thesanctuarygate.com/en/gazette/2026-11-22/"
+      ],
+      "release_note": "Bandcamp-Veröffentlichung am 22.11.2026; Streaming-Plattformen ab 24.12.2026.",
+      "movement": "new"
     },
     {
       "position": 27,
       "artist": "In Atlas",
-      "title": "Tears",
-      "genre": "Darkwave",
+      "title": "Hyperreal",
+      "genre": "Darkwave / Industrial / Post-Punk / Dark Disco",
       "release": "2026-11-05",
-      "country": "Denmark / Greece",
-      "movement": "new",
-      "source": "https://thesanctuarygate.com/en/gazette/2026-11-05/"
+      "country": "Denmark",
+      "source": "https://inatlas.bandcamp.com/album/hyperreal",
+      "format": "Album",
+      "bandcamp": "https://inatlas.bandcamp.com/album/hyperreal",
+      "primary_source": "https://inatlas.bandcamp.com/album/hyperreal"
     },
     {
       "position": 28,
@@ -422,8 +504,9 @@
       "genre": "Darkwave",
       "release": "2026-11-20",
       "country": "Germany",
-      "movement": "new",
-      "source": "https://www.side-line.com/night-nail-feelings-are-monsters/"
+      "source": "https://www.side-line.com/night-nail-feelings-are-monsters/",
+      "format": "Single",
+      "bandcamp": "https://nightnail.bandcamp.com/track/feelings-are-monsters"
     },
     {
       "position": 29,
@@ -432,18 +515,19 @@
       "genre": "Dark Alternative / Industrial",
       "release": "2026-11-13",
       "country": "Germany",
-      "movement": "new",
-      "source": "https://www.side-line.com/lucifers-bathroom-cursed-single/"
+      "source": "https://www.side-line.com/lucifers-bathroom-cursed-single/",
+      "format": "Single"
     },
     {
       "position": 30,
       "artist": "Secrecy",
       "title": "Winter In A&E",
       "genre": "Post-Punk",
-      "release": "2026-11-18",
+      "release": "2026-11-13",
       "country": "United Kingdom",
-      "movement": "new",
-      "source": "https://www.side-line.com/secrecy-winter-in-ae/"
+      "source": "https://lavidaesunmus.bandcamp.com/album/winter-in-a-e",
+      "format": "EP (MLP)",
+      "bandcamp": "https://lavidaesunmus.bandcamp.com/album/winter-in-a-e"
     },
     {
       "artist": "Silent Impulse",
@@ -451,7 +535,6 @@
       "genre": "Industrial / Powernoise / Dark Electronics",
       "release": "2026-11-20",
       "country": "USA",
-      "movement": "new",
       "format": "EP",
       "source": "https://www.side-line.com/silent-impulse-transmutation-ep/",
       "position": 31
@@ -462,7 +545,6 @@
       "genre": "Industrial / EBM / Post-Punk",
       "release": "2026-11-13",
       "country": "USA",
-      "movement": "new",
       "format": "Album",
       "source": "https://www.side-line.com/boustrophedon-pathos/",
       "position": 32
@@ -474,7 +556,6 @@
       "genre": "Post-Punk / Coldwave / Darkwave",
       "release": "2026-11-20",
       "country": "Germany",
-      "movement": "new",
       "format": "Album",
       "source": "https://batcaveproductions.bandcamp.com/album/testbild",
       "bandcamp": "https://batcaveproductions.bandcamp.com/album/testbild"
@@ -485,7 +566,6 @@
       "genre": "Synthpop / Darkwave",
       "release": "2026-11-13",
       "country": "France",
-      "movement": "new",
       "format": "Single",
       "source": "https://www.side-line.com/temet-not-the-same-soul-single/",
       "position": 34
@@ -497,7 +577,6 @@
       "genre": "Dark Electro / Industrial / EBM",
       "release": "2026-11-20",
       "country": "Sweden / USA",
-      "movement": "new",
       "format": "EP",
       "source": "https://seventrees.bandcamp.com/album/dream-collapse",
       "bandcamp": "https://seventrees.bandcamp.com/album/dream-collapse",
@@ -510,22 +589,25 @@
       "genre": "Darkwave / EBM / Industrial / Post-Punk",
       "release": "2026-11-19",
       "country": "USA",
-      "movement": "new",
       "format": "Album",
       "source": "https://damienhearse.bandcamp.com/album/extinction-event",
       "bandcamp": "https://damienhearse.bandcamp.com/album/extinction-event",
       "secondary_source": "https://thesanctuarygate.com/en/gazette/"
     },
     {
-      "artist": "Beauty In Chaos",
-      "title": "Outtasight Outtamind (feat. Leo Luganskiy)",
-      "genre": "Dark Alternative / Gothic Rock",
-      "release": "2026-11-12",
-      "country": "USA",
-      "movement": "new",
-      "format": "Single",
-      "source": "https://www.side-line.com/beauty-in-chaos-outtasight-outtamind/",
-      "position": 37
+      "position": 37,
+      "artist": "The Ordure",
+      "title": "Fisch",
+      "genre": "Industrial / Tribal Noise / Electro-Industrial / EBM",
+      "release": "2026-11-22",
+      "country": "Belgium",
+      "format": "Single + Remix",
+      "source": "https://www.side-line.com/the-ordure-fisch-single/",
+      "bandcamp": "https://dresscodeblack.bandcamp.com/album/fisch",
+      "primary_source": "https://dresscodeblack.bandcamp.com/album/fisch",
+      "secondary_source": "https://www.side-line.com/the-ordure-fisch-single/",
+      "release_note": "Bandcamp-Veröffentlichung am 22.11.2026; Streaming-Plattformen ab 04.12.2026.",
+      "movement": "new"
     },
     {
       "position": 38,
@@ -534,7 +616,6 @@
       "genre": "Darkwave / Ritual Electronics / Experimental Electronics",
       "release": "2026-11-13",
       "country": "Austria",
-      "movement": "new",
       "format": "EP",
       "source": "https://thedeviltheuniverse.bandcamp.com/album/nocturnal-transmissions-ep",
       "bandcamp": "https://thedeviltheuniverse.bandcamp.com/album/nocturnal-transmissions-ep",
@@ -547,7 +628,6 @@
       "genre": "Apocalyptic Dark Folk / Neofolk",
       "release": "2026-11-13",
       "country": "Germany",
-      "movement": "new",
       "format": "Album",
       "source": "https://darkvinylrecords.bandcamp.com/album/the-scorpion",
       "bandcamp": "https://darkvinylrecords.bandcamp.com/album/the-scorpion",
@@ -559,7 +639,6 @@
       "genre": "Darkwave / Post-Punk / Darkgaze",
       "release": "2026-11-13",
       "country": "Germany",
-      "movement": "new",
       "format": "Album",
       "source": "https://www.side-line.com/vlimmer-kiemenatmung-album/",
       "bandcamp": "https://blackjackilluministrecords.bandcamp.com/album/kiemenatmung",
@@ -571,7 +650,6 @@
       "genre": "Electronic Post-Punk / Industrial",
       "release": "2026-11-13",
       "country": "Sweden",
-      "movement": "new",
       "format": "Single",
       "source": "https://www.side-line.com/agent-side-grinder-the-choir/",
       "position": 41
@@ -583,7 +661,6 @@
       "genre": "Post-Punk",
       "release": "2026-11-20",
       "country": "Greece",
-      "movement": "new",
       "format": "Double Single",
       "source": "https://thedepthsmusick.bandcamp.com/album/some-things-last-forever",
       "bandcamp": "https://thedepthsmusick.bandcamp.com/album/some-things-last-forever"
@@ -594,7 +671,6 @@
       "genre": "Dark Ambient / Industrial",
       "release": "2026-11-12",
       "country": "Slovakia",
-      "movement": "new",
       "format": "Split Album",
       "source": "https://www.side-line.com/dark-the-keeper-ghost-reflection-abyss/",
       "position": 43
@@ -605,7 +681,6 @@
       "genre": "Industrial Rock / Darkwave / Dark Pop",
       "release": "2026-11-20",
       "country": "USA",
-      "movement": "new",
       "format": "EP",
       "source": "https://www.side-line.com/i-ya-toyah-error-prospect-human/",
       "bandcamp": "https://iyatoyah.bandcamp.com/album/error-prospect-human",
@@ -617,7 +692,6 @@
       "genre": "Industrial / Experimental Electronics",
       "release": "2026-11-16",
       "country": "Australia",
-      "movement": "new",
       "format": "Album",
       "source": "https://www.side-line.com/black-lung-ordo-ab-chao-lp/",
       "position": 45
@@ -629,21 +703,29 @@
       "genre": "Dark Electro / Industrial / Darkwave / Post-Punk",
       "release": "2026-11-12",
       "country": "Portugal",
-      "movement": "new",
       "format": "Album",
       "source": "https://electroclashclub.bandcamp.com/album/silence",
       "bandcamp": "https://electroclashclub.bandcamp.com/album/silence"
     },
     {
-      "artist": "Ghost Painted Sky",
-      "title": "Failure Blooms",
-      "genre": "Darkwave / Post-Punk",
-      "release": "2026-11-11",
+      "position": 47,
+      "artist": "Alien Faktor",
+      "title": "Slave Bells",
+      "genre": "Electro-Industrial / EBM / Industrial",
+      "release": "2026-11-24",
       "country": "USA",
-      "movement": "new",
-      "format": "Album",
-      "source": "https://www.side-line.com/ghost-painted-sky-failure-blooms/",
-      "position": 47
+      "format": "Single",
+      "source": "https://www.side-line.com/alien-faktor-slave-bells/",
+      "bandcamp": "https://alienfaktor.bandcamp.com/track/slave-bells",
+      "primary_source": "https://alienfaktor.bandcamp.com/track/slave-bells",
+      "secondary_sources": [
+        "https://www.side-line.com/alien-faktor-slave-bells/",
+        "https://retrofuturista.com/alien-faktor-preview-stockholm-syndrome-with-slave-bells/",
+        "https://www.bigtakeover.com/recordings/alien-faktor-slave-bells-self-released"
+      ],
+      "youtube": "https://youtu.be/L72ApwZzLwc",
+      "release_note": "Bandcamp-Datum 24.11.2026; Pressemitteilung nennt 25.11.2026.",
+      "movement": "new"
     },
     {
       "position": 48,
@@ -652,7 +734,6 @@
       "genre": "Dark Ambient / Drone / Experimental Electronics",
       "release": "2026-11-17",
       "country": "Finland",
-      "movement": "new",
       "format": "Album",
       "source": "https://torusdome.bandcamp.com/album/silent-desolation",
       "bandcamp": "https://torusdome.bandcamp.com/album/silent-desolation"
@@ -663,7 +744,6 @@
       "genre": "Dark Ambient / Experimental Electronics",
       "release": "2026-11-20",
       "country": "International",
-      "movement": "new",
       "format": "Album",
       "source": "https://www.side-line.com/anantakara-true-north-remembered/",
       "bandcamp": "https://cyclicaldreams.bandcamp.com/album/true-north-remembered-cyd-0171",
@@ -676,7 +756,6 @@
       "genre": "Electro-Industrial / Industrial Rock",
       "release": "2026-11-14",
       "country": "Serbia",
-      "movement": "new",
       "format": "Single",
       "source": "https://antisimetrija.bandcamp.com/album/fuzija",
       "bandcamp": "https://antisimetrija.bandcamp.com/album/fuzija"
