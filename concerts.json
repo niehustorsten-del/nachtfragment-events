@@ -1,80 +1,8 @@
 {
-  "updated_at": "2026-11-22T13:43:48+00:00",
+  "updated_at": "2026-11-25T16:08:14+00:00",
   "source": "Nachtfragment Concert Discovery",
-  "count": 63,
+  "count": 57,
   "events": [
-    {
-      "id": "diary-of-dreams-2026-11-22",
-      "artist": "Diary of Dreams",
-      "date": "2026-11-22",
-      "title": "Diary of Dreams",
-      "url": "https://metaldar.com/genre/goth-industrial",
-      "venue": "Kulttempel",
-      "city": "Oberhausen",
-      "source": "Metaldar",
-      "status": "needs_verification",
-      "category": "concert"
-    },
-    {
-      "id": "906e868764c1d126",
-      "artist": "Hinfort",
-      "date": "2026-11-22",
-      "title": "Hinfort + Diary of Dreams",
-      "url": "https://hinfortmusic.com/",
-      "venue": "Kulttempel",
-      "city": "Oberhausen",
-      "source": "Hinfort – offizielle Künstlerseite",
-      "status": "verified",
-      "category": "concert"
-    },
-    {
-      "id": "hinfort-diary-of-dreams-2026-11-22",
-      "artist": "Hinfort / Diary of Dreams",
-      "date": "2026-11-22",
-      "title": "Hinfort live with Diary of Dreams",
-      "url": "https://hinfortmusic.com/home",
-      "venue": "Kulttempel",
-      "city": "Oberhausen",
-      "source": "Hinfort official",
-      "status": "confirmed",
-      "category": "concert"
-    },
-    {
-      "id": "chelsea-wolfe---a.-a.-williams-2026-11-23",
-      "artist": "Chelsea Wolfe / A. A. Williams",
-      "date": "2026-11-23",
-      "title": "Chelsea Wolfe / A. A. Williams",
-      "url": "https://metaldar.com/genre/goth-industrial",
-      "venue": "Admiralspalast",
-      "city": "Berlin",
-      "source": "Metaldar",
-      "status": "needs_verification",
-      "category": "concert"
-    },
-    {
-      "id": "boy-harsher-2026-11-24",
-      "artist": "Boy Harsher",
-      "date": "2026-11-24",
-      "title": "Boy Harsher / Curses / Choir Boy",
-      "url": "https://events.musicofourdesire.com/de/events/Hamburg/genre/darkwave",
-      "venue": "Gruenspan",
-      "city": "Hamburg",
-      "source": "Music of Our Desire",
-      "status": "needs_verification",
-      "category": "concert"
-    },
-    {
-      "id": "the-chameleons-2026-11-24",
-      "artist": "The Chameleons",
-      "date": "2026-11-24",
-      "title": "The Chameleons live",
-      "url": "https://events.musicofourdesire.com/de/events/Hamburg/genre/darkwave",
-      "venue": "Knust",
-      "city": "Hamburg",
-      "source": "Music of Our Desire",
-      "status": "needs_verification",
-      "category": "concert"
-    },
     {
       "id": "boy-harsher-2026-11-25",
       "artist": "Boy Harsher",

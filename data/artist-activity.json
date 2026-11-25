@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-22T15:01:14+00:00",
+  "updated_at": "2026-11-25T16:08:14+00:00",
   "source": "Nachtfragment published concerts.json + manually approved artist-news.json",
   "artist_count": 131,
-  "event_count": 5,
+  "event_count": 4,
   "news_count": 16,
   "artists": {
     "2dcat": {
@@ -357,17 +357,6 @@
       "name": "Hinfort",
       "url": "https://nachtfragment.de/index.php/artists/hinfort",
       "events": [
-        {
-          "id": "hinfort-diary-of-dreams-2026-11-22",
-          "date": "2026-11-22",
-          "title": "Hinfort live with Diary of Dreams",
-          "venue": "Kulttempel",
-          "city": "Oberhausen",
-          "category": "concert",
-          "status": "confirmed",
-          "url": "https://hinfortmusic.com/home",
-          "source": "Hinfort official"
-        },
         {
           "id": "hinfort-diary-of-dreams-2026-11-25",
           "date": "2026-11-25",
