@@ -1,6 +1,6 @@
 {
   "title": "Nachtfragment Music Charts – Recherchekandidaten",
-  "updated_at": "2026-11-22T16:07:25+00:00",
+  "updated_at": "2026-11-25T18:34:26+00:00",
   "approval_required": true,
   "automatic_publication": false,
   "source_count": 23,
@@ -8,8 +8,8 @@
     {
       "name": "Side-Line",
       "url": "https://www.side-line.com/",
-      "article_links": 49,
-      "candidates": 8
+      "article_links": 50,
+      "candidates": 6
     },
     {
       "name": "Post-Punk.com – New Releases",
@@ -26,7 +26,8 @@
     {
       "name": "ReGen Magazine",
       "url": "https://regenmag.com/",
-      "error": "HTTPError"
+      "article_links": 0,
+      "candidates": 0
     },
     {
       "name": "IDIEY OUDIE",
@@ -42,7 +43,7 @@
     {
       "name": "Obscure Sound",
       "url": "https://www.obscuresound.com/",
-      "article_links": 0,
+      "article_links": 3,
       "candidates": 0
     },
     {
@@ -54,7 +55,8 @@
     {
       "name": "Dark Entries Records",
       "url": "https://darkentriesrecords.com/collections/all",
-      "error": "RemoteDisconnected"
+      "article_links": 0,
+      "candidates": 0
     },
     {
       "name": "Manic Depression Records",
@@ -129,8 +131,77 @@
       "candidates": 0
     }
   ],
-  "candidate_count": 10,
+  "candidate_count": 8,
   "candidates": [
+    {
+      "id": "2a6dfc88bd99024f",
+      "artist_guess": "Neurobash",
+      "release_title_guess": "Unjustified",
+      "headline": "Neurobash returns with 'Unjustified' single",
+      "genre_tags": [
+        "EBM"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-23",
+      "format_guess": "Single / Track",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/neurobash-unjustified-single/",
+      "primary_release_url": "https://open.spotify.com/album/7uPUWb5BrlNsD1lTv2qAnR",
+      "artist_bandcamp_url": "",
+      "external_release_links": [
+        "https://open.spotify.com/album/7uPUWb5BrlNsD1lTv2qAnR"
+      ],
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/neurobash-unjustified-single.webp",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": false
+    },
+    {
+      "id": "94907218fc9676ef",
+      "artist_guess": "Melting Rust Opera",
+      "release_title_guess": "Dark Light Damage",
+      "headline": "Melting Rust Opera releases 'Dark Light Damage' album",
+      "genre_tags": [
+        "Industrial"
+      ],
+      "release_date": "",
+      "article_date": "2026-11-22",
+      "format_guess": "EP / Album / unklar",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/melting-rust-opera-dark-light-damage/",
+      "primary_release_url": "https://open.spotify.com/album/62La4fqb1Ug8ZjEwtZLtk2",
+      "artist_bandcamp_url": "",
+      "external_release_links": [
+        "https://open.spotify.com/album/62La4fqb1Ug8ZjEwtZLtk2"
+      ],
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/melting-rust-opera-dark-light-damage.jpg",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": false
+    },
+    {
+      "id": "5a68da0138809d49",
+      "artist_guess": "Dismantled",
+      "release_title_guess": "Endless",
+      "headline": "Dismantled releases sixth album 'Endless'",
+      "genre_tags": [
+        "Industrial"
+      ],
+      "release_date": "2026-11-20",
+      "article_date": "2026-11-23",
+      "format_guess": "EP / Album / unklar",
+      "publisher": "Side-Line",
+      "source_url": "https://www.side-line.com/dismantled-endless-album/",
+      "primary_release_url": "https://dismantled.bandcamp.com/album/endless",
+      "artist_bandcamp_url": "https://dismantled.bandcamp.com/album/endless",
+      "external_release_links": [
+        "https://dismantled.bandcamp.com/album/endless"
+      ],
+      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/dismantled-gary-zon-photo.webp",
+      "status": "needs_editorial_review",
+      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
+      "already_in_chart": false
+    },
     {
       "id": "eb47a248b9d06f9b",
       "artist_guess": "Conn.RAR",
@@ -199,123 +270,6 @@
       "status": "needs_editorial_review",
       "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
       "already_in_chart": false
-    },
-    {
-      "id": "aa3e0f6a0f74ac9c",
-      "artist_guess": "CØLDSTAR",
-      "release_title_guess": "Into The Void",
-      "headline": "CØLDSTAR releases new single 'Into The Void'",
-      "genre_tags": [
-        "Dark Synth",
-        "Synthpop"
-      ],
-      "release_date": "",
-      "article_date": "2026-11-20",
-      "format_guess": "Single / Track",
-      "publisher": "Side-Line",
-      "source_url": "https://www.side-line.com/coldstar-into-the-void/",
-      "primary_release_url": "https://coldstarmusic.bandcamp.com/track/into-the-void",
-      "artist_bandcamp_url": "https://coldstarmusic.bandcamp.com/track/into-the-void",
-      "external_release_links": [
-        "https://coldstarmusic.bandcamp.com/track/into-the-void"
-      ],
-      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/coldstar-into-the-void-cover.webp",
-      "status": "needs_editorial_review",
-      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
-      "already_in_chart": false
-    },
-    {
-      "id": "4a6dda3b4379a303",
-      "artist_guess": "99 Gravestones",
-      "release_title_guess": "Order Of The Fly",
-      "headline": "99 Gravestones releases 'Order Of The Fly'",
-      "genre_tags": [
-        "Industrial"
-      ],
-      "release_date": "",
-      "article_date": "2026-11-20",
-      "format_guess": "EP / Album / unklar",
-      "publisher": "Side-Line",
-      "source_url": "https://www.side-line.com/99-gravestones-order-of-the-fly/",
-      "primary_release_url": "https://99gravestones.bandcamp.com/album/order-of-the-fly",
-      "artist_bandcamp_url": "https://99gravestones.bandcamp.com/album/order-of-the-fly",
-      "external_release_links": [
-        "https://99gravestones.bandcamp.com/album/order-of-the-fly"
-      ],
-      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/99-gravestones-order-of-the-fly-cover.webp",
-      "status": "needs_editorial_review",
-      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
-      "already_in_chart": false
-    },
-    {
-      "id": "95d74b23545f842b",
-      "artist_guess": "I Ya Toyah",
-      "release_title_guess": "Error Prospect: Human",
-      "headline": "I Ya Toyah releases 'Error Prospect: Human' EP",
-      "genre_tags": [
-        "Industrial"
-      ],
-      "release_date": "",
-      "article_date": "2026-11-20",
-      "format_guess": "EP / Album / unklar",
-      "publisher": "Side-Line",
-      "source_url": "https://www.side-line.com/i-ya-toyah-error-prospect-human/",
-      "primary_release_url": "https://iyatoyah.bandcamp.com/album/error-prospect-human",
-      "artist_bandcamp_url": "https://iyatoyah.bandcamp.com/album/error-prospect-human",
-      "external_release_links": [
-        "https://iyatoyah.bandcamp.com/album/error-prospect-human"
-      ],
-      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/i-ya-toyah-error-prospect-human-cover.webp",
-      "status": "needs_editorial_review",
-      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
-      "already_in_chart": true
-    },
-    {
-      "id": "7f701faa218a48da",
-      "artist_guess": "Eden Script",
-      "release_title_guess": "Humans Remain",
-      "headline": "Eden Script releases single 'Humans Remain'",
-      "genre_tags": [
-        "Dark Electro"
-      ],
-      "release_date": "2026-11-20",
-      "article_date": "2026-11-19",
-      "format_guess": "Single / Track",
-      "publisher": "Side-Line",
-      "source_url": "https://www.side-line.com/eden-script-humans-remain-single/",
-      "primary_release_url": "https://edenscript.bandcamp.com/track/humans-remain",
-      "artist_bandcamp_url": "https://edenscript.bandcamp.com/track/humans-remain",
-      "external_release_links": [
-        "https://edenscript.bandcamp.com/track/humans-remain"
-      ],
-      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/eden-script-humans-remain-cover-scaled.webp",
-      "status": "needs_editorial_review",
-      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
-      "already_in_chart": true
-    },
-    {
-      "id": "76762abbeaa56e07",
-      "artist_guess": "Aliens Corporation",
-      "release_title_guess": "Altered Moods",
-      "headline": "Aliens Corporation release single 'Altered Moods'",
-      "genre_tags": [
-        "EBM",
-        "Synthpop"
-      ],
-      "release_date": "2026-11-18",
-      "article_date": "2026-11-18",
-      "format_guess": "Single / Track",
-      "publisher": "Side-Line",
-      "source_url": "https://www.side-line.com/aliens-corporation-altered-moods/",
-      "primary_release_url": "https://open.spotify.com/track/0scfA4aSj2pkPO8pU5vtwm",
-      "artist_bandcamp_url": "",
-      "external_release_links": [
-        "https://open.spotify.com/track/0scfA4aSj2pkPO8pU5vtwm"
-      ],
-      "artwork": "https://www.side-line.com/wp-content/uploads/2026/11/aliens.webp",
-      "status": "needs_editorial_review",
-      "verification_note": "Artikel gefunden; Release-Datum und genaue Artist-/Titel-Zuordnung vor Chartaufnahme prüfen.",
-      "already_in_chart": true
     },
     {
       "id": "8eb8343244ab9486",
