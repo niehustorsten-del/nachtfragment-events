@@ -98,7 +98,7 @@ nav{min-width:0}
   box.innerHTML='<ol>'+tracks.map(function(t,i){
    const pos=Number(t.position)||i+1;
    const move=t.movement==='new'?'NEU':t.previous_position?'(Vorwoche: #'+esc(t.previous_position)+')':'';
-   const links=[['Bandcamp',t.bandcamp],['YouTube',t.youtube],['Spotify',t.spotify],['Infos',t.source&&t.source.indexOf('turn')!==0?t.source:null],['Artist',t.artist_url]].filter(function(x){return x[1]}).map(function(x){return '<a href="'+esc(x[1])+'" target="_blank" rel="noopener noreferrer">'+x[0]+' ↗</a>'}).join(' · ');
+   const links=[['Bandcamp',t.bandcamp],['YouTube',t.youtube],['Spotify',t.spotify],['Infos',t.source&&t.source.indexOf('turn')!==0&&t.source!==t.bandcamp?t.source:null],['Artist',t.artist_url]].filter(function(x){return x[1]}).map(function(x){return '<a href="'+esc(x[1])+'" target="_blank" rel="noopener noreferrer">'+x[0]+' ↗</a>'}).join(' · ');
    const initials=(t.artist||'NF').split(/\s+/).slice(0,2).map(function(x){return x.charAt(0)}).join('').toUpperCase();
    const cover=t.artwork?'<img src="'+esc(t.artwork)+'" alt="Cover '+esc(t.artist)+' – '+esc(t.title)+'" width="64" height="64">':'';
    return '<li class="entry"><div class="rank">'+pos+'.</div><div class="cover" data-artist="'+esc(t.artist)+'" data-title="'+esc(t.title)+'">'+cover+initials+'</div><div><div class="song">'+esc(t.artist)+' – '+esc(t.title)+' <span class="movement">'+move+'</span></div><div class="details">'+[t.genre,t.format,t.release,t.country].filter(Boolean).map(esc).join(' · ')+'</div>'+(links?'<div class="links">'+links+'</div>':'')+'</div></li>';
