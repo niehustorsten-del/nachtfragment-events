@@ -45,7 +45,10 @@
       "Electrowelt: Dark Electro, Futurepop, Synthpop und EBM",
       "RetroFuturista: internationale Post-Punk-, Darkwave-, Coldwave- und DIY-Szene",
       "Big Takeover: unabhängige Post-Punk-, Goth- und Alternative-Veröffentlichungen",
-      "SOM.se: schwedische Release-Metadaten zu Label, Format und Veröffentlichungsdatum"
+      "SOM.se: schwedische Release-Metadaten zu Label, Format und Veröffentlichungsdatum",
+      "Black Generation: deutschsprachige Darkwave-, Synthpop-, Gothic- und Industrial-Szene",
+      "ElectroSpank: wöchentliche Dark-Alternative-, EBM- und Industrial-Neuerscheinungen",
+      "Hype Machine: Community- und Blog-Aggregation als ergänzender Discovery-Hinweis"
     ],
     "selection_policy": "Redaktionelle Rangfolge nach musikalischer Passung, Eigenständigkeit, Aktualität und Underground-Relevanz. DIY-Artists, Selbstveröffentlichungen, Bandcamp-Level-Acts und kleine Labels ausdrücklich berücksichtigen. Reichweite, Followerzahlen und Streamingzahlen sind keine Auswahlkriterien.",
     "source_catalog": [
@@ -158,24 +161,42 @@
         "name": "SOM.se",
         "url": "https://som.se/",
         "role": "Schwedische Release-Metadaten zu Label, Format und Veröffentlichungsdatum"
+      },
+      {
+        "name": "Black Generation",
+        "url": "https://black-generation.de/",
+        "role": "Deutschsprachige Darkwave-, Synthpop-, Gothic- und Industrial-Szene"
+      },
+      {
+        "name": "ElectroSpank",
+        "url": "https://www.elektrospank.com/",
+        "role": "Wöchentliche Dark-Alternative-, EBM- und Industrial-Neuerscheinungen"
+      },
+      {
+        "name": "Hype Machine",
+        "url": "https://hypem.com/",
+        "role": "Community- und Blog-Aggregation als ergänzender Discovery-Hinweis"
       }
     ],
     "source_handling": "Nicht RSS-only arbeiten: Bandcamp-Artist- und Labelseiten, Genre-/Tag-Seiten, Labelkataloge, offizielle Artist-Websites, YouTube- und SoundCloud-Kanäle sowie unabhängige Szenequellen direkt prüfen. RSS darf nur Hinweise liefern. Veröffentlichungsdatum und Format immer an der konkreten Primärquelle prüfen; das Veröffentlichungsdatum eines Artikels nicht mit dem Release-Datum verwechseln. Wenn Bandcamp vor den Streamingdiensten veröffentlicht, das Bandcamp-Datum verwenden und spätere Plattformtermine in release_note dokumentieren.",
     "verification": "Jeder Kandidat benötigt eine konkrete Primärquelle (Artist, Label oder Release-Seite). Soweit verfügbar, zusätzlich eine unabhängige Szenequelle. Artist, Titel, Genre, Format und tatsächliches Veröffentlichungsdatum prüfen. Singles, EPs, Alben und Split-Releases sind zulässig. Keine Preorders ohne bereits verfügbare Musik, bloßen Video-Teaser, Reissues, Remaster, Re-Releases oder Dubletten aufnehmen. Bei unklarer Datierung nicht aufnehmen.",
     "last_checked": "2026-11-25",
-    "last_check_summary": "Acht verifizierte Neuaufnahmen; 50 Plätze beibehalten; Formatangaben für alle 50 Einträge ergänzt; fehlerhafte bzw. zu alte Release-Datierungen bereinigt.",
+    "last_check_summary": "Neun verifizierte Neuaufnahmen; 50 Plätze beibehalten; Formatangaben für alle 50 Einträge ergänzt; fehlerhafte bzw. zu alte Release-Datierungen bereinigt; verlässliches Cover-Artwork bei fünf neuen Veröffentlichungen ergänzt.",
     "audit_notes": [
       "Entfernt: Anton – Répression (tatsächliche Veröffentlichung im Juni 2026, nicht November).",
       "Entfernt: Charm School – Desolation (tatsächliche Bandcamp-Veröffentlichung im September 2026).",
       "Entfernt: Amulet – I Am the Dark (Bandcamp-Datum 16.10.2026).",
       "Entfernt: Distant Stares – Nothing More Beautiful Than Us (Bandcamp-Datum 05.10.2026, nicht 05.11.).",
       "Entfernt: Ghost Painted Sky – Failure Blooms (ursprüngliche Veröffentlichung im September 2026).",
+      "Entfernt: Aliens Corporation – Altered Moods (ursprünglicher Single-Vorlauf bereits am 11.09.2026, nicht 20.11.).",
       "Entfernt: Suffer Well, VINCE und Beauty In Chaos zugunsten einer engeren Dark-Underground-Auswahl.",
       "Korrigiert: Rosa Damask – Crygirl auf 06.11.2026; Secrecy – Winter in A&E auf 13.11.2026; Claquedent – Vexare auf 23.11.2026.",
       "Korrigiert: Bitumen wird mit dem Album Reality Red (06.11.2026) statt mit dem früheren Vorab-Single-Titel geführt.",
       "Korrigiert: In Atlas wird mit dem Album Hyperreal (05.11.2026) statt mit dem Albumtrack Tears geführt.",
       "Ausgeschlossen: Lussidotter & In Slaughter Natives – November, da dieselbe Veröffentlichung bereits im Juni auf Bandcamp erschien und die November-Seite eine mögliche Wiederveröffentlichung darstellt.",
-      "Ausgeschlossen: reine Video-Teaser ohne eigenständige Single-Veröffentlichung sowie Reissues und Neuauflagen."
+      "Ausgeschlossen: reine Video-Teaser ohne eigenständige Single-Veröffentlichung sowie Reissues und Neuauflagen.",
+      "Deadly Sins – Ghosts und The Ordure – Fisch sind seit 22.11.2026 auf Bandcamp verfügbar; spätere Streaming-Termine stehen separat in release_note.",
+      "Alien Faktor – Slave Bells: Bandcamp-Datum 24.11.2026; Pressemitteilung nennt 25.11.2026."
     ]
   },
   "tracks": [
@@ -234,7 +255,8 @@
       "primary_source": "https://manufracturemusic.bandcamp.com/track/iron-breath-2",
       "secondary_source": "https://www.side-line.com/manufracture-music-iron-breath/",
       "note": "Self-released; analog-hardware production",
-      "movement": "new"
+      "movement": "new",
+      "artwork": "https://sideline.b-cdn.net/wp-content/uploads/2026/11/manufracture-music-iron-breath-1024x1024.webp"
     },
     {
       "position": 6,
@@ -371,13 +393,22 @@
     },
     {
       "position": 17,
-      "artist": "Aliens Corporation",
-      "title": "Altered Moods",
-      "genre": "Synthpop / EBM / Darkwave",
-      "release": "2026-11-18",
-      "country": "Spain",
-      "source": "https://www.side-line.com/aliens-corporation-altered-moods/",
-      "format": "Single"
+      "artist": "CØLDSTAR",
+      "title": "Into The Void",
+      "genre": "Darkwave / Synthpop / Dark Electro / New Wave",
+      "release": "2026-11-20",
+      "country": "Switzerland",
+      "format": "Single",
+      "movement": "new",
+      "source": "https://www.side-line.com/coldstar-into-the-void/",
+      "bandcamp": "https://coldstarmusic.bandcamp.com/track/into-the-void",
+      "primary_source": "https://coldstarmusic.bandcamp.com/track/into-the-void",
+      "secondary_sources": [
+        "https://www.side-line.com/coldstar-into-the-void/",
+        "https://black-generation.de/coldstar-veroeffentlichen-die-single-into-the-void/"
+      ],
+      "artist_url": "https://coldstar.ch/",
+      "artwork": "https://sideline.b-cdn.net/wp-content/uploads/2026/11/coldstar-into-the-void-cover.webp"
     },
     {
       "position": 18,
@@ -483,7 +514,8 @@
         "https://thesanctuarygate.com/en/gazette/2026-11-22/"
       ],
       "release_note": "Bandcamp-Veröffentlichung am 22.11.2026; Streaming-Plattformen ab 24.12.2026.",
-      "movement": "new"
+      "movement": "new",
+      "artwork": "https://sideline.b-cdn.net/wp-content/uploads/2026/11/deadly-sins-ghosts-single-2026.webp"
     },
     {
       "position": 27,
@@ -607,7 +639,8 @@
       "primary_source": "https://dresscodeblack.bandcamp.com/album/fisch",
       "secondary_source": "https://www.side-line.com/the-ordure-fisch-single/",
       "release_note": "Bandcamp-Veröffentlichung am 22.11.2026; Streaming-Plattformen ab 04.12.2026.",
-      "movement": "new"
+      "movement": "new",
+      "artwork": "https://sideline.b-cdn.net/wp-content/uploads/2026/11/the-ordure-fisch-single-2026.webp"
     },
     {
       "position": 38,
@@ -725,7 +758,8 @@
       ],
       "youtube": "https://youtu.be/L72ApwZzLwc",
       "release_note": "Bandcamp-Datum 24.11.2026; Pressemitteilung nennt 25.11.2026.",
-      "movement": "new"
+      "movement": "new",
+      "artwork": "https://sideline.b-cdn.net/wp-content/uploads/2026/11/alien-faktor-slave-bells-cover-1024x1024.webp"
     },
     {
       "position": 48,
